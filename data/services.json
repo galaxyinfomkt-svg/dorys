@@ -1,0 +1,199 @@
+{
+  "services": [
+    {
+      "name": "Janitorial Service",
+      "slug": "janitorial-service",
+      "shortDescription": "Professional commercial cleaning for offices, shops, warehouses, and corporate facilities.",
+      "fullDescription": "Our professional janitorial services provide comprehensive cleaning solutions for commercial properties throughout Massachusetts. From daily office cleaning to weekly maintenance, we keep your business environment spotless and professional.",
+      "features": [
+        "Daily, weekly, or monthly cleaning schedules",
+        "Office and commercial building cleaning",
+        "Floor care and maintenance",
+        "Restroom sanitation and supplies",
+        "Trash removal and recycling",
+        "Window and glass cleaning",
+        "Break room and kitchen cleaning",
+        "Dusting and surface sanitization"
+      ],
+      "benefits": [
+        "Create a healthier work environment",
+        "Improve employee productivity",
+        "Make great first impressions on clients",
+        "Reduce sick days with proper sanitization",
+        "Extend the life of your facility"
+      ],
+      "image": "janitorial-service.jpg",
+      "heroImage": "janitorial-service.jpg",
+      "faqs": [
+        {
+          "question": "How often should janitorial services be scheduled?",
+          "answer": "The frequency depends on your facility size, foot traffic, and business type. Most offices benefit from daily or 2-3 times weekly service. We offer flexible scheduling to meet your specific needs."
+        },
+        {
+          "question": "What does commercial janitorial service include?",
+          "answer": "Our janitorial services include floor cleaning, restroom sanitization, trash removal, dusting, window cleaning, break room cleaning, and general facility maintenance. We customize our services to your requirements."
+        },
+        {
+          "question": "Do you provide after-hours cleaning?",
+          "answer": "Yes, we offer flexible scheduling including early morning, evening, and weekend cleaning to minimize disruption to your business operations."
+        }
+      ]
+    },
+    {
+      "name": "Deep Cleaning",
+      "slug": "deep-cleaning",
+      "shortDescription": "Thorough top-to-bottom cleaning that reaches every corner of your home or business.",
+      "fullDescription": "Our deep cleaning service goes beyond regular cleaning to tackle built-up grime, hidden dirt, and hard-to-reach areas. Perfect for move-ins, move-outs, seasonal cleaning, or when your space needs extra attention.",
+      "features": [
+        "Intensive surface and appliance cleaning",
+        "Kitchen deep clean including inside cabinets",
+        "Bathroom sanitization and grout cleaning",
+        "Behind and under furniture cleaning",
+        "Light fixtures and ceiling fan cleaning",
+        "Baseboard and door frame detailing",
+        "Window sill and track cleaning",
+        "Closet and storage area organization"
+      ],
+      "benefits": [
+        "Remove built-up dirt and grime",
+        "Eliminate allergens and bacteria",
+        "Restore your space to like-new condition",
+        "Perfect for special occasions",
+        "Great for move-in/move-out situations"
+      ],
+      "image": "deep-cleaning.jpg",
+      "heroImage": "deep-cleaning.jpg",
+      "faqs": [
+        {
+          "question": "What's the difference between regular cleaning and deep cleaning?",
+          "answer": "Deep cleaning is more intensive and thorough. It includes cleaning areas often missed in regular cleaning like inside cabinets, behind appliances, baseboards, and detailed scrubbing of bathrooms and kitchens."
+        },
+        {
+          "question": "How long does a deep cleaning take?",
+          "answer": "Deep cleaning typically takes 4-8 hours depending on the size of your home or business and its current condition. Larger spaces or very dirty areas may require additional time."
+        },
+        {
+          "question": "How often should I schedule a deep cleaning?",
+          "answer": "We recommend deep cleaning 2-4 times per year as a supplement to regular cleaning services. It's also ideal before holidays, special events, or when moving."
+        }
+      ]
+    },
+    {
+      "name": "Upholstery Cleaning",
+      "slug": "upholstery-cleaning",
+      "shortDescription": "Expert cleaning for sofas, chairs, and all upholstered furniture to restore fabrics and remove stains.",
+      "fullDescription": "Our professional upholstery cleaning service revitalizes your furniture, removing deep-set stains, odors, and allergens. We use safe, effective methods suitable for all fabric types to extend the life of your upholstered pieces.",
+      "features": [
+        "Sofa and couch cleaning",
+        "Chair and loveseat cleaning",
+        "Sectional sofa treatment",
+        "Fabric protection application",
+        "Stain and spot removal",
+        "Odor elimination",
+        "Pet hair and dander removal",
+        "Mattress cleaning available"
+      ],
+      "benefits": [
+        "Extend furniture lifespan",
+        "Remove allergens and dust mites",
+        "Eliminate pet odors",
+        "Restore fabric appearance",
+        "Healthier indoor environment"
+      ],
+      "image": "upholstery-cleaning.jpg",
+      "heroImage": "upholstery-cleaning.jpg",
+      "faqs": [
+        {
+          "question": "How long does it take for upholstery to dry?",
+          "answer": "Most upholstery dries within 4-6 hours depending on fabric type, humidity, and airflow. We use methods that minimize drying time while maximizing cleaning effectiveness."
+        },
+        {
+          "question": "Can you clean all types of fabric?",
+          "answer": "Yes, we're trained to clean all fabric types including cotton, microfiber, leather, velvet, and delicate fabrics. We assess each piece and use the appropriate cleaning method."
+        },
+        {
+          "question": "Will cleaning remove all stains?",
+          "answer": "We can remove most stains, but some set-in or old stains may be difficult or impossible to fully remove. We'll assess your furniture and provide realistic expectations before cleaning."
+        }
+      ]
+    },
+    {
+      "name": "Carpet Cleaning",
+      "slug": "carpet-cleaning",
+      "shortDescription": "Professional carpet cleaning using advanced steam and dry cleaning methods for spotless results.",
+      "fullDescription": "Our professional carpet cleaning service uses industry-leading equipment and techniques to deep clean your carpets. We remove dirt, stains, odors, and allergens, leaving your carpets fresh, clean, and extending their lifespan.",
+      "features": [
+        "Hot water extraction (steam cleaning)",
+        "Dry cleaning for delicate carpets",
+        "Stain treatment and removal",
+        "Deodorizing and sanitization",
+        "Carpet protection application",
+        "High-traffic area treatment",
+        "Pet stain and odor removal",
+        "Area rug cleaning"
+      ],
+      "benefits": [
+        "Remove deep-seated dirt and allergens",
+        "Extend carpet lifespan",
+        "Eliminate odors and bacteria",
+        "Improve indoor air quality",
+        "Restore carpet appearance"
+      ],
+      "image": "carpet-cleaning.jpg",
+      "heroImage": "carpet-cleaning.jpg",
+      "faqs": [
+        {
+          "question": "How long does carpet cleaning take?",
+          "answer": "A typical home takes 1-3 hours depending on size and condition. Commercial spaces vary based on square footage. We provide time estimates during your quote."
+        },
+        {
+          "question": "How long until carpets are dry?",
+          "answer": "Carpets typically dry within 6-12 hours. Factors like humidity, ventilation, and carpet thickness affect drying time. We recommend avoiding heavy foot traffic until fully dry."
+        },
+        {
+          "question": "How often should carpets be professionally cleaned?",
+          "answer": "We recommend professional carpet cleaning every 12-18 months for residential carpets. High-traffic areas or homes with pets may benefit from more frequent cleaning."
+        }
+      ]
+    },
+    {
+      "name": "General Housekeeping",
+      "slug": "general-housekeeping",
+      "shortDescription": "Comprehensive home cleaning services to keep your living space fresh, clean, and comfortable.",
+      "fullDescription": "Our general housekeeping services provide regular, reliable cleaning to maintain your home's cleanliness and comfort. From weekly tidying to bi-weekly deep cleans, we customize our service to fit your lifestyle and needs.",
+      "features": [
+        "Dusting all surfaces and decor",
+        "Vacuuming and mopping floors",
+        "Kitchen cleaning and sanitization",
+        "Bathroom cleaning and disinfection",
+        "Bedroom tidying and bed making",
+        "Laundry folding and organization",
+        "Dish washing and kitchen organizing",
+        "General tidying and decluttering"
+      ],
+      "benefits": [
+        "Enjoy a consistently clean home",
+        "More free time for family and hobbies",
+        "Reduce stress and improve well-being",
+        "Customize cleaning to your priorities",
+        "Reliable, scheduled service"
+      ],
+      "image": "general-housekeeping.jpg",
+      "heroImage": "general-housekeeping.jpg",
+      "faqs": [
+        {
+          "question": "What's included in housekeeping service?",
+          "answer": "Our standard housekeeping includes dusting, vacuuming, mopping, kitchen cleaning, bathroom cleaning, bedroom tidying, and trash removal. We can customize services to include additional tasks like laundry or organizing."
+        },
+        {
+          "question": "How often should I schedule housekeeping?",
+          "answer": "Most clients benefit from weekly or bi-weekly service. The ideal frequency depends on your household size, lifestyle, and personal preferences. We offer flexible scheduling options."
+        },
+        {
+          "question": "Do you bring cleaning supplies?",
+          "answer": "Yes, we bring all necessary cleaning supplies and equipment. If you have preferences for specific products or have eco-friendly requirements, we're happy to accommodate."
+        }
+      ]
+    }
+  ]
+}
