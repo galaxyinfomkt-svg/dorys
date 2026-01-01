@@ -57,6 +57,7 @@
   <link rel="stylesheet" href="assets/css/animations.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/premium.css">
 
   <!-- Schema.org Structured Data - Organization -->
   <script type="application/ld+json">
@@ -456,191 +457,271 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section">
+    <section id="services" class="section section--gradient-blue">
       <div class="container">
-        <h2 class="section__title animate-on-scroll animate-fade-up">Our Professional Cleaning Services</h2>
-        <p class="section__subtitle animate-on-scroll animate-fade-up animate-delay-100">Comprehensive cleaning solutions tailored to your needs. From commercial janitorial services to residential deep cleaning, we deliver exceptional results every time.</p>
+        <div class="section__header section__header--center">
+          <span class="section__badge">Our Services</span>
+          <h2 class="section__title animate-on-scroll animate-fade-up">Professional Cleaning Solutions</h2>
+          <p class="section__description animate-on-scroll animate-fade-up animate-delay-100">Comprehensive cleaning services tailored to your needs. From commercial janitorial to residential deep cleaning, we deliver exceptional results every time.</p>
+        </div>
 
-        <div class="services-grid stagger-children">
+        <div class="services-grid--5items stagger-children">
           <!-- Janitorial Service -->
-          <article class="card service-card">
-            <div class="card__image-wrapper">
-              <img src="assets/images/services/janitorial-service.jpg" alt="Commercial janitorial cleaning service in Marlborough MA - office building maintenance" class="card__image" loading="lazy" data-lightbox data-caption="Professional janitorial service for commercial buildings">
+          <article class="service-card--premium">
+            <div class="service-card__image">
+              <img src="assets/images/services/janitorial-service.jpg" alt="Commercial janitorial cleaning service in Marlborough MA - office building maintenance" loading="lazy">
             </div>
-            <div class="card__body">
-              <h3 class="card__title">Janitorial Service</h3>
-              <p class="card__text">Professional commercial cleaning for offices, shops, warehouses, and corporate facilities. Daily, weekly, or monthly schedules available.</p>
-              <a href="services/janitorial-service/" class="btn btn--primary" data-track="service-janitorial">Learn More</a>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Janitorial Service</h3>
+              <p class="service-card__text">Professional commercial cleaning for offices, shops, warehouses, and corporate facilities. Daily, weekly, or monthly schedules available.</p>
+              <a href="services/janitorial-service/" class="service-card__link" data-track="service-janitorial">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </a>
             </div>
           </article>
 
           <!-- Deep Cleaning -->
-          <article class="card service-card">
-            <div class="card__image-wrapper">
-              <img src="assets/images/services/deep-cleaning.jpg" alt="Deep cleaning service in Massachusetts - thorough residential and commercial cleaning" class="card__image" loading="lazy" data-lightbox data-caption="Deep cleaning for homes and businesses">
+          <article class="service-card--premium">
+            <div class="service-card__image">
+              <img src="assets/images/services/deep-cleaning.jpg" alt="Deep cleaning service in Massachusetts - thorough residential and commercial cleaning" loading="lazy">
             </div>
-            <div class="card__body">
-              <h3 class="card__title">Deep Cleaning</h3>
-              <p class="card__text">Thorough top-to-bottom cleaning that reaches every corner. Perfect for move-ins, move-outs, seasonal cleaning, or special occasions.</p>
-              <a href="services/deep-cleaning/" class="btn btn--primary" data-track="service-deep-cleaning">Learn More</a>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Deep Cleaning</h3>
+              <p class="service-card__text">Thorough top-to-bottom cleaning that reaches every corner. Perfect for move-ins, move-outs, seasonal cleaning, or special occasions.</p>
+              <a href="services/deep-cleaning/" class="service-card__link" data-track="service-deep-cleaning">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </a>
             </div>
           </article>
 
           <!-- Carpet Cleaning -->
-          <article class="card service-card">
-            <div class="card__image-wrapper">
-              <img src="assets/images/services/carpet-cleaning.jpg" alt="Professional carpet cleaning service in Massachusetts - steam cleaning and stain removal" class="card__image" loading="lazy" data-lightbox data-caption="Expert carpet cleaning with steam and dry cleaning methods">
+          <article class="service-card--premium">
+            <div class="service-card__image">
+              <img src="assets/images/services/carpet-cleaning.jpg" alt="Professional carpet cleaning service in Massachusetts - steam cleaning and stain removal" loading="lazy">
             </div>
-            <div class="card__body">
-              <h3 class="card__title">Carpet Cleaning</h3>
-              <p class="card__text">Professional carpet cleaning using advanced steam and dry cleaning methods. Remove stains, odors, and allergens for a healthier environment.</p>
-              <a href="services/carpet-cleaning/" class="btn btn--primary" data-track="service-carpet">Learn More</a>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Carpet Cleaning</h3>
+              <p class="service-card__text">Professional carpet cleaning using advanced steam and dry cleaning methods. Remove stains, odors, and allergens for a healthier environment.</p>
+              <a href="services/carpet-cleaning/" class="service-card__link" data-track="service-carpet">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </a>
             </div>
           </article>
 
           <!-- Upholstery Cleaning -->
-          <article class="card service-card">
-            <div class="card__image-wrapper">
-              <img src="assets/images/services/upholstery-cleaning.jpg" alt="Upholstery cleaning service - sofa, couch, and furniture cleaning in MA" class="card__image" loading="lazy" data-lightbox data-caption="Professional upholstery and furniture cleaning">
+          <article class="service-card--premium">
+            <div class="service-card__image">
+              <img src="assets/images/services/upholstery-cleaning.jpg" alt="Upholstery cleaning service - sofa, couch, and furniture cleaning in MA" loading="lazy">
             </div>
-            <div class="card__body">
-              <h3 class="card__title">Upholstery Cleaning</h3>
-              <p class="card__text">Expert cleaning for sofas, chairs, and all upholstered furniture. We restore fabrics and remove deep-set stains and odors.</p>
-              <a href="services/upholstery-cleaning/" class="btn btn--primary" data-track="service-upholstery">Learn More</a>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Upholstery Cleaning</h3>
+              <p class="service-card__text">Expert cleaning for sofas, chairs, and all upholstered furniture. We restore fabrics and remove deep-set stains and odors.</p>
+              <a href="services/upholstery-cleaning/" class="service-card__link" data-track="service-upholstery">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </a>
             </div>
           </article>
 
           <!-- General Housekeeping -->
-          <article class="card service-card">
-            <div class="card__image-wrapper">
-              <img src="assets/images/services/general-housekeeping.jpg" alt="Housekeeping service in Massachusetts - home cleaning and maintenance" class="card__image" loading="lazy" data-lightbox data-caption="Complete housekeeping and home maintenance services">
+          <article class="service-card--premium">
+            <div class="service-card__image">
+              <img src="assets/images/services/general-housekeeping.jpg" alt="Housekeeping service in Massachusetts - home cleaning and maintenance" loading="lazy">
             </div>
-            <div class="card__body">
-              <h3 class="card__title">General Housekeeping</h3>
-              <p class="card__text">Comprehensive home cleaning services including dusting, vacuuming, mopping, kitchen and bathroom cleaning, and more.</p>
-              <a href="services/general-housekeeping/" class="btn btn--primary" data-track="service-housekeeping">Learn More</a>
+            <div class="service-card__body">
+              <h3 class="service-card__title">General Housekeeping</h3>
+              <p class="service-card__text">Comprehensive home cleaning services including dusting, vacuuming, mopping, kitchen and bathroom cleaning, and more.</p>
+              <a href="services/general-housekeeping/" class="service-card__link" data-track="service-housekeeping">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </a>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid--premium">
+          <div class="stat-card--premium">
+            <div class="stat__number" data-counter="21" data-suffix="+">21+</div>
+            <div class="stat__label">Years in Business</div>
+          </div>
+          <div class="stat-card--premium">
+            <div class="stat__number" data-counter="100" data-suffix="+">100+</div>
+            <div class="stat__label">Cities Served</div>
+          </div>
+          <div class="stat-card--premium">
+            <div class="stat__number">$2M</div>
+            <div class="stat__label">Insurance Coverage</div>
+          </div>
+          <div class="stat-card--premium">
+            <div class="stat__number">5.0</div>
+            <div class="stat__label">Star Rating</div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="section section--alt">
+    <section class="section section--light">
       <div class="container">
-        <div class="two-col">
-          <div class="animate-on-scroll animate-fade-right">
-            <h2 class="mb-lg">Why Choose Dorys Janitorial Cleaning Services?</h2>
-            <p class="lead mb-xl">For over 21 years, we've been the trusted cleaning partner for businesses and homeowners across Massachusetts. Here's what sets us apart:</p>
+        <div class="section__header section__header--center">
+          <span class="section__badge">Why Choose Us</span>
+          <h2 class="section__title">The Dorys Difference</h2>
+          <p class="section__description">For over 21 years, we've been the trusted cleaning partner for businesses and homeowners across Massachusetts.</p>
+        </div>
 
-            <ul class="list list--check">
-              <li><strong>21+ Years of Experience:</strong> Serving Massachusetts since 2004 with consistent, reliable service.</li>
-              <li><strong>Licensed & Insured:</strong> MA HIC License #213341 with $2,000,000 insurance coverage for your peace of mind.</li>
-              <li><strong>Clear Communication:</strong> We keep you informed every step of the way, responding quickly to your needs.</li>
-              <li><strong>Attention to Detail:</strong> Our trained professionals never cut corners - we clean thoroughly every time.</li>
-              <li><strong>Flexible Scheduling:</strong> Early morning to evening availability, customized to fit your schedule.</li>
-              <li><strong>100% Satisfaction Guaranteed:</strong> We're not happy until you're happy with the results.</li>
-            </ul>
-
-            <div class="btn-group mt-xl">
-              <a href="about.html" class="btn btn--primary" data-track="cta-about">Learn About Us</a>
-              <a href="contact.html" class="btn btn--secondary" data-track="cta-contact">Contact Us</a>
+        <div class="trust-grid">
+          <div class="trust-card">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
             </div>
+            <h3 class="trust-card__title">21+ Years Experience</h3>
+            <p class="trust-card__text">Serving Massachusetts since 2004 with consistent, reliable cleaning services.</p>
           </div>
 
-          <div class="animate-on-scroll animate-fade-left animate-delay-200">
-            <div class="stats">
-              <div class="stat">
-                <div class="stat__value" data-counter="21" data-suffix="+">0</div>
-                <div class="stat__label">Years in Business</div>
-              </div>
-              <div class="stat">
-                <div class="stat__value" data-counter="100" data-suffix="+">0</div>
-                <div class="stat__label">Cities Served</div>
-              </div>
-              <div class="stat">
-                <div class="stat__value" data-counter="2" data-suffix="M">0</div>
-                <div class="stat__label">Insurance Coverage</div>
-              </div>
-              <div class="stat">
-                <div class="stat__value" data-counter="5">0</div>
-                <div class="stat__label">Star Rating</div>
-              </div>
+          <div class="trust-card">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
             </div>
+            <h3 class="trust-card__title">Licensed & Insured</h3>
+            <p class="trust-card__text">MA HIC #213341 with $2,000,000 insurance for your peace of mind.</p>
           </div>
+
+          <div class="trust-card">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <h3 class="trust-card__title">Attention to Detail</h3>
+            <p class="trust-card__text">Our trained professionals never cut corners - thorough cleaning every time.</p>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            </div>
+            <h3 class="trust-card__title">Flexible Scheduling</h3>
+            <p class="trust-card__text">Early morning to evening availability, customized to fit your schedule.</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 3rem;">
+          <a href="about.html" class="btn btn--primary btn--lg" data-track="cta-about">Learn More About Us</a>
         </div>
       </div>
     </section>
 
     <!-- Service Areas Section -->
-    <section class="section">
+    <section class="section section--premium-bg">
       <div class="container">
-        <h2 class="section__title animate-on-scroll animate-fade-up">Service Areas in Massachusetts</h2>
-        <p class="section__subtitle animate-on-scroll animate-fade-up animate-delay-100">Proudly serving over 100 cities and towns across Massachusetts. From Marlborough to Worcester, we bring professional cleaning services to your doorstep.</p>
-
-        <div class="cities-grid animate-on-scroll animate-fade-up animate-delay-200">
-          <a href="locations/hudson-ma.html" class="nearby-cities__link">Hudson</a>
-          <a href="locations/marlborough-ma.html" class="nearby-cities__link">Marlborough</a>
-          <a href="locations/framingham-ma.html" class="nearby-cities__link">Framingham</a>
-          <a href="locations/westborough-ma.html" class="nearby-cities__link">Westborough</a>
-          <a href="locations/worcester-ma.html" class="nearby-cities__link">Worcester</a>
-          <a href="locations/natick-ma.html" class="nearby-cities__link">Natick</a>
-          <a href="locations/wellesley-ma.html" class="nearby-cities__link">Wellesley</a>
-          <a href="locations/newton-ma.html" class="nearby-cities__link">Newton</a>
-          <a href="locations/sudbury-ma.html" class="nearby-cities__link">Sudbury</a>
-          <a href="locations/concord-ma.html" class="nearby-cities__link">Concord</a>
-          <a href="locations/lexington-ma.html" class="nearby-cities__link">Lexington</a>
-          <a href="locations/waltham-ma.html" class="nearby-cities__link">Waltham</a>
-          <a href="locations/shrewsbury-ma.html" class="nearby-cities__link">Shrewsbury</a>
-          <a href="locations/northborough-ma.html" class="nearby-cities__link">Northborough</a>
-          <a href="locations/southborough-ma.html" class="nearby-cities__link">Southborough</a>
+        <div class="section__header section__header--center">
+          <span class="section__badge">Coverage Area</span>
+          <h2 class="section__title animate-on-scroll animate-fade-up">Serving 100+ Cities in Massachusetts</h2>
+          <p class="section__description animate-on-scroll animate-fade-up animate-delay-100">Proudly serving over 100 cities and towns across Massachusetts. From Marlborough to Worcester, we bring professional cleaning services to your doorstep.</p>
         </div>
 
-        <div class="text-center mt-xl animate-on-scroll animate-fade-up animate-delay-300">
-          <a href="locations/" class="btn btn--primary btn--lg" data-track="cta-all-locations">View All Service Areas</a>
+        <div class="cities-highlight">
+          <div class="cities-grid animate-on-scroll animate-fade-up animate-delay-200">
+            <a href="locations/hudson-ma.html" class="city-tag">Hudson</a>
+            <a href="locations/marlborough-ma.html" class="city-tag">Marlborough</a>
+            <a href="locations/framingham-ma.html" class="city-tag">Framingham</a>
+            <a href="locations/westborough-ma.html" class="city-tag">Westborough</a>
+            <a href="locations/worcester-ma.html" class="city-tag">Worcester</a>
+            <a href="locations/natick-ma.html" class="city-tag">Natick</a>
+            <a href="locations/wellesley-ma.html" class="city-tag">Wellesley</a>
+            <a href="locations/newton-ma.html" class="city-tag">Newton</a>
+            <a href="locations/sudbury-ma.html" class="city-tag">Sudbury</a>
+            <a href="locations/concord-ma.html" class="city-tag">Concord</a>
+            <a href="locations/lexington-ma.html" class="city-tag">Lexington</a>
+            <a href="locations/waltham-ma.html" class="city-tag">Waltham</a>
+            <a href="locations/shrewsbury-ma.html" class="city-tag">Shrewsbury</a>
+            <a href="locations/northborough-ma.html" class="city-tag">Northborough</a>
+            <a href="locations/southborough-ma.html" class="city-tag">Southborough</a>
+          </div>
+
+          <div class="cities-highlight__cta animate-on-scroll animate-fade-up animate-delay-300">
+            <a href="locations/" class="btn btn--primary btn--lg" data-track="cta-all-locations">View All Service Areas</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Video Section -->
-    <section class="section section--alt">
+    <section class="section section--pattern">
       <div class="container">
-        <h2 class="section__title animate-on-scroll animate-fade-up">Watch Our Work</h2>
-        <p class="section__subtitle animate-on-scroll animate-fade-up animate-delay-100">See our professional cleaning team in action. We take pride in delivering exceptional results on every job.</p>
-
-        <div class="grid grid--2 animate-on-scroll animate-fade-up animate-delay-200">
-          <div class="video-embed" data-video-id="hJ2YOZkyGs4">
-            <img src="https://img.youtube.com/vi/hJ2YOZkyGs4/maxresdefault.jpg" alt="Dorys Cleaning team professional cleaning demonstration video" class="video-embed__thumbnail" loading="lazy">
-            <button class="video-embed__play" aria-label="Play video">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            </button>
+        <div class="video-text-section">
+          <div class="video-text-section__video">
+            <div class="video-embed" data-video-id="hJ2YOZkyGs4">
+              <img src="https://img.youtube.com/vi/hJ2YOZkyGs4/maxresdefault.jpg" alt="Dorys Cleaning team professional cleaning demonstration video" class="video-embed__thumbnail" loading="lazy">
+              <button class="video-embed__play" aria-label="Play video">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
           </div>
-          <div class="video-embed" data-video-id="sTSS8julfA4">
-            <img src="https://img.youtube.com/vi/sTSS8julfA4/maxresdefault.jpg" alt="Dorys Janitorial cleaning services showcase video" class="video-embed__thumbnail" loading="lazy">
-            <button class="video-embed__play" aria-label="Play video">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            </button>
+          <div class="video-text-section__content">
+            <span class="video-text-section__badge">See Us in Action</span>
+            <h2 class="video-text-section__title">Professional Cleaning You Can Trust</h2>
+            <p class="video-text-section__text">Watch our experienced team transform spaces with attention to detail and professional-grade equipment. We don't just clean - we create healthier, more inviting environments.</p>
+            <ul class="video-text-section__list">
+              <li>Trained and certified cleaning professionals</li>
+              <li>Commercial-grade equipment and eco-friendly products</li>
+              <li>Consistent, reliable results every time</li>
+              <li>21+ years of experience in Massachusetts</li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary btn--lg" data-track="cta-video-quote">Get a Free Quote</a>
+          </div>
+        </div>
+
+        <div class="video-text-section video-text-section--reverse" style="margin-top: 5rem;">
+          <div class="video-text-section__video">
+            <div class="video-embed" data-video-id="sTSS8julfA4">
+              <img src="https://img.youtube.com/vi/sTSS8julfA4/maxresdefault.jpg" alt="Dorys Janitorial cleaning services showcase video" class="video-embed__thumbnail" loading="lazy">
+              <button class="video-embed__play" aria-label="Play video">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="video-text-section__content">
+            <span class="video-text-section__badge">Our Commitment</span>
+            <h2 class="video-text-section__title">Exceeding Expectations Since 2004</h2>
+            <p class="video-text-section__text">For over two decades, we've built our reputation on trust, quality, and exceptional customer service. Our clients aren't just customers - they're long-term partners.</p>
+            <ul class="video-text-section__list">
+              <li>Licensed (HIC #213341) and fully insured ($2M)</li>
+              <li>Flexible scheduling to fit your needs</li>
+              <li>100% satisfaction guarantee on every job</li>
+              <li>Clear communication from start to finish</li>
+            </ul>
+            <a href="tel:+19783078107" class="btn btn--primary btn--lg" data-track="cta-video-call">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              Call (978) 307-8107
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Reviews Section -->
-    <section class="section">
+    <section class="section section--gradient">
       <div class="container">
-        <h2 class="section__title animate-on-scroll animate-fade-up">What Our Customers Say</h2>
-        <p class="section__subtitle animate-on-scroll animate-fade-up animate-delay-100">Don't just take our word for it. See what our satisfied customers have to say about our cleaning services.</p>
+        <div class="section__header section__header--center">
+          <span class="section__badge">Testimonials</span>
+          <h2 class="section__title animate-on-scroll animate-fade-up">What Our Customers Say</h2>
+          <p class="section__description animate-on-scroll animate-fade-up animate-delay-100">Don't just take our word for it. See what our satisfied customers have to say about our cleaning services.</p>
+        </div>
 
-        <div class="review-widget animate-on-scroll animate-fade-up animate-delay-200">
+        <div class="reviews-widget-container animate-on-scroll animate-fade-up animate-delay-200">
           <script type='text/javascript' src='https://reputationhub.site/reputation/assets/review-widget.js'></script>
           <iframe class='lc_reviews_widget' src='https://reputationhub.site/reputation/widgets/review_widget/BQd0L6DeFvVbjKS8VYZ9' frameborder='0' scrolling='no' style='min-width: 100%; width: 100%;' title="Customer reviews for Dorys Janitorial Cleaning Services"></iframe>
         </div>
 
-        <div class="text-center mt-xl animate-on-scroll animate-fade-up animate-delay-300">
-          <a href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg" data-track="cta-leave-review">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            Leave Us a Review
-          </a>
+        <div class="text-center" style="margin-top: 2.5rem;">
+          <a href="reviews.html" class="btn btn--primary btn--lg" data-track="cta-all-reviews">Read All Reviews</a>
         </div>
       </div>
     </section>
@@ -776,14 +857,17 @@
     </section>
 
     <!-- Final CTA Section -->
-    <section class="section section--primary">
+    <section class="section--cta">
       <div class="container">
-        <div class="cta-box animate-on-scroll animate-fade-up" style="background: transparent; box-shadow: none;">
+        <div class="cta-box--large animate-on-scroll animate-fade-up">
           <h2 class="cta-box__title">Ready for a Cleaner Space?</h2>
           <p class="cta-box__text">Get your free, no-obligation quote today and discover why Massachusetts trusts Dorys Janitorial for all their cleaning needs.</p>
-          <div class="cta-box__buttons">
+          <div class="cta-box__actions">
             <a href="contact.html" class="btn btn--white btn--lg" data-track="cta-final-quote">Get Your Free Quote</a>
-            <a href="tel:+19783078107" class="btn btn--outline-light btn--lg" data-track="cta-final-call">Call (978) 307-8107</a>
+            <a href="tel:+19783078107" class="btn btn--outline-light btn--lg" data-track="cta-final-call">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              Call (978) 307-8107
+            </a>
           </div>
         </div>
       </div>
