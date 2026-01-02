@@ -79,18 +79,43 @@
   transform: translateY(-2px);
 }
 
-/* White Button */
-.btn--white {
+/* White Button - Ensures visibility on dark/colored backgrounds */
+.btn--white,
+.btn.btn--white,
+a.btn--white,
+button.btn--white {
   background-color: var(--color-secondary);
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
   border-color: var(--color-secondary);
 }
 
-.btn--white:hover {
+.btn--white:hover,
+.btn.btn--white:hover,
+a.btn--white:hover,
+button.btn--white:hover {
   background-color: transparent;
-  color: var(--color-secondary);
+  color: var(--color-secondary) !important;
   border-color: var(--color-secondary);
   transform: translateY(-2px);
+}
+
+/* White button in dark sections */
+.section--primary .btn--white,
+.section--dark .btn--white,
+.footer__cta .btn--white,
+.cta-box .btn--white {
+  background-color: #ffffff;
+  color: var(--color-primary) !important;
+  border-color: #ffffff;
+}
+
+.section--primary .btn--white:hover,
+.section--dark .btn--white:hover,
+.footer__cta .btn--white:hover,
+.cta-box .btn--white:hover {
+  background-color: transparent;
+  color: #ffffff !important;
+  border-color: #ffffff;
 }
 
 /* Outline Light (for dark backgrounds) */
