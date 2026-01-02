@@ -1,226 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!--
+    Dorys Cleaning Services - XML Sitemap Index
+    Total URLs: 620+
+    Last Updated: 2026-01-02
 
-  <!-- Main Pages -->
-  <url>
-    <loc>https://doryscleaningservices.com/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://doryscleaningservices.com/about.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://doryscleaningservices.com/contact.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://doryscleaningservices.com/reviews.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    This sitemap index contains references to all sub-sitemaps organized by content type.
+    Submit this file to Google Search Console: https://doryscleaningservices.com/sitemap.xml
+  -->
 
-  <!-- Services Index -->
-  <url>
-    <loc>https://doryscleaningservices.com/services/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- Main Pages (Homepage, About, Contact, Reviews, etc.) -->
+  <sitemap>
+    <loc>https://doryscleaningservices.com/sitemap-pages.xml</loc>
+    <lastmod>2026-01-02</lastmod>
+  </sitemap>
 
-  <!-- Service Main Pages -->
-  <url>
-    <loc>https://doryscleaningservices.com/services/janitorial-service/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://doryscleaningservices.com/services/deep-cleaning/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://doryscleaningservices.com/services/upholstery-cleaning/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://doryscleaningservices.com/services/carpet-cleaning/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://doryscleaningservices.com/services/general-housekeeping/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- Location Pages (101 cities in Massachusetts) -->
+  <sitemap>
+    <loc>https://doryscleaningservices.com/sitemap-locations.xml</loc>
+    <lastmod>2026-01-02</lastmod>
+  </sitemap>
 
-  <!-- Locations Index -->
-  <url>
-    <loc>https://doryscleaningservices.com/locations/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- Janitorial Service Pages (100+ city-specific pages) -->
+  <sitemap>
+    <loc>https://doryscleaningservices.com/sitemap-services-janitorial.xml</loc>
+    <lastmod>2026-01-02</lastmod>
+  </sitemap>
 
-  <!-- City Landing Pages -->
-  <url><loc>https://doryscleaningservices.com/locations/hudson-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/southborough-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/fayville-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/berlin-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/westborough-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/stow-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/northborough-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/sudbury-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/bolton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/framingham-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/maynard-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/woodville-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/ashland-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/clinton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/hopkinton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/wayland-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/boxborough-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/boylston-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/south-lancaster-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/acton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/lancaster-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/shrewsbury-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/harvard-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/still-river-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/natick-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/concord-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/holliston-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/sherborn-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/north-grafton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/west-boylston-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/weston-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/lincoln-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/upton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/grafton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/wellesley-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/village-of-nagog-woods-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/sterling-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/littleton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/devens-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/milford-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/wellesley-hills-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/south-grafton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/ayer-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/worcester-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/newton-lower-falls-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/babson-park-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/auburndale-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/northbridge-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/medway-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/holden-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/waltham-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/shirley-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/hanscom-afb-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/dover-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/hopedale-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/millbury-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/carlisle-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/millis-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/west-newton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/waban-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/needham-heights-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/leominster-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/bedford-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/needham-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/newton-upper-falls-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/north-waltham-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/medfield-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/jefferson-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/newton-center-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/newtonville-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/east-princeton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/westford-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/nonantum-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/whitinsville-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/readville-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/mendon-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/newton-highlands-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/sutton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/west-groton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/lexington-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/groton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/auburn-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/newton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/west-millbury-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/linwood-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/princeton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/waverley-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/cherry-valley-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/belmont-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/lunenburg-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/north-uxbridge-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/nutting-lake-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/arlington-heights-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/franklin-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/chelmsford-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/chestnut-hill-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/bellingham-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/westwood-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/paxton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/norfolk-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://doryscleaningservices.com/locations/marlborough-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Deep Cleaning Service Pages (100+ city-specific pages) -->
+  <sitemap>
+    <loc>https://doryscleaningservices.com/sitemap-services-deep-cleaning.xml</loc>
+    <lastmod>2026-01-02</lastmod>
+  </sitemap>
 
-  <!-- Service + City Pages (sample - full list generated by build script) -->
-  <!-- Janitorial Service -->
-  <url><loc>https://doryscleaningservices.com/services/janitorial-service/hudson-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/janitorial-service/framingham-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/janitorial-service/marlborough-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/janitorial-service/worcester-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/janitorial-service/natick-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/janitorial-service/westborough-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/janitorial-service/wellesley-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/janitorial-service/newton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Carpet Cleaning Service Pages (100+ city-specific pages) -->
+  <sitemap>
+    <loc>https://doryscleaningservices.com/sitemap-services-carpet-cleaning.xml</loc>
+    <lastmod>2026-01-02</lastmod>
+  </sitemap>
 
-  <!-- Deep Cleaning -->
-  <url><loc>https://doryscleaningservices.com/services/deep-cleaning/hudson-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/deep-cleaning/framingham-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/deep-cleaning/marlborough-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/deep-cleaning/worcester-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/deep-cleaning/natick-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/deep-cleaning/westborough-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/deep-cleaning/wellesley-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/deep-cleaning/newton-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- General Housekeeping Service Pages (100+ city-specific pages) -->
+  <sitemap>
+    <loc>https://doryscleaningservices.com/sitemap-services-general-housekeeping.xml</loc>
+    <lastmod>2026-01-02</lastmod>
+  </sitemap>
 
-  <!-- Upholstery Cleaning -->
-  <url><loc>https://doryscleaningservices.com/services/upholstery-cleaning/hudson-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/upholstery-cleaning/framingham-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/upholstery-cleaning/marlborough-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/upholstery-cleaning/worcester-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/upholstery-cleaning/natick-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-
-  <!-- Carpet Cleaning -->
-  <url><loc>https://doryscleaningservices.com/services/carpet-cleaning/hudson-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/carpet-cleaning/framingham-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/carpet-cleaning/marlborough-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/carpet-cleaning/worcester-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/carpet-cleaning/natick-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-
-  <!-- General Housekeeping -->
-  <url><loc>https://doryscleaningservices.com/services/general-housekeeping/hudson-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/general-housekeeping/framingham-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/general-housekeeping/marlborough-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/general-housekeeping/worcester-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://doryscleaningservices.com/services/general-housekeeping/natick-ma.html</loc><lastmod>2025-01-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-
-</urlset>
+  <!-- Upholstery Cleaning Service Pages (100+ city-specific pages) -->
+  <sitemap>
+    <loc>https://doryscleaningservices.com/sitemap-services-upholstery-cleaning.xml</loc>
+    <lastmod>2026-01-02</lastmod>
+  </sitemap>
+</sitemapindex>
