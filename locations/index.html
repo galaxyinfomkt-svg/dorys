@@ -116,76 +116,180 @@
   </script>
 
   <style>
-    .locations-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: var(--space-md);
-      margin-top: var(--space-xl);
-    }
-
-    .location-card {
-      background: var(--color-white);
-      border-radius: var(--radius-lg);
-      padding: var(--space-lg);
+    /* Service-First Layout Styles */
+    .service-areas-intro {
       text-align: center;
-      transition: all var(--transition-base);
-      border: 1px solid var(--color-gray-200);
-      text-decoration: none;
-      color: var(--color-text);
+      max-width: 800px;
+      margin: 0 auto 3rem;
     }
 
-    .location-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-lg);
-      border-color: var(--color-primary);
+    .service-areas-intro p {
+      font-size: 1.125rem;
+      color: #64748b;
+      line-height: 1.7;
     }
 
-    .location-card__name {
-      font-weight: var(--font-weight-semibold);
-      font-size: var(--font-size-lg);
-      color: var(--color-text);
-      margin-bottom: var(--space-xs);
+    /* Service Block Styles */
+    .service-block {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s ease;
     }
 
-    .location-card__county {
-      font-size: var(--font-size-sm);
-      color: var(--color-text-muted);
+    .service-block:hover {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      transform: translateY(-2px);
     }
 
-    .location-card__icon {
-      width: 40px;
-      height: 40px;
-      background: var(--color-primary-light);
-      border-radius: var(--radius-full);
+    .service-block--alt {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    }
+
+    .service-block__header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-block__icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #2b70e4 0%, #1e5bb8 100%);
+      border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto var(--space-md);
-      color: var(--color-primary);
+      flex-shrink: 0;
     }
 
-    .county-section {
-      margin-bottom: var(--space-3xl);
+    .service-block__icon svg {
+      width: 28px;
+      height: 28px;
+      fill: #ffffff;
     }
 
-    .county-section__title {
-      font-size: var(--font-size-2xl);
-      font-weight: var(--font-weight-bold);
-      color: var(--color-text);
-      margin-bottom: var(--space-lg);
-      padding-bottom: var(--space-sm);
-      border-bottom: 3px solid var(--color-primary);
-      display: inline-block;
+    .service-block__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin: 0;
     }
 
+    .service-block__description {
+      font-size: 1rem;
+      color: #64748b;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      max-width: 800px;
+    }
+
+    .service-block__cities {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .city-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.625rem 1rem;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      color: #334155;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .city-link:hover {
+      background: #2b70e4;
+      color: #ffffff;
+      border-color: #2b70e4;
+      transform: translateY(-2px);
+    }
+
+    .city-link svg {
+      width: 16px;
+      height: 16px;
+      fill: #2b70e4;
+      flex-shrink: 0;
+    }
+
+    .city-link:hover svg {
+      fill: #ffffff;
+    }
+
+    .service-block__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.875rem 1.5rem;
+      background: linear-gradient(135deg, #2b70e4 0%, #1e5bb8 100%);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 0.9375rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 14px rgba(43, 112, 228, 0.3);
+    }
+
+    .service-block__cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(43, 112, 228, 0.4);
+    }
+
+    .service-block__cta svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Stats Bar */
+    .stats-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+      padding: 2rem;
+      background: linear-gradient(135deg, #1e40af 0%, #2b70e4 100%);
+      border-radius: 16px;
+      margin-bottom: 3rem;
+    }
+
+    .stats-bar__item {
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .stats-bar__number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      display: block;
+    }
+
+    .stats-bar__label {
+      font-size: 0.875rem;
+      opacity: 0.9;
+    }
+
+    /* Map Section */
     .map-section {
-      margin-top: var(--space-3xl);
+      margin-top: 3rem;
     }
 
     .map-container {
-      border-radius: var(--radius-xl);
+      border-radius: 16px;
       overflow: hidden;
-      box-shadow: var(--shadow-xl);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
     }
 
     .map-container iframe {
@@ -194,24 +298,74 @@
       border: none;
     }
 
-    @media (max-width: 767px) {
-      .locations-grid {
+    /* All Cities Section */
+    .all-cities-section {
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+      padding: 4rem 0;
+      margin-top: 3rem;
+    }
+
+    .all-cities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 0.5rem;
+    }
+
+    .all-cities-grid a {
+      padding: 0.5rem 0.75rem;
+      color: #475569;
+      font-size: 0.875rem;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .all-cities-grid a:hover {
+      background: #2b70e4;
+      color: #ffffff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .service-block {
+        padding: 1.5rem;
+      }
+
+      .service-block__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+
+      .service-block__icon {
+        width: 48px;
+        height: 48px;
+      }
+
+      .service-block__title {
+        font-size: 1.25rem;
+      }
+
+      .service-block__cities {
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--space-sm);
       }
 
-      .location-card {
-        padding: var(--space-md);
+      .city-link {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.875rem;
       }
 
-      .location-card__name {
-        font-size: var(--font-size-base);
+      .stats-bar {
+        gap: 2rem;
+        padding: 1.5rem;
       }
 
-      .location-card__icon {
-        width: 32px;
-        height: 32px;
-        margin-bottom: var(--space-sm);
+      .stats-bar__number {
+        font-size: 2rem;
+      }
+
+      .all-cities-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   </style>
@@ -361,469 +515,258 @@
       </div>
       <div class="container">
         <div class="hero__content hero__content--center animate-fade-in-up">
-          <h1 class="hero__title">Our Service Areas</h1>
-          <p class="hero__subtitle">Professional cleaning services across 100+ Massachusetts cities. From Hudson to Worcester, we're your local cleaning experts.</p>
-          <div class="hero__stats">
-            <div class="hero__stat">
-              <span class="hero__stat-number">100+</span>
-              <span class="hero__stat-label">Cities Served</span>
-            </div>
-            <div class="hero__stat">
-              <span class="hero__stat-number">21</span>
-              <span class="hero__stat-label">Years Experience</span>
-            </div>
-            <div class="hero__stat">
-              <span class="hero__stat-number">5</span>
-              <span class="hero__stat-label">Services Offered</span>
-            </div>
-          </div>
+          <h1 class="hero__title">Professional Cleaning Services Across Massachusetts</h1>
+          <p class="hero__subtitle">Choose your service below to find professional cleaning in your city. We serve 100+ locations with 5 specialized cleaning services.</p>
         </div>
       </div>
     </section>
 
-    <!-- Middlesex County Section -->
-    <section class="section">
+    <!-- Service Areas by Service Type -->
+    <section class="section" style="background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);">
       <div class="container">
-        <div class="county-section animate-fade-in-up">
-          <h2 class="county-section__title">Middlesex County</h2>
-          <div class="locations-grid">
-            <a href="hudson-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Hudson</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="stow-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Stow</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="sudbury-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Sudbury</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="framingham-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Framingham</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="maynard-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Maynard</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="ashland-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Ashland</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="hopkinton-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Hopkinton</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="wayland-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Wayland</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="boxborough-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Boxborough</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="acton-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Acton</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="natick-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Natick</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="concord-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Concord</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="holliston-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Holliston</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="sherborn-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Sherborn</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="weston-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Weston</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="lincoln-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Lincoln</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="littleton-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Littleton</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="ayer-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Ayer</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="waltham-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Waltham</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="shirley-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Shirley</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="carlisle-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Carlisle</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="westford-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Westford</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="lexington-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Lexington</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="groton-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Groton</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="newton-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Newton</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="belmont-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Belmont</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="bedford-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Bedford</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="chelmsford-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Chelmsford</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
-            <a href="marlborough-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Marlborough</div>
-              <div class="location-card__county">Middlesex County</div>
-            </a>
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+          <div class="stats-bar__item">
+            <span class="stats-bar__number">100+</span>
+            <span class="stats-bar__label">Cities Served</span>
+          </div>
+          <div class="stats-bar__item">
+            <span class="stats-bar__number">21+</span>
+            <span class="stats-bar__label">Years Experience</span>
+          </div>
+          <div class="stats-bar__item">
+            <span class="stats-bar__number">5</span>
+            <span class="stats-bar__label">Services Offered</span>
+          </div>
+          <div class="stats-bar__item">
+            <span class="stats-bar__number">$2M</span>
+            <span class="stats-bar__label">Insurance Coverage</span>
           </div>
         </div>
 
-        <div class="county-section animate-fade-in-up" style="--animation-delay: 0.2s">
-          <h2 class="county-section__title">Worcester County</h2>
-          <div class="locations-grid">
-            <a href="worcester-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Worcester</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="southborough-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Southborough</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="berlin-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Berlin</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="westborough-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Westborough</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="northborough-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Northborough</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="bolton-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Bolton</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="clinton-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Clinton</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="boylston-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Boylston</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="lancaster-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Lancaster</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="shrewsbury-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Shrewsbury</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="harvard-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Harvard</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="west-boylston-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">West Boylston</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="upton-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Upton</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="grafton-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Grafton</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="sterling-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Sterling</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="milford-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Milford</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="holden-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Holden</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="millbury-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Millbury</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="leominster-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Leominster</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="auburn-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Auburn</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-            <a href="lunenburg-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Lunenburg</div>
-              <div class="location-card__county">Worcester County</div>
-            </a>
-          </div>
+        <!-- Introduction -->
+        <div class="service-areas-intro">
+          <p>We provide comprehensive cleaning solutions throughout Massachusetts. Select a service below to see all the cities where we offer that specific cleaning service, then click your city for local pricing and availability.</p>
         </div>
 
-        <div class="county-section animate-fade-in-up" style="--animation-delay: 0.4s">
-          <h2 class="county-section__title">Norfolk County</h2>
-          <div class="locations-grid">
-            <a href="wellesley-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Wellesley</div>
-              <div class="location-card__county">Norfolk County</div>
-            </a>
-            <a href="medway-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Medway</div>
-              <div class="location-card__county">Norfolk County</div>
-            </a>
-            <a href="dover-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Dover</div>
-              <div class="location-card__county">Norfolk County</div>
-            </a>
-            <a href="millis-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Millis</div>
-              <div class="location-card__county">Norfolk County</div>
-            </a>
-            <a href="needham-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Needham</div>
-              <div class="location-card__county">Norfolk County</div>
-            </a>
-            <a href="medfield-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Medfield</div>
-              <div class="location-card__county">Norfolk County</div>
-            </a>
-            <a href="franklin-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Franklin</div>
-              <div class="location-card__county">Norfolk County</div>
-            </a>
-            <a href="bellingham-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Bellingham</div>
-              <div class="location-card__county">Norfolk County</div>
-            </a>
-            <a href="westwood-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Westwood</div>
-              <div class="location-card__county">Norfolk County</div>
-            </a>
-            <a href="norfolk-ma.html" class="location-card">
-              <div class="location-card__icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <div class="location-card__name">Norfolk</div>
-              <div class="location-card__county">Norfolk County</div>
-            </a>
+        <!-- Deep Cleaning Service Block -->
+        <div class="service-block">
+          <div class="service-block__header">
+            <div class="service-block__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <h2 class="service-block__title">Deep Cleaning Services</h2>
+          </div>
+          <p class="service-block__description">Thorough top-to-bottom cleaning that reaches every corner. Perfect for move-ins, move-outs, seasonal cleaning, post-construction, or when your space needs extra attention. Our deep cleaning goes beyond regular maintenance to restore your home or office.</p>
+          <div class="service-block__cities">
+            <a href="../services/deep-cleaning/worcester-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Worcester</a>
+            <a href="../services/deep-cleaning/framingham-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Framingham</a>
+            <a href="../services/deep-cleaning/marlborough-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Marlborough</a>
+            <a href="../services/deep-cleaning/hudson-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Hudson</a>
+            <a href="../services/deep-cleaning/westborough-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Westborough</a>
+            <a href="../services/deep-cleaning/natick-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Natick</a>
+            <a href="../services/deep-cleaning/newton-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Newton</a>
+            <a href="../services/deep-cleaning/wellesley-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Wellesley</a>
+            <a href="../services/deep-cleaning/lexington-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Lexington</a>
+            <a href="../services/deep-cleaning/concord-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Concord</a>
+            <a href="../services/deep-cleaning/sudbury-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Sudbury</a>
+            <a href="../services/deep-cleaning/acton-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Acton</a>
+            <a href="../services/deep-cleaning/waltham-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Waltham</a>
+            <a href="../services/deep-cleaning/shrewsbury-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Shrewsbury</a>
+            <a href="../services/deep-cleaning/northborough-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Northborough</a>
+          </div>
+          <a href="../services/deep-cleaning/" class="service-block__cta">
+            View All Deep Cleaning Locations
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Janitorial Service Block -->
+        <div class="service-block service-block--alt">
+          <div class="service-block__header">
+            <div class="service-block__icon">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14h-2v-4H8l4-4 4 4h-2v4z"/></svg>
+            </div>
+            <h2 class="service-block__title">Janitorial Services</h2>
+          </div>
+          <p class="service-block__description">Professional commercial cleaning for offices, warehouses, retail spaces, and corporate facilities. We offer flexible daily, weekly, or monthly cleaning schedules tailored to your business needs. Keep your workspace spotless and professional.</p>
+          <div class="service-block__cities">
+            <a href="../services/janitorial-service/worcester-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Worcester</a>
+            <a href="../services/janitorial-service/framingham-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Framingham</a>
+            <a href="../services/janitorial-service/marlborough-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Marlborough</a>
+            <a href="../services/janitorial-service/hudson-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Hudson</a>
+            <a href="../services/janitorial-service/westborough-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Westborough</a>
+            <a href="../services/janitorial-service/natick-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Natick</a>
+            <a href="../services/janitorial-service/newton-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Newton</a>
+            <a href="../services/janitorial-service/wellesley-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Wellesley</a>
+            <a href="../services/janitorial-service/lexington-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Lexington</a>
+            <a href="../services/janitorial-service/waltham-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Waltham</a>
+            <a href="../services/janitorial-service/shrewsbury-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Shrewsbury</a>
+            <a href="../services/janitorial-service/northborough-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Northborough</a>
+          </div>
+          <a href="../services/janitorial-service/" class="service-block__cta">
+            View All Janitorial Locations
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Carpet Cleaning Service Block -->
+        <div class="service-block">
+          <div class="service-block__header">
+            <div class="service-block__icon">
+              <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+            </div>
+            <h2 class="service-block__title">Carpet Cleaning Services</h2>
+          </div>
+          <p class="service-block__description">Professional carpet cleaning using advanced steam and dry cleaning methods. We remove deep stains, odors, allergens, and restore your carpets to like-new condition. Safe for all carpet types including delicate fibers.</p>
+          <div class="service-block__cities">
+            <a href="../services/carpet-cleaning/worcester-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Worcester</a>
+            <a href="../services/carpet-cleaning/framingham-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Framingham</a>
+            <a href="../services/carpet-cleaning/marlborough-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Marlborough</a>
+            <a href="../services/carpet-cleaning/hudson-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Hudson</a>
+            <a href="../services/carpet-cleaning/westborough-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Westborough</a>
+            <a href="../services/carpet-cleaning/natick-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Natick</a>
+            <a href="../services/carpet-cleaning/newton-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Newton</a>
+            <a href="../services/carpet-cleaning/wellesley-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Wellesley</a>
+            <a href="../services/carpet-cleaning/lexington-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Lexington</a>
+            <a href="../services/carpet-cleaning/waltham-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Waltham</a>
+            <a href="../services/carpet-cleaning/shrewsbury-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Shrewsbury</a>
+            <a href="../services/carpet-cleaning/needham-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Needham</a>
+          </div>
+          <a href="../services/carpet-cleaning/" class="service-block__cta">
+            View All Carpet Cleaning Locations
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Upholstery Cleaning Service Block -->
+        <div class="service-block service-block--alt">
+          <div class="service-block__header">
+            <div class="service-block__icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/></svg>
+            </div>
+            <h2 class="service-block__title">Upholstery Cleaning Services</h2>
+          </div>
+          <p class="service-block__description">Expert cleaning for sofas, chairs, ottomans, and all upholstered furniture. We safely remove stains, odors, and allergens while preserving fabric integrity. Extend the life of your furniture with professional care.</p>
+          <div class="service-block__cities">
+            <a href="../services/upholstery-cleaning/worcester-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Worcester</a>
+            <a href="../services/upholstery-cleaning/framingham-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Framingham</a>
+            <a href="../services/upholstery-cleaning/marlborough-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Marlborough</a>
+            <a href="../services/upholstery-cleaning/hudson-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Hudson</a>
+            <a href="../services/upholstery-cleaning/westborough-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Westborough</a>
+            <a href="../services/upholstery-cleaning/natick-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Natick</a>
+            <a href="../services/upholstery-cleaning/newton-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Newton</a>
+            <a href="../services/upholstery-cleaning/wellesley-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Wellesley</a>
+            <a href="../services/upholstery-cleaning/lexington-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Lexington</a>
+            <a href="../services/upholstery-cleaning/waltham-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Waltham</a>
+            <a href="../services/upholstery-cleaning/shrewsbury-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Shrewsbury</a>
+            <a href="../services/upholstery-cleaning/concord-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Concord</a>
+          </div>
+          <a href="../services/upholstery-cleaning/" class="service-block__cta">
+            View All Upholstery Cleaning Locations
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- General Housekeeping Service Block -->
+        <div class="service-block">
+          <div class="service-block__header">
+            <div class="service-block__icon">
+              <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            </div>
+            <h2 class="service-block__title">General Housekeeping Services</h2>
+          </div>
+          <p class="service-block__description">Comprehensive home cleaning services including dusting, vacuuming, mopping, kitchen and bathroom cleaning. Regular maintenance cleaning to keep your home fresh and comfortable. Weekly, bi-weekly, or monthly options available.</p>
+          <div class="service-block__cities">
+            <a href="../services/general-housekeeping/worcester-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Worcester</a>
+            <a href="../services/general-housekeeping/framingham-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Framingham</a>
+            <a href="../services/general-housekeeping/marlborough-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Marlborough</a>
+            <a href="../services/general-housekeeping/hudson-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Hudson</a>
+            <a href="../services/general-housekeeping/westborough-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Westborough</a>
+            <a href="../services/general-housekeeping/natick-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Natick</a>
+            <a href="../services/general-housekeeping/newton-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Newton</a>
+            <a href="../services/general-housekeeping/wellesley-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Wellesley</a>
+            <a href="../services/general-housekeeping/lexington-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Lexington</a>
+            <a href="../services/general-housekeeping/waltham-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Waltham</a>
+            <a href="../services/general-housekeeping/sudbury-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Sudbury</a>
+            <a href="../services/general-housekeeping/wayland-ma.html" class="city-link"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Wayland</a>
+          </div>
+          <a href="../services/general-housekeeping/" class="service-block__cta">
+            View All Housekeeping Locations
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- All Cities Section -->
+        <div class="all-cities-section" style="background: #f8fafc; border-radius: 16px; padding: 2rem; margin-top: 2rem;">
+          <h3 style="text-align: center; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #1e293b;">Browse All 100+ Service Locations</h3>
+          <p style="text-align: center; color: #64748b; margin-bottom: 1.5rem;">Click any city below to see all services available in that location</p>
+          <div class="all-cities-grid">
+            <a href="acton-ma.html">Acton</a>
+            <a href="ashland-ma.html">Ashland</a>
+            <a href="auburn-ma.html">Auburn</a>
+            <a href="ayer-ma.html">Ayer</a>
+            <a href="bedford-ma.html">Bedford</a>
+            <a href="bellingham-ma.html">Bellingham</a>
+            <a href="belmont-ma.html">Belmont</a>
+            <a href="berlin-ma.html">Berlin</a>
+            <a href="bolton-ma.html">Bolton</a>
+            <a href="boxborough-ma.html">Boxborough</a>
+            <a href="boylston-ma.html">Boylston</a>
+            <a href="carlisle-ma.html">Carlisle</a>
+            <a href="chelmsford-ma.html">Chelmsford</a>
+            <a href="clinton-ma.html">Clinton</a>
+            <a href="concord-ma.html">Concord</a>
+            <a href="dover-ma.html">Dover</a>
+            <a href="framingham-ma.html">Framingham</a>
+            <a href="franklin-ma.html">Franklin</a>
+            <a href="grafton-ma.html">Grafton</a>
+            <a href="groton-ma.html">Groton</a>
+            <a href="harvard-ma.html">Harvard</a>
+            <a href="holden-ma.html">Holden</a>
+            <a href="holliston-ma.html">Holliston</a>
+            <a href="hopkinton-ma.html">Hopkinton</a>
+            <a href="hudson-ma.html">Hudson</a>
+            <a href="lancaster-ma.html">Lancaster</a>
+            <a href="leominster-ma.html">Leominster</a>
+            <a href="lexington-ma.html">Lexington</a>
+            <a href="lincoln-ma.html">Lincoln</a>
+            <a href="littleton-ma.html">Littleton</a>
+            <a href="lunenburg-ma.html">Lunenburg</a>
+            <a href="marlborough-ma.html">Marlborough</a>
+            <a href="maynard-ma.html">Maynard</a>
+            <a href="medfield-ma.html">Medfield</a>
+            <a href="medway-ma.html">Medway</a>
+            <a href="milford-ma.html">Milford</a>
+            <a href="millbury-ma.html">Millbury</a>
+            <a href="millis-ma.html">Millis</a>
+            <a href="natick-ma.html">Natick</a>
+            <a href="needham-ma.html">Needham</a>
+            <a href="newton-ma.html">Newton</a>
+            <a href="norfolk-ma.html">Norfolk</a>
+            <a href="northborough-ma.html">Northborough</a>
+            <a href="sherborn-ma.html">Sherborn</a>
+            <a href="shirley-ma.html">Shirley</a>
+            <a href="shrewsbury-ma.html">Shrewsbury</a>
+            <a href="southborough-ma.html">Southborough</a>
+            <a href="sterling-ma.html">Sterling</a>
+            <a href="stow-ma.html">Stow</a>
+            <a href="sudbury-ma.html">Sudbury</a>
+            <a href="upton-ma.html">Upton</a>
+            <a href="waltham-ma.html">Waltham</a>
+            <a href="wayland-ma.html">Wayland</a>
+            <a href="wellesley-ma.html">Wellesley</a>
+            <a href="west-boylston-ma.html">West Boylston</a>
+            <a href="westborough-ma.html">Westborough</a>
+            <a href="westford-ma.html">Westford</a>
+            <a href="weston-ma.html">Weston</a>
+            <a href="westwood-ma.html">Westwood</a>
+            <a href="worcester-ma.html">Worcester</a>
           </div>
         </div>
 
         <!-- Map Section -->
-        <div class="map-section animate-fade-in-up" style="--animation-delay: 0.6s">
+        <div class="map-section">
           <div class="section__header section__header--center">
             <span class="section__badge">Location</span>
             <h2 class="section__title">Our Service Area Map</h2>
@@ -839,7 +782,7 @@
     <!-- CTA Section -->
     <section class="section section--cta">
       <div class="container">
-        <div class="cta-box cta-box--large animate-fade-in-up">
+        <div class="cta-box cta-box--large">
           <div class="cta-box__content">
             <h2 class="cta-box__title">Don't See Your City Listed?</h2>
             <p class="cta-box__text">We may still be able to help! Contact us to inquire about service in your area. We're constantly expanding our coverage across Massachusetts.</p>
