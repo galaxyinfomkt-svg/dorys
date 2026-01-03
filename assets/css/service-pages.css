@@ -117,33 +117,37 @@
 .process-step__title {
   font-size: 1rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: #1a1a2e !important;
   margin-bottom: 0.5rem;
 }
 
 .process-step__text {
   font-size: 0.875rem;
-  color: #64748b;
+  color: #64748b !important;
   line-height: 1.5;
   margin: 0;
 }
 
 /* Section gradient background for process - DARK TEXT on light gradient */
-.section--gradient .process-step__title {
-  color: #1a1a2e;
+.section--gradient .process-step__title,
+.section .process-step__title {
+  color: #1a1a2e !important;
 }
 
-.section--gradient .process-step__text {
-  color: #64748b;
+.section--gradient .process-step__text,
+.section .process-step__text {
+  color: #64748b !important;
 }
 
 /* Section title and description on gradient */
-.section--gradient .section__title {
-  color: #1a1a2e;
+.section--gradient .section__title,
+.section .section__title {
+  color: #1a1a2e !important;
 }
 
-.section--gradient .section__description {
-  color: #64748b;
+.section--gradient .section__description,
+.section .section__description {
+  color: #64748b !important;
 }
 
 .section--gradient .section__badge {
@@ -152,9 +156,10 @@
 }
 
 /* Ensure process number remains white on blue background */
-.section--gradient .process-step__number {
+.section--gradient .process-step__number,
+.section .process-step__number {
   background: linear-gradient(135deg, #2b70e4 0%, #1e5bb8 100%);
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 /* --------------------------------------------------------------------------
@@ -247,7 +252,7 @@
 
 .image-divider__content {
   text-align: center;
-  color: #ffffff;
+  color: #ffffff !important;
   max-width: 700px;
   padding: 3rem 2rem;
 }
@@ -256,15 +261,15 @@
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 800;
   margin-bottom: 1rem;
-  color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .image-divider__text {
   font-size: 1.125rem;
-  color: rgba(255, 255, 255, 0.95);
+  color: #ffffff !important;
   margin-bottom: 2rem;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
 /* --------------------------------------------------------------------------
