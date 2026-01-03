@@ -115,9 +115,20 @@
 }
 
 .footer__logo img {
-  height: 60px;
+  height: 70px;
   width: auto;
-  filter: brightness(0) invert(1);
+  border-radius: var(--radius-md);
+  background: #fff;
+  padding: 4px;
+}
+
+.footer__logo-img {
+  display: block;
+  height: 70px;
+  width: auto;
+  border-radius: var(--radius-md);
+  background: #fff;
+  padding: 4px;
 }
 
 .footer__logo-text {
