@@ -1,0 +1,542 @@
+/* ==========================================================================
+   SERVICE-PAGES.CSS - Styles for Service+City Pages
+   Fixes for BEM naming convention used in generated pages
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Benefits Grid
+   -------------------------------------------------------------------------- */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.benefit-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(43, 112, 228, 0.08);
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.benefit-card__icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, rgba(43, 112, 228, 0.1) 0%, rgba(43, 112, 228, 0.05) 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+}
+
+.benefit-card__icon svg {
+  width: 32px;
+  height: 32px;
+  color: #2b70e4;
+}
+
+.benefit-card__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-card__text {
+  font-size: 0.9375rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Process Steps (with BEM naming)
+   -------------------------------------------------------------------------- */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.process-step {
+  text-align: center;
+  position: relative;
+}
+
+.process-step__number {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #2b70e4 0%, #1e5bb8 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(43, 112, 228, 0.3);
+}
+
+.process-step__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.process-step__text {
+  font-size: 0.875rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Section gradient background for process */
+.section--gradient .process-step__title {
+  color: #ffffff;
+}
+
+.section--gradient .process-step__text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* --------------------------------------------------------------------------
+   Trust Facts
+   -------------------------------------------------------------------------- */
+.trust-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trust-fact {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(43, 112, 228, 0.04);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.trust-fact:hover {
+  background: rgba(43, 112, 228, 0.08);
+}
+
+.trust-fact__icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: linear-gradient(135deg, #2b70e4 0%, #1e5bb8 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trust-fact__icon svg {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+}
+
+.trust-fact__content {
+  flex: 1;
+}
+
+.trust-fact__content strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.25rem;
+}
+
+.trust-fact__content p {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Image Divider Section
+   -------------------------------------------------------------------------- */
+.image-divider {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.image-divider > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-divider__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(43, 112, 228, 0.8) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-divider__content {
+  text-align: center;
+  color: #ffffff;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.image-divider__title {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.image-divider__text {
+  font-size: 1.125rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   Image Card
+   -------------------------------------------------------------------------- */
+.image-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.image-card__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-card__badge {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  background: linear-gradient(135deg, #2b70e4 0%, #1e5bb8 100%);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(43, 112, 228, 0.4);
+}
+
+/* --------------------------------------------------------------------------
+   Image Gallery
+   -------------------------------------------------------------------------- */
+.image-gallery {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.image-gallery__main {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Nearby Cities
+   -------------------------------------------------------------------------- */
+.nearby-cities {
+  text-align: center;
+}
+
+.nearby-cities__featured {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.nearby-city-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(43, 112, 228, 0.08);
+  border-radius: 50px;
+  color: #2b70e4;
+  font-weight: 600;
+}
+
+.nearby-city-card--active {
+  background: linear-gradient(135deg, #2b70e4 0%, #1e5bb8 100%);
+  color: #ffffff;
+}
+
+.nearby-city-card svg {
+  width: 20px;
+  height: 20px;
+}
+
+.nearby-cities__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.nearby-cities__link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #f1f5f9;
+  border-radius: 50px;
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nearby-cities__link:hover {
+  background: #2b70e4;
+  color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   CTA Box Large
+   -------------------------------------------------------------------------- */
+.section--cta {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.cta-box--large {
+  background: linear-gradient(135deg, #2b70e4 0%, #1e5bb8 100%);
+  border-radius: 24px;
+  padding: 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-box--large::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cta-box__badge {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+}
+
+.cta-box__title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.cta-box__text {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.cta-box__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-box__trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 767px) {
+  .cta-box--large {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .cta-box__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-box__actions .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Grid Layouts
+   -------------------------------------------------------------------------- */
+.grid {
+  display: grid;
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 991px) {
+  .grid--2 {
+    grid-template-columns: 1fr;
+    gap: 2rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   List Styles
+   -------------------------------------------------------------------------- */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list--check li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+  color: #334155;
+}
+
+.list--check li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* --------------------------------------------------------------------------
+   Button Group
+   -------------------------------------------------------------------------- */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Spacing Utilities
+   -------------------------------------------------------------------------- */
+.mb-lg {
+  margin-bottom: 1.5rem;
+}
+
+.mb-xl {
+  margin-bottom: 2rem;
+}
+
+.mt-xl {
+  margin-top: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Section Alternate Background
+   -------------------------------------------------------------------------- */
+.section--alt {
+  background: #f8fafc;
+}
+
+/* --------------------------------------------------------------------------
+   Container Narrow
+   -------------------------------------------------------------------------- */
+.container--narrow {
+  max-width: 800px;
+}
+
+/* --------------------------------------------------------------------------
+   Section Title Left Aligned
+   -------------------------------------------------------------------------- */
+.section__title--left {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  text-align: left;
+}

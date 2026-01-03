@@ -114,21 +114,18 @@
   margin-bottom: var(--space-lg);
 }
 
-.footer__logo img {
-  height: 70px;
-  width: auto;
-  border-radius: var(--radius-md);
-  background: #fff;
-  padding: 4px;
-}
-
+.footer__logo img,
 .footer__logo-img {
-  display: block;
+  display: block !important;
   height: 70px;
   width: auto;
   border-radius: var(--radius-md);
-  background: #fff;
-  padding: 4px;
+  background: #ffffff !important;
+  padding: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  filter: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .footer__logo-text {
