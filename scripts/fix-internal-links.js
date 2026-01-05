@@ -57,12 +57,28 @@ function fixInternalLinks(content) {
   content = content.replace(/href="services\/index\.html"/g, 'href="/services"');
   content = content.replace(/href="locations\/index\.html"/g, 'href="/locations"');
 
-  // Fix service index pages
+  // Fix service index pages (with ../ prefix)
   content = content.replace(/href="(\.\.\/)*services\/janitorial-service\/index\.html"/g, 'href="/services/janitorial-service"');
   content = content.replace(/href="(\.\.\/)*services\/deep-cleaning\/index\.html"/g, 'href="/services/deep-cleaning"');
   content = content.replace(/href="(\.\.\/)*services\/carpet-cleaning\/index\.html"/g, 'href="/services/carpet-cleaning"');
   content = content.replace(/href="(\.\.\/)*services\/general-housekeeping\/index\.html"/g, 'href="/services/general-housekeeping"');
   content = content.replace(/href="(\.\.\/)*services\/upholstery-cleaning\/index\.html"/g, 'href="/services/upholstery-cleaning"');
+
+  // Fix relative service index pages (without ../ prefix - from /services/index.html)
+  content = content.replace(/href="janitorial-service\/index\.html"/g, 'href="/services/janitorial-service"');
+  content = content.replace(/href="deep-cleaning\/index\.html"/g, 'href="/services/deep-cleaning"');
+  content = content.replace(/href="carpet-cleaning\/index\.html"/g, 'href="/services/carpet-cleaning"');
+  content = content.replace(/href="general-housekeeping\/index\.html"/g, 'href="/services/general-housekeeping"');
+  content = content.replace(/href="upholstery-cleaning\/index\.html"/g, 'href="/services/upholstery-cleaning"');
+
+  // Fix relative location pages (without ../ prefix - from /locations/index.html)
+  content = content.replace(/href="([a-z-]+)-ma\.html"/g, function(match, city) {
+    // Only match if it looks like a city slug (lowercase letters and hyphens)
+    if (/^[a-z-]+$/.test(city)) {
+      return 'href="/locations/' + city + '-ma"';
+    }
+    return match;
+  });
 
   // Fix remaining relative service links with trailing slash
   content = content.replace(/href="services\/janitorial-service\/"/g, 'href="/services/janitorial-service"');
