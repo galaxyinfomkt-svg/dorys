@@ -1,53 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!--
-    Dorys Cleaning Services - XML Sitemap Index
-    Total URLs: 620+
-    Last Updated: 2026-01-02
-
-    This sitemap index contains references to all sub-sitemaps organized by content type.
-    Submit this file to Google Search Console: https://doryscleaningservices.com/sitemap.xml
-  -->
-
-  <!-- Main Pages (Homepage, About, Contact, Reviews, etc.) -->
+  <!-- Main Pages Sitemap -->
   <sitemap>
     <loc>https://doryscleaningservices.com/sitemap-pages.xml</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-05</lastmod>
   </sitemap>
 
-  <!-- Location Pages (101 cities in Massachusetts) -->
+  <!-- Location Pages Sitemap -->
   <sitemap>
     <loc>https://doryscleaningservices.com/sitemap-locations.xml</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-05</lastmod>
   </sitemap>
 
-  <!-- Janitorial Service Pages (100+ city-specific pages) -->
+  <!-- Service Pages Sitemaps -->
   <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-janitorial.xml</loc>
-    <lastmod>2026-01-02</lastmod>
+    <loc>https://doryscleaningservices.com/sitemap-services-janitorial-service.xml</loc>
+    <lastmod>2026-01-05</lastmod>
   </sitemap>
-
-  <!-- Deep Cleaning Service Pages (100+ city-specific pages) -->
   <sitemap>
     <loc>https://doryscleaningservices.com/sitemap-services-deep-cleaning.xml</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-05</lastmod>
   </sitemap>
-
-  <!-- Carpet Cleaning Service Pages (100+ city-specific pages) -->
   <sitemap>
     <loc>https://doryscleaningservices.com/sitemap-services-carpet-cleaning.xml</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-05</lastmod>
   </sitemap>
-
-  <!-- General Housekeeping Service Pages (100+ city-specific pages) -->
   <sitemap>
     <loc>https://doryscleaningservices.com/sitemap-services-general-housekeeping.xml</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-05</lastmod>
   </sitemap>
-
-  <!-- Upholstery Cleaning Service Pages (100+ city-specific pages) -->
   <sitemap>
     <loc>https://doryscleaningservices.com/sitemap-services-upholstery-cleaning.xml</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-05</lastmod>
   </sitemap>
 </sitemapindex>

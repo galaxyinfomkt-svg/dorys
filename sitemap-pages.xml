@@ -1,92 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
+  <!-- Homepage -->
   <url>
     <loc>https://doryscleaningservices.com/</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Main Pages -->
   <url>
-    <loc>https://doryscleaningservices.com/index.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://doryscleaningservices.com/about</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/about.html</loc>
-    <lastmod>2026-01-02</lastmod>
+    <loc>https://doryscleaningservices.com/contact</loc>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/contact.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://doryscleaningservices.com/reviews.html</loc>
-    <lastmod>2026-01-02</lastmod>
+    <loc>https://doryscleaningservices.com/reviews</loc>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/privacy.html</loc>
-    <lastmod>2026-01-02</lastmod>
+    <loc>https://doryscleaningservices.com/privacy</loc>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/terms.html</loc>
-    <lastmod>2026-01-02</lastmod>
+    <loc>https://doryscleaningservices.com/terms</loc>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
-  <!-- Service Index Pages -->
+  <!-- Services Hub -->
   <url>
-    <loc>https://doryscleaningservices.com/services/index.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://doryscleaningservices.com/services/janitorial-service/index.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://doryscleaningservices.com/services/deep-cleaning/index.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://doryscleaningservices.com/services/carpet-cleaning/index.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://doryscleaningservices.com/services/general-housekeeping/index.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://doryscleaningservices.com/services/upholstery-cleaning/index.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://doryscleaningservices.com/services</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Locations Index Page -->
+  <!-- Service Category Pages -->
   <url>
-    <loc>https://doryscleaningservices.com/locations/index.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://doryscleaningservices.com/services/janitorial-service</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://doryscleaningservices.com/services/deep-cleaning</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://doryscleaningservices.com/services/carpet-cleaning</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://doryscleaningservices.com/services/general-housekeeping</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://doryscleaningservices.com/services/upholstery-cleaning</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Locations Hub -->
+  <url>
+    <loc>https://doryscleaningservices.com/locations</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 </urlset>
