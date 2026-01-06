@@ -5,25 +5,36 @@
 User-agent: *
 Allow: /
 
-# Sitemaps (index sitemap references all sub-sitemaps)
+# Sitemaps
 Sitemap: https://doryscleaningservices.com/sitemap.xml
 
-# Block access to development/build folders
+# Block technical/internal paths (legacy URLs from old versions)
+Disallow: /tmp/
+Disallow: /workspace/
+Disallow: /builder-preview/
+Disallow: /locales/
+Disallow: /search/
+Disallow: /portal.php
+Disallow: /calendar
+Disallow: /calendar-
+Disallow: /thank-you
+Disallow: /home-
+Disallow: /index.php
+Disallow: /page.php
+
+# Block development folders
 Disallow: /build/
 Disallow: /data/
 Disallow: /scripts/
 Disallow: /node_modules/
 
-# Block JSON config files (not content)
+# Block JSON config files
 Disallow: /*.json$
 
 # Allow CSS and JS assets for proper rendering
 Allow: /assets/
 
-# Crawl-delay for polite crawling
-Crawl-delay: 1
-
-# Search engine specific rules
+# Googlebot specific (no crawl delay for faster indexing)
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
