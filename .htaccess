@@ -5,7 +5,41 @@
 RewriteEngine On
 
 # ===========================================
-# 301 REDIRECTS - Old URLs to Clean URLs
+# FORCE HTTPS AND NON-WWW (CANONICAL)
+# ===========================================
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Force non-www
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# ===========================================
+# LEGACY URL REDIRECTS (OLD SITE VERSIONS)
+# ===========================================
+
+# Old WordPress/landing page patterns → Homepage
+RewriteRule ^dorys-janitorial-cleaning-services-(.*)$ /services/janitorial-service/$1-ma [R=301,L]
+RewriteRule ^home-(.*)$ / [R=301,L]
+RewriteRule ^index\.php$ / [R=301,L]
+RewriteRule ^page\.php$ / [R=301,L]
+
+# Old technical URLs → 410 Gone (tell Google to forget them)
+RewriteRule ^tmp/ - [R=410,L]
+RewriteRule ^workspace/ - [R=410,L]
+RewriteRule ^builder-preview/ - [R=410,L]
+RewriteRule ^locales/(.*)\.json$ - [R=410,L]
+RewriteRule ^search/ - [R=410,L]
+RewriteRule ^portal\.php$ - [R=410,L]
+RewriteRule ^calendar - [R=410,L]
+
+# Thank you pages → noindex (but still serve them)
+# These are handled via meta robots in the HTML
+
+# ===========================================
+# 301 REDIRECTS - .html to Clean URLs
 # ===========================================
 
 # Redirect old .html URLs to clean URLs (all pages)
@@ -32,6 +66,11 @@ RewriteRule ^services/([^/]+)/index\.html$ /services/$1 [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [R=301,L]
 
+# Remove query strings from clean URLs (if any)
+RewriteCond %{QUERY_STRING} .+
+RewriteCond %{REQUEST_URI} !^/assets/
+RewriteRule ^(.*)$ /$1? [R=301,L]
+
 # ===========================================
 # INTERNAL REWRITES (no redirect, just serve)
 # ===========================================
@@ -47,6 +86,7 @@ RewriteRule ^(.*)$ $1.html [L]
 # ===========================================
 ErrorDocument 404 /404.html
 ErrorDocument 403 /404.html
+ErrorDocument 410 /404.html
 ErrorDocument 500 /500.html
 
 # Security headers
