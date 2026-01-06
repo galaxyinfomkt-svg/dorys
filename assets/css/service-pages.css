@@ -653,3 +653,155 @@
 .related-service-card:hover .related-service-card__link {
   text-decoration: underline;
 }
+
+/* --------------------------------------------------------------------------
+   Popular Services Grid (Services Hub Page)
+   -------------------------------------------------------------------------- */
+.popular-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 991px) {
+  .popular-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .popular-services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.popular-service-category {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.popular-service-category h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #2b70e4;
+}
+
+.popular-service-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popular-service-links li {
+  margin-bottom: 0.5rem;
+}
+
+.popular-service-links a {
+  display: block;
+  padding: 0.5rem 0;
+  color: #64748b;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.popular-service-links a:hover {
+  color: #2b70e4;
+  padding-left: 0.5rem;
+}
+
+.popular-service-links li:last-child a {
+  border-bottom: none;
+}
+
+/* --------------------------------------------------------------------------
+   Content Section (Long-form SEO Content)
+   -------------------------------------------------------------------------- */
+.content-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 1.5rem;
+}
+
+.content-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 1.25rem;
+}
+
+.content-section ul {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.content-section li {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 0.75rem;
+}
+
+.content-section strong {
+  color: #1a1a2e;
+}
+
+/* --------------------------------------------------------------------------
+   FAQ Grid
+   -------------------------------------------------------------------------- */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 767px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.faq-item {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+}
+
+.faq-question {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+}
+
+.faq-answer {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #64748b;
+  margin: 0;
+}
