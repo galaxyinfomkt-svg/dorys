@@ -805,3 +805,47 @@
   color: #64748b;
   margin: 0;
 }
+
+/* --------------------------------------------------------------------------
+   About City Section (Local SEO Content)
+   -------------------------------------------------------------------------- */
+.section--about-city {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 4rem 0;
+  border-top: 1px solid rgba(43, 112, 228, 0.1);
+  border-bottom: 1px solid rgba(43, 112, 228, 0.1);
+}
+
+.about-city-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-city-content h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 1.5rem;
+}
+
+.about-city-content p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.about-city-stats {
+  font-size: 1.125rem;
+  color: #2b70e4;
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.about-city-stats strong {
+  font-weight: 700;
+}
