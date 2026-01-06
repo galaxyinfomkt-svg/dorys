@@ -1,16 +1,40 @@
-# Dorys Cleaning Services - URL Rewriting
-# Remove .html extension from URLs
+# Dorys Cleaning Services - URL Rewriting & SEO Redirects
+# Last updated: 2026-01-06
 
 # Enable rewrite engine
 RewriteEngine On
 
+# ===========================================
+# 301 REDIRECTS - Old URLs to Clean URLs
+# ===========================================
+
+# Redirect old .html URLs to clean URLs (all pages)
+RewriteCond %{THE_REQUEST} /([^.]+)\.html[\s\?] [NC]
+RewriteRule ^ /%1 [R=301,L,NC]
+
+# Redirect index.html to root
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Redirect locations/index.html to /locations
+RewriteRule ^locations/index\.html$ /locations [R=301,L]
+
+# Redirect services/index.html to /services
+RewriteRule ^services/index\.html$ /services [R=301,L]
+
+# Redirect service hub index.html files
+RewriteRule ^services/([^/]+)/index\.html$ /services/$1 [R=301,L]
+
+# ===========================================
+# URL CLEANUP
+# ===========================================
+
 # Remove trailing slash (except for directories)
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)/$ /$1 [L,R=301]
+RewriteRule ^(.*)/$ /$1 [R=301,L]
 
-# Redirect .html to clean URL
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R=301]
+# ===========================================
+# INTERNAL REWRITES (no redirect, just serve)
+# ===========================================
 
 # Serve .html file for clean URLs
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -18,8 +42,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
 
-# Custom error pages
+# ===========================================
+# ERROR PAGES
+# ===========================================
 ErrorDocument 404 /404.html
+ErrorDocument 403 /404.html
 ErrorDocument 500 /500.html
 
 # Security headers

@@ -1,6 +1,20 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/about.html", "destination": "/about", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true },
+    { "source": "/reviews.html", "destination": "/reviews", "permanent": true },
+    { "source": "/privacy.html", "destination": "/privacy", "permanent": true },
+    { "source": "/terms.html", "destination": "/terms", "permanent": true },
+    { "source": "/sitemap.html", "destination": "/sitemap", "permanent": true },
+    { "source": "/services/index.html", "destination": "/services", "permanent": true },
+    { "source": "/locations/index.html", "destination": "/locations", "permanent": true },
+    { "source": "/services/:service/index.html", "destination": "/services/:service", "permanent": true },
+    { "source": "/services/:service/:city.html", "destination": "/services/:service/:city", "permanent": true },
+    { "source": "/locations/:city.html", "destination": "/locations/:city", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },

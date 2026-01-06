@@ -1,36 +1,32 @@
 # Robots.txt for Dorys Janitorial Cleaning Services
 # https://doryscleaningservices.com
+# Last updated: 2026-01-06
 
 User-agent: *
 Allow: /
 
-# Sitemaps
+# Sitemaps (index sitemap references all sub-sitemaps)
 Sitemap: https://doryscleaningservices.com/sitemap.xml
 
-# Crawl-delay (optional, for polite crawling)
-Crawl-delay: 1
-
-# Block access to build/data folders (development files)
+# Block access to development/build folders
 Disallow: /build/
 Disallow: /data/
+Disallow: /scripts/
+Disallow: /node_modules/
 
-# Allow all important pages
-Allow: /index.html
-Allow: /about.html
-Allow: /contact.html
-Allow: /reviews.html
-Allow: /services/
-Allow: /locations/
+# Block JSON config files (not content)
+Disallow: /*.json$
+
+# Allow CSS and JS assets for proper rendering
 Allow: /assets/
 
-# Block common non-essential files
-Disallow: /*.json$
-Disallow: /*.js$
-Allow: /assets/js/*.js
+# Crawl-delay for polite crawling
+Crawl-delay: 1
 
 # Search engine specific rules
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
