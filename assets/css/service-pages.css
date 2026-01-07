@@ -849,3 +849,60 @@
 .about-city-stats strong {
   font-weight: 700;
 }
+
+/* --------------------------------------------------------------------------
+   Related Services Section (Internal Linking)
+   -------------------------------------------------------------------------- */
+.section--related-services {
+  background: #ffffff;
+  padding: 3rem 0;
+  border-top: 1px solid rgba(43, 112, 228, 0.08);
+}
+
+.section--related-services h3 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.related-services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.related-service-link {
+  display: inline-block;
+  padding: 0.875rem 1.5rem;
+  background: linear-gradient(135deg, rgba(43, 112, 228, 0.08) 0%, rgba(43, 112, 228, 0.04) 100%);
+  border: 1px solid rgba(43, 112, 228, 0.15);
+  border-radius: 10px;
+  color: #2b70e4;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.related-service-link:hover {
+  background: #2b70e4;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(43, 112, 228, 0.25);
+}
+
+@media (max-width: 600px) {
+  .related-services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .related-service-link {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+}

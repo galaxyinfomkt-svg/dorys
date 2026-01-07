@@ -86,7 +86,7 @@
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "150"
+      "reviewCount": "15"
     }
   }
   </script>
@@ -131,7 +131,17 @@
       "name": "Bellingham",
       "containedInPlace": {"@type": "State", "name": "Massachusetts"}
     },
-    "serviceType": "General Housekeeping"
+    "offers": {
+      "@type": "Offer",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "minPrice": "100",
+        "maxPrice": "350",
+        "priceCurrency": "USD"
+      },
+      "availability": "https://schema.org/InStock"
+    },
+    "serviceType": "Housekeeping"
   }
   </script>
 </head>
