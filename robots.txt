@@ -1,6 +1,6 @@
 # Robots.txt for Dorys Janitorial Cleaning Services
 # https://doryscleaningservices.com
-# Last updated: 2026-01-06
+# Last updated: 2026-01-08
 
 User-agent: *
 Allow: /
@@ -8,21 +8,36 @@ Allow: /
 # Sitemaps
 Sitemap: https://doryscleaningservices.com/sitemap.xml
 
-# Block technical/internal paths (legacy URLs from old versions)
+# ===========================================
+# BLOCK TECHNICAL/INVALID URLs
+# (Cleaning Google Search Console 404 errors)
+# ===========================================
+
+# Technical paths - legacy URLs from old versions
 Disallow: /tmp/
 Disallow: /workspace/
 Disallow: /builder-preview/
-Disallow: /locales/
 Disallow: /search/
+Disallow: /open
+Disallow: /gemin-2
+
+# Block ALL PHP files (legacy/invalid)
+Disallow: /*.php
+Disallow: /*.php$
 Disallow: /portal.php
+Disallow: /index.php
+Disallow: /page.php
+
+# Block locales and calendar paths
+Disallow: /locales/
 Disallow: /calendar
 Disallow: /calendar-
 Disallow: /thank-you
 Disallow: /home-
-Disallow: /index.php
-Disallow: /page.php
 
-# Block development folders
+# ===========================================
+# BLOCK DEVELOPMENT/BUILD FOLDERS
+# ===========================================
 Disallow: /build/
 Disallow: /data/
 Disallow: /scripts/
@@ -31,10 +46,17 @@ Disallow: /node_modules/
 # Block JSON config files
 Disallow: /*.json$
 
+# ===========================================
+# ALLOW IMPORTANT RESOURCES
+# ===========================================
 # Allow CSS and JS assets for proper rendering
 Allow: /assets/
 
-# Googlebot specific (no crawl delay for faster indexing)
+# ===========================================
+# SEARCH ENGINE SPECIFIC RULES
+# ===========================================
+
+# Googlebot (no crawl delay for faster indexing)
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
