@@ -1,0 +1,561 @@
+/* ==========================================================================
+   AEO.CSS - Answer Engine Optimization Components
+   Styles for featured snippets, answer boxes, and AI-friendly content
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Answer Box - Quick Facts for Featured Snippets
+   -------------------------------------------------------------------------- */
+.answer-box {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8f4fd 100%);
+  border: 2px solid var(--color-primary);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.answer-box::before {
+  content: "Quick Facts";
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  background: var(--color-primary);
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.answer-box__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.answer-box__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .answer-box__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.answer-box__item {
+  background: white;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--color-text);
+  border-left: 4px solid var(--color-primary);
+}
+
+.answer-box__item strong {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   Definition Box - For "What is..." queries
+   -------------------------------------------------------------------------- */
+.definition-box {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.definition-box__term {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.definition-box__term::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 24px;
+  background: var(--color-primary);
+  border-radius: 2px;
+}
+
+.definition-box__definition {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
+
+/* --------------------------------------------------------------------------
+   Comparison Table - For "vs" queries
+   -------------------------------------------------------------------------- */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.comparison-table th {
+  background: var(--color-primary);
+  color: white;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.comparison-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.9375rem;
+  color: var(--color-text);
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+/* --------------------------------------------------------------------------
+   Steps List - For "How to" queries
+   -------------------------------------------------------------------------- */
+.steps-list {
+  counter-reset: steps;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.steps-list__item {
+  counter-increment: steps;
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  border-left: 4px solid var(--color-primary);
+}
+
+.steps-list__item::before {
+  content: counter(steps);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  background: var(--color-primary);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.steps-list__content h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.steps-list__content p {
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Pros & Cons - For comparison queries
+   -------------------------------------------------------------------------- */
+.pros-cons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 640px) {
+  .pros-cons {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pros-cons__column {
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.pros-cons__column--pros {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+}
+
+.pros-cons__column--cons {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+}
+
+.pros-cons__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pros-cons__column--pros .pros-cons__title {
+  color: #15803d;
+}
+
+.pros-cons__column--cons .pros-cons__title {
+  color: #b91c1c;
+}
+
+.pros-cons__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pros-cons__list li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.9375rem;
+  color: var(--color-text);
+}
+
+.pros-cons__column--pros .pros-cons__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #15803d;
+  font-weight: bold;
+}
+
+.pros-cons__column--cons .pros-cons__list li::before {
+  content: "✗";
+  position: absolute;
+  left: 0;
+  color: #b91c1c;
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+   Quick Stats - Single line facts
+   -------------------------------------------------------------------------- */
+.quick-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f1f5f9;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  margin: 0.25rem;
+}
+
+.quick-stat__label {
+  color: var(--color-text-light);
+}
+
+.quick-stat__value {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* --------------------------------------------------------------------------
+   FAQ Accordion (Enhanced for AEO)
+   -------------------------------------------------------------------------- */
+.faq-accordion {
+  margin: 2rem 0;
+}
+
+.faq-accordion__item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.faq-accordion__question {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.faq-accordion__question:hover {
+  background: #f8fafc;
+}
+
+.faq-accordion__icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.faq-accordion__item--open .faq-accordion__icon {
+  transform: rotate(180deg);
+}
+
+.faq-accordion__answer {
+  padding: 0 1.5rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+  display: none;
+}
+
+.faq-accordion__item--open .faq-accordion__answer {
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Local Context Box - For local SEO
+   -------------------------------------------------------------------------- */
+.local-context {
+  background: linear-gradient(135deg, #fefce8 0%, #fef9c3 100%);
+  border: 1px solid #fde047;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+}
+
+.local-context__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #854d0e;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.local-context__title svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.local-context__content {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #713f12;
+}
+
+/* --------------------------------------------------------------------------
+   Service Highlight Cards
+   -------------------------------------------------------------------------- */
+.highlight-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.highlight-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s;
+}
+
+.highlight-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(43, 112, 228, 0.15);
+}
+
+.highlight-card__icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.highlight-card__icon svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.highlight-card__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.highlight-card__text {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+}
+
+/* --------------------------------------------------------------------------
+   Pricing Teaser (for cost queries)
+   -------------------------------------------------------------------------- */
+.pricing-teaser {
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.pricing-teaser__label {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.pricing-teaser__range {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-teaser__note {
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+}
+
+.pricing-teaser__cta {
+  display: inline-block;
+  background: white;
+  color: var(--color-primary);
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.pricing-teaser__cta:hover {
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   Testimonial Snippet (for trust signals)
+   -------------------------------------------------------------------------- */
+.testimonial-snippet {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--color-primary);
+  position: relative;
+}
+
+.testimonial-snippet__quote {
+  font-size: 1.0625rem;
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.testimonial-snippet__quote::before {
+  content: """;
+  font-size: 3rem;
+  color: var(--color-primary);
+  opacity: 0.3;
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  line-height: 1;
+}
+
+.testimonial-snippet__author {
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+}
+
+.testimonial-snippet__author strong {
+  color: var(--color-text);
+}
+
+/* --------------------------------------------------------------------------
+   Challenge Grid (Massachusetts-specific issues)
+   -------------------------------------------------------------------------- */
+.challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .challenge-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.challenge-item {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.challenge-item h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.challenge-item h3::before {
+  content: "⚠️";
+}
+
+.challenge-item p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin: 0;
+}

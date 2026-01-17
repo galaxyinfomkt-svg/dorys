@@ -32,13 +32,86 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Dorys Janitorial Cleaning Services Inc.",
+    "name": "Dorys Janitorial Cleaning Services - Framingham",
     "url": "https://doryscleaningservices.com/locations/framingham-ma",
-    "telephone": "+19783078107",
-    "address": {"@type": "PostalAddress", "addressLocality": "Framingham", "addressRegion": "MA", "addressCountry": "US"},
-    "areaServed": {"@type": "City", "name": "Framingham"}
+    "telephone": "+1-978-307-8107",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Framingham",
+      "addressRegion": "MA",
+      "postalCode": "01701",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.2793,
+      "longitude": -71.4162
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Framingham"},
+      {"@type": "City", "name": "Natick"},
+      {"@type": "City", "name": "Ashland"},
+      {"@type": "City", "name": "Sudbury"},
+      {"@type": "City", "name": "Southborough"}
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "05:00",
+      "closes": "19:00"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "47"
+    },
+    "priceRange": "$$"
   }
   </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What cleaning services are available in Framingham, MA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dorys offers comprehensive cleaning services in Framingham including: janitorial services for offices and commercial spaces, deep cleaning for homes, carpet cleaning with pet stain removal, upholstery cleaning, and regular housekeeping. We serve the entire Framingham area including Downtown, Saxonville, Nobscot, and Framingham Centre."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does house cleaning cost in Framingham?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "House cleaning in Framingham typically ranges from $120-$300 depending on home size and service type. Standard cleaning for a 2,000 sq ft home averages $150-$200. Deep cleaning costs more. We provide free estimates for all Framingham homes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you serve businesses near the Natick Mall area?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! We provide commercial janitorial services throughout the Route 9 corridor including the Natick Mall area, Shoppers World, and all Framingham business districts. We offer flexible scheduling including early morning and evening cleaning for retail and office spaces."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas of Framingham do you service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We serve all Framingham neighborhoods including Downtown Framingham, Saxonville, Nobscot, Framingham Centre, Lokerville, and areas near Framingham State University. We also serve neighboring towns: Natick, Ashland, Sudbury, Southborough, and Wayland."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/aeo.css">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -167,13 +240,129 @@
       </div>
     </section>
 
+    <!-- Local Context Section -->
+    <section class="section">
+      <div class="container">
+        <div class="content-block">
+          <h2>Why Framingham Homes Need Professional Cleaning</h2>
+
+          <p>Framingham's unique mix of historic homes and modern developments creates specific cleaning challenges. From century-old Colonials in Saxonville to newer construction near Shoppers World, each property type requires different care.</p>
+
+          <div class="challenge-grid">
+            <div class="challenge-item">
+              <h3>Route 9 Corridor Dust</h3>
+              <p>Homes near Route 9 and the Mass Pike accumulate more road dust and pollutants. Regular deep cleaning helps maintain indoor air quality for families living in these high-traffic areas.</p>
+            </div>
+            <div class="challenge-item">
+              <h3>Historic Home Care</h3>
+              <p>Framingham's older neighborhoods like Saxonville and Nobscot feature homes built in the 1800s-1900s. We understand how to clean hardwood floors, original millwork, and delicate finishes without damage.</p>
+            </div>
+            <div class="challenge-item">
+              <h3>Lake Cochituate Humidity</h3>
+              <p>Properties near Lake Cochituate and Farm Pond experience higher humidity, which can lead to mold issues. Our cleaning includes moisture-prone area attention to prevent mold growth.</p>
+            </div>
+            <div class="challenge-item">
+              <h3>Pet-Friendly Community</h3>
+              <p>Framingham's many parks and trails make it popular with pet owners. We specialize in pet stain and odor removal for carpets and upholstery throughout the city.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Neighborhoods We Serve -->
+    <section class="section section--light">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <h2 class="section__title">Framingham Neighborhoods We Serve</h2>
+        </div>
+
+        <div class="neighborhoods-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem;">
+          <div class="neighborhood-item" style="background:#f8fafc; padding:1rem; border-radius:8px;">
+            <strong>Downtown Framingham</strong>
+            <p style="font-size:0.875rem; color:#64748b; margin:0.5rem 0 0;">Apartments, condos, and mixed-use buildings</p>
+          </div>
+          <div class="neighborhood-item" style="background:#f8fafc; padding:1rem; border-radius:8px;">
+            <strong>Saxonville</strong>
+            <p style="font-size:0.875rem; color:#64748b; margin:0.5rem 0 0;">Historic mill village with Victorian homes</p>
+          </div>
+          <div class="neighborhood-item" style="background:#f8fafc; padding:1rem; border-radius:8px;">
+            <strong>Nobscot</strong>
+            <p style="font-size:0.875rem; color:#64748b; margin:0.5rem 0 0;">Suburban family homes, split-levels</p>
+          </div>
+          <div class="neighborhood-item" style="background:#f8fafc; padding:1rem; border-radius:8px;">
+            <strong>Framingham Centre</strong>
+            <p style="font-size:0.875rem; color:#64748b; margin:0.5rem 0 0;">Near FSU, mix of rentals and single-family</p>
+          </div>
+          <div class="neighborhood-item" style="background:#f8fafc; padding:1rem; border-radius:8px;">
+            <strong>Route 9 Area</strong>
+            <p style="font-size:0.875rem; color:#64748b; margin:0.5rem 0 0;">Commercial cleaning for retail and offices</p>
+          </div>
+          <div class="neighborhood-item" style="background:#f8fafc; padding:1rem; border-radius:8px;">
+            <strong>Lokerville</strong>
+            <p style="font-size:0.875rem; color:#64748b; margin:0.5rem 0 0;">Quiet residential area, ranch homes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="section__header section__header--center">
+          <span class="section__badge">FAQ</span>
+          <h2 class="section__title">Framingham Cleaning Questions</h2>
+        </div>
+
+        <div class="faq-list" style="max-width:800px; margin:0 auto;">
+          <div class="faq-item" style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1.5rem; margin-bottom:1rem;">
+            <h3 style="font-size:1.0625rem; font-weight:600; margin-bottom:0.75rem;">What cleaning services are available in Framingham?</h3>
+            <p style="color:#475569; line-height:1.7; margin:0;">We offer <strong>janitorial services</strong> for offices and commercial spaces, <strong>deep cleaning</strong> for homes, <strong>carpet cleaning</strong> with pet stain removal, <strong>upholstery cleaning</strong>, and regular <strong>housekeeping</strong>. We serve all Framingham areas including Downtown, Saxonville, Nobscot, and Framingham Centre.</p>
+          </div>
+
+          <div class="faq-item" style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1.5rem; margin-bottom:1rem;">
+            <h3 style="font-size:1.0625rem; font-weight:600; margin-bottom:0.75rem;">How much does house cleaning cost in Framingham?</h3>
+            <p style="color:#475569; line-height:1.7; margin:0;">House cleaning in Framingham ranges from <strong>$120-$300</strong> depending on home size and service type. Standard cleaning for a 2,000 sq ft home averages $150-$200. Deep cleaning costs more. We provide <strong>free estimates</strong> for all Framingham homes.</p>
+          </div>
+
+          <div class="faq-item" style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1.5rem; margin-bottom:1rem;">
+            <h3 style="font-size:1.0625rem; font-weight:600; margin-bottom:0.75rem;">Do you clean offices near Shoppers World and Route 9?</h3>
+            <p style="color:#475569; line-height:1.7; margin:0;">Yes! We provide commercial janitorial services throughout the <strong>Route 9 corridor</strong> including Shoppers World, Natick Mall area, and all Framingham business parks. We offer flexible scheduling including early morning and evening cleaning.</p>
+          </div>
+
+          <div class="faq-item" style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1.5rem; margin-bottom:1rem;">
+            <h3 style="font-size:1.0625rem; font-weight:600; margin-bottom:0.75rem;">Which towns near Framingham do you also serve?</h3>
+            <p style="color:#475569; line-height:1.7; margin:0;">We serve <strong>Natick, Ashland, Sudbury, Southborough, Wayland, Sherborn,</strong> and <strong>Holliston</strong>. Our central location allows us to efficiently serve the entire MetroWest region.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby Cities -->
+    <section class="section section--light">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <h2 class="section__title">Also Serving Nearby Communities</h2>
+        </div>
+        <div class="nearby-cities" style="display:flex; flex-wrap:wrap; justify-content:center; gap:0.75rem; margin-top:1.5rem;">
+          <a href="/locations/natick-ma" class="btn btn--outline" style="border-radius:50px;">Natick</a>
+          <a href="/locations/ashland-ma" class="btn btn--outline" style="border-radius:50px;">Ashland</a>
+          <a href="/locations/sudbury-ma" class="btn btn--outline" style="border-radius:50px;">Sudbury</a>
+          <a href="/locations/southborough-ma" class="btn btn--outline" style="border-radius:50px;">Southborough</a>
+          <a href="/locations/wayland-ma" class="btn btn--outline" style="border-radius:50px;">Wayland</a>
+          <a href="/locations/sherborn-ma" class="btn btn--outline" style="border-radius:50px;">Sherborn</a>
+          <a href="/locations/holliston-ma" class="btn btn--outline" style="border-radius:50px;">Holliston</a>
+        </div>
+      </div>
+    </section>
+
     <section class="section section--primary">
       <div class="container text-center">
-        <h2 class="text-white mb-lg">Need Cleaning Services in Framingham?</h2>
-        <p class="lead text-white mb-xl" style="opacity:0.9">Contact us today for a free quote!</p>
+        <h2 class="text-white mb-lg">Ready for a Cleaner Framingham Home or Office?</h2>
+        <p class="lead text-white mb-xl" style="opacity:0.9">Get a free quote today - we respond within 2 hours!</p>
         <div class="btn-group btn-group--center">
-          <a href="/contact" class="btn btn--white btn--lg">Get Your Spotless Space in 48 Hours</a>
-          <a href="tel:+19783078107" class="btn btn--outline-light btn--lg">Call (978) 307-8107</a>
+          <a href="tel:+19783078107" class="btn btn--white btn--lg">Call (978) 307-8107</a>
+          <a href="/#contact" class="btn btn--outline-light btn--lg">Request Quote Online</a>
         </div>
       </div>
     </section>
