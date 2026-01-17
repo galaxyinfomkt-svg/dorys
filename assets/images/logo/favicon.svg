@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="#ffffff"/>
+
+  <!-- D shape (blue) -->
+  <path d="M12 12 L12 52 L32 52 C46 52 52 42 52 32 C52 22 46 12 32 12 L12 12 Z M20 20 L30 20 C40 20 44 26 44 32 C44 38 40 44 30 44 L20 44 L20 20 Z" fill="#2b70e4"/>
+
+  <!-- Leaf (green) overlapping the D -->
+  <path d="M8 18 C8 18 14 8 26 12 C26 12 18 20 18 32 C18 44 26 52 26 52 C14 48 8 38 8 28 C8 24 8 18 8 18 Z" fill="#7cb342"/>
+
+  <!-- Leaf highlight (lighter green) -->
+  <path d="M12 22 C12 22 16 16 22 18 C22 18 16 24 16 32 C16 32 14 26 12 22 Z" fill="#ffffff" fill-opacity="0.4"/>
+</svg>
