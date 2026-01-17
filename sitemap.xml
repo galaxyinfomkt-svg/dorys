@@ -33,4 +33,10 @@
     <loc>https://doryscleaningservices.com/sitemap-services-upholstery-cleaning.xml</loc>
     <lastmod>2026-01-05</lastmod>
   </sitemap>
+
+  <!-- Blog Pages Sitemap -->
+  <sitemap>
+    <loc>https://doryscleaningservices.com/sitemap-blog.xml</loc>
+    <lastmod>2026-01-16</lastmod>
+  </sitemap>
 </sitemapindex>
