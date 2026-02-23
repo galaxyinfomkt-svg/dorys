@@ -17,168 +17,168 @@ const path = require('path');
 // ============================================================================
 
 const SERVICES = {
-  'deep-cleaning': {
-    name: 'Deep Cleaning',
-    slug: 'deep-cleaning',
-    title: 'Deep Cleaning',
-    description: 'Thorough top-to-bottom cleaning that reaches every corner of your home or business.',
-    metaDescription: 'Expert deep cleaning services in {{city}}, MA. Thorough sanitization for homes & businesses. 21+ years experience, licensed & insured. Free estimates! Call (978) 307-8107.',
-    keywords: 'deep cleaning {{city}} MA, house deep cleaning {{city}}, office deep cleaning {{city}}, move-in cleaning {{city}}, move-out cleaning {{city}}, professional cleaning services {{city}} Massachusetts',
-    leadText: 'Our comprehensive deep cleaning service goes beyond regular cleaning to eliminate built-up grime, sanitize surfaces, and restore your space to pristine condition. Ideal for homes, offices, move-ins, move-outs, and seasonal cleaning.',
+  'medical-office-cleaning': {
+    name: 'Medical Office Cleaning',
+    slug: 'medical-office-cleaning',
+    title: 'Medical Office Cleaning',
+    description: 'Specialized sanitation for medical offices, dental practices, and physician clinics with infection control protocols.',
+    metaDescription: 'Professional medical office cleaning in {{city}}, MA. 22 years healthcare experience. EPA-registered disinfectants, compliance documentation. $2M insured. Schedule a facility assessment: (978) 307-8107.',
+    keywords: 'medical office cleaning {{city}} MA, dental office sanitation {{city}}, physician office cleaning {{city}}, healthcare cleaning services {{city}} Massachusetts, infection control cleaning {{city}}',
+    leadText: 'Our medical office cleaning services in {{city}} are designed to meet the stringent hygiene standards required by healthcare facilities. With 22 years of hands-on healthcare experience, we follow CDC and OSHA guidelines, use EPA-registered hospital-grade disinfectants, and deliver documented results that support your facility\'s compliance requirements.',
     servicesList: [
-      'Thorough cleaning inside and outside of appliances',
-      'Cabinet interior and exterior cleaning',
-      'Baseboard and door frame detailing',
-      'Light fixture and ceiling fan cleaning',
-      'Window sill and track cleaning',
-      'Grout scrubbing in bathrooms',
-      'Behind and under furniture cleaning',
-      'Air vent and duct cover cleaning'
+      'EPA-registered hospital-grade disinfectant application',
+      'Exam room terminal cleaning protocols',
+      'Waiting area and reception sanitization',
+      'Restroom medical-grade disinfection',
+      'Biohazard-aware waste handling procedures',
+      'HVAC vent and air quality maintenance',
+      'Medical equipment surface disinfection',
+      'Floor care with healthcare-grade solutions'
     ],
     faqs: [
       {
-        question: 'What is included in a deep cleaning service in {{city}}?',
-        answer: 'Our deep cleaning service in {{city}} includes thorough cleaning inside and outside of appliances (oven, refrigerator, microwave), cabinet interior cleaning, baseboard and door frame detailing, light fixture cleaning, ceiling fan dusting, window sill and track cleaning, grout scrubbing in bathrooms, behind and under furniture cleaning, closet organization, and detailed sanitization of all surfaces. We use professional-grade equipment and eco-friendly products.'
+        question: 'What infection control protocols do you follow for medical office cleaning in {{city}}?',
+        answer: 'We follow CDC and OSHA guidelines for healthcare environmental cleaning in {{city}}, including use of EPA-registered hospital-grade disinfectants, proper contact time protocols, and trained staff with bloodborne pathogen awareness. Our team understands the unique requirements of clinical environments.'
       },
       {
-        question: 'How much does deep cleaning cost in {{city}}?',
-        answer: 'Deep cleaning costs in {{city}} typically range from $200-$500 for residential properties, depending on the size of your home and its current condition. Commercial properties are quoted based on square footage. We provide free, no-obligation estimates. Call (978) 307-8107 for a personalized quote.'
+        question: 'Do you provide cleaning documentation for compliance purposes in {{city}}?',
+        answer: 'Yes. We provide detailed cleaning logs, quality control checklists, and scheduled sanitation reports that support your {{city}} facility\'s compliance documentation requirements. These records are available for regulatory audits and internal quality reviews.'
       },
       {
-        question: 'How long does a deep cleaning take in {{city}}?',
-        answer: 'A typical deep cleaning in {{city}} takes 4-8 hours for an average-sized home (2-3 bedrooms). Larger homes or properties that haven\'t been deep cleaned recently may require 6-10 hours. Our team works efficiently while maintaining our high quality standards.'
+        question: 'Can you clean during off-hours to avoid disrupting patient care in {{city}}?',
+        answer: 'Absolutely. We offer flexible scheduling including early morning, evening, and weekend cleaning to ensure zero disruption to your patient flow and clinical operations in {{city}}. We customize our schedule around your practice hours.'
       }
     ]
   },
-  'carpet-cleaning': {
-    name: 'Carpet Cleaning',
-    slug: 'carpet-cleaning',
-    title: 'Carpet Cleaning',
-    description: 'Professional carpet cleaning using advanced steam and dry cleaning methods for spotless results.',
-    metaDescription: 'Professional carpet cleaning services in {{city}}, Massachusetts. 21+ years experience. Licensed & insured. Call (978) 307-8107 for a free quote!',
-    keywords: 'carpet cleaning, {{city}}, MA, cleaning services, carpet-cleaning, Massachusetts',
-    leadText: 'Our professional carpet cleaning service uses industry-leading equipment and techniques to deep clean your carpets. We remove dirt, stains, odors, and allergens, leaving your carpets fresh, clean, and extending their lifespan.',
+  'clinic-outpatient-sanitation': {
+    name: 'Clinic & Outpatient Facility Sanitation',
+    slug: 'clinic-outpatient-sanitation',
+    title: 'Clinic & Outpatient Sanitation',
+    description: 'Professional sanitation for urgent care centers, outpatient surgery centers, therapy clinics, and specialty healthcare facilities.',
+    metaDescription: 'Clinic and outpatient facility sanitation in {{city}}, MA. Terminal cleaning, between-patient protocols. 22 years healthcare experience, $2M insured. Schedule assessment: (978) 307-8107.',
+    keywords: 'clinic sanitation {{city}} MA, outpatient facility cleaning {{city}}, urgent care cleaning {{city}}, healthcare sanitation services {{city}} Massachusetts, clinic disinfection {{city}}',
+    leadText: 'Our clinic and outpatient facility sanitation services in {{city}} address the unique challenges of high-traffic healthcare environments. Urgent care centers, outpatient surgery facilities, physical therapy clinics, and specialty practices require rigorous cleaning protocols that go beyond surface-level sanitation. Our team delivers terminal cleaning, between-patient room turnover, and comprehensive facility-wide disinfection.',
     servicesList: [
-      'Hot water extraction (steam cleaning)',
-      'Dry cleaning for delicate carpets',
-      'Stain treatment and removal',
-      'Deodorizing and sanitization',
-      'Carpet protection application',
-      'High-traffic area treatment',
-      'Pet stain and odor removal',
-      'Area rug cleaning'
+      'Terminal cleaning for procedure and exam rooms',
+      'Between-patient room turnover protocols',
+      'High-traffic waiting area disinfection',
+      'Surgical suite and procedure room sanitation',
+      'Biohazard spill response and cleanup',
+      'Restroom and common area deep disinfection',
+      'Staff break room and locker area cleaning',
+      'Entrance and lobby sanitation with floor care'
     ],
     faqs: [
       {
-        question: 'How long does carpet cleaning take in {{city}}?',
-        answer: 'A typical home takes 1-3 hours depending on size and condition. Commercial spaces vary based on square footage. We provide time estimates during your quote.'
+        question: 'What is terminal cleaning and when is it needed in {{city}} clinics?',
+        answer: 'Terminal cleaning is a thorough, top-to-bottom disinfection of a room after a patient has been discharged or a procedure completed. In {{city}}, we perform terminal cleaning for procedure rooms, exam rooms, and any area where infection control is critical. This includes all surfaces, equipment, and fixtures.'
       },
       {
-        question: 'How long until carpets are dry in {{city}}?',
-        answer: 'Carpets typically dry within 6-12 hours. Factors like humidity, ventilation, and carpet thickness affect drying time. We recommend avoiding heavy foot traffic until fully dry.'
+        question: 'How do you handle biohazard spills in {{city}} clinic settings?',
+        answer: 'Our staff serving {{city}} is trained in proper biohazard spill response protocols, including containment, personal protective equipment usage, EPA-registered disinfectant application, and proper waste disposal following OSHA bloodborne pathogen standards.'
       },
       {
-        question: 'How often should carpets be professionally cleaned in {{city}}?',
-        answer: 'We recommend professional carpet cleaning every 12-18 months for residential carpets. High-traffic areas or homes with pets may benefit from more frequent cleaning.'
+        question: 'Can you work around our {{city}} clinic\'s patient schedule?',
+        answer: 'Yes. We understand that outpatient facilities in {{city}} often have varying schedules. We offer flexible cleaning times and can perform between-patient room turnovers during operating hours, with comprehensive cleaning scheduled during off-hours.'
       }
     ]
   },
-  'janitorial-service': {
-    name: 'Janitorial Service',
-    slug: 'janitorial-service',
-    title: 'Janitorial Service',
-    description: 'Professional commercial cleaning for offices, shops, warehouses, and corporate facilities.',
-    metaDescription: 'Professional janitorial service services in {{city}}, Massachusetts. 21+ years experience. Licensed & insured. Call (978) 307-8107 for a free quote!',
-    keywords: 'janitorial service, {{city}}, MA, cleaning services, janitorial-service, Massachusetts',
-    leadText: 'Our professional janitorial services provide comprehensive cleaning solutions for commercial properties throughout Massachusetts. From daily office cleaning to weekly maintenance, we keep your business environment spotless and professional.',
+  'assisted-living-senior-care': {
+    name: 'Assisted Living & Senior Care Cleaning',
+    slug: 'assisted-living-senior-care',
+    title: 'Assisted Living & Senior Care Cleaning',
+    description: 'Compassionate, thorough cleaning for nursing homes, assisted living communities, and memory care facilities.',
+    metaDescription: 'Assisted living and senior care cleaning in {{city}}, MA. Fragrance-free options, resident-safe protocols. 22 years healthcare experience, $2M insured. Schedule assessment: (978) 307-8107.',
+    keywords: 'assisted living cleaning {{city}} MA, nursing home sanitation {{city}}, senior care facility cleaning {{city}}, memory care cleaning {{city}} Massachusetts, elder care sanitation {{city}}',
+    leadText: 'Senior care facilities in {{city}} require a specialized approach to environmental cleaning that prioritizes resident safety, comfort, and dignity. Our assisted living cleaning services use fragrance-sensitive, low-toxicity products appropriate for elderly and immunocompromised residents, delivering consistent sanitation that supports infection prevention and regulatory compliance.',
     servicesList: [
-      'Daily, weekly, or monthly cleaning schedules',
-      'Office and commercial building cleaning',
-      'Floor care and maintenance',
-      'Restroom sanitation and supplies',
-      'Trash removal and recycling',
-      'Window and glass cleaning',
-      'Break room and kitchen cleaning',
-      'Dusting and surface sanitization'
+      'Resident room and bathroom deep cleaning',
+      'Common area and dining hall sanitation',
+      'Memory care unit specialized protocols',
+      'Fragrance-free and low-toxicity product options',
+      'Handrail, elevator, and mobility aid disinfection',
+      'Laundry room and utility area cleaning',
+      'Activity room and therapy space sanitation',
+      'Entrance and reception area maintenance'
     ],
     faqs: [
       {
-        question: 'How often should janitorial services be scheduled in {{city}}?',
-        answer: 'The frequency depends on your facility size, foot traffic, and business type. Most offices benefit from daily or 2-3 times weekly service. We offer flexible scheduling to meet your specific needs.'
+        question: 'Do you use products safe for elderly residents in {{city}}?',
+        answer: 'Yes. For senior care facilities in {{city}}, we offer fragrance-free and low-toxicity cleaning product options specifically chosen for elderly and immunocompromised residents. All products are EPA-registered and effective against common healthcare pathogens while being safe for residents with respiratory sensitivities.'
       },
       {
-        question: 'What does commercial janitorial service include in {{city}}?',
-        answer: 'Our janitorial services include floor cleaning, restroom sanitization, trash removal, dusting, window cleaning, break room cleaning, and general facility maintenance. We customize our services to your requirements.'
+        question: 'How do you handle infection outbreaks in {{city}} senior care facilities?',
+        answer: 'We have outbreak response protocols for {{city}} facilities that include enhanced disinfection frequency, targeted high-touch surface treatment, and coordination with facility management. We can rapidly escalate our cleaning protocols during flu season, COVID outbreaks, or other infectious disease events.'
       },
       {
-        question: 'Do you provide after-hours cleaning in {{city}}?',
-        answer: 'Yes, we offer flexible scheduling including early morning, evening, and weekend cleaning to minimize disruption to your business operations.'
+        question: 'Can you clean around residents\' schedules in {{city}}?',
+        answer: 'Absolutely. We understand that senior care facilities in {{city}} operate 24/7 and residents have established routines. Our team works quietly and respectfully around meal times, activity schedules, and rest periods to minimize disruption.'
       }
     ]
   },
-  'general-housekeeping': {
-    name: 'General Housekeeping',
-    slug: 'general-housekeeping',
-    title: 'General Housekeeping',
-    description: 'Comprehensive home cleaning services to keep your living space fresh, clean, and comfortable.',
-    metaDescription: 'Professional general housekeeping services in {{city}}, Massachusetts. 21+ years experience. Licensed & insured. Call (978) 307-8107 for a free quote!',
-    keywords: 'general housekeeping, {{city}}, MA, cleaning services, general-housekeeping, Massachusetts',
-    leadText: 'Our general housekeeping services provide regular, reliable cleaning to maintain your home\'s cleanliness and comfort. From weekly tidying to bi-weekly deep cleans, we customize our service to fit your lifestyle and needs.',
+  'infection-control-disinfection': {
+    name: 'Infection Control & High-Touch Disinfection',
+    slug: 'infection-control-disinfection',
+    title: 'Infection Control & Disinfection',
+    description: 'Targeted high-touch surface disinfection and infection prevention services for healthcare facilities.',
+    metaDescription: 'Infection control and high-touch disinfection in {{city}}, MA. EPA-registered products effective against MRSA, C. diff. 22 years healthcare experience, $2M insured. Call (978) 307-8107.',
+    keywords: 'infection control cleaning {{city}} MA, high-touch surface disinfection {{city}}, healthcare disinfection services {{city}} Massachusetts, MRSA cleaning {{city}}, pathogen disinfection {{city}}',
+    leadText: 'Our infection control and high-touch surface disinfection services in {{city}} provide an additional layer of protection for healthcare facilities. Focusing on surfaces most frequently touched by patients, staff, and visitors, we deliver systematic disinfection using EPA-registered products with proven efficacy against healthcare-associated pathogens including MRSA, C. diff, and respiratory viruses.',
     servicesList: [
-      'Dusting all surfaces and decor',
-      'Vacuuming and mopping floors',
-      'Kitchen cleaning and sanitization',
-      'Bathroom cleaning and disinfection',
-      'Bedroom tidying and bed making',
-      'Laundry folding and organization',
-      'Dish washing and kitchen organizing',
-      'General tidying and decluttering'
+      'Systematic high-touch surface identification and mapping',
+      'EPA-registered disinfectants with proven pathogen kill claims',
+      'Door handle, light switch, and handrail disinfection',
+      'Elevator button and check-in kiosk sanitization',
+      'Shared equipment and waiting room surface treatment',
+      'Proper contact time verification protocols',
+      'Outbreak response enhanced disinfection',
+      'Documentation and verification reporting'
     ],
     faqs: [
       {
-        question: 'What\'s included in housekeeping service in {{city}}?',
-        answer: 'Our standard housekeeping includes dusting, vacuuming, mopping, kitchen cleaning, bathroom cleaning, bedroom tidying, and trash removal. We can customize services to include additional tasks like laundry or organizing.'
+        question: 'What surfaces are considered high-touch in {{city}} healthcare facilities?',
+        answer: 'High-touch surfaces in {{city}} healthcare facilities include door handles, light switches, handrails, elevator buttons, reception counters, check-in kiosks, shared pens, chair armrests, restroom fixtures, and any surface frequently touched by multiple people throughout the day.'
       },
       {
-        question: 'How often should I schedule housekeeping in {{city}}?',
-        answer: 'Most clients benefit from weekly or bi-weekly service. The ideal frequency depends on your household size, lifestyle, and personal preferences. We offer flexible scheduling options.'
+        question: 'Are your disinfectants effective against MRSA and C. diff in {{city}}?',
+        answer: 'Yes. We use EPA-registered hospital-grade disinfectants with proven kill claims against common healthcare pathogens including MRSA, C. difficile, Norovirus, Influenza, and SARS-CoV-2. We follow manufacturer-specified contact times to ensure full efficacy at every {{city}} facility we serve.'
       },
       {
-        question: 'Do you bring cleaning supplies in {{city}}?',
-        answer: 'Yes, we bring all necessary cleaning supplies and equipment. If you have preferences for specific products or have eco-friendly requirements, we\'re happy to accommodate.'
+        question: 'How often should high-touch disinfection be performed in {{city}}?',
+        answer: 'Frequency depends on your {{city}} facility type and patient volume. High-traffic areas like urgent care waiting rooms may benefit from multiple-times-daily disinfection, while lower-traffic medical offices may need once-daily treatment. We customize the schedule based on your risk assessment.'
       }
     ]
   },
-  'upholstery-cleaning': {
-    name: 'Upholstery Cleaning',
-    slug: 'upholstery-cleaning',
-    title: 'Upholstery Cleaning',
-    description: 'Expert cleaning for sofas, chairs, and all upholstered furniture to restore fabrics and remove stains.',
-    metaDescription: 'Professional upholstery cleaning services in {{city}}, Massachusetts. 21+ years experience. Licensed & insured. Call (978) 307-8107 for a free quote!',
-    keywords: 'upholstery cleaning, {{city}}, MA, cleaning services, upholstery-cleaning, Massachusetts',
-    leadText: 'Our professional upholstery cleaning service revitalizes your furniture, removing deep-set stains, odors, and allergens. We use safe, effective methods suitable for all fabric types to extend the life of your upholstered pieces.',
+  'compliance-scheduled-sanitation': {
+    name: 'Compliance Documentation & Scheduled Sanitation',
+    slug: 'compliance-scheduled-sanitation',
+    title: 'Compliance & Scheduled Sanitation',
+    description: 'Structured sanitation programs with compliance documentation, quality control reporting, and scheduled cleaning verification.',
+    metaDescription: 'Compliance documentation and scheduled sanitation in {{city}}, MA. Quality control reports, inspection-ready documentation. 22 years healthcare experience, $2M insured. Call (978) 307-8107.',
+    keywords: 'compliance sanitation documentation {{city}} MA, scheduled sanitation programs {{city}}, healthcare cleaning compliance {{city}} Massachusetts, sanitation quality control {{city}}, facility inspection cleaning {{city}}',
+    leadText: 'Our compliance documentation and scheduled sanitation service in {{city}} provides healthcare facilities with a structured, contract-based cleaning program that includes detailed documentation for regulatory compliance. We deliver scheduled sanitation with verified cleaning logs, quality control audits, and reporting that demonstrates your facility\'s commitment to environmental hygiene standards.',
     servicesList: [
-      'Sofa and couch cleaning',
-      'Chair and loveseat cleaning',
-      'Sectional sofa treatment',
-      'Fabric protection application',
-      'Stain and spot removal',
-      'Odor elimination',
-      'Pet hair and dander removal',
-      'Mattress cleaning available'
+      'Customized sanitation schedule development',
+      'Detailed cleaning verification logs and checklists',
+      'Quality control audits and spot inspections',
+      'Monthly and quarterly compliance reports',
+      'Pre-inspection and pre-accreditation deep cleaning',
+      'Staff training documentation and protocol records',
+      'Corrective action tracking and resolution',
+      'Contract-based service level agreements'
     ],
     faqs: [
       {
-        question: 'How long does it take for upholstery to dry in {{city}}?',
-        answer: 'Most upholstery dries within 4-6 hours depending on fabric type, humidity, and airflow. We use methods that minimize drying time while maximizing cleaning effectiveness.'
+        question: 'What compliance documentation do you provide for {{city}} facilities?',
+        answer: 'We provide detailed cleaning verification logs, task completion checklists, quality control audit reports, monthly summary reports, and corrective action records for {{city}} facilities. All documentation is organized and available for regulatory inspections, internal audits, and accreditation reviews.'
       },
       {
-        question: 'Can you clean all types of fabric in {{city}}?',
-        answer: 'Yes, we\'re trained to clean all fabric types including cotton, microfiber, leather, velvet, and delicate fabrics. We assess each piece and use the appropriate cleaning method.'
+        question: 'Can you create a custom sanitation schedule for our {{city}} facility?',
+        answer: 'Yes. We conduct an initial facility walkthrough assessment in {{city}} to understand your specific needs, patient flow, high-risk areas, and regulatory requirements. From this, we develop a customized sanitation schedule with defined tasks, frequencies, and accountability measures.'
       },
       {
-        question: 'Will cleaning remove all stains in {{city}}?',
-        answer: 'We can remove most stains, but some set-in or old stains may be difficult or impossible to fully remove. We\'ll assess your furniture and provide realistic expectations before cleaning.'
+        question: 'Do you offer contract-based service agreements in {{city}}?',
+        answer: 'Yes. We offer flexible contract-based service level agreements for {{city}} facilities that define scope, frequency, quality standards, documentation requirements, and pricing. Contracts provide predictable costs and guaranteed service levels.'
       }
     ]
   }
@@ -383,7 +383,7 @@ function generatePageHTML(service, city, cityKey) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${serviceData.title} in ${cityData.name}, MA | Dorys Cleaning</title>
+  <title>${serviceData.title} in ${cityData.name}, MA | Dorys Healthcare Environmental Services</title>
   <meta name="description" content="${metaDescription}">
   <meta name="keywords" content="${keywords}">
   <meta name="robots" content="index, follow">
@@ -392,7 +392,7 @@ function generatePageHTML(service, city, cityKey) {
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://doryscleaningservices.com/services/${serviceData.slug}/${cityData.slug}.html">
-  <meta property="og:title" content="${serviceData.title} in ${cityData.name}, MA | Dorys Cleaning">
+  <meta property="og:title" content="${serviceData.title} in ${cityData.name}, MA | Dorys Healthcare Environmental Services">
   <meta property="og:description" content="${metaDescription}">
   <meta property="og:image" content="https://doryscleaningservices.com/assets/images/services/${serviceData.slug}.jpg">
 
@@ -422,7 +422,7 @@ function generatePageHTML(service, city, cityKey) {
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Dorys Janitorial Cleaning Services Inc. - ${serviceData.title} in ${cityData.name}",
+    "name": "Dorys Healthcare Environmental Services - ${serviceData.title} in ${cityData.name}",
     "image": "https://doryscleaningservices.com/assets/images/services/${serviceData.slug}.jpg",
     "url": "https://doryscleaningservices.com/services/${serviceData.slug}/${cityData.slug}.html",
     "telephone": "+19783078107",
@@ -453,7 +453,7 @@ function generatePageHTML(service, city, cityKey) {
     }],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Cleaning Services",
+      "name": "Healthcare Sanitation Services",
       "itemListElement": [{
         "@type": "Offer",
         "itemOffered": {
@@ -514,7 +514,7 @@ function generatePageHTML(service, city, cityKey) {
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Janitorial Cleaning Services" width="180" height="60">
+        <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Healthcare Environmental Services" width="180" height="60">
       </a>
       <nav class="header__nav">
         <ul class="nav-list">
@@ -522,11 +522,11 @@ function generatePageHTML(service, city, cityKey) {
           <li class="nav-item has-dropdown">
             <a href="/services/" class="nav-link nav-link--active">Services <svg class="nav-link__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
             <div class="nav-dropdown">
-              <a href="/services/janitorial-service/" class="nav-dropdown__link">Janitorial Service</a>
-              <a href="/services/deep-cleaning/" class="nav-dropdown__link">Deep Cleaning</a>
-              <a href="/services/upholstery-cleaning/" class="nav-dropdown__link">Upholstery Cleaning</a>
-              <a href="/services/carpet-cleaning/" class="nav-dropdown__link">Carpet Cleaning</a>
-              <a href="/services/general-housekeeping/" class="nav-dropdown__link">General Housekeeping</a>
+              <a href="/services/medical-office-cleaning/" class="nav-dropdown__link">Medical Office Cleaning</a>
+              <a href="/services/clinic-outpatient-sanitation/" class="nav-dropdown__link">Clinic & Outpatient Sanitation</a>
+              <a href="/services/assisted-living-senior-care/" class="nav-dropdown__link">Assisted Living & Senior Care</a>
+              <a href="/services/infection-control-disinfection/" class="nav-dropdown__link">Infection Control & Disinfection</a>
+              <a href="/services/compliance-scheduled-sanitation/" class="nav-dropdown__link">Compliance & Scheduled Sanitation</a>
             </div>
           </li>
           <li class="nav-item"><a href="/locations/" class="nav-link">Service Areas</a></li>
@@ -535,7 +535,7 @@ function generatePageHTML(service, city, cityKey) {
           <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-      <a href="/contact.html" class="btn btn--primary header__cta hide-mobile">Get Free Quote</a>
+      <a href="/contact.html" class="btn btn--primary header__cta hide-mobile">Healthcare Assessment</a>
       <button class="header__toggle" aria-label="Toggle menu">
         <span class="header__toggle-icon"><span></span><span></span><span></span></span>
       </button>
@@ -564,9 +564,9 @@ function generatePageHTML(service, city, cityKey) {
       <div class="container">
         <div class="hero__content hero__content--center">
           <h1 class="hero__title">${serviceData.title} in ${cityData.name}, MA</h1>
-          <p class="hero__subtitle">${serviceData.description} Serving ${cityData.name} and ${cityData.county} with 21+ years of professional experience.</p>
+          <p class="hero__subtitle">${serviceData.description} Serving ${cityData.name} and ${cityData.county} with 22 years of healthcare experience. CDC/OSHA compliant protocols. $2M insured.</p>
           <div class="hero__ctas">
-            <a href="/contact.html" class="btn btn--primary btn--lg btn--pulse">Get a Free Quote</a>
+            <a href="/contact.html" class="btn btn--primary btn--lg btn--pulse">Schedule a Facility Assessment</a>
             <a href="tel:+19783078107" class="btn btn--outline-light btn--lg">Call (978) 307-8107</a>
           </div>
         </div>
@@ -587,18 +587,18 @@ ${servicesList}
             </ul>
 
             <h3>Why Choose Dorys for ${serviceData.title} in ${cityData.name}?</h3>
-            <p>When you need professional ${serviceData.name.toLowerCase()} in ${cityData.name}, MA, Dorys Janitorial Cleaning Services delivers exceptional results. With over 21+ years serving ${cityData.county} and throughout Massachusetts, we understand the unique needs of ${cityData.name} residents and businesses.</p>
-            <p>Our team is fully licensed (HIC #213341) and carries $2,000,000 in insurance coverage. We use professional-grade equipment and eco-friendly cleaning solutions to ensure the best results while protecting your property and the environment.</p>
+            <p>When you need professional ${serviceData.name.toLowerCase()} in ${cityData.name}, MA, Dorys Healthcare Environmental Services delivers results backed by 22 years of healthcare experience. Serving ${cityData.county} and throughout Massachusetts, we understand the infection control, compliance, and patient safety demands of healthcare facilities.</p>
+            <p>Our team is fully licensed (HIC #213341) and carries $2,000,000 in insurance coverage. Staff are trained in healthcare-appropriate protocols including bloodborne pathogen awareness, CDC environmental cleaning guidelines, and EPA-registered disinfectant application with proper contact times. We provide full compliance documentation and quality control reporting.</p>
 
             <div class="btn-group mt-xl">
-              <a href="/contact.html" class="btn btn--primary">Request Free Quote</a>
+              <a href="/contact.html" class="btn btn--primary">Schedule a Healthcare Assessment</a>
               <a href="tel:+19783078107" class="btn btn--secondary">Call (978) 307-8107</a>
             </div>
           </div>
 
           <div class="animate-on-scroll animate-fade-left animate-delay-200">
             <div class="form-embed" style="background: var(--bg-light); border-radius: var(--radius-lg); padding: var(--space-lg);">
-              <h3 class="text-center mb-lg">Get Your Free Quote</h3>
+              <h3 class="text-center mb-lg">Request a Healthcare Site Assessment</h3>
               <iframe src="https://api.leadconnectorhq.com/widget/form/oaN0aNeRAK8fPG4AnIzl" style="width:100%;height:600px;border:none;border-radius:8px" title="Contact Form"></iframe>
               <script src="https://link.msgsndr.com/js/form_embed.js"></script>
             </div>
@@ -637,9 +637,9 @@ ${nearbyCitiesHTML}
     <section class="section section--primary">
       <div class="container text-center">
         <h2 class="text-white mb-lg">Ready for Professional ${serviceData.title} in ${cityData.name}?</h2>
-        <p class="lead text-white mb-xl" style="opacity:0.9">Contact us today for a free, no-obligation quote.</p>
+        <p class="lead text-white mb-xl" style="opacity:0.9">Schedule a healthcare facility walkthrough today. 22 years of healthcare experience. $2M insured.</p>
         <div class="btn-group btn-group--center">
-          <a href="/contact.html" class="btn btn--white btn--lg">Get Free Quote</a>
+          <a href="/contact.html" class="btn btn--white btn--lg">Schedule Facility Assessment</a>
           <a href="tel:+19783078107" class="btn btn--outline-light btn--lg">Call (978) 307-8107</a>
         </div>
       </div>
@@ -651,10 +651,10 @@ ${nearbyCitiesHTML}
     <div class="container">
       <!-- Footer CTA -->
       <div class="footer__cta">
-        <h2 class="footer__cta-title">Get Your Free Quote Today!</h2>
-        <p class="footer__cta-text">Professional cleaning services with 21+ years of experience. Licensed, insured, and ready to make your space shine.</p>
+        <h2 class="footer__cta-title">Schedule a Healthcare Facility Assessment</h2>
+        <p class="footer__cta-text">Healthcare-focused environmental services with 22 years of experience. Licensed, $2M insured, and trained in healthcare protocols.</p>
         <div class="footer__cta-buttons">
-          <a href="/#contact" class="btn btn--white btn--lg">Request Free Quote</a>
+          <a href="/#contact" class="btn btn--white btn--lg">Request Healthcare Assessment</a>
           <a href="tel:+19783078107" class="btn btn--outline-light btn--lg">Call (978) 307-8107</a>
         </div>
       </div>
@@ -664,10 +664,10 @@ ${nearbyCitiesHTML}
         <!-- Brand Column -->
         <div class="footer__col footer__brand">
           <a href="/" class="footer__logo">
-            <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
-            <span class="footer__logo-text">Dorys Janitorial</span>
+            <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Healthcare Environmental Services" class="footer__logo-img" width="180" height="60">
+            <span class="footer__logo-text">Dorys Healthcare</span>
           </a>
-          <p class="footer__description">Professional janitorial and cleaning services in Massachusetts since 2004. We deliver exceptional results with attention to detail and clear communication.</p>
+          <p class="footer__description">Healthcare-focused environmental services in Massachusetts since 2004. 22 years of healthcare experience delivering precision sanitation, compliance-driven protocols, and infection control support.</p>
 
           <div class="footer__trust">
             <div class="footer__trust-item">
@@ -713,11 +713,11 @@ ${nearbyCitiesHTML}
         <div class="footer__col">
           <h4 class="footer__title">Our Services</h4>
           <ul class="footer__links">
-            <li><a href="/services/janitorial-service/">Janitorial Service</a></li>
-            <li><a href="/services/deep-cleaning/">Deep Cleaning</a></li>
-            <li><a href="/services/carpet-cleaning/">Carpet Cleaning</a></li>
-            <li><a href="/services/upholstery-cleaning/">Upholstery Cleaning</a></li>
-            <li><a href="/services/general-housekeeping/">General Housekeeping</a></li>
+            <li><a href="/services/medical-office-cleaning/">Medical Office Cleaning</a></li>
+            <li><a href="/services/clinic-outpatient-sanitation/">Clinic & Outpatient Sanitation</a></li>
+            <li><a href="/services/assisted-living-senior-care/">Assisted Living & Senior Care</a></li>
+            <li><a href="/services/infection-control-disinfection/">Infection Control & Disinfection</a></li>
+            <li><a href="/services/compliance-scheduled-sanitation/">Compliance & Scheduled Sanitation</a></li>
           </ul>
         </div>
 
@@ -788,14 +788,14 @@ ${nearbyCitiesHTML}
           <svg class="footer__credential-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
           <div class="footer__credential-text">
             <span class="footer__credential-label">Founded:</span>
-            <span class="footer__credential-value">2004 (21+ Years)</span>
+            <span class="footer__credential-value">2004 (22 Years Healthcare)</span>
           </div>
         </div>
       </div>
 
       <!-- Footer Bottom -->
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2025 Dorys Janitorial Cleaning Services Inc. All rights reserved.</p>
+        <p class="footer__copyright">&copy; 2026 Dorys Healthcare Environmental Services Inc. All rights reserved.</p>
         <nav class="footer__legal">
           <a href="/privacy.html">Privacy Policy</a>
           <a href="/terms.html">Terms of Service</a>

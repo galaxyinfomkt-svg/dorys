@@ -9,117 +9,117 @@ const path = require('path');
 const baseDir = path.join(__dirname, '..');
 const today = new Date().toISOString().split('T')[0];
 
-// Service configurations
+// Service configurations - Healthcare Environmental Services
 const SERVICES = {
-  'janitorial-service': {
-    name: 'Janitorial Service',
-    title: 'Professional Janitorial Services in Massachusetts',
-    description: 'Commercial janitorial and office cleaning services across Massachusetts. Daily, weekly, and monthly cleaning for offices, warehouses, medical facilities, and corporate buildings.',
-    metaDescription: 'Professional janitorial services across 100+ Massachusetts cities. Commercial office cleaning, warehouse maintenance, medical facility cleaning. Licensed & insured. Call (978) 307-8107!',
-    intro: `Dorys Janitorial Cleaning Services provides comprehensive commercial cleaning solutions throughout Massachusetts. With over 21 years of experience, we've built a reputation for reliability, thoroughness, and exceptional customer service.
+  'medical-office-cleaning': {
+    name: 'Medical Office Cleaning',
+    title: 'Medical Office Cleaning Services in Massachusetts',
+    description: 'Specialized sanitation for medical offices, dental practices, and physician clinics across Massachusetts. Infection control protocols, EPA-registered disinfectants, and compliance documentation.',
+    metaDescription: 'Professional medical office cleaning across 100+ Massachusetts cities. EPA-registered disinfectants, infection control protocols, compliance documentation. 22 years healthcare experience. (978) 307-8107',
+    intro: `Dorys Healthcare Environmental Services provides specialized medical office cleaning throughout Massachusetts. With 22 years of hands-on healthcare experience, we understand that clinical environments demand more than standard cleaning — they require trained professionals who follow CDC and OSHA guidelines.
 
-Our janitorial services are designed for businesses of all sizes, from small offices to large corporate campuses. We understand that a clean workspace improves employee productivity, impresses clients, and creates a healthier environment for everyone.
+Our medical office cleaning team uses EPA-registered hospital-grade disinfectants with verified contact times, follows terminal cleaning protocols for exam rooms, and delivers documented results that support your facility's compliance requirements.
 
-We offer flexible scheduling options including daily, weekly, bi-weekly, and monthly service plans. Our trained professionals use commercial-grade equipment and eco-friendly cleaning products to deliver consistent, high-quality results.`,
+We offer flexible scheduling including after-hours and weekend service to ensure zero disruption to your patient flow. Every cleaning is documented with verification logs available for regulatory audits and internal quality reviews.`,
     services: [
-      'Daily Office Cleaning',
-      'Restroom Sanitization',
-      'Floor Care & Maintenance',
-      'Trash Removal & Recycling',
-      'Break Room Cleaning',
-      'Window & Glass Cleaning',
-      'Carpet Vacuuming & Spot Treatment',
-      'Dusting & Surface Sanitization'
+      'EPA-Registered Hospital-Grade Disinfection',
+      'Exam Room Terminal Cleaning',
+      'Waiting Area & Reception Sanitization',
+      'Restroom Medical-Grade Disinfection',
+      'Biohazard-Aware Waste Handling',
+      'HVAC Vent & Air Quality Maintenance',
+      'Medical Equipment Surface Disinfection',
+      'Floor Care with Healthcare-Grade Solutions'
     ],
-    ideal: ['Office Buildings', 'Medical Facilities', 'Warehouses', 'Retail Stores', 'Schools & Universities', 'Corporate Campuses']
+    ideal: ['Physician Offices', 'Dental Practices', 'Dermatology Clinics', 'Podiatry Offices', 'Chiropractic Clinics', 'Optometry Practices']
   },
-  'deep-cleaning': {
-    name: 'Deep Cleaning',
-    title: 'Professional Deep Cleaning Services in Massachusetts',
-    description: 'Thorough deep cleaning services for homes and businesses across Massachusetts. Move-in/move-out cleaning, spring cleaning, post-construction cleanup, and one-time intensive cleaning.',
-    metaDescription: 'Professional deep cleaning services in 100+ Massachusetts cities. Move-in/out cleaning, spring cleaning, post-construction cleanup. 21+ years experience. Call (978) 307-8107!',
-    intro: `When regular cleaning isn't enough, our deep cleaning services restore your space to like-new condition. Dorys Deep Cleaning goes beyond surface cleaning to tackle built-up dirt, grime, and allergens in every corner of your home or business.
+  'clinic-outpatient-sanitation': {
+    name: 'Clinic & Outpatient Sanitation',
+    title: 'Clinic & Outpatient Facility Sanitation in Massachusetts',
+    description: 'Professional sanitation for urgent care centers, outpatient surgery centers, therapy clinics, and specialty healthcare facilities across Massachusetts.',
+    metaDescription: 'Clinic and outpatient facility sanitation across 100+ Massachusetts cities. Terminal cleaning, between-patient protocols. 22 years healthcare experience, $2M insured. (978) 307-8107',
+    intro: `High-traffic healthcare environments like urgent care centers and outpatient facilities require rigorous sanitation protocols that go beyond surface-level cleaning. Dorys Healthcare Environmental Services delivers terminal cleaning, between-patient room turnover, and comprehensive facility-wide disinfection.
 
-Our deep cleaning service is perfect for move-ins, move-outs, seasonal refreshes, post-construction cleanup, or whenever your space needs extra attention. We systematically clean from top to bottom, reaching areas often overlooked during routine maintenance.
+Our team understands the pace and demands of outpatient healthcare. We coordinate with your staff to deliver rapid room turnovers during operating hours and comprehensive deep cleaning during off-hours, ensuring your facility maintains the highest standards of hygiene at all times.
 
-With over 21 years of experience serving Massachusetts families and businesses, we've perfected our deep cleaning process to deliver consistent, thorough results that exceed expectations.`,
+With 22 years of healthcare experience and $2M in insurance coverage, we are a trusted partner for Massachusetts clinics seeking reliable, compliant sanitation services.`,
     services: [
-      'Inside Appliance Cleaning',
-      'Cabinet Interior Cleaning',
-      'Baseboard Deep Cleaning',
-      'Light Fixture Cleaning',
-      'Ceiling Fan Cleaning',
-      'Window Track Cleaning',
-      'Grout Scrubbing',
-      'Behind Furniture Cleaning'
+      'Terminal Cleaning for Procedure Rooms',
+      'Between-Patient Room Turnover',
+      'High-Traffic Waiting Area Disinfection',
+      'Surgical Suite Sanitation',
+      'Biohazard Spill Response & Cleanup',
+      'Restroom & Common Area Disinfection',
+      'Staff Break Room & Locker Cleaning',
+      'Entrance & Lobby Sanitation'
     ],
-    ideal: ['Move-In Preparation', 'Move-Out Cleaning', 'Spring Cleaning', 'Post-Construction', 'Pre-Event Cleaning', 'Seasonal Deep Clean']
+    ideal: ['Urgent Care Centers', 'Outpatient Surgery Centers', 'Physical Therapy Clinics', 'Dialysis Centers', 'Imaging Centers', 'Specialty Clinics']
   },
-  'carpet-cleaning': {
-    name: 'Carpet Cleaning',
-    title: 'Professional Carpet Cleaning Services in Massachusetts',
-    description: 'Expert carpet cleaning and stain removal services across Massachusetts. Steam cleaning, pet odor treatment, high-traffic area restoration, and commercial carpet maintenance.',
-    metaDescription: 'Professional carpet cleaning services in 100+ Massachusetts cities. Steam cleaning, stain removal, pet odor treatment. Licensed & insured. Call (978) 307-8107!',
-    intro: `Professional carpet cleaning extends the life of your carpets while creating a healthier indoor environment. Dorys Carpet Cleaning uses advanced hot water extraction and steam cleaning methods to remove deep-seated dirt, allergens, and stains that regular vacuuming can't reach.
+  'assisted-living-senior-care': {
+    name: 'Assisted Living & Senior Care Cleaning',
+    title: 'Assisted Living & Senior Care Cleaning in Massachusetts',
+    description: 'Compassionate, thorough cleaning for nursing homes, assisted living communities, and memory care facilities across Massachusetts with resident-safe protocols.',
+    metaDescription: 'Assisted living and senior care cleaning across 100+ Massachusetts cities. Fragrance-free options, resident-safe protocols, outbreak response. 22 years healthcare experience. (978) 307-8107',
+    intro: `Senior care facilities require a specialized approach to environmental cleaning that prioritizes resident safety, comfort, and dignity. Dorys Healthcare Environmental Services uses fragrance-sensitive, low-toxicity products appropriate for elderly and immunocompromised residents.
 
-Our carpet cleaning technicians are trained to handle all carpet types, from delicate wool to durable commercial-grade fibers. We pre-treat stains, apply professional-grade cleaning solutions, and use powerful extraction equipment to leave your carpets fresh, clean, and fast-drying.
+We understand the unique challenges of common areas, dining halls, resident rooms, and memory care units. Our team delivers consistent sanitation that supports infection prevention and regulatory compliance while maintaining a warm, comfortable environment for residents.
 
-Whether you need residential carpet cleaning or commercial carpet maintenance, our team delivers exceptional results throughout Massachusetts.`,
+With 22 years of healthcare experience, our staff is trained to work respectfully around residents' schedules and routines, providing thorough cleaning with minimal disruption to daily activities.`,
     services: [
-      'Hot Water Extraction',
-      'Steam Cleaning',
-      'Stain Removal Treatment',
-      'Pet Odor Elimination',
-      'High-Traffic Area Restoration',
-      'Carpet Protection Application',
-      'Area Rug Cleaning',
-      'Commercial Carpet Maintenance'
+      'Resident Room & Bathroom Deep Cleaning',
+      'Common Area & Dining Hall Sanitation',
+      'Memory Care Unit Specialized Protocols',
+      'Fragrance-Free Product Options',
+      'Handrail & Mobility Aid Disinfection',
+      'Laundry Room & Utility Cleaning',
+      'Activity Room & Therapy Space Sanitation',
+      'Entrance & Reception Maintenance'
     ],
-    ideal: ['Homes with Pets', 'High-Traffic Areas', 'Rental Properties', 'Office Buildings', 'Retail Spaces', 'Restaurants & Hotels']
+    ideal: ['Assisted Living Communities', 'Nursing Homes', 'Memory Care Facilities', 'Independent Living', 'Rehabilitation Centers', 'Adult Day Care Programs']
   },
-  'general-housekeeping': {
-    name: 'General Housekeeping',
-    title: 'Professional Housekeeping Services in Massachusetts',
-    description: 'Reliable recurring housekeeping and maid services across Massachusetts. Weekly, bi-weekly, and monthly cleaning to keep your home consistently clean and organized.',
-    metaDescription: 'Professional housekeeping services in 100+ Massachusetts cities. Weekly, bi-weekly, monthly maid service. Trusted since 2004. Call (978) 307-8107!',
-    intro: `Maintain a consistently clean and welcoming home with Dorys General Housekeeping services. Our professional housekeepers provide reliable, recurring cleaning that fits your schedule and lifestyle.
+  'infection-control-disinfection': {
+    name: 'Infection Control & Disinfection',
+    title: 'Infection Control & High-Touch Disinfection in Massachusetts',
+    description: 'Targeted high-touch surface disinfection and infection prevention services for healthcare facilities seeking enhanced pathogen control across Massachusetts.',
+    metaDescription: 'Infection control and high-touch disinfection across 100+ Massachusetts cities. EPA-registered products effective against MRSA, C. diff. 22 years healthcare experience. (978) 307-8107',
+    intro: `Our infection control and high-touch surface disinfection services provide an additional layer of protection for healthcare facilities. Focusing on the surfaces most frequently touched by patients, staff, and visitors, we deliver systematic disinfection using EPA-registered products with proven efficacy against healthcare-associated pathogens.
 
-We offer flexible service frequencies including weekly, bi-weekly, and monthly visits. Each cleaning follows our comprehensive checklist to ensure nothing is overlooked, while we also accommodate your specific preferences and priorities.
+We map high-touch surfaces specific to your facility layout — door handles, light switches, elevator buttons, handrails, check-in kiosks, and shared equipment — and deliver documented disinfection protocols with verified contact times.
 
-Our housekeeping team is background-checked, trained, and committed to providing dependable service you can count on. We've been helping Massachusetts families enjoy cleaner homes since 2004.`,
+Whether you need daily preventive disinfection or rapid outbreak response, our team delivers reliable infection control support backed by 22 years of healthcare experience.`,
     services: [
-      'Dusting & Surface Cleaning',
-      'Vacuuming & Mopping',
-      'Bathroom Cleaning & Sanitization',
-      'Kitchen Cleaning',
-      'Bed Making & Linen Changing',
-      'Trash Removal',
-      'General Tidying',
-      'Customized Cleaning Tasks'
+      'High-Touch Surface Mapping & Disinfection',
+      'EPA-Registered Pathogen Kill Protocols',
+      'Door Handle & Light Switch Treatment',
+      'Elevator Button & Kiosk Sanitization',
+      'Shared Equipment Surface Disinfection',
+      'Contact Time Verification',
+      'Outbreak Response Enhanced Disinfection',
+      'Documentation & Verification Reporting'
     ],
-    ideal: ['Busy Professionals', 'Families with Children', 'Seniors', 'Vacation Homes', 'Rental Properties', 'Anyone Who Values Their Time']
+    ideal: ['Medical Offices', 'Urgent Care Centers', 'Senior Care Facilities', 'Dental Practices', 'Therapy Clinics', 'Any Healthcare Environment']
   },
-  'upholstery-cleaning': {
-    name: 'Upholstery Cleaning',
-    title: 'Professional Upholstery Cleaning Services in Massachusetts',
-    description: 'Expert furniture and upholstery cleaning services across Massachusetts. Sofa cleaning, chair cleaning, fabric protection, and stain removal for all upholstery types.',
-    metaDescription: 'Professional upholstery cleaning in 100+ Massachusetts cities. Sofa, chair, fabric cleaning & stain removal. Safe for all fabrics. Call (978) 307-8107!',
-    intro: `Revitalize your furniture with Dorys Upholstery Cleaning services. Over time, sofas, chairs, and other upholstered furniture collect dust, allergens, body oils, and stains that affect both appearance and indoor air quality.
+  'compliance-scheduled-sanitation': {
+    name: 'Compliance & Scheduled Sanitation',
+    title: 'Compliance Documentation & Scheduled Sanitation in Massachusetts',
+    description: 'Structured sanitation programs with compliance documentation, quality control reporting, and scheduled cleaning verification for healthcare facilities across Massachusetts.',
+    metaDescription: 'Compliance documentation and scheduled sanitation across 100+ Massachusetts cities. Quality control reports, inspection-ready documentation. 22 years healthcare experience. (978) 307-8107',
+    intro: `Our compliance documentation and scheduled sanitation service provides healthcare facilities with a structured, contract-based cleaning program that includes detailed documentation for regulatory compliance.
 
-Our upholstery cleaning process is safe for all fabric types, including delicate materials. We assess each piece to determine the appropriate cleaning method, pre-treat stains, and use professional equipment to extract dirt while protecting your furniture's integrity.
+We deliver scheduled sanitation with verified cleaning logs, quality control audits, and reporting that demonstrates your facility's commitment to environmental hygiene standards. Ideal for facilities preparing for inspections, accreditation, or seeking a higher standard of accountability from their cleaning provider.
 
-Whether you have a single sofa that needs attention or an entire office full of upholstered furniture, our team delivers exceptional results throughout Massachusetts.`,
+With 22 years of healthcare experience, we understand what inspectors and regulators look for, and we build our documentation systems to support your facility's compliance goals from day one.`,
     services: [
-      'Sofa & Couch Cleaning',
-      'Chair & Loveseat Cleaning',
-      'Sectional Cleaning',
-      'Dining Chair Cleaning',
-      'Office Furniture Cleaning',
-      'Stain & Spot Removal',
-      'Fabric Protection Application',
-      'Leather Conditioning'
+      'Customized Sanitation Schedule Development',
+      'Cleaning Verification Logs & Checklists',
+      'Quality Control Audits & Inspections',
+      'Monthly & Quarterly Compliance Reports',
+      'Pre-Inspection Deep Cleaning',
+      'Staff Training Documentation',
+      'Corrective Action Tracking',
+      'Contract-Based Service Agreements'
     ],
-    ideal: ['Homes with Pets', 'Families with Children', 'Allergy Sufferers', 'Office Reception Areas', 'Restaurants', 'Hotels & Hospitality']
+    ideal: ['Hospitals & Health Systems', 'Multi-Location Practices', 'Accreditation-Seeking Facilities', 'State-Regulated Facilities', 'Insurance-Required Programs', 'Quality-Focused Clinics']
   }
 };
 
@@ -157,7 +157,7 @@ function generateServiceHub(serviceSlug, config) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${config.title} | Dorys Cleaning</title>
+  <title>${config.title} | Dorys Healthcare Environmental Services</title>
   <meta name="description" content="${config.metaDescription}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://doryscleaningservices.com/services/${serviceSlug}">
@@ -191,7 +191,7 @@ function generateServiceHub(serviceSlug, config) {
     "description": "${config.description}",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Dorys Janitorial Cleaning Services Inc.",
+      "name": "Dorys Healthcare Environmental Services Inc.",
       "telephone": "+1-978-307-8107",
       "address": {"@type": "PostalAddress", "addressRegion": "MA", "addressCountry": "US"}
     },
@@ -252,7 +252,7 @@ function generateServiceHub(serviceSlug, config) {
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Janitorial Cleaning Services" width="180" height="60">
+        <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Healthcare Environmental Services" width="180" height="60">
       </a>
       <nav class="header__nav">
         <ul class="nav-list">
@@ -263,7 +263,7 @@ function generateServiceHub(serviceSlug, config) {
           <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-      <a href="/contact" class="btn btn--primary header__cta hide-mobile">Get Free Quote</a>
+      <a href="/contact" class="btn btn--primary header__cta hide-mobile">Healthcare Assessment</a>
       <button class="header__toggle" aria-label="Toggle menu">
         <span class="header__toggle-icon"><span></span><span></span><span></span></span>
       </button>
@@ -295,7 +295,7 @@ function generateServiceHub(serviceSlug, config) {
           <p class="hero__subtitle">${config.description}</p>
           <div class="hero__actions">
             <a href="tel:+19783078107" class="btn btn--accent btn--lg">Call (978) 307-8107</a>
-            <a href="/contact" class="btn btn--white btn--lg">Get Free Quote</a>
+            <a href="/contact" class="btn btn--white btn--lg">Schedule Assessment</a>
           </div>
         </div>
       </div>
@@ -331,7 +331,7 @@ function generateServiceHub(serviceSlug, config) {
         <div class="section__header section__header--center">
           <span class="section__badge">${cities.length}+ Locations</span>
           <h2 class="section__title">${config.name} in Your City</h2>
-          <p class="section__description">Select your city below to see local availability and get a free quote for ${config.name.toLowerCase()} services.</p>
+          <p class="section__description">Select your city below to see local availability and schedule a healthcare facility assessment for ${config.name.toLowerCase()} services.</p>
         </div>
 
         <div class="cities-grid">
@@ -344,19 +344,19 @@ ${citiesHtml}
     <section class="section--cta">
       <div class="container">
         <div class="cta-box--large">
-          <span class="cta-box__badge">Free Estimate</span>
+          <span class="cta-box__badge">Healthcare Assessment</span>
           <h2 class="cta-box__title">Ready for Professional ${config.name}?</h2>
-          <p class="cta-box__text">Get your free, no-obligation quote today. Our team is ready to serve you!</p>
+          <p class="cta-box__text">Schedule a healthcare facility walkthrough today. Compliance-driven protocols backed by 22 years of healthcare experience.</p>
           <div class="cta-box__actions">
             <a href="tel:+19783078107" class="btn btn--accent btn--xl">Call (978) 307-8107</a>
-            <a href="/contact" class="btn btn--white btn--xl">Request Quote Online</a>
+            <a href="/contact" class="btn btn--white btn--xl">Schedule Facility Assessment</a>
           </div>
           <div class="cta-box__trust">
             <span>Licensed (HIC #213341)</span>
             <span>-</span>
             <span>$2M Insured</span>
             <span>-</span>
-            <span>21+ Years Experience</span>
+            <span>22 Years Healthcare Experience</span>
           </div>
         </div>
       </div>
@@ -369,18 +369,18 @@ ${citiesHtml}
       <div class="footer__grid">
         <div class="footer__col footer__brand">
           <a href="/" class="footer__logo">
-            <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Cleaning" class="footer__logo-img" width="180" height="60">
+            <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Healthcare Environmental Services" class="footer__logo-img" width="180" height="60">
           </a>
-          <p class="footer__description">Professional cleaning services in Massachusetts since 2004.</p>
+          <p class="footer__description">Healthcare-focused environmental services in Massachusetts since 2004. 22 years of healthcare experience.</p>
         </div>
         <div class="footer__col">
           <h4 class="footer__title">Services</h4>
           <ul class="footer__links">
-            <li><a href="/services/janitorial-service">Janitorial Service</a></li>
-            <li><a href="/services/deep-cleaning">Deep Cleaning</a></li>
-            <li><a href="/services/carpet-cleaning">Carpet Cleaning</a></li>
-            <li><a href="/services/upholstery-cleaning">Upholstery Cleaning</a></li>
-            <li><a href="/services/general-housekeeping">General Housekeeping</a></li>
+            <li><a href="/services/medical-office-cleaning">Medical Office Cleaning</a></li>
+            <li><a href="/services/clinic-outpatient-sanitation">Clinic & Outpatient Sanitation</a></li>
+            <li><a href="/services/assisted-living-senior-care">Assisted Living & Senior Care</a></li>
+            <li><a href="/services/infection-control-disinfection">Infection Control & Disinfection</a></li>
+            <li><a href="/services/compliance-scheduled-sanitation">Compliance & Scheduled Sanitation</a></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -396,7 +396,7 @@ ${citiesHtml}
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; ${new Date().getFullYear()} Dorys Janitorial Cleaning Services Inc.</p>
+        <p class="footer__copyright">&copy; ${new Date().getFullYear()} Dorys Healthcare Environmental Services Inc.</p>
         <nav class="footer__legal">
           <a href="/privacy">Privacy</a>
           <a href="/terms">Terms</a>
