@@ -1,197 +1,197 @@
 {
   "services": [
     {
-      "name": "Janitorial Service",
-      "slug": "janitorial-service",
-      "shortDescription": "Professional commercial cleaning for offices, shops, warehouses, and corporate facilities.",
-      "fullDescription": "Our professional janitorial services provide comprehensive cleaning solutions for commercial properties throughout Massachusetts. From daily office cleaning to weekly maintenance, we keep your business environment spotless and professional.",
+      "name": "Medical Office Cleaning",
+      "slug": "medical-office-cleaning",
+      "shortDescription": "Specialized sanitation for medical offices, dental practices, and physician clinics with infection control protocols and compliance documentation.",
+      "fullDescription": "Our medical office cleaning services are designed to meet the stringent hygiene and safety standards required by healthcare facilities. With 22 years of hands-on healthcare experience, we understand that clinical environments demand more than standard cleaning — they require trained professionals who follow CDC and OSHA guidelines, use EPA-registered hospital-grade disinfectants, and deliver documented results that support your facility's compliance requirements.",
       "features": [
-        "Daily, weekly, or monthly cleaning schedules",
-        "Office and commercial building cleaning",
-        "Floor care and maintenance",
-        "Restroom sanitation and supplies",
-        "Trash removal and recycling",
-        "Window and glass cleaning",
-        "Break room and kitchen cleaning",
-        "Dusting and surface sanitization"
+        "EPA-registered hospital-grade disinfectant application",
+        "Exam room terminal cleaning protocols",
+        "Waiting area and reception sanitization",
+        "Restroom medical-grade disinfection",
+        "Biohazard-aware waste handling procedures",
+        "HVAC vent and air quality maintenance",
+        "Medical equipment surface disinfection",
+        "Floor care with healthcare-grade solutions"
       ],
       "benefits": [
-        "Create a healthier work environment",
-        "Improve employee productivity",
-        "Make great first impressions on clients",
-        "Reduce sick days with proper sanitization",
-        "Extend the life of your facility"
+        "Reduce healthcare-associated infection risk",
+        "Maintain regulatory compliance readiness",
+        "Protect patient and staff health",
+        "Documented cleaning verification for audits",
+        "Customized sanitation schedules for your practice"
       ],
-      "image": "janitorial-service.jpg",
-      "heroImage": "janitorial-service.jpg",
+      "image": "medical-office-cleaning.jpg",
+      "heroImage": "medical-office-cleaning.jpg",
       "faqs": [
         {
-          "question": "How often should janitorial services be scheduled?",
-          "answer": "The frequency depends on your facility size, foot traffic, and business type. Most offices benefit from daily or 2-3 times weekly service. We offer flexible scheduling to meet your specific needs."
+          "question": "What infection control protocols do you follow for medical office cleaning?",
+          "answer": "We follow CDC and OSHA guidelines for healthcare environmental cleaning, including use of EPA-registered hospital-grade disinfectants, proper contact time protocols, and trained staff with bloodborne pathogen awareness. Our team understands the unique requirements of clinical environments."
         },
         {
-          "question": "What does commercial janitorial service include?",
-          "answer": "Our janitorial services include floor cleaning, restroom sanitization, trash removal, dusting, window cleaning, break room cleaning, and general facility maintenance. We customize our services to your requirements."
+          "question": "Do you provide cleaning documentation for compliance purposes?",
+          "answer": "Yes. We provide detailed cleaning logs, quality control checklists, and scheduled sanitation reports that support your facility's compliance documentation requirements. These records are available for regulatory audits and internal quality reviews."
         },
         {
-          "question": "Do you provide after-hours cleaning?",
-          "answer": "Yes, we offer flexible scheduling including early morning, evening, and weekend cleaning to minimize disruption to your business operations."
+          "question": "Can you clean during off-hours to avoid disrupting patient care?",
+          "answer": "Absolutely. We offer flexible scheduling including early morning, evening, and weekend cleaning to ensure zero disruption to your patient flow and clinical operations. We customize our schedule around your practice hours."
         }
       ]
     },
     {
-      "name": "Deep Cleaning",
-      "slug": "deep-cleaning",
-      "shortDescription": "Thorough top-to-bottom cleaning that reaches every corner of your home or business.",
-      "fullDescription": "Our deep cleaning service goes beyond regular cleaning to tackle built-up grime, hidden dirt, and hard-to-reach areas. Perfect for move-ins, move-outs, seasonal cleaning, or when your space needs extra attention.",
+      "name": "Clinic & Outpatient Facility Sanitation",
+      "slug": "clinic-outpatient-sanitation",
+      "shortDescription": "Professional sanitation for urgent care centers, outpatient surgery centers, therapy clinics, and specialty healthcare facilities.",
+      "fullDescription": "Our clinic and outpatient facility sanitation services address the unique challenges of high-traffic healthcare environments. Urgent care centers, outpatient surgery facilities, physical therapy clinics, and specialty practices require rigorous cleaning protocols that go beyond surface-level sanitation. Our team is trained to deliver terminal cleaning, between-patient room turnover, and comprehensive facility-wide disinfection.",
       "features": [
-        "Intensive surface and appliance cleaning",
-        "Kitchen deep clean including inside cabinets",
-        "Bathroom sanitization and grout cleaning",
-        "Behind and under furniture cleaning",
-        "Light fixtures and ceiling fan cleaning",
-        "Baseboard and door frame detailing",
-        "Window sill and track cleaning",
-        "Closet and storage area organization"
+        "Terminal cleaning for procedure and exam rooms",
+        "Between-patient room turnover protocols",
+        "High-traffic waiting area disinfection",
+        "Surgical suite and procedure room sanitation",
+        "Biohazard spill response and cleanup",
+        "Restroom and common area deep disinfection",
+        "Staff break room and locker area cleaning",
+        "Entrance and lobby sanitation with floor care"
       ],
       "benefits": [
-        "Remove built-up dirt and grime",
-        "Eliminate allergens and bacteria",
-        "Restore your space to like-new condition",
-        "Perfect for special occasions",
-        "Great for move-in/move-out situations"
+        "Minimize cross-contamination between patients",
+        "Support rapid room turnover for busy clinics",
+        "Meet outpatient facility sanitation standards",
+        "Reduce staff exposure to pathogens",
+        "Maintain a clean, professional patient environment"
       ],
-      "image": "deep-cleaning.jpg",
-      "heroImage": "deep-cleaning.jpg",
+      "image": "clinic-outpatient-sanitation.jpg",
+      "heroImage": "clinic-outpatient-sanitation.jpg",
       "faqs": [
         {
-          "question": "What's the difference between regular cleaning and deep cleaning?",
-          "answer": "Deep cleaning is more intensive and thorough. It includes cleaning areas often missed in regular cleaning like inside cabinets, behind appliances, baseboards, and detailed scrubbing of bathrooms and kitchens."
+          "question": "What is terminal cleaning and when is it needed?",
+          "answer": "Terminal cleaning is a thorough, top-to-bottom disinfection of a room or area after a patient has been discharged or a procedure has been completed. It includes all surfaces, equipment, and fixtures. We perform terminal cleaning for procedure rooms, exam rooms, and any area where infection control is critical."
         },
         {
-          "question": "How long does a deep cleaning take?",
-          "answer": "Deep cleaning typically takes 4-8 hours depending on the size of your home or business and its current condition. Larger spaces or very dirty areas may require additional time."
+          "question": "How do you handle biohazard spills in a clinic setting?",
+          "answer": "Our staff is trained in proper biohazard spill response protocols, including containment, personal protective equipment usage, EPA-registered disinfectant application, and proper waste disposal. We follow OSHA bloodborne pathogen standards for all biohazard situations."
         },
         {
-          "question": "How often should I schedule a deep cleaning?",
-          "answer": "We recommend deep cleaning 2-4 times per year as a supplement to regular cleaning services. It's also ideal before holidays, special events, or when moving."
+          "question": "Can you work around our clinic's patient schedule?",
+          "answer": "Yes. We understand that outpatient facilities often have varying schedules. We offer flexible cleaning times and can perform between-patient room turnovers during operating hours, with comprehensive cleaning scheduled during off-hours."
         }
       ]
     },
     {
-      "name": "Upholstery Cleaning",
-      "slug": "upholstery-cleaning",
-      "shortDescription": "Expert cleaning for sofas, chairs, and all upholstered furniture to restore fabrics and remove stains.",
-      "fullDescription": "Our professional upholstery cleaning service revitalizes your furniture, removing deep-set stains, odors, and allergens. We use safe, effective methods suitable for all fabric types to extend the life of your upholstered pieces.",
+      "name": "Assisted Living & Senior Care Cleaning",
+      "slug": "assisted-living-senior-care",
+      "shortDescription": "Compassionate, thorough cleaning for nursing homes, assisted living communities, and memory care facilities with resident-safe protocols.",
+      "fullDescription": "Senior care facilities require a specialized approach to environmental cleaning that prioritizes resident safety, comfort, and dignity. Our assisted living cleaning services use fragrance-sensitive, low-toxicity products appropriate for elderly and immunocompromised residents. We understand the unique challenges of common areas, dining halls, resident rooms, and memory care units, delivering consistent sanitation that supports infection prevention and regulatory compliance.",
       "features": [
-        "Sofa and couch cleaning",
-        "Chair and loveseat cleaning",
-        "Sectional sofa treatment",
-        "Fabric protection application",
-        "Stain and spot removal",
-        "Odor elimination",
-        "Pet hair and dander removal",
-        "Mattress cleaning available"
+        "Resident room and bathroom deep cleaning",
+        "Common area and dining hall sanitation",
+        "Memory care unit specialized protocols",
+        "Fragrance-free and low-toxicity product options",
+        "Handrail, elevator, and mobility aid disinfection",
+        "Laundry room and utility area cleaning",
+        "Activity room and therapy space sanitation",
+        "Entrance and reception area maintenance"
       ],
       "benefits": [
-        "Extend furniture lifespan",
-        "Remove allergens and dust mites",
-        "Eliminate pet odors",
-        "Restore fabric appearance",
-        "Healthier indoor environment"
+        "Protect vulnerable and immunocompromised residents",
+        "Support infection outbreak prevention protocols",
+        "Maintain state and federal compliance standards",
+        "Create a dignified, comfortable living environment",
+        "Reduce healthcare-associated infections in senior care"
       ],
-      "image": "upholstery-cleaning.jpg",
-      "heroImage": "upholstery-cleaning.jpg",
+      "image": "assisted-living-senior-care.jpg",
+      "heroImage": "assisted-living-senior-care.jpg",
       "faqs": [
         {
-          "question": "How long does it take for upholstery to dry?",
-          "answer": "Most upholstery dries within 4-6 hours depending on fabric type, humidity, and airflow. We use methods that minimize drying time while maximizing cleaning effectiveness."
+          "question": "Do you use products safe for elderly and immunocompromised residents?",
+          "answer": "Yes. We offer fragrance-free and low-toxicity cleaning product options specifically chosen for senior care environments. All products are EPA-registered and effective against common healthcare pathogens while being safe for residents with respiratory sensitivities or compromised immune systems."
         },
         {
-          "question": "Can you clean all types of fabric?",
-          "answer": "Yes, we're trained to clean all fabric types including cotton, microfiber, leather, velvet, and delicate fabrics. We assess each piece and use the appropriate cleaning method."
+          "question": "How do you handle infection outbreaks in senior care facilities?",
+          "answer": "We have outbreak response protocols that include enhanced disinfection frequency, targeted high-touch surface treatment, and coordination with facility management. We can rapidly escalate our cleaning protocols during flu season, COVID outbreaks, or other infectious disease events."
         },
         {
-          "question": "Will cleaning remove all stains?",
-          "answer": "We can remove most stains, but some set-in or old stains may be difficult or impossible to fully remove. We'll assess your furniture and provide realistic expectations before cleaning."
+          "question": "Can you clean around residents' schedules and routines?",
+          "answer": "Absolutely. We understand that senior care facilities operate 24/7 and residents have established routines. Our team works quietly and respectfully around meal times, activity schedules, and rest periods to minimize disruption while maintaining thorough sanitation standards."
         }
       ]
     },
     {
-      "name": "Carpet Cleaning",
-      "slug": "carpet-cleaning",
-      "shortDescription": "Professional carpet cleaning using advanced steam and dry cleaning methods for spotless results.",
-      "fullDescription": "Our professional carpet cleaning service uses industry-leading equipment and techniques to deep clean your carpets. We remove dirt, stains, odors, and allergens, leaving your carpets fresh, clean, and extending their lifespan.",
+      "name": "Infection Control & High-Touch Disinfection",
+      "slug": "infection-control-disinfection",
+      "shortDescription": "Targeted high-touch surface disinfection and infection prevention services for any healthcare facility seeking enhanced pathogen control.",
+      "fullDescription": "Our infection control and high-touch surface disinfection services provide an additional layer of protection for healthcare facilities. Focusing on the surfaces most frequently touched by patients, staff, and visitors — door handles, light switches, elevator buttons, handrails, check-in kiosks, and shared equipment — we deliver systematic disinfection using EPA-registered products with proven efficacy against healthcare-associated pathogens including MRSA, C. diff, and respiratory viruses.",
       "features": [
-        "Hot water extraction (steam cleaning)",
-        "Dry cleaning for delicate carpets",
-        "Stain treatment and removal",
-        "Deodorizing and sanitization",
-        "Carpet protection application",
-        "High-traffic area treatment",
-        "Pet stain and odor removal",
-        "Area rug cleaning"
+        "Systematic high-touch surface identification and mapping",
+        "EPA-registered disinfectants with proven pathogen kill claims",
+        "Door handle, light switch, and handrail disinfection",
+        "Elevator button and check-in kiosk sanitization",
+        "Shared equipment and waiting room surface treatment",
+        "Proper contact time verification protocols",
+        "Outbreak response enhanced disinfection",
+        "Documentation and verification reporting"
       ],
       "benefits": [
-        "Remove deep-seated dirt and allergens",
-        "Extend carpet lifespan",
-        "Eliminate odors and bacteria",
-        "Improve indoor air quality",
-        "Restore carpet appearance"
+        "Significantly reduce surface-transmitted infections",
+        "Target the highest-risk contamination points",
+        "Support facility infection prevention programs",
+        "Provide documented proof of disinfection protocols",
+        "Flexible scheduling — daily, multiple times daily, or on-demand"
       ],
-      "image": "carpet-cleaning.jpg",
-      "heroImage": "carpet-cleaning.jpg",
+      "image": "infection-control-disinfection.jpg",
+      "heroImage": "infection-control-disinfection.jpg",
       "faqs": [
         {
-          "question": "How long does carpet cleaning take?",
-          "answer": "A typical home takes 1-3 hours depending on size and condition. Commercial spaces vary based on square footage. We provide time estimates during your quote."
+          "question": "What surfaces are considered high-touch in a healthcare facility?",
+          "answer": "High-touch surfaces include door handles, light switches, handrails, elevator buttons, reception counters, check-in kiosks, shared pens, chair armrests, restroom fixtures, and any surface frequently touched by multiple people throughout the day. We map these surfaces specific to your facility layout."
         },
         {
-          "question": "How long until carpets are dry?",
-          "answer": "Carpets typically dry within 6-12 hours. Factors like humidity, ventilation, and carpet thickness affect drying time. We recommend avoiding heavy foot traffic until fully dry."
+          "question": "What disinfectants do you use and are they effective against MRSA and C. diff?",
+          "answer": "We use EPA-registered hospital-grade disinfectants with proven kill claims against common healthcare pathogens including MRSA, C. difficile, Norovirus, Influenza, and SARS-CoV-2. We follow manufacturer-specified contact times to ensure full efficacy."
         },
         {
-          "question": "How often should carpets be professionally cleaned?",
-          "answer": "We recommend professional carpet cleaning every 12-18 months for residential carpets. High-traffic areas or homes with pets may benefit from more frequent cleaning."
+          "question": "How often should high-touch surface disinfection be performed?",
+          "answer": "Frequency depends on your facility type and patient volume. High-traffic areas like urgent care waiting rooms may benefit from multiple-times-daily disinfection, while lower-traffic medical offices may need once-daily treatment. We customize the schedule based on your facility's risk assessment."
         }
       ]
     },
     {
-      "name": "General Housekeeping",
-      "slug": "general-housekeeping",
-      "shortDescription": "Comprehensive home cleaning services to keep your living space fresh, clean, and comfortable.",
-      "fullDescription": "Our general housekeeping services provide regular, reliable cleaning to maintain your home's cleanliness and comfort. From weekly tidying to bi-weekly deep cleans, we customize our service to fit your lifestyle and needs.",
+      "name": "Compliance Documentation & Scheduled Sanitation",
+      "slug": "compliance-scheduled-sanitation",
+      "shortDescription": "Structured sanitation programs with full compliance documentation, quality control reporting, and scheduled cleaning verification for healthcare facilities.",
+      "fullDescription": "Our compliance documentation and scheduled sanitation service provides healthcare facilities with a structured, contract-based cleaning program that includes detailed documentation for regulatory compliance. We deliver scheduled sanitation with verified cleaning logs, quality control audits, and reporting that demonstrates your facility's commitment to environmental hygiene standards. Ideal for facilities preparing for inspections, accreditation, or simply seeking a higher standard of accountability from their cleaning provider.",
       "features": [
-        "Dusting all surfaces and decor",
-        "Vacuuming and mopping floors",
-        "Kitchen cleaning and sanitization",
-        "Bathroom cleaning and disinfection",
-        "Bedroom tidying and bed making",
-        "Laundry folding and organization",
-        "Dish washing and kitchen organizing",
-        "General tidying and decluttering"
+        "Customized sanitation schedule development",
+        "Detailed cleaning verification logs and checklists",
+        "Quality control audits and spot inspections",
+        "Monthly and quarterly compliance reports",
+        "Pre-inspection and pre-accreditation deep cleaning",
+        "Staff training documentation and protocol records",
+        "Corrective action tracking and resolution",
+        "Contract-based service level agreements"
       ],
       "benefits": [
-        "Enjoy a consistently clean home",
-        "More free time for family and hobbies",
-        "Reduce stress and improve well-being",
-        "Customize cleaning to your priorities",
-        "Reliable, scheduled service"
+        "Demonstrate compliance readiness during inspections",
+        "Maintain consistent, verifiable cleaning standards",
+        "Reduce liability with documented sanitation protocols",
+        "Support accreditation and licensing requirements",
+        "Gain a trusted, accountable cleaning partner"
       ],
-      "image": "general-housekeeping.jpg",
-      "heroImage": "general-housekeeping.jpg",
+      "image": "compliance-scheduled-sanitation.jpg",
+      "heroImage": "compliance-scheduled-sanitation.jpg",
       "faqs": [
         {
-          "question": "What's included in housekeeping service?",
-          "answer": "Our standard housekeeping includes dusting, vacuuming, mopping, kitchen cleaning, bathroom cleaning, bedroom tidying, and trash removal. We can customize services to include additional tasks like laundry or organizing."
+          "question": "What kind of documentation do you provide for compliance purposes?",
+          "answer": "We provide detailed cleaning verification logs, task completion checklists, quality control audit reports, monthly summary reports, and corrective action records. All documentation is organized and available for regulatory inspections, internal audits, and accreditation reviews."
         },
         {
-          "question": "How often should I schedule housekeeping?",
-          "answer": "Most clients benefit from weekly or bi-weekly service. The ideal frequency depends on your household size, lifestyle, and personal preferences. We offer flexible scheduling options."
+          "question": "Can you create a custom sanitation schedule for our facility?",
+          "answer": "Yes. We conduct an initial facility walkthrough assessment to understand your specific needs, patient flow, high-risk areas, and regulatory requirements. From this, we develop a customized sanitation schedule with defined tasks, frequencies, and accountability measures."
         },
         {
-          "question": "Do you bring cleaning supplies?",
-          "answer": "Yes, we bring all necessary cleaning supplies and equipment. If you have preferences for specific products or have eco-friendly requirements, we're happy to accommodate."
+          "question": "Do you offer contract-based service agreements?",
+          "answer": "Yes. We offer flexible contract-based service level agreements that define scope, frequency, quality standards, documentation requirements, and pricing. Contracts provide predictable costs and guaranteed service levels for your facility."
         }
       ]
     }

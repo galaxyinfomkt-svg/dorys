@@ -19,7 +19,18 @@
     { "source": "/locations/index.html", "destination": "/locations", "permanent": true },
     { "source": "/services/:service/index.html", "destination": "/services/:service", "permanent": true },
     { "source": "/services/:service/:city.html", "destination": "/services/:service/:city", "permanent": true },
-    { "source": "/locations/:city.html", "destination": "/locations/:city", "permanent": true }
+    { "source": "/locations/:city.html", "destination": "/locations/:city", "permanent": true },
+
+    { "source": "/services/janitorial-service/:city", "destination": "/services/medical-office-cleaning/:city", "permanent": true },
+    { "source": "/services/janitorial-service", "destination": "/services/medical-office-cleaning", "permanent": true },
+    { "source": "/services/deep-cleaning/:city", "destination": "/services/clinic-outpatient-sanitation/:city", "permanent": true },
+    { "source": "/services/deep-cleaning", "destination": "/services/clinic-outpatient-sanitation", "permanent": true },
+    { "source": "/services/carpet-cleaning/:city", "destination": "/services/assisted-living-senior-care/:city", "permanent": true },
+    { "source": "/services/carpet-cleaning", "destination": "/services/assisted-living-senior-care", "permanent": true },
+    { "source": "/services/upholstery-cleaning/:city", "destination": "/services/infection-control-disinfection/:city", "permanent": true },
+    { "source": "/services/upholstery-cleaning", "destination": "/services/infection-control-disinfection", "permanent": true },
+    { "source": "/services/general-housekeeping/:city", "destination": "/services/compliance-scheduled-sanitation/:city", "permanent": true },
+    { "source": "/services/general-housekeeping", "destination": "/services/compliance-scheduled-sanitation", "permanent": true }
   ],
   "rewrites": [
     { "source": "/about", "destination": "/about.html" },
