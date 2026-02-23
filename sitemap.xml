@@ -3,40 +3,40 @@
   <!-- Main Pages Sitemap -->
   <sitemap>
     <loc>https://doryscleaningservices.com/sitemap-pages.xml</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-02-23</lastmod>
   </sitemap>
 
   <!-- Location Pages Sitemap -->
   <sitemap>
     <loc>https://doryscleaningservices.com/sitemap-locations.xml</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-02-23</lastmod>
   </sitemap>
 
   <!-- Service Pages Sitemaps -->
   <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-janitorial-service.xml</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://doryscleaningservices.com/sitemap-services-medical-office-cleaning.xml</loc>
+    <lastmod>2026-02-23</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-deep-cleaning.xml</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://doryscleaningservices.com/sitemap-services-clinic-outpatient-sanitation.xml</loc>
+    <lastmod>2026-02-23</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-carpet-cleaning.xml</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://doryscleaningservices.com/sitemap-services-assisted-living-senior-care.xml</loc>
+    <lastmod>2026-02-23</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-general-housekeeping.xml</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://doryscleaningservices.com/sitemap-services-infection-control-disinfection.xml</loc>
+    <lastmod>2026-02-23</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-upholstery-cleaning.xml</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://doryscleaningservices.com/sitemap-services-compliance-scheduled-sanitation.xml</loc>
+    <lastmod>2026-02-23</lastmod>
   </sitemap>
 
   <!-- Blog Pages Sitemap -->
   <sitemap>
     <loc>https://doryscleaningservices.com/sitemap-blog.xml</loc>
-    <lastmod>2026-01-16</lastmod>
+    <lastmod>2026-02-23</lastmod>
   </sitemap>
 </sitemapindex>

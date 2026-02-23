@@ -1,607 +1,617 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- assisted-living-senior-care Sitemap -->
+  <!-- Parent page + 101 city pages = 102 total URLs -->
+
+  <!-- Parent Service Page -->
   <url>
-    <loc>https://doryscleaningservices.com/locations/acton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care</loc>
     <lastmod>2026-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/acton-ma</loc>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/arlington-heights-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/arlington-heights-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/ashland-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/ashland-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/auburn-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/auburn-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/auburndale-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/auburndale-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/ayer-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/ayer-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/babson-park-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/babson-park-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/bedford-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/bedford-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/bellingham-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/bellingham-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/belmont-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/belmont-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/berlin-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/berlin-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/bolton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/bolton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/boxborough-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/boxborough-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/boylston-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/boylston-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/carlisle-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/carlisle-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/chelmsford-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/chelmsford-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/cherry-valley-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/cherry-valley-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/chestnut-hill-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/chestnut-hill-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/clinton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/clinton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/concord-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/concord-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/devens-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/devens-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/dover-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/dover-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/east-princeton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/east-princeton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/fayville-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/fayville-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/framingham-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/framingham-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/franklin-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/franklin-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/grafton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/grafton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/groton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/groton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/hanscom-afb-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/hanscom-afb-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/harvard-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/harvard-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/holden-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/holden-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/holliston-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/holliston-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/hopedale-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/hopedale-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/hopkinton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/hopkinton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/hudson-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/hudson-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/jefferson-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/jefferson-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/lancaster-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/lancaster-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/leominster-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/leominster-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/lexington-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/lexington-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/lincoln-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/lincoln-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/linwood-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/linwood-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/littleton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/littleton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/lunenburg-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/lunenburg-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/marlborough-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/marlborough-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/maynard-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/maynard-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/medfield-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/medfield-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/medway-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/medway-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/mendon-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/mendon-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/milford-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/milford-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/millbury-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/millbury-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/millis-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/millis-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/natick-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/natick-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/needham-heights-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/needham-heights-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/needham-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/needham-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/newton-center-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/newton-center-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/newton-highlands-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/newton-highlands-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/newton-lower-falls-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/newton-lower-falls-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/newton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/newton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/newton-upper-falls-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/newton-upper-falls-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/newtonville-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/newtonville-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/nonantum-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/nonantum-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/norfolk-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/norfolk-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/north-grafton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/north-grafton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/north-uxbridge-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/north-uxbridge-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/north-waltham-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/north-waltham-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/northborough-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/northborough-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/northbridge-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/northbridge-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/nutting-lake-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/nutting-lake-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/paxton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/paxton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/princeton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/princeton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/readville-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/readville-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/sherborn-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/sherborn-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/shirley-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/shirley-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/shrewsbury-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/shrewsbury-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/south-grafton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/south-grafton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/south-lancaster-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/south-lancaster-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/southborough-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/southborough-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/sterling-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/sterling-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/still-river-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/still-river-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/stow-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/stow-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/sudbury-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/sudbury-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/sutton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/sutton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/upton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/upton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/village-of-nagog-woods-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/village-of-nagog-woods-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/waban-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/waban-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/waltham-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/waltham-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/waverley-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/waverley-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/wayland-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/wayland-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/wellesley-hills-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/wellesley-hills-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/wellesley-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/wellesley-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/west-boylston-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/west-boylston-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/west-groton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/west-groton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/west-millbury-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/west-millbury-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/west-newton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/west-newton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/westborough-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/westborough-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/westford-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/westford-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/weston-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/weston-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/westwood-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/westwood-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/whitinsville-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/whitinsville-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/woodville-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/woodville-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/worcester-ma</loc>
+    <loc>https://doryscleaningservices.com/services/assisted-living-senior-care/worcester-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

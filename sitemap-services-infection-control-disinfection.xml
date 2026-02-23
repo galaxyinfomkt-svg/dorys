@@ -1,607 +1,617 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- infection-control-disinfection Sitemap -->
+  <!-- Parent page + 101 city pages = 102 total URLs -->
+
+  <!-- Parent Service Page -->
   <url>
-    <loc>https://doryscleaningservices.com/locations/acton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection</loc>
     <lastmod>2026-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/acton-ma</loc>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/arlington-heights-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/arlington-heights-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/ashland-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/ashland-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/auburn-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/auburn-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/auburndale-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/auburndale-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/ayer-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/ayer-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/babson-park-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/babson-park-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/bedford-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/bedford-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/bellingham-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/bellingham-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/belmont-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/belmont-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/berlin-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/berlin-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/bolton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/bolton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/boxborough-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/boxborough-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/boylston-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/boylston-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/carlisle-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/carlisle-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/chelmsford-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/chelmsford-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/cherry-valley-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/cherry-valley-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/chestnut-hill-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/chestnut-hill-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/clinton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/clinton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/concord-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/concord-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/devens-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/devens-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/dover-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/dover-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/east-princeton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/east-princeton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/fayville-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/fayville-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/framingham-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/framingham-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/franklin-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/franklin-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/grafton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/grafton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/groton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/groton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/hanscom-afb-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/hanscom-afb-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/harvard-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/harvard-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/holden-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/holden-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/holliston-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/holliston-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/hopedale-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/hopedale-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/hopkinton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/hopkinton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/hudson-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/hudson-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/jefferson-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/jefferson-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/lancaster-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/lancaster-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/leominster-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/leominster-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/lexington-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/lexington-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/lincoln-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/lincoln-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/linwood-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/linwood-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/littleton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/littleton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/lunenburg-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/lunenburg-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/marlborough-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/marlborough-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/maynard-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/maynard-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/medfield-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/medfield-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/medway-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/medway-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/mendon-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/mendon-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/milford-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/milford-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/millbury-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/millbury-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/millis-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/millis-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/natick-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/natick-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/needham-heights-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/needham-heights-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/needham-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/needham-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/newton-center-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/newton-center-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/newton-highlands-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/newton-highlands-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/newton-lower-falls-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/newton-lower-falls-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/newton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/newton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/newton-upper-falls-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/newton-upper-falls-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/newtonville-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/newtonville-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/nonantum-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/nonantum-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/norfolk-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/norfolk-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/north-grafton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/north-grafton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/north-uxbridge-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/north-uxbridge-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/north-waltham-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/north-waltham-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/northborough-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/northborough-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/northbridge-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/northbridge-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/nutting-lake-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/nutting-lake-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/paxton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/paxton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/princeton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/princeton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/readville-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/readville-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/sherborn-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/sherborn-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/shirley-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/shirley-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/shrewsbury-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/shrewsbury-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/south-grafton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/south-grafton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/south-lancaster-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/south-lancaster-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/southborough-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/southborough-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/sterling-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/sterling-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/still-river-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/still-river-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/stow-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/stow-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/sudbury-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/sudbury-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/sutton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/sutton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/upton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/upton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/village-of-nagog-woods-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/village-of-nagog-woods-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/waban-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/waban-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/waltham-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/waltham-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/waverley-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/waverley-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/wayland-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/wayland-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/wellesley-hills-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/wellesley-hills-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/wellesley-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/wellesley-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/west-boylston-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/west-boylston-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/west-groton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/west-groton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/west-millbury-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/west-millbury-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/west-newton-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/west-newton-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/westborough-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/westborough-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/westford-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/westford-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/weston-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/weston-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/westwood-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/westwood-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/whitinsville-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/whitinsville-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/woodville-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/woodville-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://doryscleaningservices.com/locations/worcester-ma</loc>
+    <loc>https://doryscleaningservices.com/services/infection-control-disinfection/worcester-ma</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
