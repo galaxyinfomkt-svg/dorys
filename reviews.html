@@ -52,6 +52,54 @@
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/css/premium.css">
   <link rel="stylesheet" href="assets/css/premium-v2.css">
+  <link rel="stylesheet" href="assets/css/service-pages.css">
+
+  <style>
+    /* Reviews Page Styles */
+    .hero__rating { display: flex; align-items: center; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+    .hero__stars { display: flex; gap: 0.25rem; }
+    .hero__stars svg { color: #f59e0b; }
+    .hero__rating-text { color: rgba(255,255,255,0.9); font-size: 1.1rem; font-weight: 500; }
+
+    .stats-grid { display: grid; gap: 1.5rem; }
+    .stats-grid--4 { grid-template-columns: repeat(4, 1fr); }
+    .stat-card { background: #fff; border-radius: 12px; padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; }
+    .stat-card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+    .stat-card__icon { margin-bottom: 1rem; }
+    .stat-card__icon svg { color: var(--primary, #0B5D1E); }
+    .stat-card__number { font-size: 2.5rem; font-weight: 800; color: #1a1a2e; line-height: 1; margin-bottom: 0.5rem; }
+    .stat-card__label { font-size: 0.95rem; color: #666; font-weight: 500; }
+
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
+    .testimonial-card { background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; }
+    .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+    .testimonial-card--featured { border: 2px solid var(--primary, #0B5D1E); }
+    .testimonial-card__rating { display: flex; gap: 0.15rem; margin-bottom: 1rem; }
+    .testimonial-card__rating svg { color: #f59e0b; }
+    .testimonial-card__quote { font-size: 1rem; line-height: 1.7; color: #444; font-style: italic; margin: 0 0 1.5rem; }
+    .testimonial-card__author { display: flex; align-items: center; gap: 0.75rem; }
+    .testimonial-card__avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--primary, #0B5D1E); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0; }
+    .testimonial-card__name { display: block; font-weight: 600; color: #1a1a2e; }
+    .testimonial-card__role { display: block; font-size: 0.85rem; color: #888; }
+
+    .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+    .trust-card { background: #fff; border-radius: 12px; padding: 2rem; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+    .trust-card__icon { margin-bottom: 1rem; }
+    .trust-card__icon svg { color: var(--primary, #0B5D1E); }
+    .trust-card__title { font-size: 1.15rem; font-weight: 700; color: #1a1a2e; margin-bottom: 0.5rem; }
+    .trust-card__text { font-size: 0.95rem; color: #666; line-height: 1.6; margin: 0; }
+
+    .reviews-widget-container { margin-top: 1.5rem; }
+    .reviews-widget-container iframe { border-radius: 12px; }
+
+    @media (max-width: 768px) {
+      .stats-grid--4 { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .stats-grid--4 { grid-template-columns: 1fr; }
+    }
+  </style>
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -333,7 +381,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero hero--page">
+    <section class="hero hero--inner">
       <div class="hero__background">
         <img src="/assets/images/hero/healthcare-hero.jpg" alt="Dorys Healthcare Environmental Services Reviews" loading="eager">
         <div class="hero__overlay"></div>
