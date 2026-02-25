@@ -591,6 +591,34 @@
   }
 }
 
+@media (max-width: 480px) {
+  .hero {
+    min-height: 350px;
+    padding: var(--space-2xl) 0;
+  }
+
+  .hero__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .hero__subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .hero--inner {
+    min-height: 250px;
+    padding: var(--space-xl) 0;
+  }
+
+  .hero--inner .hero__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .hero--inner .hero__subtitle {
+    font-size: var(--font-size-sm);
+  }
+}
+
 /* --------------------------------------------------------------------------
    Keyframe Animations
    -------------------------------------------------------------------------- */

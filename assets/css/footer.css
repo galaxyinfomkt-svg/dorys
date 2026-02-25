@@ -515,3 +515,56 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 480px) {
+  .footer {
+    padding-top: var(--space-2xl);
+  }
+
+  .footer__cta {
+    padding: var(--space-xl) var(--space-md);
+    margin-bottom: var(--space-2xl);
+  }
+
+  .footer__cta-title {
+    font-size: 1.25rem;
+  }
+
+  .footer__cta-text {
+    font-size: 0.85rem;
+  }
+
+  .footer__cta-buttons .btn {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .footer__title {
+    font-size: 1rem;
+  }
+
+  .footer__description {
+    font-size: 0.8rem;
+  }
+
+  .footer__links a {
+    font-size: 0.85rem;
+  }
+
+  .footer__contact-item {
+    font-size: 0.8rem;
+  }
+
+  .footer__credential-label,
+  .footer__credential-value {
+    font-size: 0.8rem;
+  }
+
+  .footer__copyright {
+    font-size: 0.75rem;
+  }
+
+  .footer__legal a {
+    font-size: 0.75rem;
+  }
+}

@@ -449,6 +449,37 @@
   .top-bar__social {
     display: none;
   }
+
+  .top-bar__item {
+    font-size: 0.8rem;
+  }
+
+  .top-bar__item span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar {
+    padding: 0.35rem 0;
+  }
+
+  .top-bar__item {
+    font-size: 0.75rem;
+  }
+
+  .top-bar__item span {
+    font-size: 0.75rem;
+  }
+
+  .top-bar__icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .header__logo img {
+    height: 45px;
+  }
 }
 
 /* --------------------------------------------------------------------------
