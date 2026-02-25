@@ -83,7 +83,7 @@
 /* Hero Form - compact card on the right */
 .hero-premium__form {
   flex-shrink: 0;
-  width: 320px;
+  width: 360px;
   animation: heroFadeIn 0.8s ease-out 0.2s both;
 }
 
@@ -105,7 +105,7 @@
 }
 
 .hero-premium__form-wrapper iframe {
-  height: 620px !important;
+  height: 750px !important;
   overflow: hidden;
 }
 
@@ -124,7 +124,7 @@
     padding: 1rem;
   }
   .hero-premium__form-wrapper iframe {
-    height: 580px !important;
+    height: 700px !important;
   }
 }
 
