@@ -83,7 +83,8 @@
 /* Hero Form - compact card on the right */
 .hero-premium__form {
   flex-shrink: 0;
-  width: 360px;
+  width: 340px;
+  align-self: center;
   animation: heroFadeIn 0.8s ease-out 0.2s both;
 }
 
@@ -105,13 +106,14 @@
 }
 
 .hero-premium__form-wrapper iframe {
-  height: 750px !important;
+  height: 480px !important;
   overflow: hidden;
 }
 
 @media (max-width: 1024px) {
   .hero-premium__grid {
     flex-direction: column;
+    align-items: center;
   }
   .hero-premium__form {
     width: 100%;
@@ -124,7 +126,7 @@
     padding: 1rem;
   }
   .hero-premium__form-wrapper iframe {
-    height: 700px !important;
+    height: 480px !important;
   }
 }
 
