@@ -89,8 +89,7 @@
 }
 
 .hero-premium__form iframe {
-  height: 480px !important;
-  overflow: hidden;
+  min-height: 500px;
 }
 
 @media (max-width: 1024px) {
@@ -101,12 +100,6 @@
   .hero-premium__form {
     width: 100%;
     max-width: 400px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-premium__form iframe {
-    height: 480px !important;
   }
 }
 
