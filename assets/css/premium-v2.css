@@ -56,9 +56,9 @@
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(15, 23, 42, 0.6) 0%,
-    rgba(30, 64, 175, 0.4) 50%,
-    rgba(43, 112, 228, 0.35) 100%
+    rgba(10, 15, 30, 0.78) 0%,
+    rgba(15, 23, 50, 0.7) 50%,
+    rgba(20, 30, 60, 0.65) 100%
   );
 }
 
@@ -105,7 +105,8 @@
 }
 
 .hero-premium__form-wrapper iframe {
-  height: 400px !important;
+  height: 620px !important;
+  overflow: hidden;
 }
 
 @media (max-width: 1024px) {
@@ -114,7 +115,7 @@
   }
   .hero-premium__form {
     width: 100%;
-    max-width: 380px;
+    max-width: 400px;
   }
 }
 
@@ -123,7 +124,7 @@
     padding: 1rem;
   }
   .hero-premium__form-wrapper iframe {
-    height: 380px !important;
+    height: 580px !important;
   }
 }
 
