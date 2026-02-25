@@ -88,24 +88,7 @@
   animation: heroFadeIn 0.8s ease-out 0.2s both;
 }
 
-.hero-premium__form-wrapper {
-  background: rgba(255, 255, 255, 0.97);
-  backdrop-filter: blur(12px);
-  border-radius: 12px;
-  padding: 1.25rem;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-}
-
-.hero-premium__form-title {
-  color: #1a1a2e;
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 0.75rem;
-  line-height: 1.3;
-}
-
-.hero-premium__form-wrapper iframe {
+.hero-premium__form iframe {
   height: 480px !important;
   overflow: hidden;
 }
@@ -122,10 +105,7 @@
 }
 
 @media (max-width: 480px) {
-  .hero-premium__form-wrapper {
-    padding: 1rem;
-  }
-  .hero-premium__form-wrapper iframe {
+  .hero-premium__form iframe {
     height: 480px !important;
   }
 }
