@@ -29,12 +29,16 @@
   <div class="top-bar">
     <div class="container">
       <div class="top-bar__contact">
-        <a href="tel:+19783078107" class="top-bar__item">
-          <svg class="top-bar__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <a href="tel:+19783078107" class="top-bar__item" data-track="phone-topbar">
+          <svg class="top-bar__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
           <span>(978) 307-8107</span>
         </a>
-        <a href="mailto:contact@doryscleaningservices.com" class="top-bar__item">
-          <svg class="top-bar__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <a href="mailto:contact@doryscleaningservices.com" class="top-bar__item" data-track="email-topbar">
+          <svg class="top-bar__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
           <span>contact@doryscleaningservices.com</span>
         </a>
       </div>
@@ -59,23 +63,47 @@
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="assets/images/logo/logo-original.jpg" alt="Dorys Healthcare Environmental Services Logo" width="180" height="60">
+        <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Healthcare Environmental Services Logo" width="180" height="60">
       </a>
+
       <nav class="header__nav" aria-label="Main navigation">
         <ul class="nav-list">
-          <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
           <li class="nav-item has-dropdown">
-            <a href="/services" class="nav-link">Services <svg class="nav-link__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
+            <a href="/services" class="nav-link">
+              Services
+              <svg class="nav-link__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+            </a>
             <div class="nav-dropdown">
-              <a href="/services/medical-office-cleaning" class="nav-dropdown__link">Medical Office Cleaning</a>
-              <a href="/services/clinic-outpatient-sanitation" class="nav-dropdown__link">Clinic &amp; Outpatient Sanitation</a>
-              <a href="/services/assisted-living-senior-care" class="nav-dropdown__link">Assisted Living &amp; Senior Care</a>
-              <a href="/services/infection-control-disinfection" class="nav-dropdown__link">Infection Control &amp; Disinfection</a>
-              <a href="/services/compliance-scheduled-sanitation" class="nav-dropdown__link">Compliance &amp; Scheduled Sanitation</a>
+              <a href="/services/medical-office-cleaning" class="nav-dropdown__link">
+                <svg class="nav-dropdown__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14h-2v-4H8l4-4 4 4h-2v4z"/></svg>
+                Medical Office Cleaning
+              </a>
+              <a href="/services/clinic-outpatient-sanitation" class="nav-dropdown__link">
+                <svg class="nav-dropdown__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Clinic &amp; Outpatient Sanitation
+              </a>
+              <a href="/services/assisted-living-senior-care" class="nav-dropdown__link">
+                <svg class="nav-dropdown__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/></svg>
+                Assisted Living &amp; Senior Care
+              </a>
+              <a href="/services/infection-control-disinfection" class="nav-dropdown__link">
+                <svg class="nav-dropdown__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+                Infection Control &amp; Disinfection
+              </a>
+              <a href="/services/compliance-scheduled-sanitation" class="nav-dropdown__link">
+                <svg class="nav-dropdown__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                Compliance &amp; Scheduled Sanitation
+              </a>
             </div>
           </li>
           <li class="nav-item has-dropdown">
-            <a href="/locations" class="nav-link">Service Areas <svg class="nav-link__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></a>
+            <a href="/locations" class="nav-link">
+              Service Areas
+              <svg class="nav-link__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+            </a>
             <div class="nav-dropdown nav-dropdown--mega">
               <span class="nav-dropdown__title">Popular Cities</span>
               <div class="nav-dropdown__grid">
@@ -83,19 +111,37 @@
                 <a href="/locations/framingham-ma" class="nav-dropdown__link">Framingham</a>
                 <a href="/locations/worcester-ma" class="nav-dropdown__link">Worcester</a>
                 <a href="/locations/hudson-ma" class="nav-dropdown__link">Hudson</a>
+                <a href="/locations/westborough-ma" class="nav-dropdown__link">Westborough</a>
                 <a href="/locations/natick-ma" class="nav-dropdown__link">Natick</a>
-                <a href="/locations" class="nav-dropdown__link">View All →</a>
+                <a href="/locations/newton-ma" class="nav-dropdown__link">Newton</a>
+                <a href="/locations/wellesley-ma" class="nav-dropdown__link">Wellesley</a>
+                <a href="/locations" class="nav-dropdown__link text-primary font-semibold">View All Cities &rarr;</a>
               </div>
             </div>
           </li>
-          <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
-          <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-item">
+            <a href="/about" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="/blog" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="/reviews" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact" class="nav-link">Contact</a>
+          </li>
         </ul>
       </nav>
-      <a href="#contact" class="btn btn--primary header__cta hide-mobile">Healthcare Assessment</a>
+
+      <a href="/contact" class="btn btn--primary header__cta hide-mobile" data-track="cta-header">Healthcare Assessment</a>
+
       <button class="header__toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="header__toggle-icon"><span></span><span></span><span></span></span>
+        <span class="header__toggle-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
       </button>
     </div>
     <div class="header__overlay"></div>
@@ -133,7 +179,7 @@
           <p>We use the information you provide to:</p>
           <ul>
             <li>Respond to your inquiries and provide quotes</li>
-            <li>Schedule and deliver cleaning services</li>
+            <li>Schedule and deliver healthcare environmental servicess</li>
             <li>Communicate with you about appointments and services</li>
             <li>Improve our services based on feedback</li>
             <li>Send occasional service updates or promotions (with your consent)</li>
@@ -179,9 +225,9 @@
       <!-- Footer CTA -->
       <div class="footer__cta">
         <h2 class="footer__cta-title">Schedule a Healthcare Facility Assessment</h2>
-        <p class="footer__cta-text">Healthcare environmental services with 22 years of experience. Licensed, $2M insured, and trained for healthcare sanitation protocols.</p>
+        <p class="footer__cta-text">Healthcare-focused environmental services with 22 years of experience. Licensed, $2M insured, and trained in healthcare protocols.</p>
         <div class="footer__cta-buttons">
-          <a href="#contact" class="btn btn--white btn--lg" data-track="cta-footer-quote">Schedule a Healthcare Assessment</a>
+          <a href="/contact" class="btn btn--white btn--lg" data-track="cta-footer-quote">Request Healthcare Assessment</a>
           <a href="tel:+19783078107" class="btn btn--outline-light btn--lg" data-track="cta-footer-call">Call (978) 307-8107</a>
         </div>
       </div>
@@ -190,16 +236,16 @@
       <div class="footer__grid">
         <!-- Brand Column -->
         <div class="footer__col footer__brand">
-          <a href="/" class="footer__logo" aria-label="Dorys Cleaning Services - Home">
-            <img src="assets/images/logo/logo-original.jpg" alt="Dorys Healthcare Environmental Services" class="footer__logo-img" width="180" height="60">
+          <a href="/" class="footer__logo" aria-label="Dorys Healthcare Environmental Services - Home">
+            <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Healthcare Environmental Services" class="footer__logo-img" width="180" height="60">
             <span class="footer__logo-text">Dorys Healthcare</span>
           </a>
-          <p class="footer__description">Healthcare-focused environmental services in Massachusetts since 2004. Precision sanitation for medical offices, clinics, and assisted living facilities.</p>
+          <p class="footer__description">Healthcare-focused environmental services in Massachusetts since 2004. 22 years of healthcare experience delivering precision sanitation, compliance-driven protocols, and infection control support.</p>
 
           <div class="footer__trust">
             <div class="footer__trust-item">
               <svg class="footer__trust-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-              <span>Licensed & Insured</span>
+              <span>Licensed &amp; Insured</span>
             </div>
             <div class="footer__trust-item">
               <svg class="footer__trust-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
@@ -228,11 +274,11 @@
           <h4 class="footer__title">Quick Links</h4>
           <ul class="footer__links">
             <li><a href="/">Home</a></li>
-            <li><a href="#about">About Us</a></li>
+            <li><a href="/about">About Us</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/locations">Service Areas</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/reviews">Reviews</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
 
@@ -262,7 +308,7 @@
             <a href="/locations/newton-ma">Newton</a>
           </div>
           <div class="footer__cities-more">
-            <a href="/locations">View All 100+ Cities →</a>
+            <a href="/locations">View All 100+ Cities &rarr;</a>
           </div>
         </div>
 
