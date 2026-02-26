@@ -1,0 +1,769 @@
+/* ==========================================================================
+   MOBILE-FIXES.CSS - Final Mobile Override Layer
+   Must be loaded LAST to override all other stylesheets
+   ========================================================================== */
+
+/* ==========================================================================
+   TABLET (max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+  /* --- Container --- */
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    max-width: 100% !important;
+  }
+
+  /* --- Hero Premium (Homepage) --- */
+  .hero-premium {
+    padding: 75px 0 30px !important;
+    min-height: auto !important;
+  }
+
+  .hero-premium__grid {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+
+  .hero-premium__content {
+    max-width: 100% !important;
+  }
+
+  .hero-premium__title {
+    font-size: 1.6rem !important;
+    line-height: 1.15 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .hero-premium__subtitle {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-premium__badge {
+    font-size: 0.7rem !important;
+    padding: 0.4rem 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .hero-premium__badge svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .hero-premium__trust-badges {
+    gap: 0.4rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-premium__trust-badge {
+    padding: 0.35rem 0.6rem !important;
+    font-size: 0.7rem !important;
+    gap: 0.3rem !important;
+  }
+
+  .hero-premium__trust-badge svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .hero-premium__ctas {
+    flex-direction: column !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-premium__ctas .btn--xl {
+    width: 100% !important;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.9rem !important;
+    justify-content: center !important;
+  }
+
+  .hero-premium__proof {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    padding-top: 1rem !important;
+  }
+
+  .hero-premium__credentials {
+    flex-direction: column !important;
+    gap: 0.4rem !important;
+  }
+
+  .hero-premium__credential {
+    font-size: 0.75rem !important;
+  }
+
+  .hero-premium__rating-text {
+    font-size: 0.8rem !important;
+  }
+
+  .hero-premium__stars svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  /* --- Hero Form --- */
+  .hero-premium__form {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hero-premium__form iframe {
+    min-height: 460px !important;
+  }
+
+  /* --- Inner Page Hero --- */
+  .hero--inner {
+    min-height: 280px !important;
+  }
+
+  .hero__content--center {
+    padding: 1.5rem 0 !important;
+  }
+
+  .hero--inner .hero__title {
+    font-size: 1.5rem !important;
+  }
+
+  .hero--inner .hero__subtitle {
+    font-size: 0.9rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .hero--inner .hero__ctas {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .hero--inner .hero__ctas .btn {
+    width: 100% !important;
+    max-width: 260px !important;
+  }
+
+  /* --- All Sections --- */
+  .services-section,
+  .differentiators-section,
+  .process-section,
+  .about-section,
+  .areas-section,
+  .testimonials-section {
+    padding: 2.5rem 0 !important;
+  }
+
+  .section {
+    padding: 2.5rem 0 !important;
+  }
+
+  /* --- Section Headers --- */
+  .section__header {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .section__title {
+    font-size: 1.35rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .section__description {
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .section__badge {
+    font-size: 0.65rem !important;
+    padding: 0.35rem 0.75rem !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .services-header,
+  .differentiators-header,
+  .process-header,
+  .testimonials-header,
+  .areas-header {
+    margin-bottom: 2rem !important;
+  }
+
+  /* --- Services Grid --- */
+  .services-grid--5items {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  .service-card--premium .service-card__image {
+    height: 120px !important;
+  }
+
+  .service-card--premium .service-card__body {
+    padding: 0.75rem !important;
+  }
+
+  .service-card--premium .service-card__title {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+
+  .service-card--premium .service-card__text {
+    font-size: 0.75rem !important;
+    margin-bottom: 0.5rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .service-card--premium .service-card__link {
+    font-size: 0.75rem !important;
+  }
+
+  /* --- Stats Section --- */
+  .stats-section {
+    padding: 2rem 0 !important;
+  }
+
+  .stats-grid--premium {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  .stat-card--premium {
+    padding: 0.75rem 0.5rem !important;
+  }
+
+  .stat-card--premium .stat__number {
+    font-size: 1.75rem !important;
+  }
+
+  .stat-card--premium .stat__label {
+    font-size: 0.7rem !important;
+  }
+
+  /* --- Trust / Why Choose Us Grid --- */
+  .trust-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  .trust-card {
+    display: flex !important;
+    align-items: center !important;
+    text-align: left !important;
+    padding: 1rem !important;
+    gap: 0.75rem !important;
+  }
+
+  .trust-card__icon {
+    margin: 0 !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+  }
+
+  .trust-card__icon svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .trust-card__title {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.15rem !important;
+  }
+
+  .trust-card__text {
+    font-size: 0.8rem !important;
+  }
+
+  /* --- Differentiators Grid --- */
+  .differentiators-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  .differentiator-card {
+    display: flex !important;
+    text-align: left !important;
+    padding: 1rem !important;
+    gap: 1rem !important;
+  }
+
+  .differentiator-icon {
+    margin: 0 !important;
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 50px !important;
+    border-radius: 12px !important;
+  }
+
+  .differentiator-icon svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .differentiator-title {
+    font-size: 0.95rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .differentiator-text {
+    font-size: 0.8rem !important;
+  }
+
+  /* --- Process Grid --- */
+  .process-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .process-step {
+    display: flex !important;
+    text-align: left !important;
+    gap: 1rem !important;
+  }
+
+  .process-step::after {
+    display: none !important;
+  }
+
+  .process-step-number {
+    margin: 0 !important;
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    font-size: 1.25rem !important;
+  }
+
+  .process-step-title {
+    font-size: 0.95rem !important;
+  }
+
+  .process-step-text {
+    font-size: 0.8rem !important;
+  }
+
+  /* --- About Section --- */
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .about-content {
+    padding-right: 0 !important;
+  }
+
+  .about-title {
+    font-size: 1.35rem !important;
+  }
+
+  .about-text {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+    margin: 1.25rem 0 !important;
+  }
+
+  .about-feature-text {
+    font-size: 0.85rem !important;
+  }
+
+  .about-stats {
+    gap: 0.75rem !important;
+    margin-top: 1.5rem !important;
+    padding-top: 1.5rem !important;
+  }
+
+  .about-stat-value {
+    font-size: 1.5rem !important;
+  }
+
+  .about-stat-label {
+    font-size: 0.7rem !important;
+  }
+
+  .about-image-badge {
+    right: 0 !important;
+    bottom: -10px !important;
+    padding: 0.75rem !important;
+    border-radius: 10px !important;
+  }
+
+  .about-image-badge-value {
+    font-size: 1.35rem !important;
+  }
+
+  .about-image-badge-label {
+    font-size: 0.6rem !important;
+  }
+
+  /* --- Areas / Service Areas --- */
+  .areas-map-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .areas-map iframe {
+    height: 250px !important;
+  }
+
+  .areas-content h3 {
+    font-size: 1.15rem !important;
+  }
+
+  .areas-content p {
+    font-size: 0.85rem !important;
+  }
+
+  .areas-city {
+    padding: 0.35rem 0.75rem !important;
+    font-size: 0.75rem !important;
+  }
+
+  /* --- Testimonials --- */
+  .testimonial-highlight {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .testimonial-quote-text {
+    font-size: 1rem !important;
+  }
+
+  .testimonial-quote {
+    padding: 0 !important;
+  }
+
+  /* --- CTA Section --- */
+  .section--cta {
+    padding: 2.5rem 0 !important;
+  }
+
+  .cta-box--large .cta-box__title {
+    font-size: 1.25rem !important;
+  }
+
+  .cta-box--large .cta-box__text {
+    font-size: 0.85rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .cta-box__actions {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .cta-box__actions .btn {
+    width: 100% !important;
+    max-width: 280px !important;
+  }
+
+  /* --- Video Text Section --- */
+  .video-text-section {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .video-text-section__title {
+    font-size: 1.15rem !important;
+  }
+
+  .video-text-section__text {
+    font-size: 0.85rem !important;
+  }
+
+  /* --- Form Sections --- */
+  .form-contact-section,
+  .two-col {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .form-embed {
+    min-height: 400px !important;
+  }
+
+  .form-embed iframe {
+    min-height: 500px !important;
+  }
+
+  /* --- Footer --- */
+  .footer__cta {
+    padding: 1.5rem 1rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .footer__cta-title {
+    font-size: 1.25rem !important;
+  }
+
+  .footer__cta-text {
+    font-size: 0.85rem !important;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* --- Header --- */
+  .header__logo img {
+    height: 48px !important;
+  }
+
+  /* --- Generic Buttons --- */
+  .btn--xl {
+    padding: 0.7rem 1.25rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  .btn--lg {
+    padding: 0.65rem 1.25rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  .btn--primary {
+    font-size: 0.85rem !important;
+  }
+
+  /* --- Accordion / FAQ --- */
+  .accordion__header {
+    padding: 0.75rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  .accordion__body {
+    padding: 0 1rem 1rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* --- Reviews Widget --- */
+  .reviews-widget-container {
+    padding: 0.75rem !important;
+  }
+
+  /* --- Blog Grid Fix --- */
+  .blog-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* --- Cities Grid --- */
+  .cities-grid {
+    gap: 0.4rem !important;
+  }
+
+  .city-tag {
+    padding: 0.4rem 0.75rem !important;
+    font-size: 0.75rem !important;
+  }
+}
+
+/* ==========================================================================
+   SMALL PHONE (max-width: 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+
+  /* --- Container tighter --- */
+  .container {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  /* --- Hero --- */
+  .hero-premium {
+    padding: 65px 0 20px !important;
+  }
+
+  .hero-premium__title {
+    font-size: 1.35rem !important;
+  }
+
+  .hero-premium__subtitle {
+    font-size: 0.8rem !important;
+  }
+
+  .hero-premium__trust-badges {
+    flex-direction: column !important;
+  }
+
+  .hero-premium__trust-badge {
+    width: 100% !important;
+    justify-content: center !important;
+    font-size: 0.65rem !important;
+  }
+
+  .hero-premium__ctas .btn--xl {
+    padding: 0.65rem 0.75rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  .hero-premium__form iframe {
+    min-height: 440px !important;
+  }
+
+  /* --- Inner Hero --- */
+  .hero--inner {
+    min-height: 220px !important;
+  }
+
+  .hero--inner .hero__title {
+    font-size: 1.25rem !important;
+  }
+
+  .hero--inner .hero__subtitle {
+    font-size: 0.8rem !important;
+  }
+
+  /* --- Sections even tighter --- */
+  .services-section,
+  .differentiators-section,
+  .process-section,
+  .about-section,
+  .areas-section,
+  .testimonials-section,
+  .section {
+    padding: 2rem 0 !important;
+  }
+
+  .section__title {
+    font-size: 1.2rem !important;
+  }
+
+  .section__description {
+    font-size: 0.8rem !important;
+  }
+
+  /* --- Services Grid single column on small phone --- */
+  .services-grid--5items {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  .service-card--premium .service-card__image {
+    height: 150px !important;
+  }
+
+  .service-card--premium .service-card__body {
+    padding: 1rem !important;
+  }
+
+  .service-card--premium .service-card__title {
+    font-size: 0.95rem !important;
+  }
+
+  .service-card--premium .service-card__text {
+    font-size: 0.8rem !important;
+  }
+
+  /* --- Stats --- */
+  .stats-section {
+    padding: 1.5rem 0 !important;
+  }
+
+  .stat-card--premium .stat__number {
+    font-size: 1.5rem !important;
+  }
+
+  .stat-card--premium .stat__label {
+    font-size: 0.65rem !important;
+  }
+
+  /* --- Map --- */
+  .areas-map iframe {
+    height: 200px !important;
+  }
+
+  /* --- About --- */
+  .about-title {
+    font-size: 1.2rem !important;
+  }
+
+  .about-text {
+    font-size: 0.85rem !important;
+  }
+
+  .about-stat-value {
+    font-size: 1.25rem !important;
+  }
+
+  /* --- CTA --- */
+  .section--cta {
+    padding: 2rem 0 !important;
+  }
+
+  .cta-box--large .cta-box__title {
+    font-size: 1.15rem !important;
+  }
+
+  /* --- Header logo --- */
+  .header__logo img {
+    height: 40px !important;
+  }
+
+  /* --- Top bar --- */
+  .top-bar {
+    padding: 0.25rem 0 !important;
+  }
+
+  .top-bar__item,
+  .top-bar__item span {
+    font-size: 0.7rem !important;
+  }
+
+  /* --- Footer --- */
+  .footer {
+    padding-top: 2rem !important;
+  }
+
+  .footer__cta-title {
+    font-size: 1.1rem !important;
+  }
+
+  .footer__cta-text {
+    font-size: 0.8rem !important;
+  }
+
+  .footer__title {
+    font-size: 0.95rem !important;
+  }
+
+  .footer__description {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* ==========================================================================
+   VERY SMALL PHONE (max-width: 360px)
+   ========================================================================== */
+@media (max-width: 360px) {
+
+  .hero-premium {
+    padding: 60px 0 15px !important;
+  }
+
+  .hero-premium__title {
+    font-size: 1.2rem !important;
+  }
+
+  .hero-premium__subtitle {
+    font-size: 0.75rem !important;
+  }
+
+  .hero-premium__badge {
+    font-size: 0.6rem !important;
+  }
+
+  .section__title {
+    font-size: 1.1rem !important;
+  }
+
+  .stat-card--premium .stat__number {
+    font-size: 1.3rem !important;
+  }
+
+  .about-stat-value {
+    font-size: 1.1rem !important;
+  }
+}
