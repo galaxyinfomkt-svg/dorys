@@ -351,7 +351,7 @@ function generateServiceCityPage(service, city) {
           <p class="footer__description">Professional cleaning services in Massachusetts since 2004.</p>
         </div>
         <div class="footer__col">
-          <h4 class="footer__title">Services</h4>
+          <h3 class="footer__title">Services</h3>
           <ul class="footer__links">
             <li><a href="/services/janitorial-service/">Janitorial Service</a></li>
             <li><a href="/services/deep-cleaning/">Deep Cleaning</a></li>
@@ -361,7 +361,7 @@ function generateServiceCityPage(service, city) {
           </ul>
         </div>
         <div class="footer__col">
-          <h4 class="footer__title">Contact</h4>
+          <h3 class="footer__title">Contact</h3>
           <ul class="footer__contact">
             <li class="footer__contact-item"><a href="tel:${business.phoneLink}">${business.phone}</a></li>
             <li class="footer__contact-item"><a href="mailto:${business.email}">${business.email}</a></li>

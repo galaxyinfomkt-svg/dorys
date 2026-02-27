@@ -186,7 +186,7 @@ const STANDARD_FOOTER = `  <footer class="footer">
 
         <!-- Quick Links -->
         <div class="footer__col">
-          <h4 class="footer__title">Quick Links</h4>
+          <h3 class="footer__title">Quick Links</h3>
           <ul class="footer__links">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
@@ -199,7 +199,7 @@ const STANDARD_FOOTER = `  <footer class="footer">
 
         <!-- Services -->
         <div class="footer__col">
-          <h4 class="footer__title">Our Services</h4>
+          <h3 class="footer__title">Our Services</h3>
           <ul class="footer__links">
             <li><a href="/services/medical-office-cleaning">Medical Office Cleaning</a></li>
             <li><a href="/services/clinic-outpatient-sanitation">Clinic &amp; Outpatient Sanitation</a></li>
@@ -211,7 +211,7 @@ const STANDARD_FOOTER = `  <footer class="footer">
 
         <!-- Top Cities -->
         <div class="footer__col">
-          <h4 class="footer__title">Service Areas</h4>
+          <h3 class="footer__title">Service Areas</h3>
           <div class="footer__cities">
             <a href="/locations/marlborough-ma">Marlborough</a>
             <a href="/locations/framingham-ma">Framingham</a>
@@ -229,7 +229,7 @@ const STANDARD_FOOTER = `  <footer class="footer">
 
         <!-- Contact Info -->
         <div class="footer__col">
-          <h4 class="footer__title">Contact Us</h4>
+          <h3 class="footer__title">Contact Us</h3>
           <ul class="footer__contact">
             <li class="footer__contact-item">
               <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>

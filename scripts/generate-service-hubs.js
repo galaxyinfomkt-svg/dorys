@@ -374,7 +374,7 @@ ${citiesHtml}
           <p class="footer__description">Healthcare-focused environmental services in Massachusetts since 2004. 22 years of healthcare experience.</p>
         </div>
         <div class="footer__col">
-          <h4 class="footer__title">Services</h4>
+          <h3 class="footer__title">Services</h3>
           <ul class="footer__links">
             <li><a href="/services/medical-office-cleaning">Medical Office Cleaning</a></li>
             <li><a href="/services/clinic-outpatient-sanitation">Clinic & Outpatient Sanitation</a></li>
@@ -384,7 +384,7 @@ ${citiesHtml}
           </ul>
         </div>
         <div class="footer__col">
-          <h4 class="footer__title">Contact</h4>
+          <h3 class="footer__title">Contact</h3>
           <ul class="footer__contact">
             <li class="footer__contact-item">
               <a href="tel:+19783078107">(978) 307-8107</a>

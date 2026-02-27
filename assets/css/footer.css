@@ -367,6 +367,12 @@
 .footer__legal a {
   font-size: var(--font-size-sm);
   color: rgba(255, 255, 255, 0.6);
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 8px 12px;
+  justify-content: center;
 }
 
 .footer__legal a:hover {
