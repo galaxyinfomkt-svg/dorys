@@ -17,13 +17,9 @@
 
     if (!header) return;
 
-    let topBarHeight = 44;
-    let currentScrollY = 0;
-    let ticking = false;
-
-    requestAnimationFrame(function() {
-      if (topBar) topBarHeight = topBar.offsetHeight;
-    });
+    var topBarHeight = 44;
+    var currentScrollY = 0;
+    var ticking = false;
 
     /**
      * Write-only rAF callback (no reads = no forced reflow)

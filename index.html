@@ -59,8 +59,9 @@
   <link rel="stylesheet" href="assets/css/lightbox.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/lightbox.css"></noscript>
   <link rel="stylesheet" href="assets/css/aeo.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/aeo.css"></noscript>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- Google Fonts (preloaded, non-render-blocking, display=optional prevents CLS) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=optional" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=optional"></noscript>
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
