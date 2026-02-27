@@ -17,58 +17,39 @@
 
     if (!header) return;
 
-    let topBarHeight = 44; // default fallback to avoid forced reflow
-    let lastScrollY = 0;
+    let topBarHeight = 44;
+    let currentScrollY = 0;
     let ticking = false;
 
-    // Read offsetHeight in a rAF to avoid forced reflow during init
     requestAnimationFrame(function() {
       if (topBar) topBarHeight = topBar.offsetHeight;
     });
 
     /**
-     * Update header state based on scroll position
+     * Write-only rAF callback (no reads = no forced reflow)
      */
     const updateHeader = () => {
-      const scrollY = window.scrollY;
-
-      // Add scrolled class when past top bar
-      if (scrollY > topBarHeight) {
+      if (currentScrollY > topBarHeight) {
         header.classList.add('header--scrolled');
       } else {
         header.classList.remove('header--scrolled');
       }
-
-      // Optional: Hide/show header on scroll direction
-      // Uncomment below for hide-on-scroll-down behavior
-      /*
-      if (scrollY > lastScrollY && scrollY > 200) {
-        // Scrolling down
-        header.classList.add('header--hidden');
-      } else {
-        // Scrolling up
-        header.classList.remove('header--hidden');
-      }
-      */
-
-      lastScrollY = scrollY;
       ticking = false;
     };
 
     /**
-     * Request animation frame for smooth updates
+     * Read scrollY here (outside rAF) then schedule write
      */
     const onScroll = () => {
+      currentScrollY = window.pageYOffset;
       if (!ticking) {
         requestAnimationFrame(updateHeader);
         ticking = true;
       }
     };
 
-    // Add scroll listener
     window.addEventListener('scroll', onScroll, { passive: true });
-
-    // Initial check
+    currentScrollY = window.pageYOffset;
     updateHeader();
   }
 
