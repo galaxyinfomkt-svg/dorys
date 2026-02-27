@@ -59,8 +59,8 @@
   <link rel="stylesheet" href="assets/css/lightbox.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/lightbox.css"></noscript>
   <link rel="stylesheet" href="assets/css/aeo.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/aeo.css"></noscript>
 
-  <!-- Google Fonts (deferred) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet"></noscript>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -590,10 +590,9 @@
             </div>
           </div>
 
-          <!-- Hero Form -->
+          <!-- Hero Form (lazy iframe + delayed embed script) -->
           <div class="hero-premium__form">
-            <iframe src="https://api.leadconnectorhq.com/widget/form/oaN0aNeRAK8fPG4AnIzl" style="width:100%;border:none;" id="hero-form-oaN0aNeRAK8fPG4AnIzl" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Hero Contact Form" data-layout-iframe-id="hero-form-oaN0aNeRAK8fPG4AnIzl" data-form-id="oaN0aNeRAK8fPG4AnIzl" title="Healthcare facility assessment form"></iframe>
-            <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
+            <iframe data-src="https://api.leadconnectorhq.com/widget/form/oaN0aNeRAK8fPG4AnIzl" style="width:100%;border:none;" id="hero-form-oaN0aNeRAK8fPG4AnIzl" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Hero Contact Form" data-layout-iframe-id="hero-form-oaN0aNeRAK8fPG4AnIzl" data-form-id="oaN0aNeRAK8fPG4AnIzl" title="Healthcare facility assessment form"></iframe>
           </div>
         </div>
       </div>
@@ -845,7 +844,7 @@
       <div class="container">
         <div class="video-text-section">
           <div class="video-text-section__video">
-            <img src="/assets/images/services/healthcare-cleaning-team-1.jpg" alt="Professional healthcare cleaning team sanitizing a medical facility" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); width: 100%; height: auto; object-fit: cover;" loading="lazy">
+            <img src="/assets/images/services/healthcare-cleaning-team-1.jpg" alt="Professional healthcare cleaning team sanitizing a medical facility" width="1280" height="854" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); width: 100%; height: auto; object-fit: cover;" loading="lazy">
           </div>
           <div class="video-text-section__content">
             <span class="video-text-section__badge">Healthcare EVS Expertise</span>
@@ -863,7 +862,7 @@
 
         <div class="video-text-section video-text-section--reverse" style="margin-top: 5rem;">
           <div class="video-text-section__video">
-            <img src="/assets/images/services/healthcare-cleaning-office.jpg" alt="Healthcare environmental worker cleaning hospital ward with professional equipment" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); width: 100%; height: auto; object-fit: cover;" loading="lazy">
+            <img src="/assets/images/services/healthcare-cleaning-office.jpg" alt="Healthcare environmental worker cleaning hospital ward with professional equipment" width="800" height="533" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); width: 100%; height: auto; object-fit: cover;" loading="lazy">
           </div>
           <div class="video-text-section__content">
             <span class="video-text-section__badge">Infection Control</span>
@@ -945,8 +944,7 @@
           </div>
 
           <div class="form-embed animate-on-scroll animate-fade-left animate-delay-200">
-            <iframe src="https://api.leadconnectorhq.com/widget/form/oaN0aNeRAK8fPG4AnIzl" style="width:100%;height:100%;border:none;border-radius:12px" id="inline-oaN0aNeRAK8fPG4AnIzl" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Contact Form" data-height="608" data-layout-iframe-id="inline-oaN0aNeRAK8fPG4AnIzl" data-form-id="oaN0aNeRAK8fPG4AnIzl" title="Contact form for Dorys Healthcare Environmental Services"></iframe>
-            <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
+            <iframe data-src="https://api.leadconnectorhq.com/widget/form/oaN0aNeRAK8fPG4AnIzl" style="width:100%;height:100%;border:none;border-radius:12px" id="inline-oaN0aNeRAK8fPG4AnIzl" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Contact Form" data-height="608" data-layout-iframe-id="inline-oaN0aNeRAK8fPG4AnIzl" data-form-id="oaN0aNeRAK8fPG4AnIzl" title="Contact form for Dorys Healthcare Environmental Services"></iframe>
           </div>
         </div>
       </div>
@@ -1230,12 +1228,36 @@
   <script src="assets/js/navigation.js"></script>
   <script src="assets/js/video-embed.js" defer></script>
   <script src="assets/js/analytics.js" defer></script>
-<!-- Chat Widget -->
-<script 
-  src="https://beta.leadconnectorhq.com/loader.js"
-  data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js"
-  data-widget-id="6905273ec01664630d17fa93">
-</script>
+
+  <!-- Delay heavy third-party scripts until after page is interactive -->
+  <script>
+  (function(){
+    var loaded = false;
+    function loadThirdParty(){
+      if(loaded) return;
+      loaded = true;
+      // Load form iframes (data-src → src)
+      document.querySelectorAll('iframe[data-src]').forEach(function(f){
+        f.src = f.getAttribute('data-src');
+      });
+      // Load form embed script
+      var fe = document.createElement('script');
+      fe.src = 'https://link.msgsndr.com/js/form_embed.js';
+      document.body.appendChild(fe);
+      // Load chat widget
+      var cw = document.createElement('script');
+      cw.src = 'https://beta.leadconnectorhq.com/loader.js';
+      cw.setAttribute('data-resources-url','https://beta.leadconnectorhq.com/chat-widget/loader.js');
+      cw.setAttribute('data-widget-id','6905273ec01664630d17fa93');
+      document.body.appendChild(cw);
+    }
+    // Load on first user interaction or after 5s
+    ['scroll','click','touchstart','mouseover','keydown'].forEach(function(e){
+      window.addEventListener(e, loadThirdParty, {once:true,passive:true});
+    });
+    setTimeout(loadThirdParty, 5000);
+  })();
+  </script>
 <script src="assets/js/a11y-patch.js" defer></script>
 </body>
 </html>

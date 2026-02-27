@@ -42,7 +42,7 @@
   <link rel="stylesheet" href="/assets/css/critical.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/css/critical.min.css"></noscript>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet"></noscript></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/assets/css/footer.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/css/footer.css"></noscript>
@@ -1434,11 +1434,26 @@
   <script src="../assets/js/header.js"></script>
   <script src="../assets/js/navigation.js"></script>
   <script src="../assets/js/animations.js" defer></script>
-<!-- Chat Widget -->
-<script 
-  src="https://beta.leadconnectorhq.com/loader.js"
-  data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js"
-  data-widget-id="6905273ec01664630d17fa93">
+<!-- Delayed third-party scripts -->
+<script>
+(function(){
+  var loaded=false;
+  function loadTP(){
+    if(loaded)return;loaded=true;
+    document.querySelectorAll('iframe[data-src]').forEach(function(f){f.src=f.getAttribute('data-src');});
+    var s=document.querySelectorAll('script[data-lazy-src]');
+    s.forEach(function(el){var n=document.createElement('script');n.src=el.getAttribute('data-lazy-src');document.body.appendChild(n);});
+    var cw=document.createElement('script');
+    cw.src='https://beta.leadconnectorhq.com/loader.js';
+    cw.setAttribute('data-resources-url','https://beta.leadconnectorhq.com/chat-widget/loader.js');
+    cw.setAttribute('data-widget-id','6905273ec01664630d17fa93');
+    document.body.appendChild(cw);
+  }
+  ['scroll','click','touchstart','mouseover','keydown'].forEach(function(e){
+    window.addEventListener(e,loadTP,{once:true,passive:true});
+  });
+  setTimeout(loadTP,5000);
+})();
 </script>
 <script src="../assets/js/a11y-patch.js" defer></script>
 </body>

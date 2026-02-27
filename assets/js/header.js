@@ -49,8 +49,11 @@
     };
 
     window.addEventListener('scroll', onScroll, { passive: true });
-    currentScrollY = window.pageYOffset;
-    updateHeader();
+    // Defer initial read to avoid forced reflow during page load
+    requestAnimationFrame(function() {
+      currentScrollY = window.pageYOffset;
+      updateHeader();
+    });
   }
 
   // Expose function globally
