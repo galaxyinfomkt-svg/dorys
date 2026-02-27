@@ -175,9 +175,9 @@ function generateServiceHub(serviceSlug, config) {
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="stylesheet" href="/assets/css/header.css">
-  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/footer.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/css/footer.css"></noscript>
   <link rel="stylesheet" href="/assets/css/hero.css">
-  <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="stylesheet" href="/assets/css/animations.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/css/animations.css"></noscript>
   <link rel="stylesheet" href="/assets/css/responsive.css">
   <link rel="stylesheet" href="/assets/css/premium.css">
   <link rel="stylesheet" href="/assets/css/premium-v2.css">
@@ -252,7 +252,7 @@ function generateServiceHub(serviceSlug, config) {
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Healthcare Environmental Services" width="180" height="60">
+        <img src="/assets/images/logo/logo-200.jpg" alt="Dorys Healthcare Environmental Services" width="180" height="60">
       </a>
       <nav class="header__nav">
         <ul class="nav-list">
@@ -369,7 +369,7 @@ ${citiesHtml}
       <div class="footer__grid">
         <div class="footer__col footer__brand">
           <a href="/" class="footer__logo">
-            <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Healthcare Environmental Services" class="footer__logo-img" width="180" height="60">
+            <img src="/assets/images/logo/logo-200.jpg" alt="Dorys Healthcare Environmental Services" class="footer__logo-img" width="180" height="60">
           </a>
           <p class="footer__description">Healthcare-focused environmental services in Massachusetts since 2004. 22 years of healthcare experience.</p>
         </div>

@@ -39,6 +39,7 @@
       // Update ARIA attributes
       toggle.setAttribute('aria-expanded', 'true');
       nav.setAttribute('aria-hidden', 'false');
+      nav.removeAttribute('inert');
 
       // Focus first link
       const firstLink = nav.querySelector('.nav-link');
@@ -59,6 +60,7 @@
       // Update ARIA attributes
       toggle.setAttribute('aria-expanded', 'false');
       nav.setAttribute('aria-hidden', 'true');
+      nav.setAttribute('inert', '');
 
       // Close all dropdowns
       document.querySelectorAll('.nav-item.is-open').forEach(item => {
@@ -113,6 +115,7 @@
     toggle.setAttribute('aria-label', 'Toggle navigation menu');
     nav.setAttribute('id', 'main-navigation');
     nav.setAttribute('aria-hidden', 'true');
+    nav.setAttribute('inert', '');
   }
 
   /**

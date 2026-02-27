@@ -113,10 +113,10 @@ function generateServiceCityPage(service, city) {
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="stylesheet" href="/assets/css/header.css">
-  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/footer.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/css/footer.css"></noscript>
   <link rel="stylesheet" href="/assets/css/hero.css">
-  <link rel="stylesheet" href="/assets/css/animations.css">
-  <link rel="stylesheet" href="/assets/css/lightbox.css">
+  <link rel="stylesheet" href="/assets/css/animations.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/css/animations.css"></noscript>
+  <link rel="stylesheet" href="/assets/css/lightbox.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/css/lightbox.css"></noscript>
   <link rel="stylesheet" href="/assets/css/responsive.css">
 
   <!-- Schema.org LocalBusiness -->
@@ -210,7 +210,7 @@ function generateServiceCityPage(service, city) {
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Janitorial Cleaning Services" width="180" height="60">
+        <img src="/assets/images/logo/logo-200.jpg" alt="Dorys Janitorial Cleaning Services" width="180" height="60">
       </a>
       <nav class="header__nav">
         <ul class="nav-list">
@@ -296,7 +296,7 @@ function generateServiceCityPage(service, city) {
             <div class="form-embed" style="background: var(--bg-light); border-radius: var(--radius-lg); padding: var(--space-lg);">
               <h3 class="text-center mb-lg">Get Your Free Quote</h3>
               <iframe src="https://api.leadconnectorhq.com/widget/form/oaN0aNeRAK8fPG4AnIzl" style="width:100%;height:600px;border:none;border-radius:8px" title="Contact Form"></iframe>
-              <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+              <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
             </div>
           </div>
         </div>
@@ -434,9 +434,9 @@ function generateCityLandingPage(city) {
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="stylesheet" href="/assets/css/header.css">
-  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/footer.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/css/footer.css"></noscript>
   <link rel="stylesheet" href="/assets/css/hero.css">
-  <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="stylesheet" href="/assets/css/animations.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/css/animations.css"></noscript>
   <link rel="stylesheet" href="/assets/css/responsive.css">
 
   <script type="application/ld+json">
@@ -472,7 +472,7 @@ function generateCityLandingPage(city) {
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-original.jpg" alt="Dorys Janitorial" width="180" height="60">
+        <img src="/assets/images/logo/logo-200.jpg" alt="Dorys Janitorial" width="180" height="60">
       </a>
       <nav class="header__nav">
         <ul class="nav-list">
