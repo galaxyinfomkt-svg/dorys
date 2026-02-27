@@ -19,7 +19,7 @@ const COMPLETE_FOOTER = `  <!-- Footer -->
         <!-- Brand Column -->
         <div class="footer__col footer__brand">
           <a href="/" class="footer__logo">
-            <img src="/assets/images/logo/logo-200.jpg" alt="Dorys Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
+            <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
             <span class="footer__logo-text">Dorys Janitorial</span>
           </a>
           <p class="footer__description">Professional janitorial and cleaning services in Massachusetts since 2004. We deliver exceptional results with attention to detail and clear communication.</p>

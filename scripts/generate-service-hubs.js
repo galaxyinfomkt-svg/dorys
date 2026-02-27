@@ -172,7 +172,7 @@ function generateServiceHub(serviceSlug, config) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/critical.min.css">
   <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="stylesheet" href="/assets/css/header.css">
   <link rel="stylesheet" href="/assets/css/footer.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/css/footer.css"></noscript>
@@ -252,7 +252,7 @@ function generateServiceHub(serviceSlug, config) {
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-200.jpg" alt="Dorys Healthcare Environmental Services" width="180" height="60">
+        <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Healthcare Environmental Services" width="180" height="60">
       </a>
       <nav class="header__nav">
         <ul class="nav-list">
@@ -369,7 +369,7 @@ ${citiesHtml}
       <div class="footer__grid">
         <div class="footer__col footer__brand">
           <a href="/" class="footer__logo">
-            <img src="/assets/images/logo/logo-200.jpg" alt="Dorys Healthcare Environmental Services" class="footer__logo-img" width="180" height="60">
+            <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Healthcare Environmental Services" class="footer__logo-img" width="180" height="60">
           </a>
           <p class="footer__description">Healthcare-focused environmental services in Massachusetts since 2004. 22 years of healthcare experience.</p>
         </div>

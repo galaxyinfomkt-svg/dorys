@@ -17,9 +17,14 @@
 
     if (!header) return;
 
-    const topBarHeight = topBar ? topBar.offsetHeight : 0;
+    let topBarHeight = 44; // default fallback to avoid forced reflow
     let lastScrollY = 0;
     let ticking = false;
+
+    // Read offsetHeight in a rAF to avoid forced reflow during init
+    requestAnimationFrame(function() {
+      if (topBar) topBarHeight = topBar.offsetHeight;
+    });
 
     /**
      * Update header state based on scroll position

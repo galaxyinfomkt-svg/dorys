@@ -48,7 +48,7 @@ const STANDARD_TOPBAR_HEADER = `  <div class="top-bar">
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-200.jpg" alt="Dorys Healthcare Environmental Services Logo" width="180" height="60">
+        <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Healthcare Environmental Services Logo" width="180" height="60">
       </a>
 
       <nav class="header__nav" aria-label="Main navigation">
@@ -152,7 +152,7 @@ const STANDARD_FOOTER = `  <footer class="footer">
         <!-- Brand Column -->
         <div class="footer__col footer__brand">
           <a href="/" class="footer__logo" aria-label="Dorys Healthcare Environmental Services - Home">
-            <img src="/assets/images/logo/logo-200.jpg" alt="Dorys Healthcare Environmental Services" class="footer__logo-img" width="180" height="60">
+            <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Healthcare Environmental Services" class="footer__logo-img" width="180" height="60">
             <span class="footer__logo-text">Dorys Healthcare</span>
           </a>
           <p class="footer__description">Healthcare-focused environmental services in Massachusetts since 2004. 22 years of healthcare experience delivering precision sanitation, compliance-driven protocols, and infection control support.</p>
