@@ -5274,6 +5274,11 @@ main .footer__contact-value a:hover,
   z-index: 0;
 }
 
+.hero-premium__background picture {
+  width: 100%;
+  height: 100%;
+}
+
 .hero-premium__background img {
   width: 100%;
   height: 100%;
