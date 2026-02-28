@@ -93,10 +93,17 @@
       }
     });
 
-    // Close on resize to desktop
+    // Close on resize to desktop + toggle inert
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 991 && nav.classList.contains('is-open')) {
-        closeMenu();
+      if (window.innerWidth > 991) {
+        if (nav.classList.contains('is-open')) {
+          closeMenu();
+        }
+        nav.removeAttribute('aria-hidden');
+        nav.removeAttribute('inert');
+      } else if (!nav.classList.contains('is-open')) {
+        nav.setAttribute('aria-hidden', 'true');
+        nav.setAttribute('inert', '');
       }
     });
 
@@ -114,8 +121,12 @@
     toggle.setAttribute('aria-controls', 'main-navigation');
     toggle.setAttribute('aria-label', 'Toggle navigation menu');
     nav.setAttribute('id', 'main-navigation');
-    nav.setAttribute('aria-hidden', 'true');
-    nav.setAttribute('inert', '');
+
+    // Only apply inert/aria-hidden on mobile (nav is a slide-out panel)
+    if (window.innerWidth <= 991) {
+      nav.setAttribute('aria-hidden', 'true');
+      nav.setAttribute('inert', '');
+    }
   }
 
   /**
