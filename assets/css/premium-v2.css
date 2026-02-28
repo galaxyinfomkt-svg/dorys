@@ -770,6 +770,7 @@
 .about-section {
   padding: 6rem 0;
   background: var(--gradient-light);
+  overflow: hidden;
 }
 
 .about-grid {
