@@ -4,7 +4,60 @@
    ========================================================================== */
 
 /* ==========================================================================
-   TABLET (max-width: 768px)
+   GLOBAL - Prevent horizontal overflow on all devices
+   ========================================================================== */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
+/* Hide decorative pseudo-elements that could cause overflow on mobile */
+@media (max-width: 768px) {
+  .hero__image::before,
+  .hero__image::after {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   TABLET (max-width: 991px)
+   ========================================================================== */
+@media (max-width: 991px) {
+
+  /* --- Grids: force 2 columns max --- */
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* --- Contact grid --- */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* --- Blog article layout --- */
+  .blog-hero__title {
+    font-size: 2rem !important;
+  }
+
+  .article-header__title {
+    font-size: 1.75rem !important;
+  }
+
+  /* --- Feature grid --- */
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* --- Nav dropdown mega grid --- */
+  .nav-dropdown__grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* ==========================================================================
+   TABLET SMALL / LARGE PHONE (max-width: 768px)
    ========================================================================== */
 @media (max-width: 768px) {
 
@@ -143,13 +196,78 @@
     max-width: 260px !important;
   }
 
+  /* --- Location Hero --- */
+  .hero--location {
+    min-height: 350px !important;
+  }
+
+  .hero--location .hero__title {
+    font-size: 1.5rem !important;
+  }
+
+  .hero--location .hero__subtitle {
+    font-size: 0.9rem !important;
+  }
+
+  .hero--location .hero__ctas {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .hero--location .hero__ctas .btn {
+    width: 100% !important;
+    max-width: 280px !important;
+  }
+
+  /* --- Hero Premium (inner pages) --- */
+  .hero--premium {
+    min-height: auto !important;
+    padding: 4rem 0 3rem !important;
+  }
+
+  .hero--premium .hero__title {
+    font-size: 1.75rem !important;
+  }
+
+  .hero--premium .hero__subtitle {
+    font-size: 0.95rem !important;
+  }
+
+  .hero--premium .hero__ctas {
+    flex-direction: column !important;
+  }
+
+  .hero--premium .hero__ctas .btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .hero--premium .hero__trust {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+  }
+
+  .hero--premium .hero__scroll {
+    display: none !important;
+  }
+
+  /* --- Hide decorative shapes on mobile --- */
+  .hero--premium .hero__shape--1,
+  .hero--premium .hero__shape--2,
+  .hero--premium .hero__shape--3 {
+    display: none !important;
+  }
+
   /* --- All Sections --- */
   .services-section,
   .differentiators-section,
   .process-section,
   .about-section,
   .areas-section,
-  .testimonials-section {
+  .testimonials-section,
+  .contact-section,
+  .faq-section {
     padding: 2.5rem 0 !important;
   }
 
@@ -183,36 +301,50 @@
   .differentiators-header,
   .process-header,
   .testimonials-header,
-  .areas-header {
+  .areas-header,
+  .faq-header {
     margin-bottom: 2rem !important;
   }
 
   /* --- Services Grid --- */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+
   .services-grid--5items {
     grid-template-columns: 1fr 1fr !important;
     gap: 0.75rem !important;
+  }
+
+  .service-card-image {
+    height: 140px !important;
   }
 
   .service-card--premium .service-card__image {
     height: 120px !important;
   }
 
-  .service-card--premium .service-card__body {
+  .service-card--premium .service-card__body,
+  .service-card-body {
     padding: 0.75rem !important;
   }
 
-  .service-card--premium .service-card__title {
+  .service-card--premium .service-card__title,
+  .service-card-title {
     font-size: 0.85rem !important;
     margin-bottom: 0.3rem !important;
   }
 
-  .service-card--premium .service-card__text {
+  .service-card--premium .service-card__text,
+  .service-card-description {
     font-size: 0.75rem !important;
     margin-bottom: 0.5rem !important;
     line-height: 1.4 !important;
   }
 
-  .service-card--premium .service-card__link {
+  .service-card--premium .service-card__link,
+  .service-card-link {
     font-size: 0.75rem !important;
   }
 
@@ -398,6 +530,34 @@
     font-size: 0.6rem !important;
   }
 
+  /* --- CEO Spotlight (about & contact pages) --- */
+  .ceo-spotlight,
+  .ceo-contact {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 1.25rem !important;
+    gap: 1rem !important;
+  }
+
+  .ceo-spotlight img,
+  .ceo-contact img {
+    width: 160px !important;
+    height: 160px !important;
+    max-width: 160px !important;
+  }
+
+  .ceo-spotlight h3,
+  .ceo-contact h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .ceo-spotlight p,
+  .ceo-contact p {
+    font-size: 0.85rem !important;
+    text-align: left !important;
+  }
+
   /* --- Areas / Service Areas --- */
   .areas-map-grid {
     grid-template-columns: 1fr !important;
@@ -436,9 +596,43 @@
     padding: 0 !important;
   }
 
+  .testimonial-card-enhanced {
+    padding: 1.25rem !important;
+  }
+
+  .testimonial-card-enhanced__text {
+    font-size: 0.9rem !important;
+  }
+
   /* --- CTA Section --- */
-  .section--cta {
+  .section--cta,
+  .cta-section {
     padding: 2.5rem 0 !important;
+  }
+
+  .cta-title {
+    font-size: 1.5rem !important;
+  }
+
+  .cta-text {
+    font-size: 0.9rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .cta-buttons {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .cta-buttons .btn {
+    width: 100% !important;
+    max-width: 280px !important;
+  }
+
+  .cta-trust {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    margin-top: 1.5rem !important;
   }
 
   .cta-box--large .cta-box__title {
@@ -456,6 +650,29 @@
   }
 
   .cta-box__actions .btn {
+    width: 100% !important;
+    max-width: 280px !important;
+  }
+
+  .cta-premium {
+    padding: 2.5rem 1.25rem !important;
+    border-radius: 12px !important;
+  }
+
+  .cta-premium__title {
+    font-size: 1.35rem !important;
+  }
+
+  .cta-premium__text {
+    font-size: 0.9rem !important;
+  }
+
+  .cta-premium__buttons {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .cta-premium__buttons .btn {
     width: 100% !important;
     max-width: 280px !important;
   }
@@ -487,6 +704,39 @@
 
   .form-embed iframe {
     min-height: 500px !important;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.25rem !important;
+  }
+
+  .contact-form-wrapper iframe {
+    min-height: 480px !important;
+  }
+
+  /* --- Contact methods --- */
+  .contact-method {
+    padding: 1rem !important;
+  }
+
+  .contact-method-icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .contact-method-value {
+    font-size: 0.9rem !important;
+  }
+
+  /* --- FAQ --- */
+  .faq-question {
+    padding: 1rem 1.25rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  .faq-answer-content {
+    padding: 0 1.25rem 1.25rem !important;
+    font-size: 0.85rem !important;
   }
 
   /* --- Footer --- */
@@ -528,7 +778,12 @@
     font-size: 0.85rem !important;
   }
 
-  /* --- Accordion / FAQ --- */
+  .btn--premium {
+    padding: 0.75rem 1.5rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* --- Accordion / FAQ (generic) --- */
   .accordion__header {
     padding: 0.75rem 1rem !important;
     font-size: 0.9rem !important;
@@ -544,9 +799,38 @@
     padding: 0.75rem !important;
   }
 
-  /* --- Blog Grid Fix --- */
+  /* --- Blog --- */
   .blog-grid {
     grid-template-columns: 1fr !important;
+  }
+
+  .blog-hero {
+    padding: 2rem 0 !important;
+  }
+
+  .blog-hero__title {
+    font-size: 1.5rem !important;
+  }
+
+  .blog-hero__subtitle {
+    font-size: 0.9rem !important;
+  }
+
+  .article-header__title {
+    font-size: 1.35rem !important;
+  }
+
+  .article-content__main {
+    padding: 1rem !important;
+  }
+
+  .article-cta {
+    padding: 1rem !important;
+  }
+
+  /* --- Blog Featured --- */
+  .blog-featured__title {
+    font-size: 1.25rem !important;
   }
 
   /* --- Cities Grid --- */
@@ -557,6 +841,51 @@
   .city-tag {
     padding: 0.4rem 0.75rem !important;
     font-size: 0.75rem !important;
+  }
+
+  /* --- Grids: single column --- */
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* --- Feature grid --- */
+  .feature-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .feature-card {
+    padding: 1.25rem !important;
+  }
+
+  .feature-card__title {
+    font-size: 1rem !important;
+  }
+
+  .feature-card__text {
+    font-size: 0.85rem !important;
+  }
+
+  /* --- Trust Row --- */
+  .trust-row {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    padding: 1.25rem !important;
+  }
+
+  .trust-row__text {
+    font-size: 0.85rem !important;
+  }
+
+  /* --- Neighborhoods grid (location pages) --- */
+  .neighborhoods-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+  }
+
+  /* --- Card utility classes --- */
+  .card-elevated,
+  .card-bordered {
+    padding: 1.25rem !important;
   }
 }
 
@@ -616,6 +945,15 @@
     font-size: 0.8rem !important;
   }
 
+  /* --- Location Hero --- */
+  .hero--location {
+    min-height: 280px !important;
+  }
+
+  .hero--location .hero__title {
+    font-size: 1.25rem !important;
+  }
+
   /* --- Sections even tighter --- */
   .services-section,
   .differentiators-section,
@@ -623,6 +961,8 @@
   .about-section,
   .areas-section,
   .testimonials-section,
+  .contact-section,
+  .faq-section,
   .section {
     padding: 2rem 0 !important;
   }
@@ -636,24 +976,32 @@
   }
 
   /* --- Services Grid single column on small phone --- */
+  .services-grid,
   .services-grid--5items {
     grid-template-columns: 1fr !important;
     gap: 0.75rem !important;
+  }
+
+  .service-card-image {
+    height: 160px !important;
   }
 
   .service-card--premium .service-card__image {
     height: 150px !important;
   }
 
-  .service-card--premium .service-card__body {
+  .service-card--premium .service-card__body,
+  .service-card-body {
     padding: 1rem !important;
   }
 
-  .service-card--premium .service-card__title {
+  .service-card--premium .service-card__title,
+  .service-card-title {
     font-size: 0.95rem !important;
   }
 
-  .service-card--premium .service-card__text {
+  .service-card--premium .service-card__text,
+  .service-card-description {
     font-size: 0.8rem !important;
   }
 
@@ -688,13 +1036,34 @@
     font-size: 1.25rem !important;
   }
 
+  /* --- CEO Spotlight smaller on small phone --- */
+  .ceo-spotlight img,
+  .ceo-contact img {
+    width: 130px !important;
+    height: 130px !important;
+    max-width: 130px !important;
+  }
+
   /* --- CTA --- */
-  .section--cta {
+  .section--cta,
+  .cta-section {
     padding: 2rem 0 !important;
+  }
+
+  .cta-title {
+    font-size: 1.25rem !important;
   }
 
   .cta-box--large .cta-box__title {
     font-size: 1.15rem !important;
+  }
+
+  .cta-premium {
+    padding: 2rem 1rem !important;
+  }
+
+  .cta-premium__title {
+    font-size: 1.2rem !important;
   }
 
   /* --- Header logo --- */
@@ -732,6 +1101,35 @@
   .footer__description {
     font-size: 0.8rem !important;
   }
+
+  /* --- Blog --- */
+  .blog-hero__title {
+    font-size: 1.25rem !important;
+  }
+
+  .blog-hero__subtitle {
+    font-size: 0.8rem !important;
+  }
+
+  .article-header__title {
+    font-size: 1.15rem !important;
+  }
+
+  /* --- Contact form iframe --- */
+  .contact-form-wrapper iframe {
+    min-height: 450px !important;
+  }
+
+  /* --- FAQ --- */
+  .faq-question {
+    padding: 0.75rem 1rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  .faq-icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
 }
 
 /* ==========================================================================
@@ -764,6 +1162,18 @@
   }
 
   .about-stat-value {
+    font-size: 1.1rem !important;
+  }
+
+  .cta-title {
+    font-size: 1.1rem !important;
+  }
+
+  .hero--location .hero__title {
+    font-size: 1.1rem !important;
+  }
+
+  .blog-hero__title {
     font-size: 1.1rem !important;
   }
 }
