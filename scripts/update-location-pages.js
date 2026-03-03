@@ -11,13 +11,13 @@ let errors = 0;
 
 const replacements = [
   // Schema
-  ['"Dorys Janitorial Cleaning Services Inc."', '"Dorys Healthcare Environmental Services Inc."'],
+  ['"Dorys Janitorial Cleaning Services Inc."', '"Dorys Janitorial Cleaning Services Inc."'],
 
   // Logo alt
-  ['alt="Dorys Janitorial"', 'alt="Dorys Healthcare Environmental Services"'],
+  ['alt="Dorys Janitorial"', 'alt="Dorys Janitorial Cleaning Services"'],
 
   // Header CTA
-  ['>Free Quote</a>', '>Healthcare Assessment</a>'],
+  ['>Free Quote</a>', '>Cleaning Assessment</a>'],
 
   // Hero title pattern - use regex below
   // Hero subtitle - 21+ years
@@ -60,13 +60,13 @@ const replacements = [
 
   // Footer CTA
   ['<h2 class="footer__cta-title">Get Your Free Quote Today!</h2>', '<h2 class="footer__cta-title">Schedule a Healthcare Facility Assessment</h2>'],
-  ['Professional cleaning services with 21+ years of experience. Licensed, insured, and ready to make your space shine.', 'Healthcare environmental services with 22 years of experience. Licensed, $2M insured, and trained for healthcare sanitation protocols.'],
-  ['>Get Your Free Quote Today</a>', '>Schedule a Healthcare Assessment</a>'],
+  ['Professional cleaning services with 21+ years of experience. Licensed, insured, and ready to make your space shine.', 'Healthcare facility cleaning services with 22 years of experience. Licensed, $2M insured, and trained for healthcare sanitation protocols.'],
+  ['>Get Your Free Quote Today</a>', '>Schedule a Cleaning Assessment</a>'],
 
   // Footer brand
-  ['alt="Dorys Janitorial Cleaning Services"', 'alt="Dorys Healthcare Environmental Services"'],
-  ['<span class="footer__logo-text">Dorys Janitorial</span>', '<span class="footer__logo-text">Dorys Healthcare</span>'],
-  ['Professional janitorial and cleaning services in Massachusetts since 2004. We deliver exceptional results with attention to detail and clear communication.', 'Healthcare-focused environmental services in Massachusetts since 2004. Precision sanitation for medical offices, clinics, and assisted living facilities.'],
+  ['alt="Dorys Janitorial Cleaning Services"', 'alt="Dorys Janitorial Cleaning Services"'],
+  ['<span class="footer__logo-text">Dorys Janitorial</span>', '<span class="footer__logo-text">Dorys Cleaning</span>'],
+  ['Professional janitorial and cleaning services in Massachusetts since 2004. We deliver exceptional results with attention to detail and clear communication.', 'Professional cleaning services for healthcare facilities in Massachusetts since 2004. Precision sanitation for medical offices, clinics, and assisted living facilities.'],
 
   // Footer service links
   ['<li><a href="/services/janitorial-service/">Janitorial Service</a></li>', '<li><a href="/services/medical-office-cleaning/">Medical Office Cleaning</a></li>'],
@@ -79,17 +79,17 @@ const replacements = [
   ['2004 (21+ Years)', '2004 (22 Years Healthcare)'],
 
   // Footer copyright
-  ['&copy; 2025 Dorys Janitorial Cleaning Services Inc.', '&copy; 2026 Dorys Healthcare Environmental Services Inc.'],
+  ['&copy; 2025 Dorys Janitorial Cleaning Services Inc.', '&copy; 2026 Dorys Janitorial Cleaning Services Inc.'],
 ];
 
 // Regex replacements for city-specific patterns
 const regexReplacements = [
   // Title
-  [/Cleaning Services ([^|<]+) MA \| Free Estimates/g, 'Healthcare Sanitation Services $1MA | Dorys Healthcare'],
+  [/Cleaning Services ([^|<]+) MA \| Free Estimates/g, 'Healthcare Sanitation Services $1MA | Dorys Cleaning'],
   // Meta description
   [/Professional cleaning services in ([^.]+)\. House cleaning, office janitorial, deep cleaning & more\./g, 'Healthcare environmental sanitation services in $1. Medical office cleaning, clinic sanitation, infection control & more.'],
   // OG title
-  [/content="Cleaning Services ([^"]+) MA \| Free Estimates"/g, 'content="Healthcare Sanitation Services $1MA | Dorys Healthcare"'],
+  [/content="Cleaning Services ([^"]+) MA \| Free Estimates"/g, 'content="Healthcare Sanitation Services $1MA | Dorys Cleaning"'],
   // OG description (same as meta)
   [/content="Professional cleaning services in ([^.]+)\. House cleaning, office janitorial, deep cleaning & more\./g, 'content="Healthcare environmental sanitation services in $1. Medical office cleaning, clinic sanitation, infection control & more.'],
   // Hero title

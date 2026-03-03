@@ -47,14 +47,14 @@ const SERVICES_INDEX = 'services/index.html';
 
 const REPLACEMENTS = [
   // ---- 1. Logo alt text standardization ----
-  { from: 'alt="Dorys Janitorial"', to: 'alt="Dorys Healthcare Environmental Services"' },
-  { from: 'alt="Dorys Cleaning"', to: 'alt="Dorys Healthcare Environmental Services"' },
-  { from: 'alt="Dorys Janitorial Cleaning Services"', to: 'alt="Dorys Healthcare Environmental Services"' },
+  { from: 'alt="Dorys Janitorial"', to: 'alt="Dorys Janitorial Cleaning Services"' },
+  { from: 'alt="Dorys Cleaning"', to: 'alt="Dorys Janitorial Cleaning Services"' },
+  { from: 'alt="Dorys Janitorial Cleaning Services"', to: 'alt="Dorys Janitorial Cleaning Services"' },
 
   // ---- 2. Header CTA standardization ----
-  { from: '>Free Quote</a>', to: '>Healthcare Assessment</a>' },
-  { from: '>Get a Free Quote</a>', to: '>Healthcare Assessment</a>' },
-  { from: '>Get Free Quote</a>', to: '>Healthcare Assessment</a>' },
+  { from: '>Free Quote</a>', to: '>Cleaning Assessment</a>' },
+  { from: '>Get a Free Quote</a>', to: '>Cleaning Assessment</a>' },
+  { from: '>Get Free Quote</a>', to: '>Cleaning Assessment</a>' },
 
   // ---- 3. Old service URL replacements ----
   { from: '/services/janitorial-service', to: '/services/medical-office-cleaning' },
@@ -71,12 +71,12 @@ const REPLACEMENTS = [
   { from: '>General Housekeeping</a>', to: '>Compliance & Scheduled Sanitation</a>' },
 
   // ---- 5. Footer branding ----
-  { from: 'Dorys Janitorial Cleaning Services Inc.', to: 'Dorys Healthcare Environmental Services Inc.' },
+  { from: 'Dorys Janitorial Cleaning Services Inc.', to: 'Dorys Janitorial Cleaning Services Inc.' },
   { from: '&copy; 2024', to: '&copy; 2026' },
   { from: '&copy; 2025', to: '&copy; 2026' },
   { from: '21+ years', to: '22 years' },
   { from: '21 years', to: '22 years' },
-  { from: 'Professional janitorial and cleaning services', to: 'Healthcare-focused environmental services' },
+  { from: 'Professional janitorial and cleaning services', to: 'Professional cleaning services for healthcare facilities' },
 
   // ---- 6. Old service image updates ----
   // With leading slash
@@ -169,7 +169,7 @@ function collectServiceSubdirFiles() {
 
 function main() {
   console.log('='.repeat(70));
-  console.log('  Dorys Healthcare - Header/Footer Standardization Script');
+  console.log('  Dorys Cleaning - Header/Footer Standardization Script');
   console.log('='.repeat(70));
   console.log('');
 

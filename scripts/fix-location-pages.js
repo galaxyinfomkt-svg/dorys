@@ -26,13 +26,13 @@ const stringReplacements = [
 
 const regexReplacements = [
   // Fix spacing bug: "Healthcare Sanitation Services CityMA" → "Healthcare Sanitation Services City, MA"
-  [/Healthcare Sanitation Services (\w+)MA \| Dorys Healthcare/g, 'Healthcare Sanitation Services $1, MA | Dorys Healthcare'],
+  [/Healthcare Sanitation Services (\w+)MA \| Dorys Cleaning/g, 'Healthcare Sanitation Services $1, MA | Dorys Cleaning'],
 
-  // Fix old title format: "Professional Cleaning {City} | Since 2004" → "Healthcare Sanitation {City}, MA | Dorys Healthcare"
-  [/<title>Professional Cleaning ([^<]+) \| Since 2004<\/title>/g, '<title>Healthcare Sanitation $1, MA | Dorys Healthcare</title>'],
+  // Fix old title format: "Professional Cleaning {City} | Since 2004" → "Healthcare Sanitation {City}, MA | Dorys Cleaning"
+  [/<title>Professional Cleaning ([^<]+) \| Since 2004<\/title>/g, '<title>Healthcare Sanitation $1, MA | Dorys Cleaning</title>'],
 
   // Fix OG title with old format
-  [/content="Professional Cleaning ([^"]+) \| Since 2004"/g, 'content="Healthcare Sanitation $1, MA | Dorys Healthcare"'],
+  [/content="Professional Cleaning ([^"]+) \| Since 2004"/g, 'content="Healthcare Sanitation $1, MA | Dorys Cleaning"'],
 
   // Fix old meta descriptions that still reference general cleaning
   [/content="([A-Z][a-z]+(?:\s[A-Z][a-z]+)*) cleaning services you can trust\. Home, office, move-in\/out\. Licensed MA #213341, \$2M insured\. Call for same-day quote!"/g,
@@ -43,7 +43,7 @@ const regexReplacements = [
    '"Healthcare environmental sanitation services in $1, MA. Medical office cleaning, clinic sanitation, infection control & more. Licensed, $2M insured. Call (978) 307-8107."'],
 
   // Fix remaining "cleaning services" in general text
-  [/professional cleaning services/gi, 'healthcare environmental services'],
+  [/professional cleaning services/gi, 'healthcare facility cleaning services'],
   [/cleaning services/gi, 'healthcare sanitation services'],
 ];
 

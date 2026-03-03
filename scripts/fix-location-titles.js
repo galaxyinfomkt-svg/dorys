@@ -33,19 +33,19 @@ for (const slug of patternAFiles) {
 
   // Fix title
   html = html.replace(/<title>House & Office Cleaning [^<]+<\/title>/,
-    `<title>Healthcare Environmental Services in ${city}, MA | Dorys Healthcare</title>`);
+    `<title>Healthcare Cleaning Services in ${city}, MA | Dorys Cleaning</title>`);
 
   // Fix meta description
   html = html.replace(/<meta name="description" content="Looking for cleaners[^"]+">/,
-    `<meta name="description" content="Professional healthcare environmental services in ${city}, MA. Medical office cleaning, infection control, clinic sanitation. 22 years experience. Licensed, $2M insured. Schedule a facility assessment.">`);
+    `<meta name="description" content="Professional healthcare facility cleaning services in ${city}, MA. Medical office cleaning, infection control, clinic sanitation. 22 years experience. Licensed, $2M insured. Schedule a facility assessment.">`);
 
   // Fix og:title
   html = html.replace(/<meta property="og:title" content="House & Office Cleaning[^"]+">/,
-    `<meta property="og:title" content="Healthcare Environmental Services in ${city}, MA | Dorys Healthcare">`);
+    `<meta property="og:title" content="Healthcare Cleaning Services in ${city}, MA | Dorys Cleaning">`);
 
   // Fix og:description
   html = html.replace(/<meta property="og:description" content="Looking for cleaners[^"]+">/,
-    `<meta property="og:description" content="Professional healthcare environmental services in ${city}, MA. Medical office cleaning, infection control, clinic sanitation. 22 years experience.">`);
+    `<meta property="og:description" content="Professional healthcare facility cleaning services in ${city}, MA. Medical office cleaning, infection control, clinic sanitation. 22 years experience.">`);
 
   fs.writeFileSync(filePath, html, 'utf8');
   fixed++;
@@ -61,19 +61,19 @@ for (const slug of patternBFiles) {
 
   // Fix title
   html = html.replace(/<title>[^<]+ MA Cleaners \| Same Day Quotes<\/title>/,
-    `<title>Healthcare Environmental Services in ${city}, MA | Dorys Healthcare</title>`);
+    `<title>Healthcare Cleaning Services in ${city}, MA | Dorys Cleaning</title>`);
 
   // Fix meta description
   html = html.replace(/<meta name="description" content="Top-rated cleaning pros[^"]+">/,
-    `<meta name="description" content="Professional healthcare environmental services in ${city}, MA. Medical office cleaning, infection control, clinic sanitation. 22 years experience. Licensed, $2M insured. Schedule a facility assessment.">`);
+    `<meta name="description" content="Professional healthcare facility cleaning services in ${city}, MA. Medical office cleaning, infection control, clinic sanitation. 22 years experience. Licensed, $2M insured. Schedule a facility assessment.">`);
 
   // Fix og:title
   html = html.replace(/<meta property="og:title" content="[^"]+ MA Cleaners \| Same Day Quotes">/,
-    `<meta property="og:title" content="Healthcare Environmental Services in ${city}, MA | Dorys Healthcare">`);
+    `<meta property="og:title" content="Healthcare Cleaning Services in ${city}, MA | Dorys Cleaning">`);
 
   // Fix og:description
   html = html.replace(/<meta property="og:description" content="Top-rated cleaning pros[^"]+">/,
-    `<meta property="og:description" content="Professional healthcare environmental services in ${city}, MA. Medical office cleaning, infection control, clinic sanitation. 22 years experience.">`);
+    `<meta property="og:description" content="Professional healthcare facility cleaning services in ${city}, MA. Medical office cleaning, infection control, clinic sanitation. 22 years experience.">`);
 
   fs.writeFileSync(filePath, html, 'utf8');
   fixed++;

@@ -383,7 +383,7 @@ function generatePageHTML(service, city, cityKey) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${serviceData.title} in ${cityData.name}, MA | Dorys Healthcare Environmental Services</title>
+  <title>${serviceData.title} in ${cityData.name}, MA | Dorys Janitorial Cleaning Services</title>
   <meta name="description" content="${metaDescription}">
   <meta name="keywords" content="${keywords}">
   <meta name="robots" content="index, follow">
@@ -392,7 +392,7 @@ function generatePageHTML(service, city, cityKey) {
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://doryscleaningservices.com/services/${serviceData.slug}/${cityData.slug}.html">
-  <meta property="og:title" content="${serviceData.title} in ${cityData.name}, MA | Dorys Healthcare Environmental Services">
+  <meta property="og:title" content="${serviceData.title} in ${cityData.name}, MA | Dorys Janitorial Cleaning Services">
   <meta property="og:description" content="${metaDescription}">
   <meta property="og:image" content="https://doryscleaningservices.com/assets/images/services/${serviceData.slug}.jpg">
 
@@ -422,7 +422,7 @@ function generatePageHTML(service, city, cityKey) {
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Dorys Healthcare Environmental Services - ${serviceData.title} in ${cityData.name}",
+    "name": "Dorys Janitorial Cleaning Services - ${serviceData.title} in ${cityData.name}",
     "image": "https://doryscleaningservices.com/assets/images/services/${serviceData.slug}.jpg",
     "url": "https://doryscleaningservices.com/services/${serviceData.slug}/${cityData.slug}.html",
     "telephone": "+19783078107",
@@ -514,7 +514,7 @@ function generatePageHTML(service, city, cityKey) {
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Healthcare Environmental Services" width="180" height="60">
+        <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" width="180" height="60">
       </a>
       <nav class="header__nav">
         <ul class="nav-list">
@@ -535,7 +535,7 @@ function generatePageHTML(service, city, cityKey) {
           <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-      <a href="/contact.html" class="btn btn--primary header__cta hide-mobile">Healthcare Assessment</a>
+      <a href="/contact.html" class="btn btn--primary header__cta hide-mobile">Cleaning Assessment</a>
       <button class="header__toggle" aria-label="Toggle menu">
         <span class="header__toggle-icon"><span></span><span></span><span></span></span>
       </button>
@@ -587,11 +587,11 @@ ${servicesList}
             </ul>
 
             <h3>Why Choose Dorys for ${serviceData.title} in ${cityData.name}?</h3>
-            <p>When you need professional ${serviceData.name.toLowerCase()} in ${cityData.name}, MA, Dorys Healthcare Environmental Services delivers results backed by 22 years of healthcare experience. Serving ${cityData.county} and throughout Massachusetts, we understand the infection control, compliance, and patient safety demands of healthcare facilities.</p>
+            <p>When you need professional ${serviceData.name.toLowerCase()} in ${cityData.name}, MA, Dorys Janitorial Cleaning Services delivers results backed by 22 years of healthcare experience. Serving ${cityData.county} and throughout Massachusetts, we understand the infection control, compliance, and patient safety demands of healthcare facilities.</p>
             <p>Our team is fully licensed (HIC #213341) and carries $2,000,000 in insurance coverage. Staff are trained in healthcare-appropriate protocols including bloodborne pathogen awareness, CDC environmental cleaning guidelines, and EPA-registered disinfectant application with proper contact times. We provide full compliance documentation and quality control reporting.</p>
 
             <div class="btn-group mt-xl">
-              <a href="/contact.html" class="btn btn--primary">Schedule a Healthcare Assessment</a>
+              <a href="/contact.html" class="btn btn--primary">Schedule a Cleaning Assessment</a>
               <a href="tel:+19783078107" class="btn btn--secondary">Call (978) 307-8107</a>
             </div>
           </div>
@@ -652,9 +652,9 @@ ${nearbyCitiesHTML}
       <!-- Footer CTA -->
       <div class="footer__cta">
         <h2 class="footer__cta-title">Schedule a Healthcare Facility Assessment</h2>
-        <p class="footer__cta-text">Healthcare-focused environmental services with 22 years of experience. Licensed, $2M insured, and trained in healthcare protocols.</p>
+        <p class="footer__cta-text">Professional cleaning services for healthcare facilities with 22 years of experience. Licensed, $2M insured, and trained in healthcare protocols.</p>
         <div class="footer__cta-buttons">
-          <a href="/#contact" class="btn btn--white btn--lg">Request Healthcare Assessment</a>
+          <a href="/#contact" class="btn btn--white btn--lg">Request Cleaning Assessment</a>
           <a href="tel:+19783078107" class="btn btn--outline-light btn--lg">Call (978) 307-8107</a>
         </div>
       </div>
@@ -664,10 +664,10 @@ ${nearbyCitiesHTML}
         <!-- Brand Column -->
         <div class="footer__col footer__brand">
           <a href="/" class="footer__logo">
-            <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Healthcare Environmental Services" class="footer__logo-img" width="180" height="60">
-            <span class="footer__logo-text">Dorys Healthcare</span>
+            <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
+            <span class="footer__logo-text">Dorys Cleaning</span>
           </a>
-          <p class="footer__description">Healthcare-focused environmental services in Massachusetts since 2004. 22 years of healthcare experience delivering precision sanitation, compliance-driven protocols, and infection control support.</p>
+          <p class="footer__description">Professional cleaning services for healthcare facilities in Massachusetts since 2004. 22 years of healthcare experience delivering precision sanitation, compliance-driven protocols, and infection control support.</p>
 
           <div class="footer__trust">
             <div class="footer__trust-item">
@@ -795,7 +795,7 @@ ${nearbyCitiesHTML}
 
       <!-- Footer Bottom -->
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2026 Dorys Healthcare Environmental Services Inc. All rights reserved.</p>
+        <p class="footer__copyright">&copy; 2026 Dorys Janitorial Cleaning Services Inc. All rights reserved.</p>
         <nav class="footer__legal">
           <a href="/privacy.html">Privacy Policy</a>
           <a href="/terms.html">Terms of Service</a>

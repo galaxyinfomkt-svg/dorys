@@ -48,7 +48,7 @@ const STANDARD_TOPBAR_HEADER = `  <div class="top-bar">
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Healthcare Environmental Services Logo" width="180" height="60">
+        <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services Logo" width="180" height="60">
       </a>
 
       <nav class="header__nav" aria-label="Main navigation">
@@ -119,7 +119,7 @@ const STANDARD_TOPBAR_HEADER = `  <div class="top-bar">
         </ul>
       </nav>
 
-      <a href="/contact" class="btn btn--primary header__cta hide-mobile" data-track="cta-header">Healthcare Assessment</a>
+      <a href="/contact" class="btn btn--primary header__cta hide-mobile" data-track="cta-header">Cleaning Assessment</a>
 
       <button class="header__toggle" aria-label="Toggle navigation menu" aria-expanded="false">
         <span class="header__toggle-icon">
@@ -140,9 +140,9 @@ const STANDARD_FOOTER = `  <footer class="footer">
       <!-- Footer CTA -->
       <div class="footer__cta">
         <h2 class="footer__cta-title">Schedule a Healthcare Facility Assessment</h2>
-        <p class="footer__cta-text">Healthcare-focused environmental services with 22 years of experience. Licensed, $2M insured, and trained in healthcare protocols.</p>
+        <p class="footer__cta-text">Professional cleaning services for healthcare facilities with 22 years of experience. Licensed, $2M insured, and trained in healthcare protocols.</p>
         <div class="footer__cta-buttons">
-          <a href="/contact" class="btn btn--white btn--lg" data-track="cta-footer-quote">Request Healthcare Assessment</a>
+          <a href="/contact" class="btn btn--white btn--lg" data-track="cta-footer-quote">Request Cleaning Assessment</a>
           <a href="tel:+19783078107" class="btn btn--outline-light btn--lg" data-track="cta-footer-call">Call (978) 307-8107</a>
         </div>
       </div>
@@ -151,11 +151,11 @@ const STANDARD_FOOTER = `  <footer class="footer">
       <div class="footer__grid">
         <!-- Brand Column -->
         <div class="footer__col footer__brand">
-          <a href="/" class="footer__logo" aria-label="Dorys Healthcare Environmental Services - Home">
-            <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Healthcare Environmental Services" class="footer__logo-img" width="180" height="60">
-            <span class="footer__logo-text">Dorys Healthcare</span>
+          <a href="/" class="footer__logo" aria-label="Dorys Janitorial Cleaning Services - Home">
+            <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
+            <span class="footer__logo-text">Dorys Cleaning</span>
           </a>
-          <p class="footer__description">Healthcare-focused environmental services in Massachusetts since 2004. 22 years of healthcare experience delivering precision sanitation, compliance-driven protocols, and infection control support.</p>
+          <p class="footer__description">Professional cleaning services for healthcare facilities in Massachusetts since 2004. 22 years of healthcare experience delivering precision sanitation, compliance-driven protocols, and infection control support.</p>
 
           <div class="footer__trust">
             <div class="footer__trust-item">
@@ -289,7 +289,7 @@ const STANDARD_FOOTER = `  <footer class="footer">
 
       <!-- Footer Bottom -->
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2026 Dorys Healthcare Environmental Services Inc. All rights reserved.</p>
+        <p class="footer__copyright">&copy; 2026 Dorys Janitorial Cleaning Services Inc. All rights reserved.</p>
         <nav class="footer__legal">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
@@ -305,22 +305,22 @@ const STANDARD_FOOTER = `  <footer class="footer">
 const TEXT_REPLACEMENTS = [
   // Service names in content text (case-insensitive handled by regex)
   [/Janitorial Service(?!s\.com|s Inc)/gi, 'Medical Office Cleaning'],
-  [/Janitorial Cleaning/gi, 'Healthcare Environmental Services'],
+  [/Janitorial Cleaning/gi, 'Healthcare Cleaning Services'],
   [/Deep Cleaning(?! (?:of|the|your|each|every|a))/gi, 'Clinic & Outpatient Sanitation'],
   [/Carpet Cleaning/gi, 'Assisted Living & Senior Care Cleaning'],
   [/Upholstery Cleaning/gi, 'Infection Control & Disinfection'],
   [/General Housekeeping/gi, 'Compliance & Scheduled Sanitation'],
   // CTA text
   [/Get (?:a |Your )?Free (?:Quote|Estimate)/gi, 'Schedule a Healthcare Facility Assessment'],
-  [/Request (?:a |Your )?Free (?:Quote|Estimate)/gi, 'Request a Healthcare Assessment'],
-  [/Free Estimates?/gi, 'Healthcare Assessment'],
+  [/Request (?:a |Your )?Free (?:Quote|Estimate)/gi, 'Request a Cleaning Assessment'],
+  [/Free Estimates?/gi, 'Cleaning Assessment'],
   // Company description fixes
-  [/residential (?:and |& )?commercial cleaning/gi, 'healthcare environmental services'],
+  [/residential (?:and |& )?commercial cleaning/gi, 'healthcare facility cleaning services'],
   [/house cleaning/gi, 'healthcare sanitation'],
   [/home cleaning/gi, 'healthcare sanitation'],
-  [/office cleaning services/gi, 'healthcare environmental services'],
-  [/cleaning company/gi, 'healthcare environmental services company'],
-  [/cleaning service(?!s\.com)/gi, 'healthcare environmental services'],
+  [/office cleaning services/gi, 'healthcare facility cleaning services'],
+  [/cleaning company/gi, 'healthcare facility cleaning services company'],
+  [/cleaning service(?!s\.com)/gi, 'healthcare facility cleaning services'],
 ];
 
 // ============================================================

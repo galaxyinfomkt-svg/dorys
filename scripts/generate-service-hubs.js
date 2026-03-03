@@ -9,14 +9,14 @@ const path = require('path');
 const baseDir = path.join(__dirname, '..');
 const today = new Date().toISOString().split('T')[0];
 
-// Service configurations - Healthcare Environmental Services
+// Service configurations - Healthcare Cleaning Services
 const SERVICES = {
   'medical-office-cleaning': {
     name: 'Medical Office Cleaning',
     title: 'Medical Office Cleaning Services in Massachusetts',
     description: 'Specialized sanitation for medical offices, dental practices, and physician clinics across Massachusetts. Infection control protocols, EPA-registered disinfectants, and compliance documentation.',
     metaDescription: 'Professional medical office cleaning across 100+ Massachusetts cities. EPA-registered disinfectants, infection control protocols, compliance documentation. 22 years healthcare experience. (978) 307-8107',
-    intro: `Dorys Healthcare Environmental Services provides specialized medical office cleaning throughout Massachusetts. With 22 years of hands-on healthcare experience, we understand that clinical environments demand more than standard cleaning — they require trained professionals who follow CDC and OSHA guidelines.
+    intro: `Dorys Janitorial Cleaning Services provides specialized medical office cleaning throughout Massachusetts. With 22 years of hands-on healthcare experience, we understand that clinical environments demand more than standard cleaning — they require trained professionals who follow CDC and OSHA guidelines.
 
 Our medical office cleaning team uses EPA-registered hospital-grade disinfectants with verified contact times, follows terminal cleaning protocols for exam rooms, and delivers documented results that support your facility's compliance requirements.
 
@@ -38,7 +38,7 @@ We offer flexible scheduling including after-hours and weekend service to ensure
     title: 'Clinic & Outpatient Facility Sanitation in Massachusetts',
     description: 'Professional sanitation for urgent care centers, outpatient surgery centers, therapy clinics, and specialty healthcare facilities across Massachusetts.',
     metaDescription: 'Clinic and outpatient facility sanitation across 100+ Massachusetts cities. Terminal cleaning, between-patient protocols. 22 years healthcare experience, $2M insured. (978) 307-8107',
-    intro: `High-traffic healthcare environments like urgent care centers and outpatient facilities require rigorous sanitation protocols that go beyond surface-level cleaning. Dorys Healthcare Environmental Services delivers terminal cleaning, between-patient room turnover, and comprehensive facility-wide disinfection.
+    intro: `High-traffic healthcare environments like urgent care centers and outpatient facilities require rigorous sanitation protocols that go beyond surface-level cleaning. Dorys Janitorial Cleaning Services delivers terminal cleaning, between-patient room turnover, and comprehensive facility-wide disinfection.
 
 Our team understands the pace and demands of outpatient healthcare. We coordinate with your staff to deliver rapid room turnovers during operating hours and comprehensive deep cleaning during off-hours, ensuring your facility maintains the highest standards of hygiene at all times.
 
@@ -60,7 +60,7 @@ With 22 years of healthcare experience and $2M in insurance coverage, we are a t
     title: 'Assisted Living & Senior Care Cleaning in Massachusetts',
     description: 'Compassionate, thorough cleaning for nursing homes, assisted living communities, and memory care facilities across Massachusetts with resident-safe protocols.',
     metaDescription: 'Assisted living and senior care cleaning across 100+ Massachusetts cities. Fragrance-free options, resident-safe protocols, outbreak response. 22 years healthcare experience. (978) 307-8107',
-    intro: `Senior care facilities require a specialized approach to environmental cleaning that prioritizes resident safety, comfort, and dignity. Dorys Healthcare Environmental Services uses fragrance-sensitive, low-toxicity products appropriate for elderly and immunocompromised residents.
+    intro: `Senior care facilities require a specialized approach to environmental cleaning that prioritizes resident safety, comfort, and dignity. Dorys Janitorial Cleaning Services uses fragrance-sensitive, low-toxicity products appropriate for elderly and immunocompromised residents.
 
 We understand the unique challenges of common areas, dining halls, resident rooms, and memory care units. Our team delivers consistent sanitation that supports infection prevention and regulatory compliance while maintaining a warm, comfortable environment for residents.
 
@@ -157,7 +157,7 @@ function generateServiceHub(serviceSlug, config) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${config.title} | Dorys Healthcare Environmental Services</title>
+  <title>${config.title} | Dorys Janitorial Cleaning Services</title>
   <meta name="description" content="${config.metaDescription}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://doryscleaningservices.com/services/${serviceSlug}">
@@ -191,7 +191,7 @@ function generateServiceHub(serviceSlug, config) {
     "description": "${config.description}",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Dorys Healthcare Environmental Services Inc.",
+      "name": "Dorys Janitorial Cleaning Services Inc.",
       "telephone": "+1-978-307-8107",
       "address": {"@type": "PostalAddress", "addressRegion": "MA", "addressCountry": "US"}
     },
@@ -252,7 +252,7 @@ function generateServiceHub(serviceSlug, config) {
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Healthcare Environmental Services" width="180" height="60">
+        <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" width="180" height="60">
       </a>
       <nav class="header__nav">
         <ul class="nav-list">
@@ -263,7 +263,7 @@ function generateServiceHub(serviceSlug, config) {
           <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-      <a href="/contact" class="btn btn--primary header__cta hide-mobile">Healthcare Assessment</a>
+      <a href="/contact" class="btn btn--primary header__cta hide-mobile">Cleaning Assessment</a>
       <button class="header__toggle" aria-label="Toggle menu">
         <span class="header__toggle-icon"><span></span><span></span><span></span></span>
       </button>
@@ -344,7 +344,7 @@ ${citiesHtml}
     <section class="section--cta">
       <div class="container">
         <div class="cta-box--large">
-          <span class="cta-box__badge">Healthcare Assessment</span>
+          <span class="cta-box__badge">Cleaning Assessment</span>
           <h2 class="cta-box__title">Ready for Professional ${config.name}?</h2>
           <p class="cta-box__text">Schedule a healthcare facility walkthrough today. Compliance-driven protocols backed by 22 years of healthcare experience.</p>
           <div class="cta-box__actions">
@@ -369,9 +369,9 @@ ${citiesHtml}
       <div class="footer__grid">
         <div class="footer__col footer__brand">
           <a href="/" class="footer__logo">
-            <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Healthcare Environmental Services" class="footer__logo-img" width="180" height="60">
+            <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
           </a>
-          <p class="footer__description">Healthcare-focused environmental services in Massachusetts since 2004. 22 years of healthcare experience.</p>
+          <p class="footer__description">Professional cleaning services for healthcare facilities in Massachusetts since 2004. 22 years of healthcare experience.</p>
         </div>
         <div class="footer__col">
           <h3 class="footer__title">Services</h3>
@@ -396,7 +396,7 @@ ${citiesHtml}
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; ${new Date().getFullYear()} Dorys Healthcare Environmental Services Inc.</p>
+        <p class="footer__copyright">&copy; ${new Date().getFullYear()} Dorys Janitorial Cleaning Services Inc.</p>
         <nav class="footer__legal">
           <a href="/privacy">Privacy</a>
           <a href="/terms">Terms</a>

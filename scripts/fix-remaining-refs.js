@@ -25,7 +25,7 @@ files.forEach(fp => {
   // Fix old meta description patterns
   c = c.replace(/Residential & commercial services\. 5-star rated, background-checked staff\. Free quotes!/gi,
     'Medical office cleaning, infection control, compliance documentation. 22 years healthcare experience. $2M insured.');
-  c = c.replace(/Residential &amp; commercial services/gi, 'Healthcare environmental services');
+  c = c.replace(/Residential &amp; commercial services/gi, 'Healthcare facility cleaning services');
   c = c.replace(/Free quotes!?/gi, 'Schedule a facility assessment today.');
   c = c.replace(/free estimate/gi, 'healthcare assessment');
   c = c.replace(/residential\s*(&amp;|&)\s*commercial/gi, 'healthcare environmental');
