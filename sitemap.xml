@@ -3,40 +3,40 @@
   <!-- Main Pages Sitemap -->
   <sitemap>
     <loc>https://doryscleaningservices.com/sitemap-pages.xml</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-03-11</lastmod>
   </sitemap>
 
   <!-- Location Pages Sitemap -->
   <sitemap>
     <loc>https://doryscleaningservices.com/sitemap-locations.xml</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-03-11</lastmod>
   </sitemap>
 
   <!-- Service Pages Sitemaps -->
   <sitemap>
     <loc>https://doryscleaningservices.com/sitemap-services-medical-office-cleaning.xml</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-03-11</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-clinic-outpatient-sanitation.xml</loc>
-    <lastmod>2026-02-23</lastmod>
+    <loc>https://doryscleaningservices.com/sitemap-services-specialty-clinics.xml</loc>
+    <lastmod>2026-03-11</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-assisted-living-senior-care.xml</loc>
-    <lastmod>2026-02-23</lastmod>
+    <loc>https://doryscleaningservices.com/sitemap-services-ambulatory-outpatient.xml</loc>
+    <lastmod>2026-03-11</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-infection-control-disinfection.xml</loc>
-    <lastmod>2026-02-23</lastmod>
+    <loc>https://doryscleaningservices.com/sitemap-services-rehab-nursing.xml</loc>
+    <lastmod>2026-03-11</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-compliance-scheduled-sanitation.xml</loc>
-    <lastmod>2026-02-23</lastmod>
+    <loc>https://doryscleaningservices.com/sitemap-services-healthcare-admin-offices.xml</loc>
+    <lastmod>2026-03-11</lastmod>
   </sitemap>
 
   <!-- Blog Pages Sitemap -->
   <sitemap>
     <loc>https://doryscleaningservices.com/sitemap-blog.xml</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-03-11</lastmod>
   </sitemap>
 </sitemapindex>
