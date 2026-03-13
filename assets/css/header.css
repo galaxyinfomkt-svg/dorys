@@ -518,7 +518,9 @@
 
   .header__cta {
     font-size: 13px;
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-sm) var(--space-lg);
+    white-space: nowrap;
+    min-width: max-content;
   }
 }
 
