@@ -554,7 +554,7 @@ html {
   cursor: pointer;
   transition: all var(--transition-base);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .btn:disabled {
