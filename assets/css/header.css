@@ -501,7 +501,7 @@
 
   .header__cta {
     font-size: var(--font-size-sm);
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-sm) var(--space-lg);
   }
 }
 
@@ -518,7 +518,7 @@
 
   .header__cta {
     font-size: 13px;
-    padding: var(--space-xs) var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
   }
 }
 
