@@ -1,5 +1,5 @@
 /**
- * Dorys Cleaning Services - City Local Data
+ * Our Cleaning Services - City Local Data
  *
  * This file contains localized information for Massachusetts cities
  * to create unique, SEO-optimized content for each service+city page.

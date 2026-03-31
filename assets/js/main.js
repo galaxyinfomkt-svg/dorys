@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * MAIN.JS - Dorys Janitorial Cleaning Services
+ * MAIN.JS - Janitorial Cleaning Services
  * Core JavaScript: Initialization, Utilities, Global Functions
  * ==========================================================================
  */
@@ -455,7 +455,7 @@
   // -------------------------------------------------------------------------
   // Expose utilities globally
   // -------------------------------------------------------------------------
-  window.DorysUtils = {
+  window.SiteUtils = {
     debounce,
     throttle,
     smoothScrollTo,

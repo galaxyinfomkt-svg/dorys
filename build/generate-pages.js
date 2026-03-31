@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * PAGE GENERATOR - Dorys Janitorial Cleaning Services
+ * PAGE GENERATOR - Janitorial Cleaning Services
  * Generates 500+ service+city pages and city landing pages
  *
  * Usage: node build/generate-pages.js
@@ -19,7 +19,7 @@ const services = servicesData.services;
 
 // Business info
 const business = {
-  name: 'Dorys Janitorial Cleaning Services Inc.',
+  name: 'Janitorial Cleaning Services Inc.',
   phone: '(978) 307-8107',
   phoneLink: '+19783078107',
   email: 'contact@doryscleaningservices.com',
@@ -27,7 +27,7 @@ const business = {
   hours: 'Mon-Sat: 5:00 AM - 7:00 PM',
   license: 'HIC #213341',
   insurance: '$2,000,000',
-  founded: '2004',
+  yearsExperience: '22+',
   years: '21+'
 };
 
@@ -42,7 +42,7 @@ const slugify = (text) => {
 
 // Generate service + city page
 function generateServiceCityPage(service, city) {
-  const pageTitle = `${service.name} in ${city.name}, MA | Dorys Cleaning`;
+  const pageTitle = `${service.name} in ${city.name}, MA`;
   const metaDescription = `Professional ${service.name.toLowerCase()} services in ${city.name}, Massachusetts. ${business.years} years experience. Licensed & insured. Call ${business.phone} for a free quote!`;
   const canonicalUrl = `${business.website}/services/${service.slug}/${city.slug}.html`;
 
@@ -210,7 +210,7 @@ function generateServiceCityPage(service, city) {
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" width="180" height="60">
+        <img src="/assets/images/logo/logo-80.jpg" alt="Janitorial Cleaning Services" width="180" height="60">
       </a>
       <nav class="header__nav">
         <ul class="nav-list">
@@ -282,8 +282,8 @@ function generateServiceCityPage(service, city) {
                 ${featuresList}
             </ul>
 
-            <h3>Why Choose Dorys for ${service.name} in ${city.name}?</h3>
-            <p>When you need professional ${service.name.toLowerCase()} in ${city.name}, MA, Dorys Janitorial Cleaning Services delivers exceptional results. With over ${business.years} years serving ${city.county} County and throughout Massachusetts, we understand the unique needs of ${city.name} residents and businesses.</p>
+            <h3>Why Choose Us for ${service.name} in ${city.name}?</h3>
+            <p>When you need professional ${service.name.toLowerCase()} in ${city.name}, MA, Janitorial Cleaning Services delivers exceptional results. With over ${business.years} years serving ${city.county} County and throughout Massachusetts, we understand the unique needs of ${city.name} residents and businesses.</p>
             <p>Our team is fully licensed (${business.license}) and carries ${business.insurance} in insurance coverage. We use professional-grade equipment and eco-friendly cleaning solutions to ensure the best results while protecting your property and the environment.</p>
 
             <div class="btn-group mt-xl">
@@ -347,8 +347,8 @@ function generateServiceCityPage(service, city) {
     <div class="container">
       <div class="footer__grid">
         <div class="footer__col footer__brand">
-          <span class="footer__logo-text">Dorys Janitorial</span>
-          <p class="footer__description">Professional cleaning services in Massachusetts since 2004.</p>
+          <span class="footer__logo-text">Janitorial Cleaning Services/span>
+          <p class="footer__description">Professional cleaning services in Massachusetts for over 22 years.</p>
         </div>
         <div class="footer__col">
           <h3 class="footer__title">Services</h3>
@@ -472,7 +472,7 @@ function generateCityLandingPage(city) {
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial" width="180" height="60">
+        <img src="/assets/images/logo/logo-80.jpg" alt="Janitorial Cleaning Services" width="180" height="60">
       </a>
       <nav class="header__nav">
         <ul class="nav-list">

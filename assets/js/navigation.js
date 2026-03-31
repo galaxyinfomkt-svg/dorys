@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * NAVIGATION.JS - Dorys Janitorial Cleaning Services
+ * NAVIGATION.JS - Janitorial Cleaning Services
  * Mobile Menu + Dropdown Navigation
  * ==========================================================================
  */

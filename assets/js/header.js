@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * HEADER.JS - Dorys Janitorial Cleaning Services
+ * HEADER.JS - Janitorial Cleaning Services
  * Sticky Header Functionality
  * ==========================================================================
  */

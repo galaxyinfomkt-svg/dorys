@@ -47,9 +47,9 @@ const SERVICES_INDEX = 'services/index.html';
 
 const REPLACEMENTS = [
   // ---- 1. Logo alt text standardization ----
-  { from: 'alt="Dorys Janitorial"', to: 'alt="Dorys Janitorial Cleaning Services"' },
-  { from: 'alt="Dorys Cleaning"', to: 'alt="Dorys Janitorial Cleaning Services"' },
-  { from: 'alt="Dorys Janitorial Cleaning Services"', to: 'alt="Dorys Janitorial Cleaning Services"' },
+  { from: 'alt="Janitorial Cleaning Services"', to: 'alt="Janitorial Cleaning Services"' },
+  { from: 'alt="Cleaning"', to: 'alt="Janitorial Cleaning Services"' },
+  { from: 'alt="Janitorial Cleaning Services"', to: 'alt="Janitorial Cleaning Services"' },
 
   // ---- 2. Header CTA standardization ----
   { from: '>Free Quote</a>', to: '>Cleaning Assessment</a>' },
@@ -71,7 +71,7 @@ const REPLACEMENTS = [
   { from: '>General Housekeeping</a>', to: '>Compliance & Scheduled Sanitation</a>' },
 
   // ---- 5. Footer branding ----
-  { from: 'Dorys Janitorial Cleaning Services Inc.', to: 'Dorys Janitorial Cleaning Services Inc.' },
+  { from: 'Janitorial Cleaning Services Inc.', to: 'Janitorial Cleaning Services Inc.' },
   { from: '&copy; 2024', to: '&copy; 2026' },
   { from: '&copy; 2025', to: '&copy; 2026' },
   { from: '21+ years', to: '22 years' },
@@ -169,7 +169,7 @@ function collectServiceSubdirFiles() {
 
 function main() {
   console.log('='.repeat(70));
-  console.log('  Dorys Cleaning - Header/Footer Standardization Script');
+  console.log('  Our Cleaning - Header/Footer Standardization Script');
   console.log('='.repeat(70));
   console.log('');
 
@@ -298,9 +298,9 @@ function main() {
   console.log('');
 
   const OLD_PATTERNS = [
-    { pattern: 'alt="Dorys Janitorial"', label: 'Old alt text: Dorys Janitorial' },
-    { pattern: 'alt="Dorys Cleaning"', label: 'Old alt text: Dorys Cleaning' },
-    { pattern: 'alt="Dorys Janitorial Cleaning Services"', label: 'Old alt text: Dorys Janitorial Cleaning Services' },
+    { pattern: 'alt="Janitorial Cleaning Services"', label: 'Old alt text: Dorys Janitorial' },
+    { pattern: 'alt="Cleaning"', label: 'Old alt text: Our Cleaning' },
+    { pattern: 'alt="Janitorial Cleaning Services"', label: 'Old alt text: Janitorial Cleaning Services' },
     { pattern: '>Free Quote</a>', label: 'Old CTA: Free Quote' },
     { pattern: '>Get a Free Quote</a>', label: 'Old CTA: Get a Free Quote' },
     { pattern: '>Get Free Quote</a>', label: 'Old CTA: Get Free Quote' },
@@ -314,7 +314,7 @@ function main() {
     { pattern: '>Carpet Cleaning</a>', label: 'Old link text: Carpet Cleaning' },
     { pattern: '>Upholstery Cleaning</a>', label: 'Old link text: Upholstery Cleaning' },
     { pattern: '>General Housekeeping</a>', label: 'Old link text: General Housekeeping' },
-    { pattern: 'Dorys Janitorial Cleaning Services Inc.', label: 'Old company name' },
+    { pattern: 'Janitorial Cleaning Services Inc.', label: 'Old company name' },
     { pattern: '&copy; 2025', label: 'Old copyright year 2025' },
     { pattern: '&copy; 2024', label: 'Old copyright year 2024' },
     { pattern: 'Professional janitorial and cleaning services', label: 'Old footer description' },

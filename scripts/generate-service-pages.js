@@ -1,8 +1,8 @@
 /**
- * Dorys Cleaning Services - Service Pages Generator
+ * Our Cleaning Services - Service Pages Generator
  *
  * Este script gera automaticamente todas as paginas de servico+cidade
- * para o site Dorys Cleaning Services.
+ * para o site Our Cleaning Services.
  *
  * Uso: node scripts/generate-service-pages.js
  *
@@ -383,7 +383,7 @@ function generatePageHTML(service, city, cityKey) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${serviceData.title} in ${cityData.name}, MA | Dorys Janitorial Cleaning Services</title>
+  <title>${serviceData.title} in ${cityData.name}, MA | Janitorial Cleaning Services</title>
   <meta name="description" content="${metaDescription}">
   <meta name="keywords" content="${keywords}">
   <meta name="robots" content="index, follow">
@@ -392,7 +392,7 @@ function generatePageHTML(service, city, cityKey) {
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://doryscleaningservices.com/services/${serviceData.slug}/${cityData.slug}.html">
-  <meta property="og:title" content="${serviceData.title} in ${cityData.name}, MA | Dorys Janitorial Cleaning Services">
+  <meta property="og:title" content="${serviceData.title} in ${cityData.name}, MA | Janitorial Cleaning Services">
   <meta property="og:description" content="${metaDescription}">
   <meta property="og:image" content="https://doryscleaningservices.com/assets/images/services/${serviceData.slug}.jpg">
 
@@ -422,7 +422,7 @@ function generatePageHTML(service, city, cityKey) {
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Dorys Janitorial Cleaning Services - ${serviceData.title} in ${cityData.name}",
+    "name": "Janitorial Cleaning Services",
     "image": "https://doryscleaningservices.com/assets/images/services/${serviceData.slug}.jpg",
     "url": "https://doryscleaningservices.com/services/${serviceData.slug}/${cityData.slug}.html",
     "telephone": "+19783078107",
@@ -514,7 +514,7 @@ function generatePageHTML(service, city, cityKey) {
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" width="180" height="60">
+        <img src="/assets/images/logo/logo-80.jpg" alt="Janitorial Cleaning Services" width="180" height="60">
       </a>
       <nav class="header__nav">
         <ul class="nav-list">
@@ -586,8 +586,8 @@ function generatePageHTML(service, city, cityKey) {
 ${servicesList}
             </ul>
 
-            <h3>Why Choose Dorys for ${serviceData.title} in ${cityData.name}?</h3>
-            <p>When you need professional ${serviceData.name.toLowerCase()} in ${cityData.name}, MA, Dorys Janitorial Cleaning Services delivers results backed by 22 years of healthcare experience. Serving ${cityData.county} and throughout Massachusetts, we understand the infection control, compliance, and patient safety demands of healthcare facilities.</p>
+            <h3>Why Choose Us for ${serviceData.title} in ${cityData.name}?</h3>
+            <p>When you need professional ${serviceData.name.toLowerCase()} in ${cityData.name}, MA, Janitorial Cleaning Services delivers results backed by 22 years of healthcare experience. Serving ${cityData.county} and throughout Massachusetts, we understand the infection control, compliance, and patient safety demands of healthcare facilities.</p>
             <p>Our team is fully licensed (HIC #213341) and carries $2,000,000 in insurance coverage. Staff are trained in healthcare-appropriate protocols including bloodborne pathogen awareness, CDC environmental cleaning guidelines, and EPA-registered disinfectant application with proper contact times. We provide full compliance documentation and quality control reporting.</p>
 
             <div class="btn-group mt-xl">
@@ -664,10 +664,10 @@ ${nearbyCitiesHTML}
         <!-- Brand Column -->
         <div class="footer__col footer__brand">
           <a href="/" class="footer__logo">
-            <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
-            <span class="footer__logo-text">Dorys Cleaning</span>
+            <img src="/assets/images/logo/logo-80.jpg" alt="Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
+            <span class="footer__logo-text">Cleaning Services</span>
           </a>
-          <p class="footer__description">Professional cleaning services for healthcare facilities in Massachusetts since 2004. 22 years of healthcare experience delivering precision sanitation, compliance-driven protocols, and infection control support.</p>
+          <p class="footer__description">Professional cleaning services for healthcare facilities in Massachusetts for over 22 years. 22 years of healthcare experience delivering precision sanitation, compliance-driven protocols, and infection control support.</p>
 
           <div class="footer__trust">
             <div class="footer__trust-item">
@@ -788,14 +788,14 @@ ${nearbyCitiesHTML}
           <svg class="footer__credential-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
           <div class="footer__credential-text">
             <span class="footer__credential-label">Founded:</span>
-            <span class="footer__credential-value">2004 (22 Years Healthcare)</span>
+            <span class="footer__credential-value">22+ Years Healthcare Experience</span>
           </div>
         </div>
       </div>
 
       <!-- Footer Bottom -->
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2026 Dorys Janitorial Cleaning Services Inc. All rights reserved.</p>
+        <p class="footer__copyright">&copy; 2026 Janitorial Cleaning Services Inc. All rights reserved.</p>
         <nav class="footer__legal">
           <a href="/privacy.html">Privacy Policy</a>
           <a href="/terms.html">Terms of Service</a>
@@ -829,7 +829,7 @@ function generateAllPages() {
   let errors = [];
 
   console.log('='.repeat(60));
-  console.log('Dorys Cleaning - Service Pages Generator');
+  console.log('Our Cleaning - Service Pages Generator');
   console.log('='.repeat(60));
   console.log(`\nServices: ${Object.keys(SERVICES).length}`);
   console.log(`Cities: ${Object.keys(CITIES).length}`);
@@ -947,7 +947,7 @@ const args = process.argv.slice(2);
 
 if (args.includes('--help') || args.includes('-h')) {
   console.log(`
-Dorys Cleaning - Service Pages Generator
+Our Cleaning - Service Pages Generator
 
 Usage:
   node generate-service-pages.js              Generate all pages

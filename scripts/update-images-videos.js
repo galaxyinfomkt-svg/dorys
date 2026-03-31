@@ -133,7 +133,7 @@ allFiles.forEach(fp => {
 
   // 10. Fix old video text that may still reference old content
   c = c.replace(/Professional Cleaning You Can Trust/g, 'Healthcare Cleaning Services You Can Trust');
-  c = c.replace(/Dorys Cleaning team professional cleaning demonstration video/g, 'Healthcare facility environmental services and sanitation video');
+  c = c.replace(/Our Cleaning team professional cleaning demonstration video/g, 'Healthcare facility environmental services and sanitation video');
 
   if (c !== orig) {
     fs.writeFileSync(fp, c, 'utf-8');

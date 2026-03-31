@@ -107,7 +107,7 @@ function optimizeMetaTags(content, serviceSlug, cityName) {
   const typeStr = service.type.join(' & ');
 
   // Build optimized title
-  const newTitle = `Best ${service.primary.charAt(0).toUpperCase() + service.primary.slice(1)} in ${cityFormatted}, MA | Dorys Cleaning Services`;
+  const newTitle = `Best ${service.primary.charAt(0).toUpperCase() + service.primary.slice(1)} in ${cityFormatted}, MA Services`;
 
   // Build optimized description
   const newDescription = `Top-rated ${typeStr} ${service.primary} in ${cityFormatted}, Massachusetts. ${service.secondary[0].charAt(0).toUpperCase() + service.secondary[0].slice(1)}, ${service.secondary[1]}, and more. 21+ years experience. Free quotes. Call (508) 820-9299.`;
@@ -178,7 +178,7 @@ function optimizeAltText(content, serviceSlug, cityName) {
 
   content = content.replace(
     /alt="Cleaning service"/gi,
-    `alt="${service.primary.charAt(0).toUpperCase() + service.primary.slice(1)} by Dorys in ${cityFormatted}"`
+    `alt="${service.primary.charAt(0).toUpperCase() + service.primary.slice(1)} in ${cityFormatted}"`
   );
 
   content = content.replace(
@@ -188,13 +188,13 @@ function optimizeAltText(content, serviceSlug, cityName) {
 
   content = content.replace(
     /alt="Our team"/gi,
-    `alt="Dorys ${service.primary} team serving ${cityFormatted} Massachusetts"`
+    `alt="${service.primary} team serving ${cityFormatted} Massachusetts"`
   );
 
   // Add descriptive alt to hero images
   content = content.replace(
     /alt="Hero background"/gi,
-    `alt="Professional ${service.primary} services in ${cityFormatted} MA - Dorys Cleaning"`
+    `alt="Professional ${service.primary} services in ${cityFormatted} MA - Our Cleaning"`
   );
 
   return content;
@@ -205,7 +205,7 @@ function fixFooterLogo(content) {
   // Make sure logo links to home
   content = content.replace(
     /<a[^>]*class="footer__logo"[^>]*>/g,
-    '<a href="/" class="footer__logo" aria-label="Dorys Cleaning Services - Home">'
+    '<a href="/" class="footer__logo" aria-label="Cleaning Services - Home">'
   );
 
   // Ensure logo image has proper attributes
@@ -213,7 +213,7 @@ function fixFooterLogo(content) {
     /<img([^>]*class="footer__logo-img"[^>]*)>/g,
     (match, attrs) => {
       if (!attrs.includes('alt=')) {
-        attrs += ' alt="Dorys Cleaning Services Logo"';
+        attrs += ' alt="Cleaning Services Logo"';
       }
       return `<img${attrs}>`;
     }
@@ -234,7 +234,7 @@ function enhanceStructuredData(content, serviceSlug, cityName) {
     const howToSchema = {
       "@type": "HowTo",
       "name": `How to Get Professional ${service.primary} in ${cityName}`,
-      "description": `Easy steps to book ${service.primary} services with Dorys Cleaning in ${cityName}, MA`,
+      "description": `Easy steps to book ${service.primary} services with Our Cleaning in ${cityName}, MA`,
       "step": [
         {
           "@type": "HowToStep",

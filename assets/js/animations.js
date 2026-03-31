@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * ANIMATIONS.JS - Dorys Janitorial Cleaning Services
+ * ANIMATIONS.JS - Janitorial Cleaning Services
  * Scroll-triggered Animations using Intersection Observer
  * ==========================================================================
  */

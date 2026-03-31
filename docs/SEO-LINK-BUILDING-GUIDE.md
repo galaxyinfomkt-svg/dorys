@@ -1,4 +1,4 @@
-# Dorys Cleaning Services - Local Link Building Strategy
+# Our Cleaning Services - Local Link Building Strategy
 
 ## Overview
 This guide outlines a strategic approach to building local backlinks for doryscleaningservices.com to achieve TOP 1-3 rankings in Massachusetts.
@@ -129,7 +129,7 @@ This guide outlines a strategic approach to building local backlinks for doryscl
 
 ### NAP Consistency (Critical)
 ```
-Business Name: Dorys Janitorial Cleaning Services Inc.
+Business Name: Janitorial Cleaning Services Inc.
 Phone: (978) 307-8107
 Email: contact@doryscleaningservices.com
 Website: https://doryscleaningservices.com

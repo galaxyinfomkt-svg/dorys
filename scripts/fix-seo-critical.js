@@ -115,7 +115,7 @@ function processFile(filePath) {
     "description": "${service.description}",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Dorys Janitorial Cleaning Services Inc.",
+      "name": "Janitorial Cleaning Services Inc.",
       "telephone": "+1-978-307-8107"
     },
     "areaServed": {

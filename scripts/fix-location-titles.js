@@ -20,7 +20,7 @@ files.forEach(file => {
 
   // Fix generic "5★ Local Pros" titles
   if (content.includes('5★ Local Pros')) {
-    const newTitle = `Healthcare Facility Sanitation ${cityName}, MA | Dorys Cleaning`;
+    const newTitle = `Healthcare Facility Sanitation ${cityName}, MA`;
     const newDesc = `Healthcare facility sanitation in ${cityName}, MA. Medical offices, clinics, surgery centers. CDC/OSHA protocols, 22 years clinical experience, $2M insured. (978) 307-8107.`;
 
     content = content.replace(/<title>[^<]*5★ Local Pros<\/title>/, `<title>${newTitle}</title>`);
@@ -37,14 +37,14 @@ files.forEach(file => {
 
   // Fix "House & Office Cleaning" titles
   if (content.includes('House &amp; Office Cleaning') || content.includes('House & Office Cleaning')) {
-    const newTitle = `Healthcare Facility Sanitation ${cityName}, MA | Dorys Cleaning`;
+    const newTitle = `Healthcare Facility Sanitation ${cityName}, MA`;
     content = content.replace(/<title>House &(?:amp;)? Office Cleaning[^<]*<\/title>/, `<title>${newTitle}</title>`);
     content = content.replace(/og:title" content="House &(?:amp;)? Office Cleaning[^"]*"/, `og:title" content="${newTitle}"`);
   }
 
   // Fix "MA Cleaners | Same Day Quotes" titles
   if (content.includes('Same Day Quotes')) {
-    const newTitle = `Healthcare Facility Sanitation ${cityName}, MA | Dorys Cleaning`;
+    const newTitle = `Healthcare Facility Sanitation ${cityName}, MA`;
     content = content.replace(/<title>[^<]*Same Day Quotes<\/title>/, `<title>${newTitle}</title>`);
     content = content.replace(/og:title" content="[^"]*Same Day Quotes"/, `og:title" content="${newTitle}"`);
   }

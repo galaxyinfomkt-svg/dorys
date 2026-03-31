@@ -62,7 +62,7 @@ function checkRobots(filePath) {
 // Main audit
 function runAudit() {
   console.log('=' .repeat(70));
-  console.log('SEO AUDIT - Dorys Cleaning Services');
+  console.log('SEO AUDIT - Our Cleaning Services');
   console.log('=' .repeat(70));
 
   // 1. Get all HTML files
