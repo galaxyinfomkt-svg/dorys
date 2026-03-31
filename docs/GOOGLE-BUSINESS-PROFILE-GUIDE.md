@@ -40,7 +40,7 @@ Sunday: Closed
 ## 3. DESCRICAO OTIMIZADA (750 caracteres max)
 
 ```
-Professional cleaning services in Massachusetts since 2004. Dorys Janitorial Cleaning Services provides commercial janitorial, deep cleaning, carpet cleaning, and housekeeping for homes and businesses across 100+ MA cities including Worcester, Framingham, Cambridge, and Boston.
+Professional cleaning services in Massachusetts for over 22 years. Dorys Janitorial Cleaning Services provides commercial janitorial, deep cleaning, carpet cleaning, and housekeeping for homes and businesses across 100+ MA cities including Worcester, Framingham, Cambridge, and Boston.
 
 Licensed (MA HIC #213341) and insured with $2M coverage. Our trained team delivers reliable, thorough cleaning with flexible scheduling: daily, weekly, or monthly service. We use eco-friendly products safe for families and pets.
 
@@ -206,7 +206,7 @@ R: Yes, we are fully licensed (MA HIC #213341) and carry $2,000,000 in liability
 R: Yes, we bring all necessary cleaning supplies and equipment. We use professional-grade, eco-friendly products that are safe for families and pets.
 
 **P: How long have you been in business?**
-R: Dorys Janitorial Cleaning Services has been serving Massachusetts since 2004 - over 21 years of professional cleaning experience.
+R: Dorys Janitorial Cleaning Services has been serving Massachusetts for over 22 years - over 21 years of professional cleaning experience.
 
 **P: Do you offer recurring cleaning services?**
 R: Yes, we offer daily, weekly, bi-weekly, and monthly cleaning schedules. We can customize a plan that fits your needs and budget.

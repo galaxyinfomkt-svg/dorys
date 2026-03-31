@@ -66,8 +66,8 @@ const replacements = [
   ['alt="Dorys Cleaning"', 'alt="Dorys Janitorial Cleaning Services"'],
 
   // Footer description - the exact string found in the files
-  ['Professional janitorial and cleaning services in Massachusetts since 2004.',
-   'Professional cleaning services for healthcare facilities in Massachusetts since 2004. Precision sanitation for medical offices, clinics, and assisted living facilities.'],
+  ['Professional janitorial and cleaning services in Massachusetts for over 22 years.',
+   'Professional cleaning services for healthcare facilities in Massachusetts for over 22 years. Precision sanitation for medical offices, clinics, and assisted living facilities.'],
 
   // Footer CTA text - the exact string found in the remaining files
   ['Professional cleaning services with 21+ years of experience. Licensed, insured, and ready to make your space shine.',

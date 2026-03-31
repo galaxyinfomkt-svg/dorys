@@ -22,7 +22,7 @@ const COMPLETE_FOOTER = `  <!-- Footer -->
             <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
             <span class="footer__logo-text">Dorys Janitorial</span>
           </a>
-          <p class="footer__description">Professional janitorial and cleaning services in Massachusetts since 2004. We deliver exceptional results with attention to detail and clear communication.</p>
+          <p class="footer__description">Professional janitorial and cleaning services in Massachusetts for over 22 years. We deliver exceptional results with attention to detail and clear communication.</p>
 
           <div class="footer__trust">
             <div class="footer__trust-item">
@@ -143,7 +143,7 @@ const COMPLETE_FOOTER = `  <!-- Footer -->
           <svg class="footer__credential-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
           <div class="footer__credential-text">
             <span class="footer__credential-label">Founded:</span>
-            <span class="footer__credential-value">2004 (21+ Years)</span>
+            <span class="footer__credential-value">22+ Years of Healthcare Experience</span>
           </div>
         </div>
       </div>

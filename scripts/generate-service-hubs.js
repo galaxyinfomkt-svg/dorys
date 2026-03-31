@@ -371,7 +371,7 @@ ${citiesHtml}
           <a href="/" class="footer__logo">
             <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
           </a>
-          <p class="footer__description">Professional cleaning services for healthcare facilities in Massachusetts since 2004. 22 years of healthcare experience.</p>
+          <p class="footer__description">Professional cleaning services for healthcare facilities in Massachusetts for over 22 years. 22 years of healthcare experience.</p>
         </div>
         <div class="footer__col">
           <h3 class="footer__title">Services</h3>

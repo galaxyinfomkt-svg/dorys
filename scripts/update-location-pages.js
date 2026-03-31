@@ -66,7 +66,7 @@ const replacements = [
   // Footer brand
   ['alt="Dorys Janitorial Cleaning Services"', 'alt="Dorys Janitorial Cleaning Services"'],
   ['<span class="footer__logo-text">Dorys Janitorial</span>', '<span class="footer__logo-text">Dorys Cleaning</span>'],
-  ['Professional janitorial and cleaning services in Massachusetts since 2004. We deliver exceptional results with attention to detail and clear communication.', 'Professional cleaning services for healthcare facilities in Massachusetts since 2004. Precision sanitation for medical offices, clinics, and assisted living facilities.'],
+  ['Professional janitorial and cleaning services in Massachusetts for over 22 years. We deliver exceptional results with attention to detail and clear communication.', 'Professional cleaning services for healthcare facilities in Massachusetts for over 22 years. Precision sanitation for medical offices, clinics, and assisted living facilities.'],
 
   // Footer service links
   ['<li><a href="/services/janitorial-service/">Janitorial Service</a></li>', '<li><a href="/services/medical-office-cleaning/">Medical Office Cleaning</a></li>'],
@@ -76,7 +76,7 @@ const replacements = [
   ['<li><a href="/services/general-housekeeping/">General Housekeeping</a></li>', '<li><a href="/services/compliance-scheduled-sanitation/">Compliance & Scheduled Sanitation</a></li>'],
 
   // Footer credentials
-  ['2004 (21+ Years)', '2004 (22 Years Healthcare)'],
+  ['22+ Years of Healthcare Experience', '22+ Years of Healthcare Experience'],
 
   // Footer copyright
   ['&copy; 2025 Dorys Janitorial Cleaning Services Inc.', '&copy; 2026 Dorys Janitorial Cleaning Services Inc.'],

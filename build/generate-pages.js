@@ -27,7 +27,7 @@ const business = {
   hours: 'Mon-Sat: 5:00 AM - 7:00 PM',
   license: 'HIC #213341',
   insurance: '$2,000,000',
-  founded: '2004',
+  yearsExperience: '22+',
   years: '21+'
 };
 
@@ -348,7 +348,7 @@ function generateServiceCityPage(service, city) {
       <div class="footer__grid">
         <div class="footer__col footer__brand">
           <span class="footer__logo-text">Dorys Janitorial</span>
-          <p class="footer__description">Professional cleaning services in Massachusetts since 2004.</p>
+          <p class="footer__description">Professional cleaning services in Massachusetts for over 22 years.</p>
         </div>
         <div class="footer__col">
           <h3 class="footer__title">Services</h3>
