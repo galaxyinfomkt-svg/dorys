@@ -1,5 +1,5 @@
 /**
- * Our Cleaning Services - Enhance SEO Schema & Internal Links
+ * Dorys Cleaning Services - Enhance SEO Schema & Internal Links
  *
  * This script improves:
  * 1. AggregateRating reviewCount (realistic per city)
@@ -214,7 +214,7 @@ function processAllPages() {
   let errors = [];
 
   console.log('='.repeat(60));
-  console.log('Our Cleaning - Enhance SEO Schema & Internal Links');
+  console.log('Dorys Cleaning - Enhance SEO Schema & Internal Links');
   console.log('='.repeat(60));
 
   for (const service of services) {

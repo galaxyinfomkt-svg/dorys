@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * VIDEO-EMBED.JS - Janitorial Cleaning Services
+ * VIDEO-EMBED.JS - Dorys Janitorial Cleaning Services
  * YouTube Video Lazy Loading and Embed Handling
  * ==========================================================================
  */

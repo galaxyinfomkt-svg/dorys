@@ -37,7 +37,7 @@ function truncateDesc(text, maxLen = 155) {
 const SERVICE_CTR_CONFIG = {
   'janitorial-service': {
     shortName: 'Janitorial',
-    triggers: ['Same Day Service', 'Licensed & Insured', '5★ Rated', 'Free Estimate', 'Trusted Over 22 Years'],
+    triggers: ['Same Day Service', 'Licensed & Insured', '5★ Rated', 'Free Estimate', 'Trusted Since 2004'],
     titlePatterns: [
       (city) => truncate(`Janitorial Service ${city} MA | Same Day Quotes`, 58),
       (city) => truncate(`${city} Janitorial Cleaning | 5★ Licensed Pros`, 58),
@@ -48,7 +48,7 @@ const SERVICE_CTR_CONFIG = {
     descPatterns: [
       (city) => truncateDesc(`Top-rated janitorial service in ${city}, MA. Licensed, insured, 21+ years exp. Same day quotes. Call (978) 307-8107 for free estimate.`),
       (city) => truncateDesc(`Professional office & commercial cleaning in ${city}. 5-star rated, background-checked staff. Get your free quote today!`),
-      (city) => truncateDesc(`${city}'s trusted janitorial pros for over 22 years. Daily/weekly cleaning, floor care, restroom sanitation. $2M insured. Book now.`),
+      (city) => truncateDesc(`${city}'s trusted janitorial pros since 2004. Daily/weekly cleaning, floor care, restroom sanitation. $2M insured. Book now.`),
       (city) => truncateDesc(`Need reliable janitorial service in ${city}, MA? Licensed pros, flexible schedules, competitive rates. Call now!`),
       (city) => truncateDesc(`Commercial cleaning experts serving ${city} businesses. Evening & weekend availability. Free quotes. MA License #213341.`)
     ],
@@ -64,7 +64,7 @@ const SERVICE_CTR_CONFIG = {
       (city, nearby) => `Transform your ${city} workspace. 21+ years keeping Massachusetts businesses spotless. Free estimates for ${city}, ${nearby[0]} & beyond.`,
       (city, nearby) => `Reliable commercial cleaning for ${city} offices & facilities. Flexible scheduling, competitive pricing. Also serving ${nearby.slice(0,2).join(' & ')}.`,
       (city, nearby) => `Your ${city} business deserves a 5-star clean. Licensed, insured pros ready to serve ${city} and ${nearby[0]} area companies.`,
-      (city, nearby) => `${city}'s go-to janitorial experts for over 22 years. From daily office cleaning to specialized floor care. Proudly serving ${nearby.slice(0,3).join(', ')}.`
+      (city, nearby) => `${city}'s go-to janitorial experts since 2004. From daily office cleaning to specialized floor care. Proudly serving ${nearby.slice(0,3).join(', ')}.`
     ]
   },
   'deep-cleaning': {
@@ -93,7 +93,7 @@ const SERVICE_CTR_CONFIG = {
     ],
     heroSubtitles: [
       (city, nearby) => `Complete top-to-bottom cleaning for ${city} homes & businesses. We reach every corner others miss. Serving ${nearby.slice(0,2).join(', ')} too.`,
-      (city, nearby) => `${city}'s deep cleaning experts for over 22 years. Move-in/move-out specialists. Book your transformation for ${city} or ${nearby[0]} today.`,
+      (city, nearby) => `${city}'s deep cleaning experts since 2004. Move-in/move-out specialists. Book your transformation for ${city} or ${nearby[0]} today.`,
       (city, nearby) => `Beyond regular cleaning - we restore ${city} properties to like-new condition. Eco-friendly products, thorough results.`,
       (city, nearby) => `Spring cleaning, post-reno, or just overdue? ${city}'s trusted deep clean team is ready. Also available in ${nearby.slice(0,2).join(' & ')}.`,
       (city, nearby) => `Your ${city} home deserves a fresh start. Our deep cleaning tackles grout, baseboards, appliances & more. Free estimates!`
@@ -157,7 +157,7 @@ const SERVICE_CTR_CONFIG = {
     ],
     heroSubtitles: [
       (city, nearby) => `Expert upholstery cleaning for ${city} homes. Sofas, chairs, sectionals - all fabrics welcome. Serving ${nearby.slice(0,2).join(', ')} too.`,
-      (city, nearby) => `${city}'s furniture cleaning pros for over 22 years. Remove stains, odors & allergens. Protect your investment. Free quotes!`,
+      (city, nearby) => `${city}'s furniture cleaning pros since 2004. Remove stains, odors & allergens. Protect your investment. Free quotes!`,
       (city, nearby) => `Pet-safe, kid-safe upholstery cleaning in ${city}. We use eco-friendly products that work. Also available in ${nearby[0]}.`,
       (city, nearby) => `Don't replace - restore! ${city}'s upholstery experts bring furniture back to life. Leather, fabric, velvet specialists.`,
       (city, nearby) => `Your ${city} furniture deserves professional care. Fast-drying, fabric-safe cleaning. Serving the greater ${city} area.`
@@ -178,7 +178,7 @@ const SERVICE_CTR_CONFIG = {
       (city) => truncateDesc(`${city}'s trusted home cleaning service. Consistent quality, flexible scheduling. 21+ years keeping homes spotless!`),
       (city) => truncateDesc(`Let us handle cleaning in ${city}! Professional housekeeping for busy families. Customized plans, reliable maids.`),
       (city) => truncateDesc(`Reclaim your weekends in ${city}. Our housekeeping pros handle dusting, mopping, bathrooms & more. Book today!`),
-      (city) => truncateDesc(`${city} families trust us for over 22 years. Thorough housekeeping, eco-friendly products, satisfaction guaranteed!`)
+      (city) => truncateDesc(`${city} families trust us since 2004. Thorough housekeeping, eco-friendly products, satisfaction guaranteed!`)
     ],
     h1Patterns: [
       (city) => `Housekeeping Service in ${city}, MA`,
@@ -343,12 +343,12 @@ function processLocationPage(filePath, city) {
     `${city.name} Cleaning Company | 5★ Local Pros`,
     `House & Office Cleaning ${city.name} | Licensed`,
     `${city.name} MA Cleaners | Same Day Quotes`,
-    `Professional Cleaning ${city.name} | Over 22 Years`
+    `Professional Cleaning ${city.name} | Since 2004`
   ];
 
   const locationDescs = [
     `Professional cleaning services in ${city.name}, MA. House cleaning, office janitorial, deep cleaning & more. Licensed, insured. Call (978) 307-8107.`,
-    `${city.name}'s trusted cleaning company for over 22 years. Residential & commercial services. 5-star rated, background-checked staff. Free quotes!`,
+    `${city.name}'s trusted cleaning company since 2004. Residential & commercial services. 5-star rated, background-checked staff. Free quotes!`,
     `Looking for cleaners in ${city.name}? We offer housekeeping, janitorial, carpet & deep cleaning. Serving ${county} County. Book today!`,
     `Top-rated cleaning pros serving ${city.name}, MA. Flexible scheduling, eco-friendly products. 21+ years exp. Get your free estimate now!`,
     `${city.name} cleaning services you can trust. Home, office, move-in/out. Licensed MA #213341, $2M insured. Call for same-day quote!`

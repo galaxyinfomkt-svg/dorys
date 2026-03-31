@@ -172,8 +172,8 @@ console.log('\n=== Fixing healthcare-facilities.html ===');
 const hfPath = path.join(root, 'healthcare-facilities.html');
 let hfContent = fs.readFileSync(hfPath, 'utf8');
 
-// Fix brand name in meta tags in meta tags
-hfContent = hfContent.replace(/Dory's Cleaning Services/g, 'Our Cleaning Services');
+// Fix "Dory's" -> "Dorys" in meta tags
+hfContent = hfContent.replace(/Dory's Cleaning Services/g, 'Dorys Cleaning Services');
 
 // Fix meta description (too short, make it 150-160 chars with better CTR)
 hfContent = hfContent.replace(

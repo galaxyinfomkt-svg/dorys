@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * LIGHTBOX.JS - Janitorial Cleaning Services
+ * LIGHTBOX.JS - Dorys Janitorial Cleaning Services
  * Image Gallery Lightbox with Close Button (X)
  * ==========================================================================
  */

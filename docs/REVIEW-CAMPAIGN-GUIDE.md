@@ -1,5 +1,5 @@
 # Review Campaign Guide
-## Janitorial Cleaning Services
+## Dorys Janitorial Cleaning Services
 
 **Objetivo:** Atingir 50+ reviews 5 estrelas no Google em 90 dias
 
@@ -38,12 +38,12 @@ Crie um QR Code apontando para o link de review:
 
 ### Template 1: Email Pos-Servico (Mesmo Dia)
 
-**Assunto:** Thank You from Us Cleaning - We'd Love Your Feedback!
+**Assunto:** Thank You from Dorys Cleaning - We'd Love Your Feedback!
 
 ```
 Hi [NOME DO CLIENTE],
 
-Thank you for choosing Janitorial Cleaning Services for your recent [TIPO DE SERVICO] in [CIDADE].
+Thank you for choosing Dorys Janitorial Cleaning Services for your recent [TIPO DE SERVICO] in [CIDADE].
 
 We hope you're enjoying your freshly cleaned space! Your satisfaction is our top priority, and we'd love to hear about your experience.
 
@@ -54,7 +54,7 @@ If you have a moment, could you leave us a quick Google review? It only takes 30
 Thank you so much for your support!
 
 Best regards,
-The Our Cleaning Team
+The Dorys Cleaning Team
 (978) 307-8107
 ```
 
@@ -63,7 +63,7 @@ The Our Cleaning Team
 ### Template 2: SMS/WhatsApp (24h apos servico)
 
 ```
-Hi [NOME]! This is Our Cleaning. We hope you're loving your clean space! If you have 30 seconds, we'd really appreciate a Google review: [LINK CURTO]
+Hi [NOME]! This is Dorys Cleaning. We hope you're loving your clean space! If you have 30 seconds, we'd really appreciate a Google review: [LINK CURTO]
 
 Thank you!
 ```
@@ -72,7 +72,7 @@ Thank you!
 
 ### Template 3: Follow-up (7 dias apos, se nao respondeu)
 
-**Assunto:** Quick Favor? Share Your Our Cleaning Experience
+**Assunto:** Quick Favor? Share Your Dorys Cleaning Experience
 
 ```
 Hi [NOME],
@@ -167,7 +167,7 @@ with our [SERVICE TYPE] service in [CITY]. It was a pleasure
 working with you, and we look forward to serving you again.
 Don't hesitate to call us at (978) 307-8107 anytime!
 
-- The Our Cleaning Team
+- The Dorys Cleaning Team
 ```
 
 ### Template: Review 4 Estrelas
@@ -179,7 +179,7 @@ improve - if there's anything we could have done better,
 please let us know at (978) 307-8107. We'd love to earn
 that 5th star on your next visit!
 
-- The Our Cleaning Team
+- The Dorys Cleaning Team
 ```
 
 ### Template: Review 3 Estrelas ou Menos
@@ -191,7 +191,7 @@ satisfaction is our top priority, and we'd like to make
 this right. Please call us directly at (978) 307-8107
 so we can discuss how we can resolve this for you.
 
-- The Our Cleaning Team
+- The Dorys Cleaning Team
 ```
 
 ---
@@ -244,7 +244,7 @@ Alem do Google, busque reviews em:
 ## 10. MONITORAMENTO
 
 ### Ferramentas:
-- Google Alerts para "[Our Cleaning]"
+- Google Alerts para "[Dorys Cleaning]"
 - ReviewTrackers ou Grade.us
 - Notificacoes do Google Business Profile
 

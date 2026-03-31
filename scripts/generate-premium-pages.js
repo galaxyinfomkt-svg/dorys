@@ -1,5 +1,5 @@
 /**
- * Our Cleaning Services - Premium Service Pages Generator
+ * Dorys Cleaning Services - Premium Service Pages Generator
  *
  * Generates high-quality, conversion-optimized landing pages
  * with rich content, images, animations, and CTAs
@@ -422,7 +422,7 @@ function generatePage(serviceKey, cityKey) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${service.title} in ${city.name}, MA | Professional Cleaning</title>
+  <title>${service.title} in ${city.name}, MA | Professional Cleaning | Dorys Cleaning</title>
   <meta name="description" content="${metaDescription}">
   <meta name="keywords" content="${keywords}">
   <meta name="robots" content="index, follow">
@@ -431,15 +431,15 @@ function generatePage(serviceKey, cityKey) {
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://doryscleaningservices.com/services/${service.slug}/${city.slug}">
-  <meta property="og:title" content="${service.heroTitle} in ${city.name}, MA">
+  <meta property="og:title" content="${service.heroTitle} in ${city.name}, MA | Dorys Cleaning">
   <meta property="og:description" content="${metaDescription}">
   <meta property="og:image" content="https://doryscleaningservices.com/assets/images/services/${service.slug}.jpg">
-  <meta property="og:site_name" content="Janitorial Cleaning Services">
+  <meta property="og:site_name" content="Dorys Janitorial Cleaning Services">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="${service.title} in ${city.name}, MA">
+  <meta name="twitter:title" content="${service.title} in ${city.name}, MA | Dorys Cleaning">
   <meta name="twitter:description" content="${metaDescription}">
   <meta name="twitter:image" content="https://doryscleaningservices.com/assets/images/services/${service.slug}.jpg">
 
@@ -448,7 +448,7 @@ function generatePage(serviceKey, cityKey) {
   <meta name="geo.placename" content="${city.name}, Massachusetts">
   <meta name="geo.position" content="${city.lat};${city.lng}">
   <meta name="ICBM" content="${city.lat}, ${city.lng}">
-  <meta name="author" content="Janitorial Cleaning Services Inc.">
+  <meta name="author" content="Dorys Janitorial Cleaning Services Inc.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -472,7 +472,7 @@ function generatePage(serviceKey, cityKey) {
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Janitorial Cleaning Services",
+    "name": "Dorys Janitorial - ${service.title} ${city.name}",
     "image": "https://doryscleaningservices.com/assets/images/services/${service.slug}.jpg",
     "url": "https://doryscleaningservices.com/services/${service.slug}/${city.slug}",
     "telephone": "+1-978-307-8107",
@@ -560,7 +560,7 @@ function generatePage(serviceKey, cityKey) {
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-80.jpg" alt="Janitorial Cleaning Services" width="180" height="60">
+        <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" width="180" height="60">
       </a>
       <nav class="header__nav">
         <ul class="nav-list">
@@ -744,8 +744,8 @@ ${processHTML}
 
           <div class="animate-on-scroll animate-fade-left animate-delay-200">
             <span class="section__badge">Why ${city.name} Trusts Us</span>
-            <h2 class="section__title--left">Our Difference</h2>
-            <p class="mb-lg">When you choose us for ${service.name.toLowerCase()} in ${city.name}, you're choosing a company with a proven track record of excellence.</p>
+            <h2 class="section__title--left">The Dorys Difference</h2>
+            <p class="mb-lg">When you choose Dorys for ${service.name.toLowerCase()} in ${city.name}, you're choosing a company with a proven track record of excellence.</p>
 
             <div class="trust-facts">
               <div class="trust-fact">
@@ -754,7 +754,7 @@ ${processHTML}
                 </div>
                 <div class="trust-fact__content">
                   <strong>21+ Years Experience</strong>
-                  <p>Serving Massachusetts for over 22 years</p>
+                  <p>Serving Massachusetts since 2004</p>
                 </div>
               </div>
               <div class="trust-fact">
@@ -876,9 +876,9 @@ ${nearbyCitiesHTML}
         <!-- Brand Column -->
         <div class="footer__col footer__brand">
           <a href="/" class="footer__logo">
-            <img src="/assets/images/logo/logo-80.jpg" alt="Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
+            <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
           </a>
-          <p class="footer__description">Professional janitorial and cleaning services in Massachusetts for over 22 years. We deliver exceptional results with attention to detail and clear communication.</p>
+          <p class="footer__description">Professional janitorial and cleaning services in Massachusetts since 2004. We deliver exceptional results with attention to detail and clear communication.</p>
 
           <div class="footer__trust">
             <div class="footer__trust-item">
@@ -999,14 +999,14 @@ ${nearbyCitiesHTML}
           <svg class="footer__credential-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
           <div class="footer__credential-text">
             <span class="footer__credential-label">Founded:</span>
-            <span class="footer__credential-value">22+ Years Healthcare Experience</span>
+            <span class="footer__credential-value">2004 (21+ Years)</span>
           </div>
         </div>
       </div>
 
       <!-- Footer Bottom -->
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2025 Janitorial Cleaning Services Inc. All rights reserved.</p>
+        <p class="footer__copyright">&copy; 2025 Dorys Janitorial Cleaning Services Inc. All rights reserved.</p>
         <nav class="footer__legal">
           <a href="/privacy.html">Privacy Policy</a>
           <a href="/terms.html">Terms of Service</a>
@@ -1040,7 +1040,7 @@ function main() {
   let errors = 0;
 
   console.log('='.repeat(60));
-  console.log('Our Cleaning - Premium Pages Generator');
+  console.log('Dorys Cleaning - Premium Pages Generator');
   console.log('='.repeat(60));
   console.log('\nServices: ' + Object.keys(SERVICES).length);
   console.log('Cities: ' + Object.keys(CITIES).length);

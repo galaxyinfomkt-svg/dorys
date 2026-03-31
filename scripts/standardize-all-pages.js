@@ -48,7 +48,7 @@ const STANDARD_TOPBAR_HEADER = `  <div class="top-bar">
   <header class="header">
     <div class="container header__wrapper">
       <a href="/" class="header__logo">
-        <img src="/assets/images/logo/logo-80.jpg" alt="Janitorial Cleaning Services Logo" width="180" height="60">
+        <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services Logo" width="180" height="60">
       </a>
 
       <nav class="header__nav" aria-label="Main navigation">
@@ -151,11 +151,11 @@ const STANDARD_FOOTER = `  <footer class="footer">
       <div class="footer__grid">
         <!-- Brand Column -->
         <div class="footer__col footer__brand">
-          <a href="/" class="footer__logo" aria-label="Janitorial Cleaning Services - Home">
-            <img src="/assets/images/logo/logo-80.jpg" alt="Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
-            <span class="footer__logo-text">Cleaning Services</span>
+          <a href="/" class="footer__logo" aria-label="Dorys Janitorial Cleaning Services - Home">
+            <img src="/assets/images/logo/logo-80.jpg" alt="Dorys Janitorial Cleaning Services" class="footer__logo-img" width="180" height="60">
+            <span class="footer__logo-text">Dorys Cleaning</span>
           </a>
-          <p class="footer__description">Professional cleaning services for healthcare facilities in Massachusetts for over 22 years. 22 years of healthcare experience delivering precision sanitation, compliance-driven protocols, and infection control support.</p>
+          <p class="footer__description">Professional cleaning services for healthcare facilities in Massachusetts since 2004. 22 years of healthcare experience delivering precision sanitation, compliance-driven protocols, and infection control support.</p>
 
           <div class="footer__trust">
             <div class="footer__trust-item">
@@ -282,14 +282,14 @@ const STANDARD_FOOTER = `  <footer class="footer">
           <svg class="footer__credential-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
           <div class="footer__credential-text">
             <span class="footer__credential-label">Founded:</span>
-            <span class="footer__credential-value">22+ Years Healthcare Experience</span>
+            <span class="footer__credential-value">2004 (22 Years Healthcare)</span>
           </div>
         </div>
       </div>
 
       <!-- Footer Bottom -->
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2026 Janitorial Cleaning Services Inc. All rights reserved.</p>
+        <p class="footer__copyright">&copy; 2026 Dorys Janitorial Cleaning Services Inc. All rights reserved.</p>
         <nav class="footer__legal">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>

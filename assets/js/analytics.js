@@ -1,6 +1,6 @@
 /* ==========================================================================
    ANALYTICS.JS - Google Analytics 4 & Event Tracking
-   Janitorial Cleaning Services
+   Dorys Janitorial Cleaning Services
    ========================================================================== */
 
 // Google Analytics 4 Configuration
@@ -278,4 +278,4 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-console.log('Analytics initialized');
+console.log('Dorys Analytics initialized');

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// CTR Optimization Script for Our Cleaning Services
+// CTR Optimization Script for Dorys Cleaning Services
 // Applies New England-focused, high-CTR titles and descriptions
 
 // City categories for personalized messaging
@@ -15,7 +15,7 @@ const serviceConfig = {
   'janitorial-service': { name: 'Janitorial', hook: 'Office & Commercial', seasonal: 'Book This Week!' },
   'deep-cleaning': { name: 'Deep Cleaning', hook: 'Move-In/Out Experts', seasonal: '50% Off 1st!' },
   'carpet-cleaning': { name: 'Carpet Cleaning', hook: 'Winter Salt Experts', seasonal: 'Book Today!' },
-  'general-housekeeping': { name: 'Housekeeping', hook: 'Trusted Over 22 Years', seasonal: '50% Off!' },
+  'general-housekeeping': { name: 'Housekeeping', hook: 'Trusted Since 2004', seasonal: '50% Off!' },
   'upholstery-cleaning': { name: 'Upholstery', hook: 'Sofa & Couch Experts', seasonal: 'Book Now!' }
 };
 
@@ -36,23 +36,23 @@ function getLocationMeta(cityName, citySlug) {
   const templates = {
     hq: {
       title: `${cityName} Cleaning | ⭐ LOCAL HQ - We're Your Neighbors!`,
-      desc: `📍 Based RIGHT HERE in ${cityName}! Your local cleaning team for over 22 years. Fast response, $2M insured. ✅ Same-day. Neighbors get 50% off! (978) 307-8107`
+      desc: `📍 Based RIGHT HERE in ${cityName}! Your local cleaning team since 2004. Fast response, $2M insured. ✅ Same-day. Neighbors get 50% off! (978) 307-8107`
     },
     luxury: {
       title: `${cityName} House Cleaning | ⭐ Luxury Home Experts - Book Today!`,
-      desc: `🏡 ${cityName}'s premium cleaners! Trusted by luxury homeowners. Over 22 Years, white-glove service. ✅ Same-day. LIMITED slots! (978) 307-8107`
+      desc: `🏡 ${cityName}'s premium cleaners! Trusted by luxury homeowners. Since 2004, white-glove service. ✅ Same-day. LIMITED slots! (978) 307-8107`
     },
     historic: {
       title: `${cityName} House Cleaning | ⭐ Historic Home Experts - 50% Off!`,
-      desc: `🏛️ ${cityName}'s trusted cleaners! Experts in historic New England homes. Over 22 Years, $2M insured. ✅ Same-day. 50% off 1st! (978) 307-8107`
+      desc: `🏛️ ${cityName}'s trusted cleaners! Experts in historic New England homes. Since 2004, $2M insured. ✅ Same-day. 50% off 1st! (978) 307-8107`
     },
     commercial: {
-      title: `${cityName} Office & Home Cleaning | ⭐ Over 22 Years - 50% Off!`,
-      desc: `🏢 ${cityName}'s commercial & residential experts! Office, home, carpet cleaning. Over 22 Years. ✅ FREE estimate. 50% off 1st! (978) 307-8107`
+      title: `${cityName} Office & Home Cleaning | ⭐ Since 2004 - 50% Off!`,
+      desc: `🏢 ${cityName}'s commercial & residential experts! Office, home, carpet cleaning. Since 2004. ✅ FREE estimate. 50% off 1st! (978) 307-8107`
     },
     standard: {
-      title: `${cityName} Cleaning Services | ⭐ Local Over 22 Years - 50% Off!`,
-      desc: `🏠 ${cityName}'s trusted cleaners! Your neighbors use us. Family-owned for over 22 years. ✅ Same-day booking. LIMITED: 50% off 1st! (978) 307-8107`
+      title: `${cityName} Cleaning Services | ⭐ Local Since 2004 - 50% Off!`,
+      desc: `🏠 ${cityName}'s trusted cleaners! Your neighbors use us. Family-owned since 2004. ✅ Same-day booking. LIMITED: 50% off 1st! (978) 307-8107`
     }
   };
 
@@ -73,16 +73,16 @@ function getServiceLocationMeta(cityName, citySlug, serviceSlug) {
 
   if (isWinterService) {
     title = `${cityName} ${config.name} | ⭐ Winter Salt Experts - ${config.seasonal}`;
-    desc = `❄️ ${cityName}'s #1 carpet cleaners! Remove winter salt & stains. Over 22 Years, eco-safe. ✅ Same-day available. LIMITED: 50% off! (978) 307-8107`;
+    desc = `❄️ ${cityName}'s #1 carpet cleaners! Remove winter salt & stains. Since 2004, eco-safe. ✅ Same-day available. LIMITED: 50% off! (978) 307-8107`;
   } else if (type === 'luxury') {
     title = `${cityName} ${config.name} | ⭐ Premium Service - ${config.seasonal}`;
-    desc = `🏡 ${cityName}'s premium ${config.name.toLowerCase()} pros! White-glove service for over 22 years. ✅ Same-day slots. LIMITED spots! (978) 307-8107`;
+    desc = `🏡 ${cityName}'s premium ${config.name.toLowerCase()} pros! White-glove service since 2004. ✅ Same-day slots. LIMITED spots! (978) 307-8107`;
   } else if (type === 'commercial' && serviceSlug === 'janitorial-service') {
     title = `${cityName} ${config.name} | ⭐ ${config.hook} - ${config.seasonal}`;
-    desc = `🏢 ${cityName} commercial cleaning experts! Offices, warehouses, medical. Over 22 Years. ✅ FREE walkthrough. LIMITED slots! (978) 307-8107`;
+    desc = `🏢 ${cityName} commercial cleaning experts! Offices, warehouses, medical. Since 2004. ✅ FREE walkthrough. LIMITED slots! (978) 307-8107`;
   } else {
     title = `${cityName} ${config.name} | ⭐ ${config.hook} - ${config.seasonal}`;
-    desc = `🏠 ${cityName}'s trusted ${config.name.toLowerCase()} pros! Family-owned for over 22 years, $2M insured. ✅ Same-day. 50% off 1st! (978) 307-8107`;
+    desc = `🏠 ${cityName}'s trusted ${config.name.toLowerCase()} pros! Family-owned since 2004, $2M insured. ✅ Same-day. 50% off 1st! (978) 307-8107`;
   }
 
   return { title, desc };

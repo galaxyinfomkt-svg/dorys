@@ -53,7 +53,7 @@ Object.entries(services).forEach(([serviceSlug, config]) => {
     const cityName = geoMatch ? geoMatch[1].trim() : file.replace(/-ma\.html$/, '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
     // Build optimized title (under 60 chars)
-    const newTitle = `${config.shortTitle} ${cityName}, MA`;
+    const newTitle = `${config.shortTitle} ${cityName}, MA | Dorys Cleaning`;
 
     // Replace title tag (match any existing title)
     content = content.replace(/<title>[^<]+<\/title>/, `<title>${newTitle}</title>`);

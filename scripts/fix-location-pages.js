@@ -26,13 +26,13 @@ const stringReplacements = [
 
 const regexReplacements = [
   // Fix spacing bug: "Healthcare Sanitation Services CityMA" → "Healthcare Sanitation Services City, MA"
-  [/Healthcare Sanitation Services (\w+)MA \/g, 'Healthcare Sanitation Services $1, MA'],
+  [/Healthcare Sanitation Services (\w+)MA \| Dorys Cleaning/g, 'Healthcare Sanitation Services $1, MA | Dorys Cleaning'],
 
-  // Fix old title format: "Professional Cleaning {City} | Over 22 Years" → "Healthcare Sanitation {City}, MA"
-  [/<title>Professional Cleaning ([^<]+) \| Over 22 Years<\/title>/g, '<title>Healthcare Sanitation $1, MA</title>'],
+  // Fix old title format: "Professional Cleaning {City} | Since 2004" → "Healthcare Sanitation {City}, MA | Dorys Cleaning"
+  [/<title>Professional Cleaning ([^<]+) \| Since 2004<\/title>/g, '<title>Healthcare Sanitation $1, MA | Dorys Cleaning</title>'],
 
   // Fix OG title with old format
-  [/content="Professional Cleaning ([^"]+) \| Over 22 Years"/g, 'content="Healthcare Sanitation $1, MA"'],
+  [/content="Professional Cleaning ([^"]+) \| Since 2004"/g, 'content="Healthcare Sanitation $1, MA | Dorys Cleaning"'],
 
   // Fix old meta descriptions that still reference general cleaning
   [/content="([A-Z][a-z]+(?:\s[A-Z][a-z]+)*) cleaning services you can trust\. Home, office, move-in\/out\. Licensed MA #213341, \$2M insured\. Call for same-day quote!"/g,

@@ -11,10 +11,10 @@ let errors = 0;
 
 const replacements = [
   // Schema
-  ['"Janitorial Cleaning Services Inc."', '"Janitorial Cleaning Services Inc."'],
+  ['"Dorys Janitorial Cleaning Services Inc."', '"Dorys Janitorial Cleaning Services Inc."'],
 
   // Logo alt
-  ['alt="Janitorial Cleaning Services"', 'alt="Janitorial Cleaning Services"'],
+  ['alt="Dorys Janitorial"', 'alt="Dorys Janitorial Cleaning Services"'],
 
   // Header CTA
   ['>Free Quote</a>', '>Cleaning Assessment</a>'],
@@ -64,9 +64,9 @@ const replacements = [
   ['>Get Your Free Quote Today</a>', '>Schedule a Cleaning Assessment</a>'],
 
   // Footer brand
-  ['alt="Janitorial Cleaning Services"', 'alt="Janitorial Cleaning Services"'],
-  ['<span class="footer__logo-text">Janitorial Cleaning Services/span>', '<span class="footer__logo-text">Cleaning Services</span>'],
-  ['Professional janitorial and cleaning services in Massachusetts for over 22 years. We deliver exceptional results with attention to detail and clear communication.', 'Professional cleaning services for healthcare facilities in Massachusetts for over 22 years. Precision sanitation for medical offices, clinics, and assisted living facilities.'],
+  ['alt="Dorys Janitorial Cleaning Services"', 'alt="Dorys Janitorial Cleaning Services"'],
+  ['<span class="footer__logo-text">Dorys Janitorial</span>', '<span class="footer__logo-text">Dorys Cleaning</span>'],
+  ['Professional janitorial and cleaning services in Massachusetts since 2004. We deliver exceptional results with attention to detail and clear communication.', 'Professional cleaning services for healthcare facilities in Massachusetts since 2004. Precision sanitation for medical offices, clinics, and assisted living facilities.'],
 
   // Footer service links
   ['<li><a href="/services/janitorial-service/">Janitorial Service</a></li>', '<li><a href="/services/medical-office-cleaning/">Medical Office Cleaning</a></li>'],
@@ -76,20 +76,20 @@ const replacements = [
   ['<li><a href="/services/general-housekeeping/">General Housekeeping</a></li>', '<li><a href="/services/compliance-scheduled-sanitation/">Compliance & Scheduled Sanitation</a></li>'],
 
   // Footer credentials
-  ['22+ Years Healthcare Experience', '22+ Years Healthcare Experience'],
+  ['2004 (21+ Years)', '2004 (22 Years Healthcare)'],
 
   // Footer copyright
-  ['&copy; 2025 Janitorial Cleaning Services Inc.', '&copy; 2026 Janitorial Cleaning Services Inc.'],
+  ['&copy; 2025 Dorys Janitorial Cleaning Services Inc.', '&copy; 2026 Dorys Janitorial Cleaning Services Inc.'],
 ];
 
 // Regex replacements for city-specific patterns
 const regexReplacements = [
   // Title
-  [/Cleaning Services ([^|<]+) MA \| Free Estimates/g, 'Healthcare Sanitation Services $1MA'],
+  [/Cleaning Services ([^|<]+) MA \| Free Estimates/g, 'Healthcare Sanitation Services $1MA | Dorys Cleaning'],
   // Meta description
   [/Professional cleaning services in ([^.]+)\. House cleaning, office janitorial, deep cleaning & more\./g, 'Healthcare environmental sanitation services in $1. Medical office cleaning, clinic sanitation, infection control & more.'],
   // OG title
-  [/content="Cleaning Services ([^"]+) MA \| Free Estimates"/g, 'content="Healthcare Sanitation Services $1MA"'],
+  [/content="Cleaning Services ([^"]+) MA \| Free Estimates"/g, 'content="Healthcare Sanitation Services $1MA | Dorys Cleaning"'],
   // OG description (same as meta)
   [/content="Professional cleaning services in ([^.]+)\. House cleaning, office janitorial, deep cleaning & more\./g, 'content="Healthcare environmental sanitation services in $1. Medical office cleaning, clinic sanitation, infection control & more.'],
   // Hero title

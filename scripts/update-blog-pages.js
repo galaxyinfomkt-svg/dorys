@@ -32,12 +32,12 @@ const replacements = [
   // ═══════════════════════════════════════════════════════════════════════════
   // 1. Schema/meta - company names
   // ═══════════════════════════════════════════════════════════════════════════
-  ['Janitorial Cleaning Services Inc.', 'Janitorial Cleaning Services Inc.'],
-  // "Janitorial Cleaning Services" but NOT inside URLs like @DorysJanitorial or /dorysjanitorial
+  ['Dorys Janitorial Cleaning Services Inc.', 'Dorys Janitorial Cleaning Services Inc.'],
+  // "Dorys Janitorial" but NOT inside URLs like @DorysJanitorial or /dorysjanitorial
   // We handle this carefully by targeting specific patterns:
-  ['| Cleaning Services', ''],
+  ['| Dorys Janitorial', '| Dorys Cleaning'],
   // Alt text variants
-  ['alt="Cleaning"', 'alt="Janitorial Cleaning Services"'],
+  ['alt="Dorys Cleaning"', 'alt="Dorys Janitorial Cleaning Services"'],
 
   // ═══════════════════════════════════════════════════════════════════════════
   // 2. Nav service links - replace old service names and URLs
@@ -62,12 +62,12 @@ const replacements = [
   // ═══════════════════════════════════════════════════════════════════════════
   // 4. Footer
   // ═══════════════════════════════════════════════════════════════════════════
-  // Footer logo alt (already covered by alt="Cleaning" above, also handle Inc. variant)
-  ['alt="Cleaning"', 'alt="Janitorial Cleaning Services"'],
+  // Footer logo alt (already covered by alt="Dorys Cleaning" above, also handle Inc. variant)
+  ['alt="Dorys Cleaning"', 'alt="Dorys Janitorial Cleaning Services"'],
 
   // Footer description - the exact string found in the files
-  ['Professional janitorial and cleaning services in Massachusetts for over 22 years.',
-   'Professional cleaning services for healthcare facilities in Massachusetts for over 22 years. Precision sanitation for medical offices, clinics, and assisted living facilities.'],
+  ['Professional janitorial and cleaning services in Massachusetts since 2004.',
+   'Professional cleaning services for healthcare facilities in Massachusetts since 2004. Precision sanitation for medical offices, clinics, and assisted living facilities.'],
 
   // Footer CTA text - the exact string found in the remaining files
   ['Professional cleaning services with 21+ years of experience. Licensed, insured, and ready to make your space shine.',
@@ -83,11 +83,11 @@ const replacements = [
   ['Get Your Free Quote Today!', 'Schedule Your Healthcare Facility Assessment!'],
 
   // Footer copyright - various year patterns
-  ['&copy; 2025 Janitorial Cleaning Services Inc.', '&copy; 2026 Janitorial Cleaning Services Inc.'],
-  ['&copy; 2024 Janitorial Cleaning Services Inc.', '&copy; 2026 Janitorial Cleaning Services Inc.'],
+  ['&copy; 2025 Dorys Janitorial Cleaning Services Inc.', '&copy; 2026 Dorys Janitorial Cleaning Services Inc.'],
+  ['&copy; 2024 Dorys Janitorial Cleaning Services Inc.', '&copy; 2026 Dorys Janitorial Cleaning Services Inc.'],
   // In case the company name was already partially updated but year wasn't
-  ['&copy; 2025 Janitorial Cleaning Services Inc.', '&copy; 2026 Janitorial Cleaning Services Inc.'],
-  ['&copy; 2024 Janitorial Cleaning Services Inc.', '&copy; 2026 Janitorial Cleaning Services Inc.'],
+  ['&copy; 2025 Dorys Janitorial Cleaning Services Inc.', '&copy; 2026 Dorys Janitorial Cleaning Services Inc.'],
+  ['&copy; 2024 Dorys Janitorial Cleaning Services Inc.', '&copy; 2026 Dorys Janitorial Cleaning Services Inc.'],
 
   // Footer credentials "21+ Years" -> "22 Years"
   ['<span>21+ Years</span>', '<span>22 Years</span>'],
@@ -95,7 +95,7 @@ const replacements = [
   ['<span>21 years</span>', '<span>22 years</span>'],
 
   // Footer aria-label
-  ['aria-label="Cleaning Services - Home"', 'aria-label="Janitorial Cleaning Services - Home"'],
+  ['aria-label="Dorys Cleaning Services - Home"', 'aria-label="Dorys Janitorial Cleaning Services - Home"'],
 
   // ═══════════════════════════════════════════════════════════════════════════
   // 5. Blog CTA section
@@ -104,15 +104,15 @@ const replacements = [
   ['over 21 years', 'over 22 years'],
 
   // ═══════════════════════════════════════════════════════════════════════════
-  // 6. Additional "Our Cleaning" references in body/title text
+  // 6. Additional "Dorys Cleaning" references in body/title text
   //    (careful not to break social media URLs)
   // ═══════════════════════════════════════════════════════════════════════════
-  // Title tags: "" at end of titles
-  ['</title>', '</title>'],
+  // Title tags: "| Dorys Cleaning" at end of titles
+  ['| Dorys Cleaning</title>', '| Dorys Cleaning</title>'],
 
-  // Body text references like "Our Cleaning has been helping" or "Our Cleaning provides"
-  ['Our Cleaning has been', 'Our Cleaning has been'],
-  ['Our Cleaning provides', 'Our Cleaning provides'],
+  // Body text references like "Dorys Cleaning has been helping" or "Dorys Cleaning provides"
+  ['Dorys Cleaning has been', 'Dorys Cleaning has been'],
+  ['Dorys Cleaning provides', 'Dorys Cleaning provides'],
 
   // Blog CTA text that mentions years of experience
   ['21+ years of experience cleaning Massachusetts homes.',
@@ -209,7 +209,7 @@ console.log('='.repeat(70));
 console.log('');
 
 const oldPatterns = [
-  'Janitorial Cleaning Services',
+  'Dorys Janitorial Cleaning Services',
   '>Janitorial Service<',
   '>Deep Cleaning</a>',
   '>Carpet Cleaning</a>',
@@ -224,8 +224,8 @@ const oldPatterns = [
   '>Get a Free Quote</a>',
   'Need Professional Cleaning Help?',
   'Professional janitorial and cleaning services',
-  '&copy; 2025',
-  '&copy; 2024',
+  '&copy; 2025 Dorys',
+  '&copy; 2024 Dorys',
   '21+ years',
   '21+ Years',
   'over 21 years',

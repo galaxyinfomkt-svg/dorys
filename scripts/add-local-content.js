@@ -1,5 +1,5 @@
 /**
- * Our Cleaning Services - Add Local Content to Service+City Pages
+ * Dorys Cleaning Services - Add Local Content to Service+City Pages
  *
  * This script updates existing service+city pages to add localized content:
  * 1. Localized introduction with neighborhoods/landmarks
@@ -87,7 +87,7 @@ function generateAboutCitySection(cityData, service) {
           ${neighborhoodsText ? `<p>${neighborhoodsText}</p>` : ''}
           ${propertyText ? `<p>${propertyText}</p>` : ''}
           ${nearbyText ? `<p>${nearbyText}</p>` : ''}
-          <p class="about-city-stats"><strong>${cityData.satisfiedClients || '30+'} satisfied clients</strong> in ${cityData.name} trust us for their ${serviceName.toLowerCase()} needs.</p>
+          <p class="about-city-stats"><strong>${cityData.satisfiedClients || '30+'} satisfied clients</strong> in ${cityData.name} trust Dorys for their ${serviceName.toLowerCase()} needs.</p>
         </div>
       </div>
     </section>`;
@@ -268,7 +268,7 @@ function processAllPages() {
   let errors = [];
 
   console.log('='.repeat(60));
-  console.log('Our Cleaning - Add Local Content to Service+City Pages');
+  console.log('Dorys Cleaning - Add Local Content to Service+City Pages');
   console.log('='.repeat(60));
 
   for (const service of services) {
@@ -366,7 +366,7 @@ const args = process.argv.slice(2);
 
 if (args.includes('--help') || args.includes('-h')) {
   console.log(`
-Our Cleaning - Add Local Content to Service+City Pages
+Dorys Cleaning - Add Local Content to Service+City Pages
 
 Usage:
   node add-local-content.js              Process all pages
