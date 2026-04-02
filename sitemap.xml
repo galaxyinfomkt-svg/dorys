@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages Sitemap -->
-  <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-pages.xml</loc>
-    <lastmod>2026-03-11</lastmod>
-  </sitemap>
+ <!-- Main Pages Sitemap -->
+ <sitemap>
+ <loc>https://doryscleaningservices.com/sitemap-pages.xml</loc>
+ <lastmod>2026-03-11</lastmod>
+ </sitemap>
 
-  <!-- Location Pages Sitemap -->
-  <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-locations.xml</loc>
-    <lastmod>2026-03-11</lastmod>
-  </sitemap>
+ <!-- Location Pages Sitemap -->
+ <sitemap>
+ <loc>https://doryscleaningservices.com/sitemap-locations.xml</loc>
+ <lastmod>2026-03-11</lastmod>
+ </sitemap>
 
-  <!-- Service Pages Sitemaps -->
-  <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-medical-office-cleaning.xml</loc>
-    <lastmod>2026-03-11</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-specialty-clinics.xml</loc>
-    <lastmod>2026-03-11</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-ambulatory-outpatient.xml</loc>
-    <lastmod>2026-03-11</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-rehab-nursing.xml</loc>
-    <lastmod>2026-03-11</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-services-healthcare-admin-offices.xml</loc>
-    <lastmod>2026-03-11</lastmod>
-  </sitemap>
+ <!-- Service Pages Sitemaps -->
+ <sitemap>
+ <loc>https://doryscleaningservices.com/sitemap-services-medical-office-cleaning.xml</loc>
+ <lastmod>2026-03-11</lastmod>
+ </sitemap>
+ <sitemap>
+ <loc>https://doryscleaningservices.com/sitemap-services-specialty-clinics.xml</loc>
+ <lastmod>2026-03-11</lastmod>
+ </sitemap>
+ <sitemap>
+ <loc>https://doryscleaningservices.com/sitemap-services-ambulatory-outpatient.xml</loc>
+ <lastmod>2026-03-11</lastmod>
+ </sitemap>
+ <sitemap>
+ <loc>https://doryscleaningservices.com/sitemap-services-rehab-nursing.xml</loc>
+ <lastmod>2026-03-11</lastmod>
+ </sitemap>
+ <sitemap>
+ <loc>https://doryscleaningservices.com/sitemap-services-healthcare-admin-offices.xml</loc>
+ <lastmod>2026-03-11</lastmod>
+ </sitemap>
 
-  <!-- Blog Pages Sitemap -->
-  <sitemap>
-    <loc>https://doryscleaningservices.com/sitemap-blog.xml</loc>
-    <lastmod>2026-03-11</lastmod>
-  </sitemap>
+ <!-- Blog Pages Sitemap -->
+ <sitemap>
+ <loc>https://doryscleaningservices.com/sitemap-blog.xml</loc>
+ <lastmod>2026-03-11</lastmod>
+ </sitemap>
 </sitemapindex>

@@ -6,53 +6,53 @@
  */
 
 (function() {
-  'use strict';
+ 'use strict';
 
-  /**
-   * Initialize Sticky Header
-   */
-  function initStickyHeader() {
-    const header = document.querySelector('.header');
-    const topBar = document.querySelector('.top-bar');
+ /**
+ * Initialize Sticky Header
+ */
+ function initStickyHeader() {
+ const header = document.querySelector('.header');
+ const topBar = document.querySelector('.top-bar');
 
-    if (!header) return;
+ if (!header) return;
 
-    var topBarHeight = 44;
-    var currentScrollY = 0;
-    var ticking = false;
+ var topBarHeight = 44;
+ var currentScrollY = 0;
+ var ticking = false;
 
-    /**
-     * Write-only rAF callback (no reads = no forced reflow)
-     */
-    const updateHeader = () => {
-      if (currentScrollY > topBarHeight) {
-        header.classList.add('header--scrolled');
-      } else {
-        header.classList.remove('header--scrolled');
-      }
-      ticking = false;
-    };
+ /**
+ * Write-only rAF callback (no reads = no forced reflow)
+ */
+ const updateHeader = () => {
+ if (currentScrollY > topBarHeight) {
+ header.classList.add('header--scrolled');
+ } else {
+ header.classList.remove('header--scrolled');
+ }
+ ticking = false;
+ };
 
-    /**
-     * Read scrollY here (outside rAF) then schedule write
-     */
-    const onScroll = () => {
-      currentScrollY = window.pageYOffset;
-      if (!ticking) {
-        requestAnimationFrame(updateHeader);
-        ticking = true;
-      }
-    };
+ /**
+ * Read scrollY here (outside rAF) then schedule write
+ */
+ const onScroll = () => {
+ currentScrollY = window.pageYOffset;
+ if (!ticking) {
+ requestAnimationFrame(updateHeader);
+ ticking = true;
+ }
+ };
 
-    window.addEventListener('scroll', onScroll, { passive: true });
-    // Defer initial read to avoid forced reflow during page load
-    requestAnimationFrame(function() {
-      currentScrollY = window.pageYOffset;
-      updateHeader();
-    });
-  }
+ window.addEventListener('scroll', onScroll, { passive: true });
+ // Defer initial read to avoid forced reflow during page load
+ requestAnimationFrame(function() {
+ currentScrollY = window.pageYOffset;
+ updateHeader();
+ });
+ }
 
-  // Expose function globally
-  window.initStickyHeader = initStickyHeader;
+ // Expose function globally
+ window.initStickyHeader = initStickyHeader;
 
 })();
