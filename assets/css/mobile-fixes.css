@@ -1133,6 +1133,59 @@ html, body {
 }
 
 /* ==========================================================================
+   INLINE GRID OVERRIDES - for sections using inline style grids
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* About section 2-col grid */
+  [style*="grid-template-columns: 1fr 1fr"],
+  [style*="grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  /* 5-col expertise grid */
+  [style*="grid-template-columns: repeat(5"],
+  [style*="grid-template-columns:repeat(5"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+
+  /* 3-col blog/resources grids */
+  [style*="grid-template-columns: repeat(3"],
+  [style*="grid-template-columns:repeat(3"] {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  /* Fix inline font sizes that are too large on mobile */
+  [style*="font-size:1.35rem"] {
+    font-size: 1.05rem !important;
+    line-height: 1.4 !important;
+  }
+
+  [style*="font-size:1.05rem"] {
+    font-size: 0.9rem !important;
+  }
+
+  /* Map section */
+  .map-embed iframe {
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* 5-col expertise grid to single col on small phones */
+  [style*="grid-template-columns: repeat(5"],
+  [style*="grid-template-columns:repeat(5"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  .map-embed iframe {
+    height: 250px !important;
+  }
+}
+
+/* ==========================================================================
    VERY SMALL PHONE (max-width: 360px)
    ========================================================================== */
 @media (max-width: 360px) {
