@@ -80,42 +80,42 @@ const REPLACEMENTS = [
 
  // ---- 6. Old service image updates ----
  // With leading slash
- { from: 'src="/assets/images/services/janitorial-service.jpg"', to: 'src="/assets/images/services/medical-office-cleaning.jpg"' },
+ { from: 'src="/assets/images/services/janitorial-service.jpg"', to: 'src="/assets/images/services/medical-office-new.webp"' },
  { from: 'src="/assets/images/services/deep-cleaning.jpg"', to: 'src="/assets/images/services/clinic-outpatient-sanitation.jpg"' },
  { from: 'src="/assets/images/services/carpet-cleaning.jpg"', to: 'src="/assets/images/services/infection-control-disinfection.jpg"' },
  { from: 'src="/assets/images/services/upholstery-cleaning.jpg"', to: 'src="/assets/images/services/assisted-living-senior-care.jpg"' },
  { from: 'src="/assets/images/services/general-housekeeping.jpg"', to: 'src="/assets/images/services/compliance-scheduled-sanitation.jpg"' },
 
  // Without leading slash (relative paths)
- { from: 'src="assets/images/services/janitorial-service.jpg"', to: 'src="assets/images/services/medical-office-cleaning.jpg"' },
+ { from: 'src="assets/images/services/janitorial-service.jpg"', to: 'src="assets/images/services/medical-office-new.webp"' },
  { from: 'src="assets/images/services/deep-cleaning.jpg"', to: 'src="assets/images/services/clinic-outpatient-sanitation.jpg"' },
  { from: 'src="assets/images/services/carpet-cleaning.jpg"', to: 'src="assets/images/services/infection-control-disinfection.jpg"' },
  { from: 'src="assets/images/services/upholstery-cleaning.jpg"', to: 'src="assets/images/services/assisted-living-senior-care.jpg"' },
  { from: 'src="assets/images/services/general-housekeeping.jpg"', to: 'src="assets/images/services/compliance-scheduled-sanitation.jpg"' },
 
  // With ../assets/ prefix (for deeply nested pages)
- { from: 'src="../assets/images/services/janitorial-service.jpg"', to: 'src="../assets/images/services/medical-office-cleaning.jpg"' },
+ { from: 'src="../assets/images/services/janitorial-service.jpg"', to: 'src="../assets/images/services/medical-office-new.webp"' },
  { from: 'src="../assets/images/services/deep-cleaning.jpg"', to: 'src="../assets/images/services/clinic-outpatient-sanitation.jpg"' },
  { from: 'src="../assets/images/services/carpet-cleaning.jpg"', to: 'src="../assets/images/services/infection-control-disinfection.jpg"' },
  { from: 'src="../assets/images/services/upholstery-cleaning.jpg"', to: 'src="../assets/images/services/assisted-living-senior-care.jpg"' },
  { from: 'src="../assets/images/services/general-housekeeping.jpg"', to: 'src="../assets/images/services/compliance-scheduled-sanitation.jpg"' },
 
  // With ../../assets/ prefix (for doubly nested pages like services/medical-office-cleaning/city.html)
- { from: 'src="../../assets/images/services/janitorial-service.jpg"', to: 'src="../../assets/images/services/medical-office-cleaning.jpg"' },
+ { from: 'src="../../assets/images/services/janitorial-service.jpg"', to: 'src="../../assets/images/services/medical-office-new.webp"' },
  { from: 'src="../../assets/images/services/deep-cleaning.jpg"', to: 'src="../../assets/images/services/clinic-outpatient-sanitation.jpg"' },
  { from: 'src="../../assets/images/services/carpet-cleaning.jpg"', to: 'src="../../assets/images/services/infection-control-disinfection.jpg"' },
  { from: 'src="../../assets/images/services/upholstery-cleaning.jpg"', to: 'src="../../assets/images/services/assisted-living-senior-care.jpg"' },
  { from: 'src="../../assets/images/services/general-housekeeping.jpg"', to: 'src="../../assets/images/services/compliance-scheduled-sanitation.jpg"' },
 
  // Also handle og:image and other content= attributes with full URLs
- { from: 'content="https://doryscleaningservices.com/assets/images/services/janitorial-service.jpg"', to: 'content="https://doryscleaningservices.com/assets/images/services/medical-office-cleaning.jpg"' },
+ { from: 'content="https://doryscleaningservices.com/assets/images/services/janitorial-service.jpg"', to: 'content="https://doryscleaningservices.com/assets/images/services/medical-office-new.webp"' },
  { from: 'content="https://doryscleaningservices.com/assets/images/services/deep-cleaning.jpg"', to: 'content="https://doryscleaningservices.com/assets/images/services/clinic-outpatient-sanitation.jpg"' },
  { from: 'content="https://doryscleaningservices.com/assets/images/services/carpet-cleaning.jpg"', to: 'content="https://doryscleaningservices.com/assets/images/services/infection-control-disinfection.jpg"' },
  { from: 'content="https://doryscleaningservices.com/assets/images/services/upholstery-cleaning.jpg"', to: 'content="https://doryscleaningservices.com/assets/images/services/assisted-living-senior-care.jpg"' },
  { from: 'content="https://doryscleaningservices.com/assets/images/services/general-housekeeping.jpg"', to: 'content="https://doryscleaningservices.com/assets/images/services/compliance-scheduled-sanitation.jpg"' },
 
  // Handle "url" values in JSON-LD schema for images
- { from: '"https://doryscleaningservices.com/assets/images/services/janitorial-service.jpg"', to: '"https://doryscleaningservices.com/assets/images/services/medical-office-cleaning.jpg"' },
+ { from: '"https://doryscleaningservices.com/assets/images/services/janitorial-service.jpg"', to: '"https://doryscleaningservices.com/assets/images/services/medical-office-new.webp"' },
  { from: '"https://doryscleaningservices.com/assets/images/services/deep-cleaning.jpg"', to: '"https://doryscleaningservices.com/assets/images/services/clinic-outpatient-sanitation.jpg"' },
  { from: '"https://doryscleaningservices.com/assets/images/services/carpet-cleaning.jpg"', to: '"https://doryscleaningservices.com/assets/images/services/infection-control-disinfection.jpg"' },
  { from: '"https://doryscleaningservices.com/assets/images/services/upholstery-cleaning.jpg"', to: '"https://doryscleaningservices.com/assets/images/services/assisted-living-senior-care.jpg"' },

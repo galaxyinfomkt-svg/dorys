@@ -23,7 +23,7 @@ function findAllHtml(dir, list = []) {
 
 // Image mapping: which hero image each page type should use
 const SERVICE_IMAGE_MAP = {
- 'medical-office-cleaning': '/assets/images/services/medical-office-cleaning.jpg',
+ 'medical-office-cleaning': '/assets/images/services/medical-office-new.webp',
  'clinic-outpatient-sanitation': '/assets/images/services/clinic-outpatient-sanitation.jpg',
  'assisted-living-senior-care': '/assets/images/services/assisted-living-senior-care.jpg',
  'infection-control-disinfection': '/assets/images/services/infection-control-disinfection.jpg',
@@ -50,13 +50,13 @@ allFiles.forEach(fp => {
  });
 
  // 2. Fix old service image references (from old services)
- c = c.replace(/\/assets\/images\/services\/janitorial-service\.jpg/g, '/assets/images/services/medical-office-cleaning.jpg');
+ c = c.replace(/\/assets\/images\/services\/janitorial-service\.jpg/g, '/assets/images/services/medical-office-new.webp');
  c = c.replace(/\/assets\/images\/services\/deep-cleaning\.jpg/g, '/assets/images/services/clinic-outpatient-sanitation.jpg');
  c = c.replace(/\/assets\/images\/services\/carpet-cleaning\.jpg/g, '/assets/images/services/assisted-living-senior-care.jpg');
  c = c.replace(/\/assets\/images\/services\/upholstery-cleaning\.jpg/g, '/assets/images/services/infection-control-disinfection.jpg');
  c = c.replace(/\/assets\/images\/services\/general-housekeeping\.jpg/g, '/assets/images/services/compliance-scheduled-sanitation.jpg');
  // Also without leading /
- c = c.replace(/assets\/images\/services\/janitorial-service\.jpg/g, '/assets/images/services/medical-office-cleaning.jpg');
+ c = c.replace(/assets\/images\/services\/janitorial-service\.jpg/g, '/assets/images/services/medical-office-new.webp');
  c = c.replace(/assets\/images\/services\/deep-cleaning\.jpg/g, '/assets/images/services/clinic-outpatient-sanitation.jpg');
  c = c.replace(/assets\/images\/services\/carpet-cleaning\.jpg/g, '/assets/images/services/assisted-living-senior-care.jpg');
  c = c.replace(/assets\/images\/services\/upholstery-cleaning\.jpg/g, '/assets/images/services/infection-control-disinfection.jpg');
