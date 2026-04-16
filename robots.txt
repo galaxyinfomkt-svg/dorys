@@ -17,8 +17,12 @@ Sitemap: https://doryscleaningservices.com/sitemap.xml
 Disallow: /tmp/
 Disallow: /workspace/
 
-# Removed service - janitorial/general-housekeeping (no longer offered)
+# Removed services (no longer offered)
 Disallow: /services/general-housekeeping/
+Disallow: /services/janitorial-service/
+Disallow: /services/deep-cleaning/
+Disallow: /services/carpet-cleaning/
+Disallow: /services/upholstery-cleaning/
 Disallow: /builder-preview/
 Disallow: /search/
 Disallow: /open
