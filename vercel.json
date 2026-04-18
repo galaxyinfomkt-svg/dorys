@@ -28,8 +28,7 @@
     { "source": "/services/infection-control-disinfection/:city", "destination": "/services/rehab-nursing/:city", "permanent": true },
     { "source": "/services/infection-control-disinfection", "destination": "/services/rehab-nursing", "permanent": true },
     { "source": "/services/compliance-scheduled-sanitation/:city", "destination": "/services/healthcare-admin-offices/:city", "permanent": true },
-    { "source": "/services/compliance-scheduled-sanitation", "destination": "/services/healthcare-admin-offices", "permanent": true },
-
+    { "source": "/services/compliance-scheduled-sanitation", "destination": "/services/healthcare-admin-offices", "permanent": true }
   ],
   "rewrites": [
     { "source": "/about", "destination": "/about.html" },
