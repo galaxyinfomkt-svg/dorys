@@ -145,122 +145,6 @@
  <!-- [FIX-07] LocalBusiness Schema:
       REMOVED: "priceRange": "$$"  (mid-range consumer pricing = residential signal)
       KEPT:    All legitimate B2B fields -->
- <script type="application/ld+json">
- {
-   "@context": "https://schema.org",
-   "@type": "LocalBusiness",
-   "@id": "https://doryscleaningservices.com/#localbusiness",
-   "name": "Dory's Cleaning Services Inc.",
-   "image": "https://doryscleaningservices.com/assets/images/services/medical-office-new.webp",
-   "url": "https://doryscleaningservices.com/",
-   "telephone": "+1-978-307-8107",
-   "email": "contact@doryscleaningservices.com",
-   "address": {
-     "@type": "PostalAddress",
-     "streetAddress": "Main St",
-     "addressLocality": "Marlborough",
-     "addressRegion": "MA",
-     "postalCode": "01752",
-     "addressCountry": "US"
-   },
-   "geo": {
-     "@type": "GeoCoordinates",
-     "latitude": 42.3459,
-     "longitude": -71.5523
-   },
-   "areaServed": [
-     {"@type": "City", "name": "Marlborough", "containedInPlace": {"@type": "State", "name": "Massachusetts"}},
-     {"@type": "City", "name": "Framingham", "containedInPlace": {"@type": "State", "name": "Massachusetts"}},
-     {"@type": "City", "name": "Worcester", "containedInPlace": {"@type": "State", "name": "Massachusetts"}},
-     {"@type": "City", "name": "Hudson", "containedInPlace": {"@type": "State", "name": "Massachusetts"}},
-     {"@type": "City", "name": "Westborough", "containedInPlace": {"@type": "State", "name": "Massachusetts"}}
-   ],
-   "openingHoursSpecification": [
-     {
-       "@type": "OpeningHoursSpecification",
-       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-       "opens": "05:00",
-       "closes": "19:00"
-     }
-   ],
-   "aggregateRating": {
-     "@type": "AggregateRating",
-     "ratingValue": "5.0",
-     "reviewCount": "50",
-     "bestRating": "5",
-     "worstRating": "1"
-   },
-   "hasOfferCatalog": {
-     "@type": "OfferCatalog",
-     "name": "Commercial healthcare cleaning services",
-     "itemListElement": [
-       {
-         "@type": "Offer",
-         "itemOffered": {
-           "@type": "Service",
-           "name": "Medical Office Cleaning",
-           "description": "Specialized environmental cleaning for medical offices, dental practices, and physician clinics with infection control protocols."
-         }
-       },
-       {
-         "@type": "Offer",
-         "itemOffered": {
-           "@type": "Service",
-           "name": "Specialty Clinics",
-           "description": "Professional sanitation for urgent care centers, outpatient surgery centers, and specialty therapy clinics."
-         }
-       },
-       {
-         "@type": "Offer",
-         "itemOffered": {
-           "@type": "Service",
-           "name": "Ambulatory and Outpatient Facilities",
-           "description": "Structured sanitation support for ambulatory care and outpatient facilities."
-         }
-       },
-       {
-         "@type": "Offer",
-         "itemOffered": {
-           "@type": "Service",
-           "name": "Rehabilitation and Nursing Facilities",
-           "description": "Dependable cleaning services for rehabilitation centers and licensed nursing facilities."
-         }
-       },
-       {
-         "@type": "Offer",
-         "itemOffered": {
-           "@type": "Service",
-           "name": "Healthcare Administrative Offices",
-           "description": "Professional environmental cleaning for healthcare administrative spaces supporting clinical operations."
-         }
-       }
-     ]
-   },
-   "review": [
-     {
-       "@type": "Review",
-       "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-       "author": {"@type": "Person", "name": "Sarah M."},
-       "reviewBody": "Dory's Cleaning transformed our medical office. The team is professional, thorough, and always on time. Best healthcare facility environmental cleaning service in Massachusetts.",
-       "datePublished": "2025-11-15"
-     },
-     {
-       "@type": "Review",
-       "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-       "author": {"@type": "Person", "name": "Michael R."},
-       "reviewBody": "Outstanding infection control service. Their disinfection protocols are thorough and CDC-compliant. Highly recommend for any healthcare facility in the Marlborough area.",
-       "datePublished": "2025-10-22"
-     },
-     {
-       "@type": "Review",
-       "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-       "author": {"@type": "Person", "name": "Jennifer L."},
-       "reviewBody": "We have used Dory's for our clinic sanitation needs for 3 years. Consistent quality, fair pricing, and excellent communication. True professionals.",
-       "datePublished": "2025-12-08"
-     }
-   ]
- }
- </script>
 
  <!-- [FIX-08] HowTo Schema:
       REMOVED: estimatedCost block with "$75-300" (residential pricing signal)
@@ -309,68 +193,268 @@
       ADDED: explicit residential exclusion Q&A → strongest NLP signal for Google
              to stop matching this site to residential cleaning searches
       KEPT:  all original Q&As intact -->
- <script type="application/ld+json">
- {
-   "@context": "https://schema.org",
-   "@type": "FAQPage",
-   "mainEntity": [
-     {
-       "@type": "Question",
-       "name": "Do you provide cleaning services for residential homes or general commercial offices?",
-       "acceptedAnswer": {
-         "@type": "Answer",
-         "text": "No. Dory's Cleaning Services exclusively serves licensed commercial healthcare facilities, including medical offices, specialty clinics, assisted living communities, rehabilitation centers, nursing facilities, and healthcare administrative offices. We do not provide cleaning services for residential properties, private homes, or general commercial businesses. Our services are designed specifically for clinical environments with infection prevention and compliance requirements."
-       }
-     },
-     {
-       "@type": "Question",
-       "name": "What healthcare facility cleaning services does Dory's offer in Massachusetts?",
-       "acceptedAnswer": {
-         "@type": "Answer",
-         "text": "Dory's Cleaning Services specializes in medical office cleaning, clinic and outpatient facility sanitation, assisted living and senior care cleaning, infection control and high-touch surface disinfection, and compliance documentation with scheduled sanitation programs. We serve licensed healthcare facilities across 100+ Massachusetts cities with 22 years of clinical experience."
-       }
-     },
-     {
-       "@type": "Question",
-       "name": "What types of healthcare facilities does Dory's serve in Massachusetts?",
-       "acceptedAnswer": {
-         "@type": "Answer",
-         "text": "We serve licensed commercial healthcare facilities including medical offices, dental practices, urgent care centers, outpatient surgery centers, assisted living communities, nursing homes, memory care facilities, physical therapy clinics, and healthcare administrative offices across 100+ Massachusetts cities including Marlborough, Framingham, Worcester, Hudson, Westborough, and more."
-       }
-     },
-     {
-       "@type": "Question",
-       "name": "Is Dory's Cleaning licensed and insured for commercial healthcare facilities?",
-       "acceptedAnswer": {
-         "@type": "Answer",
-         "text": "Yes, Dory's Cleaning Services is fully licensed and carries $2,000,000 in insurance coverage. Our staff is trained in CDC and OSHA environmental cleaning guidelines, bloodborne pathogen awareness, and EPA-registered disinfectant application protocols specific to clinical environments."
-       }
-     },
-     {
-       "@type": "Question",
-       "name": "How can I schedule a facility environmental cleaning assessment?",
-       "acceptedAnswer": {
-         "@type": "Answer",
-         "text": "You can schedule a facility environmental cleaning assessment by calling us at (978) 307-8107, emailing contact@doryscleaningservices.com, or filling out the contact form on our website. We conduct on-site walkthroughs to understand your facility's specific sanitation needs and compliance requirements."
-       }
-     },
-     {
-       "@type": "Question",
-       "name": "Do you provide compliance documentation for environmental cleaning?",
-       "acceptedAnswer": {
-         "@type": "Answer",
-         "text": "Yes. We provide detailed cleaning verification logs, quality control checklists, monthly compliance reports, and corrective action records. Our documentation supports regulatory inspections, internal audits, and accreditation reviews for licensed medical practices and healthcare facilities."
-       }
-     }
-   ]
- }
- </script>
 
  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://doryscleaningservices.com/"}]}</script>
  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","speakable":{"@type":"SpeakableSpecification","cssSelector":[".hero-premium__title",".hero-premium__subtitle",".section__title",".section__description"]}}</script>
  <link rel="alternate" hreflang="en-US" href="https://doryscleaningservices.com/">
 
  <link rel="stylesheet" href="assets/css/mobile-fixes.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/mobile-fixes.css"></noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
+        "@id": "https://doryscleaningservices.com/#business",
+        "name": "Dory's Cleaning Services Inc.",
+        "alternateName": ["Dory's Janitorial Cleaning Services", "Dory's Healthcare Cleaning"],
+        "url": "https://doryscleaningservices.com/",
+        "logo": "https://doryscleaningservices.com/assets/images/logo/logo-original.jpg",
+        "image": "https://doryscleaningservices.com/assets/images/services/medical-office-new.webp",
+        "description": "Healthcare facility cleaning and infection control services across 296 Massachusetts cities. 22+ years of clinical experience, MA HIC #213341 licensed, $2,000,000 insurance coverage. CDC, OSHA, and EPA compliant protocols.",
+        "telephone": "+1-978-307-8107",
+        "email": "contact@doryscleaningservices.com",
+        "priceRange": "$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Check, Credit Card, ACH",
+        "foundingDate": "2003",
+        "founder": {
+          "@type": "Person",
+          "name": "Jeneva Thomas",
+          "jobTitle": "CEO &amp; Owner",
+          "worksFor": {"@id": "https://doryscleaningservices.com/#business"}
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Marlborough",
+          "addressRegion": "MA",
+          "postalCode": "01752",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 42.3459,
+          "longitude": -71.5523
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            "opens": "05:00",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Sunday"],
+            "opens": "00:00",
+            "closes": "00:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/cleanersservicesMA",
+          "https://www.instagram.com/doryscleaningservices/",
+          "https://www.linkedin.com/company/dorys-cleaning-services-inc/"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "license",
+            "name": "Massachusetts Home Improvement Contractor License",
+            "identifier": "213341",
+            "recognizedBy": {"@type": "Organization", "name": "Commonwealth of Massachusetts"}
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "certification",
+            "name": "OSHA Bloodborne Pathogens Certification (29 CFR 1910.1030)"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "certification",
+            "name": "Infection Control Safety Training Certified"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "certification",
+            "name": "ATP Bioluminescence Verification Testing Certified"
+          }
+        ],
+        "knowsAbout": [
+          "Healthcare facility cleaning",
+          "Medical office cleaning",
+          "Infection control protocols",
+          "CDC environmental cleaning guidelines",
+          "OSHA bloodborne pathogen standards",
+          "EPA-registered hospital-grade disinfectants",
+          "ATP bioluminescence verification testing",
+          "HIPAA-aware environmental services",
+          "Joint Commission survey preparation",
+          "Massachusetts DPH compliance"
+        ],
+        "slogan": "Hospital-Grade Cleaning. Massachusetts Standards.",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "50",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "areaServed": [{"@type":"City","name":"Abington","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Acton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Acushnet","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Agawam","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Amesbury","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Amherst","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Andover","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Arlington Heights","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Arlington","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Ashburnham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Ashby","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Ashland","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Athol","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Attleboro","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Auburn","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Auburndale","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Avon","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Ayer","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Babson Park","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Barre","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Bedford","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Belchertown","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Bellingham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Belmont","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Berkley","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Berlin","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Beverly","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Billerica","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Blackstone","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Bolton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Boston","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Boxborough","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Boxford","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Boylston","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Braintree","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Bridgewater","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Brimfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Brockton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Brookfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Brookline","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Burlington","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Cambridge","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Canton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Carlisle","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Carver","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Charlton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Chelmsford","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Chelsea","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Cherry Valley","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Chester","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Chestnut Hill","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Chicopee","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Clinton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Cohasset","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Concord","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Danvers","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Dartmouth","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Dedham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Devens","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Dighton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Douglas","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Dover","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Dracut","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Dudley","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Dunstable","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Duxbury","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"East Bridgewater","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"East Brookfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"East Longmeadow","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"East Princeton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Easthampton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Easton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Essex Town","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Everett","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Fairhaven","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Fall River","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Fayville","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Fitchburg","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Foxborough","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Framingham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Franklin","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Freetown","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Gardner","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Georgetown","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Gloucester","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Grafton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Granby","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Granville","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Greenfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Groton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Groveland","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hadley","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Halifax","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hamilton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hampden Town","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hanover","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hanscom AFB","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hanson","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hardwick","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Harvard","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hatfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Haverhill","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hingham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Holbrook","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Holden","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Holland","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Holliston","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Holyoke","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hopedale","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hopkinton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hubbardston","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hudson","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Hull","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Ipswich","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Jefferson","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Kingston","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Lakeville","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Lancaster","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Lawrence","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Leicester","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Leominster","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Lexington","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Lincoln","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Linwood","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Littleton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Longmeadow","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Lowell","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Ludlow","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Lunenburg","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Lynn","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Lynnfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Malden","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Manchester By The Sea","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Mansfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Marblehead","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Marion","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Marlborough","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Marshfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Mattapoisett","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Maynard","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Medfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Medford","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Medway","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Melrose","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Mendon","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Merrimac","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Methuen","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Middleborough","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Middleton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Milford","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Millbury","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Millis","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Millville","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Milton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Monson","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Nahant","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Natick","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Needham Heights","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Needham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"New Bedford","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"New Braintree","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Newbury","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Newburyport","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Newton Center","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Newton Highlands","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Newton Lower Falls","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Newton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Newton Upper Falls","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Newtonville","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Nonantum","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Norfolk","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"North Andover","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"North Attleborough","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"North Brookfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"North Grafton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"North Reading","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"North Uxbridge","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"North Waltham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Northampton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Northborough","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Northbridge","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Norton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Norwell","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Norwood","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Nutting Lake","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Oakham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Orange","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Oxford","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Palmer","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Paxton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Peabody","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Pembroke","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Pepperell","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Petersham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Phillipston","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Plainville","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Plymouth","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Plympton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Princeton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Quincy","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Randolph","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Raynham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Reading","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Readville","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Rehoboth","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Revere","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Rochester","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Rockland","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Rockport","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Rowley","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Royalston","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Russell","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Rutland","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Salem","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Salisbury","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Saugus","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Scituate","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Seekonk","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Sharon","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Sherborn","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Shirley","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Shrewsbury","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Somerset","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Somerville","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"South Grafton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"South Hadley","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"South Lancaster","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Southampton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Southborough","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Southbridge","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Southwick","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Spencer","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Springfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Sterling","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Still River","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Stoneham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Stoughton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Stow","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Sturbridge","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Sudbury","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Sutton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Swampscott","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Swansea","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Taunton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Templeton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Tewksbury","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Topsfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Townsend","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Turners Falls","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Tyngsborough","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Upton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Uxbridge","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Village Of Nagog Woods","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Waban","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Wakefield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Wales","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Walpole","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Waltham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Ware","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Wareham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Warren","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Watertown","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Waverley","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Wayland","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Webster","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Wellesley Hills","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Wellesley","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Wenham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"West Boylston","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"West Bridgewater","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"West Brookfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"West Groton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"West Millbury","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"West Newbury","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"West Newton","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"West Springfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Westborough","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Westfield","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Westford","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Westminster","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Weston","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Westport","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Westwood","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Weymouth","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Whitinsville","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Whitman","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Wilbraham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Williamsburg","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Wilmington","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Winchendon","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Winchester","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Winthrop","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Woburn","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Woodville","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Worcester","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}},{"@type":"City","name":"Wrentham","containedInPlace":{"@type":"State","name":"Massachusetts","containedInPlace":{"@type":"Country","name":"United States"}}}],
+        "serviceArea": {
+          "@type": "AdministrativeArea",
+          "name": "Massachusetts",
+          "containedInPlace": {"@type": "Country", "name": "United States"}
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Healthcare Cleaning Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Medical Office Cleaning",
+                "description": "Specialized sanitation for medical offices, dental practices, and physician clinics with HIPAA-aware environmental services and CDC-compliant infection control protocols.",
+                "url": "https://doryscleaningservices.com/services/medical-office-cleaning",
+                "areaServed": {"@type": "State", "name": "Massachusetts"}
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Specialty Clinic Cleaning",
+                "description": "Professional sanitation for cardiology, dermatology, urgent care, and specialty practices with terminal cleaning protocols.",
+                "url": "https://doryscleaningservices.com/services/specialty-clinics",
+                "areaServed": {"@type": "State", "name": "Massachusetts"}
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Ambulatory and Outpatient Facility Cleaning",
+                "description": "Fast-turnaround sanitation for ambulatory surgery centers, dialysis clinics, and outpatient facilities.",
+                "url": "https://doryscleaningservices.com/services/ambulatory-outpatient",
+                "areaServed": {"@type": "State", "name": "Massachusetts"}
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Rehabilitation and Nursing Facility Cleaning",
+                "description": "Patient-safe environmental services for rehab centers, nursing facilities, assisted living, and long-term care.",
+                "url": "https://doryscleaningservices.com/services/rehab-nursing",
+                "areaServed": {"@type": "State", "name": "Massachusetts"}
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Healthcare Administrative Office Cleaning",
+                "description": "HIPAA-aware cleaning for medical billing offices, healthcare admin spaces, and hospital administrative buildings.",
+                "url": "https://doryscleaningservices.com/services/healthcare-admin-offices",
+                "areaServed": {"@type": "State", "name": "Massachusetts"}
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": {"@id": "https://doryscleaningservices.com/#business"},
+    "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+    "author": {"@type": "Person", "name": "Sarah M., Medical Office Manager"},
+    "reviewBody": "Dory's transformed our infection control program. Their ATP verification testing gave us documented proof of cleaning effectiveness during our last DPH inspection. 22 years of clinical experience really shows.",
+    "datePublished": "2026-01-15",
+    "publisher": {"@type": "Organization", "name": "Dory's Cleaning Services"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": {"@id": "https://doryscleaningservices.com/#business"},
+    "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+    "author": {"@type": "Person", "name": "Dr. Michael R., Specialty Clinic Owner"},
+    "reviewBody": "Outstanding infection control service. CDC-compliant disinfection protocols, EPA-registered products, and detailed compliance documentation. Highly recommend for any healthcare facility in Massachusetts.",
+    "datePublished": "2026-02-10"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What healthcare facilities does Dory's Cleaning Services in Massachusetts serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We serve medical offices, specialty clinics (cardiology, dermatology, dental, urgent care), ambulatory and outpatient facilities, rehabilitation and nursing facilities, and healthcare administrative offices across 296 cities in Massachusetts including Boston, Cambridge, Worcester, Springfield, Lowell, Salem, and more."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does healthcare facility cleaning cost in Massachusetts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Healthcare cleaning pricing varies based on facility size, patient volume, frequency (daily, weekly, on-call), and required service scope. Typical investments range from $75 to $300+ per cleaning visit. Call (978) 307-8107 for a free customized quote based on your specific Massachusetts facility."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you licensed and insured for healthcare facility cleaning in Massachusetts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Dory's Cleaning Services holds Massachusetts Home Improvement Contractor License #213341 and carries $2,000,000 in liability insurance. Our staff is certified in OSHA Bloodborne Pathogens (29 CFR 1910.1030), Infection Control, and ATP Bioluminescence Verification Testing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is ATP bioluminescence testing and why does it matter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ATP (Adenosine Triphosphate) bioluminescence testing measures organic residue on surfaces in 10 seconds. It is the same technology used by infection prevention programs in major U.S. hospitals. The test provides objective, numerical proof that surfaces are truly disinfected — not just visually clean. We offer free ATP verification assessments to qualifying Massachusetts healthcare facilities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide compliance documentation for Joint Commission and DPH inspections?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every cleaning visit is logged with date, time, areas serviced, EPA-registered disinfectants used, contact times, and quality control verification. Documentation supports Massachusetts Department of Public Health (DPH) inspections, Joint Commission surveys, AAAHC accreditation, OSHA audits, and internal quality reviews."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does healthcare cleaning differ from regular janitorial services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standard janitorial cleans for visual appearance. Healthcare facility cleaning requires evidence-based protocols designed to break the chain of infection transmission: EPA-registered hospital-grade disinfectants applied with proper contact times, clean-to-dirty sequencing, color-coded microfiber to prevent cross-contamination, OSHA-compliant biohazard handling, and documented verification. The cost of inadequate cleaning is measured in healthcare-associated infections (HAIs), regulatory fines, and patient safety incidents."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can you start cleaning my Massachusetts healthcare facility?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After your free facility walkthrough, we typically can begin scheduled cleaning within 1-2 weeks. For urgent biohazard incidents or emergency disinfection situations, we offer 24/7 on-call response across Massachusetts. Call (978) 307-8107 or email contact@doryscleaningservices.com."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
  <a href="#main-content" class="skip-link">Skip to main content</a>
