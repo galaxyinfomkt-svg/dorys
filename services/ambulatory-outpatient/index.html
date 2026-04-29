@@ -93,6 +93,59 @@
  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does ambulatory and outpatient facility environmental cleaning from Dory's include?","acceptedAnswer":{"@type":"Answer","text":"Our ambulatory and outpatient cleaning service includes treatment room disinfection, patient intake and discharge area sanitation, waiting room cleaning, restroom sanitation, hard floor care, high-touch surface disinfection, medical equipment exterior cleaning, and post-procedure room turnover. We also handle regulated waste area maintenance and provide compliance documentation for every service visit."}},{"@type":"Question","name":"How often should an outpatient facility be professionally cleaned?","acceptedAnswer":{"@type":"Answer","text":"Outpatient facilities typically require daily cleaning with same-day turnover cleaning between procedures. High-volume ambulatory surgery centers and infusion clinics often need multiple cleaning cycles per day. Dory's works with your facility director to design a schedule that aligns with patient flow, procedure schedules, and infection control protocols."}},{"@type":"Question","name":"What compliance standards does Dory's follow for ambulatory care facilities?","acceptedAnswer":{"@type":"Answer","text":"Dory's follows OSHA workplace safety standards, CDC environmental infection control guidelines for ambulatory care, EPA-registered disinfectant protocols, AORN-informed cleaning practices for procedural areas, and Massachusetts Department of Public Health regulations. We maintain detailed cleaning logs to support your facility's accreditation and survey readiness."}},{"@type":"Question","name":"Why is Dory's the right choice for ambulatory and outpatient facility environmental cleaning?","acceptedAnswer":{"@type":"Answer","text":"Ambulatory and outpatient facilities operate at a fast pace with rapid patient turnover, making infection prevention critical. Dory's exclusively serves healthcare facilities and has over 22 years of experience with the unique demands of outpatient environments. Our staff are trained in between-procedure room turnover, terminal cleaning, and the documentation requirements that ambulatory care accreditation bodies expect."}}]}</script>
 
  <link rel="alternate" hreflang="en-US" href="https://doryscleaningservices.com/services/ambulatory-outpatient">
+
+<style>
+/* Mobile Sticky CTA Bar - Always visible call/contact on mobile */
+.mobile-sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: linear-gradient(135deg, #1a5bc4 0%, #2b70e4 100%);
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+  padding: 0.625rem 0.75rem;
+  display: none;
+}
+.mobile-sticky-cta__inner {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.mobile-sticky-cta__btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.7rem 0.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  min-height: 44px;
+  white-space: nowrap;
+}
+.mobile-sticky-cta__btn--call {
+  background: #f59e0b;
+  color: #fff;
+}
+.mobile-sticky-cta__btn--call:hover { background: #d97706; }
+.mobile-sticky-cta__btn--quote {
+  background: #fff;
+  color: #1a5bc4;
+}
+.mobile-sticky-cta__btn--quote:hover { background: #f1f5f9; }
+.mobile-sticky-cta__btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+@media (max-width: 768px) {
+  .mobile-sticky-cta { display: block; }
+  body { padding-bottom: 70px; }
+}
+</style>
 </head>
 <body>
  <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -882,5 +935,19 @@
 })();
 </script>
 <script src="../../assets/js/a11y-patch.js" defer></script>
+
+<!-- Mobile Sticky CTA Bar -->
+<div class="mobile-sticky-cta">
+  <div class="mobile-sticky-cta__inner">
+    <a href="tel:+19783078107" class="mobile-sticky-cta__btn mobile-sticky-cta__btn--call" data-track="cta-mobile-sticky-call" aria-label="Call (978) 307-8107">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      Call Now
+    </a>
+    <a href="/contact" class="mobile-sticky-cta__btn mobile-sticky-cta__btn--quote" data-track="cta-mobile-sticky-quote">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.11-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+      Free Quote
+    </a>
+  </div>
+</div>
 </body>
 </html>
