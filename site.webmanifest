@@ -1,0 +1,25 @@
+{
+  "name": "Dory's Cleaning Services",
+  "short_name": "Dory's Cleaning",
+  "description": "Healthcare facility cleaning services across Massachusetts. 22+ years clinical experience. CDC/OSHA compliant. $2M insured.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2b70e4",
+  "icons": [
+    {
+      "src": "/assets/images/logo/logo-original.jpg",
+      "sizes": "250x250",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/logo/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["business", "healthcare"],
+  "lang": "en-US"
+}
