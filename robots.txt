@@ -1,6 +1,6 @@
-# Robots.txt for Dorys Janitorial Cleaning Services
+# Robots.txt for Dory's Cleaning Services
 # https://doryscleaningservices.com
-# Last updated: 2026-01-08
+# Last updated: 2026-04-29
 
 User-agent: *
 Allow: /
