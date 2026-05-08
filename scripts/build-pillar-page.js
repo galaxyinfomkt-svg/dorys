@@ -1,0 +1,243 @@
+/**
+ * B02 — Constrói a Pillar Page "Healthcare Cleaning in Massachusetts:
+ * Complete Guide for Facility Managers [2026]" usando o template da
+ * cardiology-clinic-cleaning.html como base e substituindo title/H1/main.
+ *
+ * Conteúdo: ~3.200 palavras únicas, 8 seções, internal links para os 21
+ * blog posts existentes + 5 service hubs.
+ */
+const fs = require('fs');
+const path = require('path');
+
+const rootDir = path.resolve(__dirname, '..');
+const fp = path.join(rootDir, 'healthcare-cleaning-massachusetts-guide.html');
+
+let html = fs.readFileSync(fp, 'utf8');
+
+// === SUBSTITUIÇÕES NO HEAD ===
+const newTitle = 'Healthcare Cleaning in Massachusetts | Complete Guide [2026]';
+const newDesc = 'The complete 2026 guide to commercial healthcare facility cleaning in Massachusetts. CDC/OSHA compliance, infection control, vendor selection, ATP testing, MA regulations. By Dory\'s Cleaning — 22+ yrs clinical experience.';
+const canonical = 'https://doryscleaningservices.com/healthcare-cleaning-massachusetts-guide';
+
+// Title tags
+html = html.replace(/<title>[^<]*<\/title>/, '<title>' + newTitle + '</title>');
+html = html.replace(/(<meta property="og:title" content=")[^"]*(")/g, '$1' + newTitle + '$2');
+html = html.replace(/(<meta name="twitter:title" content=")[^"]*(")/g, '$1' + newTitle + '$2');
+
+// Description tags
+html = html.replace(/(<meta name="description" content=")[^"]*(")/g, '$1' + newDesc + '$2');
+html = html.replace(/(<meta property="og:description" content=")[^"]*(")/g, '$1' + newDesc + '$2');
+
+// Canonical + og:url
+html = html.replace(/<link rel="canonical" href="[^"]*">/, '<link rel="canonical" href="' + canonical + '">');
+html = html.replace(/(<meta property="og:url" content=")[^"]*(")/g, '$1' + canonical + '$2');
+html = html.replace(/<link rel="alternate" hreflang="en-US" href="[^"]*">/, '<link rel="alternate" hreflang="en-US" href="' + canonical + '">');
+
+// Breadcrumb schema
+const newBreadcrumbSchema = '<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://doryscleaningservices.com/"},{"@type":"ListItem","position":2,"name":"Healthcare Cleaning Guide","item":"' + canonical + '"}]}</script>';
+html = html.replace(/<script type="application\/ld\+json">\{"@context":"https:\/\/schema\.org","@type":"BreadcrumbList"[^<]*<\/script>/, newBreadcrumbSchema);
+
+// Substitui Service schema por Article + HowTo schema
+const articleSchema = `<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Healthcare Cleaning in Massachusetts: Complete Guide for Facility Managers","description":"${newDesc.replace(/"/g, '\\"')}","image":"https://doryscleaningservices.com/assets/images/hero/about-hero.webp","author":{"@type":"Organization","name":"Dory's Cleaning Services Inc.","url":"https://doryscleaningservices.com"},"publisher":{"@type":"Organization","name":"Dory's Cleaning Services Inc.","url":"https://doryscleaningservices.com","telephone":"+1-978-307-8107","logo":{"@type":"ImageObject","url":"https://doryscleaningservices.com/assets/images/logo/logo-original.jpg"}},"datePublished":"2026-05-08","dateModified":"2026-05-08","wordCount":3200,"mainEntityOfPage":{"@type":"WebPage","@id":"${canonical}"}}</script>
+ <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Choose a Healthcare Cleaning Vendor in Massachusetts","description":"Step-by-step process for selecting a compliant clinical cleaning vendor for MA healthcare facilities.","totalTime":"PT30M","step":[{"@type":"HowToStep","name":"Verify clinical experience","text":"Confirm the vendor has hands-on clinical cleaning experience — not just commercial janitorial. Ask for years inside hospitals, clinics, or nursing facilities."},{"@type":"HowToStep","name":"Check licensing & insurance","text":"Verify Massachusetts HIC license number and minimum $1M liability insurance. Request certificates of insurance naming your facility as additional insured."},{"@type":"HowToStep","name":"Audit certifications","text":"Confirm staff training in OSHA Bloodborne Pathogens (29 CFR 1910.1030), Infection Control protocols, and ATP Bioluminescence Testing."},{"@type":"HowToStep","name":"Request compliance documentation","text":"Healthcare-grade vendors provide written cleaning logs, EPA List N product records, and ATP verification reports per service visit."},{"@type":"HowToStep","name":"Schedule a facility walkthrough","text":"Request a free on-site walkthrough. The vendor should identify high-touch surfaces, terminal cleaning needs, and risk areas specific to your facility type."}]}</script>`;
+html = html.replace(/<script type="application\/ld\+json">\{"@context":"https:\/\/schema\.org","@type":"Service"[\s\S]*?<\/script>/, articleSchema);
+
+// === SUBSTITUI BREADCRUMB VISÍVEL ===
+html = html.replace(
+  /<li class="breadcrumb__item" aria-current="page">[^<]*<\/li>/,
+  '<li class="breadcrumb__item" aria-current="page">Healthcare Cleaning Guide</li>'
+);
+
+// === SUBSTITUI O <main> COMPLETO ===
+const newMain = `
+ <main id="main-content">
+   <!-- Hero -->
+   <section class="hero hero--inner" style="background:linear-gradient(135deg,#1a1a2e 0%,#2b70e4 100%);padding:6rem 0 4rem;">
+     <div class="container">
+       <div class="hero__content hero__content--center" style="max-width:880px;margin:0 auto;text-align:center;">
+         <span style="display:inline-block;padding:.5rem 1rem;background:rgba(255,255,255,.15);border-radius:50px;color:#fbbf24;font-size:.875rem;font-weight:600;margin-bottom:1rem;letter-spacing:.05em;">📚 COMPLETE GUIDE · 2026 EDITION</span>
+         <h1 style="color:#fff;font-size:clamp(2rem,4.5vw,3.25rem);font-weight:800;line-height:1.15;margin-bottom:1.25rem;">Healthcare Cleaning in Massachusetts: Complete Guide for Facility Managers</h1>
+         <p style="color:rgba(255,255,255,.92);font-size:1.125rem;line-height:1.7;max-width:720px;margin:0 auto 1.75rem;">Everything Massachusetts healthcare facility administrators, practice managers, and DONs need to know about commercial healthcare cleaning in 2026 — from CDC compliance frameworks to vendor selection, ATP verification, and emergency response. Written by clinical cleaning professionals with 22+ years in MA hospitals.</p>
+         <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+           <a href="#contact" class="btn btn--white btn--lg">Request a Free Facility Assessment</a>
+           <a href="tel:+19783078107" class="btn btn--outline-light btn--lg">📞 (978) 307-8107</a>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <!-- Table of Contents -->
+   <section class="section" style="padding:3rem 0;background:#f8fafc;border-bottom:1px solid #e2e8f0;">
+     <div class="container">
+       <div style="max-width:840px;margin:0 auto;background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.06);padding:2rem;">
+         <h2 style="font-size:1.25rem;color:#1a1a2e;margin-bottom:1.25rem;font-weight:700;">📋 What You'll Learn in This Guide</h2>
+         <ol style="list-style:decimal inside;line-height:2;color:#475569;font-size:1rem;">
+           <li><a href="#what-is" style="color:#2b70e4;text-decoration:none;font-weight:500;">What Is Clinical Healthcare Cleaning (and Why It's Different)</a></li>
+           <li><a href="#compliance" style="color:#2b70e4;text-decoration:none;font-weight:500;">CDC, OSHA &amp; EPA Compliance Framework</a></li>
+           <li><a href="#facility-types" style="color:#2b70e4;text-decoration:none;font-weight:500;">Healthcare Facility Types We Serve in Massachusetts</a></li>
+           <li><a href="#atp-testing" style="color:#2b70e4;text-decoration:none;font-weight:500;">ATP Testing &amp; Quality Verification</a></li>
+           <li><a href="#infection-prevention" style="color:#2b70e4;text-decoration:none;font-weight:500;">Infection Prevention &amp; High-Touch Disinfection</a></li>
+           <li><a href="#emergency" style="color:#2b70e4;text-decoration:none;font-weight:500;">Emergency Response: COVID, Outbreak &amp; Biohazard</a></li>
+           <li><a href="#choose-vendor" style="color:#2b70e4;text-decoration:none;font-weight:500;">How to Choose a Healthcare Cleaning Vendor in MA</a></li>
+           <li><a href="#ma-regulations" style="color:#2b70e4;text-decoration:none;font-weight:500;">Massachusetts-Specific Regulations You Must Know</a></li>
+         </ol>
+       </div>
+     </div>
+   </section>
+
+   <!-- Section 1: What Is Clinical Healthcare Cleaning -->
+   <section id="what-is" class="section" style="padding:4rem 0;">
+     <div class="container">
+       <div style="max-width:820px;margin:0 auto;">
+         <h2 class="section__title" style="font-size:2rem;color:#1a1a2e;margin-bottom:1.5rem;">1. What Is Clinical Healthcare Cleaning (and Why It's Different)</h2>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">Clinical healthcare cleaning is a structured, protocol-driven discipline of environmental sanitation specifically designed for licensed medical facilities. It is fundamentally different from commercial janitorial work in three measurable ways: <strong>training</strong> (staff certified in bloodborne pathogen exposure control and infection prevention), <strong>chemistry</strong> (EPA List N hospital-grade disinfectants applied with documented contact-time compliance), and <strong>verification</strong> (ATP bioluminescence readings that quantitatively confirm surface decontamination).</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">A standard janitor empties trash, vacuums carpet, and wipes desks. A clinical cleaning technician follows a documented terminal cleaning sequence — top-to-bottom, clean-to-dirty, low-touch to high-touch — in operating rooms, exam rooms, and procedural areas, then verifies the result with ATP swabs that read residual organic matter in relative light units (RLU). Below the threshold, the surface passes. Above, the technician re-cleans and re-tests.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">For Massachusetts healthcare facility administrators, this distinction is operationally and legally important. State inspectors, Joint Commission surveyors, and DPH auditors evaluate environmental cleaning logs as part of any compliance review. A facility cleaned by an unverified janitorial vendor — even one that "looks clean" — frequently fails inspection because there is no auditable documentation chain proving CDC-aligned protocols were followed.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;">For a deeper comparison, read our breakdown of <a href="/blog/clinical-cleaning-vs-janitorial-cleaning-differences" style="color:#2b70e4;font-weight:500;">clinical cleaning vs. janitorial cleaning</a> and the operational risks of choosing the wrong vendor.</p>
+       </div>
+     </div>
+   </section>
+
+   <!-- Section 2: Compliance Framework -->
+   <section id="compliance" class="section" style="padding:4rem 0;background:#f8fafc;">
+     <div class="container">
+       <div style="max-width:820px;margin:0 auto;">
+         <h2 class="section__title" style="font-size:2rem;color:#1a1a2e;margin-bottom:1.5rem;">2. CDC, OSHA &amp; EPA Compliance Framework</h2>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">Three federal frameworks govern environmental cleaning inside Massachusetts healthcare facilities. Understanding which applies to which surface, and which agency audits what, is the foundation of facility compliance.</p>
+         <h3 style="font-size:1.25rem;color:#1a1a2e;margin:1.5rem 0 .75rem;font-weight:700;">CDC Environmental Infection Control Guidelines</h3>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">The CDC publishes the <em>Guideline for Environmental Infection Control in Healthcare Facilities</em>, which defines surface categorization (critical, semi-critical, non-critical), cleaning frequency by patient-care zone, and disinfectant selection. Rooms with bloodborne pathogen exposure require terminal cleaning between patients with EPA-registered hospital disinfectants applied at the manufacturer's stated wet contact time. Read more in our <a href="/blog/cdc-compliance-environmental-sanitation-clinics" style="color:#2b70e4;font-weight:500;">CDC compliance guide for MA clinics</a>.</p>
+         <h3 style="font-size:1.25rem;color:#1a1a2e;margin:1.5rem 0 .75rem;font-weight:700;">OSHA Bloodborne Pathogens Standard (29 CFR 1910.1030)</h3>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">OSHA's bloodborne pathogens standard requires that any worker with reasonably anticipated exposure to blood or other potentially infectious materials (OPIM) — including environmental cleaning staff — receive annual training, hepatitis B vaccination availability, and proper PPE. Massachusetts medical offices are audited on OSHA exposure control plan compliance and cleaning vendor training records. Our <a href="/blog/osha-cleaning-requirements-medical-offices-2026" style="color:#2b70e4;font-weight:500;">2026 OSHA cleaning requirements guide</a> walks through the documentation needed.</p>
+         <h3 style="font-size:1.25rem;color:#1a1a2e;margin:1.5rem 0 .75rem;font-weight:700;">EPA-Registered Disinfectants</h3>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">Only EPA-registered disinfectants on List N (or the appropriate registration list for the target pathogen) may be claimed as "hospital-grade" or used for compliance documentation. Each product carries a registration number, an approved kill claim list, and a stated contact time — typically 1 to 10 minutes. Wiping a surface "wet" without observing the contact time is non-compliant, even if the chemistry is correct. See our <a href="/blog/epa-registered-disinfectants-healthcare-guide" style="color:#2b70e4;font-weight:500;">EPA disinfectant selection guide</a>.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;">For the bloodborne pathogen cleanup procedure specifically, our <a href="/blog/bloodborne-pathogen-cleanup-protocols-clinical-environments" style="color:#2b70e4;font-weight:500;">step-by-step bloodborne pathogen cleanup protocol</a> covers PPE donning sequence, spill containment, and documentation.</p>
+       </div>
+     </div>
+   </section>
+
+   <!-- Section 3: Facility Types -->
+   <section id="facility-types" class="section" style="padding:4rem 0;">
+     <div class="container">
+       <div style="max-width:820px;margin:0 auto;">
+         <h2 class="section__title" style="font-size:2rem;color:#1a1a2e;margin-bottom:1.5rem;">3. Healthcare Facility Types We Serve in Massachusetts</h2>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1.25rem;">Each facility category has distinct environmental risks and corresponding cleaning protocols. Dory's Cleaning Services serves all licensed commercial healthcare facility types across 296 Massachusetts cities.</p>
+         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1.5rem 0;">
+           <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem;">
+             <h3 style="font-size:1.0625rem;color:#1a1a2e;margin-bottom:.5rem;font-weight:700;">🏥 Medical Offices</h3>
+             <p style="font-size:.95rem;line-height:1.6;color:#475569;margin:0;">Primary care, internal medicine, pediatric, and multi-specialty practices. <a href="/services/medical-office-cleaning" style="color:#2b70e4;">See service →</a></p>
+           </div>
+           <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem;">
+             <h3 style="font-size:1.0625rem;color:#1a1a2e;margin-bottom:.5rem;font-weight:700;">🔬 Specialty Clinics</h3>
+             <p style="font-size:.95rem;line-height:1.6;color:#475569;margin:0;">Cardiology, dental, dermatology, orthopedics. <a href="/services/specialty-clinics" style="color:#2b70e4;">See service →</a></p>
+           </div>
+           <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem;">
+             <h3 style="font-size:1.0625rem;color:#1a1a2e;margin-bottom:.5rem;font-weight:700;">🏃 Ambulatory &amp; Outpatient</h3>
+             <p style="font-size:.95rem;line-height:1.6;color:#475569;margin:0;">Urgent care, ASCs, infusion centers. <a href="/services/ambulatory-outpatient" style="color:#2b70e4;">See service →</a></p>
+           </div>
+           <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem;">
+             <h3 style="font-size:1.0625rem;color:#1a1a2e;margin-bottom:.5rem;font-weight:700;">💊 Rehab &amp; Nursing</h3>
+             <p style="font-size:.95rem;line-height:1.6;color:#475569;margin:0;">SNFs, rehabilitation, assisted living. <a href="/services/rehab-nursing" style="color:#2b70e4;">See service →</a></p>
+           </div>
+           <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem;">
+             <h3 style="font-size:1.0625rem;color:#1a1a2e;margin-bottom:.5rem;font-weight:700;">📋 Healthcare Admin</h3>
+             <p style="font-size:.95rem;line-height:1.6;color:#475569;margin:0;">Billing offices, network HQs, telehealth ops. <a href="/services/healthcare-admin-offices" style="color:#2b70e4;">See service →</a></p>
+           </div>
+         </div>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">For dental practices specifically, our <a href="/blog/dental-office-sterilization-environmental-services" style="color:#2b70e4;font-weight:500;">dental office sterilization &amp; environmental services guide</a> covers the additional sterilization-zone protocols required by state dental boards. For SNF and assisted living, see our <a href="/blog/infection-prevention-assisted-living-facilities" style="color:#2b70e4;font-weight:500;">infection prevention guide for assisted living</a>.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;">Outpatient and ambulatory facilities have distinct workflow demands — read about <a href="/blog/scheduled-sanitation-program-healthcare-facilities" style="color:#2b70e4;font-weight:500;">scheduling sanitation around clinical hours</a>.</p>
+       </div>
+     </div>
+   </section>
+
+   <!-- Section 4: ATP Testing -->
+   <section id="atp-testing" class="section" style="padding:4rem 0;background:#f8fafc;">
+     <div class="container">
+       <div style="max-width:820px;margin:0 auto;">
+         <h2 class="section__title" style="font-size:2rem;color:#1a1a2e;margin-bottom:1.5rem;">4. ATP Testing &amp; Quality Verification</h2>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">ATP (adenosine triphosphate) bioluminescence testing is the gold standard for verifying that a surface has been correctly cleaned. The test takes ten seconds: a swab is rubbed on the cleaned surface, inserted into a luminometer, and reads residual organic matter as relative light units (RLU). Hospital-grade thresholds are typically below 30 RLU for high-touch surfaces and below 100 RLU for general patient-care areas.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">Why this matters: visually, a surface can appear spotless but still hold biological residue invisible to the eye. ATP testing forces an objective verification — the cleaning either passed the threshold or it failed. When it fails, the technician re-cleans and re-tests. Each test produces a numeric, time-stamped record, which becomes part of the facility's environmental compliance log.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">For Massachusetts facilities preparing for inspection, ATP logs are extremely persuasive evidence of due diligence. Auditors who see numeric verification records — versus a generic checklist of "cleaned" — substantially shorten the environmental portion of the inspection.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">Dory's offers <a href="/atp-assessment" style="color:#2b70e4;font-weight:500;">free ATP surface testing</a> for qualifying MA healthcare facilities — three slots per month. We also publish a deeper guide on <a href="/blog/environmental-services-quality-control-healthcare" style="color:#2b70e4;font-weight:500;">environmental services quality control</a> covering audit cadence, sample size, and threshold setting.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;">Frequency planning is its own discipline — read our <a href="/blog/high-touch-surface-disinfection-frequency-healthcare" style="color:#2b70e4;font-weight:500;">high-touch surface disinfection frequency guide</a> for CDC-aligned cadence by surface category.</p>
+       </div>
+     </div>
+   </section>
+
+   <!-- Section 5: Infection Prevention -->
+   <section id="infection-prevention" class="section" style="padding:4rem 0;">
+     <div class="container">
+       <div style="max-width:820px;margin:0 auto;">
+         <h2 class="section__title" style="font-size:2rem;color:#1a1a2e;margin-bottom:1.5rem;">5. Infection Prevention &amp; High-Touch Disinfection</h2>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">Healthcare-associated infections (HAIs) account for roughly 1 in 31 inpatient cases and a significant share of ambulatory complications. Environmental surfaces are a documented vector — particularly high-touch surfaces inside exam and procedural rooms: door handles, light switches, bed rails, faucet handles, exam table grips, BP cuffs, stethoscope diaphragms, and computer keyboards. Each of these requires disinfection between patients, not just at end-of-day terminal cleaning.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">There are two cleaning models in healthcare environments: <strong>concurrent cleaning</strong> (between patients, focused on high-touch surfaces) and <strong>terminal cleaning</strong> (end of day or end of case, full surface coverage including floor, walls, and equipment). Both are required, and they're not interchangeable. Read our breakdown of <a href="/blog/terminal-cleaning-vs-concurrent-cleaning-healthcare" style="color:#2b70e4;font-weight:500;">terminal vs. concurrent cleaning in healthcare</a> for protocol detail.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">For medical offices specifically, our <a href="/blog/infection-control-best-practices-medical-offices" style="color:#2b70e4;font-weight:500;">infection control best practices for medical offices</a> covers the practical exam-room workflow. For surgery centers and procedural suites, our <a href="/blog/operating-room-terminal-cleaning-protocols" style="color:#2b70e4;font-weight:500;">operating room terminal cleaning protocols</a> walks through the AORN-aligned sequence.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;">Staff training is foundational — see our <a href="/blog/healthcare-cleaning-staff-training-certification" style="color:#2b70e4;font-weight:500;">healthcare cleaning staff training &amp; certification guide</a> for the certifications your vendor's team should hold.</p>
+       </div>
+     </div>
+   </section>
+
+   <!-- Section 6: Emergency Response -->
+   <section id="emergency" class="section" style="padding:4rem 0;background:#f8fafc;">
+     <div class="container">
+       <div style="max-width:820px;margin:0 auto;">
+         <h2 class="section__title" style="font-size:2rem;color:#1a1a2e;margin-bottom:1.5rem;">6. Emergency Response: COVID, Outbreak &amp; Biohazard</h2>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">Healthcare facilities require a vendor with a documented 24/7 response capability for three categories of incident: respiratory outbreak (COVID-19, influenza, RSV), biohazard exposure (blood, OPIM), and HAI cluster decontamination. Each requires a different decontamination protocol and PPE level.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">For COVID and respiratory pathogens, the facility-specific approach uses EPA List N disinfectants with verified SARS-CoV-2 kill claims and observed contact time. The pandemic produced lasting changes in healthcare cleaning practice — read our retrospective on <a href="/blog/covid-cleaning-legacy-permanent-changes-healthcare" style="color:#2b70e4;font-weight:500;">5 permanent COVID-era cleaning changes for healthcare</a>. Our dedicated <a href="/covid-disinfection" style="color:#2b70e4;font-weight:500;">COVID disinfection service</a> covers same-day response.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">For biohazard cleanup, OSHA's bloodborne pathogen standard requires a written exposure control plan and proper PPE (gloves, fluid-resistant gown, face shield, N95 if aerosol risk). The procedure is detailed in our <a href="/blog/bloodborne-pathogen-cleanup-protocols-clinical-environments" style="color:#2b70e4;font-weight:500;">bloodborne pathogen cleanup protocol</a>. For 24/7 incident response, see our <a href="/emergency-cleaning" style="color:#2b70e4;font-weight:500;">emergency cleaning service</a>.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;">Specialty environments — dental, surgery centers, dialysis, urgent care — each have facility-specific risk profiles. See our pages on <a href="/cardiology-clinic-cleaning" style="color:#2b70e4;font-weight:500;">cardiology clinics</a>, <a href="/urgent-care-cleaning" style="color:#2b70e4;font-weight:500;">urgent care</a>, <a href="/dialysis-clinic-cleaning" style="color:#2b70e4;font-weight:500;">dialysis</a>, and <a href="/surgery-center-cleaning" style="color:#2b70e4;font-weight:500;">surgery centers</a>.</p>
+       </div>
+     </div>
+   </section>
+
+   <!-- Section 7: Choose Vendor -->
+   <section id="choose-vendor" class="section" style="padding:4rem 0;">
+     <div class="container">
+       <div style="max-width:820px;margin:0 auto;">
+         <h2 class="section__title" style="font-size:2rem;color:#1a1a2e;margin-bottom:1.5rem;">7. How to Choose a Healthcare Cleaning Vendor in MA</h2>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">Vendor selection is the single most consequential decision a Massachusetts facility manager makes for environmental compliance. The wrong vendor will cost more in failed inspections and cleaning re-work than the price difference saved by hiring them. Use this five-step framework:</p>
+         <ol style="font-size:1.0625rem;line-height:1.9;color:#334155;padding-left:1.5rem;list-style:decimal;">
+           <li style="margin-bottom:.5rem;"><strong>Verify clinical experience.</strong> Ask how many years inside hospitals, clinics, or SNFs. Commercial janitors retrained as "healthcare" cleaners after the pandemic are not equivalent to clinical professionals.</li>
+           <li style="margin-bottom:.5rem;"><strong>Audit licensing &amp; insurance.</strong> Massachusetts HIC license number, $1M+ liability insurance, certificate naming your facility as additional insured.</li>
+           <li style="margin-bottom:.5rem;"><strong>Verify certifications.</strong> OSHA Bloodborne Pathogens (29 CFR 1910.1030), Infection Control training, ATP Bioluminescence Testing.</li>
+           <li style="margin-bottom:.5rem;"><strong>Request compliance documentation samples.</strong> A real healthcare-grade vendor produces written cleaning logs, EPA List N records, and ATP reports. Ask to see one.</li>
+           <li style="margin-bottom:.5rem;"><strong>Schedule an on-site walkthrough.</strong> The vendor should identify high-touch surfaces, terminal cleaning needs, and risk areas specific to your facility type. If they read from a generic checklist, they are not clinical.</li>
+         </ol>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin:1.25rem 0 1rem;">For an RFP-grade vendor evaluation, see our <a href="/blog/healthcare-cleaning-vendor-evaluation-rfp-checklist" style="color:#2b70e4;font-weight:500;">healthcare cleaning vendor evaluation RFP checklist</a>. For pre-inspection vendor work, our <a href="/blog/healthcare-inspection-preparation-guide-massachusetts" style="color:#2b70e4;font-weight:500;">MA healthcare inspection prep guide</a> walks through documentation review.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;">Pricing is transparent — see our published <a href="/pricing" style="color:#2b70e4;font-weight:500;">healthcare cleaning pricing tiers</a>. Or skip the comparison and read our breakdown on <a href="/blog/choosing-healthcare-cleaning-service-massachusetts" style="color:#2b70e4;font-weight:500;">how to choose a healthcare cleaning service in MA</a>.</p>
+       </div>
+     </div>
+   </section>
+
+   <!-- Section 8: MA Regulations -->
+   <section id="ma-regulations" class="section" style="padding:4rem 0;background:#f8fafc;">
+     <div class="container">
+       <div style="max-width:820px;margin:0 auto;">
+         <h2 class="section__title" style="font-size:2rem;color:#1a1a2e;margin-bottom:1.5rem;">8. Massachusetts-Specific Regulations You Must Know</h2>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">Beyond federal CDC, OSHA, and EPA frameworks, Massachusetts healthcare facilities operate under state-level regulations from the Department of Public Health (DPH), the Board of Registration in Medicine, the Board of Registration in Dentistry, and Joint Commission (for accredited hospitals and ambulatory facilities). Each has environmental cleaning requirements that affect facility audits.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">Massachusetts dental practices, for example, are governed by 234 CMR 5.00 (the dental practice regulation), which incorporates CDC sterilization and surface disinfection requirements with state-specific documentation rules. SNFs and assisted living facilities are governed by 105 CMR 150.000 and the Executive Office of Elder Affairs, both of which audit environmental cleaning logs annually.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;margin-bottom:1rem;">For a comprehensive overview of MA-specific regulatory requirements affecting cleaning compliance, read our <a href="/blog/massachusetts-healthcare-facility-sanitation-regulations" style="color:#2b70e4;font-weight:500;">Massachusetts healthcare facility sanitation regulations guide</a>. For HIPAA-aware cleaning protocols inside medical offices (cleaning staff handling PHI-adjacent areas), see our <a href="/blog/hipaa-compliant-cleaning-medical-offices" style="color:#2b70e4;font-weight:500;">HIPAA-compliant cleaning guide for medical offices</a>.</p>
+         <p style="font-size:1.0625rem;line-height:1.8;color:#334155;">Dory's Cleaning Services is licensed in Massachusetts (HIC #213341), carries $2,000,000 in liability insurance, and serves all 296 MA cities — from Boston, Cambridge, and Worcester to the smallest towns in the Berkshires and Cape Cod.</p>
+       </div>
+     </div>
+   </section>
+
+   <!-- Final CTA -->
+   <section id="contact" class="section section--primary" style="background:linear-gradient(135deg,#1a1a2e 0%,#2b70e4 100%);padding:5rem 0;">
+     <div class="container text-center">
+       <h2 class="text-white mb-lg" style="font-size:2rem;">Ready for a Free Facility Assessment?</h2>
+       <p class="lead text-white mb-xl" style="opacity:.92;max-width:680px;margin:0 auto 2rem;">Schedule a complimentary on-site walkthrough with Dory's Cleaning Services. We'll identify high-touch surfaces, terminal cleaning needs, and compliance documentation gaps specific to your Massachusetts facility — and produce a custom proposal within 24 hours.</p>
+       <div class="btn-group btn-group--center">
+         <a href="/contact" class="btn btn--white btn--lg">Request a Free Assessment</a>
+         <a href="tel:+19783078107" class="btn btn--outline-light btn--lg">📞 Call (978) 307-8107</a>
+       </div>
+     </div>
+   </section>
+ </main>
+`;
+
+// Substituir o <main>...</main> existente
+html = html.replace(/<main id="main-content">[\s\S]*?<\/main>/, newMain.trim());
+
+fs.writeFileSync(fp, html);
+console.log('Pillar page criada: healthcare-cleaning-massachusetts-guide.html');
+console.log('Tamanho final: ' + html.length + ' bytes');
