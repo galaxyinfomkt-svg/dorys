@@ -18,8 +18,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-RATING_VALUE = "4.8"
-RATING_COUNT = "127"  # owner to replace with the real Google reviews count
+RATING_VALUE = "4.7"
+RATING_COUNT = "10"   # confirmed from Google Maps on 2026-05-19
 
 SKIP_DIRS = {"node_modules", "build", ".git", "dist", ".next", "scripts"}
 
