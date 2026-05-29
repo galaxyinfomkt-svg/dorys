@@ -1186,6 +1186,83 @@ html, body {
 }
 
 /* ==========================================================================
+   PHONE NUMBER VISIBILITY ON MOBILE — Conversion-critical
+   Click-to-call is THE primary action on mobile for a service business.
+   These rules guarantee the phone number is always readable & tappable.
+   ========================================================================== */
+@media (max-width: 768px) {
+
+  /* Top-bar phone link — the always-visible phone at the very top of the
+     page. Was 0.7rem (11.2px) which is below the WCAG minimum tappable. */
+  .top-bar__contact a[href^="tel:"],
+  .top-bar__contact .top-bar__item,
+  .top-bar__contact .top-bar__item span {
+    font-size: 0.95rem !important;   /* ≈15.2px */
+    font-weight: 700 !important;
+    letter-spacing: 0.01em !important;
+  }
+  .top-bar__contact .top-bar__icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  /* Footer phone — make the actual number stand out */
+  .footer__contact-value,
+  .footer a[href^="tel:"] {
+    font-size: 1.15rem !important;   /* ≈18.4px — readable as a number */
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  /* Mobile-only sticky CTA bar at the bottom of every page */
+  .mobile-sticky-cta__btn,
+  .mobile-sticky-cta__btn--call {
+    font-size: 1rem !important;      /* ≈16px */
+    font-weight: 700 !important;
+    padding: 0.85rem 1rem !important;
+    min-height: 48px !important;     /* 48px = Apple/Google min tap target */
+    letter-spacing: 0.01em !important;
+  }
+  .mobile-sticky-cta__btn svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  /* Any phone CTA button anywhere — the call-the-business button */
+  a[href^="tel:"].btn {
+    font-size: 1rem !important;      /* ≈16px */
+    font-weight: 700 !important;
+    min-height: 48px !important;
+    letter-spacing: 0.01em !important;
+  }
+
+  /* Contact-method blocks (contact page, location pages) */
+  .contact-method-value,
+  .contact-method a[href^="tel:"] {
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Even on tiny phones the number stays large & tappable */
+  .top-bar__contact a[href^="tel:"],
+  .top-bar__contact .top-bar__item,
+  .top-bar__contact .top-bar__item span {
+    font-size: 0.9rem !important;
+    font-weight: 700 !important;
+  }
+  .footer__contact-value,
+  .footer a[href^="tel:"] {
+    font-size: 1.1rem !important;
+  }
+  a[href^="tel:"].btn {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* ==========================================================================
    VERY SMALL PHONE (max-width: 360px)
    ========================================================================== */
 @media (max-width: 360px) {
