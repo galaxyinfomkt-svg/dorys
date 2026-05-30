@@ -202,6 +202,19 @@ select:focus-visible {
   transform: none !important;
 }
 
+/* --- Hub city directory grouped by county (DOM + scannability) ---------- */
+.cities-by-county { display: flex; flex-direction: column; gap: 1.75rem; }
+.county-group { }
+.county-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--elev-ink);
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid rgba(43, 112, 228, 0.18);
+}
+.county-heading .county-count { color: #94a3b8; font-weight: 600; font-size: 0.85em; }
+
 /* Honor reduced-motion globally for the button/card transforms */
 @media (prefers-reduced-motion: reduce) {
   .btn, .card, .service-card, .trust-card, .service-card--premium { transition: none; }
