@@ -38,6 +38,39 @@ select:focus-visible {
 }
 .header:hover { box-shadow: 0 6px 24px rgba(15, 23, 42, 0.08); }
 
+/* Desktop: fit logo + 9-item nav + phone CTA without clipping the CTA off
+   the right edge (the reported "telefone cortado"). Tighten nav spacing and
+   let the nav shrink so the CTA always fits. */
+@media (min-width: 1025px) {
+  .header__wrapper { display: flex; align-items: center; gap: 0.5rem; flex-wrap: nowrap; }
+  .header__nav { flex: 1 1 auto; min-width: 0; justify-content: flex-end; }
+  .nav-list { flex-wrap: nowrap; gap: 0; }
+  .nav-link { padding-left: 0.6rem; padding-right: 0.6rem; font-size: 0.92rem; white-space: nowrap; }
+  .header__cta { flex: 0 0 auto; margin-left: 0.6rem; white-space: nowrap; }
+}
+/* The hamburger's three bars (markup added in Header.tsx) */
+.header__toggle-icon span:nth-child(1) { top: 0; }
+.header__toggle-icon span:nth-child(2) { top: 8px; }
+.header__toggle-icon span:nth-child(3) { top: 16px; }
+
+/* Mobile drawer: critical.min.css ships TWO conflicting .header__nav rules
+   (one uses transform:translateX, the other right:-100%), so .is-open only
+   reset ONE axis and the drawer stayed off-screen. Force the open state to
+   reset BOTH, and show the overlay for whatever class navigation.js sets. */
+@media (max-width: 1024px) {
+  .header__nav.is-open {
+    right: 0 !important;
+    transform: translateX(0) !important;
+  }
+  .header__overlay.is-open,
+  .header__overlay.is-active,
+  .header__overlay.is-visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  body.nav-open, body.menu-open { overflow: hidden; }
+}
+
 /* --- Trust strip (new): thin band of proof under the top bar ------------- */
 .trust-strip {
   background: linear-gradient(90deg, var(--elev-blue) 0%, var(--elev-blue-dark) 100%);

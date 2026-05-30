@@ -2,6 +2,7 @@
 // static HTML pages so visual identity and a11y are preserved.
 
 import Link from "next/link"
+import HeaderMenuToggle from "./HeaderMenuToggle"
 
 const POPULAR_CITIES = [
   ["marlborough-ma", "Marlborough"],
@@ -95,8 +96,15 @@ export default function Header() {
           </nav>
 
           <a href="tel:+19783078107" className="btn btn--primary header__cta hide-mobile" data-track="cta-header-call">(978) 307-8107</a>
+
+          {/* Mobile hamburger — React-controlled (legacy navigation.js never
+              fires under Next). Toggles .is-open on .header__nav + overlay. */}
+          <HeaderMenuToggle />
         </div>
       </header>
+
+      {/* Dim overlay behind the open mobile drawer */}
+      <div className="header__overlay" aria-hidden="true"></div>
     </>
   )
 }
