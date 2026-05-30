@@ -1267,6 +1267,68 @@ html, body {
 }
 
 /* ==========================================================================
+   FLOATING PHONE CTA — Desktop only, bottom-left
+   Balances the chat widget which sits bottom-right. Single-tap call.
+   Hidden on mobile because .mobile-sticky-cta already covers it.
+   ========================================================================== */
+.floating-phone-cta {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 9998;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.25rem 0.85rem 1.1rem;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #fff !important;
+  font-family: var(--font-primary, 'Inter', sans-serif);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.4);
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  animation: floatingPhonePulse 2.6s ease-in-out infinite;
+  -webkit-tap-highlight-color: transparent;
+}
+.floating-phone-cta:hover,
+.floating-phone-cta:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(245, 158, 11, 0.55);
+  background: linear-gradient(135deg, #fbbf24 0%, #ea580c 100%);
+}
+.floating-phone-cta:focus-visible {
+  outline: 3px solid rgba(255,255,255,0.85);
+  outline-offset: 3px;
+}
+.floating-phone-cta svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+.floating-phone-cta__label {
+  white-space: nowrap;
+}
+@keyframes floatingPhonePulse {
+  0%, 100% { box-shadow: 0 8px 24px rgba(245, 158, 11, 0.4); }
+  50% {
+    box-shadow:
+      0 8px 24px rgba(245, 158, 11, 0.6),
+      0 0 0 10px rgba(245, 158, 11, 0.15);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .floating-phone-cta { animation: none; }
+}
+/* Hide on mobile — mobile-sticky-cta covers the same job */
+@media (max-width: 768px) {
+  .floating-phone-cta { display: none !important; }
+}
+
+/* ==========================================================================
    VERY SMALL PHONE (max-width: 360px)
    ========================================================================== */
 @media (max-width: 360px) {
