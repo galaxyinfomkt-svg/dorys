@@ -202,6 +202,18 @@ select:focus-visible {
   transform: none !important;
 }
 
+/* --- Hero form: frame the embedded form as a clean white panel ---------- */
+/* The GHL iframe was bleeding edge-to-edge as a raw white slab against the
+   dark glass card. Inset it with radius + shadow so it reads as an intentional
+   white input panel inside the card (header → steps → framed form). */
+#hero-form-card iframe,
+.hero-premium__form iframe {
+  border-radius: 12px !important;
+  width: calc(100% - 1.8rem) !important;
+  margin: 0 0.9rem 0.9rem !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
 /* --- Hub city directory grouped by county (DOM + scannability) ---------- */
 .cities-by-county { display: flex; flex-direction: column; gap: 1.75rem; }
 .county-group { }
