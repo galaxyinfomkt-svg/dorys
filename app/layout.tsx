@@ -75,6 +75,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="stylesheet" href="/assets/css/animations.css" />
         <link rel="stylesheet" href="/assets/css/lightbox.css" />
         <link rel="stylesheet" href="/assets/css/aeo.css" />
+        {/* elevate.css — site-wide premium polish; loads after the legacy
+            sheets so it wins on equal specificity, before mobile-fixes. */}
+        <link rel="stylesheet" href="/assets/css/elevate.css" />
         {/* mobile-fixes.css must load LAST so its !important rules
             (phone-number visibility, services-grid lock, floating
             phone CTA) win the cascade. */}

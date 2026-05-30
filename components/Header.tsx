@@ -58,6 +58,29 @@ export default function Header() {
         </div>
       </div>
 
+      {/* Trust strip — quiet, healthcare-appropriate proof (no fake urgency) */}
+      <div className="trust-strip">
+        <div className="container trust-strip__inner">
+          {[
+            "Licensed & $2M Insured",
+            "CDC / OSHA Compliant",
+            "22+ Years Clinical Experience",
+            "Serving 296 MA Cities",
+            "Free 24-Hour Facility Assessment",
+          ].flatMap((item, i, arr) => {
+            const node = (
+              <span key={item} className="trust-strip__item">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                {item}
+              </span>
+            )
+            return i < arr.length - 1
+              ? [node, <span key={`${item}-d`} className="trust-strip__divider" aria-hidden="true">•</span>]
+              : [node]
+          })}
+        </div>
+      </div>
+
       <header className="header">
         <div className="container header__wrapper">
           <Link href="/" className="header__logo" aria-label="Dory's Cleaning Services — Home">

@@ -1,0 +1,173 @@
+/* ==========================================================================
+   elevate.css — site-wide premium polish layer (loaded after premium.css,
+   before mobile-fixes.css). Preserves Dory's identity (blue #2b70e4 + gold
+   #f59e0b, Inter/Poppins) while raising the finish across every page so a
+   visitor wants to stay: sharper buttons, lifting cards, calmer section
+   rhythm, a trust strip, refined hero + stat counters. No new colors.
+   ========================================================================== */
+
+:root {
+  --elev-blue: #2b70e4;
+  --elev-blue-dark: #1a5bc4;
+  --elev-gold: #f59e0b;
+  --elev-gold-dark: #d97706;
+  --elev-ink: #1a1a2e;
+  --elev-ring: 0 0 0 3px rgba(43, 112, 228, 0.35);
+}
+
+/* --- Accessibility: a single, consistent focus ring everywhere ----------- */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+  box-shadow: var(--elev-ring);
+  border-radius: var(--radius-md, 8px);
+}
+
+/* --- Sticky, self-shadowing header --------------------------------------- */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+  transition: box-shadow 0.25s ease, padding 0.25s ease;
+}
+.header:hover { box-shadow: 0 6px 24px rgba(15, 23, 42, 0.08); }
+
+/* --- Trust strip (new): thin band of proof under the top bar ------------- */
+.trust-strip {
+  background: linear-gradient(90deg, var(--elev-blue) 0%, var(--elev-blue-dark) 100%);
+  color: #fff;
+}
+.trust-strip__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 1.75rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.trust-strip__item { display: inline-flex; align-items: center; gap: 0.4rem; white-space: nowrap; }
+.trust-strip__item svg { width: 15px; height: 15px; flex: none; opacity: 0.95; }
+.trust-strip__divider { opacity: 0.4; }
+@media (max-width: 768px) {
+  .trust-strip__inner { gap: 0.35rem 1rem; font-size: 0.74rem; }
+  .trust-strip__item:nth-child(n+5), .trust-strip__divider:nth-child(n+5) { display: none; }
+}
+
+/* --- Buttons: gradient, weight, hover lift, gold CTA --------------------- */
+.btn {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-md, 10px);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  will-change: transform;
+}
+.btn.btn--primary {
+  background: linear-gradient(135deg, var(--elev-blue) 0%, var(--elev-blue-dark) 100%);
+  box-shadow: 0 6px 18px rgba(43, 112, 228, 0.28);
+  border: none;
+  color: #fff;
+}
+.btn.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(43, 112, 228, 0.38);
+}
+.btn.btn--gold,
+.btn.btn--cta {
+  background: linear-gradient(135deg, var(--elev-gold) 0%, var(--elev-gold-dark) 100%);
+  color: #1a1a2e;
+  border: none;
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.32);
+}
+.btn.btn--gold:hover,
+.btn.btn--cta:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(245, 158, 11, 0.42); }
+.btn.btn--secondary:hover { transform: translateY(-2px); }
+
+/* --- Cards: calmer border, deeper lift ----------------------------------- */
+.card,
+.service-card,
+.trust-card,
+.service-card--premium {
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 16px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.card:hover,
+.service-card:hover,
+.trust-card:hover,
+.service-card--premium:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  border-color: rgba(43, 112, 228, 0.18);
+}
+
+/* --- Section rhythm: generous, consistent breathing room ----------------- */
+.section { padding-block: clamp(3rem, 6vw, 5.5rem); }
+.section__title { letter-spacing: -0.02em; }
+.section__subtitle,
+.section__description { color: #64748b; }
+
+/* --- Hero: richer overlay + headline weight ------------------------------ */
+.hero-premium__background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, rgba(15, 23, 42, 0.72) 0%, rgba(26, 91, 196, 0.45) 55%, rgba(15, 23, 42, 0.25) 100%);
+}
+.hero-premium__title { letter-spacing: -0.025em; }
+.hero-premium__cta .btn { padding: 0.95rem 1.8rem; font-size: 1.02rem; }
+
+/* --- Trust badge chips (hero / sections) --------------------------------- */
+.trust-badges { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.trust-badge,
+.trust-badges > * {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* --- Stat counters: tighter, more confident ------------------------------ */
+.stats-grid--premium { gap: 1.25rem; }
+.stat-card { text-align: center; padding: 1.25rem 0.5rem; }
+.stat-card .stat-card__number,
+.stat-card strong,
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(135deg, #fff 0%, #cfe0ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Reveal-on-scroll (progressive, no JS required to be visible) -------- */
+@media (prefers-reduced-motion: no-preference) {
+  .section { animation: elevFade 0.6s ease both; animation-timeline: view(); animation-range: entry 0% cover 18%; }
+}
+@keyframes elevFade {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Honor reduced-motion globally for the button/card transforms */
+@media (prefers-reduced-motion: reduce) {
+  .btn, .card, .service-card, .trust-card, .service-card--premium { transition: none; }
+  .btn:hover, .card:hover, .service-card:hover, .trust-card:hover { transform: none; }
+}
