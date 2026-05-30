@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next"
 import Script from "next/script"
 import "./globals.css"
+import ScrollReveal from "@/components/ScrollReveal"
 
 // Site-wide metadata defaults; per-page metadata is exported from each page.tsx
 // and merged. Title template wraps non-home titles with the brand suffix.
@@ -93,6 +94,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="is-loaded">
         {children}
+        <ScrollReveal />
 
         {/* Legacy JS — main.js + navigation.js inject the floating
             phone CTA, sticky header, back-to-top, accordion, lightbox,

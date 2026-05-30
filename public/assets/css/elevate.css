@@ -248,8 +248,40 @@ h1, h2, h3,
 .animate-zoom-in,
 .animate-rotate-in,
 .stagger-children > * {
-  opacity: 1 !important;
-  transform: none !important;
+  opacity: 1;          /* visible by default — safe if JS is off */
+  transform: none;
+}
+
+/* JS-confirmed scroll reveal (ScrollReveal island adds html.reveal-ready, and
+   .in-view per element as it enters the viewport). Content stays visible when
+   JS is off; with JS it fades up on scroll — the modern motion RS has. */
+@media (prefers-reduced-motion: no-preference) {
+  html.reveal-ready .animate-on-scroll,
+  html.reveal-ready .animate-fade-up,
+  html.reveal-ready .animate-fade-down,
+  html.reveal-ready .animate-fade-left,
+  html.reveal-ready .animate-fade-right,
+  html.reveal-ready .animate-fade-scale,
+  html.reveal-ready .animate-zoom-in,
+  html.reveal-ready .stagger-children > * {
+    transition: opacity 0.6s ease, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  html.reveal-ready .animate-on-scroll:not(.in-view),
+  html.reveal-ready .animate-fade-up:not(.in-view),
+  html.reveal-ready .animate-fade-down:not(.in-view),
+  html.reveal-ready .animate-fade-scale:not(.in-view),
+  html.reveal-ready .animate-zoom-in:not(.in-view),
+  html.reveal-ready .stagger-children:not(.in-view) > * {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  html.reveal-ready .animate-fade-left:not(.in-view) { opacity: 0; transform: translateX(-24px); }
+  html.reveal-ready .animate-fade-right:not(.in-view) { opacity: 0; transform: translateX(24px); }
+  /* staggered children cascade in */
+  html.reveal-ready .stagger-children.in-view > *:nth-child(2) { transition-delay: 0.08s; }
+  html.reveal-ready .stagger-children.in-view > *:nth-child(3) { transition-delay: 0.16s; }
+  html.reveal-ready .stagger-children.in-view > *:nth-child(4) { transition-delay: 0.24s; }
+  html.reveal-ready .stagger-children.in-view > *:nth-child(5) { transition-delay: 0.32s; }
 }
 
 /* --- Hero form: frame the embedded form as a clean white panel ---------- */
