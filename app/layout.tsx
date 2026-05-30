@@ -1,0 +1,84 @@
+import type { Metadata, Viewport } from "next"
+import Script from "next/script"
+import "./globals.css"
+
+// Site-wide metadata defaults; per-page metadata is exported from each page.tsx
+// and merged. Title template wraps non-home titles with the brand suffix.
+export const metadata: Metadata = {
+  metadataBase: new URL("https://doryscleaningservices.com"),
+  title: {
+    default: "Healthcare Cleaning MA | Free Facility Assessment 24h",
+    template: "%s | Dory's Cleaning Services",
+  },
+  description:
+    "#1 healthcare facility cleaning in Massachusetts. 22+ yrs clinical exp, $2M insured, CDC compliant. Get free quote in 24 hours: (978) 307-8107",
+  applicationName: "Dory's Cleaning Services",
+  authors: [{ name: "Dory's Cleaning Services Inc." }],
+  robots: { index: true, follow: true },
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: "Dory's Cleaning Services",
+    locale: "en_US",
+    url: "https://doryscleaningservices.com/",
+  },
+  twitter: { card: "summary_large_image" },
+  other: {
+    "geo.region": "US-MA",
+    "geo.placename": "Marlborough, Massachusetts",
+    "geo.position": "42.3459;-71.5523",
+    ICBM: "42.3459, -71.5523",
+    classification: "Commercial Healthcare Environmental Services",
+  },
+}
+
+export const viewport: Viewport = {
+  themeColor: "#2b70e4",
+  width: "device-width",
+  initialScale: 1,
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/assets/images/logo/favicon.svg" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          rel="preload"
+          href="https://fonts.gstatic.com/s/inter/v24/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="https://fonts.gstatic.com/s/poppins/v23/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin=""
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=optional"
+        />
+      </head>
+      <body className="is-loaded">
+        {children}
+        {/* GA4 — same property ID we've been using site-wide */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2MP9G52LW7"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2MP9G52LW7');
+        `}</Script>
+      </body>
+    </html>
+  )
+}

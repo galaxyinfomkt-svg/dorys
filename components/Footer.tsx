@@ -1,0 +1,89 @@
+// Site footer — extracted from the static markup. Same classes so all
+// existing CSS continues to style it without changes.
+
+import Link from "next/link"
+
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <div className="container">
+        <div className="footer__grid">
+          <div className="footer__col footer__col--brand">
+            <Link href="/" className="footer__logo" aria-label="Dory's Cleaning Services — Home">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/assets/images/logo/logo-80.webp"
+                alt="Dory's Cleaning Services"
+                className="footer__logo-img"
+                loading="lazy"
+                decoding="async"
+                width={180}
+                height={60}
+              />
+            </Link>
+            <p className="footer__cta-text">
+              Clinical-grade environmental cleaning for licensed healthcare facilities across Massachusetts. 22 years of clinical experience, CDC/OSHA compliant, $2M insured, compliance documentation included.
+            </p>
+            <div className="footer__contact-item"><strong>PHONE</strong> <a href="tel:+19783078107" className="footer__contact-value">(978) 307-8107</a></div>
+            <div className="footer__contact-item"><strong>EMAIL</strong> <a href="mailto:contact@doryscleaningservices.com" className="footer__contact-value">contact@doryscleaningservices.com</a></div>
+            <div className="footer__contact-item"><strong>HOURS</strong> Mon–Sat: 5:00 AM – 7:00 PM</div>
+            <div className="footer__contact-item"><strong>SERVICE AREA</strong> Healthcare facilities across Massachusetts</div>
+          </div>
+
+          <div className="footer__col">
+            <h3 className="footer__heading">Services</h3>
+            <ul className="footer__links">
+              <li><Link href="/services/medical-office-cleaning">Medical Offices</Link></li>
+              <li><Link href="/services/specialty-clinics">Specialty Clinics</Link></li>
+              <li><Link href="/services/ambulatory-outpatient">Ambulatory & Outpatient</Link></li>
+              <li><Link href="/services/rehab-nursing">Rehab & Nursing Facilities</Link></li>
+              <li><Link href="/services/healthcare-admin-offices">Healthcare Admin Offices</Link></li>
+              <li><Link href="/atp-assessment">Free ATP Test</Link></li>
+              <li><Link href="/emergency-cleaning">24/7 Emergency</Link></li>
+            </ul>
+          </div>
+
+          <div className="footer__col">
+            <h3 className="footer__heading">Popular Cities</h3>
+            <ul className="footer__links">
+              <li><Link href="/locations/marlborough-ma">Marlborough</Link></li>
+              <li><Link href="/locations/framingham-ma">Framingham</Link></li>
+              <li><Link href="/locations/worcester-ma">Worcester</Link></li>
+              <li><Link href="/locations/hudson-ma">Hudson</Link></li>
+              <li><Link href="/locations/newton-ma">Newton</Link></li>
+              <li><Link href="/locations/natick-ma">Natick</Link></li>
+              <li><Link href="/locations/wellesley-ma">Wellesley</Link></li>
+              <li><Link href="/locations/westborough-ma">Westborough</Link></li>
+              <li><Link href="/locations">View All 296 Cities →</Link></li>
+            </ul>
+          </div>
+
+          <div className="footer__col">
+            <h3 className="footer__heading">Company</h3>
+            <ul className="footer__links">
+              <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/pricing">Pricing</Link></li>
+              <li><Link href="/reviews">Reviews</Link></li>
+              <li><Link href="/blog">Blog</Link></li>
+              <li><Link href="/healthcare-facilities">For Healthcare Facilities</Link></li>
+              <li><Link href="/faq">FAQ</Link></li>
+              <li><Link href="/press">Press & Media</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <nav className="footer__legal" aria-label="Legal navigation">
+        <div className="container footer__legal-row">
+          <span>© {new Date().getFullYear()} Dory&apos;s Cleaning Services Inc. All rights reserved.</span>
+          <div className="footer__legal-links">
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/terms">Terms of Service</Link>
+            <Link href="/sitemap">Sitemap</Link>
+          </div>
+        </div>
+      </nav>
+    </footer>
+  )
+}

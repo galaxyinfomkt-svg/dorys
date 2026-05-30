@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Get a Free Healthcare Facility Cleaning Assessment in Massachusetts",
+  "description": "Simple 4-step process to schedule a free healthcare facility cleaning walkthrough with Dory's Cleaning Services in Massachusetts.",
+  "totalTime": "PT24H",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Request Your Free Facility Assessment",
+      "text": "Call (978) 307-8107 or fill out the online form. We respond within 24 hours.",
+      "url": "https://doryscleaningservices.com/contact"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Schedule a 20-Minute Walkthrough",
+      "text": "We schedule a facility tour at a time that does not disrupt your patient flow.",
+      "url": "https://doryscleaningservices.com/contact"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Receive Hospital-Grade ATP Surface Testing",
+      "text": "We test 4 high-touch surfaces using ATP bioluminescence verification - the same technology used in major hospitals.",
+      "url": "https://doryscleaningservices.com/healthcare-facilities"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Get Your Written Compliance Report",
+      "text": "Receive a detailed pass/fail report you can keep, share with your team, and use for accreditation surveys.",
+      "url": "https://doryscleaningservices.com/healthcare-facilities"
+    }
+  ]
+}
