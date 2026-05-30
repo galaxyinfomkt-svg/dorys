@@ -557,7 +557,18 @@
 }
 
 .challenge-item h3::before {
-  content: "⚠️";
+  content: "✓";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: none;
+  border-radius: 999px;
+  background: rgba(43, 112, 228, 0.1);
+  color: #2b70e4;
+  font-weight: 800;
+  font-size: 0.85rem;
 }
 
 .challenge-item p {
