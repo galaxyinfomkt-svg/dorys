@@ -1323,9 +1323,17 @@ html, body {
 @media (prefers-reduced-motion: reduce) {
   .floating-phone-cta { animation: none; }
 }
-/* Hide on mobile — mobile-sticky-cta covers the same job */
+/* Show on mobile too — the intended .mobile-sticky-cta replacement was never
+   rendered in the Next migration, so hiding this left phones with no floating
+   phone button. Keep it, compact, bottom-left (chat widget sits bottom-right). */
 @media (max-width: 768px) {
-  .floating-phone-cta { display: none !important; }
+  .floating-phone-cta {
+    display: inline-flex !important;
+    bottom: 16px !important;
+    left: 16px !important;
+    padding: 0.7rem 1.05rem !important;
+    font-size: 0.85rem !important;
+  }
 }
 
 /* ==========================================================================

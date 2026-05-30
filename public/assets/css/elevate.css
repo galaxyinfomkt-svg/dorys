@@ -277,6 +277,21 @@ h1, h2, h3,
 }
 .county-heading .county-count { color: #94a3b8; font-weight: 600; font-size: 0.85em; }
 
+/* --- Floating phone CTA on mobile: mobile-fixes.css hid it (display:none)
+   expecting a .mobile-sticky-cta that the migration never rendered, leaving
+   NO phone button on phones. Show the gold pill (it has a phone icon) on
+   mobile too, compact, bottom-left (chat widget sits bottom-right). --------- */
+@media (max-width: 768px) {
+  .floating-phone-cta {
+    display: inline-flex !important;
+    bottom: 16px !important;
+    left: 16px !important;
+    padding: 0.7rem 1.05rem !important;
+    font-size: 0.85rem !important;
+    z-index: 9998 !important;
+  }
+}
+
 /* --- Footer column headings: were inheriting dark h3 color (invisible on
    the navy footer). Give them a clean, light, premium footer-heading style. */
 .footer__heading {
