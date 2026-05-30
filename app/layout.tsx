@@ -8,7 +8,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://doryscleaningservices.com"),
   title: {
     default: "Healthcare Cleaning MA | Free Facility Assessment 24h",
-    template: "%s | Dory's Cleaning Services",
+    // Pass page titles through unchanged: they already carry brand/keywords
+    // and the old " | Dory's Cleaning Services" suffix pushed 149 pages over
+    // the ~60-char limit (and doubled brand on pages already ending "| Dory's").
+    template: "%s",
   },
   description:
     "#1 healthcare facility cleaning in Massachusetts. 22+ yrs clinical exp, $2M insured, CDC compliant. Get free quote in 24 hours: (978) 307-8107",

@@ -85,7 +85,7 @@ export default function Header() {
         <div className="container header__wrapper">
           <Link href="/" className="header__logo" aria-label="Dory's Cleaning Services — Home">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/assets/images/logo/logo-80.webp" alt="Dory's Cleaning Services Logo" width={180} height={60} />
+            <img src="/assets/images/logo/logo-80.webp" alt="Dory's Cleaning Services Logo" width={180} height={60} loading="eager" fetchPriority="high" decoding="async" />
           </Link>
 
           <nav className="header__nav" aria-label="Main navigation">
