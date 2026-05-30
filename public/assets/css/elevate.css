@@ -115,12 +115,11 @@ select:focus-visible {
 .section__subtitle,
 .section__description { color: #64748b; }
 
-/* --- Hero: richer overlay + headline weight ------------------------------ */
-.hero-premium__background::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(115deg, rgba(15, 23, 42, 0.72) 0%, rgba(26, 91, 196, 0.45) 55%, rgba(15, 23, 42, 0.25) 100%);
+/* --- Hero: neutral BLACK overlay over the photo (no blue tint) ----------- */
+/* Override the legacy navy-blue gradient overlay with a pure black scrim,
+   darker on the text side (left) fading right so the image still reads. */
+.hero-premium__overlay {
+  background: linear-gradient(105deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.62) 50%, rgba(0, 0, 0, 0.42) 100%) !important;
 }
 .hero-premium__title { letter-spacing: -0.025em; }
 .hero-premium__cta .btn { padding: 0.95rem 1.8rem; font-size: 1.02rem; }
