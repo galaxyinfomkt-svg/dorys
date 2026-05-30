@@ -1373,3 +1373,28 @@ html, body {
     font-size: 1.1rem !important;
   }
 }
+
+/* ====================================================================
+   READABILITY FLOOR ON PHONES (appended last so it wins the cascade).
+   The legacy mobile rules shrank reading text to 0.65–0.8rem (~10–13px),
+   which is illegible on phones. Restore a comfortable minimum for body /
+   subtitle / description / card / list text. Tiny UI chips/badges are
+   intentionally left alone.
+   ==================================================================== */
+@media (max-width: 768px) {
+  .hero-premium__subtitle { font-size: 1.02rem !important; line-height: 1.55 !important; }
+  .hero--inner .hero__subtitle,
+  .hero--location .hero__subtitle,
+  .section__description,
+  .section__subtitle { font-size: 0.98rem !important; line-height: 1.55 !important; }
+  #main-content p,
+  #main-content li { font-size: 1rem !important; line-height: 1.65 !important; }
+  .service-card--premium .service-card__text,
+  .service-card__text,
+  .service-card-description,
+  .card__text,
+  .benefit-card__text,
+  .trust-card__text { font-size: 0.95rem !important; line-height: 1.55 !important; }
+  .service-picker__btn { font-size: 0.74rem !important; }
+  .footer__areas-list { font-size: 0.84rem !important; line-height: 2.1 !important; }
+}
