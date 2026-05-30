@@ -179,6 +179,29 @@ select:focus-visible {
    blank spaces — in browsers without scroll-timeline support. Content
    visibility must never depend on an optional animation.) */
 
+/* === FAIL-SAFE: legacy scroll-reveal must never hide content ============= */
+/* The legacy .animate-on-scroll / .animate-fade-* / .stagger-children classes
+   start at opacity:0 and only become visible when main.js adds .is-visible via
+   IntersectionObserver. Under Next.js (content in dangerouslySetInnerHTML,
+   afterInteractive hydration) that reveal is unreliable, leaving whole
+   sections invisible — the "blank white space" across ~1,490 pages. Force the
+   revealed end-state by default so content ALWAYS shows; the animation, when
+   the JS does run, is pure progressive enhancement. Continuous decorative
+   loops (spin/pulse/float/shimmer/gradient/bounce) are intentionally excluded. */
+.animate-on-scroll,
+.animate-on-load,
+.animate-fade-up,
+.animate-fade-down,
+.animate-fade-left,
+.animate-fade-right,
+.animate-fade-scale,
+.animate-zoom-in,
+.animate-rotate-in,
+.stagger-children > * {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 /* Honor reduced-motion globally for the button/card transforms */
 @media (prefers-reduced-motion: reduce) {
   .btn, .card, .service-card, .trust-card, .service-card--premium { transition: none; }
