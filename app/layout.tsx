@@ -102,6 +102,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script src="/assets/js/header.js" strategy="afterInteractive" />
         <Script src="/assets/js/analytics.js" strategy="afterInteractive" />
 
+        {/* GHL / LeadConnector chat widget (bottom-right bubble) */}
+        <Script
+          src="https://beta.leadconnectorhq.com/loader.js"
+          data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="6a1b542f7645b2ba9a1194ac"
+          strategy="afterInteractive"
+        />
+
         {/* GA4 — same property ID we've been using site-wide */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2MP9G52LW7"
