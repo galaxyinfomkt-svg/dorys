@@ -74,6 +74,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             incrementally port styles to Tailwind. */}
         <link rel="stylesheet" href="/assets/css/critical.min.css" />
         <link rel="stylesheet" href="/assets/css/premium.css" />
+        {/* service-pages.css sizes benefit/highlight card icons, benefits/
+            related grids, cta-boxes, faq items, etc. The static site loaded it
+            on service pages; the migration omitted it, so those icons rendered
+            unsized (giant black shapes) and grids lost their layout. */}
+        <link rel="stylesheet" href="/assets/css/service-pages.css" />
         <link rel="stylesheet" href="/assets/css/footer.css" />
         <link rel="stylesheet" href="/assets/css/animations.css" />
         <link rel="stylesheet" href="/assets/css/lightbox.css" />
