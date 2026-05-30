@@ -64,9 +64,33 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=optional"
         />
+
+        {/* Legacy stylesheets — every page-body class (.hero-premium,
+            .container, .nav-link, .footer__grid, .card, .btn, .top-bar,
+            etc.) is defined here. Keep loading them site-wide while we
+            incrementally port styles to Tailwind. */}
+        <link rel="stylesheet" href="/assets/css/critical.min.css" />
+        <link rel="stylesheet" href="/assets/css/premium.css" />
+        <link rel="stylesheet" href="/assets/css/footer.css" />
+        <link rel="stylesheet" href="/assets/css/animations.css" />
+        <link rel="stylesheet" href="/assets/css/lightbox.css" />
+        <link rel="stylesheet" href="/assets/css/aeo.css" />
+        {/* mobile-fixes.css must load LAST so its !important rules
+            (phone-number visibility, services-grid lock, floating
+            phone CTA) win the cascade. */}
+        <link rel="stylesheet" href="/assets/css/mobile-fixes.css" />
       </head>
       <body className="is-loaded">
         {children}
+
+        {/* Legacy JS — main.js + navigation.js inject the floating
+            phone CTA, sticky header, back-to-top, accordion, lightbox,
+            click tracking. analytics.js wires GA4 events. */}
+        <Script src="/assets/js/main.js" strategy="afterInteractive" />
+        <Script src="/assets/js/navigation.js" strategy="afterInteractive" />
+        <Script src="/assets/js/header.js" strategy="afterInteractive" />
+        <Script src="/assets/js/analytics.js" strategy="afterInteractive" />
+
         {/* GA4 — same property ID we've been using site-wide */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2MP9G52LW7"

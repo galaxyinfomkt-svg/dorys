@@ -1,0 +1,148 @@
+# Robots.txt for Dory's Cleaning Services
+# https://doryscleaningservices.com
+# Last updated: 2026-04-29
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://doryscleaningservices.com/sitemap.xml
+
+# ===========================================
+# BLOCK TECHNICAL/INVALID URLs
+# (Cleaning Google Search Console 404 errors)
+# ===========================================
+
+# Technical paths - legacy URLs from old versions
+Disallow: /tmp/
+Disallow: /workspace/
+
+# Removed services (no longer offered)
+Disallow: /services/general-housekeeping/
+Disallow: /services/janitorial-service/
+Disallow: /services/deep-cleaning/
+Disallow: /services/carpet-cleaning/
+Disallow: /services/upholstery-cleaning/
+Disallow: /builder-preview/
+Disallow: /search/
+Disallow: /open
+Disallow: /gemin-2
+
+# Block ALL PHP files (legacy/invalid)
+Disallow: /*.php
+Disallow: /*.php$
+Disallow: /portal.php
+Disallow: /index.php
+Disallow: /page.php
+
+# Block locales and calendar paths
+Disallow: /locales/
+Disallow: /calendar
+Disallow: /calendar-
+Disallow: /thank-you
+Disallow: /home-
+
+# ===========================================
+# BLOCK DEVELOPMENT/BUILD FOLDERS
+# ===========================================
+Disallow: /build/
+Disallow: /data/
+Disallow: /scripts/
+Disallow: /node_modules/
+
+# Block JSON config files
+Disallow: /*.json$
+
+# ===========================================
+# ALLOW IMPORTANT RESOURCES
+# ===========================================
+# Allow CSS and JS assets for proper rendering
+Allow: /assets/
+
+# ===========================================
+# SEARCH ENGINE SPECIFIC RULES
+# ===========================================
+
+# Googlebot (no crawl delay for faster indexing)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ===========================================
+# AI ASSISTANTS — explicit allow for citation
+# ===========================================
+# We WANT to appear in AI Overviews, ChatGPT answers, Claude responses,
+# Perplexity citations, etc. Each major AI crawler is explicitly allowed.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# AI-specific sitemap & citation files
+# llms.txt = human-readable citation manifest (Anthropic / SourceGraph convention)
+# ai.txt   = structured fact sheet for AI answer engines
