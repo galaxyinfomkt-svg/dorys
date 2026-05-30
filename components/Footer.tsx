@@ -2,6 +2,7 @@
 // existing CSS continues to style it without changes.
 
 import Link from "next/link"
+import citiesList from "@/data/cities-list.json"
 
 export default function Footer() {
   return (
@@ -71,6 +72,26 @@ export default function Footer() {
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
+        </div>
+      </div>
+
+      {/* Service-area directory — RS-style inline city band (sitewide footer
+          internal linking to the indexed location pages). Replaces the big
+          mid-page city blocks the hubs used to carry. */}
+      <div className="footer__areas">
+        <div className="container">
+          <h3 className="footer__areas-title">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            Service Areas — 296 Cities Across Massachusetts
+          </h3>
+          <p className="footer__areas-list">
+            {citiesList.map((c, i) => (
+              <span key={c.s}>
+                <Link href={`/locations/${c.s}`}>{c.n}</Link>
+                {i < citiesList.length - 1 ? <span className="footer__areas-sep"> · </span> : null}
+              </span>
+            ))}
+          </p>
         </div>
       </div>
 

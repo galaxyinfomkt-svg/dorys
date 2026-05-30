@@ -227,6 +227,34 @@ select:focus-visible {
 }
 .county-heading .county-count { color: #94a3b8; font-weight: 600; font-size: 0.85em; }
 
+/* --- Footer service-area city band (RS-style inline directory) ---------- */
+.footer__areas {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 0 0.5rem;
+}
+.footer__areas-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--elev-gold);
+  text-align: center;
+  margin: 0 0 0.9rem;
+}
+.footer__areas-list {
+  font-size: 0.78rem;
+  line-height: 2;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.footer__areas-list a { color: rgba(255, 255, 255, 0.62); text-decoration: none; transition: color 0.15s ease; }
+.footer__areas-list a:hover { color: #fff; }
+.footer__areas-sep { color: rgba(255, 255, 255, 0.25); }
+
 /* Honor reduced-motion globally for the button/card transforms */
 @media (prefers-reduced-motion: reduce) {
   .btn, .card, .service-card, .trust-card, .service-card--premium { transition: none; }
