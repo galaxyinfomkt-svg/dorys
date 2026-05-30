@@ -91,22 +91,30 @@ select:focus-visible {
 .btn.btn--cta:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(245, 158, 11, 0.42); }
 .btn.btn--secondary:hover { transform: translateY(-2px); }
 
-/* --- Cards: calmer border, deeper lift ----------------------------------- */
+/* --- Cards: calmer border, tinted diffused depth (high-end agency feel) --- */
+/* redesign-existing-projects audit: replace harsh pure-black shadows with
+   soft, blue-tinted, layered shadows + hairline border → "expensive" depth
+   without leaving Dory's clinical light theme. */
 .card,
 .service-card,
 .trust-card,
-.service-card--premium {
-  border: 1px solid rgba(15, 23, 42, 0.06);
+.service-card--premium,
+.benefit-card,
+.highlight-card {
+  border: 1px solid rgba(15, 23, 42, 0.05);
   border-radius: 16px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 10px 30px -12px rgba(43, 112, 228, 0.12);
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.28s ease;
 }
 .card:hover,
 .service-card:hover,
 .trust-card:hover,
-.service-card--premium:hover {
+.service-card--premium:hover,
+.benefit-card:hover,
+.highlight-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
-  border-color: rgba(43, 112, 228, 0.18);
+  box-shadow: 0 4px 8px rgba(15, 23, 42, 0.04), 0 22px 50px -16px rgba(43, 112, 228, 0.26);
+  border-color: rgba(43, 112, 228, 0.16);
 }
 
 /* --- Typography polish: balanced headlines, no orphan words ------------- */
