@@ -153,15 +153,21 @@
  const backToTopBtn = document.querySelector('.back-to-top');
  if (!backToTopBtn) return;
 
+ let ticking = false;
+ let isVisible = false;
  const showButton = () => {
- if (window.scrollY > 500) {
- backToTopBtn.classList.add('is-visible');
- } else {
- backToTopBtn.classList.remove('is-visible');
+ const shouldShow = window.scrollY > 500;
+ if (shouldShow !== isVisible) {
+ isVisible = shouldShow;
+ backToTopBtn.classList.toggle('is-visible', shouldShow);
  }
+ ticking = false;
  };
 
- window.addEventListener('scroll', throttle(showButton, 100));
+ // rAF instead of throttle — avoids forced layout flush
+ window.addEventListener('scroll', () => {
+ if (!ticking) { requestAnimationFrame(showButton); ticking = true; }
+ }, { passive: true });
 
  backToTopBtn.addEventListener('click', (e) => {
  e.preventDefault();
@@ -432,24 +438,25 @@
  // Initialize All Modules
  // -------------------------------------------------------------------------
  const init = () => {
- // Core functionality
- initBackToTop();
+ // Critical (above-fold) — run synchronously
  initSmoothScroll();
  initAccordion();
+ if (typeof initNavigation === 'function') initNavigation();
+ document.body.classList.add('is-loaded');
+
+ // Defer non-critical to idle to break the 174ms long task on first paint
+ const idle = window.requestIdleCallback || (cb => setTimeout(cb, 1));
+ idle(() => {
+ initBackToTop();
  initFormValidation();
  initLazyLoad();
  initCounters();
  initClickTracking();
-
- // Initialize other modules if they exist
  if (typeof initStickyHeader === 'function') initStickyHeader();
  if (typeof initScrollAnimations === 'function') initScrollAnimations();
  if (typeof initLightbox === 'function') initLightbox();
- if (typeof initNavigation === 'function') initNavigation();
  if (typeof initVideoEmbeds === 'function') initVideoEmbeds();
-
- // Add loaded class to body
- document.body.classList.add('is-loaded');
+ });
  };
 
  // -------------------------------------------------------------------------

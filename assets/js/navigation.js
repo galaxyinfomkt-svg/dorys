@@ -93,26 +93,33 @@
  }
  });
 
+ // Cache the breakpoint state. Each `window.innerWidth` read forces a
+ // synchronous layout flush — we read once, reuse from then on, and only
+ // re-read inside an rAF callback on resize.
+ let cachedIsMobile = window.innerWidth <= 991;
+
  // Close on resize to desktop + toggle inert
  window.addEventListener('resize', () => {
- if (window.innerWidth > 991) {
- if (nav.classList.contains('is-open')) {
- closeMenu();
- }
+ requestAnimationFrame(() => {
+ const isMobile = window.innerWidth <= 991;
+ if (isMobile === cachedIsMobile) return;
+ cachedIsMobile = isMobile;
+ const isOpen = nav.classList.contains('is-open');
+ if (!isMobile) {
+ if (isOpen) closeMenu();
  nav.removeAttribute('aria-hidden');
  nav.removeAttribute('inert');
- } else if (!nav.classList.contains('is-open')) {
+ } else if (!isOpen) {
  nav.setAttribute('aria-hidden', 'true');
  nav.setAttribute('inert', '');
  }
  });
+ }, { passive: true });
 
  // Close when clicking nav links (for single page navigation)
  nav.querySelectorAll('.nav-link:not(.has-dropdown)').forEach(link => {
  link.addEventListener('click', () => {
- if (window.innerWidth <= 991) {
- closeMenu();
- }
+ if (cachedIsMobile) closeMenu();
  });
  });
 
@@ -123,7 +130,7 @@
  nav.setAttribute('id', 'main-navigation');
 
  // Only apply inert/aria-hidden on mobile (nav is a slide-out panel)
- if (window.innerWidth <= 991) {
+ if (cachedIsMobile) {
  nav.setAttribute('aria-hidden', 'true');
  nav.setAttribute('inert', '');
  }

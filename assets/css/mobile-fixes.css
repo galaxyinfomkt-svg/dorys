@@ -69,9 +69,12 @@ html, body {
   }
 
   /* --- Hero Premium (Homepage) --- */
+  /* CLS fix: lock min-height so iframe injection doesn't shift content.
+     Content stack (~648px) + form wrapper (632px) = 1280px on stacked layout. */
   .hero-premium {
     padding: 75px 0 30px !important;
-    min-height: auto !important;
+    min-height: 1280px !important;
+    contain: layout paint;
   }
 
   .hero-premium__grid {
@@ -87,6 +90,7 @@ html, body {
     font-size: 1.6rem !important;
     line-height: 1.15 !important;
     margin-bottom: 0.75rem !important;
+    min-height: 5.5rem !important;
   }
 
   .hero-premium__subtitle {
