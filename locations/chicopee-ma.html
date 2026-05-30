@@ -250,7 +250,8 @@
  <div class="hero__overlay hero__overlay--gradient"></div>
  </div>
  <div class="container">
- <div class="hero__content hero__content--center">
+ <div class="location-hero__grid" style="display:flex;align-items:flex-start;gap:2.25rem;flex-wrap:wrap;justify-content:center;">
+ <div class="location-hero__content" style="flex:1 1 480px;min-width:300px;max-width:640px;text-align:left;">
  <h1 class="hero__title">Healthcare Cleaning Services in Chicopee</h1>
  <p class="hero__subtitle">Serving Chicopee and Hampden County with 22 years of clinical cleaning expertise. Licensed, $2M insured, and trained in healthcare facility environmental cleaning protocols.</p>
  <div class="hero__ctas">
@@ -258,6 +259,22 @@
  <a href="tel:+19783078107" class="btn btn--outline-light btn--lg">Call (978) 307-8107</a>
  </div>
  </div>
+ <div class="location-hero__form" style="flex:0 0 360px;max-width:100%;width:360px;align-self:center;background:linear-gradient(135deg,rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.02) 100%);border:1px solid rgba(255,255,255,0.2);border-radius:14px;box-shadow:0 18px 44px rgba(0,0,0,0.32),0 0 0 1px rgba(245,158,11,0.12);overflow:hidden;min-height:540px;backdrop-filter:blur(10px);">
+ <div style="background:linear-gradient(135deg,#f59e0b 0%,#d97706 100%);padding:0.75rem 1rem;text-align:center;">
+ <div style="font-size:0.65rem;font-weight:800;color:#fff;letter-spacing:0.11em;text-transform:uppercase;opacity:0.95;margin-bottom:0.1rem;">Free · 24-Hour Response</div>
+ <div style="font-size:1rem;font-weight:700;color:#fff;line-height:1.2;">Chicopee Facility Assessment</div>
+ </div>
+ <iframe data-src="https://api.leadconnectorhq.com/widget/form/oaN0aNeRAK8fPG4AnIzl?city=Chicopee&locationId=BQd0L6DeFvVbjKS8VYZ9" width="100%" height="460" style="width:100%;height:460px;border:none;display:block;background:#fff;" id="loc-hero-form-chicopee-ma" title="Free Chicopee healthcare facility cleaning assessment request" loading="lazy"></iframe>
+ <div style="background:rgba(0,0,0,0.18);padding:0.7rem 1rem;text-align:center;border-top:1px solid rgba(255,255,255,0.08);">
+ <div style="display:flex;align-items:center;justify-content:center;gap:0.7rem;flex-wrap:wrap;font-size:0.68rem;color:rgba(255,255,255,0.78);">
+ <span style="display:inline-flex;align-items:center;gap:0.2rem;"><svg width="12" height="12" viewBox="0 0 24 24" fill="#fbbf24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><strong style="color:#fbbf24;">4.7/5</strong></span>
+ <span style="opacity:0.4;">·</span><span><strong style="color:#fff;">22+ yrs</strong></span>
+ <span style="opacity:0.4;">·</span><span><strong style="color:#fff;">$2M</strong></span>
+ <span style="opacity:0.4;">·</span><span><strong style="color:#fff;">CDC/OSHA</strong></span>
+ </div>
+ </div>
+ </div>
+</div>
  </div>
  </section>
 
@@ -691,5 +708,20 @@
     </a>
   </div>
 </div>
+<!-- LOCATION-FORM-LOADER -->
+<script>
+(function(){
+  var loaded=false;
+  function load(){
+    if(loaded)return;loaded=true;
+    document.querySelectorAll('iframe[data-src]').forEach(function(f){f.src=f.getAttribute('data-src');});
+    var s=document.createElement('script');s.src='https://link.msgsndr.com/js/form_embed.js';document.body.appendChild(s);
+  }
+  ['scroll','click','touchstart','mouseover','keydown'].forEach(function(e){
+    window.addEventListener(e,load,{once:true,passive:true});
+  });
+  setTimeout(load,12000);
+})();
+</script>
 </body>
 </html>
