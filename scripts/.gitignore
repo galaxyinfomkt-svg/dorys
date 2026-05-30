@@ -1,4 +1,4 @@
-scripts/location-results*.json
-scripts/location-workflow-input.json
-scripts/location-uniqueness.workflow.js
-scripts/location-targets.json
+location-results*.json
+location-workflow-input.json
+location-uniqueness.workflow.js
+location-targets.json
