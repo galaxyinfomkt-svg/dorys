@@ -140,6 +140,24 @@ select:focus-visible {
   font-weight: 600;
 }
 
+/* --- Hero form service picker: real contrast + clear selected state ------ */
+/* Audit flagged white text on rgba(255,255,255,0.06) (~1:1). Give the pills a
+   solid dark base so the white label has genuine contrast, and make the
+   chosen pill obvious (gold) — "make the next action obvious". */
+.service-picker__btn {
+  background: rgba(15, 23, 42, 0.55) !important;
+  border-color: rgba(255, 255, 255, 0.28) !important;
+  color: #fff !important;
+}
+.service-picker__btn:hover { background: rgba(15, 23, 42, 0.72) !important; }
+.service-picker__btn[aria-checked="true"],
+.service-picker__btn.is-selected,
+.service-picker__btn.active {
+  background: linear-gradient(135deg, var(--elev-gold) 0%, var(--elev-gold-dark) 100%) !important;
+  border-color: var(--elev-gold) !important;
+  color: #1a1a2e !important;
+}
+
 /* --- Stat counters: tighter, more confident ------------------------------ */
 .stats-grid--premium { gap: 1.25rem; }
 .stat-card { text-align: center; padding: 1.25rem 0.5rem; }
