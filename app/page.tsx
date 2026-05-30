@@ -9,6 +9,7 @@ import fs from "node:fs/promises"
 import path from "node:path"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import GalleryEnhancer from "@/components/GalleryEnhancer"
 
 type Data = {
   title: string
@@ -95,6 +96,7 @@ export default async function HomePage() {
         />
       ))}
       <main id="main-content" dangerouslySetInnerHTML={{ __html: d.mainHtml }} />
+      <GalleryEnhancer />
       <Footer />
     </>
   )

@@ -317,6 +317,24 @@ h1, h2, h3,
 #gf-admin:checked ~ .gallery-grid .gallery-item:not(.cat-admin),
 #gf-action:checked ~ .gallery-grid .gallery-item:not(.cat-action) { display: none; }
 
+/* JS-enhanced mode (GalleryEnhancer island, like RS's React gallery): JS owns
+   the filter state + animated transitions; the CSS-radio fallback is neutralised. */
+.gallery--js .gallery-filter { display: none; }
+.gallery--js .gallery-item.is-hidden { display: none !important; }
+.gallery--js .gallery-tab { user-select: none; }
+.gallery--js .gallery-tab.is-active {
+  background: linear-gradient(135deg, var(--elev-blue) 0%, var(--elev-blue-dark) 100%);
+  color: #fff; border-color: transparent;
+}
+.gallery--js .gallery-item.is-anim { animation: galleryIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) both; }
+@keyframes galleryIn {
+  from { opacity: 0; transform: translateY(12px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gallery--js .gallery-item.is-anim { animation: none; }
+}
+
 /* --- Floating phone CTA on mobile: mobile-fixes.css hid it (display:none)
    expecting a .mobile-sticky-cta that the migration never rendered, leaving
    NO phone button on phones. Show the gold pill (it has a phone icon) on
