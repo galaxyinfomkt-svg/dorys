@@ -254,12 +254,14 @@ h1, h2, h3,
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--elev-gold);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #f59e0b !important;
   text-align: center;
-  margin: 0 0 0.9rem;
+  margin: 0 0 1rem;
+  letter-spacing: 0.01em;
 }
+.footer__areas-title svg { color: #f59e0b; }
 .footer__areas-list {
   font-size: 0.78rem;
   line-height: 2;
