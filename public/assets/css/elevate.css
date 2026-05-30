@@ -277,6 +277,46 @@ h1, h2, h3,
 }
 .county-heading .county-count { color: #94a3b8; font-weight: 600; font-size: 0.85em; }
 
+/* --- Home gallery: filterable (CSS-only) environments grid (RS-style) ---- */
+.home-gallery .gallery-filter { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.gallery-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin: 1.5rem 0 2rem; }
+.gallery-tab {
+  padding: 0.5rem 1.1rem; border-radius: 999px; background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.1); color: #475569;
+  font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease;
+}
+.gallery-tab:hover { border-color: var(--elev-blue); color: var(--elev-blue); }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+.gallery-item {
+  margin: 0; border-radius: 14px; overflow: hidden; position: relative; aspect-ratio: 3 / 2;
+  border: 1px solid rgba(15, 23, 42, 0.05); box-shadow: 0 10px 30px -12px rgba(43, 112, 228, 0.18);
+}
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.45s ease; }
+.gallery-item:hover img { transform: scale(1.06); }
+.gallery-item figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 1rem 0.85rem 0.65rem;
+  background: linear-gradient(transparent, rgba(15, 23, 42, 0.88)); color: #fff;
+  font-size: 0.85rem; font-weight: 600; letter-spacing: 0.01em;
+}
+/* active tab highlight */
+#gf-all:checked ~ .gallery-tabs label[for="gf-all"],
+#gf-medical:checked ~ .gallery-tabs label[for="gf-medical"],
+#gf-specialty:checked ~ .gallery-tabs label[for="gf-specialty"],
+#gf-ambulatory:checked ~ .gallery-tabs label[for="gf-ambulatory"],
+#gf-rehab:checked ~ .gallery-tabs label[for="gf-rehab"],
+#gf-admin:checked ~ .gallery-tabs label[for="gf-admin"],
+#gf-action:checked ~ .gallery-tabs label[for="gf-action"] {
+  background: linear-gradient(135deg, var(--elev-blue) 0%, var(--elev-blue-dark) 100%);
+  color: #fff; border-color: transparent;
+}
+/* filtering — hide non-matching items for each selected category */
+#gf-medical:checked ~ .gallery-grid .gallery-item:not(.cat-medical),
+#gf-specialty:checked ~ .gallery-grid .gallery-item:not(.cat-specialty),
+#gf-ambulatory:checked ~ .gallery-grid .gallery-item:not(.cat-ambulatory),
+#gf-rehab:checked ~ .gallery-grid .gallery-item:not(.cat-rehab),
+#gf-admin:checked ~ .gallery-grid .gallery-item:not(.cat-admin),
+#gf-action:checked ~ .gallery-grid .gallery-item:not(.cat-action) { display: none; }
+
 /* --- Floating phone CTA on mobile: mobile-fixes.css hid it (display:none)
    expecting a .mobile-sticky-cta that the migration never rendered, leaving
    NO phone button on phones. Show the gold pill (it has a phone icon) on
