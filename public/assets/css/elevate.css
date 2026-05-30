@@ -109,6 +109,15 @@ select:focus-visible {
   border-color: rgba(43, 112, 228, 0.18);
 }
 
+/* --- Typography polish: balanced headlines, no orphan words ------------- */
+h1, h2, h3,
+.section__title, .hero-premium__title,
+.section__subtitle, .section__description,
+.benefit-card__title, .service-card__title, .card__title {
+  text-wrap: balance;
+}
+#main-content p, .section__description, .footer__cta-text { text-wrap: pretty; }
+
 /* --- Section rhythm: generous, consistent breathing room ----------------- */
 .section { padding-block: clamp(3rem, 6vw, 5.5rem); }
 .section__title { letter-spacing: -0.02em; }
