@@ -1,5 +1,5 @@
 {
-  "cleanUrls": true,
+  "framework": "nextjs",
   "trailingSlash": false,
   "redirects": [
     {
@@ -29,19 +29,6 @@
     { "source": "/services/infection-control-disinfection", "destination": "/services/rehab-nursing", "permanent": true },
     { "source": "/services/compliance-scheduled-sanitation/:city", "destination": "/services/healthcare-admin-offices/:city", "permanent": true },
     { "source": "/services/compliance-scheduled-sanitation", "destination": "/services/healthcare-admin-offices", "permanent": true }
-  ],
-  "rewrites": [
-    { "source": "/about", "destination": "/about.html" },
-    { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/reviews", "destination": "/reviews.html" },
-    { "source": "/privacy", "destination": "/privacy.html" },
-    { "source": "/terms", "destination": "/terms.html" },
-    { "source": "/sitemap", "destination": "/sitemap.html" },
-    { "source": "/services", "destination": "/services/index.html" },
-    { "source": "/locations", "destination": "/locations/index.html" },
-    { "source": "/locations/:city", "destination": "/locations/:city.html" },
-    { "source": "/services/:service", "destination": "/services/:service/index.html" },
-    { "source": "/services/:service/:city", "destination": "/services/:service/:city.html" }
   ],
   "headers": [
     {
