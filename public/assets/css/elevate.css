@@ -430,3 +430,17 @@ h1, h2, h3,
   .btn, .card, .service-card, .trust-card, .service-card--premium { transition: none; }
   .btn:hover, .card:hover, .service-card:hover, .trust-card:hover { transform: none; }
 }
+
+/* ---------------------------------------------------------------------
+   Contact cards reused inside light page sections (home "Request your
+   assessment" block uses .footer__contact-* markup). Those classes are
+   coloured white for the DARK footer, so on the white cards here the
+   phone / email / area / hours VALUES rendered white-on-white (invisible).
+   Re-colour them for a light surface — scoped to .section so the real
+   <footer> is left untouched (footer is <footer class="footer">, not a
+   .section). --------------------------------------------------------- */
+.section .footer__contact-label { color: #5b6b7c !important; }
+.section .footer__contact-value,
+.section .footer__contact-value a { color: #0f2745 !important; }
+.section .footer__contact-value a:hover { color: #2b70e4 !important; }
+.section .footer__contact-icon { color: #2b70e4 !important; }
