@@ -1390,27 +1390,30 @@ html, body {
    intentionally left alone.
    ==================================================================== */
 @media (max-width: 768px) {
-  .hero-premium__subtitle { font-size: 1.12rem !important; line-height: 1.55 !important; }
+  /* NOTE: the legacy theme sets the root font-size to ~14px on phones, so
+     rem-based sizes here render ~12% smaller than expected. Use absolute px
+     for the reading-text floor so "increase mobile text" actually sticks. */
+  .hero-premium__subtitle { font-size: 18px !important; line-height: 1.55 !important; }
   .hero--inner .hero__subtitle,
   .hero--location .hero__subtitle,
   .section__description,
-  .section__subtitle { font-size: 1.06rem !important; line-height: 1.55 !important; }
+  .section__subtitle { font-size: 17px !important; line-height: 1.55 !important; }
   #main-content p,
-  #main-content li { font-size: 1.06rem !important; line-height: 1.65 !important; }
+  #main-content li { font-size: 17px !important; line-height: 1.65 !important; }
   .service-card--premium .service-card__text,
   .service-card__text,
   .service-card-description,
   .card__text,
   .benefit-card__text,
-  .trust-card__text { font-size: 1rem !important; line-height: 1.55 !important; }
-  .service-picker__btn { font-size: 0.8rem !important; }
-  .footer__areas-list { font-size: 0.86rem !important; line-height: 2.1 !important; }
+  .trust-card__text { font-size: 16px !important; line-height: 1.55 !important; }
+  .service-picker__btn { font-size: 13px !important; }
+  .footer__areas-list { font-size: 13px !important; line-height: 2.1 !important; }
 
   /* Contact cards (home assessment block): labels were ~10px, values were
      invisible white-on-white. Make both legible on phones. */
-  .footer__contact-label { font-size: 0.82rem !important; letter-spacing: 0.04em !important; }
+  .footer__contact-label { font-size: 13px !important; letter-spacing: 0.04em !important; }
   .section .footer__contact-value,
-  .section .footer__contact-value a { font-size: 1.05rem !important; line-height: 1.5 !important; }
+  .section .footer__contact-value a { font-size: 17px !important; line-height: 1.5 !important; }
 
   /* Bigger hamburger tap target so the menu opens reliably on real
      devices (48px min, above any overlay). */
