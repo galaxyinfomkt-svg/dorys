@@ -520,3 +520,25 @@ h1, h2, h3,
   border-color: #2b70e4 !important;
   color: #fff !important;
 }
+
+/* Widen the HOME hero form. The form card is a flex item in
+   .hero-premium__grid (display:flex) with no width set, so it collapsed to
+   the iframe's intrinsic ~300px and looked cramped. Give it a proper
+   desktop width (RS-style prominent card); full width on mobile. */
+@media (min-width: 1024px) {
+  .hero-premium__form#hero-form-card {
+    flex: 0 0 480px !important;
+    width: 480px !important;
+    max-width: 480px !important;
+  }
+}
+@media (max-width: 1023px) {
+  .hero-premium__form#hero-form-card {
+    width: 100% !important;
+    max-width: 560px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+/* Let the embedded form fill the wider card (the GHL form is responsive) */
+#hero-form-card iframe { width: 100% !important; }
