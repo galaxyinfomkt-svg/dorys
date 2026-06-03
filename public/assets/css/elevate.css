@@ -542,3 +542,43 @@ h1, h2, h3,
 }
 /* Let the embedded form fill the wider card (the GHL form is responsive) */
 #hero-form-card iframe { width: 100% !important; }
+
+/* ---------------------------------------------------------------------
+   NATIVE QUOTE FORM (.qf) — Dory's-coloured, RS-style clean card. Used by
+   components/QuoteForm.tsx (posts to /api/submit-lead). Blue primary CTA
+   + gold accent rule = Dory's identity (vs RS's all-gold). ------------- */
+.qf { max-width: 560px; margin: 0 auto; width: 100%; }
+.qf__head { text-align: center; margin-bottom: 1.75rem; }
+.qf__title { font-size: 2rem; font-weight: 800; color: #0f2745; margin: 0 0 0.85rem; letter-spacing: -0.01em; line-height: 1.15; }
+.qf__rule { width: 72px; height: 4px; background: linear-gradient(90deg, #2b70e4, #f59e0b); border-radius: 4px; margin: 0 auto; }
+.qf__sub { color: #5b6b7c; margin: 0.85rem 0 0; font-size: 0.98rem; }
+.qf__field { margin-bottom: 1rem; position: relative; }
+.qf__icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; color: #9aa6b2; pointer-events: none; }
+.qf__input, .qf__select {
+  width: 100%; height: 56px; border: 1px solid #dfe5ec; border-radius: 12px;
+  padding: 0 18px; font-size: 16px; color: #0f2745; background: #fff;
+  font-family: inherit; transition: border-color .2s ease, box-shadow .2s ease; appearance: none; -webkit-appearance: none;
+}
+.qf__field--icon .qf__input { padding-left: 46px; }
+.qf__input::placeholder { color: #6b7280; opacity: 1; }
+.qf__select { color: #6b7280; cursor: pointer; padding-right: 44px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%232b70e4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M6 9l6 6 6-6'/></svg>");
+  background-repeat: no-repeat; background-position: right 16px center; }
+.qf__select--filled { color: #0f2745; }
+.qf__input:focus, .qf__select:focus { border-color: #2b70e4; box-shadow: 0 0 0 4px rgba(43,112,228,0.15); outline: none; }
+.qf__btn {
+  width: 100%; height: 60px; border: 0; border-radius: 14px; cursor: pointer;
+  font-size: 18px; font-weight: 800; color: #fff; letter-spacing: 0.01em;
+  background: linear-gradient(135deg, #2b70e4 0%, #1e5fd0 100%);
+  box-shadow: 0 10px 24px rgba(43,112,228,0.30); transition: transform .2s ease, box-shadow .2s ease; margin-top: 0.5rem;
+}
+.qf__btn:hover { transform: translateY(-2px); box-shadow: 0 16px 34px rgba(43,112,228,0.40); }
+.qf__btn:disabled { opacity: .6; cursor: not-allowed; transform: none; box-shadow: none; }
+.qf__note { text-align: center; color: #8a97a4; font-size: 0.82rem; margin: 0.9rem 0 0; }
+.qf__msg { text-align: center; padding: 0.9rem 1rem; border-radius: 12px; margin-top: 1rem; font-weight: 600; font-size: 0.95rem; }
+.qf__msg--err { background: #fef2f2; color: #b42318; border: 1px solid #fadcd9; }
+.qf__success { text-align: center; padding: 2.5rem 1rem; }
+.qf__success-icon { width: 60px; height: 60px; color: #2b70e4; margin: 0 auto 1rem; display: block; }
+.qf__success h3 { font-size: 1.5rem; color: #0f2745; margin: 0 0 0.5rem; }
+.qf__success p { color: #5b6b7c; margin: 0; }
+@media (max-width: 768px) { .qf__title { font-size: 1.6rem; } }
