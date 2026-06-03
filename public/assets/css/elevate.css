@@ -444,3 +444,54 @@ h1, h2, h3,
 .section .footer__contact-value a { color: #0f2745 !important; }
 .section .footer__contact-value a:hover { color: #2b70e4 !important; }
 .section .footer__contact-icon { color: #2b70e4 !important; }
+
+/* ---------------------------------------------------------------------
+   QUOTE-FORM CARD (location / service pages). The white card that frames
+   the GHL form iframe is inline-styled and repeated across ~1,800 pages,
+   so we polish the FRAME here via CSS (the form itself is a cross-origin
+   GHL iframe and can't be styled from the site). Selector: the only
+   .container--narrow whose direct child is a <div> with an inline
+   box-shadow is this card — the sibling narrow blocks wrap an <h2>.
+   Goal: premium, RS-style framing in Dory's colours. --------------- */
+.container--narrow > div[style*="box-shadow"] {
+  border-radius: 20px !important;
+  padding: 2.5rem 2.25rem !important;
+  max-width: 640px !important;
+  box-shadow: 0 24px 60px -20px rgba(15, 39, 69, 0.28),
+              0 4px 12px rgba(15, 39, 69, 0.06) !important;
+  border: 1px solid #eaf0f7 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+/* Dory's blue -> gold accent bar across the top of the card */
+.container--narrow > div[style*="box-shadow"]::before {
+  content: "";
+  position: absolute; top: 0; left: 0; right: 0; height: 5px;
+  background: linear-gradient(90deg, #2b70e4 0%, #2b70e4 58%, #f59e0b 100%);
+}
+/* Header block (badge + heading + subline) */
+.container--narrow > div[style*="box-shadow"] > div:first-child {
+  margin-bottom: 1.75rem !important;
+}
+.container--narrow > div[style*="box-shadow"] h2 {
+  font-size: 1.9rem !important;
+  line-height: 1.18 !important;
+  font-weight: 800 !important;
+  color: #0f2745 !important;
+  letter-spacing: -0.01em !important;
+}
+/* "FREE Facility Assessment" gold pill — lift it with a soft shadow */
+.container--narrow > div[style*="box-shadow"] > div:first-child span {
+  box-shadow: 0 6px 16px rgba(245, 158, 11, 0.32) !important;
+}
+/* Give the embedded form iframe a touch more breathing room + rounding */
+.container--narrow > div[style*="box-shadow"] iframe {
+  border-radius: 10px !important;
+}
+@media (max-width: 768px) {
+  .container--narrow > div[style*="box-shadow"] {
+    padding: 1.75rem 1.25rem !important;
+    border-radius: 16px !important;
+  }
+  .container--narrow > div[style*="box-shadow"] h2 { font-size: 1.5rem !important; }
+}
