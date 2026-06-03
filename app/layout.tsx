@@ -50,20 +50,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          rel="preload"
-          href="https://fonts.gstatic.com/s/inter/v24/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="https://fonts.gstatic.com/s/poppins/v23/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin=""
-        />
+        {/* NOTE: do NOT hardcode-preload specific gstatic woff2 URLs — Google
+            rotates those hashed filenames, so the old ones 404 on every page
+            (wasted request + console error). The stylesheet below loads the
+            correct font files itself. */}
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=optional"
