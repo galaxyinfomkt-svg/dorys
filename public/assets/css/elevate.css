@@ -495,3 +495,28 @@ h1, h2, h3,
   }
   .container--narrow > div[style*="box-shadow"] h2 { font-size: 1.5rem !important; }
 }
+
+/* ---------------------------------------------------------------------
+   HOME hero quote-form card — converted from the dark "glass" card to a
+   white RS-style card (the inline styles now white; see data/home.json),
+   so it matches the inner-page form cards. Here we add the blue->gold
+   accent bar and re-style the facility-type picker pills for the light
+   surface (the global .service-picker__btn rules above are tuned for the
+   old dark card, so override them, scoped to #hero-form-card). -------- */
+#hero-form-card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; z-index: 3;
+  background: linear-gradient(90deg, #2b70e4 0%, #2b70e4 58%, #f59e0b 100%);
+}
+#hero-form-card .service-picker__btn {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #0f2745 !important;
+}
+#hero-form-card .service-picker__btn:hover { background: #eef2f7 !important; }
+#hero-form-card .service-picker__btn[aria-checked="true"],
+#hero-form-card .service-picker__btn.is-selected,
+#hero-form-card .service-picker__btn.active {
+  background: linear-gradient(135deg, #2b70e4 0%, #1e5fd0 100%) !important;
+  border-color: #2b70e4 !important;
+  color: #fff !important;
+}

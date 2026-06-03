@@ -83,18 +83,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="stylesheet" href="/assets/css/footer.css" />
         <link rel="stylesheet" href="/assets/css/animations.css" />
         <link rel="stylesheet" href="/assets/css/lightbox.css" />
-        <link rel="stylesheet" href="/assets/css/aeo.css?v=20260531c" />
+        <link rel="stylesheet" href="/assets/css/aeo.css?v=20260531d" />
         {/* elevate.css — site-wide premium polish; loads after the legacy
             sheets so it wins on equal specificity, before mobile-fixes.
             The ?v= query is a cache-buster: bump it whenever we edit these
             custom sheets so browsers/CDN are forced to refetch instead of
             serving a stale copy (the gallery looked unstyled to users whose
             browser had cached the pre-gallery elevate.css). */}
-        <link rel="stylesheet" href="/assets/css/elevate.css?v=20260531c" />
+        <link rel="stylesheet" href="/assets/css/elevate.css?v=20260531d" />
         {/* mobile-fixes.css must load LAST so its !important rules
             (phone-number visibility, services-grid lock, floating
             phone CTA) win the cascade. */}
-        <link rel="stylesheet" href="/assets/css/mobile-fixes.css?v=20260531c" />
+        <link rel="stylesheet" href="/assets/css/mobile-fixes.css?v=20260531d" />
       </head>
       <body className="is-loaded">
         {children}
