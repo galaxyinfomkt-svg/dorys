@@ -467,7 +467,7 @@ h1, h2, h3,
 .container--narrow > div[style*="box-shadow"]::before {
   content: "";
   position: absolute; top: 0; left: 0; right: 0; height: 5px;
-  background: linear-gradient(90deg, #2b70e4 0%, #2b70e4 58%, #f59e0b 100%);
+  background: linear-gradient(90deg, #f59e0b 0%, #fdb913 100%);
 }
 /* Header block (badge + heading + subline) */
 .container--narrow > div[style*="box-shadow"] > div:first-child {
@@ -505,7 +505,7 @@ h1, h2, h3,
    old dark card, so override them, scoped to #hero-form-card). -------- */
 #hero-form-card::before {
   content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; z-index: 3;
-  background: linear-gradient(90deg, #2b70e4 0%, #2b70e4 58%, #f59e0b 100%);
+  background: linear-gradient(90deg, #f59e0b 0%, #fdb913 100%);
 }
 #hero-form-card .service-picker__btn {
   background: #f8fafc !important;
