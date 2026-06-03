@@ -67,6 +67,7 @@ export default function Footer() {
               <li><Link href="/reviews">Reviews</Link></li>
               <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/healthcare-facilities">For Healthcare Facilities</Link></li>
+              <li><Link href="/supplier-diversity">Supplier Diversity (MBE/WBE)</Link></li>
               <li><Link href="/faq">FAQ</Link></li>
               <li><Link href="/press">Press & Media</Link></li>
               <li><Link href="/contact">Contact</Link></li>

@@ -40,6 +40,7 @@ export default function Header() {
             "Licensed & $2M Insured",
             "CDC / OSHA Compliant",
             "22+ Years Clinical Experience",
+            "Black-Owned & Women-Owned",
             "Serving 296 MA Cities",
             "Free 24-Hour Facility Assessment",
           ].flatMap((item, i, arr) => {
