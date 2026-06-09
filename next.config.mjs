@@ -32,6 +32,10 @@ const nextConfig = {
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
           { key: "Permissions-Policy", value: "geolocation=(), microphone=(), camera=()" },
+          // Origin isolation (Lighthouse Best Practices). allow-popups keeps any
+          // GHL/third-party popups working; COEP is intentionally omitted so the
+          // cross-origin GHL form, chat, fonts and images keep loading.
+          { key: "Cross-Origin-Opener-Policy", value: "same-origin-allow-popups" },
         ],
       },
       {
