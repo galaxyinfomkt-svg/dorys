@@ -80,7 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             custom sheets so browsers/CDN are forced to refetch instead of
             serving a stale copy (the gallery looked unstyled to users whose
             browser had cached the pre-gallery elevate.css). */}
-        <link rel="stylesheet" href="/assets/css/elevate.css?v=20260531g" />
+        <link rel="stylesheet" href="/assets/css/elevate.css?v=20260609a" />
         {/* mobile-fixes.css must load LAST so its !important rules
             (phone-number visibility, services-grid lock, floating
             phone CTA) win the cascade. */}
