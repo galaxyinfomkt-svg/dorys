@@ -14,13 +14,14 @@ export default function LazyEmbeds() {
   useEffect(() => {
     let done = false
     let timer: ReturnType<typeof setTimeout> | undefined
-    let io: IntersectionObserver | undefined
-    const events = ["scroll", "pointerdown", "keydown", "touchstart", "mousemove"] as const
+    // Real intent signals only — NOT mousemove (fires instantly) and NOT a
+    // near-viewport observer (the hero form sits high on the page, so it would
+    // trigger during the first paint and defeat the whole point).
+    const events = ["scroll", "pointerdown", "keydown", "touchstart"] as const
 
     const cleanup = () => {
       events.forEach((e) => window.removeEventListener(e, onTrigger))
       if (timer) clearTimeout(timer)
-      if (io) io.disconnect()
     }
 
     const loadForms = () => {
@@ -63,20 +64,10 @@ export default function LazyEmbeds() {
     const onTrigger = () => loadThirdParty()
 
     events.forEach((e) => window.addEventListener(e, onTrigger, { passive: true }))
-    // Idle/last-resort fallback so embeds still load for passive visitors.
-    timer = setTimeout(loadThirdParty, 4000)
-
-    // Load a form as soon as it scrolls near the viewport (covers the case
-    // where a visitor scrolls straight to a below-the-fold form).
-    if ("IntersectionObserver" in window) {
-      io = new IntersectionObserver(
-        (entries) => {
-          if (entries.some((e) => e.isIntersecting)) loadThirdParty()
-        },
-        { rootMargin: "600px" }
-      )
-      document.querySelectorAll("iframe[data-src]").forEach((f) => io!.observe(f))
-    }
+    // Idle fallback so the form/chat/analytics still appear for passive
+    // visitors — but only AFTER the initial paint window, so it doesn't
+    // compete with FCP/LCP. First real interaction loads them sooner.
+    timer = setTimeout(loadThirdParty, 2500)
 
     return cleanup
   }, [])
