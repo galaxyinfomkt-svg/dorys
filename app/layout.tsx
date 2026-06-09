@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next"
 import Script from "next/script"
 import "./globals.css"
 import ScrollReveal from "@/components/ScrollReveal"
+import LazyEmbeds from "@/components/LazyEmbeds"
 
 // Site-wide metadata defaults; per-page metadata is exported from each page.tsx
 // and merged. Title template wraps non-home titles with the brand suffix.
@@ -50,45 +51,55 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        {/* NOTE: do NOT hardcode-preload specific gstatic woff2 URLs — Google
-            rotates those hashed filenames, so the old ones 404 on every page
-            (wasted request + console error). The stylesheet below loads the
-            correct font files itself. */}
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=optional"
-        />
+        <link rel="preconnect" href="https://api.leadconnectorhq.com" crossOrigin="" />
 
-        {/* Legacy stylesheets — every page-body class (.hero-premium,
-            .container, .nav-link, .footer__grid, .card, .btn, .top-bar,
-            etc.) is defined here. Keep loading them site-wide while we
-            incrementally port styles to Tailwind. */}
+        {/* Critical, above-the-fold CSS — render-blocking on purpose so the
+            hero/nav/layout paint without a flash. Everything else is deferred
+            below to keep FCP/LCP low.
+            NOTE: do NOT hardcode-preload specific gstatic woff2 URLs — Google
+            rotates those hashed filenames, so the old ones 404 on every page. */}
         <link rel="stylesheet" href="/assets/css/critical.min.css" />
         <link rel="stylesheet" href="/assets/css/premium.css" />
         {/* service-pages.css sizes benefit/highlight card icons, benefits/
-            related grids, cta-boxes, faq items, etc. The static site loaded it
-            on service pages; the migration omitted it, so those icons rendered
-            unsized (giant black shapes) and grids lost their layout. */}
+            related grids, cta-boxes, faq items, etc. */}
         <link rel="stylesheet" href="/assets/css/service-pages.css" />
-        <link rel="stylesheet" href="/assets/css/footer.css" />
-        <link rel="stylesheet" href="/assets/css/animations.css" />
-        <link rel="stylesheet" href="/assets/css/lightbox.css" />
-        <link rel="stylesheet" href="/assets/css/aeo.css?v=20260531g" />
-        {/* elevate.css — site-wide premium polish; loads after the legacy
-            sheets so it wins on equal specificity, before mobile-fixes.
-            The ?v= query is a cache-buster: bump it whenever we edit these
-            custom sheets so browsers/CDN are forced to refetch instead of
-            serving a stale copy (the gallery looked unstyled to users whose
-            browser had cached the pre-gallery elevate.css). */}
+        {/* elevate.css — site-wide premium polish; wins on equal specificity.
+            Bump the ?v= cache-buster whenever these custom sheets change. */}
         <link rel="stylesheet" href="/assets/css/elevate.css?v=20260609a" />
-        {/* mobile-fixes.css must load LAST so its !important rules
-            (phone-number visibility, services-grid lock, floating
-            phone CTA) win the cascade. */}
+        {/* mobile-fixes.css must load before deferred sheets so its !important
+            rules (phone visibility, services-grid lock, floating CTA) win. */}
         <link rel="stylesheet" href="/assets/css/mobile-fixes.css?v=20260531g" />
+
+        {/* Non-critical CSS + web fonts — injected as async (media=print →
+            all on load) so they don't block first paint. Fonts use
+            display=optional, so fallback text shows immediately. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){var s=['https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=optional','/assets/css/footer.css','/assets/css/animations.css','/assets/css/lightbox.css','/assets/css/aeo.css?v=20260531g'];for(var i=0;i<s.length;i++){var l=document.createElement('link');l.rel='stylesheet';l.href=s[i];l.media='print';l.onload=function(){this.media='all'};document.head.appendChild(l);}})();",
+          }}
+        />
+        <noscript>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=optional" />
+          <link rel="stylesheet" href="/assets/css/footer.css" />
+          <link rel="stylesheet" href="/assets/css/animations.css" />
+          <link rel="stylesheet" href="/assets/css/lightbox.css" />
+          <link rel="stylesheet" href="/assets/css/aeo.css?v=20260531g" />
+        </noscript>
+
+        {/* GA4 stub — define gtag + queue config immediately so analytics
+            events captured before gtag.js loads aren't lost. The gtag.js
+            library itself is loaded lazily (see LazyEmbeds). */}
+        <Script id="ga4-stub" strategy="beforeInteractive">{`
+          window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-2MP9G52LW7');
+        `}</Script>
       </head>
       <body className="is-loaded">
         {children}
         <ScrollReveal />
+        {/* Defers GHL form iframes, the chat widget and GA4 gtag.js until the
+            visitor interacts or after a short idle — keeps initial load light. */}
+        <LazyEmbeds />
 
         {/* Legacy JS — main.js + navigation.js inject the floating
             phone CTA, sticky header, back-to-top, accordion, lightbox,
@@ -97,26 +108,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script src="/assets/js/navigation.js" strategy="afterInteractive" />
         <Script src="/assets/js/header.js" strategy="afterInteractive" />
         <Script src="/assets/js/analytics.js" strategy="afterInteractive" />
-
-        {/* GHL / LeadConnector chat widget (bottom-right bubble) */}
-        <Script
-          src="https://beta.leadconnectorhq.com/loader.js"
-          data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id="6a1b542f7645b2ba9a1194ac"
-          strategy="afterInteractive"
-        />
-
-        {/* GA4 — same property ID we've been using site-wide */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-2MP9G52LW7"
-          strategy="afterInteractive"
-        />
-        <Script id="ga4-init" strategy="afterInteractive">{`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-2MP9G52LW7');
-        `}</Script>
       </body>
     </html>
   )
