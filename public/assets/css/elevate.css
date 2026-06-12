@@ -615,3 +615,12 @@ h1, h2, h3,
 .qf__success h3 { font-size: 1.55rem; color: #0f2745; margin: 0 0 0.5rem; }
 .qf__success p { color: #5b6b7c; margin: 0; line-height: 1.5; }
 @media (max-width: 768px) { .qf__title { font-size: 1.55rem; } .qf__trust { gap: 0.5rem 1rem; } }
+
+/* ---------------------------------------------------------------------
+   CTA CONTRAST — the gold accent button shipped white text on #f59e0b
+   (2.15:1, fails WCAG and reads washed-out). Dark navy ink on gold is
+   ~8:1 and converts better (the classic high-end gold CTA). ---------- */
+.btn--accent,
+.btn--accent:hover,
+.btn--accent:focus { color: #1a1a2e !important; }
+.btn--accent svg { fill: currentColor !important; }
