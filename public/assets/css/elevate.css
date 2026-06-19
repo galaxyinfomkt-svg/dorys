@@ -624,3 +624,16 @@ h1, h2, h3,
 .btn--accent:hover,
 .btn--accent:focus { color: #1a1a2e !important; }
 .btn--accent svg { fill: currentColor !important; }
+
+/* Hero CTAs computed #333 (dark) text on the blue primary + ghost buttons on
+   location/service heroes — invisible over the photos. Force white site-wide. */
+.btn--primary,
+.btn--primary:hover,
+.btn--primary:focus,
+.btn--primary:visited { color: #ffffff !important; }
+.btn--primary svg { fill: currentColor !important; }
+.btn--outline-light,
+.btn--outline-light:hover,
+.btn--outline-light:focus,
+.btn--outline-light:visited { color: #ffffff !important; border-color: rgba(255,255,255,0.6) !important; }
+.btn--outline-light svg { fill: currentColor !important; }

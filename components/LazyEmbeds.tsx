@@ -65,9 +65,10 @@ export default function LazyEmbeds() {
 
     events.forEach((e) => window.addEventListener(e, onTrigger, { passive: true }))
     // Idle fallback so the form/chat/analytics still appear for passive
-    // visitors — but only AFTER the initial paint window, so it doesn't
-    // compete with FCP/LCP. First real interaction loads them sooner.
-    timer = setTimeout(loadThirdParty, 2500)
+    // visitors — short enough that the form feels responsive, but after the
+    // initial paint so it doesn't compete with FCP/LCP. First real
+    // interaction loads them sooner.
+    timer = setTimeout(loadThirdParty, 1200)
 
     return cleanup
   }, [])
