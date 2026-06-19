@@ -64,7 +64,7 @@ export default function Header() {
             <img src="/assets/images/logo/logo-80.webp" alt="Dory's Cleaning Services Logo" width={180} height={60} loading="eager" fetchPriority="high" decoding="async" />
           </Link>
 
-          <nav className="header__nav" aria-label="Main navigation">
+          <nav id="main-navigation" className="header__nav" aria-label="Main navigation">
             <ul className="nav-list">
               <li className="nav-item"><Link href="/" className="nav-link">Home</Link></li>
               <li className="nav-item has-dropdown">
