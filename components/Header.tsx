@@ -88,7 +88,6 @@ export default function Header() {
                 </div>
               </li>
               <li className="nav-item"><Link href="/healthcare-facilities" className="nav-link">For Healthcare Facilities</Link></li>
-              <li className="nav-item"><Link href="/pricing" className="nav-link">Pricing</Link></li>
               <li className="nav-item"><Link href="/about" className="nav-link">About Us</Link></li>
               <li className="nav-item"><Link href="/blog" className="nav-link">Blog</Link></li>
               <li className="nav-item"><Link href="/reviews" className="nav-link">Reviews</Link></li>

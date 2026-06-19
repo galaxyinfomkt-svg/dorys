@@ -76,7 +76,6 @@ export default function Footer() {
             <h3 className="footer__heading">Company</h3>
             <ul className="footer__links">
               <li><Link href="/about">About Us</Link></li>
-              <li><Link href="/pricing">Pricing</Link></li>
               <li><Link href="/reviews">Reviews</Link></li>
               <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/healthcare-facilities">For Healthcare Facilities</Link></li>
