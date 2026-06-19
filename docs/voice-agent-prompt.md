@@ -33,6 +33,13 @@ We clean and sanitize, in Massachusetts:
 - Rehabilitation & nursing / assisted-living facilities
 - Healthcare administration / medical office buildings
 
+SERVICES WE OFFER (our 5 core services)
+1. Medical Office Cleaning — medical offices, dental practices, physician clinics, with infection-control protocols and compliance documentation.
+2. Clinic & Outpatient Facility Sanitation — urgent care, outpatient surgery centers, therapy clinics, specialty healthcare facilities.
+3. Assisted Living & Senior Care Cleaning — nursing homes, assisted-living communities, memory care, with resident-safe protocols.
+4. Infection Control & High-Touch Disinfection — targeted high-touch disinfection and pathogen control for any healthcare facility.
+5. Compliance Documentation & Scheduled Sanitation — structured programs with compliance documentation, quality-control reporting, and scheduled verification.
+
 WHO WE DO NOT SERVE (politely decline)
 - Residential homes, apartments, condos
 - General (non-healthcare) commercial offices, retail, restaurants, warehouses
@@ -129,6 +136,9 @@ Dory's Cleaning Services Inc. — Quick Facts
   ONLY, across Massachusetts.
 - Facility types: medical/dental offices, specialty clinics, ambulatory/outpatient
   surgery centers, rehab & nursing/assisted-living facilities, healthcare administration.
+- Our 5 services: (1) Medical Office Cleaning; (2) Clinic & Outpatient Facility
+  Sanitation; (3) Assisted Living & Senior Care Cleaning; (4) Infection Control &
+  High-Touch Disinfection; (5) Compliance Documentation & Scheduled Sanitation.
 - We do NOT serve residential homes or general (non-healthcare) commercial offices.
 - 22+ years clinical experience. $2,000,000 insured. CDC-compliant.
 - Offer: free facility assessment, response within 24 hours.
