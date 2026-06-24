@@ -1,3 +1,10 @@
+/* Failsafe (must win): scroll-reveal stagger grids (e.g. the home services
+   cards) are hidden by animations.css `.stagger-children > *{opacity:0}` and
+   only revealed when JS adds `.is-visible`. If that JS is stale/cached, the
+   cards stay invisible and leave a big blank gap under the section header.
+   Force them visible via CSS so content NEVER depends on the reveal JS. */
+.stagger-children > * { opacity: 1 !important; transform: none !important; }
+
 /* ==========================================================================
    elevate.css — site-wide premium polish layer (loaded after premium.css,
    before mobile-fixes.css). Preserves Dory's identity (blue #2b70e4 + gold
