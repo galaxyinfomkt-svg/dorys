@@ -45,6 +45,27 @@ export default function GalleryEnhancer() {
     })
 
     apply("all")
+
+    // Turn the grid into a horizontal slider with prev/next arrows.
+    const grid = root.querySelector<HTMLElement>(".gallery-grid")
+    const wrap = grid?.parentElement
+    if (grid && wrap) {
+      wrap.classList.add("gallery-slider-wrap")
+      const mk = (dir: "prev" | "next") => {
+        const b = document.createElement("button")
+        b.type = "button"
+        b.className = `gallery-arrow gallery-arrow--${dir}`
+        b.setAttribute("aria-label", dir === "prev" ? "Previous photos" : "Next photos")
+        b.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="${dir === "prev" ? "M15 18l-6-6 6-6" : "M9 18l6-6-6-6"}"/></svg>`
+        const onClick = () => grid.scrollBy({ left: (dir === "prev" ? -1 : 1) * Math.max(280, grid.clientWidth * 0.8), behavior: "smooth" })
+        b.addEventListener("click", onClick)
+        cleanups.push(() => { b.removeEventListener("click", onClick); b.remove() })
+        wrap.appendChild(b)
+      }
+      mk("prev")
+      mk("next")
+    }
+
     return () => cleanups.forEach(fn => fn())
   }, [])
 
