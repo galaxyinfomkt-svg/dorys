@@ -37,6 +37,16 @@ export default function LazyEmbeds() {
     const loadThirdParty = () => {
       if (done) return
       done = true
+
+      // GHL form_embed.js auto-resizes the form iframes to their full content
+      // height (otherwise they stay at the fixed 500px and clip the form).
+      // Load it BEFORE setting the iframe src so its resize listener is ready.
+      if (!document.getElementById("ghl-form-embed")) {
+        const fe = document.createElement("script")
+        fe.id = "ghl-form-embed"
+        fe.src = "https://link.msgsndr.com/js/form_embed.js"
+        document.body.appendChild(fe)
+      }
       loadForms()
 
       // GHL chat widget

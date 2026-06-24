@@ -34,8 +34,10 @@ export default function ScrollReveal() {
     )
     els.forEach((el) => io.observe(el))
 
-    // Safety net: never leave anything hidden — reveal all after 3.5s
-    const t = window.setTimeout(() => els.forEach((el) => el.classList.add("in-view")), 3500)
+    // Safety net: never leave anything hidden — reveal all after 1.2s so a
+    // missed IntersectionObserver fire can't leave a section blank (the empty
+    // space under the services header was animate-on-scroll stuck at opacity:0).
+    const t = window.setTimeout(() => els.forEach((el) => el.classList.add("in-view")), 1200)
 
     return () => {
       io.disconnect()
