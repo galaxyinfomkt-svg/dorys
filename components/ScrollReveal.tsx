@@ -25,7 +25,10 @@ export default function ScrollReveal() {
       (entries) => {
         for (const e of entries) {
           if (e.isIntersecting) {
-            e.target.classList.add("in-view")
+            // both classes: elevate.css uses .in-view, the legacy animations.css
+            // stagger uses .is-visible — add both so .stagger-children grids
+            // (e.g. the home services cards) actually reveal.
+            e.target.classList.add("in-view", "is-visible")
             io.unobserve(e.target)
           }
         }
@@ -37,7 +40,7 @@ export default function ScrollReveal() {
     // Safety net: never leave anything hidden — reveal all after 1.2s so a
     // missed IntersectionObserver fire can't leave a section blank (the empty
     // space under the services header was animate-on-scroll stuck at opacity:0).
-    const t = window.setTimeout(() => els.forEach((el) => el.classList.add("in-view")), 1200)
+    const t = window.setTimeout(() => els.forEach((el) => el.classList.add("in-view", "is-visible")), 1200)
 
     return () => {
       io.disconnect()
