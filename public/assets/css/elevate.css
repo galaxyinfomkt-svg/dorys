@@ -556,9 +556,9 @@ h1, h2, h3,
    desktop width (RS-style prominent card); full width on mobile. */
 @media (min-width: 1024px) {
   .hero-premium__form#hero-form-card {
-    flex: 0 0 480px !important;
-    width: 480px !important;
-    max-width: 480px !important;
+    flex: 0 0 600px !important;
+    width: 600px !important;
+    max-width: 600px !important;
   }
 }
 @media (max-width: 1023px) {
