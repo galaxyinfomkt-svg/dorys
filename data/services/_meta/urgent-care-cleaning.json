@@ -24,7 +24,50 @@
   "protocolSteps": [],
   "disinfectantContactTimes": [],
   "documentationDeliverables": [],
-  "commonSurveyFindings": [],
+  "commonSurveyFindings": [
+    {
+      "finding": "Standard precautions not followed — hand hygiene missed after glove removal, PPE misused, and reusable PPE not reprocessed to the manufacturer's instructions because staff were never trained to clean it.",
+      "citation": "Joint Commission IC.02.01.01 EP 2, Ambulatory Health Care programme",
+      "source": "https://higherlogicdownload.s3.amazonaws.com/APIC/99e02149-c1d1-4740-9e58-0306e97a6ef3/UploadedImages/TJC_9_4_2024_APIC_California_Coordinating_Council.pdf",
+      "frequency": "Ranked first among the Joint Commission's top five infection control observations for the Ambulatory Health Care programme in 2023. The Joint Commission publishes the ranking, not a percentage."
+    },
+    {
+      "finding": "Low- and intermediate-level disinfection performed incorrectly — wrong product for the surface or device, and label contact time not observed. This is the finding that most directly implicates routine exam-room cleaning.",
+      "citation": "Joint Commission IC.02.02.01 EP 1",
+      "source": "https://www.gsasc.org/assets/docs/FebHandouts/Most%20Common%20ECIC%20Challenges.pdf",
+      "frequency": "Ranked third among the top five infection control observations for the Ambulatory Health Care programme in 2023."
+    },
+    {
+      "finding": "High-level disinfection and sterilisation of reusable instruments not performed to the manufacturer's instructions — conflicting instructions never clarified, one cycle used for devices needing different parameters, staff never assessed for competency.",
+      "citation": "Joint Commission IC.02.02.01 EP 2",
+      "source": "https://higherlogicdownload.s3.amazonaws.com/APIC/99e02149-c1d1-4740-9e58-0306e97a6ef3/UploadedImages/TJC_9_4_2024_APIC_California_Coordinating_Council.pdf",
+      "frequency": "First on the Joint Commission's most frequently cited higher-risk requirements for 2023, across the hospital, critical access, ambulatory and office-based surgery programmes."
+    },
+    {
+      "finding": "Clean and sterile supplies stored improperly — under sinks, exposed to splash, on the floor, or in a way that compromises the sterile barrier.",
+      "citation": "Joint Commission IC.02.02.01 EP 4",
+      "source": "https://higherlogicdownload.s3.amazonaws.com/APIC/99e02149-c1d1-4740-9e58-0306e97a6ef3/UploadedImages/TJC_9_4_2024_APIC_California_Coordinating_Council.pdf",
+      "frequency": "Ranked fifth among the top five infection control observations for the Ambulatory Health Care programme in 2023."
+    },
+    {
+      "finding": "Interior spaces not safe and suitable for the care provided — damaged, worn or porous surfaces, flooring and casework that can no longer be effectively cleaned.",
+      "citation": "Joint Commission EC.02.06.01 EP 1 (becomes PE.01.01.01 EP 1–2 in January 2026)",
+      "source": "https://digitalassets.jointcommission.org/api/public/content/f3834e1835164106bfb6e4fb86e21812?v=1a9da3c6",
+      "frequency": "A top five Environment of Care opportunity in Joint Commission surveys, data covering May 2024 to May 2025."
+    },
+    {
+      "finding": "Environment not clean and free of odours.",
+      "citation": "Joint Commission EC.02.06.01 EP 20 (becomes PE.01.01.01 EP 3 in January 2026)",
+      "source": "https://digitalassets.jointcommission.org/api/public/content/f3834e1835164106bfb6e4fb86e21812?v=1a9da3c6",
+      "frequency": "Listed among the top five Environment of Care opportunities, data covering May 2024 to May 2025."
+    },
+    {
+      "finding": "Hazardous chemical risks not minimised across selection, handling, storage and disposal — in practice the unattended housekeeping cart, unlabelled secondary containers of disinfectant, and unsecured chemical storage.",
+      "citation": "Joint Commission EC.02.02.01 EP 5 (becomes PE.02.01.01 EP 4 in January 2026)",
+      "source": "https://digitalassets.jointcommission.org/api/public/content/f3834e1835164106bfb6e4fb86e21812?v=1a9da3c6",
+      "frequency": "A top five Environment of Care opportunity in both hospital and critical access hospital surveys, May 2024 to May 2025."
+    }
+  ],
   "typicalFrequency": null,
   "faqs": [],
   "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."

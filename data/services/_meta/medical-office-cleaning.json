@@ -28,7 +28,56 @@
   "protocolSteps": [],
   "disinfectantContactTimes": [],
   "documentationDeliverables": [],
-  "commonSurveyFindings": [],
+  "commonSurveyFindings": [
+    {
+      "finding": "No written schedule for cleaning and method of decontamination based on location, surface type, soil type and the procedures performed. This is an explicit OSHA requirement, not a recommendation.",
+      "citation": "29 CFR 1910.1030(d)(4)(i)",
+      "source": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1030",
+      "frequency": "Federal OSHA cited 29 CFR 1910.1030 thirty-three times across twelve inspections of physicians' offices between October 2024 and September 2025 — the most-cited standard for the sector, out of 55 citations in total."
+    },
+    {
+      "finding": "Contaminated work surfaces not decontaminated after procedures, immediately after a spill, and at the end of a shift where the surface may have become contaminated.",
+      "citation": "29 CFR 1910.1030(d)(4)(ii)(A)",
+      "source": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1030",
+      "frequency": null
+    },
+    {
+      "finding": "Protective coverings on equipment and surfaces not removed and replaced when contaminated or at the end of the shift.",
+      "citation": "29 CFR 1910.1030(d)(4)(ii)(B)",
+      "source": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1030",
+      "frequency": null
+    },
+    {
+      "finding": "Reusable bins, pails and cans likely to become contaminated are not inspected and decontaminated on a schedule, and not cleaned immediately when visibly contaminated.",
+      "citation": "29 CFR 1910.1030(d)(4)(ii)(C)",
+      "source": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1030",
+      "frequency": null
+    },
+    {
+      "finding": "Broken contaminated glassware picked up by hand instead of by mechanical means such as a brush and dustpan, tongs or forceps.",
+      "citation": "29 CFR 1910.1030(d)(4)(ii)(D)",
+      "source": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1030",
+      "frequency": null
+    },
+    {
+      "finding": "Environmental surfaces in exam rooms, especially those near the patient and frequently touched, not cleaned and then disinfected with an EPA-registered disinfectant.",
+      "citation": "CDC Infection Prevention Checklist for Outpatient Settings, Section II item A; CDC Core Practices 5b",
+      "source": "https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "Staff cleaning the practice have not been trained on, or issued, the PPE needed to avoid exposure to infectious agents and to the disinfectant chemicals themselves.",
+      "citation": "CDC Infection Prevention Checklist for Outpatient Settings, Section I item C",
+      "source": "https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "Filled sharps containers not disposed of under state regulated medical waste rules, and regulated waste containers not closable, leak-proof and labelled or colour-coded.",
+      "citation": "CDC Infection Prevention Checklist, Section II items I and J; OSHA 29 CFR 1910.1030(d)(4)(iii)",
+      "source": "https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf",
+      "frequency": null
+    }
+  ],
   "typicalFrequency": null,
   "faqs": [],
   "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."

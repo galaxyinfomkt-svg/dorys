@@ -182,7 +182,7 @@ for (const svc of SERVICES) {
 }
 
 const all = readdirSync(OUT)
-  .filter((f) => f.endsWith('.json'))
+  .filter((f) => f.endsWith('.json') && !f.startsWith('_'))
   .map((f) => JSON.parse(readFileSync(join(OUT, f), 'utf8')))
 
 const ready = all.filter((s) => s.faqs.length >= 10 && s.commonSurveyFindings.length >= 6)

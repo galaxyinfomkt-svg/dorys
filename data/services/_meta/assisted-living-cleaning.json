@@ -23,7 +23,44 @@
   "protocolSteps": [],
   "disinfectantContactTimes": [],
   "documentationDeliverables": [],
-  "commonSurveyFindings": [],
+  "commonSurveyFindings": [
+    {
+      "finding": "Staff cannot state the wet contact time for the disinfectant in use, so surfaces are wiped and allowed to dry short of the label time and the product's kill claim is never achieved.",
+      "citation": "CDC Infection Control Assessment and Response (ICAR), environmental cleaning domain",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9489257/",
+      "frequency": "18.1% of 438 long-term care facilities assessed under a CDC protocol in 2020 were unaware of the contact time for the disinfectants they were using; 206 of those facilities were assisted living."
+    },
+    {
+      "finding": "No auditing of hand hygiene and PPE compliance — a written policy exists, but no observational monitoring confirms staff follow it.",
+      "citation": "CDC Infection Control Assessment and Response (ICAR)",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9489257/",
+      "frequency": "16.8% of the same 438 facilities did no such auditing. Assisted living performed materially worse than nursing homes on several controls in that study."
+    },
+    {
+      "finding": "Bloodborne pathogens programme deficiencies — exposure control plan, contaminated laundry, regulated waste, surface decontamination and PPE.",
+      "citation": "29 CFR 1910.1030 — OSHA Bloodborne Pathogens",
+      "source": "https://www.osha.gov/ords/imis/citedstandard.naics?p_state=FEFederal&p_naics=623312",
+      "frequency": "Federal OSHA, October 2024 to September 2025: 9 citations across 3 inspections of assisted living facilities, carrying $37,006 in penalties — the largest penalty total of any standard for the sector."
+    },
+    {
+      "finding": "Failure to meet the State Sanitary Code. This is an express condition of certification for every Massachusetts assisted living residence, and a sponsor must forward any Sanitary Code, Building Code or fire safety citation it receives to the state within seven days.",
+      "citation": "651 CMR 12.04(1)(e) and 651 CMR 12.04(13)(b)1",
+      "source": "https://www.law.cornell.edu/regulations/massachusetts/651-CMR-12-04",
+      "frequency": null
+    },
+    {
+      "finding": "No adequate plan to prevent and limit the spread of communicable disease. Every Massachusetts residence must have one, conforming to accepted principles of universal precautions based on DPH guidance.",
+      "citation": "651 CMR 12.04(12)",
+      "source": "https://www.law.cornell.edu/regulations/massachusetts/651-CMR-12-04",
+      "frequency": null
+    },
+    {
+      "finding": "Common-area housekeeping is inspected directly by the state. Massachusetts compliance reviews happen at least every two years and must include a physical inspection of the residence's common areas.",
+      "citation": "651 CMR 12.09 — Compliance Reviews of Assisted Living Residences",
+      "source": "https://www.law.cornell.edu/regulations/massachusetts/651-CMR-12-09",
+      "frequency": null
+    }
+  ],
   "typicalFrequency": null,
   "faqs": [],
   "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."

@@ -26,7 +26,56 @@
   "protocolSteps": [],
   "disinfectantContactTimes": [],
   "documentationDeliverables": [],
-  "commonSurveyFindings": [],
+  "commonSurveyFindings": [
+    {
+      "finding": "Operating rooms not cleaned and disinfected with an EPA-registered disinfectant after each surgical or invasive procedure. On the CMS surveyor worksheet a 'no' here must be cited as a deficient practice.",
+      "citation": "CMS Exhibit 351, ASC Infection Control Surveyor Worksheet, Section IV item A — cited against 42 CFR 416.51(a)",
+      "source": "https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/som107_exhibit_351.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "Operating rooms not terminally cleaned daily.",
+      "citation": "CMS Exhibit 351, Section IV item B — cited against 42 CFR 416.51(a)",
+      "source": "https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/som107_exhibit_351.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "Environmental surfaces in patient care areas not cleaned and disinfected on a regular basis, when spills occur, and when visibly contaminated.",
+      "citation": "CMS Exhibit 351, Section IV item C — cited against 42 CFR 416.51(a)",
+      "source": "https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/som107_exhibit_351.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "No procedure in place to decontaminate gross spills of blood.",
+      "citation": "CMS Exhibit 351, Section IV item D — cited against 42 CFR 416.51(a)",
+      "source": "https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/som107_exhibit_351.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "Cleaning staff not included in the centre's documented infection control training. The surveyor worksheet names cleaning staff as a category and asks for documentation proving they were trained.",
+      "citation": "CMS Exhibit 351, questions 19, 19b, 19d and 19e — related to 42 CFR 416.51(b)",
+      "source": "https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/som107_exhibit_351.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "The centre cannot document that it considered, selected and implemented nationally recognised infection control guidelines covering environmental services. The infection control programme is a Condition for Coverage, so this can draw a condition-level citation.",
+      "citation": "42 CFR 416.51(b)",
+      "source": "https://www.ecfr.gov/current/title-42/section-416.51",
+      "frequency": null
+    },
+    {
+      "finding": "Failure to provide a functional and sanitary environment for surgical services — the umbrella finding every environmental cleaning deficiency in a surgery centre is cited under.",
+      "citation": "42 CFR 416.51(a) and 42 CFR 416.44",
+      "source": "https://www.ecfr.gov/current/title-42/section-416.51",
+      "frequency": null
+    },
+    {
+      "finding": "Reprocessing area without a one-directional workflow from contaminated to clean and sterile areas — no clear separation between soiled and clean workspaces.",
+      "citation": "CDC Infection Prevention Checklist for Outpatient Settings, Section II item C",
+      "source": "https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf",
+      "frequency": null
+    }
+  ],
   "typicalFrequency": null,
   "faqs": [],
   "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."

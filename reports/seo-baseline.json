@@ -1,0 +1,701 @@
+{
+  "snapshots": [
+    {
+      "capturedAt": "2026-07-20T23:05:30.205Z",
+      "site": "sc-domain:doryscleaningservices.com",
+      "note": "Captured immediately after the restructure shipped (1,827 -> 705 pages, 1,122 redirects). Numbers here describe the site as Google saw it BEFORE reprocessing those redirects. Expect indexed pages and impressions to fall over the following weeks — that is the pruning being absorbed, not a regression.",
+      "window28": {
+        "from": "2026-06-20",
+        "to": "2026-07-17",
+        "clicks": 19,
+        "impressions": 7593,
+        "clicksPerDay": 0.68,
+        "impressionsPerDay": 271.18,
+        "avgPosition": 38.768470960094824,
+        "ctr": 0.25
+      },
+      "window90": {
+        "from": "2026-04-19",
+        "to": "2026-07-17",
+        "clicks": 66,
+        "impressions": 28206
+      },
+      "topQueries": [
+        {
+          "query": "34 maple street milford ma",
+          "clicks": 0,
+          "impressions": 3,
+          "position": 80
+        },
+        {
+          "query": "50 howe ave millbury ma",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 75
+        },
+        {
+          "query": "according to the cdc what is the definition of cleaning",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 83
+        },
+        {
+          "query": "apartment cleaning in billerica ma",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 82
+        },
+        {
+          "query": "apartment cleaning in woburn ma",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 93.5
+        },
+        {
+          "query": "apartment cleaning lincoln ma",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 58.5
+        },
+        {
+          "query": "apartment cleaning malden ma",
+          "clicks": 0,
+          "impressions": 3,
+          "position": 61
+        },
+        {
+          "query": "apartment cleaning melrose ma",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 80.5
+        },
+        {
+          "query": "apartment cleaning stoneham ma",
+          "clicks": 0,
+          "impressions": 4,
+          "position": 68.5
+        },
+        {
+          "query": "apartment cleaning watertown ma",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 77
+        },
+        {
+          "query": "ashland deep cleaning",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 34
+        },
+        {
+          "query": "assisted living sanitizing system",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 99
+        },
+        {
+          "query": "bathroom cleaning service near me",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 75
+        },
+        {
+          "query": "bathroom mold removal chelmsford ma",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 62
+        },
+        {
+          "query": "bathroom mold removal lowell ma",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 76
+        },
+        {
+          "query": "bathroom mold removal methuen ma",
+          "clicks": 0,
+          "impressions": 3,
+          "position": 65.7
+        },
+        {
+          "query": "bathroom mold removal tewksbury ma",
+          "clicks": 0,
+          "impressions": 5,
+          "position": 69.6
+        },
+        {
+          "query": "best house cleaning in billerica ma",
+          "clicks": 0,
+          "impressions": 5,
+          "position": 85.4
+        },
+        {
+          "query": "best house cleaning in north billerica ma",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 91.5
+        },
+        {
+          "query": "biweekly cleaning service in billerica ma",
+          "clicks": 0,
+          "impressions": 4,
+          "position": 72.8
+        },
+        {
+          "query": "biweekly house cleaning in woburn ma",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 89
+        },
+        {
+          "query": "building cleaning taunton ma",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 48
+        },
+        {
+          "query": "business cleaning services in natick, ma",
+          "clicks": 0,
+          "impressions": 36,
+          "position": 46.1
+        },
+        {
+          "query": "carpet cleaning company wilbraham, ma",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 85.5
+        },
+        {
+          "query": "carpet cleaning in east longmeadow, ma",
+          "clicks": 0,
+          "impressions": 4,
+          "position": 61.8
+        }
+      ],
+      "topPages": [
+        {
+          "page": "https://doryscleaningservices.com/",
+          "clicks": 9,
+          "impressions": 778,
+          "position": 25.7
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/dedham-ma",
+          "clicks": 2,
+          "impressions": 58,
+          "position": 43.4
+        },
+        {
+          "page": "https://doryscleaningservices.com/blog/cdc-compliance-environmental-sanitation-clinics",
+          "clicks": 1,
+          "impressions": 35,
+          "position": 27.7
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/agawam-ma",
+          "clicks": 1,
+          "impressions": 13,
+          "position": 79.2
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/marshfield-ma",
+          "clicks": 1,
+          "impressions": 40,
+          "position": 55.1
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/worcester-ma",
+          "clicks": 1,
+          "impressions": 249,
+          "position": 55.2
+        },
+        {
+          "page": "https://doryscleaningservices.com/services/healthcare-admin-offices/brockton-ma",
+          "clicks": 1,
+          "impressions": 1,
+          "position": 11
+        },
+        {
+          "page": "https://doryscleaningservices.com/services/medical-office-cleaning/hanover-ma",
+          "clicks": 1,
+          "impressions": 2,
+          "position": 13.5
+        },
+        {
+          "page": "https://doryscleaningservices.com/services/medical-office-cleaning/littleton-ma",
+          "clicks": 1,
+          "impressions": 2,
+          "position": 27.5
+        },
+        {
+          "page": "https://doryscleaningservices.com/services/specialty-clinics/quincy-ma",
+          "clicks": 1,
+          "impressions": 9,
+          "position": 10.7
+        },
+        {
+          "page": "https://doryscleaningservices.com/about",
+          "clicks": 0,
+          "impressions": 29,
+          "position": 5.2
+        },
+        {
+          "page": "https://doryscleaningservices.com/assisted-living-cleaning",
+          "clicks": 0,
+          "impressions": 31,
+          "position": 70
+        },
+        {
+          "page": "https://doryscleaningservices.com/atp-assessment",
+          "clicks": 0,
+          "impressions": 4,
+          "position": 24.3
+        },
+        {
+          "page": "https://doryscleaningservices.com/blog",
+          "clicks": 0,
+          "impressions": 126,
+          "position": 75.4
+        },
+        {
+          "page": "https://doryscleaningservices.com/blog/bloodborne-pathogen-cleanup-protocols-clinical-environments",
+          "clicks": 0,
+          "impressions": 9,
+          "position": 32.2
+        },
+        {
+          "page": "https://doryscleaningservices.com/blog/covid-cleaning-legacy-permanent-changes-healthcare",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 5
+        },
+        {
+          "page": "https://doryscleaningservices.com/blog/dental-office-sterilization-environmental-services",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 7
+        },
+        {
+          "page": "https://doryscleaningservices.com/blog/environmental-services-quality-control-healthcare",
+          "clicks": 0,
+          "impressions": 3,
+          "position": 15.3
+        },
+        {
+          "page": "https://doryscleaningservices.com/blog/healthcare-inspection-preparation-guide-massachusetts",
+          "clicks": 0,
+          "impressions": 4,
+          "position": 11
+        },
+        {
+          "page": "https://doryscleaningservices.com/blog/high-touch-surface-disinfection-frequency-healthcare",
+          "clicks": 0,
+          "impressions": 3,
+          "position": 17
+        },
+        {
+          "page": "https://doryscleaningservices.com/blog/hipaa-compliant-cleaning-medical-offices",
+          "clicks": 0,
+          "impressions": 42,
+          "position": 20.8
+        },
+        {
+          "page": "https://doryscleaningservices.com/blog/infection-control-best-practices-medical-offices",
+          "clicks": 0,
+          "impressions": 4,
+          "position": 47.3
+        },
+        {
+          "page": "https://doryscleaningservices.com/blog/operating-room-terminal-cleaning-protocols",
+          "clicks": 0,
+          "impressions": 16,
+          "position": 30.9
+        },
+        {
+          "page": "https://doryscleaningservices.com/cardiology-clinic-cleaning",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 9
+        },
+        {
+          "page": "https://doryscleaningservices.com/contact",
+          "clicks": 0,
+          "impressions": 53,
+          "position": 85.5
+        },
+        {
+          "page": "https://doryscleaningservices.com/covid-disinfection",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 41
+        },
+        {
+          "page": "https://doryscleaningservices.com/dental-office-cleaning",
+          "clicks": 0,
+          "impressions": 58,
+          "position": 71
+        },
+        {
+          "page": "https://doryscleaningservices.com/dialysis-clinic-cleaning",
+          "clicks": 0,
+          "impressions": 12,
+          "position": 45.6
+        },
+        {
+          "page": "https://doryscleaningservices.com/emergency-cleaning",
+          "clicks": 0,
+          "impressions": 9,
+          "position": 78.7
+        },
+        {
+          "page": "https://doryscleaningservices.com/healthcare-cleaning-massachusetts-guide",
+          "clicks": 0,
+          "impressions": 11,
+          "position": 10.6
+        },
+        {
+          "page": "https://doryscleaningservices.com/healthcare-facilities",
+          "clicks": 0,
+          "impressions": 19,
+          "position": 25.1
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations",
+          "clicks": 0,
+          "impressions": 97,
+          "position": 53.3
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/acushnet-ma",
+          "clicks": 0,
+          "impressions": 20,
+          "position": 60
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/amesbury-ma",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 2
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/ashland-ma",
+          "clicks": 0,
+          "impressions": 53,
+          "position": 38.6
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/barre-ma",
+          "clicks": 0,
+          "impressions": 37,
+          "position": 37.4
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/beverly-ma",
+          "clicks": 0,
+          "impressions": 3,
+          "position": 29.3
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/billerica-ma",
+          "clicks": 0,
+          "impressions": 269,
+          "position": 75.2
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/blackstone-ma",
+          "clicks": 0,
+          "impressions": 10,
+          "position": 82.6
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/bolton-ma",
+          "clicks": 0,
+          "impressions": 4,
+          "position": 56.8
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/boston-ma",
+          "clicks": 0,
+          "impressions": 179,
+          "position": 40.5
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/boxborough-ma",
+          "clicks": 0,
+          "impressions": 10,
+          "position": 45.7
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/boxford-ma",
+          "clicks": 0,
+          "impressions": 27,
+          "position": 40.8
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/brimfield-ma",
+          "clicks": 0,
+          "impressions": 9,
+          "position": 19.2
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/brookline-ma",
+          "clicks": 0,
+          "impressions": 6,
+          "position": 4.8
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/burlington-ma",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 34
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/cambridge-ma",
+          "clicks": 0,
+          "impressions": 101,
+          "position": 34.9
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/carver-ma",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 2
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/charlton-ma",
+          "clicks": 0,
+          "impressions": 63,
+          "position": 40.4
+        },
+        {
+          "page": "https://doryscleaningservices.com/locations/chelmsford-ma",
+          "clicks": 0,
+          "impressions": 35,
+          "position": 67.6
+        }
+      ],
+      "byCountry": [
+        {
+          "country": "usa",
+          "clicks": 17,
+          "impressions": 7224
+        },
+        {
+          "country": "bra",
+          "clicks": 1,
+          "impressions": 11
+        },
+        {
+          "country": "ind",
+          "clicks": 1,
+          "impressions": 25
+        },
+        {
+          "country": "are",
+          "clicks": 0,
+          "impressions": 1
+        },
+        {
+          "country": "arg",
+          "clicks": 0,
+          "impressions": 1
+        },
+        {
+          "country": "aus",
+          "clicks": 0,
+          "impressions": 4
+        },
+        {
+          "country": "aut",
+          "clicks": 0,
+          "impressions": 1
+        },
+        {
+          "country": "bel",
+          "clicks": 0,
+          "impressions": 1
+        },
+        {
+          "country": "bgd",
+          "clicks": 0,
+          "impressions": 3
+        },
+        {
+          "country": "bgr",
+          "clicks": 0,
+          "impressions": 2
+        }
+      ],
+      "daily": [
+        {
+          "date": "2026-06-20",
+          "clicks": 2,
+          "impressions": 565,
+          "position": 21.5
+        },
+        {
+          "date": "2026-06-21",
+          "clicks": 1,
+          "impressions": 504,
+          "position": 25.4
+        },
+        {
+          "date": "2026-06-22",
+          "clicks": 0,
+          "impressions": 508,
+          "position": 27.9
+        },
+        {
+          "date": "2026-06-23",
+          "clicks": 1,
+          "impressions": 246,
+          "position": 32.8
+        },
+        {
+          "date": "2026-06-24",
+          "clicks": 1,
+          "impressions": 515,
+          "position": 30.8
+        },
+        {
+          "date": "2026-06-25",
+          "clicks": 0,
+          "impressions": 221,
+          "position": 42.6
+        },
+        {
+          "date": "2026-06-26",
+          "clicks": 0,
+          "impressions": 170,
+          "position": 39.6
+        },
+        {
+          "date": "2026-06-27",
+          "clicks": 0,
+          "impressions": 339,
+          "position": 47.1
+        },
+        {
+          "date": "2026-06-28",
+          "clicks": 0,
+          "impressions": 186,
+          "position": 50.1
+        },
+        {
+          "date": "2026-06-29",
+          "clicks": 0,
+          "impressions": 458,
+          "position": 34.8
+        },
+        {
+          "date": "2026-06-30",
+          "clicks": 1,
+          "impressions": 239,
+          "position": 46.3
+        },
+        {
+          "date": "2026-07-01",
+          "clicks": 0,
+          "impressions": 276,
+          "position": 42.9
+        },
+        {
+          "date": "2026-07-02",
+          "clicks": 0,
+          "impressions": 200,
+          "position": 42.3
+        },
+        {
+          "date": "2026-07-03",
+          "clicks": 1,
+          "impressions": 147,
+          "position": 46.8
+        },
+        {
+          "date": "2026-07-04",
+          "clicks": 0,
+          "impressions": 169,
+          "position": 47.5
+        },
+        {
+          "date": "2026-07-05",
+          "clicks": 0,
+          "impressions": 178,
+          "position": 51.1
+        },
+        {
+          "date": "2026-07-06",
+          "clicks": 0,
+          "impressions": 323,
+          "position": 34.8
+        },
+        {
+          "date": "2026-07-07",
+          "clicks": 0,
+          "impressions": 187,
+          "position": 41.9
+        },
+        {
+          "date": "2026-07-08",
+          "clicks": 1,
+          "impressions": 195,
+          "position": 47.9
+        },
+        {
+          "date": "2026-07-09",
+          "clicks": 2,
+          "impressions": 210,
+          "position": 50.6
+        },
+        {
+          "date": "2026-07-10",
+          "clicks": 0,
+          "impressions": 185,
+          "position": 53.8
+        },
+        {
+          "date": "2026-07-11",
+          "clicks": 0,
+          "impressions": 184,
+          "position": 47
+        },
+        {
+          "date": "2026-07-12",
+          "clicks": 6,
+          "impressions": 173,
+          "position": 47.8
+        },
+        {
+          "date": "2026-07-13",
+          "clicks": 2,
+          "impressions": 450,
+          "position": 36
+        },
+        {
+          "date": "2026-07-14",
+          "clicks": 0,
+          "impressions": 196,
+          "position": 43.7
+        },
+        {
+          "date": "2026-07-15",
+          "clicks": 0,
+          "impressions": 261,
+          "position": 50.1
+        },
+        {
+          "date": "2026-07-16",
+          "clicks": 0,
+          "impressions": 164,
+          "position": 49.6
+        },
+        {
+          "date": "2026-07-17",
+          "clicks": 1,
+          "impressions": 144,
+          "position": 45.9
+        }
+      ]
+    }
+  ]
+}

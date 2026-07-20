@@ -27,7 +27,56 @@
   "protocolSteps": [],
   "disinfectantContactTimes": [],
   "documentationDeliverables": [],
-  "commonSurveyFindings": [],
+  "commonSurveyFindings": [
+    {
+      "finding": "No written policies and procedures for routine cleaning and disinfection of the gym, treatment tables and shared equipment, including who is responsible for what.",
+      "citation": "CDC Infection Prevention Checklist for Outpatient Settings, Section I Environmental Cleaning item A",
+      "source": "https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "Cleaning staff have not received job-specific training and competency validation at hire and whenever procedures or products change.",
+      "citation": "CDC Infection Prevention Checklist for Outpatient Settings, Section I item B",
+      "source": "https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "Cleaning is never monitored or assessed — no evidence the clinic checks that it is consistently and correctly performed.",
+      "citation": "CDC Infection Prevention Checklist for Outpatient Settings, Section I item D",
+      "source": "https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "Treatment tables, mats, weights and bands that contact intact skin are wiped but not cleaned and then disinfected between patients at the level the degree of soiling requires.",
+      "citation": "CDC Infection Prevention Checklist for Outpatient Settings, non-critical item definition; CDC Core Infection Prevention and Control Practices 5f",
+      "source": "https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "Shared equipment reprocessed in a way the manufacturer never specified. CDC's position is that where no cleaning and disinfection instructions exist, the item is not suitable for multi-patient use.",
+      "citation": "CDC Infection Prevention Checklist for Outpatient Settings, Section II item A; CDC Core Practices 5f",
+      "source": "https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "High-touch surfaces close to the patient — plinth rails, parallel bars, equipment grips — not cleaned and disinfected on a more frequent schedule than other surfaces.",
+      "citation": "CDC Core Infection Prevention and Control Practices 5b; CDC Infection Prevention Checklist, Section II item A",
+      "source": "https://www.cdc.gov/infection-control/hcp/core-practices/index.html",
+      "frequency": null
+    },
+    {
+      "finding": "Disinfectant wipes used with insufficient contact time — the surface dries before the label kill time, or the product is past shelf life or badly stored.",
+      "citation": "CDC Infection Prevention Checklist for Outpatient Settings, Section II item B; CDC Core Practices 5b",
+      "source": "https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "Clean and soiled equipment stored together, with no physical separation to prevent cross-contamination.",
+      "citation": "CDC Core Infection Prevention and Control Practices 5f",
+      "source": "https://www.cdc.gov/infection-control/hcp/core-practices/index.html",
+      "frequency": null
+    }
+  ],
   "typicalFrequency": null,
   "faqs": [],
   "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."

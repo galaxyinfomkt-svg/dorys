@@ -26,7 +26,56 @@
   "protocolSteps": [],
   "disinfectantContactTimes": [],
   "documentationDeliverables": [],
-  "commonSurveyFindings": [],
+  "commonSurveyFindings": [
+    {
+      "finding": "Diagnostic and therapeutic equipment not disinfected after each use in accordance with recognised standards of practice. In Massachusetts this is a clinic licensure requirement, not guidance.",
+      "citation": "105 CMR 140.211(B) — Disinfection",
+      "source": "https://www.law.cornell.edu/regulations/massachusetts/105-CMR-140-211",
+      "frequency": null
+    },
+    {
+      "finding": "Cleaning compounds not clearly labelled or not stored in a locked utility closet, and no service sink with hot and cold water for emptying and cleaning housekeeping equipment.",
+      "citation": "105 CMR 140.206 — Utility Closet",
+      "source": "https://www.law.cornell.edu/regulations/massachusetts/105-CMR-140-206",
+      "frequency": null
+    },
+    {
+      "finding": "No separation of clean supply storage from the soiled workroom, or a soiled workroom lacking the required work counter, clinical service sink and handwashing sink.",
+      "citation": "105 CMR 140.204 — Clean Storage and Soiled Holding Areas",
+      "source": "https://www.law.cornell.edu/regulations/massachusetts/105-CMR-140-204",
+      "frequency": null
+    },
+    {
+      "finding": "Hazardous and infectious waste not handled and disposed of properly by the clinic.",
+      "citation": "105 CMR 140.211(F) — Disposal of Waste",
+      "source": "https://www.law.cornell.edu/regulations/massachusetts/105-CMR-140-211",
+      "frequency": null
+    },
+    {
+      "finding": "Semi-critical instruments and probes — those contacting mucous membranes or non-intact skin — given only a surface wipe rather than at least high-level disinfection, and not pre-cleaned first.",
+      "citation": "CDC Infection Prevention Checklist for Outpatient Settings, semi-critical item definition and High-Level Disinfection items A to C",
+      "source": "https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "Shared non-critical devices used across a procedure day — blood pressure cuffs, chin rests, headrests, positioning equipment — not cleaned and disinfected between patients according to the degree of contamination.",
+      "citation": "CDC Infection Prevention Checklist, non-critical item definition; CDC Core Practices 5f",
+      "source": "https://www.cdc.gov/infection-control/hcp/core-practices/index.html",
+      "frequency": null
+    },
+    {
+      "finding": "Frequently touched surfaces in the procedure room not cleaned and then disinfected, and products not used to the manufacturer's dilution, storage, shelf-life and contact time.",
+      "citation": "CDC Infection Prevention Checklist for Outpatient Settings, Section II items A and B",
+      "source": "https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf",
+      "frequency": null
+    },
+    {
+      "finding": "No written schedule for cleaning and decontamination, and contaminated work surfaces not decontaminated after procedures, after spills, and at end of shift.",
+      "citation": "29 CFR 1910.1030(d)(4)(i) and (d)(4)(ii)(A)",
+      "source": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1030",
+      "frequency": "Federal OSHA cited 29 CFR 1910.1030 three times in one inspection of other health practitioners' offices between October 2024 and September 2025 — the most-cited standard for that sector."
+    }
+  ],
   "typicalFrequency": null,
   "faqs": [],
   "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."

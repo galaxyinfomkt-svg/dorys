@@ -26,7 +26,50 @@
   "protocolSteps": [],
   "disinfectantContactTimes": [],
   "documentationDeliverables": [],
-  "commonSurveyFindings": [],
+  "commonSurveyFindings": [
+    {
+      "finding": "No effective infection prevention and control program — surveyors cite what they observe directly: hand hygiene missed between residents, isolation precautions not implemented, shared resident-care equipment (glucometers, blood-pressure cuffs, lifts, shower chairs) not cleaned and disinfected between residents, soiled linen handled or stored improperly.",
+      "citation": "F880 — 42 CFR 483.80, Infection Prevention & Control",
+      "source": "https://data.cms.gov/provider-data/dataset/r5ix-sfxw",
+      "frequency": "The most-cited F-tag nationally. Computed from the CMS Health Deficiencies file (June 2026 refresh): 7,377 of 13,841 facilities nationally (53.3%) and 152 of 296 Massachusetts facilities (51.4%) were cited on their most recent standard health survey."
+    },
+    {
+      "finding": "Food storage, preparation and service not sanitary — soiled can openers, ice machines and cooler gaskets, unclean prep surfaces, undated or uncovered food, dish-machine sanitiser at the wrong concentration.",
+      "citation": "F812 — 42 CFR 483.60(i), Food Procurement, Store, Prepare, Serve Sanitary",
+      "source": "https://data.cms.gov/provider-data/dataset/r5ix-sfxw",
+      "frequency": "Second most-cited nationally: 6,341 of 13,841 facilities (45.8%) and 98 of 296 in Massachusetts (33.1%). Usually cited at wide scope, meaning the surveyor found it affected most or many residents."
+    },
+    {
+      "finding": "Resident's right to a safe, clean, comfortable and homelike environment not honoured — soiled floors and furnishings, odours in resident rooms, stained or torn privacy curtains and mattresses.",
+      "citation": "F584 — 42 CFR 483.10(i), Safe, Clean, Comfortable, Homelike Environment",
+      "source": "https://data.cms.gov/provider-data/dataset/r5ix-sfxw",
+      "frequency": "2,346 of 13,841 facilities nationally (16.9%) and 51 of 296 in Massachusetts (17.2%)."
+    },
+    {
+      "finding": "Facility environment not maintained safe, functional and sanitary — soiled utility and housekeeping rooms, unsanitary tub and shower rooms, damaged or unsealed surfaces that can no longer be properly cleaned.",
+      "citation": "F921 — 42 CFR 483.90(i), Safe, Functional, Sanitary, Comfortable Environment",
+      "source": "https://data.cms.gov/provider-data/dataset/r5ix-sfxw",
+      "frequency": "824 of 13,841 facilities nationally (6.0%); 3 of 296 in Massachusetts (1.0%)."
+    },
+    {
+      "finding": "No effective pest control programme — evidence of flies, ants, roaches or rodents, or a programme that is not maintained or documented.",
+      "citation": "F925 — 42 CFR 483.90(i)(4), Maintains Effective Pest Control Program",
+      "source": "https://data.cms.gov/provider-data/dataset/r5ix-sfxw",
+      "frequency": "427 of 13,841 facilities nationally (3.1%); 6 of 296 in Massachusetts (2.0%). Often cited at wide scope."
+    },
+    {
+      "finding": "Essential equipment not maintained in safe operating condition, including dietary, laundry and resident-care equipment found broken, soiled, or not maintained to the manufacturer's instructions.",
+      "citation": "F908 — 42 CFR 483.90(d)(2), Essential Equipment in Safe Operating Condition",
+      "source": "https://data.cms.gov/provider-data/dataset/r5ix-sfxw",
+      "frequency": "554 of 13,841 facilities nationally (4.0%); 9 of 296 in Massachusetts (3.0%)."
+    },
+    {
+      "finding": "Bloodborne pathogens programme deficiencies — exposure control plan, regulated waste and contaminated laundry handling, decontamination of work surfaces and equipment, sharps containers, PPE and training.",
+      "citation": "29 CFR 1910.1030 — OSHA Bloodborne Pathogens",
+      "source": "https://www.osha.gov/ords/imis/citedstandard.naics?p_state=FEFederal&p_naics=623110",
+      "frequency": "Federal OSHA, October 2024 to September 2025: 43 citations across 10 inspections of skilled nursing facilities — the single most-cited standard for the sector."
+    }
+  ],
   "typicalFrequency": null,
   "faqs": [],
   "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."

@@ -25,7 +25,56 @@
   "protocolSteps": [],
   "disinfectantContactTimes": [],
   "documentationDeliverables": [],
-  "commonSurveyFindings": [],
+  "commonSurveyFindings": [
+    {
+      "finding": "No written policies and procedures for routine cleaning and disinfection of environmental surfaces as part of the practice's infection prevention plan.",
+      "citation": "CDC Summary of Infection Prevention Practices in Dental Settings (2016), Environmental Infection Prevention and Control",
+      "source": "https://www.cdc.gov/dental-infection-control/hcp/summary/sterilization-disinfection.html",
+      "frequency": null
+    },
+    {
+      "finding": "Surface barriers on hard-to-clean clinical contact surfaces — chair switches, light handles, computer equipment — not changed between patients, or the surface underneath never checked for soiling once the barrier comes off.",
+      "citation": "CDC Summary of Infection Prevention Practices in Dental Settings (2016), Environmental Infection Prevention and Control",
+      "source": "https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/cleaning-disinfecting-environmental-surface.html",
+      "frequency": null
+    },
+    {
+      "finding": "Non-barrier-protected clinical contact surfaces not cleaned and disinfected with an EPA-registered hospital disinfectant after each patient.",
+      "citation": "CDC Summary of Infection Prevention Practices in Dental Settings (2016)",
+      "source": "https://www.cdc.gov/dental-infection-control/hcp/summary/sterilization-disinfection.html",
+      "frequency": null
+    },
+    {
+      "finding": "A low-level disinfectant used where blood contamination is visible. Blood-contaminated clinical contact surfaces require an EPA-registered intermediate-level disinfectant with a tuberculocidal claim.",
+      "citation": "CDC Best Practices for Environmental Infection Prevention and Control, Dental — clinical contact surfaces",
+      "source": "https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/cleaning-disinfecting-environmental-surface.html",
+      "frequency": null
+    },
+    {
+      "finding": "Manufacturer instructions for the disinfectant not followed — wrong dilution, wrong contact time, expired or badly stored solution, or solutions not made up fresh daily where the label requires it.",
+      "citation": "CDC Summary of Infection Prevention Practices in Dental Settings (2016) — amount, dilution, contact time, safe use and disposal",
+      "source": "https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/cleaning-disinfecting-environmental-surface.html",
+      "frequency": null
+    },
+    {
+      "finding": "Regulated medical waste not segregated or contained correctly — blood-soaked gauze and extracted teeth in ordinary trash rather than a leak-resistant biohazard bag, sharps outside a labelled puncture-resistant container.",
+      "citation": "CDC Best Practices, disposing of medical waste; OSHA 29 CFR 1910.1030(d)(4)(iii)",
+      "source": "https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/cleaning-disinfecting-environmental-surface.html",
+      "frequency": null
+    },
+    {
+      "finding": "Dental treatment water not maintained to drinking-water quality of 500 CFU/mL or fewer, or waterline treatment and monitoring not performed to the manufacturer's schedule. Independent water bottles alone are not sufficient.",
+      "citation": "CDC Summary of Infection Prevention Practices in Dental Settings (2016), Dental Unit Water Quality",
+      "source": "https://www.cdc.gov/dental-infection-control/hcp/summary/dental-unit-water-quality.html",
+      "frequency": null
+    },
+    {
+      "finding": "No written schedule for cleaning and method of decontamination determined and implemented for the practice.",
+      "citation": "29 CFR 1910.1030(d)(4)(i); Massachusetts adopts this at 234 CMR 5.05(2), and 234 CMR 5.05(1) requires compliance with the CDC dental infection control guidelines",
+      "source": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1030",
+      "frequency": "Federal OSHA cited 29 CFR 1910.1030 twelve times across seven inspections of dental offices between October 2024 and September 2025 — the most-cited standard for the sector."
+    }
+  ],
   "typicalFrequency": null,
   "faqs": [],
   "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
