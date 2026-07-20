@@ -14,16 +14,32 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Tufts Medicine Behavioral Health Hospital",
+        "type": "behavioral health hospital"
+      },
+      {
+        "name": "Cambridge Health Alliance Malden Care Center",
+        "type": "multispecialty outpatient care center"
+      }
+    ],
+    "healthSystems": [
+      "Tufts Medicine",
+      "Cambridge Health Alliance"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "behavioral health hospital and hospital-affiliated outpatient clinics",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.cityofmalden.org/CivicAlerts.aspx?AID=1155",
+    "checked": "2026-07-20",
+    "note": "Malden has NO acute-care general hospital. The former Malden Hospital closed; its site now holds the Tufts Medicine Behavioral Health Hospital, which opened February 2026 — new and confirmed open, not a legacy name."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +50,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

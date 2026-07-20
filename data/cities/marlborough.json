@@ -14,16 +14,37 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "UMass Memorial Medical Center — Marlborough Campus",
+        "type": "acute care community hospital campus with 24/7 emergency department"
+      },
+      {
+        "name": "UMass Memorial Medical Group — Marlborough Primary Care",
+        "type": "primary care practice"
+      },
+      {
+        "name": "Fresenius Medical Care of Marlborough",
+        "type": "outpatient dialysis center"
+      }
+    ],
+    "healthSystems": [
+      "UMass Memorial Health"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "community acute care hospital campus with a surrounding cluster of independent medical and specialty offices",
+    "medicalCorridors": [
+      "Union Street"
+    ],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.ummhealth.org/locations/umass-memorial-medical-center/umass-memorial-medical-center-marlborough-campus",
+    "checked": "2026-07-20",
+    "note": "NAMING MATTERS — this is the company's home city. The facility is officially 'UMass Memorial Medical Center – Marlborough Campus' on Union Street; the former Marlborough Hospital became a licensed campus of UMass Memorial. Safest copy is 'UMass Memorial Medical Center – Marlborough Campus (formerly Marlborough Hospital)'. Nashoba Valley Medical Center in nearby Ayer closed in August 2024 — never reference it."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +55,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

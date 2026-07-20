@@ -14,16 +14,37 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "UMass Memorial HealthAlliance-Clinton Hospital — Fitchburg Campus",
+        "type": "outpatient and diagnostic campus (no emergency department, no inpatient beds)"
+      },
+      {
+        "name": "Simonds-Sinon Regional Cancer Center",
+        "type": "regional cancer center"
+      },
+      {
+        "name": "Community Health Connections — Fitchburg Community Health Center",
+        "type": "federally qualified community health center"
+      }
+    ],
+    "healthSystems": [
+      "UMass Memorial Health"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "hospital-owned outpatient and diagnostic campus alongside community health center care",
+    "medicalCorridors": [
+      "Nichols Road"
+    ],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.ummhealth.org/locations/healthalliance-clinton-hospitals/hospital/healthalliance-clinton-hospital-fitchburg-campus",
+    "checked": "2026-07-20",
+    "note": "IMPORTANT: the Fitchburg (former Burbank) campus is OUTPATIENT ONLY. Emergency departments operate at the Clinton and Leominster campuses, not Fitchburg. Do not describe Fitchburg as having a hospital ED."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +55,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

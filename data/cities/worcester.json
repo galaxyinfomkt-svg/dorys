@@ -14,16 +14,41 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "UMass Memorial Medical Center (University, Memorial and Hahnemann campuses)",
+        "type": "academic medical center"
+      },
+      {
+        "name": "Saint Vincent Hospital",
+        "type": "acute care teaching hospital"
+      },
+      {
+        "name": "Fairlawn Rehabilitation Hospital",
+        "type": "inpatient rehabilitation hospital"
+      },
+      {
+        "name": "UMass Chan Medical School",
+        "type": "medical school campus"
+      }
+    ],
+    "healthSystems": [
+      "UMass Memorial Health",
+      "Tenet Healthcare",
+      "Encompass Health"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "academic medical center and teaching hospitals",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.ummhealth.org/locations/umass-memorial-medical-center",
+    "checked": "2026-07-20",
+    "note": "The UMass Memorial Marlborough campus is NOT in Worcester. No named local medical corridor is established — the Plantation Street biotech cluster is research, not clinical. Never reference the long-closed Worcester City, Worcester County or Worcester State hospitals."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +59,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

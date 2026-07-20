@@ -14,16 +14,44 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Encompass Health Rehabilitation Hospital of New England",
+        "type": "inpatient rehabilitation hospital"
+      },
+      {
+        "name": "Winchester Hospital Outpatient Center at Unicorn Park",
+        "type": "hospital outpatient center"
+      },
+      {
+        "name": "Winchester Hospital Woburn Outpatient Center at Cummings Park",
+        "type": "hospital outpatient center and urgent care"
+      },
+      {
+        "name": "Mass General Brigham Urgent Care, Woburn",
+        "type": "urgent care center"
+      }
+    ],
+    "healthSystems": [
+      "Encompass Health",
+      "Beth Israel Lahey Health",
+      "Mass General Brigham"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "inpatient rehabilitation hospital plus office-park outpatient and urgent care centers — no acute care hospital in the city",
+    "medicalCorridors": [
+      "Unicorn Park Drive",
+      "Cummings Park"
+    ],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.encompasshealth.com/locations/new-england-rehab",
+    "checked": "2026-07-20",
+    "note": "Woburn has NO acute care hospital — the acute hospital serving it, Winchester Hospital, is in neighbouring Winchester. Woburn's own inpatient facility is Encompass Health Rehabilitation Hospital of New England, formerly New England Rehabilitation Hospital; use the Encompass name."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +62,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

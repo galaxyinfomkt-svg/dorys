@@ -14,16 +14,31 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Newton-Wellesley Hospital",
+        "type": "community teaching hospital"
+      },
+      {
+        "name": "Newton-Wellesley Ambulatory Care Center (159 Wells Avenue)",
+        "type": "ambulatory care center"
+      }
+    ],
+    "healthSystems": [
+      "Mass General Brigham"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "community hospital plus affiliated outpatient practices",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.nwh.org/about-us",
+    "checked": "2026-07-20",
+    "note": "Despite the name, the main Newton-Wellesley campus is in NEWTON. The Outpatient Surgery Center and a second Ambulatory Care Center are in Wellesley — do not attribute them to Newton. Wells Avenue is a real office park but 'Wells Avenue medical corridor' is not an established name."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +49,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

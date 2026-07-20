@@ -14,16 +14,32 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "BayRidge Hospital",
+        "type": "inpatient psychiatric hospital"
+      },
+      {
+        "name": "Mass General Brigham Healthcare Center (Lynn)",
+        "type": "outpatient healthcare center"
+      }
+    ],
+    "healthSystems": [
+      "Beth Israel Lahey Health",
+      "Mass General Brigham"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "outpatient medical offices and behavioral health — no general acute care hospital",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-healthcare-center-lynn",
+    "checked": "2026-07-20",
+    "note": "CRITICAL: Union Hospital CLOSED (2019/2020) and the buildings were demolished. Never reference it. General acute care for Lynn is at Salem Hospital, which is in Salem, not Lynn."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +50,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

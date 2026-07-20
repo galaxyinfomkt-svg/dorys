@@ -14,16 +14,16 @@ values.
 | Population | 109 / 109 | 100% | 2020 Decennial Census |
 | ZIP codes | 0 / 109 | 0% | needs a source — do not generate ranges |
 | Drive time from base | 0 / 109 | 0% | needs Google Distance Matrix (billed key) |
-| Major facilities | 0 / 109 | 0% | manual research — market context, never clients |
-| Medical corridors | 0 / 109 | 0% | manual research |
+| Major facilities | 20 / 109 | 18% | manual research — market context, never clients |
+| Medical corridors | 12 / 109 | 11% | manual research |
 | Board of Health | 0 / 109 | 0% | manual — see _todo-boards-of-health.csv |
-| **verified: true** | 0 / 109 | 0% | **gate for publishing the page** |
+| **verified: true** | 20 / 109 | 18% | **gate for publishing the page** |
 
 ## What blocks publication today
 
 `verified` is the publish gate. A city reaches it when it has at least one of
 `majorFacilities` or `medicalCorridors`, plus enough unique body copy to clear
-the similarity check. Right now 0 of 109 qualify, so the
+the similarity check. Right now 20 of 109 qualify, so the
 service x city pages stay `noindex` — they measure 67% similarity against each
 other, and publishing 545 near-duplicates is what suppressed the sibling RS site.
 

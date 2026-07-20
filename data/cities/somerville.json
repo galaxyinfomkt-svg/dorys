@@ -14,16 +14,38 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "CHA Somerville Campus",
+        "type": "outpatient campus with inpatient psychiatric services"
+      },
+      {
+        "name": "CHA Urgent Care Center",
+        "type": "urgent care center"
+      },
+      {
+        "name": "Mass General Primary Care Assembly Row",
+        "type": "primary care practice"
+      }
+    ],
+    "healthSystems": [
+      "Cambridge Health Alliance",
+      "Mass General Brigham"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "outpatient clinics, urgent care and a large health-system office campus",
+    "medicalCorridors": [
+      "Assembly Row"
+    ],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.challiance.org/locations",
+    "checked": "2026-07-20",
+    "note": "IMPORTANT: 'Somerville Hospital' no longer exists as a name. Inpatient acute care ended in 2009 and the emergency department became an urgent care centre in 2020. Do not call it a hospital ER. Mass General Brigham at Assembly Row is a corporate office building, not a clinical site — describe it accurately."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +56,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

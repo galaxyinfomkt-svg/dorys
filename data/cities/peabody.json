@@ -14,16 +14,43 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Lahey Medical Center, Peabody",
+        "type": "community hospital with 24/7 emergency department"
+      },
+      {
+        "name": "Sophia Gordon Cancer Center",
+        "type": "cancer center"
+      },
+      {
+        "name": "North Shore Physicians Group – Peabody",
+        "type": "multispecialty medical offices"
+      },
+      {
+        "name": "Salem Hospital Primary and Specialty Care – Peabody",
+        "type": "primary and specialty care offices"
+      }
+    ],
+    "healthSystems": [
+      "Beth Israel Lahey Health",
+      "Mass General Brigham"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "community hospital with a 24/7 ED plus a large suburban medical office cluster",
+    "medicalCorridors": [
+      "Centennial Drive",
+      "Essex Center Drive"
+    ],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.lahey.org/locations/lahey-medical-center-peabody",
+    "checked": "2026-07-20",
+    "note": "Lahey Medical Center, Peabody is the only hospital and only emergency room in Peabody. The city is genuinely two-system: BILH at Essex Center Drive, Mass General Brigham at Centennial Drive and Corporate Way."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +61,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

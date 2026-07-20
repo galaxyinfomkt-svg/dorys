@@ -14,16 +14,34 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Beverly Hospital",
+        "type": "acute care community hospital, Level III trauma center"
+      },
+      {
+        "name": "Beth Israel Lahey Health Primary Care & Specialty Care — Beverly Medical Associates",
+        "type": "multi-site physician practice group"
+      }
+    ],
+    "healthSystems": [
+      "Beth Israel Lahey Health"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "regional acute care community hospital plus a large medical office park cluster",
+    "medicalCorridors": [
+      "Herrick Street",
+      "Cummings Center"
+    ],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://beverlyhospital.org/about",
+    "checked": "2026-07-20",
+    "note": "Addison Gilbert Hospital and BayRidge Hospital are affiliated but located in Gloucester and Lynn — do not attribute them to Beverly."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +52,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

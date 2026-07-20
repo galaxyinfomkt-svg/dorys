@@ -14,16 +14,38 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Beth Israel Lahey Health Care Center – Quincy",
+        "type": "urgent care and multispecialty outpatient center"
+      },
+      {
+        "name": "Beth Israel Deaconess HealthCare – Quincy, Crown Colony",
+        "type": "multispecialty physician practice"
+      },
+      {
+        "name": "Manet Community Health Center",
+        "type": "federally qualified community health center"
+      }
+    ],
+    "healthSystems": [
+      "Beth Israel Lahey Health",
+      "South Shore Health"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "medical offices, community health centers and urgent care — no acute care hospital",
+    "medicalCorridors": [
+      "Crown Colony"
+    ],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://bilh.org/locations/bilh-care-center-quincy",
+    "checked": "2026-07-20",
+    "note": "CRITICAL: Quincy has NO acute care hospital and no emergency department. Quincy Medical Center closed inpatient care in 2014; the satellite ED closed in 2020. It is the largest Massachusetts city without one. Never name Quincy Medical Center on a live page. Crown Colony is a genuine place name but a general office park — say 'the Crown Colony area', not a medical corridor."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +56,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

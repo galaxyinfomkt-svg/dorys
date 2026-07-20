@@ -10,7 +10,8 @@
     "seed:cities": "node scripts/seed-city-data.mjs",
     "fix:bugs": "node scripts/fix-production-bugs.mjs",
     "prune:cities": "node scripts/prune-cities.mjs",
-    "seed:services": "node scripts/seed-service-data.mjs"
+    "seed:services": "node scripts/seed-service-data.mjs",
+    "import:healthcare": "node scripts/import-healthcare-landscape.mjs"
   },
   "dependencies": {
     "next": "^15.1.0",

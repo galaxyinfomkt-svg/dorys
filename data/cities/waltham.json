@@ -14,16 +14,40 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Boston Children's Waltham",
+        "type": "pediatric ambulatory care and day surgery center"
+      },
+      {
+        "name": "Mass General Brigham Healthcare Center (Waltham)",
+        "type": "ambulatory care center"
+      },
+      {
+        "name": "Mount Auburn Hospital / Beth Israel Lahey Health, Waverley Oaks Road",
+        "type": "multispecialty medical office building"
+      }
+    ],
+    "healthSystems": [
+      "Mass General Brigham",
+      "Boston Children's Hospital",
+      "Beth Israel Lahey Health"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "large hospital-affiliated outpatient and ambulatory care campuses",
+    "medicalCorridors": [
+      "Hope Avenue",
+      "Waverley Oaks Road"
+    ],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.massgeneral.org/locations/waltham/about",
+    "checked": "2026-07-20",
+    "note": "Waltham has no full-service acute care hospital and no emergency department — Mass General Waltham states explicitly that it offers no walk-in or emergency services. The two corridor names are real street-level clusters, not formally branded districts."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +58,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }
