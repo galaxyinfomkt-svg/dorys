@@ -14,16 +14,37 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Encompass Health Rehabilitation Hospital of Braintree",
+        "type": "inpatient rehabilitation hospital"
+      },
+      {
+        "name": "Atrius Health / Harvard Vanguard Medical Associates Braintree",
+        "type": "large multi-specialty medical office building"
+      },
+      {
+        "name": "South Shore Health Health Express Braintree",
+        "type": "urgent care with on-site x-ray and lab"
+      }
+    ],
+    "healthSystems": [
+      "South Shore Health",
+      "Encompass Health",
+      "Atrius Health / Optum"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "rehabilitation hospital and large multi-specialty outpatient offices",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.southshorehealth.org/locations/encompass-health-rehabilitation-hospital-braintree",
+    "checked": "2026-07-20",
+    "note": "No acute-care hospital in Braintree. New England Sinai Hospital, often associated with Braintree because of the 'Braintree Rehabilitation' brand, was in STOUGHTON and closed permanently in April 2024. Nearest acute hospital is South Shore Hospital in Weymouth."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +55,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

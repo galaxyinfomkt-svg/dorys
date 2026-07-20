@@ -14,16 +14,39 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "UMass Memorial Health — Harrington Hospital, Webster Campus",
+        "type": "hospital campus with 24/7 emergency department and inpatient psychiatric units"
+      },
+      {
+        "name": "Reliant Medical Group Webster",
+        "type": "multi-specialty medical office building"
+      },
+      {
+        "name": "South County Dialysis Center",
+        "type": "outpatient dialysis center"
+      }
+    ],
+    "healthSystems": [
+      "UMass Memorial Health",
+      "Optum (Reliant Medical Group)",
+      "Fresenius Medical Care"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "hospital campus with adjoining medical office and dialysis cluster",
+    "medicalCorridors": [
+      "Thompson Road"
+    ],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.ummhealth.org/locations/harrington/harrington-hospital-webster-campus",
+    "checked": "2026-07-20",
+    "note": "Thompson Road holds the hospital, the Reliant office and the dialysis centre — a real, verifiable address cluster. Harrington's main inpatient hospital is in Southbridge."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +57,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

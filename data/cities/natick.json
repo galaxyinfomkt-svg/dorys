@@ -14,16 +14,27 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "MetroWest Medical Center — Leonard Morse Hospital",
+        "type": "behavioral health specialty hospital"
+      }
+    ],
+    "healthSystems": [
+      "Tenet Healthcare"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "behavioral health hospital campus",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.mwmc.com/locations/detail/leonard-morse-hospital/",
+    "checked": "2026-07-20",
+    "note": "MAJOR STATUS CHANGE: do not describe Leonard Morse as a general or acute hospital. Its emergency department closed in October 2020, and in February 2025 MetroWest filed to discontinue the remaining med/surg unit, ICU and operating rooms, converting the campus fully to behavioral health."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +45,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

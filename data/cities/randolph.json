@@ -22,8 +22,12 @@
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "independent primary care and small private practices",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.randolph-ma.gov/341/Health-Department",
+    "checked": "2026-07-20",
+    "note": "Genuinely low. No hospital, no ambulatory surgery centre, no confirmed freestanding dialysis. Residents use Milton, Braintree and Brockton facilities."
   },
   "localHealth": {
     "boardOfHealthName": null,

@@ -22,8 +22,12 @@
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "no significant healthcare infrastructure",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.ummhealth.org/locations",
+    "checked": "2026-07-20",
+    "note": "No assisted living, rest home, dialysis, urgent care or hospital-system outpatient site with a Dudley address. UMass Memorial's full 202-location list has zero Dudley entries; the nearby ones are all Webster."
   },
   "localHealth": {
     "boardOfHealthName": null,

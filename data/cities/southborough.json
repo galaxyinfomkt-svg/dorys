@@ -14,16 +14,35 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Reliant Medical Group — Southborough",
+        "type": "large multi-specialty medical office building"
+      },
+      {
+        "name": "New England Imaging Center",
+        "type": "freestanding radiology and imaging center"
+      },
+      {
+        "name": "The New England Center for Children",
+        "type": "residential and day clinical program"
+      }
+    ],
+    "healthSystems": [
+      "Optum (Reliant Medical Group)"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "large multi-specialty medical office building and behavioral health cluster",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://reliantmedicalgroup.org/location/southborough/",
+    "checked": "2026-07-20",
+    "note": "No hospital and no rehabilitation hospital. Harvard's New England Primate Research Center closed in 2015 and is deliberately not referenced. Note the Reliant page states there is NO urgent care at this site."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +53,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

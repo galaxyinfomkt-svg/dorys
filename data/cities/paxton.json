@@ -14,7 +14,12 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
+    "majorFacilities": [
+      {
+        "name": "The Hills at Paxton Village",
+        "type": "independent living and age-restricted senior community"
+      }
+    ],
     "healthSystems": [],
     "licensedFacilityCounts": {
       "clinics": null,
@@ -22,8 +27,12 @@
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "age-restricted residential community",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.caring.com/senior-living/massachusetts/paxton/the-hills-at-paxton-village-01612",
+    "checked": "2026-07-20",
+    "note": "An age-restricted residential community, not a care facility. No assisted living or memory care in Paxton."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +43,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

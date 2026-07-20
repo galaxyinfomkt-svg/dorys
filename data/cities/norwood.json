@@ -14,7 +14,12 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
+    "majorFacilities": [
+      {
+        "name": "Norwood Dialysis Center",
+        "type": "outpatient dialysis facility"
+      }
+    ],
     "healthSystems": [],
     "licensedFacilityCounts": {
       "clinics": null,
@@ -22,8 +27,12 @@
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "dialysis and independent specialty practices",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.bostonglobe.com/2026/01/12/business/norwood-hospital-reopen-steward/",
+    "checked": "2026-07-20",
+    "note": "DO NOT LIST NORWOOD HOSPITAL AS OPERATING. It has been closed since a June 2020 flood; the rebuild halted in February 2024, the state revoked its Determination of Need in autumn 2024, and as of January 2026 the site is a sealed shell with no operator. Norwood is a market that LOST its hospital."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +43,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

@@ -14,16 +14,31 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Milford Regional in the Blackstone Valley",
+        "type": "hospital-affiliated multi-service outpatient campus with lab, imaging and therapy"
+      },
+      {
+        "name": "Milford Regional Urgent Care in Northbridge",
+        "type": "urgent care center"
+      }
+    ],
+    "healthSystems": [
+      "UMass Memorial Health (Milford Regional Medical Center)"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "hospital-affiliated multi-service outpatient campus",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.milfordregional.org/milford-regional-in-the-blackstone-valley/",
+    "checked": "2026-07-20",
+    "note": "The Commerce Drive site is a single consolidated outpatient campus and the largest healthcare site in town. No hospital."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +49,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

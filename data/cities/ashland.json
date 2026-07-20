@@ -22,8 +22,12 @@
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "small independent medical and dental practices",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://en.wikipedia.org/wiki/MetroWest_Medical_Center",
+    "checked": "2026-07-20",
+    "note": "No hospital, surgery centre, dialysis centre or hospital-affiliated campus physically in Ashland. Ashland sits inside MetroWest Medical Center's service area but the facilities are in Framingham and Natick."
   },
   "localHealth": {
     "boardOfHealthName": null,

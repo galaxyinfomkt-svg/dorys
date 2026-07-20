@@ -14,7 +14,12 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
+    "majorFacilities": [
+      {
+        "name": "Sterling Village",
+        "type": "licensed nursing facility with subacute unit"
+      }
+    ],
     "healthSystems": [],
     "licensedFacilityCounts": {
       "clinics": null,
@@ -22,8 +27,12 @@
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "skilled nursing",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.sterling-village.com/",
+    "checked": "2026-07-20",
+    "note": "Sterling Village is a licensed NURSING facility, not assisted living, despite aggregator claims — confirmed on its own site and via Mass Senior Care. No assisted living in Sterling."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +43,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

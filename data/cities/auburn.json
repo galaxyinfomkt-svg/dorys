@@ -14,16 +14,36 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "The Endoscopy Center",
+        "type": "ambulatory endoscopy and surgery center"
+      },
+      {
+        "name": "Reliant Medical Group Auburn",
+        "type": "large multi-specialty medical office building"
+      },
+      {
+        "name": "ReadyMED — Auburn",
+        "type": "urgent care center"
+      }
+    ],
+    "healthSystems": [
+      "Optum (Reliant Medical Group)",
+      "UMass Memorial Health"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "multi-specialty medical office buildings and an ambulatory endoscopy center",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://reliantmedicalgroup.org/location/auburn/",
+    "checked": "2026-07-20",
+    "note": "No hospital in Auburn. One Reliant site on Millbury Street is listed as closed and is not referenced."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +54,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

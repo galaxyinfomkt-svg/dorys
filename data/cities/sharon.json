@@ -22,8 +22,12 @@
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "small independent medical and dental practices",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://bidmc.org/locations",
+    "checked": "2026-07-20",
+    "note": "No hospital, surgery centre, dialysis centre or hospital-affiliated campus confirmed in Sharon. Nearest hospital-scale context is Foxborough and Norwood."
   },
   "localHealth": {
     "boardOfHealthName": null,

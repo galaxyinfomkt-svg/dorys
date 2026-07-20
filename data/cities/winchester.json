@@ -14,16 +14,27 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Winchester Hospital",
+        "type": "acute care community hospital with emergency, surgical, cancer and maternity services"
+      }
+    ],
+    "healthSystems": [
+      "Beth Israel Lahey Health"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "acute-care community hospital campus",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://winchesterhospital.org/about",
+    "checked": "2026-07-20",
+    "note": "229 beds, confirmed open under Beth Israel Lahey Health. Its satellite outpatient centres are in Medford, Reading, Wilmington and Woburn — outside Winchester."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +45,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

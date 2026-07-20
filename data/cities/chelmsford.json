@@ -14,16 +14,38 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Lowell General Hospital — Chelmsford outpatient campus",
+        "type": "three-building hospital-affiliated outpatient campus"
+      },
+      {
+        "name": "Surgery Center of the Merrimack Valley",
+        "type": "ambulatory surgery center"
+      },
+      {
+        "name": "Tufts Medicine Pediatric Specialty Center Chelmsford",
+        "type": "pediatric specialty outpatient center"
+      }
+    ],
+    "healthSystems": [
+      "Tufts Medicine",
+      "Lowell General Hospital / Circle Health"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "hospital-affiliated outpatient campus with ambulatory surgery",
+    "medicalCorridors": [
+      "Drum Hill"
+    ],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.tuftsmedicine.org/get-care/locations/lowell-general-hospital/lowell-general-hospital-chelmsford",
+    "checked": "2026-07-20",
+    "note": "No hospital licensed in Chelmsford itself. Drum Hill is a genuine long-standing local district name, not coined."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +56,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

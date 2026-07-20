@@ -14,16 +14,38 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Mass Eye and Ear — Stoneham",
+        "type": "outpatient specialty center, otolaryngology and ophthalmology"
+      },
+      {
+        "name": "Lahey Hospital & Medical Center — Stoneham",
+        "type": "outpatient practice site"
+      },
+      {
+        "name": "Fresenius Medical Care of Stoneham",
+        "type": "outpatient dialysis center"
+      }
+    ],
+    "healthSystems": [
+      "Mass General Brigham",
+      "Beth Israel Lahey Health"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "outpatient specialty centers and medical office buildings",
+    "medicalCorridors": [
+      "Montvale Avenue"
+    ],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://masseyeandear.org/locations/stoneham-ear-nose-and-throat",
+    "checked": "2026-07-20",
+    "note": "Do NOT reference Boston Regional Medical Center — closed February 1999. Montvale Avenue carries at least three distinct medical tenants."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +56,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

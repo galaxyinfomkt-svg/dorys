@@ -14,16 +14,31 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Salem Hospital Blood Draw Lab — Saugus",
+        "type": "outpatient laboratory"
+      },
+      {
+        "name": "North Shore Physicians Group — Saugus",
+        "type": "primary care office"
+      }
+    ],
+    "healthSystems": [
+      "Mass General Brigham"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "satellite lab and primary care offices",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/north-shore-physicians-group-saugus",
+    "checked": "2026-07-20",
+    "note": "Genuinely low. Union Hospital in neighbouring Lynn closed and was demolished, so Saugus residents travel to Salem or Melrose."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +49,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

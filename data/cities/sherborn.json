@@ -22,8 +22,12 @@
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "no significant healthcare infrastructure",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.seniorliving.org/assisted-living/massachusetts/sherborn/",
+    "checked": "2026-07-20",
+    "note": "Mill Pond Rest Home is listed by several directories at a Sherborn address; it is actually in ASHLAND. The Sherborn address belongs to a home-care agency, not a residential facility."
   },
   "localHealth": {
     "boardOfHealthName": null,

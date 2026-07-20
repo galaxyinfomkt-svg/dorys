@@ -14,16 +14,33 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "The Surgery Center at Shrewsbury",
+        "type": "ambulatory surgery center"
+      },
+      {
+        "name": "UMass Memorial Shrewsbury Radiology",
+        "type": "outpatient imaging center"
+      }
+    ],
+    "healthSystems": [
+      "UMass Memorial Health",
+      "Reliant Medical Group",
+      "Shields Health Care Group"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "ambulatory surgery and outpatient physician offices",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.ummhealth.org/locations/the-surgery-center-at-shrewsbury",
+    "checked": "2026-07-20",
+    "note": "No hospital in Shrewsbury. Some directories list the UMass Memorial Memorial Campus with a Shrewsbury address; that campus is in Worcester."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +51,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

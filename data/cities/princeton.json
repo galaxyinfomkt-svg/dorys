@@ -22,8 +22,12 @@
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "no significant healthcare infrastructure",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.seniorly.com/assisted-living/massachusetts/princeton",
+    "checked": "2026-07-20",
+    "note": "Nearest facilities are in Leominster and Gardner. 'Princeton Transitional Care' results refer to Princeton, NEW JERSEY."
   },
   "localHealth": {
     "boardOfHealthName": null,

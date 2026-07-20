@@ -22,8 +22,12 @@
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "no significant healthcare infrastructure",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.seniorly.com/assisted-living/massachusetts/shirley",
+    "checked": "2026-07-20",
+    "note": "No assisted living or memory care in Shirley. RiverCourt Residences markets to Shirley but is physically in West Groton."
   },
   "localHealth": {
     "boardOfHealthName": null,

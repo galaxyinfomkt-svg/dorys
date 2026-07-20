@@ -14,16 +14,37 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Sunrise of Wayland",
+        "type": "assisted living and memory care"
+      },
+      {
+        "name": "Carriage House at Lee's Farm",
+        "type": "independent living, assisted living and memory care"
+      },
+      {
+        "name": "The Residence at Paine Estate",
+        "type": "independent living, assisted living and memory care"
+      }
+    ],
+    "healthSystems": [
+      "Sunrise Senior Living",
+      "Northbridge Communities",
+      "LCB Senior Living"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "senior living communities",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.sunriseseniorliving.com/communities/ma/sunrise-of-wayland",
+    "checked": "2026-07-20",
+    "note": "The Residence at Paine Estate is the former Traditions of Wayland — same building, renamed. If both names appear in a data set they are one facility. No medical or outpatient facility confirmed in Wayland."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +55,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

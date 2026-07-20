@@ -14,16 +14,27 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "UMass Memorial Medical Group — Douglas Primary Care",
+        "type": "primary care office in a small multi-tenant medical building"
+      }
+    ],
+    "healthSystems": [
+      "UMass Memorial Health"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "primary care offices",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.ummhealth.org/locations/umass-memorial-medical-group/umass-memorial-medical-group-douglas-primary-care",
+    "checked": "2026-07-20",
+    "note": "Nothing else confirmed. All 'urgent care in Douglas' results are other towns."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +45,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

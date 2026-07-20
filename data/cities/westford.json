@@ -14,16 +14,34 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Emerson Health Westford",
+        "type": "hospital-affiliated outpatient health center with imaging"
+      },
+      {
+        "name": "Circle Health Westford",
+        "type": "outpatient center with urgent care and diagnostic imaging"
+      }
+    ],
+    "healthSystems": [
+      "Emerson Health",
+      "Tufts Medicine"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "hospital-affiliated outpatient and imaging centers",
+    "medicalCorridors": [
+      "Littleton Road (Route 110)"
+    ],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://emersonhealth.org/locations/emerson-health-westford/",
+    "checked": "2026-07-20",
+    "note": "No hospital in town. Two competing systems both run outpatient campuses on Littleton Road, which is a genuine local concentration."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +52,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

@@ -14,16 +14,33 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Mass General Brigham Healthcare Center, 20 Patriot Place",
+        "type": "large multi-specialty outpatient campus with day surgery and diagnostic radiology"
+      },
+      {
+        "name": "Mass General Brigham Healthcare Center, 22 Patriot Place",
+        "type": "outpatient specialty and primary care building"
+      }
+    ],
+    "healthSystems": [
+      "Mass General Brigham"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "large hospital-affiliated ambulatory care campus",
+    "medicalCorridors": [
+      "Patriot Place"
+    ],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-healthcare-center-20-foxborough",
+    "checked": "2026-07-20",
+    "note": "Patriot Place is a genuine, locally used name for this medical concentration. Services span cardiology, orthopedic surgery, dermatology, neurosurgery, OB/GYN and day surgery."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +51,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }

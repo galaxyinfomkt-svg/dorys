@@ -14,16 +14,32 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
-    "healthSystems": [],
+    "majorFacilities": [
+      {
+        "name": "Emerson Health Urgent Care Littleton",
+        "type": "urgent care center"
+      },
+      {
+        "name": "Life Care Center of Nashoba Valley",
+        "type": "skilled nursing facility"
+      }
+    ],
+    "healthSystems": [
+      "Emerson Health",
+      "Life Care Centers of America"
+    ],
     "licensedFacilityCounts": {
       "clinics": null,
       "longTermCare": null,
       "ambulatorySurgery": null,
       "assistedLiving": null
     },
-    "dominantFacilityType": null,
-    "medicalCorridors": []
+    "dominantFacilityType": "urgent care and skilled nursing",
+    "medicalCorridors": [],
+    "_context": "Market context only. These facilities are NOT clients of Dory’s Cleaning Services and no copy may imply they are.",
+    "source": "https://npiregistry.cms.hhs.gov/",
+    "checked": "2026-07-20",
+    "note": "No assisted living, memory care or dialysis in Littleton."
   },
   "localHealth": {
     "boardOfHealthName": null,
@@ -34,6 +50,6 @@
   "facilityTypesPresent": [],
   "facilityDensity": null,
   "nearbyCities": [],
-  "verified": false,
+  "verified": true,
   "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
 }
