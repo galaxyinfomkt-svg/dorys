@@ -1,0 +1,124 @@
+{
+  "slug": "ayer-ma",
+  "city": "Ayer",
+  "category": "dental-office-cleaning",
+  "categoryLabel": "Dental Office Cleaning",
+  "title": "Dental Office Cleaning in Ayer, MA | Dory's Cleaning Services",
+  "description": "Dental Office Cleaning for Ayer, MA healthcare facilities. 22+ years clinical experience, $2M insured. Free facility assessment: (978) 307-8107.",
+  "keywords": "dental office cleaning Ayer MA, healthcare cleaning Ayer",
+  "robots": "noindex, follow",
+  "geoRegion": "US-MA",
+  "geoPlacename": "Ayer, Massachusetts",
+  "canonical": "https://doryscleaningservices.com/services/dental-office-cleaning/ayer-ma",
+  "ogType": "website",
+  "ogUrl": "https://doryscleaningservices.com/services/dental-office-cleaning/ayer-ma",
+  "ogTitle": "Dental Office Cleaning in Ayer, MA",
+  "ogDescription": "Clinical-grade environmental services for Ayer healthcare facilities.",
+  "ogLocale": "en_US",
+  "ogSiteName": "Dory's Cleaning Services",
+  "twitterCard": "summary_large_image",
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do your cleaners change the barriers on the chair, light handles, and computer equipment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Surface barriers on clinical contact surfaces are changed between patients by the clinical team, and the surface underneath is checked for soiling when the barrier comes off. That is a between-patient task in an occupied operatory, described in the CDC Summary of Infection Prevention Practices in Dental Settings (2016) under environmental infection prevention and control. Our crews arrive when the operatories are empty. What we can do is confirm barriers are in place at the start of the day and clean and disinfect the surfaces beneath them on the end-of-day pass."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where does your responsibility stop and my assistants' begin inside the operatory?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The dividing line is clinical contact surfaces versus housekeeping surfaces. Clinical contact surfaces, meaning anything touched during patient care or hit by spatter, are cleaned and disinfected after each patient by your team with an EPA-registered hospital disinfectant. Housekeeping surfaces, meaning floors, walls, sinks, cabinet exteriors, and the areas below and around the units, are ours, along with the end-of-day terminal clean. We write that split into the schedule required by 29 CFR 1910.1030(d)(4)(i). Federal OSHA cited that standard twelve times across seven inspections of dental offices between October 2024 and September 2025."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does visible blood on a counter change the product you use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A low-level disinfectant is not adequate where blood contamination is visible. CDC best practice for dental clinical contact surfaces calls for an EPA-registered intermediate-level disinfectant with a tuberculocidal claim in that situation, and the organic soil must be cleaned off before the disinfectant is applied, because organic matter inactivates many products. Our crews carry both levels and are trained on when to escalate. If the blood is fresh and the operatory is in use, it is your staff's job rather than ours, because it should not wait for our visit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you take over our dental unit waterline treatment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, and be cautious with any cleaning contractor who says yes. Dental treatment water must be maintained at 500 CFU/mL or fewer, with treatment and monitoring performed on the manufacturer's schedule, per the CDC Summary of Infection Prevention Practices in Dental Settings (2016) section on dental unit water quality. Independent water bottles alone do not achieve that. Waterline treatment is a clinical protocol tied to the specific unit and the specific product, with its own testing records, and it belongs to your team. We clean the exterior of the unit and the surrounding area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you clean the sterilization area without compromising the clean and dirty divide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "By treating the divide as fixed. Crews are trained not to move, reorganize, or carry instruments, cassettes, or pouches between the receiving and decontamination side and the clean packaging and storage side. Cleaning runs clean side first and dirty side last, with separate cloths under a color-coded system, never the reverse. Nothing is set down on a clean counter in order to free up a surface. Anything ambiguous is left in place and reported instead of relocated. Instrument reprocessing itself is entirely your team's function, and we do not participate in it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "We generate a lot of aerosol. Does that change how the operatory gets cleaned at the end of the day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It changes the surface list, not just the frequency. Spatter and aerosol settle well beyond the immediate chairside zone, so our end-of-day pass covers horizontal surfaces at and above chair height, cabinet fronts, light arms, the sides and base of the unit, and the floor around the chair, not only the counters your team wipes between patients. The CDC Summary of Infection Prevention Practices in Dental Settings (2016) expects routine environmental cleaning and disinfection to be set out in written policies and procedures; the surface list becomes part of yours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you flush the suction lines and change evacuation traps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Evacuation line cleaning and trap changes are clinical equipment maintenance, performed to the line cleaner manufacturer's instructions by your staff, and the wrong chemistry in those lines can damage the unit. We do not open traps or introduce anything into the lines. We clean the surrounding cabinetry, the sink, and the floor beneath, and we will report a trap that is visibly overdue or a line cleaner container that has run empty, so it gets attention rather than being missed until the next scheduled maintenance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is responsible for extracted teeth and blood-soaked gauze?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Segregation at the point of generation is your clinical team's, and it happens before we arrive. Blood-soaked gauze and extracted teeth belong in a leak-resistant biohazard container rather than ordinary trash, and sharps belong in a labeled puncture-resistant container, consistent with CDC dental waste guidance and 29 CFR 1910.1030(d)(4)(iii). Our crews handle general waste only. If we find regulated waste in a general trash receptacle, we do not sort it. We stop, leave it, and report it, because handling it would create an exposure risk for our staff."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the Massachusetts Board of Registration in Dentistry actually look at this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Board sets infection control requirements at 234 CMR 5.05. 234 CMR 5.05(1) requires compliance with the CDC dental infection control guidelines, and 234 CMR 5.05(2) carries the OSHA Bloodborne Pathogens Standard, 29 CFR 1910.1030, into the dental practice framework. So the written cleaning schedule at 29 CFR 1910.1030(d)(4)(i) is not only a federal obligation, it is a licensure-side expectation as well. Practically, that means one documentation set answers both the OSHA question and the Board question without maintaining two parallel binders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Our staff mix disinfectant themselves. Is that a problem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is one of the most common issues we correct. The CDC dental guidance is explicit about following manufacturer instructions for amount, dilution, contact time, and safe use and disposal, and some products must be made up fresh daily. A wrong dilution, an expired container, a solution stored in heat or light, or a wipe that dries before the label kill time all mean the surface was not actually disinfected. We standardize on ready-to-use products where the surface allows, date-mark anything that is mixed, and keep labels accessible in the operatory area."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Dental Office Cleaning in Ayer, MA",
+      "serviceType": "Dental Office Cleaning",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Dory's Cleaning Services Inc.",
+        "telephone": "+19783078107"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ayer, MA"
+      }
+    }
+  ],
+  "mainHtml": "<section class=\"intro\"><h1>Dental Office Cleaning in Ayer, MA</h1><p>Dory's Cleaning Services provides clinical-grade environmental services to general dentistry, orthodontics, oral surgery in Ayer, Middlesex County. Founded by a 22-year clinical veteran, $2M general liability insured.</p><p class=\"risk\"><strong>What we are protecting against:</strong> procedural aerosol and waterline biofilm. The zone that matters most: operatory surfaces, suction lines, sterilisation area clean/dirty divide.</p></section>\n<section class=\"survey-findings\"><h2>Survey findings we help Ayer facilities prevent</h2><p>These are real, published regulatory findings — each one links to its source.</p><ul><li><p class=\"finding\">No written policies and procedures for routine cleaning and disinfection of environmental surfaces as part of the practice's infection prevention plan.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/dental-infection-control/hcp/summary/sterilization-disinfection.html\" rel=\"noopener nofollow\" target=\"_blank\">CDC Summary of Infection Prevention Practices in Dental Settings (2016), Environmental Infection Prevention and Control</a></p></li>\n<li><p class=\"finding\">Surface barriers on hard-to-clean clinical contact surfaces — chair switches, light handles, computer equipment — not changed between patients, or the surface underneath never checked for soiling once the barrier comes off.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/cleaning-disinfecting-environmental-surface.html\" rel=\"noopener nofollow\" target=\"_blank\">CDC Summary of Infection Prevention Practices in Dental Settings (2016), Environmental Infection Prevention and Control</a></p></li>\n<li><p class=\"finding\">Non-barrier-protected clinical contact surfaces not cleaned and disinfected with an EPA-registered hospital disinfectant after each patient.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/dental-infection-control/hcp/summary/sterilization-disinfection.html\" rel=\"noopener nofollow\" target=\"_blank\">CDC Summary of Infection Prevention Practices in Dental Settings (2016)</a></p></li>\n<li><p class=\"finding\">A low-level disinfectant used where blood contamination is visible. Blood-contaminated clinical contact surfaces require an EPA-registered intermediate-level disinfectant with a tuberculocidal claim.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/cleaning-disinfecting-environmental-surface.html\" rel=\"noopener nofollow\" target=\"_blank\">CDC Best Practices for Environmental Infection Prevention and Control, Dental — clinical contact surfaces</a></p></li>\n<li><p class=\"finding\">Manufacturer instructions for the disinfectant not followed — wrong dilution, wrong contact time, expired or badly stored solution, or solutions not made up fresh daily where the label requires it.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/cleaning-disinfecting-environmental-surface.html\" rel=\"noopener nofollow\" target=\"_blank\">CDC Summary of Infection Prevention Practices in Dental Settings (2016) — amount, dilution, contact time, safe use and disposal</a></p></li>\n<li><p class=\"finding\">Regulated medical waste not segregated or contained correctly — blood-soaked gauze and extracted teeth in ordinary trash rather than a leak-resistant biohazard bag, sharps outside a labelled puncture-resistant container.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/cleaning-disinfecting-environmental-surface.html\" rel=\"noopener nofollow\" target=\"_blank\">CDC Best Practices, disposing of medical waste; OSHA 29 CFR 1910.1030(d)(4)(iii)</a></p></li>\n<li><p class=\"finding\">Dental treatment water not maintained to drinking-water quality of 500 CFU/mL or fewer, or waterline treatment and monitoring not performed to the manufacturer's schedule. Independent water bottles alone are not sufficient.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/dental-infection-control/hcp/summary/dental-unit-water-quality.html\" rel=\"noopener nofollow\" target=\"_blank\">CDC Summary of Infection Prevention Practices in Dental Settings (2016), Dental Unit Water Quality</a></p></li>\n<li><p class=\"finding\">No written schedule for cleaning and method of decontamination determined and implemented for the practice.</p><p class=\"citation\"><a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1030\" rel=\"noopener nofollow\" target=\"_blank\">29 CFR 1910.1030(d)(4)(i); Massachusetts adopts this at 234 CMR 5.05(2), and 234 CMR 5.05(1) requires compliance with the CDC dental infection control guidelines</a> — Federal OSHA cited 29 CFR 1910.1030 twelve times across seven inspections of dental offices between October 2024 and September 2025 — the most-cited standard for the sector.</p></li></ul></section>\n<section class=\"regulatory\"><h2>The standards that govern this work</h2><ul><li>CDC Guidelines for Infection Control in Dental Health-Care Settings (2003) and the 2016 Summary</li><li>234 CMR — Massachusetts Board of Registration in Dentistry</li><li>OSHA Bloodborne Pathogens Standard — 29 CFR 1910.1030</li><li>EPA List N registered disinfectants</li></ul></section>\n<section class=\"faq\"><h2>Dental Office Cleaning in Ayer — common questions</h2><details><summary>Do your cleaners change the barriers on the chair, light handles, and computer equipment?</summary><p>No. Surface barriers on clinical contact surfaces are changed between patients by the clinical team, and the surface underneath is checked for soiling when the barrier comes off. That is a between-patient task in an occupied operatory, described in the CDC Summary of Infection Prevention Practices in Dental Settings (2016) under environmental infection prevention and control. Our crews arrive when the operatories are empty. What we can do is confirm barriers are in place at the start of the day and clean and disinfect the surfaces beneath them on the end-of-day pass.</p></details>\n<details><summary>Where does your responsibility stop and my assistants' begin inside the operatory?</summary><p>The dividing line is clinical contact surfaces versus housekeeping surfaces. Clinical contact surfaces, meaning anything touched during patient care or hit by spatter, are cleaned and disinfected after each patient by your team with an EPA-registered hospital disinfectant. Housekeeping surfaces, meaning floors, walls, sinks, cabinet exteriors, and the areas below and around the units, are ours, along with the end-of-day terminal clean. We write that split into the schedule required by 29 CFR 1910.1030(d)(4)(i). Federal OSHA cited that standard twelve times across seven inspections of dental offices between October 2024 and September 2025.</p></details>\n<details><summary>Does visible blood on a counter change the product you use?</summary><p>Yes. A low-level disinfectant is not adequate where blood contamination is visible. CDC best practice for dental clinical contact surfaces calls for an EPA-registered intermediate-level disinfectant with a tuberculocidal claim in that situation, and the organic soil must be cleaned off before the disinfectant is applied, because organic matter inactivates many products. Our crews carry both levels and are trained on when to escalate. If the blood is fresh and the operatory is in use, it is your staff's job rather than ours, because it should not wait for our visit.</p></details>\n<details><summary>Can you take over our dental unit waterline treatment?</summary><p>No, and be cautious with any cleaning contractor who says yes. Dental treatment water must be maintained at 500 CFU/mL or fewer, with treatment and monitoring performed on the manufacturer's schedule, per the CDC Summary of Infection Prevention Practices in Dental Settings (2016) section on dental unit water quality. Independent water bottles alone do not achieve that. Waterline treatment is a clinical protocol tied to the specific unit and the specific product, with its own testing records, and it belongs to your team. We clean the exterior of the unit and the surrounding area.</p></details>\n<details><summary>How do you clean the sterilization area without compromising the clean and dirty divide?</summary><p>By treating the divide as fixed. Crews are trained not to move, reorganize, or carry instruments, cassettes, or pouches between the receiving and decontamination side and the clean packaging and storage side. Cleaning runs clean side first and dirty side last, with separate cloths under a color-coded system, never the reverse. Nothing is set down on a clean counter in order to free up a surface. Anything ambiguous is left in place and reported instead of relocated. Instrument reprocessing itself is entirely your team's function, and we do not participate in it.</p></details>\n<details><summary>We generate a lot of aerosol. Does that change how the operatory gets cleaned at the end of the day?</summary><p>It changes the surface list, not just the frequency. Spatter and aerosol settle well beyond the immediate chairside zone, so our end-of-day pass covers horizontal surfaces at and above chair height, cabinet fronts, light arms, the sides and base of the unit, and the floor around the chair, not only the counters your team wipes between patients. The CDC Summary of Infection Prevention Practices in Dental Settings (2016) expects routine environmental cleaning and disinfection to be set out in written policies and procedures; the surface list becomes part of yours.</p></details>\n<details><summary>Do you flush the suction lines and change evacuation traps?</summary><p>No. Evacuation line cleaning and trap changes are clinical equipment maintenance, performed to the line cleaner manufacturer's instructions by your staff, and the wrong chemistry in those lines can damage the unit. We do not open traps or introduce anything into the lines. We clean the surrounding cabinetry, the sink, and the floor beneath, and we will report a trap that is visibly overdue or a line cleaner container that has run empty, so it gets attention rather than being missed until the next scheduled maintenance.</p></details>\n<details><summary>Who is responsible for extracted teeth and blood-soaked gauze?</summary><p>Segregation at the point of generation is your clinical team's, and it happens before we arrive. Blood-soaked gauze and extracted teeth belong in a leak-resistant biohazard container rather than ordinary trash, and sharps belong in a labeled puncture-resistant container, consistent with CDC dental waste guidance and 29 CFR 1910.1030(d)(4)(iii). Our crews handle general waste only. If we find regulated waste in a general trash receptacle, we do not sort it. We stop, leave it, and report it, because handling it would create an exposure risk for our staff.</p></details>\n<details><summary>Does the Massachusetts Board of Registration in Dentistry actually look at this?</summary><p>The Board sets infection control requirements at 234 CMR 5.05. 234 CMR 5.05(1) requires compliance with the CDC dental infection control guidelines, and 234 CMR 5.05(2) carries the OSHA Bloodborne Pathogens Standard, 29 CFR 1910.1030, into the dental practice framework. So the written cleaning schedule at 29 CFR 1910.1030(d)(4)(i) is not only a federal obligation, it is a licensure-side expectation as well. Practically, that means one documentation set answers both the OSHA question and the Board question without maintaining two parallel binders.</p></details>\n<details><summary>Our staff mix disinfectant themselves. Is that a problem?</summary><p>It is one of the most common issues we correct. The CDC dental guidance is explicit about following manufacturer instructions for amount, dilution, contact time, and safe use and disposal, and some products must be made up fresh daily. A wrong dilution, an expired container, a solution stored in heat or light, or a wipe that dries before the label kill time all mean the surface was not actually disinfected. We standardize on ready-to-use products where the surface allows, date-mark anything that is mixed, and keep labels accessible in the operatory area.</p></details></section>"
+}

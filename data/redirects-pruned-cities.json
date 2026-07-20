@@ -6730,5 +6730,1319 @@
     "destination": "/services/specialty-clinics/hopkinton-ma",
     "permanent": true,
     "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/acton-ma",
+    "destination": "/services/rehabilitation-clinics/acton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/acton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/arlington-ma",
+    "destination": "/services/rehabilitation-clinics/arlington-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/arlington-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/ashland-ma",
+    "destination": "/services/rehabilitation-clinics/ashland-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/ashland-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/auburn-ma",
+    "destination": "/services/rehabilitation-clinics/auburn-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/auburn-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/ayer-ma",
+    "destination": "/services/rehabilitation-clinics/ayer-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/ayer-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/bedford-ma",
+    "destination": "/services/rehabilitation-clinics/bedford-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/bedford-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/bellingham-ma",
+    "destination": "/services/rehabilitation-clinics/bellingham-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/bellingham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/belmont-ma",
+    "destination": "/services/rehabilitation-clinics/belmont-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/belmont-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/berlin-ma",
+    "destination": "/services/rehabilitation-clinics/berlin-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/berlin-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/beverly-ma",
+    "destination": "/services/rehabilitation-clinics/beverly-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/beverly-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/blackstone-ma",
+    "destination": "/services/rehabilitation-clinics/blackstone-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/blackstone-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/bolton-ma",
+    "destination": "/services/rehabilitation-clinics/bolton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/bolton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/boxborough-ma",
+    "destination": "/services/rehabilitation-clinics/boxborough-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/boxborough-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/boylston-ma",
+    "destination": "/services/rehabilitation-clinics/boylston-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/boylston-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/braintree-ma",
+    "destination": "/services/rehabilitation-clinics/braintree-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/braintree-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/brookline-ma",
+    "destination": "/services/rehabilitation-clinics/brookline-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/brookline-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/burlington-ma",
+    "destination": "/services/rehabilitation-clinics/burlington-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/burlington-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/cambridge-ma",
+    "destination": "/services/rehabilitation-clinics/cambridge-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/cambridge-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/canton-ma",
+    "destination": "/services/rehabilitation-clinics/canton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/canton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/carlisle-ma",
+    "destination": "/services/rehabilitation-clinics/carlisle-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/carlisle-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/charlton-ma",
+    "destination": "/services/rehabilitation-clinics/charlton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/charlton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/chelmsford-ma",
+    "destination": "/services/rehabilitation-clinics/chelmsford-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/chelmsford-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/clinton-ma",
+    "destination": "/services/rehabilitation-clinics/clinton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/clinton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/concord-ma",
+    "destination": "/services/rehabilitation-clinics/concord-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/concord-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/danvers-ma",
+    "destination": "/services/rehabilitation-clinics/danvers-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/danvers-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/dedham-ma",
+    "destination": "/services/rehabilitation-clinics/dedham-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/dedham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/douglas-ma",
+    "destination": "/services/rehabilitation-clinics/douglas-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/douglas-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/dover-ma",
+    "destination": "/services/rehabilitation-clinics/dover-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/dover-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/dudley-ma",
+    "destination": "/services/rehabilitation-clinics/dudley-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/dudley-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/fitchburg-ma",
+    "destination": "/services/rehabilitation-clinics/fitchburg-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/fitchburg-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/foxborough-ma",
+    "destination": "/services/rehabilitation-clinics/foxborough-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/foxborough-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/framingham-ma",
+    "destination": "/services/rehabilitation-clinics/framingham-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/framingham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/franklin-ma",
+    "destination": "/services/rehabilitation-clinics/franklin-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/franklin-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/grafton-ma",
+    "destination": "/services/rehabilitation-clinics/grafton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/grafton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/groton-ma",
+    "destination": "/services/rehabilitation-clinics/groton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/groton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/harvard-ma",
+    "destination": "/services/rehabilitation-clinics/harvard-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/harvard-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/holden-ma",
+    "destination": "/services/rehabilitation-clinics/holden-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/holden-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/holliston-ma",
+    "destination": "/services/rehabilitation-clinics/holliston-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/holliston-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/hopedale-ma",
+    "destination": "/services/rehabilitation-clinics/hopedale-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hopedale-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/hopkinton-ma",
+    "destination": "/services/rehabilitation-clinics/hopkinton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hopkinton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/hudson-ma",
+    "destination": "/services/rehabilitation-clinics/hudson-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hudson-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/lancaster-ma",
+    "destination": "/services/rehabilitation-clinics/lancaster-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/lancaster-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/leicester-ma",
+    "destination": "/services/rehabilitation-clinics/leicester-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/leicester-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/leominster-ma",
+    "destination": "/services/rehabilitation-clinics/leominster-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/leominster-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/lexington-ma",
+    "destination": "/services/rehabilitation-clinics/lexington-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/lexington-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/lincoln-ma",
+    "destination": "/services/rehabilitation-clinics/lincoln-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/lincoln-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/littleton-ma",
+    "destination": "/services/rehabilitation-clinics/littleton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/littleton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/lunenburg-ma",
+    "destination": "/services/rehabilitation-clinics/lunenburg-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/lunenburg-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/lynn-ma",
+    "destination": "/services/rehabilitation-clinics/lynn-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/lynn-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/malden-ma",
+    "destination": "/services/rehabilitation-clinics/malden-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/malden-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/marlborough-ma",
+    "destination": "/services/rehabilitation-clinics/marlborough-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/marlborough-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/maynard-ma",
+    "destination": "/services/rehabilitation-clinics/maynard-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/maynard-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/medfield-ma",
+    "destination": "/services/rehabilitation-clinics/medfield-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/medfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/medford-ma",
+    "destination": "/services/rehabilitation-clinics/medford-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/medford-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/medway-ma",
+    "destination": "/services/rehabilitation-clinics/medway-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/medway-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/melrose-ma",
+    "destination": "/services/rehabilitation-clinics/melrose-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/melrose-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/mendon-ma",
+    "destination": "/services/rehabilitation-clinics/mendon-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/mendon-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/milford-ma",
+    "destination": "/services/rehabilitation-clinics/milford-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/milford-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/millbury-ma",
+    "destination": "/services/rehabilitation-clinics/millbury-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/millbury-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/millis-ma",
+    "destination": "/services/rehabilitation-clinics/millis-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/millis-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/milton-ma",
+    "destination": "/services/rehabilitation-clinics/milton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/milton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/natick-ma",
+    "destination": "/services/rehabilitation-clinics/natick-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/natick-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/needham-ma",
+    "destination": "/services/rehabilitation-clinics/needham-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/needham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/newton-ma",
+    "destination": "/services/rehabilitation-clinics/newton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/newton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/norfolk-ma",
+    "destination": "/services/rehabilitation-clinics/norfolk-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/norfolk-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/northborough-ma",
+    "destination": "/services/rehabilitation-clinics/northborough-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/northborough-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/northbridge-ma",
+    "destination": "/services/rehabilitation-clinics/northbridge-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/northbridge-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/norwood-ma",
+    "destination": "/services/rehabilitation-clinics/norwood-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/norwood-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/oxford-ma",
+    "destination": "/services/rehabilitation-clinics/oxford-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/oxford-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/paxton-ma",
+    "destination": "/services/rehabilitation-clinics/paxton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/paxton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/peabody-ma",
+    "destination": "/services/rehabilitation-clinics/peabody-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/peabody-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/princeton-ma",
+    "destination": "/services/rehabilitation-clinics/princeton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/princeton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/quincy-ma",
+    "destination": "/services/rehabilitation-clinics/quincy-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/quincy-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/randolph-ma",
+    "destination": "/services/rehabilitation-clinics/randolph-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/randolph-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/reading-ma",
+    "destination": "/services/rehabilitation-clinics/reading-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/reading-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/rutland-ma",
+    "destination": "/services/rehabilitation-clinics/rutland-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/rutland-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/salem-ma",
+    "destination": "/services/rehabilitation-clinics/salem-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/salem-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/saugus-ma",
+    "destination": "/services/rehabilitation-clinics/saugus-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/saugus-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/sharon-ma",
+    "destination": "/services/rehabilitation-clinics/sharon-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/sharon-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/sherborn-ma",
+    "destination": "/services/rehabilitation-clinics/sherborn-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/sherborn-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/shirley-ma",
+    "destination": "/services/rehabilitation-clinics/shirley-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/shirley-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/shrewsbury-ma",
+    "destination": "/services/rehabilitation-clinics/shrewsbury-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/shrewsbury-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/somerville-ma",
+    "destination": "/services/rehabilitation-clinics/somerville-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/somerville-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/southborough-ma",
+    "destination": "/services/rehabilitation-clinics/southborough-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/southborough-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/spencer-ma",
+    "destination": "/services/rehabilitation-clinics/spencer-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/spencer-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/sterling-ma",
+    "destination": "/services/rehabilitation-clinics/sterling-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/sterling-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/stoneham-ma",
+    "destination": "/services/rehabilitation-clinics/stoneham-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/stoneham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/stoughton-ma",
+    "destination": "/services/rehabilitation-clinics/stoughton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/stoughton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/stow-ma",
+    "destination": "/services/rehabilitation-clinics/stow-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/stow-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/sudbury-ma",
+    "destination": "/services/rehabilitation-clinics/sudbury-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/sudbury-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/sutton-ma",
+    "destination": "/services/rehabilitation-clinics/sutton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/sutton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/upton-ma",
+    "destination": "/services/rehabilitation-clinics/upton-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/upton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/uxbridge-ma",
+    "destination": "/services/rehabilitation-clinics/uxbridge-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/uxbridge-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/wakefield-ma",
+    "destination": "/services/rehabilitation-clinics/wakefield-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/wakefield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/walpole-ma",
+    "destination": "/services/rehabilitation-clinics/walpole-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/walpole-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/waltham-ma",
+    "destination": "/services/rehabilitation-clinics/waltham-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/waltham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/watertown-ma",
+    "destination": "/services/rehabilitation-clinics/watertown-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/watertown-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/wayland-ma",
+    "destination": "/services/rehabilitation-clinics/wayland-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/wayland-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/webster-ma",
+    "destination": "/services/rehabilitation-clinics/webster-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/webster-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/wellesley-ma",
+    "destination": "/services/rehabilitation-clinics/wellesley-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/wellesley-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/west-boylston-ma",
+    "destination": "/services/rehabilitation-clinics/west-boylston-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/west-boylston-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/westborough-ma",
+    "destination": "/services/rehabilitation-clinics/westborough-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/westborough-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/westford-ma",
+    "destination": "/services/rehabilitation-clinics/westford-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/westford-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/weston-ma",
+    "destination": "/services/rehabilitation-clinics/weston-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/weston-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/weymouth-ma",
+    "destination": "/services/rehabilitation-clinics/weymouth-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/weymouth-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/winchester-ma",
+    "destination": "/services/rehabilitation-clinics/winchester-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/winchester-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/woburn-ma",
+    "destination": "/services/rehabilitation-clinics/woburn-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/woburn-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/worcester-ma",
+    "destination": "/services/rehabilitation-clinics/worcester-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/worcester-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing/wrentham-ma",
+    "destination": "/services/rehabilitation-clinics/wrentham-ma",
+    "permanent": true,
+    "kind": "service-split"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/wrentham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "tier2"
+  },
+  {
+    "source": "/services/rehab-nursing",
+    "destination": "/services/rehabilitation-clinics",
+    "permanent": true,
+    "kind": "service-split"
   }
 ]

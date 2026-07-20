@@ -1,1 +1,10 @@
-["ambulatory-outpatient", "healthcare-admin-offices", "medical-office-cleaning", "rehab-nursing", "specialty-clinics"]
+[
+  "ambulatory-outpatient",
+  "assisted-living-cleaning",
+  "dental-office-cleaning",
+  "medical-office-cleaning",
+  "rehabilitation-clinics",
+  "skilled-nursing",
+  "specialty-clinics",
+  "urgent-care-cleaning"
+]

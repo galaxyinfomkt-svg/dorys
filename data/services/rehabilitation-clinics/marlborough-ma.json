@@ -1,0 +1,124 @@
+{
+  "slug": "marlborough-ma",
+  "city": "Marlborough",
+  "category": "rehabilitation-clinics",
+  "categoryLabel": "Rehabilitation Clinic Cleaning",
+  "title": "Rehabilitation Clinic Cleaning in Marlborough, MA | Dory's Cleaning Services",
+  "description": "Rehabilitation Clinic Cleaning for Marlborough, MA healthcare facilities. 22+ years clinical experience, $2M insured. Free facility assessment: (978) 307-8107.",
+  "keywords": "rehabilitation clinic cleaning Marlborough MA, healthcare cleaning Marlborough",
+  "robots": "index, follow",
+  "geoRegion": "US-MA",
+  "geoPlacename": "Marlborough, Massachusetts",
+  "canonical": "https://doryscleaningservices.com/services/rehabilitation-clinics/marlborough-ma",
+  "ogType": "website",
+  "ogUrl": "https://doryscleaningservices.com/services/rehabilitation-clinics/marlborough-ma",
+  "ogTitle": "Rehabilitation Clinic Cleaning in Marlborough, MA",
+  "ogDescription": "Clinical-grade environmental services for Marlborough healthcare facilities.",
+  "ogLocale": "en_US",
+  "ogSiteName": "Dory's Cleaning Services",
+  "twitterCard": "summary_large_image",
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Our therapists wipe the tables and mats between patients. Is that enough?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wiping is cleaning, and cleaning is not disinfection. They are two steps. Treatment tables, mats, weights, and bands that contact intact skin are non-critical items that need to be cleaned and then disinfected between patients at the level the degree of soiling requires, per the CDC Infection Prevention Checklist non-critical item definition and CDC Core Practices 5f. Between-patient turnover stays with your clinicians, because they are the ones in the room. What we own is the end-of-day terminal pass across every table, mat, and plinth, plus floors, restrooms, and shared areas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Our wipes dry in about twenty seconds. Does that still count as disinfection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually not. Nearly every disinfectant label carries a contact time during which the surface must remain visibly wet, and a surface that dries early was cleaned rather than disinfected. This is a documented finding pattern in outpatient settings under Section II item B of the CDC Infection Prevention Checklist and Core Practices 5b, alongside products used past shelf life or stored badly. On a warm vinyl mat, a single wipe rarely holds a two or four minute dwell. We match the product to the surface, reapply where needed, and train to the label."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should we handle foam rollers, therabands, and fabric straps? They cannot really be disinfected.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That is exactly the issue, and it has a stated answer. Where a manufacturer provides no cleaning and disinfection instructions, CDC's position under Section II item A of the Infection Prevention Checklist and Core Practices 5f is that the item is not suitable for multi-patient use. Porous foam, fabric straps, and cut bands frequently fall there. The practical fixes are single-patient assignment, launderable covers, or replacement with a non-porous equivalent. We inventory the gym, mark which items have usable instructions and which do not, and hand the list to you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Skin-to-equipment contact all day is our real exposure. What do you actually do about it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We treat the gym as a contact-transfer environment rather than an office. Every surface a patient's bare skin meets, including plinth vinyl, mat surfaces, exercise ball skins, bench pads, and the floor of the mat area, is cleaned and then disinfected on a defined interval with an EPA-registered product chosen for that surface. The mat floor gets a wet process rather than a dry mop that redistributes skin debris. Written policies naming the gym, the treatment tables, and the shared equipment are precisely what Section I item A of the CDC Infection Prevention Checklist asks a clinic to hold."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which surfaces should be cleaned more often than everything else?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The ones closest to the patient and touched most: plinth rails and adjustment levers, parallel bars, treadmill handrails and consoles, cable grips, dumbbell handles, door hardware, and treatment room light switches. CDC Core Practices 5b and Section II item A of the Infection Prevention Checklist call for high-touch surfaces near the patient to sit on a more frequent schedule than general environmental surfaces. In practice that means a mid-day high-touch circuit through the gym on top of the terminal clean, and that mid-day circuit is where most clinics have a gap."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "We store clean and just-used equipment on the same rack. Is that a real finding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. CDC Core Practices 5f expects physical separation between clean and soiled items, so that a cleaned item cannot be recontaminated or mistaken for a used one. In a busy gym the workable version is a designated soiled bin or drop zone for anything a patient has handled, a separate clean shelf, and a convention everyone follows without thinking. We can supply and service that routing, but the layout decision is yours. It costs almost nothing to fix and it is among the first things an assessor looks at."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you clean and maintain our whirlpool or hydrotherapy tank?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Tank filling, draining, chemical treatment, and disinfection are clinical equipment protocols set by the tank manufacturer, with their own logs and competency requirements, and they belong to your staff. We clean the room around it: floors, drains, walls, benches, handrails, and door hardware, which is where wet-area soil actually accumulates. If the hydrotherapy area shows standing water, a slow drain, or degraded flooring, that goes into our report, because those are environmental conditions and raising them is our job."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know your crew knows what it is doing in a clinical gym?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because training and competency validation are documented rather than assumed. Section I item B of the CDC Infection Prevention Checklist expects cleaning personnel to receive job-specific training and competency validation at hire and whenever procedures or products change. Our crews are trained on clean-to-dirty sequencing, color-coded microfiber, contact time discipline, and the specific products in your building, with records kept per person. Jeneva Thomas founded Dory's after 22 years of clinical experience, which is why the training is written around real findings rather than around a supply catalog."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Nobody here checks whether cleaning was done properly. Should we be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and the absence of checking is itself a finding. Section I item D of the CDC Infection Prevention Checklist expects evidence that the clinic monitors and assesses whether cleaning is consistently and correctly performed. We build that in: dated service logs by zone, a supervisor audit on a defined interval using a written checklist tied to your own protocol, and a corrective-action note whenever something misses. You keep the record. The point is not to grade our crew for you, it is that you can show an assessor a monitoring process that exists on paper."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What documentation do I get for a CARF survey or a DPH review?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The written cleaning and disinfection policy covering the gym, treatment tables, and shared equipment, with responsibility assigned line by line; the equipment inventory flagging items with no manufacturer reprocessing instructions; the product list with EPA registration numbers and label contact times; SDS sheets; per-person training and competency records; dated service logs; and supervisor audit results. That set answers Section I items A through D of the CDC Infection Prevention Checklist directly. Dory's carries $2 million in general liability and will name your clinic on the certificate."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Rehabilitation Clinic Cleaning in Marlborough, MA",
+      "serviceType": "Rehabilitation Clinic Cleaning",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Dory's Cleaning Services Inc.",
+        "telephone": "+19783078107"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Marlborough, MA"
+      }
+    }
+  ],
+  "mainHtml": "<section class=\"intro\"><h1>Rehabilitation Clinic Cleaning in Marlborough, MA</h1><p>Dory's Cleaning Services provides clinical-grade environmental services to physical therapy, occupational therapy, speech therapy in Marlborough, Middlesex County. Founded by a 22-year clinical veteran, $2M general liability insured.</p><p class=\"risk\"><strong>What we are protecting against:</strong> direct skin contact with shared equipment all day, with no barrier — MRSA and fungal transfer. The zone that matters most: treatment tables, mats, therabands, free weights, exercise balls, parallel bars, treadmills.</p></section>\n<section class=\"local-context\"><h2>Healthcare in Marlborough</h2><p>Marlborough is anchored by facilities including <strong>UMass Memorial Medical Center — Marlborough Campus</strong>, <strong>UMass Memorial Medical Group — Marlborough Primary Care</strong>, <strong>Fresenius Medical Care of Marlborough</strong>. We serve the medical offices, clinics and practices in and around that corridor — not the hospitals themselves.</p>\n<p>The local concentration of practices sits along <strong>Union Street</strong>.</p>\n<p>The dominant healthcare presence here is community acute care hospital campus with a surrounding cluster of independent medical and specialty offices.</p></section>\n<section class=\"survey-findings\"><h2>Survey findings we help Marlborough facilities prevent</h2><p>These are real, published regulatory findings — each one links to its source.</p><ul><li><p class=\"finding\">No written policies and procedures for routine cleaning and disinfection of the gym, treatment tables and shared equipment, including who is responsible for what.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf\" rel=\"noopener nofollow\" target=\"_blank\">CDC Infection Prevention Checklist for Outpatient Settings, Section I Environmental Cleaning item A</a></p></li>\n<li><p class=\"finding\">Cleaning staff have not received job-specific training and competency validation at hire and whenever procedures or products change.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf\" rel=\"noopener nofollow\" target=\"_blank\">CDC Infection Prevention Checklist for Outpatient Settings, Section I item B</a></p></li>\n<li><p class=\"finding\">Cleaning is never monitored or assessed — no evidence the clinic checks that it is consistently and correctly performed.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf\" rel=\"noopener nofollow\" target=\"_blank\">CDC Infection Prevention Checklist for Outpatient Settings, Section I item D</a></p></li>\n<li><p class=\"finding\">Treatment tables, mats, weights and bands that contact intact skin are wiped but not cleaned and then disinfected between patients at the level the degree of soiling requires.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf\" rel=\"noopener nofollow\" target=\"_blank\">CDC Infection Prevention Checklist for Outpatient Settings, non-critical item definition; CDC Core Infection Prevention and Control Practices 5f</a></p></li>\n<li><p class=\"finding\">Shared equipment reprocessed in a way the manufacturer never specified. CDC's position is that where no cleaning and disinfection instructions exist, the item is not suitable for multi-patient use.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf\" rel=\"noopener nofollow\" target=\"_blank\">CDC Infection Prevention Checklist for Outpatient Settings, Section II item A; CDC Core Practices 5f</a></p></li>\n<li><p class=\"finding\">High-touch surfaces close to the patient — plinth rails, parallel bars, equipment grips — not cleaned and disinfected on a more frequent schedule than other surfaces.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/infection-control/hcp/core-practices/index.html\" rel=\"noopener nofollow\" target=\"_blank\">CDC Core Infection Prevention and Control Practices 5b; CDC Infection Prevention Checklist, Section II item A</a></p></li>\n<li><p class=\"finding\">Disinfectant wipes used with insufficient contact time — the surface dries before the label kill time, or the product is past shelf life or badly stored.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/infection-control/media/pdfs/outpatient-guide-checklist-508.pdf\" rel=\"noopener nofollow\" target=\"_blank\">CDC Infection Prevention Checklist for Outpatient Settings, Section II item B; CDC Core Practices 5b</a></p></li>\n<li><p class=\"finding\">Clean and soiled equipment stored together, with no physical separation to prevent cross-contamination.</p><p class=\"citation\"><a href=\"https://www.cdc.gov/infection-control/hcp/core-practices/index.html\" rel=\"noopener nofollow\" target=\"_blank\">CDC Core Infection Prevention and Control Practices 5f</a></p></li></ul></section>\n<section class=\"regulatory\"><h2>The standards that govern this work</h2><ul><li>CDC infection prevention guidance for outpatient and ambulatory care settings</li><li>105 CMR 140 — Massachusetts DPH, Licensure of Clinics</li><li>EPA List N registered disinfectants</li></ul></section>\n<section class=\"faq\"><h2>Rehabilitation Clinic Cleaning in Marlborough — common questions</h2><details><summary>Our therapists wipe the tables and mats between patients. Is that enough?</summary><p>Wiping is cleaning, and cleaning is not disinfection. They are two steps. Treatment tables, mats, weights, and bands that contact intact skin are non-critical items that need to be cleaned and then disinfected between patients at the level the degree of soiling requires, per the CDC Infection Prevention Checklist non-critical item definition and CDC Core Practices 5f. Between-patient turnover stays with your clinicians, because they are the ones in the room. What we own is the end-of-day terminal pass across every table, mat, and plinth, plus floors, restrooms, and shared areas.</p></details>\n<details><summary>Our wipes dry in about twenty seconds. Does that still count as disinfection?</summary><p>Usually not. Nearly every disinfectant label carries a contact time during which the surface must remain visibly wet, and a surface that dries early was cleaned rather than disinfected. This is a documented finding pattern in outpatient settings under Section II item B of the CDC Infection Prevention Checklist and Core Practices 5b, alongside products used past shelf life or stored badly. On a warm vinyl mat, a single wipe rarely holds a two or four minute dwell. We match the product to the surface, reapply where needed, and train to the label.</p></details>\n<details><summary>How should we handle foam rollers, therabands, and fabric straps? They cannot really be disinfected.</summary><p>That is exactly the issue, and it has a stated answer. Where a manufacturer provides no cleaning and disinfection instructions, CDC's position under Section II item A of the Infection Prevention Checklist and Core Practices 5f is that the item is not suitable for multi-patient use. Porous foam, fabric straps, and cut bands frequently fall there. The practical fixes are single-patient assignment, launderable covers, or replacement with a non-porous equivalent. We inventory the gym, mark which items have usable instructions and which do not, and hand the list to you.</p></details>\n<details><summary>Skin-to-equipment contact all day is our real exposure. What do you actually do about it?</summary><p>We treat the gym as a contact-transfer environment rather than an office. Every surface a patient's bare skin meets, including plinth vinyl, mat surfaces, exercise ball skins, bench pads, and the floor of the mat area, is cleaned and then disinfected on a defined interval with an EPA-registered product chosen for that surface. The mat floor gets a wet process rather than a dry mop that redistributes skin debris. Written policies naming the gym, the treatment tables, and the shared equipment are precisely what Section I item A of the CDC Infection Prevention Checklist asks a clinic to hold.</p></details>\n<details><summary>Which surfaces should be cleaned more often than everything else?</summary><p>The ones closest to the patient and touched most: plinth rails and adjustment levers, parallel bars, treadmill handrails and consoles, cable grips, dumbbell handles, door hardware, and treatment room light switches. CDC Core Practices 5b and Section II item A of the Infection Prevention Checklist call for high-touch surfaces near the patient to sit on a more frequent schedule than general environmental surfaces. In practice that means a mid-day high-touch circuit through the gym on top of the terminal clean, and that mid-day circuit is where most clinics have a gap.</p></details>\n<details><summary>We store clean and just-used equipment on the same rack. Is that a real finding?</summary><p>Yes. CDC Core Practices 5f expects physical separation between clean and soiled items, so that a cleaned item cannot be recontaminated or mistaken for a used one. In a busy gym the workable version is a designated soiled bin or drop zone for anything a patient has handled, a separate clean shelf, and a convention everyone follows without thinking. We can supply and service that routing, but the layout decision is yours. It costs almost nothing to fix and it is among the first things an assessor looks at.</p></details>\n<details><summary>Can you clean and maintain our whirlpool or hydrotherapy tank?</summary><p>No. Tank filling, draining, chemical treatment, and disinfection are clinical equipment protocols set by the tank manufacturer, with their own logs and competency requirements, and they belong to your staff. We clean the room around it: floors, drains, walls, benches, handrails, and door hardware, which is where wet-area soil actually accumulates. If the hydrotherapy area shows standing water, a slow drain, or degraded flooring, that goes into our report, because those are environmental conditions and raising them is our job.</p></details>\n<details><summary>How do I know your crew knows what it is doing in a clinical gym?</summary><p>Because training and competency validation are documented rather than assumed. Section I item B of the CDC Infection Prevention Checklist expects cleaning personnel to receive job-specific training and competency validation at hire and whenever procedures or products change. Our crews are trained on clean-to-dirty sequencing, color-coded microfiber, contact time discipline, and the specific products in your building, with records kept per person. Jeneva Thomas founded Dory's after 22 years of clinical experience, which is why the training is written around real findings rather than around a supply catalog.</p></details>\n<details><summary>Nobody here checks whether cleaning was done properly. Should we be?</summary><p>Yes, and the absence of checking is itself a finding. Section I item D of the CDC Infection Prevention Checklist expects evidence that the clinic monitors and assesses whether cleaning is consistently and correctly performed. We build that in: dated service logs by zone, a supervisor audit on a defined interval using a written checklist tied to your own protocol, and a corrective-action note whenever something misses. You keep the record. The point is not to grade our crew for you, it is that you can show an assessor a monitoring process that exists on paper.</p></details>\n<details><summary>What documentation do I get for a CARF survey or a DPH review?</summary><p>The written cleaning and disinfection policy covering the gym, treatment tables, and shared equipment, with responsibility assigned line by line; the equipment inventory flagging items with no manufacturer reprocessing instructions; the product list with EPA registration numbers and label contact times; SDS sheets; per-person training and competency records; dated service logs; and supervisor audit results. That set answers Section I items A through D of the CDC Infection Prevention Checklist directly. Dory's carries $2 million in general liability and will name your clinic on the certificate.</p></details></section>"
+}
