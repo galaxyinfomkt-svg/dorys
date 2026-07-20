@@ -68,7 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             below to keep FCP/LCP low.
             NOTE: do NOT hardcode-preload specific gstatic woff2 URLs — Google
             rotates those hashed filenames, so the old ones 404 on every page. */}
-        <link rel="stylesheet" href="/assets/css/critical.min.css" />
+        <link rel="stylesheet" href="/assets/css/critical.min.css?v=20260720-hero" />
         <link rel="stylesheet" href="/assets/css/premium.css" />
         {/* service-pages.css sizes benefit/highlight card icons, benefits/
             related grids, cta-boxes, faq items, etc. */}
