@@ -1,0 +1,6734 @@
+[
+  {
+    "source": "/locations/abington-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/abington-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/abington-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/abington-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/abington-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/abington-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/acushnet-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/acushnet-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/acushnet-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/acushnet-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/acushnet-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/acushnet-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/agawam-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/agawam-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/agawam-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/agawam-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/agawam-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/agawam-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/amesbury-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/amesbury-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/amesbury-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/amesbury-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/amesbury-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/amesbury-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/amherst-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/amherst-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/amherst-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/amherst-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/amherst-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/amherst-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/andover-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/andover-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/andover-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/andover-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/andover-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/andover-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/arlington-heights-ma",
+    "destination": "/locations/arlington-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/arlington-heights-ma",
+    "destination": "/services/ambulatory-outpatient/arlington-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/arlington-heights-ma",
+    "destination": "/services/healthcare-admin-offices/arlington-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/arlington-heights-ma",
+    "destination": "/services/medical-office-cleaning/arlington-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/arlington-heights-ma",
+    "destination": "/services/rehab-nursing/arlington-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/arlington-heights-ma",
+    "destination": "/services/specialty-clinics/arlington-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/ashburnham-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/ashburnham-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/ashburnham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/ashburnham-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/ashburnham-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/ashburnham-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/ashby-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/ashby-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/ashby-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/ashby-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/ashby-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/ashby-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/athol-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/athol-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/athol-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/athol-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/athol-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/athol-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/attleboro-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/attleboro-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/attleboro-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/attleboro-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/attleboro-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/attleboro-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/auburndale-ma",
+    "destination": "/locations/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/auburndale-ma",
+    "destination": "/services/ambulatory-outpatient/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/auburndale-ma",
+    "destination": "/services/healthcare-admin-offices/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/auburndale-ma",
+    "destination": "/services/medical-office-cleaning/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/auburndale-ma",
+    "destination": "/services/rehab-nursing/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/auburndale-ma",
+    "destination": "/services/specialty-clinics/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/avon-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/avon-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/avon-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/avon-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/avon-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/avon-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/babson-park-ma",
+    "destination": "/locations/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/babson-park-ma",
+    "destination": "/services/ambulatory-outpatient/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/babson-park-ma",
+    "destination": "/services/healthcare-admin-offices/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/babson-park-ma",
+    "destination": "/services/medical-office-cleaning/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/babson-park-ma",
+    "destination": "/services/rehab-nursing/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/babson-park-ma",
+    "destination": "/services/specialty-clinics/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/barre-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/barre-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/barre-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/barre-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/barre-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/barre-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/belchertown-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/belchertown-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/belchertown-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/belchertown-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/belchertown-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/belchertown-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/berkley-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/berkley-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/berkley-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/berkley-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/berkley-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/berkley-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/billerica-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/billerica-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/billerica-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/billerica-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/billerica-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/billerica-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/boston-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/boston-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/boston-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/boston-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/boston-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/boston-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/boxford-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/boxford-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/boxford-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/boxford-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/boxford-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/boxford-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/bridgewater-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/bridgewater-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/bridgewater-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/bridgewater-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/bridgewater-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/bridgewater-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/brimfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/brimfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/brimfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/brimfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/brimfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/brimfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/brockton-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/brockton-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/brockton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/brockton-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/brockton-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/brockton-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/brookfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/brookfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/brookfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/brookfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/brookfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/brookfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/carver-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/carver-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/carver-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/carver-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/carver-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/carver-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/chelsea-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/chelsea-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/chelsea-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/chelsea-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/chelsea-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/chelsea-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/cherry-valley-ma",
+    "destination": "/locations/leicester-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/cherry-valley-ma",
+    "destination": "/services/ambulatory-outpatient/leicester-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/cherry-valley-ma",
+    "destination": "/services/healthcare-admin-offices/leicester-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/cherry-valley-ma",
+    "destination": "/services/medical-office-cleaning/leicester-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/cherry-valley-ma",
+    "destination": "/services/rehab-nursing/leicester-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/cherry-valley-ma",
+    "destination": "/services/specialty-clinics/leicester-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/chester-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/chester-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/chester-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/chester-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/chester-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/chester-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/chestnut-hill-ma",
+    "destination": "/locations/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/chestnut-hill-ma",
+    "destination": "/services/ambulatory-outpatient/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/chestnut-hill-ma",
+    "destination": "/services/healthcare-admin-offices/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/chestnut-hill-ma",
+    "destination": "/services/medical-office-cleaning/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/chestnut-hill-ma",
+    "destination": "/services/rehab-nursing/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/chestnut-hill-ma",
+    "destination": "/services/specialty-clinics/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/chicopee-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/chicopee-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/chicopee-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/chicopee-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/chicopee-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/chicopee-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/cohasset-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/cohasset-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/cohasset-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/cohasset-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/cohasset-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/cohasset-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/dartmouth-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/dartmouth-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/dartmouth-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/dartmouth-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/dartmouth-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/dartmouth-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/devens-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/devens-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/devens-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/devens-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/devens-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/devens-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/dighton-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/dighton-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/dighton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/dighton-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/dighton-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/dighton-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/dracut-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/dracut-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/dracut-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/dracut-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/dracut-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/dracut-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/dunstable-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/dunstable-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/dunstable-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/dunstable-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/dunstable-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/dunstable-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/duxbury-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/duxbury-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/duxbury-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/duxbury-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/duxbury-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/duxbury-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/east-bridgewater-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/east-bridgewater-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/east-bridgewater-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/east-bridgewater-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/east-bridgewater-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/east-bridgewater-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/east-brookfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/east-brookfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/east-brookfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/east-brookfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/east-brookfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/east-brookfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/east-longmeadow-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/east-longmeadow-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/east-longmeadow-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/east-longmeadow-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/east-longmeadow-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/east-longmeadow-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/east-princeton-ma",
+    "destination": "/locations/princeton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/east-princeton-ma",
+    "destination": "/services/ambulatory-outpatient/princeton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/east-princeton-ma",
+    "destination": "/services/healthcare-admin-offices/princeton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/east-princeton-ma",
+    "destination": "/services/medical-office-cleaning/princeton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/east-princeton-ma",
+    "destination": "/services/rehab-nursing/princeton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/east-princeton-ma",
+    "destination": "/services/specialty-clinics/princeton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/easthampton-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/easthampton-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/easthampton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/easthampton-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/easthampton-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/easthampton-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/easton-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/easton-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/easton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/easton-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/easton-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/easton-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/essex-town-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/essex-town-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/essex-town-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/essex-town-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/essex-town-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/essex-town-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/everett-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/everett-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/everett-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/everett-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/everett-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/everett-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/fairhaven-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/fairhaven-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/fairhaven-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/fairhaven-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/fairhaven-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/fairhaven-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/fall-river-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/fall-river-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/fall-river-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/fall-river-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/fall-river-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/fall-river-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/fayville-ma",
+    "destination": "/locations/southborough-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/fayville-ma",
+    "destination": "/services/ambulatory-outpatient/southborough-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/fayville-ma",
+    "destination": "/services/healthcare-admin-offices/southborough-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/fayville-ma",
+    "destination": "/services/medical-office-cleaning/southborough-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/fayville-ma",
+    "destination": "/services/rehab-nursing/southborough-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/fayville-ma",
+    "destination": "/services/specialty-clinics/southborough-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/freetown-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/freetown-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/freetown-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/freetown-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/freetown-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/freetown-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/gardner-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/gardner-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/gardner-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/gardner-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/gardner-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/gardner-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/georgetown-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/georgetown-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/georgetown-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/georgetown-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/georgetown-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/georgetown-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/gloucester-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/gloucester-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/gloucester-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/gloucester-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/gloucester-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/gloucester-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/granby-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/granby-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/granby-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/granby-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/granby-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/granby-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/granville-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/granville-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/granville-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/granville-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/granville-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/granville-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/greenfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/greenfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/greenfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/greenfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/greenfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/greenfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/groveland-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/groveland-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/groveland-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/groveland-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/groveland-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/groveland-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/hadley-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/hadley-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hadley-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/hadley-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/hadley-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/hadley-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/halifax-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/halifax-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/halifax-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/halifax-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/halifax-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/halifax-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/hamilton-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/hamilton-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hamilton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/hamilton-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/hamilton-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/hamilton-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/hampden-town-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/hampden-town-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hampden-town-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/hampden-town-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/hampden-town-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/hampden-town-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/hanover-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/hanover-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hanover-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/hanover-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/hanover-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/hanover-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/hanscom-afb-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/hanscom-afb-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hanscom-afb-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/hanscom-afb-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/hanscom-afb-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/hanscom-afb-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/hanson-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/hanson-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hanson-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/hanson-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/hanson-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/hanson-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/hardwick-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/hardwick-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hardwick-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/hardwick-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/hardwick-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/hardwick-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/hatfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/hatfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hatfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/hatfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/hatfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/hatfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/haverhill-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/haverhill-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/haverhill-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/haverhill-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/haverhill-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/haverhill-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/hingham-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/hingham-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hingham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/hingham-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/hingham-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/hingham-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/holbrook-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/holbrook-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/holbrook-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/holbrook-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/holbrook-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/holbrook-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/holland-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/holland-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/holland-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/holland-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/holland-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/holland-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/holyoke-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/holyoke-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/holyoke-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/holyoke-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/holyoke-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/holyoke-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/hubbardston-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/hubbardston-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hubbardston-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/hubbardston-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/hubbardston-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/hubbardston-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/hull-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/hull-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/hull-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/hull-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/hull-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/hull-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/ipswich-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/ipswich-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/ipswich-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/ipswich-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/ipswich-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/ipswich-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/jefferson-ma",
+    "destination": "/locations/holden-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/jefferson-ma",
+    "destination": "/services/ambulatory-outpatient/holden-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/jefferson-ma",
+    "destination": "/services/healthcare-admin-offices/holden-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/jefferson-ma",
+    "destination": "/services/medical-office-cleaning/holden-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/jefferson-ma",
+    "destination": "/services/rehab-nursing/holden-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/jefferson-ma",
+    "destination": "/services/specialty-clinics/holden-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/kingston-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/kingston-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/kingston-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/kingston-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/kingston-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/kingston-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/lakeville-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/lakeville-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/lakeville-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/lakeville-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/lakeville-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/lakeville-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/lawrence-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/lawrence-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/lawrence-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/lawrence-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/lawrence-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/lawrence-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/linwood-ma",
+    "destination": "/locations/northbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/linwood-ma",
+    "destination": "/services/ambulatory-outpatient/northbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/linwood-ma",
+    "destination": "/services/healthcare-admin-offices/northbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/linwood-ma",
+    "destination": "/services/medical-office-cleaning/northbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/linwood-ma",
+    "destination": "/services/rehab-nursing/northbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/linwood-ma",
+    "destination": "/services/specialty-clinics/northbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/longmeadow-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/longmeadow-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/longmeadow-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/longmeadow-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/longmeadow-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/longmeadow-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/lowell-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/lowell-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/lowell-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/lowell-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/lowell-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/lowell-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/ludlow-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/ludlow-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/ludlow-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/ludlow-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/ludlow-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/ludlow-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/lynnfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/lynnfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/lynnfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/lynnfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/lynnfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/lynnfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/manchester-by-the-sea-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/manchester-by-the-sea-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/manchester-by-the-sea-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/manchester-by-the-sea-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/manchester-by-the-sea-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/manchester-by-the-sea-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/mansfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/mansfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/mansfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/mansfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/mansfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/mansfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/marblehead-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/marblehead-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/marblehead-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/marblehead-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/marblehead-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/marblehead-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/marion-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/marion-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/marion-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/marion-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/marion-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/marion-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/marshfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/marshfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/marshfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/marshfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/marshfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/marshfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/mattapoisett-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/mattapoisett-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/mattapoisett-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/mattapoisett-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/mattapoisett-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/mattapoisett-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/merrimac-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/merrimac-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/merrimac-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/merrimac-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/merrimac-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/merrimac-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/methuen-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/methuen-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/methuen-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/methuen-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/methuen-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/methuen-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/middleborough-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/middleborough-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/middleborough-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/middleborough-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/middleborough-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/middleborough-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/middleton-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/middleton-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/middleton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/middleton-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/middleton-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/middleton-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/millville-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/millville-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/millville-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/millville-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/millville-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/millville-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/monson-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/monson-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/monson-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/monson-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/monson-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/monson-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/nahant-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/nahant-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/nahant-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/nahant-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/nahant-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/nahant-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/needham-heights-ma",
+    "destination": "/locations/needham-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/needham-heights-ma",
+    "destination": "/services/ambulatory-outpatient/needham-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/needham-heights-ma",
+    "destination": "/services/healthcare-admin-offices/needham-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/needham-heights-ma",
+    "destination": "/services/medical-office-cleaning/needham-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/needham-heights-ma",
+    "destination": "/services/rehab-nursing/needham-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/needham-heights-ma",
+    "destination": "/services/specialty-clinics/needham-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/new-bedford-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/new-bedford-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/new-bedford-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/new-bedford-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/new-bedford-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/new-bedford-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/new-braintree-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/new-braintree-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/new-braintree-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/new-braintree-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/new-braintree-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/new-braintree-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/newbury-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/newbury-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/newbury-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/newbury-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/newbury-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/newbury-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/newburyport-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/newburyport-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/newburyport-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/newburyport-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/newburyport-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/newburyport-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/newton-center-ma",
+    "destination": "/locations/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/newton-center-ma",
+    "destination": "/services/ambulatory-outpatient/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/newton-center-ma",
+    "destination": "/services/healthcare-admin-offices/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/newton-center-ma",
+    "destination": "/services/medical-office-cleaning/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/newton-center-ma",
+    "destination": "/services/rehab-nursing/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/newton-center-ma",
+    "destination": "/services/specialty-clinics/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/newton-highlands-ma",
+    "destination": "/locations/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/newton-highlands-ma",
+    "destination": "/services/ambulatory-outpatient/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/newton-highlands-ma",
+    "destination": "/services/healthcare-admin-offices/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/newton-highlands-ma",
+    "destination": "/services/medical-office-cleaning/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/newton-highlands-ma",
+    "destination": "/services/rehab-nursing/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/newton-highlands-ma",
+    "destination": "/services/specialty-clinics/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/newton-lower-falls-ma",
+    "destination": "/locations/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/newton-lower-falls-ma",
+    "destination": "/services/ambulatory-outpatient/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/newton-lower-falls-ma",
+    "destination": "/services/healthcare-admin-offices/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/newton-lower-falls-ma",
+    "destination": "/services/medical-office-cleaning/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/newton-lower-falls-ma",
+    "destination": "/services/rehab-nursing/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/newton-lower-falls-ma",
+    "destination": "/services/specialty-clinics/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/newton-upper-falls-ma",
+    "destination": "/locations/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/newton-upper-falls-ma",
+    "destination": "/services/ambulatory-outpatient/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/newton-upper-falls-ma",
+    "destination": "/services/healthcare-admin-offices/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/newton-upper-falls-ma",
+    "destination": "/services/medical-office-cleaning/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/newton-upper-falls-ma",
+    "destination": "/services/rehab-nursing/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/newton-upper-falls-ma",
+    "destination": "/services/specialty-clinics/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/newtonville-ma",
+    "destination": "/locations/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/newtonville-ma",
+    "destination": "/services/ambulatory-outpatient/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/newtonville-ma",
+    "destination": "/services/healthcare-admin-offices/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/newtonville-ma",
+    "destination": "/services/medical-office-cleaning/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/newtonville-ma",
+    "destination": "/services/rehab-nursing/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/newtonville-ma",
+    "destination": "/services/specialty-clinics/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/nonantum-ma",
+    "destination": "/locations/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/nonantum-ma",
+    "destination": "/services/ambulatory-outpatient/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/nonantum-ma",
+    "destination": "/services/healthcare-admin-offices/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/nonantum-ma",
+    "destination": "/services/medical-office-cleaning/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/nonantum-ma",
+    "destination": "/services/rehab-nursing/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/nonantum-ma",
+    "destination": "/services/specialty-clinics/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/north-andover-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/north-andover-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/north-andover-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/north-andover-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/north-andover-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/north-andover-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/north-attleborough-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/north-attleborough-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/north-attleborough-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/north-attleborough-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/north-attleborough-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/north-attleborough-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/north-brookfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/north-brookfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/north-brookfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/north-brookfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/north-brookfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/north-brookfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/north-grafton-ma",
+    "destination": "/locations/grafton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/north-grafton-ma",
+    "destination": "/services/ambulatory-outpatient/grafton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/north-grafton-ma",
+    "destination": "/services/healthcare-admin-offices/grafton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/north-grafton-ma",
+    "destination": "/services/medical-office-cleaning/grafton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/north-grafton-ma",
+    "destination": "/services/rehab-nursing/grafton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/north-grafton-ma",
+    "destination": "/services/specialty-clinics/grafton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/north-reading-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/north-reading-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/north-reading-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/north-reading-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/north-reading-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/north-reading-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/north-uxbridge-ma",
+    "destination": "/locations/uxbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/north-uxbridge-ma",
+    "destination": "/services/ambulatory-outpatient/uxbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/north-uxbridge-ma",
+    "destination": "/services/healthcare-admin-offices/uxbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/north-uxbridge-ma",
+    "destination": "/services/medical-office-cleaning/uxbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/north-uxbridge-ma",
+    "destination": "/services/rehab-nursing/uxbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/north-uxbridge-ma",
+    "destination": "/services/specialty-clinics/uxbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/north-waltham-ma",
+    "destination": "/locations/waltham-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/north-waltham-ma",
+    "destination": "/services/ambulatory-outpatient/waltham-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/north-waltham-ma",
+    "destination": "/services/healthcare-admin-offices/waltham-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/north-waltham-ma",
+    "destination": "/services/medical-office-cleaning/waltham-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/north-waltham-ma",
+    "destination": "/services/rehab-nursing/waltham-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/north-waltham-ma",
+    "destination": "/services/specialty-clinics/waltham-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/northampton-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/northampton-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/northampton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/northampton-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/northampton-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/northampton-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/norton-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/norton-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/norton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/norton-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/norton-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/norton-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/norwell-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/norwell-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/norwell-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/norwell-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/norwell-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/norwell-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/nutting-lake-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/nutting-lake-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/nutting-lake-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/nutting-lake-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/nutting-lake-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/nutting-lake-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/oakham-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/oakham-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/oakham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/oakham-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/oakham-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/oakham-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/orange-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/orange-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/orange-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/orange-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/orange-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/orange-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/palmer-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/palmer-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/palmer-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/palmer-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/palmer-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/palmer-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/pembroke-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/pembroke-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/pembroke-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/pembroke-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/pembroke-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/pembroke-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/pepperell-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/pepperell-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/pepperell-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/pepperell-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/pepperell-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/pepperell-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/petersham-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/petersham-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/petersham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/petersham-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/petersham-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/petersham-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/phillipston-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/phillipston-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/phillipston-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/phillipston-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/phillipston-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/phillipston-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/plainville-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/plainville-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/plainville-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/plainville-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/plainville-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/plainville-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/plymouth-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/plymouth-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/plymouth-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/plymouth-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/plymouth-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/plymouth-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/plympton-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/plympton-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/plympton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/plympton-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/plympton-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/plympton-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/raynham-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/raynham-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/raynham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/raynham-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/raynham-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/raynham-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/readville-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/readville-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/readville-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/readville-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/readville-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/readville-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/rehoboth-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/rehoboth-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/rehoboth-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/rehoboth-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/rehoboth-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/rehoboth-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/revere-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/revere-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/revere-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/revere-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/revere-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/revere-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/rochester-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/rochester-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/rochester-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/rochester-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/rochester-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/rochester-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/rockland-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/rockland-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/rockland-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/rockland-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/rockland-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/rockland-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/rockport-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/rockport-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/rockport-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/rockport-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/rockport-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/rockport-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/rowley-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/rowley-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/rowley-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/rowley-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/rowley-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/rowley-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/royalston-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/royalston-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/royalston-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/royalston-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/royalston-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/royalston-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/russell-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/russell-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/russell-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/russell-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/russell-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/russell-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/salisbury-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/salisbury-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/salisbury-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/salisbury-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/salisbury-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/salisbury-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/scituate-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/scituate-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/scituate-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/scituate-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/scituate-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/scituate-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/seekonk-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/seekonk-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/seekonk-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/seekonk-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/seekonk-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/seekonk-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/somerset-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/somerset-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/somerset-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/somerset-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/somerset-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/somerset-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/south-grafton-ma",
+    "destination": "/locations/grafton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/south-grafton-ma",
+    "destination": "/services/ambulatory-outpatient/grafton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/south-grafton-ma",
+    "destination": "/services/healthcare-admin-offices/grafton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/south-grafton-ma",
+    "destination": "/services/medical-office-cleaning/grafton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/south-grafton-ma",
+    "destination": "/services/rehab-nursing/grafton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/south-grafton-ma",
+    "destination": "/services/specialty-clinics/grafton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/south-hadley-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/south-hadley-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/south-hadley-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/south-hadley-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/south-hadley-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/south-hadley-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/south-lancaster-ma",
+    "destination": "/locations/lancaster-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/south-lancaster-ma",
+    "destination": "/services/ambulatory-outpatient/lancaster-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/south-lancaster-ma",
+    "destination": "/services/healthcare-admin-offices/lancaster-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/south-lancaster-ma",
+    "destination": "/services/medical-office-cleaning/lancaster-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/south-lancaster-ma",
+    "destination": "/services/rehab-nursing/lancaster-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/south-lancaster-ma",
+    "destination": "/services/specialty-clinics/lancaster-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/southampton-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/southampton-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/southampton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/southampton-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/southampton-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/southampton-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/southbridge-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/southbridge-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/southbridge-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/southbridge-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/southbridge-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/southbridge-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/southwick-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/southwick-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/southwick-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/southwick-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/southwick-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/southwick-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/springfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/springfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/springfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/springfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/springfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/springfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/still-river-ma",
+    "destination": "/locations/harvard-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/still-river-ma",
+    "destination": "/services/ambulatory-outpatient/harvard-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/still-river-ma",
+    "destination": "/services/healthcare-admin-offices/harvard-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/still-river-ma",
+    "destination": "/services/medical-office-cleaning/harvard-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/still-river-ma",
+    "destination": "/services/rehab-nursing/harvard-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/still-river-ma",
+    "destination": "/services/specialty-clinics/harvard-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/sturbridge-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/sturbridge-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/sturbridge-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/sturbridge-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/sturbridge-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/sturbridge-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/swampscott-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/swampscott-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/swampscott-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/swampscott-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/swampscott-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/swampscott-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/swansea-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/swansea-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/swansea-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/swansea-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/swansea-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/swansea-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/taunton-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/taunton-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/taunton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/taunton-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/taunton-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/taunton-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/templeton-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/templeton-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/templeton-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/templeton-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/templeton-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/templeton-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/tewksbury-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/tewksbury-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/tewksbury-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/tewksbury-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/tewksbury-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/tewksbury-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/topsfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/topsfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/topsfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/topsfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/topsfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/topsfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/townsend-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/townsend-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/townsend-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/townsend-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/townsend-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/townsend-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/turners-falls-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/turners-falls-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/turners-falls-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/turners-falls-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/turners-falls-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/turners-falls-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/tyngsborough-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/tyngsborough-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/tyngsborough-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/tyngsborough-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/tyngsborough-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/tyngsborough-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/village-of-nagog-woods-ma",
+    "destination": "/locations/acton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/village-of-nagog-woods-ma",
+    "destination": "/services/ambulatory-outpatient/acton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/village-of-nagog-woods-ma",
+    "destination": "/services/healthcare-admin-offices/acton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/village-of-nagog-woods-ma",
+    "destination": "/services/medical-office-cleaning/acton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/village-of-nagog-woods-ma",
+    "destination": "/services/rehab-nursing/acton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/village-of-nagog-woods-ma",
+    "destination": "/services/specialty-clinics/acton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/waban-ma",
+    "destination": "/locations/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/waban-ma",
+    "destination": "/services/ambulatory-outpatient/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/waban-ma",
+    "destination": "/services/healthcare-admin-offices/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/waban-ma",
+    "destination": "/services/medical-office-cleaning/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/waban-ma",
+    "destination": "/services/rehab-nursing/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/waban-ma",
+    "destination": "/services/specialty-clinics/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/wales-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/wales-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/wales-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/wales-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/wales-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/wales-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/ware-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/ware-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/ware-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/ware-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/ware-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/ware-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/wareham-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/wareham-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/wareham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/wareham-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/wareham-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/wareham-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/warren-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/warren-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/warren-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/warren-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/warren-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/warren-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/waverley-ma",
+    "destination": "/locations/belmont-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/waverley-ma",
+    "destination": "/services/ambulatory-outpatient/belmont-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/waverley-ma",
+    "destination": "/services/healthcare-admin-offices/belmont-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/waverley-ma",
+    "destination": "/services/medical-office-cleaning/belmont-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/waverley-ma",
+    "destination": "/services/rehab-nursing/belmont-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/waverley-ma",
+    "destination": "/services/specialty-clinics/belmont-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/wellesley-hills-ma",
+    "destination": "/locations/wellesley-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/wellesley-hills-ma",
+    "destination": "/services/ambulatory-outpatient/wellesley-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/wellesley-hills-ma",
+    "destination": "/services/healthcare-admin-offices/wellesley-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/wellesley-hills-ma",
+    "destination": "/services/medical-office-cleaning/wellesley-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/wellesley-hills-ma",
+    "destination": "/services/rehab-nursing/wellesley-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/wellesley-hills-ma",
+    "destination": "/services/specialty-clinics/wellesley-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/wenham-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/wenham-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/wenham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/wenham-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/wenham-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/wenham-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/west-bridgewater-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/west-bridgewater-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/west-bridgewater-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/west-bridgewater-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/west-bridgewater-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/west-bridgewater-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/west-brookfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/west-brookfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/west-brookfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/west-brookfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/west-brookfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/west-brookfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/west-groton-ma",
+    "destination": "/locations/groton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/west-groton-ma",
+    "destination": "/services/ambulatory-outpatient/groton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/west-groton-ma",
+    "destination": "/services/healthcare-admin-offices/groton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/west-groton-ma",
+    "destination": "/services/medical-office-cleaning/groton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/west-groton-ma",
+    "destination": "/services/rehab-nursing/groton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/west-groton-ma",
+    "destination": "/services/specialty-clinics/groton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/west-millbury-ma",
+    "destination": "/locations/millbury-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/west-millbury-ma",
+    "destination": "/services/ambulatory-outpatient/millbury-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/west-millbury-ma",
+    "destination": "/services/healthcare-admin-offices/millbury-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/west-millbury-ma",
+    "destination": "/services/medical-office-cleaning/millbury-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/west-millbury-ma",
+    "destination": "/services/rehab-nursing/millbury-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/west-millbury-ma",
+    "destination": "/services/specialty-clinics/millbury-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/west-newbury-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/west-newbury-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/west-newbury-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/west-newbury-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/west-newbury-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/west-newbury-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/west-newton-ma",
+    "destination": "/locations/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/west-newton-ma",
+    "destination": "/services/ambulatory-outpatient/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/west-newton-ma",
+    "destination": "/services/healthcare-admin-offices/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/west-newton-ma",
+    "destination": "/services/medical-office-cleaning/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/west-newton-ma",
+    "destination": "/services/rehab-nursing/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/west-newton-ma",
+    "destination": "/services/specialty-clinics/newton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/west-springfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/west-springfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/west-springfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/west-springfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/west-springfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/west-springfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/westfield-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/westfield-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/westfield-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/westfield-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/westfield-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/westfield-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/westminster-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/westminster-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/westminster-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/westminster-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/westminster-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/westminster-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/westport-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/westport-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/westport-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/westport-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/westport-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/westport-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/westwood-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/westwood-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/westwood-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/westwood-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/westwood-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/westwood-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/whitinsville-ma",
+    "destination": "/locations/northbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/whitinsville-ma",
+    "destination": "/services/ambulatory-outpatient/northbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/whitinsville-ma",
+    "destination": "/services/healthcare-admin-offices/northbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/whitinsville-ma",
+    "destination": "/services/medical-office-cleaning/northbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/whitinsville-ma",
+    "destination": "/services/rehab-nursing/northbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/whitinsville-ma",
+    "destination": "/services/specialty-clinics/northbridge-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/locations/whitman-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/whitman-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/whitman-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/whitman-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/whitman-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/whitman-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/wilbraham-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/wilbraham-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/wilbraham-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/wilbraham-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/wilbraham-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/wilbraham-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/williamsburg-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/williamsburg-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/williamsburg-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/williamsburg-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/williamsburg-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/williamsburg-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/wilmington-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/wilmington-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/wilmington-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/wilmington-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/wilmington-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/wilmington-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/winchendon-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/winchendon-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/winchendon-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/winchendon-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/winchendon-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/winchendon-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/winthrop-ma",
+    "destination": "/locations",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/winthrop-ma",
+    "destination": "/services/ambulatory-outpatient",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/winthrop-ma",
+    "destination": "/services/healthcare-admin-offices",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/medical-office-cleaning/winthrop-ma",
+    "destination": "/services/medical-office-cleaning",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/rehab-nursing/winthrop-ma",
+    "destination": "/services/rehab-nursing",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/services/specialty-clinics/winthrop-ma",
+    "destination": "/services/specialty-clinics",
+    "permanent": true,
+    "kind": "removed"
+  },
+  {
+    "source": "/locations/woodville-ma",
+    "destination": "/locations/hopkinton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/ambulatory-outpatient/woodville-ma",
+    "destination": "/services/ambulatory-outpatient/hopkinton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/healthcare-admin-offices/woodville-ma",
+    "destination": "/services/healthcare-admin-offices/hopkinton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/medical-office-cleaning/woodville-ma",
+    "destination": "/services/medical-office-cleaning/hopkinton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/rehab-nursing/woodville-ma",
+    "destination": "/services/rehab-nursing/hopkinton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  },
+  {
+    "source": "/services/specialty-clinics/woodville-ma",
+    "destination": "/services/specialty-clinics/hopkinton-ma",
+    "permanent": true,
+    "kind": "village->parent"
+  }
+]
