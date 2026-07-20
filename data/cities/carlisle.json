@@ -1,0 +1,39 @@
+{
+  "slug": "carlisle",
+  "name": "Carlisle",
+  "county": "Middlesex",
+  "region": "Nashoba Valley",
+  "zipCodes": [],
+  "population": {
+    "value": 5237,
+    "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
+    "sourceName": "US Decennial Census 2020, via Wikipedia list of MA municipalities",
+    "checked": "2026-07-20"
+  },
+  "distanceFromBaseMiles": null,
+  "driveTimeMinutes": null,
+  "responseCommitment": null,
+  "healthcareLandscape": {
+    "majorFacilities": [],
+    "healthSystems": [],
+    "licensedFacilityCounts": {
+      "clinics": null,
+      "longTermCare": null,
+      "ambulatorySurgery": null,
+      "assistedLiving": null
+    },
+    "dominantFacilityType": null,
+    "medicalCorridors": []
+  },
+  "localHealth": {
+    "boardOfHealthName": null,
+    "boardOfHealthPhone": null,
+    "boardOfHealthUrl": null,
+    "notes": null
+  },
+  "facilityTypesPresent": [],
+  "facilityDensity": null,
+  "nearbyCities": [],
+  "verified": false,
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+}
