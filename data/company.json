@@ -1,0 +1,53 @@
+{
+  "_doc": "Single source of truth for every company fact on the site. Nothing about the business may be hardcoded anywhere else. A field that is null has no verified source yet, and every consumer must treat null as 'do not render' rather than substituting a placeholder.",
+
+  "legalName": "Dory's Cleaning Services Inc.",
+  "shortName": "Dory's Cleaning Services",
+  "founder": "Jeneva Thomas",
+  "founderTitle": "Founder & CEO",
+  "yearsClinicalExperience": 22,
+
+  "phone": "+19783078107",
+  "phoneDisplay": "(978) 307-8107",
+  "email": "contact@doryscleaningservices.com",
+  "address": {
+    "street": "",
+    "city": "Marlborough",
+    "state": "MA",
+    "zip": "01752"
+  },
+  "geo": { "lat": 42.3459, "lng": -71.5523 },
+  "hours": "Mon–Sat: 5:00 AM – 7:00 PM",
+  "emergencyAvailable": true,
+
+  "liabilityInsuranceUSD": 2000000,
+  "workersCompInsured": true,
+
+  "_licensingNote": "Massachusetts does NOT license cleaning or janitorial companies, so no page may claim to be 'MA Licensed'. The MA HIC number previously shown was a Home Improvement Contractor licence, which covers residential construction rather than environmental services, and the client asked for it to be removed site-wide (commit 0206a50c2). Insurance is the honest and equally strong credential.",
+  "licensed": false,
+
+  "googleRating": null,
+  "googleReviewCount": null,
+  "_ratingNote": "Deliberately null. The site previously showed 4.8 in the hero, 4.7 in the stats bar and AggregateRating(4.7, 10 reviews) in schema — three different unsourced numbers. The only reachable review source, the GHL widget for locationId BQd0L6DeFvVbjKS8VYZ9, returns a single 5.00 entry authored by the business itself, which is not a customer review. Nothing renders until these come from the Google Business Profile.",
+
+  "facilitiesServed": null,
+  "citiesServed": 109,
+
+  "certifications": {
+    "_note": "MBE/WBE are formal certification terms. Until a certificate number is confirmed, the site says only 'Black-owned and women-owned business' and never the acronyms.",
+    "mbe": { "certified": null, "issuer": "Massachusetts Supplier Diversity Office", "number": null, "expires": null },
+    "wbe": { "certified": null, "issuer": "Massachusetts Supplier Diversity Office", "number": null, "expires": null },
+    "cims": { "certified": null, "issuer": "ISSA", "number": null, "expires": null }
+  },
+
+  "ghl": {
+    "formId": "oaN0aNeRAK8fPG4AnIzl",
+    "locationId": "BQd0L6DeFvVbjKS8VYZ9",
+    "_loadingNote": "Load EAGERLY. Deferring these iframes has already been tried (commit 4c9fe8d43) and lead capture stopped entirely — 2,083 iframes across 1,788 pages had to be reverted in 46d430cc4. Reserve height via CSS to control CLS instead of deferring the load."
+  },
+
+  "site": {
+    "url": "https://doryscleaningservices.com",
+    "name": "Dory's Cleaning Services"
+  }
+}

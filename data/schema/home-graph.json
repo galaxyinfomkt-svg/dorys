@@ -2,7 +2,13 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["Organization", "LocalBusiness", "CleaningService", "ProfessionalService", "HealthAndBeautyBusiness"],
+      "@type": [
+        "Organization",
+        "LocalBusiness",
+        "CleaningService",
+        "ProfessionalService",
+        "HealthAndBeautyBusiness"
+      ],
       "@id": "https://doryscleaningservices.com/#business",
       "name": "Dory's Cleaning Services Inc.",
       "legalName": "Dory's Cleaning Services Inc.",
@@ -30,7 +36,9 @@
         "@type": "Person",
         "name": "Jeneva Thomas",
         "jobTitle": "CEO & Owner",
-        "worksFor": { "@id": "https://doryscleaningservices.com/#business" }
+        "worksFor": {
+          "@id": "https://doryscleaningservices.com/#business"
+        }
       },
       "address": {
         "@type": "PostalAddress",
@@ -39,22 +47,31 @@
         "postalCode": "01752",
         "addressCountry": "US"
       },
-      "geo": { "@type": "GeoCoordinates", "latitude": 42.3459, "longitude": -71.5523 },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.3459,
+        "longitude": -71.5523
+      },
       "openingHoursSpecification": [
-        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "05:00", "closes": "19:00" }
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "05:00",
+          "closes": "19:00"
+        }
       ],
       "sameAs": [
         "https://www.facebook.com/cleanersservicesMA",
         "https://www.instagram.com/doryscleaningservices/",
         "https://www.linkedin.com/company/dorys-cleaning-services-inc/"
       ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.7",
-        "reviewCount": "10",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "slogan": "Hospital-Grade Cleaning. Massachusetts Standards."
     },
     {
@@ -64,10 +81,15 @@
       "name": "Dory's Cleaning Services",
       "description": "Healthcare facility cleaning across 296 Massachusetts cities.",
       "inLanguage": "en-US",
-      "publisher": { "@id": "https://doryscleaningservices.com/#business" },
+      "publisher": {
+        "@id": "https://doryscleaningservices.com/#business"
+      },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": { "@type": "EntryPoint", "urlTemplate": "https://doryscleaningservices.com/?s={search_term_string}" },
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://doryscleaningservices.com/?s={search_term_string}"
+        },
         "query-input": "required name=search_term_string"
       }
     },
@@ -76,7 +98,9 @@
       "@id": "https://doryscleaningservices.com/#founder",
       "name": "Jeneva Thomas",
       "jobTitle": "Founder & CEO",
-      "worksFor": { "@id": "https://doryscleaningservices.com/#business" },
+      "worksFor": {
+        "@id": "https://doryscleaningservices.com/#business"
+      },
       "knowsAbout": [
         "Healthcare facility environmental services",
         "Infection control",

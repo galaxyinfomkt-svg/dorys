@@ -16,7 +16,10 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description:
-    "#1 healthcare facility cleaning in Massachusetts. 22+ yrs clinical exp, $2M insured, CDC compliant. Get free quote in 24 hours: (978) 307-8107",
+    // "#1 healthcare facility cleaning in Massachusetts" was an unprovable
+    // superiority claim in the site-wide description. What replaces it says
+    // more to a facilities buyer and is entirely substantiable.
+    "Clinical-grade environmental services for Massachusetts healthcare facilities. Founded by a 22-year clinical veteran. $2M insured. Free facility assessment: (978) 307-8107",
   applicationName: "Dory's Cleaning Services",
   authors: [{ name: "Dory's Cleaning Services Inc." }],
   robots: { index: true, follow: true },
@@ -29,11 +32,18 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image" },
   other: {
+    // Only geo.region survives at the root. It is true on every page.
+    //
+    // geo.placename and geo.position used to live here too, which meant all
+    // ~1,800 pages asserted the head-office location: /locations/springfield-ma
+    // declared it was at 42.3459;-71.5523 in Marlborough, 80 miles away, while
+    // its own geo.placename said Springfield. A wrong coordinate is a worse
+    // signal than no coordinate, and these metas are weak to begin with, so
+    // city pages now set their own placename and no page claims a point
+    // location it cannot substantiate.
+    //
+    // `classification` was dropped — no search engine consumes it.
     "geo.region": "US-MA",
-    "geo.placename": "Marlborough, Massachusetts",
-    "geo.position": "42.3459;-71.5523",
-    ICBM: "42.3459, -71.5523",
-    classification: "Commercial Healthcare Environmental Services",
   },
 }
 

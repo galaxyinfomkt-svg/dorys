@@ -34,3 +34,6 @@ Thumbs.db
 *.tsbuildinfo
 next-env.d.ts
 .env*.local
+
+# Build output
+.next/
