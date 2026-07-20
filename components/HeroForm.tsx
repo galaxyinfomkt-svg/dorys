@@ -116,13 +116,13 @@ export default function HeroForm() {
 
       <div style={{ background: "linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.0) 100%)", padding: "0.85rem 1rem 1rem", textAlign: "center", borderTop: "1px solid rgba(255,255,255,0.1)" }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "0.85rem", flexWrap: "wrap", fontSize: "0.7rem", color: "rgba(255,255,255,0.75)" }}>
-          <span style={{ display: "inline-flex", alignItems: "center", gap: "0.25rem" }}>
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="#fbbf24" aria-hidden="true">
-              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-            </svg>
-            <strong style={{ color: "#fbbf24" }}>4.7/5</strong> Google
-          </span>
-          <span style={{ opacity: 0.4 }}>·</span>
+          {/* The Google rating badge that used to sit here is removed. It was
+              hardcoded 4.7/5 while the stats bar said 4.8 and schema claimed
+              4.7 from 10 reviews — three unsourced, mutually contradictory
+              figures. The only reachable review source for this location holds
+              a single 5.00 entry written by the business about itself. It comes
+              back when the figure comes from the Google Business Profile; see
+              googleRating in data/company.json. */}
           <span><strong style={{ color: "#fff" }}>22+ yrs</strong> clinical</span>
           <span style={{ opacity: 0.4 }}>·</span>
           <span><strong style={{ color: "#fff" }}>$2M</strong> insured</span>
