@@ -79,6 +79,47 @@
     }
   ],
   "typicalFrequency": null,
-  "faqs": [],
+  "faqs": [
+    {
+      "q": "Do you provide the written cleaning schedule OSHA expects us to have?",
+      "a": "Yes. 29 CFR 1910.1030(d)(4)(i) requires a written schedule for cleaning and a method of decontamination determined by the location within the facility, the type of surface, the type of soil present, and the procedures performed in that area. We build that document with you room by room, and it names the product, the dilution, the contact time, and the frequency for each surface class. It is written so a compliance officer can read it and match it against what our crews actually do. You own the document, and it lives with your exposure control plan."
+    },
+    {
+      "q": "How likely is it that OSHA actually looks at cleaning in a physician's office?",
+      "a": "More likely than most practice managers assume. Between October 2024 and September 2025, federal OSHA cited 29 CFR 1910.1030 thirty-three times across twelve inspections of physicians' offices, out of 55 citations issued to the sector in that period. That makes the Bloodborne Pathogens Standard the most-cited standard for physician practices, and the housekeeping paragraphs at (d)(4) are a routine part of it. Inspections in this sector are usually complaint or referral driven, so the trigger is often an employee rather than a scheduled visit."
+    },
+    {
+      "q": "Who cleans the exam table between patients, your crew or my staff?",
+      "a": "Your clinical staff. Between-patient turnover happens in minutes while a room is in active use, and it belongs to the person who was in the room. Our scope is scheduled cleaning and disinfection: terminal cleaning of exam rooms at the end of the session, restrooms, waiting areas, hallways, break rooms, floors, and the high-touch surfaces addressed in Section II item A of the CDC Infection Prevention Checklist for Outpatient Settings. We write the split into the schedule required by 29 CFR 1910.1030(d)(4)(i), so nothing sits in a gap between the two teams."
+    },
+    {
+      "q": "What disinfectants do you use, and how do I know they are being used correctly?",
+      "a": "EPA-registered products, drawn from EPA List N where an emerging viral pathogen claim is needed, and matched to the surface and the soil load. The controlling document is the manufacturer's label: dilution, contact time, shelf life, and storage. Most failures we correct are contact time failures, where the surface is dry well before the label kill time. Our crews clean first, then disinfect, and keep the surface visibly wet for the labeled dwell. Product labels and SDS sheets stay on site in your binder so you can check them without calling us."
+    },
+    {
+      "q": "What happens if there is a blood spill after we have closed for the day?",
+      "a": "Spills of blood or other potentially infectious material must be decontaminated immediately, not held for the next scheduled visit. 29 CFR 1910.1030(d)(4)(ii)(A) requires decontamination after completion of procedures, immediately after a spill, and at the end of the shift where a surface may have become contaminated. If our crew finds a spill during an evening visit, they treat it as regulated cleanup with the appropriate PPE and disinfectant, and it is logged. If it happens during clinic hours, your staff handle it, because immediately means immediately."
+    },
+    {
+      "q": "A vial broke and there was glass on the floor. How does your crew handle that?",
+      "a": "Never by hand. 29 CFR 1910.1030(d)(4)(ii)(D) requires that broken glassware which may be contaminated be picked up using mechanical means such as a brush and dustpan, tongs, or forceps. Our crews carry those tools and are trained not to reach into a container or onto a floor to retrieve glass. Fragments go into a puncture-resistant container that you designate, and the surrounding surface is cleaned and then disinfected. If there is any question of residual sharps risk, we stop and flag it for your staff rather than improvise a method."
+    },
+    {
+      "q": "Does anyone ever clean the trash receptacles themselves, or just change the liners?",
+      "a": "Both. 29 CFR 1910.1030(d)(4)(ii)(C) requires that bins, pails, cans, and similar receptacles likely to become contaminated be inspected and decontaminated on a regularly scheduled basis, and cleaned and decontaminated immediately or as soon as feasible when visibly contaminated. Liner changes alone do not satisfy that paragraph. We put receptacle decontamination on a named interval in your written schedule, inspect at every visit, and pull anything visibly soiled out of rotation for cleaning that night rather than waiting for the scheduled cycle."
+    },
+    {
+      "q": "Do you handle our sharps containers and red bag waste?",
+      "a": "We do not transport, seal, or dispose of regulated medical waste, and we do not replace sharps containers. That is your staff's responsibility, and disposal runs through your licensed medical waste vendor under Massachusetts rules. What we do is keep the area around the containers clean, report containers approaching the fill line, and flag containment problems: a container that is not closable, not leak-proof, or missing the biohazard label or color coding required by 29 CFR 1910.1030(d)(4)(iii). Scope clarity here protects you more than a broader service description would."
+    },
+    {
+      "q": "Are your cleaners trained for a clinical environment, or is this general janitorial staff?",
+      "a": "Healthcare-specific training, before they enter a clinical space. Section I item C of the CDC Infection Prevention Checklist for Outpatient Settings expects that personnel who clean are trained on and provided the PPE needed to avoid exposure both to infectious agents and to the disinfectant chemicals themselves. Our crews are trained on bloodborne pathogens, clean-to-dirty work direction, color-coded microfiber to prevent transfer between rooms, and the label requirements of the specific products in your building. Jeneva Thomas, who founded the company, brings 22 years of clinical experience to that training."
+    },
+    {
+      "q": "What do I get to show a Joint Commission or AAAHC surveyor?",
+      "a": "A binder and a digital copy containing the written cleaning and decontamination schedule required by 29 CFR 1910.1030(d)(4)(i), the product list with EPA registration numbers, current SDS sheets, label contact times, crew training records, and dated service logs showing what was cleaned and when. Surveyors rarely dispute that cleaning happens; they ask you to prove the method and the frequency were defined and then followed. Dory's carries $2 million in general liability, and we will issue a certificate naming your practice on request."
+    }
+  ],
   "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
 }

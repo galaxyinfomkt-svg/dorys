@@ -77,6 +77,47 @@
     }
   ],
   "typicalFrequency": null,
-  "faqs": [],
+  "faqs": [
+    {
+      "q": "Half our equipment sits in a gray zone where nobody is sure who cleans it. How do you fix that?",
+      "a": "With a written responsibility matrix built device by device before we start. Every surface and device in the suite gets an owner, a product, a method, and a frequency. In Massachusetts this is not discretionary housekeeping: 105 CMR 140.211(B) requires diagnostic and therapeutic equipment to be disinfected after each use in accordance with recognized standards of practice, and that duty sits with the licensed clinic. Our job is to take the surfaces that can safely be ours and to make the remainder explicitly, visibly, and in writing someone else's."
+    },
+    {
+      "q": "Will your crew clean the slit lamp, the chin rest, and the headrests?",
+      "a": "Only where the device manufacturer's instructions permit our method and your administrator assigns it to us. Shared non-critical devices such as chin rests, headrests, blood pressure cuffs, and positioning equipment must be cleaned and disinfected between patients according to the degree of contamination, per the CDC Infection Prevention Checklist non-critical item definition and CDC Core Practices 5f, and between-patient cleaning during clinic hours is your staff's. Coated optical surfaces are easily damaged by the wrong product, so where the instructions specify a chemistry, we follow it or we do not touch the device."
+    },
+    {
+      "q": "Can you handle disinfection of our probes and scopes?",
+      "a": "No. Semi-critical items, meaning anything that contacts mucous membranes or non-intact skin, require at least high-level disinfection after thorough pre-cleaning, per the CDC Infection Prevention Checklist for Outpatient Settings, High-Level Disinfection items A through C. That is a trained clinical reprocessing function with its own competency validation, test strips, and logs. A surface wipe on a semi-critical probe is a survey finding, not a shortcut. We clean the reprocessing room around it: counters, sinks, floors, and the physical separation between the dirty end and the clean end."
+    },
+    {
+      "q": "Do you need your own storage space in our suite?",
+      "a": "Yes, and Massachusetts effectively requires it. 105 CMR 140.206 requires cleaning compounds to be clearly labeled and stored in a locked utility closet, with a service sink supplied with hot and cold water for filling and emptying housekeeping equipment. Our chemicals stay labeled, secured, and out of patient areas, and mop water is never emptied into a clinical or handwashing sink. If your suite has no compliant utility closet, that appears in our walkthrough report, because it is a licensure exposure before it is a cleaning inconvenience."
+    },
+    {
+      "q": "Our clean supplies and our soiled workroom share a room. Does that matter?",
+      "a": "It does. 105 CMR 140.204 requires clean supply storage to be separated from the soiled holding area, and requires the soiled workroom to have a work counter, a clinical service sink, and a handwashing sink. When the two share a room, cleaning cannot fix the adjacency, and our crews cannot work clean-to-dirty in a space with no dirty end. We flag it in writing and adapt routing in the interim: separate cloths, separate carts, clean side first, and no staging of soiled items on clean shelving."
+    },
+    {
+      "q": "Whose responsibility is our infectious and hazardous waste?",
+      "a": "The clinic's. 105 CMR 140.211(F) places proper handling and disposal of hazardous and infectious waste on the licensed clinic, and it runs through your licensed waste vendor. Specialty suites generate awkward streams: fixatives and formalin containers from dermatology specimens, expired topicals, and sharps from injections. We do not consolidate, decant, or relocate any of those. Our crews handle general waste and recyclables, keep the storage area itself clean, and report anything staged incorrectly. Folding regulated waste into a cleaning contract creates liability for both sides."
+    },
+    {
+      "q": "We run procedures in some rooms and consults in others. Should they be cleaned the same way?",
+      "a": "No, and they should not be priced the same way either. The written schedule required by 29 CFR 1910.1030(d)(4)(i) is built around location, surface type, soil type, and the procedures performed, so a minor-procedure or cryotherapy room gets a different product set and frequency than a consult room with a desk and two chairs. Procedure rooms get contaminated work surfaces decontaminated after procedures, after spills, and at the end of the shift, per 29 CFR 1910.1030(d)(4)(ii)(A). Consult rooms get a high-touch pass. Same suite, two protocols, one document."
+    },
+    {
+      "q": "We have four specialties sharing one suite. Can one protocol cover all of them?",
+      "a": "One contract, yes. One protocol, no. Dermatology procedure rooms, ophthalmology lanes with coated optics, ENT reprocessing areas, and allergy testing rooms carry different soil loads, different device instructions, and different acceptable chemistries. We map the suite by room type and equipment, assign products and frequency per zone, and use color-coded microfiber so nothing transfers between them. Section II items A and B of the CDC Infection Prevention Checklist expect frequently touched surfaces to be cleaned and then disinfected, with products used to the manufacturer's dilution, storage, shelf life, and contact time."
+    },
+    {
+      "q": "What do you do with a device that has no cleaning instructions at all?",
+      "a": "We do not invent a method for it. Where a manufacturer provides no cleaning and disinfection instructions, CDC's position is that the item is not suitable for multi-patient use, and improvising a chemistry risks either damaging the device or leaving it contaminated with no way to prove otherwise. We list every such device in the walkthrough report and hand it back to your administrator to resolve with the vendor. That is usually a short email and a returned document, and it closes a finding before a surveyor opens one."
+    },
+    {
+      "q": "What would you produce if Massachusetts DPH or AAAHC arrived tomorrow?",
+      "a": "The responsibility matrix showing which surfaces and devices are ours and which are clinical, the written cleaning and decontamination schedule under 29 CFR 1910.1030(d)(4)(i), product labels with EPA registration numbers and contact times, SDS sheets, the chemical storage and utility closet arrangement against 105 CMR 140.206, crew training records, and dated service logs. Surveyors test whether the method was defined and followed, not whether the floor looks clean. Dory's also carries $2 million in general liability and will issue a certificate naming your clinic."
+    }
+  ],
   "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
 }
