@@ -1,0 +1,33 @@
+{
+  "slug": "specialty-clinics",
+  "name": "Specialty Clinic Cleaning",
+  "buyer": "Practice Administrator",
+  "facilityTypes": [
+    "dermatology",
+    "ophthalmology",
+    "ENT",
+    "orthopedics",
+    "allergy"
+  ],
+  "criticalZone": "specialty equipment surfaces, which differ by discipline",
+  "centralRisk": "equipment contamination where cleaning responsibility is ambiguous",
+  "regulatoryFramework": [
+    "105 CMR 140 — Massachusetts DPH, Licensure of Clinics",
+    "CDC Guidelines for Environmental Infection Control in Health-Care Facilities",
+    "EPA List N registered disinfectants"
+  ],
+  "accreditationBodies": [
+    "AAAHC",
+    "Massachusetts DPH"
+  ],
+  "h1Pattern": "Specialty Clinic Cleaning in {city}, MA",
+  "tier": 1,
+  "highTouchZones": [],
+  "protocolSteps": [],
+  "disinfectantContactTimes": [],
+  "documentationDeliverables": [],
+  "commonSurveyFindings": [],
+  "typicalFrequency": null,
+  "faqs": [],
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+}

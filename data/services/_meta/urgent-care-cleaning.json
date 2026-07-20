@@ -1,0 +1,31 @@
+{
+  "slug": "urgent-care-cleaning",
+  "name": "Urgent Care Center Cleaning",
+  "buyer": "Site Manager",
+  "facilityTypes": [
+    "urgent care centers",
+    "walk-in clinics",
+    "occupational health"
+  ],
+  "criticalZone": "high-turnover exam rooms and triage",
+  "centralRisk": "rooms turn in minutes while disinfectant contact time does not shrink to match",
+  "regulatoryFramework": [
+    "OSHA Bloodborne Pathogens Standard — 29 CFR 1910.1030",
+    "CDC Guidelines for Environmental Infection Control in Health-Care Facilities",
+    "EPA List N registered disinfectants"
+  ],
+  "accreditationBodies": [
+    "Urgent Care Association",
+    "Massachusetts DPH"
+  ],
+  "h1Pattern": "Urgent Care Center Cleaning in {city}, MA",
+  "tier": 1,
+  "highTouchZones": [],
+  "protocolSteps": [],
+  "disinfectantContactTimes": [],
+  "documentationDeliverables": [],
+  "commonSurveyFindings": [],
+  "typicalFrequency": null,
+  "faqs": [],
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "rehabilitation-clinics",
+  "name": "Rehabilitation Clinic Cleaning",
+  "buyer": "Clinic Director (PT / OT / speech)",
+  "facilityTypes": [
+    "physical therapy",
+    "occupational therapy",
+    "speech therapy",
+    "sports medicine",
+    "chiropractic"
+  ],
+  "criticalZone": "treatment tables, mats, therabands, free weights, exercise balls, parallel bars, treadmills",
+  "centralRisk": "direct skin contact with shared equipment all day, with no barrier — MRSA and fungal transfer",
+  "regulatoryFramework": [
+    "CDC infection prevention guidance for outpatient and ambulatory care settings",
+    "105 CMR 140 — Massachusetts DPH, Licensure of Clinics",
+    "EPA List N registered disinfectants"
+  ],
+  "accreditationBodies": [
+    "CARF",
+    "Massachusetts DPH"
+  ],
+  "_note": "Split out from the old rehab-nursing pairing. An outpatient PT clinic and a skilled nursing facility share almost nothing: different buyer, different risk, different regulator, different sales cycle. Treating them as one service produced copy that fit neither.",
+  "h1Pattern": "Rehabilitation Clinic Cleaning in {city}, MA",
+  "tier": 1,
+  "highTouchZones": [],
+  "protocolSteps": [],
+  "disinfectantContactTimes": [],
+  "documentationDeliverables": [],
+  "commonSurveyFindings": [],
+  "typicalFrequency": null,
+  "faqs": [],
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+}

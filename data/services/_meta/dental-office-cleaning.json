@@ -1,0 +1,32 @@
+{
+  "slug": "dental-office-cleaning",
+  "name": "Dental Office Cleaning",
+  "buyer": "Office Manager / practice-owner dentist",
+  "facilityTypes": [
+    "general dentistry",
+    "orthodontics",
+    "oral surgery",
+    "periodontics"
+  ],
+  "criticalZone": "operatory surfaces, suction lines, sterilisation area clean/dirty divide",
+  "centralRisk": "procedural aerosol and waterline biofilm",
+  "regulatoryFramework": [
+    "CDC Guidelines for Infection Control in Dental Health-Care Settings (2003) and the 2016 Summary",
+    "234 CMR — Massachusetts Board of Registration in Dentistry",
+    "OSHA Bloodborne Pathogens Standard — 29 CFR 1910.1030",
+    "EPA List N registered disinfectants"
+  ],
+  "accreditationBodies": [
+    "Massachusetts Board of Registration in Dentistry"
+  ],
+  "h1Pattern": "Dental Office Cleaning in {city}, MA",
+  "tier": 1,
+  "highTouchZones": [],
+  "protocolSteps": [],
+  "disinfectantContactTimes": [],
+  "documentationDeliverables": [],
+  "commonSurveyFindings": [],
+  "typicalFrequency": null,
+  "faqs": [],
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+}

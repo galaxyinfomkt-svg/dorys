@@ -1,0 +1,30 @@
+{
+  "slug": "assisted-living-cleaning",
+  "name": "Assisted Living & Senior Living Cleaning",
+  "buyer": "Executive Director",
+  "facilityTypes": [
+    "assisted living residences",
+    "independent living",
+    "memory care"
+  ],
+  "criticalZone": "residential units, common areas, memory care wings",
+  "centralRisk": "vulnerable population in what is legally their home, not a clinical setting",
+  "regulatoryFramework": [
+    "651 CMR 12 — Massachusetts Executive Office of Elder Affairs, Assisted Living Residences",
+    "CDC guidance for long-term care settings",
+    "EPA List N registered disinfectants"
+  ],
+  "accreditationBodies": [
+    "Massachusetts Executive Office of Elder Affairs"
+  ],
+  "h1Pattern": "Assisted Living & Senior Living Cleaning in {city}, MA",
+  "tier": 1,
+  "highTouchZones": [],
+  "protocolSteps": [],
+  "disinfectantContactTimes": [],
+  "documentationDeliverables": [],
+  "commonSurveyFindings": [],
+  "typicalFrequency": null,
+  "faqs": [],
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+}

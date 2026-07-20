@@ -1,0 +1,35 @@
+{
+  "slug": "medical-office-cleaning",
+  "name": "Medical Office Cleaning",
+  "buyer": "Practice Manager",
+  "facilityTypes": [
+    "physician practices",
+    "urgent care",
+    "OB/GYN",
+    "pediatrics",
+    "primary care"
+  ],
+  "criticalZone": "exam tables, blood pressure cuffs, door hardware, waiting-room touch points",
+  "centralRisk": "patient-to-patient transfer via high-touch surfaces between visits",
+  "regulatoryFramework": [
+    "OSHA Bloodborne Pathogens Standard — 29 CFR 1910.1030",
+    "CDC Guidelines for Environmental Infection Control in Health-Care Facilities",
+    "EPA List N registered disinfectants",
+    "105 CMR 140 — Massachusetts DPH, Licensure of Clinics"
+  ],
+  "accreditationBodies": [
+    "Joint Commission",
+    "AAAHC",
+    "Massachusetts DPH"
+  ],
+  "h1Pattern": "Medical Office Cleaning in {city}, MA",
+  "tier": 1,
+  "highTouchZones": [],
+  "protocolSteps": [],
+  "disinfectantContactTimes": [],
+  "documentationDeliverables": [],
+  "commonSurveyFindings": [],
+  "typicalFrequency": null,
+  "faqs": [],
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+}

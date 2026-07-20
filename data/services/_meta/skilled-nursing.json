@@ -1,0 +1,33 @@
+{
+  "slug": "skilled-nursing",
+  "name": "Skilled Nursing & Long-Term Care Cleaning",
+  "buyer": "Director of Nursing / Administrator",
+  "facilityTypes": [
+    "skilled nursing facilities",
+    "long-term care",
+    "rehabilitation hospitals"
+  ],
+  "criticalZone": "resident rooms, common areas, dining, assisted bathing",
+  "centralRisk": "outbreak — C. difficile, norovirus, influenza — in a vulnerable resident population",
+  "regulatoryFramework": [
+    "105 CMR 150 — Massachusetts DPH, Standards for Long Term Care Facilities",
+    "CMS Requirements of Participation for Long-Term Care Facilities (F-tags)",
+    "CDC guidance for C. difficile and norovirus in long-term care settings",
+    "EPA List N registered disinfectants, including List K for C. difficile spores"
+  ],
+  "accreditationBodies": [
+    "CMS",
+    "Massachusetts DPH",
+    "Joint Commission"
+  ],
+  "h1Pattern": "Skilled Nursing & Long-Term Care Cleaning in {city}, MA",
+  "tier": 1,
+  "highTouchZones": [],
+  "protocolSteps": [],
+  "disinfectantContactTimes": [],
+  "documentationDeliverables": [],
+  "commonSurveyFindings": [],
+  "typicalFrequency": null,
+  "faqs": [],
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+}

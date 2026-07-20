@@ -1,0 +1,33 @@
+{
+  "slug": "ambulatory-outpatient",
+  "name": "Ambulatory & Outpatient Facility Cleaning",
+  "buyer": "Facilities Director",
+  "facilityTypes": [
+    "ambulatory surgery centers",
+    "outpatient procedure suites",
+    "endoscopy"
+  ],
+  "criticalZone": "procedure rooms and recovery bays",
+  "centralRisk": "terminal clean between cases, under schedule pressure",
+  "regulatoryFramework": [
+    "AAAHC accreditation standards",
+    "105 CMR 140 — Massachusetts DPH, Licensure of Clinics",
+    "CDC Guidelines for Environmental Infection Control in Health-Care Facilities",
+    "EPA List N registered disinfectants"
+  ],
+  "accreditationBodies": [
+    "AAAHC",
+    "Joint Commission",
+    "Massachusetts DPH"
+  ],
+  "h1Pattern": "Ambulatory & Outpatient Facility Cleaning in {city}, MA",
+  "tier": 1,
+  "highTouchZones": [],
+  "protocolSteps": [],
+  "disinfectantContactTimes": [],
+  "documentationDeliverables": [],
+  "commonSurveyFindings": [],
+  "typicalFrequency": null,
+  "faqs": [],
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+}
