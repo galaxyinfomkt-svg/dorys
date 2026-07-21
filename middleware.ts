@@ -60,6 +60,20 @@ export function middleware(req: NextRequest) {
   if (destination) {
     return NextResponse.redirect(new URL(destination, req.url), 301)
   }
+
+  // Two legacy category slugs have hub pages but never got per-city pages:
+  // rehab-nursing was split into skilled-nursing + rehabilitation-clinics, and
+  // healthcare-admin-offices has no city tier. The /locations directory still
+  // cross-links ~590 of their /{city} URLs, which 404. Map each onto the
+  // closest service that actually has that city page.
+  const deadCity = pathname.match(
+    /^\/services\/(rehab-nursing|healthcare-admin-offices)\/(.+)$/
+  )
+  if (deadCity) {
+    const to = deadCity[1] === "rehab-nursing" ? "skilled-nursing" : "medical-office-cleaning"
+    return NextResponse.redirect(new URL(`/services/${to}/${deadCity[2]}`, req.url), 301)
+  }
+
   return NextResponse.next()
 }
 

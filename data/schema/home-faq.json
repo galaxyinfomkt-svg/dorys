@@ -9,8 +9,8 @@
     },
     {
       "@type": "Question",
-      "name": "Are you licensed and insured for healthcare facility cleaning?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We are licensed and carry $2,000,000 in liability insurance. Our staff is certified in OSHA Bloodborne Pathogens (29 CFR 1910.1030), Infection Control, and ATP Bioluminescence Testing." }
+      "name": "Are you insured for healthcare facility cleaning?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We carry $2,000,000 in liability insurance. Our staff is certified in OSHA Bloodborne Pathogens (29 CFR 1910.1030), Infection Control, and ATP Bioluminescence Testing." }
     },
     {
       "@type": "Question",

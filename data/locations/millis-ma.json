@@ -64,10 +64,10 @@
         },
         {
           "@type": "Question",
-          "name": "Is Dory's Cleaning licensed and insured for Millis healthcare facilities?",
+          "name": "Is Dory's Cleaning insured for Millis healthcare facilities?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We are fully licensed and insured in Massachusetts, carrying $2,000,000 in liability insurance. Our staff is trained in CDC, OSHA, and EPA protocols. We have 22+ years of clinical cleaning experience."
+            "text": "Yes. We are fully insured in Massachusetts, carrying $2,000,000 in liability insurance. Our staff is trained in CDC, OSHA, and EPA protocols. We have 22+ years of clinical cleaning experience."
           }
         }
       ]

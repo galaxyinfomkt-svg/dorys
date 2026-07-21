@@ -666,3 +666,32 @@ h1, h2, h3,
 .btn--outline-light:focus,
 .btn--outline-light:visited { color: #ffffff !important; border-color: rgba(255,255,255,0.6) !important; }
 .btn--outline-light svg { fill: currentColor !important; }
+
+/* all-cities-grid — the /locations directory listing (60+ city links). Was an
+   undefined class, so the links stacked into one very tall column. Render them
+   as a responsive multi-column grid of pill links, matching .nearby-cities. */
+.all-cities-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.5rem .85rem;margin:1.5rem 0}
+.all-cities-grid a{display:block;padding:.6rem .8rem;border-radius:8px;color:#1a5bc4;text-decoration:none;font-weight:500;background:rgba(43,112,228,.06);transition:background .15s ease,transform .15s ease}
+.all-cities-grid a:hover{background:rgba(43,112,228,.13);transform:translateX(2px)}
+
+/* testimonials-grid — reviews page cards. Undefined class meant every card
+   stacked full-width in one column with the star row collapsing vertically.
+   Lay the cards out as a responsive grid and the rating stars in a row. */
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem;margin:1.75rem 0;align-items:start}
+.testimonial-card__rating{display:flex;gap:.15rem;color:#f59e0b;margin-bottom:.6rem}
+.testimonial-card__rating svg{flex:0 0 auto}
+
+/* service-block / city-link — the /locations cross-link section (8 service
+   blocks, ~185 city links each). NONE of these classes were defined, so every
+   one of the ~1,480 inline <svg> icons rendered at the default replaced size
+   (~150px) and the page ballooned to ~1.7 MILLION px tall and looked blank.
+   Size the icons and lay the links out as compact wrapping pills. */
+.service-block{margin:1.5rem 0;padding:1.5rem 1.5rem 1rem;background:#fff;border:1px solid #e6ebf3;border-radius:12px;box-shadow:0 1px 3px rgba(15,39,69,.05)}
+.service-block__header{display:flex;align-items:center;gap:.6rem;margin-bottom:.35rem}
+.service-block__icon{display:inline-flex;color:#2b70e4}
+.service-block__icon svg{width:26px;height:26px}
+.service-block__title{margin:0;font-size:1.2rem;color:#0f2745}
+.service-block__description{color:#475569;margin:0 0 1rem;font-size:.95rem}
+.city-link{display:inline-flex;align-items:center;gap:.3rem;padding:.35rem .7rem;margin:.2rem;border-radius:999px;background:rgba(43,112,228,.06);color:#1a5bc4;text-decoration:none;font-size:.88rem;font-weight:500;transition:background .15s ease}
+.city-link:hover{background:rgba(43,112,228,.13)}
+.city-link svg{width:14px;height:14px;flex:0 0 auto}
