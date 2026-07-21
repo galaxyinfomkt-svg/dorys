@@ -26,18 +26,29 @@ type Rule = { source: string; destination: string }
 const MAP = new Map<string, string>()
 for (const r of pruned as Rule[]) MAP.set(r.source, r.destination)
 
-/** Services that used to sit at the root. */
-const ROOT_SERVICES = [
+/** Legacy service pages that still live at the site root (app/{slug}/page.tsx).
+ *
+ * Only THESE THREE were rebuilt as /services/{slug} hubs (data/services/{slug}/
+ * index.json exists), so the root duplicate 301s to the canonical hub. */
+const ROOT_TO_HUB = [
   "dental-office-cleaning",
   "urgent-care-cleaning",
   "assisted-living-cleaning",
+]
+for (const s of ROOT_TO_HUB) MAP.set(`/${s}`, `/services/${s}`)
+
+/** These have NO /services/{slug} hub — the root page is their only real page.
+ * We must NOT redirect the root away (doing so sent a live page into a 404).
+ * Instead, the /services/{slug} URL that a visitor or a stale Google result
+ * might try is redirected ONTO the real root page. */
+const ROOT_ONLY = [
   "cardiology-clinic-cleaning",
   "dialysis-clinic-cleaning",
   "surgery-center-cleaning",
   "covid-disinfection",
   "emergency-cleaning",
 ]
-for (const s of ROOT_SERVICES) MAP.set(`/${s}`, `/services/${s}`)
+for (const s of ROOT_ONLY) MAP.set(`/services/${s}`, `/${s}`)
 
 export function middleware(req: NextRequest) {
   // Normalise a trailing slash before lookup; the site is trailingSlash: false,

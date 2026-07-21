@@ -86,13 +86,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "(function(){var s=['https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=optional','/assets/css/footer.css','/assets/css/animations.css','/assets/css/lightbox.css','/assets/css/aeo.css?v=20260531g'];for(var i=0;i<s.length;i++){var l=document.createElement('link');l.rel='stylesheet';l.href=s[i];l.media='print';l.onload=function(){this.media='all'};document.head.appendChild(l);}})();",
+              "(function(){var s=['https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=optional','/assets/css/footer.css','/assets/css/animations.css?v=20260721a','/assets/css/lightbox.css','/assets/css/aeo.css?v=20260531g'];for(var i=0;i<s.length;i++){var l=document.createElement('link');l.rel='stylesheet';l.href=s[i];l.media='print';l.onload=function(){this.media='all'};document.head.appendChild(l);}})();",
           }}
         />
         <noscript>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=optional" />
           <link rel="stylesheet" href="/assets/css/footer.css" />
-          <link rel="stylesheet" href="/assets/css/animations.css" />
+          <link rel="stylesheet" href="/assets/css/animations.css?v=20260721a" />
           <link rel="stylesheet" href="/assets/css/lightbox.css" />
           <link rel="stylesheet" href="/assets/css/aeo.css?v=20260531g" />
         </noscript>

@@ -284,75 +284,93 @@
 /* --------------------------------------------------------------------------
    Scroll Animation Classes
    -------------------------------------------------------------------------- */
+/* SAFE-BY-DEFAULT REVEAL — the hidden state applies ONLY after ScrollReveal.tsx
+   adds html.reveal-ready. Without JS, on a hydration error, if the observer
+   never fires, or under reduced motion, no element is ever hidden, so content
+   is always visible. This is what ScrollReveal.tsx's comment promised; the old
+   unconditional `opacity:0` broke that promise and left 60 home-page sections
+   stuck invisible when the reveal JS didn't run. ScrollReveal adds BOTH
+   .is-visible and .in-view, so either counts as revealed. */
 .animate-on-scroll {
-  opacity: 0;
   transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
-.animate-on-scroll.is-visible {
+html.reveal-ready .animate-on-scroll:not(.is-visible):not(.in-view) {
+  opacity: 0;
+}
+
+.animate-on-scroll.is-visible,
+.animate-on-scroll.in-view {
   opacity: 1;
 }
 
 /* Fade Up */
-.animate-fade-up {
+html.reveal-ready .animate-fade-up:not(.is-visible):not(.in-view) {
   transform: translateY(40px);
 }
 
-.animate-fade-up.is-visible {
+.animate-fade-up.is-visible,
+.animate-fade-up.in-view {
   transform: translateY(0);
 }
 
 /* Fade Down */
-.animate-fade-down {
+html.reveal-ready .animate-fade-down:not(.is-visible):not(.in-view) {
   transform: translateY(-40px);
 }
 
-.animate-fade-down.is-visible {
+.animate-fade-down.is-visible,
+.animate-fade-down.in-view {
   transform: translateY(0);
 }
 
 /* Fade Left */
-.animate-fade-left {
+html.reveal-ready .animate-fade-left:not(.is-visible):not(.in-view) {
   transform: translateX(-40px);
 }
 
-.animate-fade-left.is-visible {
+.animate-fade-left.is-visible,
+.animate-fade-left.in-view {
   transform: translateX(0);
 }
 
 /* Fade Right */
-.animate-fade-right {
+html.reveal-ready .animate-fade-right:not(.is-visible):not(.in-view) {
   transform: translateX(40px);
 }
 
-.animate-fade-right.is-visible {
+.animate-fade-right.is-visible,
+.animate-fade-right.in-view {
   transform: translateX(0);
 }
 
 /* Fade Scale */
-.animate-fade-scale {
+html.reveal-ready .animate-fade-scale:not(.is-visible):not(.in-view) {
   transform: scale(0.9);
 }
 
-.animate-fade-scale.is-visible {
+.animate-fade-scale.is-visible,
+.animate-fade-scale.in-view {
   transform: scale(1);
 }
 
 /* Zoom In */
-.animate-zoom-in {
+html.reveal-ready .animate-zoom-in:not(.is-visible):not(.in-view) {
   transform: scale(0.5);
 }
 
-.animate-zoom-in.is-visible {
+.animate-zoom-in.is-visible,
+.animate-zoom-in.in-view {
   transform: scale(1);
 }
 
 /* Rotate In */
-.animate-rotate-in {
+html.reveal-ready .animate-rotate-in:not(.is-visible):not(.in-view) {
   transform: rotate(-10deg) scale(0.9);
 }
 
-.animate-rotate-in.is-visible {
+.animate-rotate-in.is-visible,
+.animate-rotate-in.in-view {
   transform: rotate(0) scale(1);
 }
 
@@ -368,11 +386,15 @@
 .animate-delay-700 { transition-delay: 700ms; }
 .animate-delay-800 { transition-delay: 800ms; }
 
-/* Stagger children (use on parent) */
+/* Stagger children (use on parent) — same safe-by-default gate: only hidden
+   once JS adds html.reveal-ready, so a missed reveal can never blank the grid. */
 .stagger-children > * {
+  transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+html.reveal-ready .stagger-children:not(.is-visible):not(.in-view) > * {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity var(--transition-base), transform var(--transition-base);
 }
 
 .stagger-children.is-visible > *:nth-child(1) { transition-delay: 0ms; opacity: 1; transform: translateY(0); }
