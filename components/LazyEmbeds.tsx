@@ -49,6 +49,18 @@ export default function LazyEmbeds() {
       }
       loadForms()
 
+      // GHL reputation reviews widget — populates <iframe class="lc_reviews_widget">
+      // (home + /reviews). A <script> placed inside dangerouslySetInnerHTML never
+      // executes, which is exactly why the widget shipped blank; load it here.
+      // Only when such an iframe is actually on the page, so the other ~900 pages
+      // don't pull it.
+      if (document.querySelector(".lc_reviews_widget") && !document.getElementById("lc-reviews-widget")) {
+        const rw = document.createElement("script")
+        rw.id = "lc-reviews-widget"
+        rw.src = "https://reputationhub.site/reputation/assets/review-widget.js"
+        document.body.appendChild(rw)
+      }
+
       // GHL chat widget
       if (!document.getElementById("ghl-chat-loader")) {
         const s = document.createElement("script")

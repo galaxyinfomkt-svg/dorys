@@ -695,3 +695,10 @@ h1, h2, h3,
 .city-link{display:inline-flex;align-items:center;gap:.3rem;padding:.35rem .7rem;margin:.2rem;border-radius:999px;background:rgba(43,112,228,.06);color:#1a5bc4;text-decoration:none;font-size:.88rem;font-weight:500;transition:background .15s ease}
 .city-link:hover{background:rgba(43,112,228,.13)}
 .city-link svg{width:14px;height:14px;flex:0 0 auto}
+
+/* Home lazy-media placeholders — below-the-fold images and the map embed are
+   loading="lazy"; give their wrappers a soft skeleton so the pre-load state
+   reads as an intentional placeholder, not a stark white void. */
+.video-text-section__video,.map-embed{background:#eef2f8;border-radius:12px;overflow:hidden}
+.video-text-section__video img,.map-embed iframe{display:block;width:100%;height:100%}
+.reviews-widget-container{background:#eef2f8;border-radius:12px;overflow:hidden}
