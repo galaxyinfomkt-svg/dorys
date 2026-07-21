@@ -153,20 +153,29 @@ function localContext(city) {
 function findings(service, city) {
   const items = service.commonSurveyFindings || []
   if (!items.length) return ''
-  const list = items
+  // Cards, not a wall of paragraphs. This is the most valuable content on the
+  // page and was the least scannable — a facilities buyer skims for the citation
+  // that applies to them. Each card leads with the citation badge, then the
+  // finding, then the frequency where one is published.
+  const cards = items
     .map(
       (f) =>
-        `<li><strong>${esc(f.finding)}</strong><br>` +
-        `<a href="${esc(f.source)}" rel="noopener nofollow" target="_blank">${esc(f.citation)}</a>` +
-        (f.frequency ? ` — ${esc(f.frequency)}` : '') +
-        `</li>`
+        `<div class="benefit-card">` +
+        `<div class="benefit-card__icon" aria-hidden="true">` +
+        `<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3zm-1 14-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"/></svg>` +
+        `</div>` +
+        `<h3 class="benefit-card__title">` +
+        `<a href="${esc(f.source)}" rel="noopener nofollow" target="_blank">${esc(f.citation)}</a></h3>` +
+        `<p>${esc(f.finding)}</p>` +
+        (f.frequency ? `<p class="benefit-card__meta">${esc(f.frequency)}</p>` : '') +
+        `</div>`
     )
     .join('')
   return (
-    `<section class="section"><div class="container container--narrow">` +
-    `<h2 class="section__title">Survey findings we help ${esc(city.name)} facilities prevent</h2>` +
-    `<p class="section__subtitle">Real, published regulatory findings — each links to its source.</p>` +
-    `<ul class="list">${list}</ul></div></section>`
+    `<section class="section"><div class="container">` +
+    `<h2 class="section__title text-center">Survey findings we help ${esc(city.name)} facilities prevent</h2>` +
+    `<p class="section__subtitle text-center mb-lg">Real, published regulatory findings — every citation links to its source.</p>` +
+    `<div class="benefits-grid">${cards}</div></div></section>`
   )
 }
 

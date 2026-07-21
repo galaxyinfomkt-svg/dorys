@@ -25,7 +25,7 @@
       "url": "https://doryscleaningservices.com/",
       "logo": "https://doryscleaningservices.com/assets/images/logo/logo-original.jpg",
       "image": "https://doryscleaningservices.com/assets/images/services/medical-office-new.webp",
-      "description": "Healthcare facility cleaning and infection control services across 296 Massachusetts cities. 22+ years of clinical experience, licensedd, $2,000,000 insurance coverage. CDC, OSHA, and EPA compliant protocols.",
+      "description": "Healthcare facility cleaning and infection control services across 109 Massachusetts cities. 22+ years of clinical experience, licensedd, $2,000,000 insurance coverage. CDC, OSHA, and EPA compliant protocols.",
       "telephone": "+1-978-307-8107",
       "email": "contact@doryscleaningservices.com",
       "priceRange": "$",
@@ -72,14 +72,21 @@
         "https://www.instagram.com/doryscleaningservices/",
         "https://www.linkedin.com/company/dorys-cleaning-services-inc/"
       ],
-      "slogan": "Hospital-Grade Cleaning. Massachusetts Standards."
+      "slogan": "Hospital-Grade Cleaning. Massachusetts Standards.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "10",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
     },
     {
       "@type": "WebSite",
       "@id": "https://doryscleaningservices.com/#website",
       "url": "https://doryscleaningservices.com/",
       "name": "Dory's Cleaning Services",
-      "description": "Healthcare facility cleaning across 296 Massachusetts cities.",
+      "description": "Healthcare facility cleaning across 109 Massachusetts cities.",
       "inLanguage": "en-US",
       "publisher": {
         "@id": "https://doryscleaningservices.com/#business"

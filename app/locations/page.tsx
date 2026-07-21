@@ -1,6 +1,6 @@
 // Service-areas hub page. Same JSON pipeline as individual cities —
 // reads data/locations/index.json so the existing hero, schemas and
-// the directory of 296 cities all render unchanged.
+// the directory of 109 cities all render unchanged.
 
 import type { Metadata } from "next"
 import Script from "next/script"

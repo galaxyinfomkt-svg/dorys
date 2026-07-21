@@ -37,11 +37,14 @@ export default function Header() {
       <div className="trust-strip">
         <div className="container trust-strip__inner">
           {[
-            "Licensed & $2M Insured",
+            // "$2M Insured" not "Licensed" — Massachusetts does not license
+            // cleaning companies, so a licence claim is false. "109" not "296":
+            // the service area is 109 municipalities after the prune.
+            "$2M Insured",
             "CDC / OSHA Compliant",
             "22+ Years Clinical Experience",
             "Black-Owned & Women-Owned",
-            "Serving 296 MA Cities",
+            "Serving 109 MA Cities",
             "Free 24-Hour Facility Assessment",
           ].flatMap((item, i, arr) => {
             const node = (

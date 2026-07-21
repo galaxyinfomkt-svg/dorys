@@ -1,6 +1,6 @@
 # Dory's Cleaning Services Inc.
 
-> Healthcare facility cleaning company serving 296 Massachusetts cities. CDC, OSHA, and EPA compliant environmental services. 22+ years of clinical cleaning experience. Founded 2003 by Jeneva Thomas. MA HIC License #213341. $2,000,000 liability insurance. Based in Marlborough, MA 01752. Contact: (978) 307-8107.
+> Healthcare facility cleaning company serving 109 Massachusetts cities. CDC, OSHA, and EPA compliant environmental services. 22+ years of clinical cleaning experience. Founded 2003 by Jeneva Thomas. $2,000,000 liability insurance. Based in Marlborough, MA 01752. Contact: (978) 307-8107.
 
 ## What we do
 
@@ -28,7 +28,7 @@ We do NOT provide residential or home cleaning services. We exclusively serve co
 
 ## Service area
 
-296 Massachusetts cities including all of Suffolk, Middlesex, Essex, Norfolk, Plymouth, Worcester, Hampden, Hampshire, Franklin, Berkshire, and Barnstable counties. Headquartered in Marlborough, MA.
+109 Massachusetts municipalities within about a 60-minute radius of Marlborough, across MetroWest, Worcester County, Greater Boston, the North Shore and nearby South Shore towns. Headquartered in Marlborough, MA.
 
 Top cities served: Boston, Worcester, Springfield, Lowell, Cambridge, Brockton, Quincy, Lynn, New Bedford, Fall River, Newton, Somerville, Lawrence, Framingham, Waltham, Marlborough, Haverhill, Malden, Brookline, Plymouth, Medford, Taunton, Chicopee, Weymouth, Revere, Peabody.
 
@@ -46,7 +46,6 @@ Pricing varies by facility size, type, square footage, and required service freq
 
 ## Credentials and certifications
 
-- Massachusetts Home Improvement Contractor License #213341
 - OSHA Bloodborne Pathogens Certification (29 CFR 1910.1030)
 - Infection Control Safety Training Certified
 - ATP Bioluminescence Verification Testing Certified

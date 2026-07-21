@@ -7,3 +7,10 @@
 .hero--inner .hero__background::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(8,18,38,.86) 0%,rgba(8,18,38,.72) 42%,rgba(8,18,38,.38) 100%)}
 .hero--inner .hero__title,.hero--inner .hero__subtitle{color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.55)}
 .hero--inner .hero__subtitle{opacity:1}
+/* Floating phone CTA — recolored from the off-brand amber to the brand blue.
+   The site's primary is #2b70e4; the pill was #f59e0b, which read as a bolted-on
+   afterthought against an otherwise blue system. Same shape and position,
+   cohesive color, calmer shadow. */
+.floating-phone-cta{background:linear-gradient(135deg,#2b70e4 0%,#1a5bc4 100%)!important;box-shadow:0 8px 24px rgba(43,112,228,.38)!important}
+.floating-phone-cta:hover,.floating-phone-cta:focus-visible{background:linear-gradient(135deg,#3f82f0 0%,#2b70e4 100%)!important;box-shadow:0 12px 32px rgba(43,112,228,.5)!important}
+@keyframes floatingPhonePulse{0%,100%{box-shadow:0 8px 24px rgba(43,112,228,.38)}50%{box-shadow:0 8px 24px rgba(43,112,228,.55),0 0 0 10px rgba(43,112,228,.14)}}
