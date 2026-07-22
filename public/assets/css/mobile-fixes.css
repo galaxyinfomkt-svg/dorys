@@ -1427,3 +1427,77 @@ html, body {
     cursor: pointer !important;
   }
 }
+
+/* ====================================================================
+   MOBILE OVERLAP / TAP-BLOCKING FIXES (appended last — wins the cascade)
+
+   Reported: on phones the form/menu couldn't be tapped, "something was
+   overlapping." Root causes found via a 390px viewport audit:
+
+   1. .hero-premium__overlay + .hero-premium__background are purely
+      DECORATIVE (a dark gradient + the background photo) but were
+      position:absolute with the default pointer-events:auto, blanketing
+      the full ~1300px-tall hero. Any tap that landed on gradient rather
+      than directly on text/button was swallowed. Decorative layers must
+      never capture pointer input.
+
+   2. THE MAIN "can't tap the menu, something is overlapping" BUG.
+      Stacking audit at 390px with the drawer open:
+        .header        position:sticky; z-index:200  -> creates a
+                       stacking context, and .header__nav lives INSIDE it.
+        .header__nav   position:fixed;  z-index:1000  -> but that 1000 is
+                       scoped to the header's context, so its real level
+                       against the page is 200.
+        .header__overlay  BODY-level; position:fixed; z-index:999.
+      999 > 200, so the dim rgba(0,0,0,.5) overlay painted ON TOP of the
+      whole header — including the open drawer — and swallowed every tap
+      on the menu links. Fix: drop the overlay BELOW the header's stacking
+      context (but keep it above page content) so the drawer, which rides
+      inside that context, sits above the overlay and is tappable again.
+
+   3. The floating phone pill (z-index:9998) and the GHL chat widget
+      (max z-index) also sat above the drawer. Their z-index can't be
+      out-ranked from inside the header context, so they simply step aside
+      while the menu is open (display:none on body.nav-open).
+   ==================================================================== */
+
+/* 1 — decorative hero layers never eat taps (all viewports) */
+.hero-premium__overlay,
+.hero-premium__background {
+  pointer-events: none !important;
+}
+
+@media (max-width: 1024px) {
+  /* 2 — overlay below the sticky header's stacking context (200), above
+     page content, so the drawer (trapped inside that context) wins. */
+  .header__overlay { z-index: 150 !important; }
+
+  /* 3 — while the drawer is open, get the floating phone pill and the GHL
+     chat widget out of the way so nothing overlaps the menu. */
+  body.nav-open .floating-phone-cta,
+  body.nav-open chat-widget,
+  body.nav-open [id^="ghl-chat"],
+  body.nav-open [class*="chat-widget"] {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* 3 — menu polish: comfortable tap targets, clear separators, and
+     respect the iOS home-indicator safe area at the drawer foot. */
+  .header__nav .nav-link {
+    display: block !important;
+    padding: 1rem 0.25rem !important;
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+  }
+  .header__nav .nav-item + .nav-item {
+    border-top: 1px solid rgba(15, 23, 42, 0.08) !important;
+  }
+  .header__nav .nav-link:active {
+    color: var(--color-primary, #2b70e4) !important;
+  }
+  .header__nav {
+    padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+}
