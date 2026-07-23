@@ -75,10 +75,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="stylesheet" href="/assets/css/service-pages.css" />
         {/* elevate.css — site-wide premium polish; wins on equal specificity.
             Bump the ?v= cache-buster whenever these custom sheets change. */}
-        <link rel="stylesheet" href="/assets/css/elevate.css?v=20260612j" />
+        <link rel="stylesheet" href="/assets/css/elevate.css?v=20260723b" />
         {/* mobile-fixes.css must load before deferred sheets so its !important
             rules (phone visibility, services-grid lock, floating CTA) win. */}
-        <link rel="stylesheet" href="/assets/css/mobile-fixes.css?v=20260531g" />
+        <link rel="stylesheet" href="/assets/css/mobile-fixes.css?v=20260723a" />
 
         {/* Non-critical CSS + web fonts — injected as async (media=print →
             all on load) so they don't block first paint. Fonts use

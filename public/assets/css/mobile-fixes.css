@@ -380,15 +380,26 @@ html, body {
     gap: 0.75rem !important;
   }
 
+  /* The trust-card markup has no __content wrapper — icon, title and text
+     are direct children. A plain flex row therefore lined all three up in
+     separate columns (tiny icon | narrow wrapping title | text), leaving huge
+     empty space and very tall cards. Use a 2-col grid instead: icon spans
+     both rows on the left, title stacks above text on the right. */
   .trust-card {
-    display: flex !important;
+    display: grid !important;
+    grid-template-columns: 44px 1fr !important;
+    grid-template-rows: auto auto !important;
     align-items: center !important;
+    column-gap: 0.85rem !important;
+    row-gap: 0.1rem !important;
     text-align: left !important;
-    padding: 1rem !important;
-    gap: 0.75rem !important;
+    padding: 1rem 1.1rem !important;
   }
 
   .trust-card__icon {
+    grid-column: 1 !important;
+    grid-row: 1 / span 2 !important;
+    align-self: center !important;
     margin: 0 !important;
     width: 44px !important;
     height: 44px !important;
@@ -401,12 +412,20 @@ html, body {
   }
 
   .trust-card__title {
-    font-size: 0.9rem !important;
-    margin-bottom: 0.15rem !important;
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    align-self: end !important;
+    font-size: 0.95rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 0 !important;
   }
 
   .trust-card__text {
-    font-size: 0.8rem !important;
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    align-self: start !important;
+    font-size: 0.82rem !important;
+    line-height: 1.45 !important;
   }
 
   /* --- Differentiators Grid --- */
@@ -700,6 +719,24 @@ html, body {
   .two-col {
     grid-template-columns: 1fr !important;
     gap: 1.5rem !important;
+  }
+
+  /* A single-column grid track still refuses to shrink below its widest
+     child's min-content (a long unbreakable email, the GHL form iframe),
+     which pushed the whole contact column past the viewport and clipped the
+     body copy on the right. Let the tracks and their children shrink. */
+  .two-col,
+  .form-contact-section {
+    min-width: 0 !important;
+  }
+  .two-col > *,
+  .form-contact-section > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  .footer__contact-value {
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
   }
 
   .form-embed {
