@@ -96,13 +96,8 @@ body.nav-open .header {
     gap: 1.5rem !important;
   }
 
-  /* On mobile the grid stacks, which pushed the quote form to the very bottom
-     of the hero — below the headline, full value-prop paragraph, badge list,
-     CTA button and rating. Lift it to the top of the hero so the lead form is
-     one of the first things a visitor sees ("no início da hero"). */
-  .hero-premium__form {
-    order: -1 !important;
-  }
+  /* Hero form stays below the copy on mobile (natural DOM order) — the client
+     wants the headline/value-prop first, then the form. */
 
   .hero-premium__content {
     max-width: 100% !important;
