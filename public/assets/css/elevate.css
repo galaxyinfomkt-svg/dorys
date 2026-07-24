@@ -802,3 +802,26 @@ h1, h2, h3,
   .service-block { padding: 1.25rem; }
   .service-block__title { font-size: 1.1rem; }
 }
+
+/* --------------------------------------------------------------------------
+   Photo hero readability + tappable CTAs. The /services hero
+   (.hero--service-city) and every service-city / location page hero
+   (.hero--inner) render white text over a full-bleed background photo, but
+   the migration dropped the dark overlay <div> those heroes expect — so the
+   text sat unreadable on the bright clinic / building photos, and the absolute
+   background layer could swallow taps on the CTA buttons.
+
+   Paint the scrim with a pseudo-element (no markup change needed across
+   ~1,600 pages) and make the decorative background ignore pointer events so
+   the buttons are always clickable. The ::after only renders where a
+   .hero__background actually exists, so image-less heroes are untouched.
+   -------------------------------------------------------------------------- */
+.hero--service-city .hero__background,
+.hero--inner .hero__background { pointer-events: none; }
+.hero--service-city .hero__background::after,
+.hero--inner .hero__background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(26, 26, 46, 0.86) 0%, rgba(26, 26, 46, 0.72) 100%);
+}
