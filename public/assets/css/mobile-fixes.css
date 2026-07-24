@@ -897,6 +897,17 @@ html, body {
 
   .feature-card {
     padding: 1.25rem !important;
+    /* Cards are a centered column on mobile, but the inherited
+       align-items:flex-start shrank __content to its own width and pinned it
+       left — so short values (phone, email) looked left-aligned while long
+       ones (hours) looked centered. Center the items and let content span the
+       full width so every value is centered consistently. */
+    align-items: center !important;
+  }
+
+  .feature-card__content {
+    width: 100% !important;
+    text-align: center !important;
   }
 
   .feature-card__title {

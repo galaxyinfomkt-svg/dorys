@@ -284,6 +284,25 @@
 /* --------------------------------------------------------------------------
    Scroll Animation Classes
    -------------------------------------------------------------------------- */
+/* FAIL-SAFE: the scroll-reveal hides content with opacity:0 and relies on JS
+   (ScrollReveal.tsx) to add .is-visible. If that JS never runs — hydration
+   error, script blocked, a slow device where the observer misfires — the
+   content would stay invisible forever, leaving big empty gaps (seen on the
+   services / about pages). ScrollReveal adds `reveal-ready` to <html> only
+   when it actually starts, so while that class is ABSENT we force everything
+   visible. Content is hidden only once the code that will reveal it is live. */
+html:not(.reveal-ready) .animate-on-scroll,
+html:not(.reveal-ready) .animate-fade-up,
+html:not(.reveal-ready) .animate-fade-down,
+html:not(.reveal-ready) .animate-fade-left,
+html:not(.reveal-ready) .animate-fade-right,
+html:not(.reveal-ready) .animate-fade-scale,
+html:not(.reveal-ready) .animate-zoom-in,
+html:not(.reveal-ready) .stagger-children > * {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 .animate-on-scroll {
   opacity: 0;
   transition: opacity var(--transition-slow), transform var(--transition-slow);

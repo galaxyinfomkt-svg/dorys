@@ -19,7 +19,14 @@ export default function ScrollReveal() {
     const els = Array.from(document.querySelectorAll<HTMLElement>(sel))
     if (!els.length) return
 
+    // Adding reveal-ready flips animate-* elements from visible (CSS fail-safe)
+    // to opacity:0. Reveal anything already in the viewport in the SAME tick so
+    // above-the-fold sections never flash out-then-in.
     document.documentElement.classList.add("reveal-ready")
+    const inView = (el: HTMLElement) => {
+      const r = el.getBoundingClientRect()
+      return r.top < window.innerHeight && r.bottom > 0
+    }
 
     const io = new IntersectionObserver(
       (entries) => {
@@ -35,7 +42,10 @@ export default function ScrollReveal() {
       },
       { rootMargin: "0px 0px -8% 0px", threshold: 0.05 }
     )
-    els.forEach((el) => io.observe(el))
+    els.forEach((el) => {
+      if (inView(el)) el.classList.add("in-view", "is-visible")
+      else io.observe(el)
+    })
 
     // Safety net: never leave anything hidden — reveal all after 1.2s so a
     // missed IntersectionObserver fire can't leave a section blank (the empty

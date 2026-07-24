@@ -78,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="stylesheet" href="/assets/css/elevate.css?v=20260723b" />
         {/* mobile-fixes.css must load before deferred sheets so its !important
             rules (phone visibility, services-grid lock, floating CTA) win. */}
-        <link rel="stylesheet" href="/assets/css/mobile-fixes.css?v=20260723a" />
+        <link rel="stylesheet" href="/assets/css/mobile-fixes.css?v=20260723c" />
 
         {/* Non-critical CSS + web fonts — injected as async (media=print →
             all on load) so they don't block first paint. Fonts use
@@ -86,7 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "(function(){var s=['https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=optional','/assets/css/footer.css','/assets/css/animations.css','/assets/css/lightbox.css','/assets/css/aeo.css?v=20260531g'];for(var i=0;i<s.length;i++){var l=document.createElement('link');l.rel='stylesheet';l.href=s[i];l.media='print';l.onload=function(){this.media='all'};document.head.appendChild(l);}})();",
+              "(function(){var s=['https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=optional','/assets/css/footer.css','/assets/css/animations.css?v=20260723c','/assets/css/lightbox.css','/assets/css/aeo.css?v=20260531g'];for(var i=0;i<s.length;i++){var l=document.createElement('link');l.rel='stylesheet';l.href=s[i];l.media='print';l.onload=function(){this.media='all'};document.head.appendChild(l);}})();",
           }}
         />
         <noscript>
