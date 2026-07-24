@@ -11,6 +11,20 @@ html, body {
   max-width: 100vw !important;
 }
 
+/* ==========================================================================
+   MOBILE MENU STACKING FIX
+   The drawer (.header__nav) lives INSIDE .header, which sets its own z-index
+   (z:200) and so creates a stacking context that traps the drawer. The dim
+   overlay (.header__overlay) is a root-level sibling at z:999, so it painted
+   OVER the whole drawer — greying out the menu and eating every tap (the menu
+   looked open but nothing was clickable). Lift the header, and with it the
+   drawer, above the overlay while the menu is open. The overlay still dims and
+   still closes on tap because it stays above the page content.
+   ========================================================================== */
+body.nav-open .header {
+  z-index: 1001 !important;
+}
+
 /* Hide decorative pseudo-elements that could cause overflow on mobile */
 @media (max-width: 768px) {
   .hero__image::before,
@@ -80,6 +94,14 @@ html, body {
   .hero-premium__grid {
     flex-direction: column !important;
     gap: 1.5rem !important;
+  }
+
+  /* On mobile the grid stacks, which pushed the quote form to the very bottom
+     of the hero — below the headline, full value-prop paragraph, badge list,
+     CTA button and rating. Lift it to the top of the hero so the lead form is
+     one of the first things a visitor sees ("no início da hero"). */
+  .hero-premium__form {
+    order: -1 !important;
   }
 
   .hero-premium__content {
