@@ -187,14 +187,9 @@ html, body {
     min-height: 460px !important;
   }
 
-  /* The GHL form embed carries a tall band of empty padding at the top of its
-     own (cross-origin) content, which shows as a big white gap above the first
-     field. Pull the iframe up inside the clipping wrapper to hide it. Must
-     target #hero-form-card iframe (ID) because elevate.css zeroes the iframe
-     margins at that specificity. */
-  #hero-form-card iframe {
-    margin-top: -82px !important;
-  }
+  /* NOTE: the new GHL form ("form website novo") has a proper header
+     ("Get Your Free Quote") at the top — no empty padding band — so no crop
+     is applied here (the old -82px crop would have clipped the header). */
 
   /* --- Inner Page Hero --- */
   .hero--inner {
