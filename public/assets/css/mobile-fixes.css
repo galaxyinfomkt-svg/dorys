@@ -79,12 +79,26 @@ html, body {
 
   .hero-premium__grid {
     flex-direction: column !important;
-    gap: 1.5rem !important;
+    gap: 1.25rem !important;
+    align-items: stretch !important;
   }
 
+  /* Put the quote form directly under the headline + paragraph (but above the
+     badge list / CTA / rating). The form is a GRID SIBLING of .content, so it
+     can't sit between .content's children with normal flow. `display:contents`
+     (mobile only) dissolves the .content box so its children become grid items
+     alongside the form; then `order` interleaves them: badge, title, subtitle,
+     FORM, trust-badges, CTA, proof. Desktop keeps its 2-column layout. */
   .hero-premium__content {
-    max-width: 100% !important;
+    display: contents !important;
   }
+  .hero-premium__badge { order: 1 !important; align-self: flex-start !important; }
+  .hero-premium__title { order: 2 !important; }
+  .hero-premium__subtitle { order: 3 !important; }
+  .hero-premium__form { order: 4 !important; }
+  .hero-premium__trust-badges { order: 5 !important; }
+  .hero-premium__ctas { order: 6 !important; }
+  .hero-premium__proof { order: 7 !important; }
 
   .hero-premium__title {
     font-size: 1.6rem !important;
@@ -166,10 +180,20 @@ html, body {
   .hero-premium__form {
     width: 100% !important;
     max-width: 100% !important;
+    overflow: hidden !important;
   }
 
   .hero-premium__form iframe {
     min-height: 460px !important;
+  }
+
+  /* The GHL form embed carries a tall band of empty padding at the top of its
+     own (cross-origin) content, which shows as a big white gap above the first
+     field. Pull the iframe up inside the clipping wrapper to hide it. Must
+     target #hero-form-card iframe (ID) because elevate.css zeroes the iframe
+     margins at that specificity. */
+  #hero-form-card iframe {
+    margin-top: -82px !important;
   }
 
   /* --- Inner Page Hero --- */
