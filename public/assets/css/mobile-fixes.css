@@ -166,10 +166,24 @@ html, body {
   .hero-premium__form {
     width: 100% !important;
     max-width: 100% !important;
+    /* The wrapper clips the iframe (see below). Keep it explicit so the crop
+       holds even if the inline style ever changes. */
+    overflow: hidden !important;
   }
 
   .hero-premium__form iframe {
     min-height: 460px !important;
+  }
+
+  /* The GHL form embed carries a tall band of empty padding at the very top of
+     its own (cross-origin) content. The hero form card was stripped to a bare
+     form, which exposed that band as a big white gap above the first field. We
+     can't reach inside a cross-origin iframe, so pull it up inside the clipping
+     wrapper (.hero-premium__form is overflow:hidden) to hide the band.
+     NOTE: elevate.css zeroes the iframe margins via `#hero-form-card iframe`
+     (ID specificity), so we must match that ID here to win the cascade. */
+  #hero-form-card iframe {
+    margin-top: -82px !important;
   }
 
   /* --- Inner Page Hero --- */
