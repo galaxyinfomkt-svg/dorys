@@ -78,6 +78,33 @@ select:focus-visible {
   body.nav-open, body.menu-open { overflow: hidden; }
 }
 
+/* --- Contact bar: email + phone above the trust strip ---------------------
+   The legacy contact bar was retired and the email moved to the footer, which
+   a phone visitor almost never reaches. This is the slim replacement: the two
+   details someone needs to make contact, and nothing else. --------------- */
+.contact-bar { background: #0b2545; color: #fff; }
+.contact-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.38rem 1rem;
+  font-size: 0.72rem;
+}
+.contact-bar a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+.contact-bar a:hover,
+.contact-bar a:focus-visible { text-decoration: underline; }
+.contact-bar svg { width: 13px; height: 13px; flex: none; opacity: 0.9; }
+.contact-bar__phone { font-weight: 700; }
+@media (min-width: 769px) { .contact-bar__inner { font-size: 0.8rem; } }
+
 /* --- Trust strip (new): thin band of proof under the top bar ------------- */
 .trust-strip {
   background: linear-gradient(90deg, var(--elev-blue) 0%, var(--elev-blue-dark) 100%);
