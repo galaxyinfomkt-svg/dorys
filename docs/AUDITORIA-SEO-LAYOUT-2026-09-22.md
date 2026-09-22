@@ -63,9 +63,16 @@ Pipeline: `npm run build:service-pages` (merge → páginas de serviço → pág
 - Contato: formulário estava a ~1.900 px de rolagem no celular → subiu para o topo.
 - Acessibilidade: contraste de textos cinza e do CTA azul, alvos de toque de 24 px, abas da galeria viraram `<button>`.
 
-## 5. Pendências (precisam de ação humana)
-1. **Board of Health por cidade** — a rede da sessão bloqueia os sites das prefeituras. 49 contatos achados na busca estão em `data/_todo-boards-of-health.csv` com `verified=no`. **Ana/Gabi:** confirmar por telefone e preencher `localHealth` em `data/cities/*.json`.
+## 5. Rodada final ("fazer tudo, sem reduzir páginas")
+- **CSS unificado:** 5 arquivos bloqueantes → 1 (`site.min.css`, 248 KB → 170 KB), gerado por `npm run build:css`. Teste de regressão: 14 templates × 2 larguras **idênticos pixel a pixel** ao build anterior.
+- **Autoridade de saúde local nas 109 cidades:** nome e link da página oficial do Board of Health / Health Department (domínio da própria prefeitura), exibidos nas 981 páginas de cidade com uma FAQ explicando DPH × board local. Telefones **não** publicados até confirmação.
+- **Hubs de serviço:** cada um dos 8 hubs agora traz o protocolo completo (todas as zonas, passos, frequência, documentação, perguntas ao fornecedor).
+- **Blog → serviços:** 17 de 20 posts não linkavam nenhum hub; agora os 20 têm o bloco "Where this applies".
+- **Supplier Diversity:** documentos para compras (COI, W-9, NAICS, SDS, treinamentos), nota honesta de que o gasto só conta como MBE/WBE após a certificação, cobertura multi-site; removido "hospitais".
+
+## 6. Pendências (precisam de ação humana)
+1. **Telefones dos Boards of Health** — os links oficiais já estão no ar; os telefones ficam em `data/_todo-boards-of-health.csv` até alguém confirmar (**Ana/Gabi**). Depois, preencher `localHealth.boardOfHealthPhone` em `data/cities/*.json` e rodar `npm run build:service-pages`.
 2. **Estabelecimentos por cidade** — dental não tem nenhum consultório verificado; várias cidades pequenas não têm nenhum estabelecimento. Pesquisar e adicionar em `healthcareLandscape.majorFacilities` (com fonte) aumenta o valor local das páginas automaticamente.
 3. **Selos MBE/WBE** — só usar as siglas quando houver número de certificado em `data/company.json`.
 4. **Depois do deploy:** reenviar `sitemap.xml` no Google Search Console e acompanhar a cobertura das 1.031 URLs por 4–6 semanas.
-5. **CSS bloqueante** (~250 KB sem compressão, 5 arquivos) — consolidar num único arquivo é o próximo ganho de performance; não mexi para não arriscar regressão visual.
+5. **CSS não usado** — o bundle ainda carrega regras de templates antigos; remover exige mapear classes geradas por JS. Próximo ganho de performance, com teste visual a cada passo.
