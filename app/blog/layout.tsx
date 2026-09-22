@@ -6,7 +6,7 @@
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <link rel="stylesheet" href="/assets/css/blog.css?v=20260612a" />
+      <link rel="stylesheet" href="/assets/css/blog.css?v=20260922b" />
       {children}
     </>
   )

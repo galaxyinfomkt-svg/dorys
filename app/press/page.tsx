@@ -3,7 +3,7 @@
 // Do not hand-edit — regenerate by re-running the script.
 
 import type { Metadata } from "next"
-import Script from "next/script"
+import { ldJson } from "@/lib/ld-json"
 import fs from "node:fs/promises"
 import path from "node:path"
 import Header from "@/components/Header"
@@ -89,11 +89,11 @@ export default async function Page() {
     <>
       <Header />
       {d.schemas.map((schema, i) => (
-        <Script
+        <script
           key={`ld-${i}`}
           id={`ld-${SLUG}-${i}`}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          dangerouslySetInnerHTML={{ __html: ldJson(schema) }}
         />
       ))}
       <main id="main-content" dangerouslySetInnerHTML={{ __html: d.mainHtml }} />

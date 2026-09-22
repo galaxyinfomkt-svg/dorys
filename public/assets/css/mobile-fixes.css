@@ -1520,3 +1520,78 @@ html, body {
     padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px)) !important;
   }
 }
+
+/* ==========================================================================
+   AUDIT 2026-09-22 — type scale, header logo, floating CTA
+   Earlier mobile passes shrank headings in rem while the root drops to 14px,
+   so on a 375px phone every H1 rendered at 16-19px — SMALLER than the 17px
+   body copy and than in-article H2s (21px) — section titles at 16.8px, and
+   CTA buttons at 11.9px. Heading hierarchy was inverted on ~950 pages.
+   These rules restore a real scale in px (independent of the root size) and
+   sit last in the cascade on purpose.
+   ========================================================================== */
+@media (max-width: 768px) {
+  .hero .hero__title,
+  .hero--inner .hero__title,
+  .hero--location .hero__title,
+  .hero--premium .hero__title,
+  .hero-premium .hero-premium__title,
+  .article-header .article-header__title,
+  .blog-hero__title {
+    font-size: 27px !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.01em;
+  }
+  .hero-premium .hero-premium__title span { font-size: inherit !important; line-height: inherit !important; }
+  .hero .hero__subtitle,
+  .hero--inner .hero__subtitle,
+  .hero--location .hero__subtitle { font-size: 16px !important; line-height: 1.55 !important; }
+  .section__title,
+  main h2 { font-size: 22px !important; line-height: 1.3 !important; }
+  main h3 { font-size: 18px; line-height: 1.35; }
+  .section__description { font-size: 15px !important; }
+  .btn,
+  .btn--primary,
+  .btn--lg,
+  .btn--xl,
+  .btn--white,
+  .btn--outline-light,
+  a[href^="tel:"].btn { font-size: 15px !important; }
+  .accordion__header { font-size: 15px !important; }
+  .accordion__body { font-size: 15px !important; }
+  .section__badge { font-size: 11px !important; }
+}
+
+/* Header logo — cropped wordmark, sized by height so the name is legible. */
+.header__logo img.header__logo-img {
+  height: 52px !important;
+  width: auto !important;
+  max-width: none !important;
+}
+@media (max-width: 768px) {
+  .header__logo img.header__logo-img { height: 40px !important; }
+}
+
+/* Floating call pill: on desktop it sat over the left edge of the content
+   column (it covered the first letters of every H2 it scrolled past) while
+   the header already shows the number. Desktop gets a compact icon button;
+   phones keep the labelled pill. */
+@media (min-width: 992px) {
+  .floating-phone-cta {
+    padding: 0 !important;
+    width: 56px;
+    height: 56px;
+    justify-content: center;
+  }
+  .floating-phone-cta .floating-phone-cta__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
+
+/* Page breadcrumb (service × town pages): read left-to-right like a path. */
+.breadcrumb--page .breadcrumb__list { justify-content: flex-start !important; }

@@ -8,8 +8,8 @@
 // byte-for-byte from the prior production site, so SEO does not regress.
 
 import type { Metadata } from "next"
+import { ldJson } from "@/lib/ld-json"
 import { notFound } from "next/navigation"
-import Script from "next/script"
 import fs from "node:fs/promises"
 import path from "node:path"
 import Header from "@/components/Header"
@@ -106,11 +106,11 @@ export default async function CityPage(
       {/* JSON-LD schemas — exact copies of the static page's blocks,
           one <script> per object so each indexes independently. */}
       {data.schemas.map((schema, i) => (
-        <Script
+        <script
           key={`ld-${i}`}
           id={`ld-${data.slug}-${i}`}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          dangerouslySetInnerHTML={{ __html: ldJson(schema) }}
         />
       ))}
 

@@ -1,6 +1,6 @@
 # Robots.txt for Dory's Cleaning Services
 # https://doryscleaningservices.com
-# Last updated: 2026-04-29
+# Last updated: 2026-09-22
 
 User-agent: *
 Allow: /
@@ -63,19 +63,10 @@ Allow: /assets/
 # SEARCH ENGINE SPECIFIC RULES
 # ===========================================
 
-# Googlebot (no crawl delay for faster indexing)
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
+# Search engines use the * group above. (A named group here — the old
+# Googlebot / Bingbot / Slurp / DuckDuckBot "Allow: /" blocks — made those
+# bots skip every Disallow in the * group, because a crawler obeys only the
+# most specific group that matches it.)
 
 # ===========================================
 # AI ASSISTANTS — explicit allow for citation

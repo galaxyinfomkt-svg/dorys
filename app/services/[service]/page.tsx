@@ -3,8 +3,8 @@
 // healthcare-admin-offices). Source: data/services/{slug}/index.json.
 
 import type { Metadata } from "next"
+import { ldJson } from "@/lib/ld-json"
 import { notFound } from "next/navigation"
-import Script from "next/script"
 import fs from "node:fs/promises"
 import path from "node:path"
 import Header from "@/components/Header"
@@ -89,11 +89,11 @@ export default async function ServiceHubPage(
     <>
       <Header />
       {d.schemas.map((schema, i) => (
-        <Script
+        <script
           key={`ld-${i}`}
           id={`ld-${d.slug}-${i}`}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          dangerouslySetInnerHTML={{ __html: ldJson(schema) }}
         />
       ))}
       <main id="main-content" dangerouslySetInnerHTML={{ __html: d.mainHtml }} />

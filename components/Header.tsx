@@ -19,7 +19,13 @@ const SERVICES = [
   ["medical-office-cleaning", "Medical Offices"],
   ["specialty-clinics", "Specialty Clinics"],
   ["ambulatory-outpatient", "Ambulatory & Outpatient"],
-  ["rehab-nursing", "Rehab & Nursing Facilities"],
+  // rehab-nursing 301s (it was split in two), and the dental, urgent care,
+  // skilled nursing and assisted living hubs were missing from the menu.
+  ["dental-office-cleaning", "Dental Offices"],
+  ["urgent-care-cleaning", "Urgent Care Centers"],
+  ["rehabilitation-clinics", "Rehabilitation Clinics"],
+  ["skilled-nursing", "Skilled Nursing & Long-Term Care"],
+  ["assisted-living-cleaning", "Assisted Living"],
   ["healthcare-admin-offices", "Healthcare Admin Offices"],
 ] as const
 
@@ -79,7 +85,9 @@ export default function Header() {
         <div className="container header__wrapper">
           <Link href="/" className="header__logo" aria-label="Dory's Cleaning Services — Home">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/assets/images/logo/logo-80.webp" alt="Dory's Cleaning Services Logo" width={180} height={60} loading="eager" fetchPriority="high" decoding="async" />
+            {/* Cropped wordmark (the square logo-80 was ~65% whitespace, so the name
+                rendered ~9px tall and unreadable). 1x/2x for sharp retina. */}
+            <img className="header__logo-img" src="/assets/images/logo/logo-wide-120.webp" srcSet="/assets/images/logo/logo-wide-120.webp 1x, /assets/images/logo/logo-wide-240.webp 2x" alt="Dory's Cleaning Services" width={334} height={120} loading="eager" fetchPriority="high" decoding="async" />
           </Link>
 
           <nav id="main-navigation" className="header__nav" aria-label="Main navigation">

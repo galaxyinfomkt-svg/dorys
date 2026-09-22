@@ -3,7 +3,7 @@
 // the directory of 109 cities all render unchanged.
 
 import type { Metadata } from "next"
-import Script from "next/script"
+import { ldJson } from "@/lib/ld-json"
 import fs from "node:fs/promises"
 import path from "node:path"
 import Header from "@/components/Header"
@@ -86,11 +86,11 @@ export default async function LocationsHubPage() {
     <>
       <Header />
       {data.schemas.map((schema, i) => (
-        <Script
+        <script
           key={`ld-${i}`}
           id={`ld-locations-${i}`}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          dangerouslySetInnerHTML={{ __html: ldJson(schema) }}
         />
       ))}
       <main id="main-content" dangerouslySetInnerHTML={{ __html: data.mainHtml }} />

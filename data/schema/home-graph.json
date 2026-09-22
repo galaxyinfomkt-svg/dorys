@@ -6,8 +6,7 @@
         "Organization",
         "LocalBusiness",
         "CleaningService",
-        "ProfessionalService",
-        "HealthAndBeautyBusiness"
+        "ProfessionalService"
       ],
       "@id": "https://doryscleaningservices.com/#business",
       "name": "Dory's Cleaning Services Inc.",

@@ -1010,3 +1010,34 @@
   margin-bottom: var(--space-md);
   color: var(--color-primary);
 }
+
+/* --------------------------------------------------------------------------
+   Article header repairs (audit 2026-09-22)
+   Global rules loaded earlier were winning inside the blue article header:
+   - `h1 { color:#333 }` put a dark-grey H1 on the blue gradient (~2.4:1);
+   - a site-wide `.breadcrumb` panel style gave the crumbs a near-white box,
+     so the white current-page crumb (1.05:1) was invisible;
+   - the author <a> fell to display:block, pushing the icon onto its own line.
+   Scoped to .article-header so no other breadcrumb or heading changes.
+   -------------------------------------------------------------------------- */
+.article-header .article-header__title { color: #fff; }
+.article-header .breadcrumb {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+.article-header .breadcrumb__item,
+.article-header .breadcrumb__item a { color: rgba(255, 255, 255, 0.85); }
+.article-header .breadcrumb__item[aria-current="page"] { color: #fff; }
+.article-header .article-header__meta svg { display: inline-block; vertical-align: -0.15em; margin-right: 0.3rem; }
+.article-header .article-header__meta a { display: inline; color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+
+/* Data tables inside articles (first used by the high-touch frequency guide). */
+.article-content__main { min-width: 0; } /* grid item: let wide children scroll instead of widening the page */
+.article-content__main .table-responsive { max-width: 100%; overflow-x: auto; margin: 1.5rem 0; -webkit-overflow-scrolling: touch; }
+.article-content__main table { width: 100%; border-collapse: collapse; font-size: 0.95rem; min-width: 560px; }
+.article-content__main th,
+.article-content__main td { padding: 0.75rem 0.9rem; border-bottom: 1px solid #e2e8f0; text-align: left; vertical-align: top; }
+.article-content__main thead th { background: #f1f5f9; color: #0f172a; font-weight: 700; }
+.article-content__main tbody tr:nth-child(even) td { background: #f8fafc; }

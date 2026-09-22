@@ -18,6 +18,7 @@
  */
 import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
+import { execFileSync } from 'node:child_process'
 
 const DRY = process.argv.includes('--dry')
 const ROOT = process.cwd()
@@ -27,14 +28,29 @@ const PUB = join(ROOT, 'public')
 
 const isIndexable = (d) => !/noindex/i.test(d?.robots || '')
 
-/** mtime of the data file, so lastmod moves only when the content moved. */
+/** Date of the last commit that touched the data file, so lastmod moves only
+ * when the content moved. File mtime was used before, but every fresh clone
+ * (Vercel, CI, a new laptop) resets mtime to "now", so every url claimed to
+ * have changed on the day the script last ran — a lastmod Google learns to
+ * ignore. Uncommitted edits fall back to today. */
 function lastmod(file) {
   try {
-    return statSync(file).mtime.toISOString().slice(0, 10)
-  } catch {
-    return new Date().toISOString().slice(0, 10)
-  }
+    const dirty = execFileSync('git', ['status', '--porcelain', '--', file], { encoding: 'utf8' }).trim()
+    if (!dirty) {
+      const d = execFileSync('git', ['log', '-1', '--format=%cs', '--', file], { encoding: 'utf8' }).trim()
+      if (d) return d
+    }
+  } catch {}
+  return new Date().toISOString().slice(0, 10)
 }
+
+/** Every url that 301s — a sitemap must list only final, 200 urls. */
+const REDIRECTED = new Set(
+  JSON.parse(readFileSync(join(ROOT, 'data/redirects-pruned-cities.json'), 'utf8')).map((r) => r.source)
+)
+// middleware.ts ROOT_TO_HUB: these root pages 301 to their /services/ hub.
+for (const s of ['dental-office-cleaning', 'urgent-care-cleaning', 'assisted-living-cleaning']) REDIRECTED.add(`/${s}`)
+const live = (path) => !REDIRECTED.has(path)
 
 function readJson(p) {
   try {
@@ -52,7 +68,7 @@ const corePages = [{ loc: SITE, lastmod: lastmod(join(ROOT, 'data/home.json')), 
 if (existsSync(pagesDir)) {
   for (const f of readdirSync(pagesDir).filter((f) => f.endsWith('.json'))) {
     const d = readJson(join(pagesDir, f))
-    if (!d || !isIndexable(d)) continue
+    if (!d || !isIndexable(d) || !live(`/${f.replace(/\.json$/, '')}`)) continue
     corePages.push({
       loc: `${SITE}/${f.replace(/\.json$/, '')}`,
       lastmod: lastmod(join(pagesDir, f)),
@@ -60,6 +76,13 @@ if (existsSync(pagesDir)) {
     })
   }
 }
+// The three directory hubs are app routes with no data/pages record, which is
+// how they fell out of every sitemap while being linked from the header.
+for (const [path, src] of [
+  ['/services', 'data/services-categories.json'],
+  ['/locations', 'data/locations/index.json'],
+  ['/blog', 'data/blog/index.json'],
+]) corePages.push({ loc: `${SITE}${path}`, lastmod: lastmod(join(ROOT, src)), priority: 0.8 })
 segments['sitemap-pages.xml'] = corePages
 
 // --- city hubs --------------------------------------------------------------
@@ -68,7 +91,7 @@ const locations = []
 if (existsSync(locDir)) {
   for (const f of readdirSync(locDir).filter((f) => f.endsWith('.json') && f !== 'index.json')) {
     const d = readJson(join(locDir, f))
-    if (!d || !isIndexable(d)) continue
+    if (!d || !isIndexable(d) || !live(`/locations/${f.replace(/\.json$/, '')}`)) continue
     locations.push({
       loc: `${SITE}/locations/${f.replace(/\.json$/, '')}`,
       lastmod: lastmod(join(locDir, f)),
@@ -86,7 +109,7 @@ for (const svc of readdirSync(svcRoot)) {
   if (svc.startsWith('_') || !statSync(dir).isDirectory()) continue
 
   const hub = readJson(join(dir, 'index.json'))
-  if (hub && isIndexable(hub)) {
+  if (hub && isIndexable(hub) && live(`/services/${svc}`)) {
     serviceHubs.push({
       loc: `${SITE}/services/${svc}`,
       lastmod: lastmod(join(dir, 'index.json')),
@@ -97,7 +120,7 @@ for (const svc of readdirSync(svcRoot)) {
   const cityPages = []
   for (const f of readdirSync(dir).filter((f) => f.endsWith('.json') && f !== 'index.json')) {
     const d = readJson(join(dir, f))
-    if (!d || !isIndexable(d)) continue
+    if (!d || !isIndexable(d) || !live(`/services/${svc}/${f.replace(/\.json$/, '')}`)) continue
     cityPages.push({
       loc: `${SITE}/services/${svc}/${f.replace(/\.json$/, '')}`,
       lastmod: lastmod(join(dir, f)),

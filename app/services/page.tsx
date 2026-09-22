@@ -2,7 +2,7 @@
 // data/services/index.json drives this page.
 
 import type { Metadata } from "next"
-import Script from "next/script"
+import { ldJson } from "@/lib/ld-json"
 import fs from "node:fs/promises"
 import path from "node:path"
 import Header from "@/components/Header"
@@ -82,11 +82,11 @@ export default async function ServicesHubPage() {
     <>
       <Header />
       {d.schemas.map((schema, i) => (
-        <Script
+        <script
           key={`ld-${i}`}
           id={`ld-services-${i}`}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          dangerouslySetInnerHTML={{ __html: ldJson(schema) }}
         />
       ))}
       <main id="main-content" dangerouslySetInnerHTML={{ __html: d.mainHtml }} />

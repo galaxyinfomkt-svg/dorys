@@ -15,9 +15,24 @@
  * 872 pages shipped as unstyled text dumps. This version emits only classes the
  * design system defines.
  *
- * The publish gate is unchanged and applied per page: index, follow only when a
- * town carries a verified facility or a real medical corridor AND the service
- * has >=10 FAQs and >=6 survey findings. Everything else ships noindex, follow.
+ * Publish gate (tightened 2026-09-22): index, follow only when the town has a
+ * verified facility OF THE TYPE THIS SERVICE CLEANS (FACILITY_MATCH below) AND
+ * the service has >=10 FAQs and >=6 survey findings. Everything else ships
+ * noindex, follow.
+ *
+ * Why: under the old gate any verified facility unlocked all eight services for
+ * a town, so 752 pages were indexable while pages of one service differed by
+ * ~7% (5-word-shingle Jaccard 0.90-0.95 between towns): the town name, one
+ * sentence of landscape, nothing else. That is the doorway pattern Google's
+ * spam policies name. "Skilled nursing cleaning in Acton" is not a page Acton
+ * can support when Acton's only verified facility is a primary-care group.
+ *
+ * Every page — indexed or not — now also carries a town profile built from the
+ * verified city record (population with source, county, region, the dominant
+ * facility type, the facilities relevant to THIS service), a visible
+ * breadcrumb with matching BreadcrumbList schema, and nearby towns from the
+ * same county/region (nearbyCities was empty for all 109 towns, so the
+ * "Also serving nearby" block never rendered).
  *
  *   node scripts/build-service-city-pages.mjs [--dry]
  */
@@ -57,10 +72,70 @@ const UNIVERSAL = new Set([
   'urgent-care-cleaning',
 ])
 
+/** Which verified facilities make a town relevant to a service. Matched
+ * against each majorFacility's `type` + `name` in data/cities. */
+const FACILITY_MATCH = {
+  'dental-office-cleaning': /dental|dentist|orthodont|oral surg|periodont/i,
+  'urgent-care-cleaning': /urgent care|walk-in|express care/i,
+  'skilled-nursing': /nursing|skilled|long-term care|post-acute|transitional care/i,
+  'assisted-living-cleaning': /assisted living|rest home|memory care|senior living|independent living|retirement/i,
+  'rehabilitation-clinics': /rehab|physical therap|occupational therap|sports medicine/i,
+  'ambulatory-outpatient': /outpatient|ambulatory|surgery center|surgical|day surgery|endoscopy/i,
+  'specialty-clinics': /specialty|pediatric|behavioral|oncology|cancer|cardio|nephrology|dialysis|imaging|eye|ophthalm|dermatolog|orthop|\bENT\b/i,
+  'medical-office-cleaning': /primary care|medical office|physician|practice|health center|medical building|multi-specialty|internal medicine|family medicine/i,
+}
+
+/** Shorter labels so "<service> in <Town>, MA | Dory's" fits in ~60 chars. */
+const SHORT = {
+  'assisted-living-cleaning': 'Assisted Living Cleaning',
+  'ambulatory-outpatient': 'Outpatient Facility Cleaning',
+  'skilled-nursing': 'Nursing Home Cleaning',
+  'rehabilitation-clinics': 'Rehab Clinic Cleaning',
+  'urgent-care-cleaning': 'Urgent Care Cleaning',
+  'specialty-clinics': 'Specialty Clinic Cleaning',
+  'medical-office-cleaning': 'Medical Office Cleaning',
+  'dental-office-cleaning': 'Dental Office Cleaning',
+}
+
+const relevantFacilities = (city, service) =>
+  ((city.healthcareLandscape || {}).majorFacilities || []).filter(
+    (f) => f && f.name && FACILITY_MATCH[service.slug]?.test(`${f.type || ''} ${f.name}`)
+  )
+
+function pageTitle(service, city) {
+  for (const name of [service.name, SHORT[service.slug]]) {
+    const t = `${name} in ${city.name}, MA | Dory's Cleaning`
+    if (t.length <= 60) return t
+  }
+  const bare = `${SHORT[service.slug]} in ${city.name}, MA`
+  return bare.length <= 51 ? `${bare} | Dory's` : bare
+}
+
+function pageDescription(service, city) {
+  const tail = `${company.yearsClinicalExperience}+ yrs clinical experience, $2M insured. Free assessment: ${company.phoneDisplay}.`
+  for (const name of [service.name, SHORT[service.slug]]) {
+    const d = `${name} for ${city.name}, MA facilities. ${tail}`
+    if (d.length <= 155) return d
+  }
+  return `${SHORT[service.slug]} in ${city.name}, MA. ${tail}`
+}
+
+/** Towns in the same county (then region), largest first, for internal links. */
+function nearbyFor(city) {
+  const pop = (c) => c.population?.value || 0
+  const others = cities.filter((c) => c.slug !== city.slug && c.name)
+  const same = others.filter((c) => city.county && c.county === city.county).sort((a, b) => pop(b) - pop(a))
+  const region = others
+    .filter((c) => city.region && c.region === city.region && !same.includes(c))
+    .sort((a, b) => pop(b) - pop(a))
+  return [...same, ...region].slice(0, 6)
+}
+
 /** Real assets in public/assets/images/services — the closest clinical match. */
 const HERO = {
   'medical-office-cleaning': 'medical-office-new',
-  'dental-office-cleaning': 'healthcare-cleaning-office',
+  // healthcare-cleaning-office shows a hospital ward, not a dental operatory.
+  'dental-office-cleaning': 'dental-operatory',
   'specialty-clinics': 'specialty-clinic',
   'rehabilitation-clinics': 'rehab-nursing',
   'skilled-nursing': 'infection-control-disinfection',
@@ -119,6 +194,54 @@ function introWithForm(service, city) {
     `style="width:100%;height:600px;border:none;border-radius:8px" ` +
     `title="Facility assessment request form for ${esc(city.name)}"></iframe></div></div>`
   return `<section class="section"><div class="container"><div class="two-col">${left}${right}</div></div></section>`
+}
+
+function breadcrumb(service, city) {
+  return (
+    `<nav class="breadcrumb breadcrumb--page" aria-label="Breadcrumb"><div class="container">` +
+    `<ol class="breadcrumb__list">` +
+    `<li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Home</a></li>` +
+    `<li class="breadcrumb__item"><a class="breadcrumb__link" href="/services">Services</a></li>` +
+    `<li class="breadcrumb__item"><a class="breadcrumb__link" href="/services/${service.slug}">${esc(service.name)}</a></li>` +
+    `<li class="breadcrumb__item" aria-current="page">${esc(city.name)}, MA</li>` +
+    `</ol></div></nav>`
+  )
+}
+
+/** The town profile: every value comes from the verified city record, so each
+ * page states something true about THIS town and THIS service. */
+function townProfile(service, city) {
+  const hc = city.healthcareLandscape || {}
+  const rel = relevantFacilities(city, service)
+  const facts = []
+  if (city.county) facts.push(['County', `${city.county} County`])
+  if (city.region) facts.push(['Region', city.region])
+  if (city.population?.value)
+    facts.push(['Population', `${city.population.value.toLocaleString('en-US')} (2020 US Census)`])
+  if (hc.dominantFacilityType) facts.push(['Typical healthcare setting', hc.dominantFacilityType])
+  if (!facts.length) return ''
+  const dl = facts.map(([k, v]) => `<li><strong>${esc(k)}:</strong> ${esc(v)}</li>`).join('')
+  let fit
+  if (rel.length) {
+    const names = rel
+      .slice(0, 3)
+      .map((f) => `<strong>${esc(f.name)}</strong> (${esc(f.type)})`)
+      .join('; ')
+    fit =
+      `<p>The ${esc(city.name)} facilities closest to what ${esc(service.name.toLowerCase())} covers: ${names}. ` +
+      `They are named as market context — the kind of setting our protocols are written for — not as clients.</p>`
+  } else {
+    fit =
+      `<p>We have not verified a ${esc(SHORT[service.slug].replace(/ Cleaning$/, '').toLowerCase())} facility inside ${esc(
+        city.name
+      )} itself. Practices here are typically served from the same route as neighbouring towns; ` +
+      `call ${esc(PHONE_DISP)} and we will confirm scheduling for your address before any assessment.</p>`
+  }
+  return (
+    `<section class="section"><div class="container container--narrow">` +
+    `<h2 class="section__title">${esc(city.name)} at a glance</h2>` +
+    `<ul class="list list--check">${dl}</ul>${fit}</div></section>`
+  )
 }
 
 /** Market context — verified facilities, never presented as clients. */
@@ -219,14 +342,17 @@ function faqAccordion(service, city) {
 }
 
 function nearbySection(city, service) {
-  const list = (city.nearbyCities || []).slice(0, 6)
+  const list = nearbyFor(city)
   if (!list.length) return ''
+  // Link the service page where it is indexable; otherwise the town hub, so we
+  // never pour internal links into a noindex page.
   const links = list
-    .map(
-      (n) =>
-        `<a href="/services/${service.slug}/${n}-ma" class="nearby-cities__link">${esc(
-          service.name
-        )} in ${esc(titleCase(n))}</a>`
+    .map((n) =>
+      isIndexable(n, service)
+        ? `<a href="/services/${service.slug}/${n.slug}-ma" class="nearby-cities__link">${esc(
+            SHORT[service.slug]
+          )} in ${esc(n.name)}</a>`
+        : `<a href="/locations/${n.slug}-ma" class="nearby-cities__link">Healthcare cleaning in ${esc(n.name)}</a>`
     )
     .join('')
   return (
@@ -252,8 +378,7 @@ function finalCta(service, city) {
 
 function isIndexable(city, service) {
   if (!city.verified) return false
-  const hc = city.healthcareLandscape || {}
-  const hasLocal = (hc.majorFacilities || []).length > 0 || (hc.medicalCorridors || []).length > 0
+  const hasLocal = relevantFacilities(city, service).length > 0
   const hasDepth = (service.faqs || []).length >= 10 && (service.commonSurveyFindings || []).length >= 6
   return hasLocal && hasDepth
 }
@@ -276,7 +401,9 @@ for (const service of services) {
 
     const mainHtml = [
       hero(service, city),
+      breadcrumb(service, city),
       introWithForm(service, city),
+      townProfile(service, city),
       localContext(city),
       findings(service, city),
       regulatory(service),
@@ -294,11 +421,8 @@ for (const service of services) {
       city: city.name,
       category: service.slug,
       categoryLabel: service.name,
-      title: `${service.name} in ${city.name}, MA | Dory's Cleaning Services`,
-      description:
-        `${service.name} for ${city.name}, MA healthcare facilities. ` +
-        `${company.yearsClinicalExperience}+ years clinical experience, $2M insured. ` +
-        `Free facility assessment: ${company.phoneDisplay}.`,
+      title: pageTitle(service, city),
+      description: pageDescription(service, city),
       keywords: `${service.name.toLowerCase()} ${city.name} MA, healthcare cleaning ${city.name}`,
       robots: ok ? 'index, follow' : 'noindex, follow',
       geoRegion: 'US-MA',
@@ -319,8 +443,19 @@ for (const service of services) {
           '@type': 'Service',
           name: `${service.name} in ${city.name}, MA`,
           serviceType: service.name,
-          provider: { '@type': 'LocalBusiness', name: company.legalName, telephone: company.phone },
+          provider: { '@id': `${SITE}/#business` },
           areaServed: { '@type': 'City', name: `${city.name}, MA` },
+          url,
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            ['Home', SITE],
+            ['Services', `${SITE}/services`],
+            [service.name, `${SITE}/services/${service.slug}`],
+            [`${city.name}, MA`, url],
+          ].map(([name, item], i) => ({ '@type': 'ListItem', position: i + 1, name, item })),
         },
       ],
       mainHtml,
