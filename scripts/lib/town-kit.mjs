@@ -174,3 +174,13 @@ export function townFacts(city) {
   return rows
 }
 
+
+/** A verified hospital or medical campus in town — the anchor that outpatient
+ * practices cluster around. Used when no facility matches a service directly,
+ * so a city like Worcester is described by UMass Memorial rather than by
+ * "no verified medical office". Never presented as a client. */
+export function anchorFacility(city) {
+  return ((city.healthcareLandscape || {}).majorFacilities || []).find(
+    (f) => f && f.name && /hospital|medical center|medical campus|health system|outpatient campus/i.test(`${f.type || ''} ${f.name}`)
+  )
+}

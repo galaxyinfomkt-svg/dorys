@@ -1714,3 +1714,9 @@ main .card:not(.service-card) { padding: 1.25rem 1.5rem; }
 .service-mini__title { color: #0f172a; font-size: 1.02rem; line-height: 1.3; }
 .service-mini__text { font-size: 0.92rem; line-height: 1.5; color: #475569; }
 .nearby-cities__dist { font-size: 0.8em; color: #64748b; margin-left: 0.25rem; white-space: nowrap; }
+
+/* Long service names in the page breadcrumb may wrap (was nowrap -> 2px overflow). */
+.breadcrumb--page .breadcrumb__item { white-space: normal !important; }
+/* Sub-headings inside narrow content sections need breathing room. */
+.container--narrow > h3 { margin-top: 1.75rem; margin-bottom: 0.75rem; }
+.container--narrow > .section__title + h3 { margin-top: 1rem; }

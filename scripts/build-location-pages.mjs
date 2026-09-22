@@ -22,7 +22,7 @@ import { join } from 'node:path'
 import {
   company, SITE, PHONE, PHONE_DISP, FORM_ID, YEARS, HQ, cities,
   esc, lc, num, UNIVERSAL, SHORT, NOUN,
-  pick, subset, nearest, hqFacts, round1, relevantFacilities, townFacts,
+  pick, subset, nearest, hqFacts, round1, relevantFacilities, townFacts, anchorFacility,
 } from './lib/town-kit.mjs'
 
 const DRY = process.argv.includes('--dry')
@@ -121,6 +121,8 @@ function servicesGrid(city) {
       const rel = relevantFacilities(city, s)
       let note
       if (rel.length) note = `Verified here: ${rel.slice(0, 2).map((f) => f.name).join('; ')}.`
+      else if (anchorFacility(city) && ['medical-office-cleaning', 'specialty-clinics', 'ambulatory-outpatient', 'urgent-care-cleaning'].includes(s.slug))
+        note = `Practices around ${anchorFacility(city).name}, ${city.name}'s verified healthcare anchor.`
       else {
         const n = nearest(city).find(({ c }) => relevantFacilities(c, s).length)
         note = n

@@ -31,7 +31,7 @@ import { join } from 'node:path'
 import {
   company, SITE, PHONE, PHONE_DISP, FORM_ID, YEARS, HQ, cities,
   esc, titleCase, lc, cap, num, UNIVERSAL, SHORT, NOUN, HERO,
-  hash, pick, subset, nearest, hqFacts, round1, relevantFacilities, townFacts,
+  hash, pick, subset, nearest, hqFacts, round1, relevantFacilities, townFacts, anchorFacility,
 } from './lib/town-kit.mjs'
 
 const DRY = process.argv.includes('--dry')
@@ -165,6 +165,11 @@ function townSection(service, city) {
   if (rel.length) {
     const names = rel.slice(0, 3).map((f) => `<strong>${esc(f.name)}</strong> (${esc(f.type)})`).join('; ')
     fit = `<p>${esc(city.name)} settings that match this service include ${names}. They are listed as market context — the kind of ${esc(one)} our protocol is written for — not as clients.</p>`
+  } else if (anchorFacility(city)) {
+    const a = anchorFacility(city)
+    fit =
+      `<p>${esc(city.name)}'s verified healthcare anchor is <strong>${esc(a.name)}</strong> (${esc(a.type)}). ` +
+      `We clean the ${esc(many)} that operate in and around it — not the hospital itself — and we have not yet verified an individual ${esc(one)} by name here.</p>`
   } else {
     // Nearest served towns that DO have a verified facility of this type.
     const near = nearest(city)
@@ -309,6 +314,11 @@ function faqs(service, city) {
       ? {
           q: `Which ${many} are in ${city.name}?`,
           a: `Verified examples include ${rel.slice(0, 3).map((f) => `${f.name} (${f.type})`).join('; ')}. We list them as local market context; they are not presented as our clients.`,
+        }
+      : anchorFacility(city)
+      ? {
+          q: `Are there ${many} in ${city.name}?`,
+          a: `${city.name}'s verified healthcare anchor is ${anchorFacility(city).name} (${anchorFacility(city).type}), and practices operate in and around it. We have not verified an individual ${one} by name yet; tell us your address and we will confirm scheduling.`,
         }
       : {
           q: `Are there ${many} in ${city.name}?`,
