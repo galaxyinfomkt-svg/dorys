@@ -3,7 +3,10 @@
   "name": "Lexington",
   "county": "Middlesex",
   "region": "Greater Boston",
-  "zipCodes": [],
+  "zipCodes": [
+    "02420",
+    "02421"
+  ],
   "population": {
     "value": 34454,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -57,5 +60,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": true,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "town",
+    "geoid": "2501735215",
+    "landSqMi": 16.43,
+    "waterSqMi": 0.21,
+    "lat": 42.445222,
+    "lng": -71.230015,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }

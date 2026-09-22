@@ -20,10 +20,39 @@
   ],
   "h1Pattern": "Urgent Care Center Cleaning in {city}, MA",
   "tier": 1,
-  "highTouchZones": [],
-  "protocolSteps": [],
+  "highTouchZones": [
+    "triage chairs and vital-signs equipment",
+    "exam tables and stretchers",
+    "rolling stools",
+    "pulse oximeters and blood pressure cuffs",
+    "X-ray positioning surfaces",
+    "keyboards and workstation-on-wheels handles",
+    "registration counter and kiosk screens",
+    "waiting-room seating arms",
+    "door handles and push plates",
+    "restroom fixtures and specimen pass-throughs",
+    "light switches",
+    "hand-sanitizer dispensers"
+  ],
+  "protocolSteps": [
+    "Agree how rooms are turned between patients and what staff disinfect during hours.",
+    "Use disinfectants with contact times short enough for the room-turn pace your clinic runs.",
+    "Terminal-clean rooms used for patients with suspected contact-transmitted or respiratory infections as your policy requires.",
+    "Clean and disinfect the waiting room's shared surfaces — it holds the most undiagnosed patients.",
+    "Change cloths between rooms, clean to dirty, and never carry restroom equipment into exam rooms.",
+    "Empty trash; sharps and regulated waste stay with your licensed hauler.",
+    "Damp-mop floors throughout, including under stretchers and exam tables.",
+    "Log each room, product and time so the next shift knows what was done."
+  ],
   "disinfectantContactTimes": [],
-  "documentationDeliverables": [],
+  "documentationDeliverables": [
+    "room-turn and end-of-day cleaning checklists",
+    "product list with EPA registration numbers and contact times",
+    "Safety Data Sheets",
+    "signed service logs",
+    "bloodborne pathogen training records",
+    "certificate of insurance"
+  ],
   "commonSurveyFindings": [
     {
       "finding": "Standard precautions not followed — hand hygiene missed after glove removal, PPE misused, and reusable PPE not reprocessed to the manufacturer's instructions because staff were never trained to clean it.",
@@ -111,5 +140,23 @@
       "a": "Sterilization and high-level disinfection of reusable instruments is entirely yours — IC.02.02.01 EP 2, first on the Joint Commission's most frequently cited higher-risk requirements for 2023, and it requires device-specific competency no cleaning contractor should claim. Also yours: patient-contact devices, sharps, medication areas, releasing a room as clinically clear, and specimen handling. Ours: environmental surfaces, floors, restrooms, waiting and triage areas, exam-room turnover cleaning once handed over, waste transport to your holding area, and spill decontamination. We put that split in the service agreement line by line, because the gap between the two lists is where citations are born."
     }
   ],
-  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md.",
+  "frequencyGuide": [
+    "Exam rooms: patient-contact surfaces between patients during hours, full clean at end of day.",
+    "Isolation or respiratory rooms: terminal clean after use as policy directs.",
+    "Waiting room: shared surfaces several times a day during peak hours.",
+    "Restrooms: several times a day in busy centers.",
+    "Floors: daily, with spot cleaning of spills immediately."
+  ],
+  "vendorQuestions": [
+    "Can your products meet our room-turn time without shortening contact times?",
+    "How do you handle a room used by a patient with suspected C. difficile or norovirus?",
+    "Will you clean our waiting room during open hours, or only after close?",
+    "How do you coordinate with our staff on isolation rooms?",
+    "What do our logs look like at the end of each day?"
+  ],
+  "scheduleNotes": [
+    "Urgent care centers with long daily hours usually combine an end-of-day clean with an in-hours waiting-room and restroom service.",
+    "Centers open seven days need weekend coverage planned in advance."
+  ]
 }

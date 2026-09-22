@@ -1,111 +1,48 @@
 #!/usr/bin/env node
 /**
- * Compose /services/{service}/{city}-ma pages from the verified data layers,
- * using the site's existing design system.
+ * Compose /services/{service}/{town}-ma pages — 8 services x 109 towns.
  *
- * Two inputs, both researched rather than invented:
- *   data/services/_meta/{slug}.json  — regulatory framework, survey findings, FAQs
- *   data/cities/{slug}.json          — county, population, healthcare landscape
+ * Every page is indexable (owner's decision, 2026-09-22) and is built so that
+ * no two pages say the same thing: each one combines
  *
- * The markup here mirrors what the old hand-built pages used, so the styles in
- * public/assets/css/service-pages.css actually apply: hero with image, two-col
- * intro with the GHL lead form, section / section--alt bands, an accordion FAQ,
- * nearby-cities, and a primary CTA. An earlier version of this script emitted
- * bare <section class="survey-findings"> markup whose classes no CSS styled, so
- * 872 pages shipped as unstyled text dumps. This version emits only classes the
- * design system defines.
+ *   1. facts about THIS town, all from sourced data —
+ *        data/cities/{slug}.json   county, region, population (2020 Census),
+ *                                  verified healthcare landscape, ZIP codes
+ *        city.geo                  Census Gazetteer land/water area, municipal
+ *                                  form and interior point (build-city-geo.mjs)
+ *      plus values computed from them: density, straight-line distance and
+ *      direction from our Marlborough base, nearest served towns;
+ *   2. the facilities in or near the town that match THIS service (verified
+ *      records only — never presented as clients);
+ *   3. a deterministic selection from the service's working knowledge
+ *      (data/services/_meta/{slug}.json: high-touch zones, protocol steps,
+ *      frequency guide, documentation, vendor questions, survey findings,
+ *      FAQs), so neighbouring pages show different, equally true material;
+ *   4. local FAQs answered from the data above.
  *
- * Publish gate (tightened 2026-09-22): index, follow only when the town has a
- * verified facility OF THE TYPE THIS SERVICE CLEANS (FACILITY_MATCH below) AND
- * the service has >=10 FAQs and >=6 survey findings. Everything else ships
- * noindex, follow.
- *
- * Why: under the old gate any verified facility unlocked all eight services for
- * a town, so 752 pages were indexable while pages of one service differed by
- * ~7% (5-word-shingle Jaccard 0.90-0.95 between towns): the town name, one
- * sentence of landscape, nothing else. That is the doorway pattern Google's
- * spam policies name. "Skilled nursing cleaning in Acton" is not a page Acton
- * can support when Acton's only verified facility is a primary-care group.
- *
- * Every page — indexed or not — now also carries a town profile built from the
- * verified city record (population with source, county, region, the dominant
- * facility type, the facilities relevant to THIS service), a visible
- * breadcrumb with matching BreadcrumbList schema, and nearby towns from the
- * same county/region (nearbyCities was empty for all 109 towns, so the
- * "Also serving nearby" block never rendered).
+ * Nothing here is invented: when a value is missing the sentence that needs it
+ * is left out rather than filled with a guess.
  *
  *   node scripts/build-service-city-pages.mjs [--dry]
+ *   npm run build:service-pages   (build -> relink -> sitemaps)
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
+import {
+  company, SITE, PHONE, PHONE_DISP, FORM_ID, YEARS, HQ, cities,
+  esc, titleCase, lc, cap, num, UNIVERSAL, SHORT, NOUN, HERO,
+  hash, pick, subset, nearest, hqFacts, round1, relevantFacilities, townFacts,
+} from './lib/town-kit.mjs'
 
 const DRY = process.argv.includes('--dry')
 const ROOT = process.cwd()
-const company = JSON.parse(readFileSync(join(ROOT, 'data/company.json'), 'utf8'))
-const SITE = company.site.url
-const PHONE = company.phone
-const PHONE_DISP = company.phoneDisplay
-const FORM_ID = company.ghl.formId
 
 const META_DIR = join(ROOT, 'data/services/_meta')
 const services = readdirSync(META_DIR)
   .filter((f) => f.endsWith('.json') && !f.startsWith('_'))
   .map((f) => JSON.parse(readFileSync(join(META_DIR, f), 'utf8')))
 
-const cities = JSON.parse(readFileSync(join(ROOT, 'data/cities-list.json'), 'utf8')).map((r) => {
-  const slug = r.s.replace(/-ma$/, '')
-  const p = join(ROOT, `data/cities/${slug}.json`)
-  return existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : { slug, name: r.n }
-})
-
-const esc = (s) =>
-  String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
-
-/** How much shared, service-wide content a town page repeats (hub has all). */
-const TOWN_FINDINGS = 3
-const TOWN_FAQS = 5
-
-const UNIVERSAL = new Set([
-  'medical-office-cleaning',
-  'dental-office-cleaning',
-  'specialty-clinics',
-  'rehabilitation-clinics',
-  'skilled-nursing',
-  'assisted-living-cleaning',
-  'ambulatory-outpatient',
-  'urgent-care-cleaning',
-])
-
-/** Which verified facilities make a town relevant to a service. Matched
- * against each majorFacility's `type` + `name` in data/cities. */
-const FACILITY_MATCH = {
-  'dental-office-cleaning': /dental|dentist|orthodont|oral surg|periodont/i,
-  'urgent-care-cleaning': /urgent care|walk-in|express care/i,
-  'skilled-nursing': /nursing|skilled|long-term care|post-acute|transitional care/i,
-  'assisted-living-cleaning': /assisted living|rest home|memory care|senior living|independent living|retirement/i,
-  'rehabilitation-clinics': /rehab|physical therap|occupational therap|sports medicine/i,
-  'ambulatory-outpatient': /outpatient|ambulatory|surgery center|surgical|day surgery|endoscopy/i,
-  'specialty-clinics': /specialty|pediatric|behavioral|oncology|cancer|cardio|nephrology|dialysis|imaging|eye|ophthalm|dermatolog|orthop|\bENT\b/i,
-  'medical-office-cleaning': /primary care|medical office|physician|practice|health center|medical building|multi-specialty|internal medicine|family medicine/i,
-}
-
-/** Shorter labels so "<service> in <Town>, MA | Dory's" fits in ~60 chars. */
-const SHORT = {
-  'assisted-living-cleaning': 'Assisted Living Cleaning',
-  'ambulatory-outpatient': 'Outpatient Facility Cleaning',
-  'skilled-nursing': 'Nursing Home Cleaning',
-  'rehabilitation-clinics': 'Rehab Clinic Cleaning',
-  'urgent-care-cleaning': 'Urgent Care Cleaning',
-  'specialty-clinics': 'Specialty Clinic Cleaning',
-  'medical-office-cleaning': 'Medical Office Cleaning',
-  'dental-office-cleaning': 'Dental Office Cleaning',
-}
-
-const relevantFacilities = (city, service) =>
-  ((city.healthcareLandscape || {}).majorFacilities || []).filter(
-    (f) => f && f.name && FACILITY_MATCH[service.slug]?.test(`${f.type || ''} ${f.name}`)
-  )
-
+// --- page parts ---------------------------------------------------------------
 function pageTitle(service, city) {
   for (const name of [service.name, SHORT[service.slug]]) {
     const t = `${name} in ${city.name}, MA | Dory's Cleaning`
@@ -116,42 +53,34 @@ function pageTitle(service, city) {
 }
 
 function pageDescription(service, city) {
-  const tail = `${company.yearsClinicalExperience}+ yrs clinical experience, $2M insured. Free assessment: ${company.phoneDisplay}.`
+  const where = city.county ? `${city.name}, MA (${city.county} County)` : `${city.name}, MA`
+  const tails = [
+    `${YEARS}+ yrs clinical experience, $2M insured. Free assessment: ${PHONE_DISP}.`,
+    `Written scope, EPA-registered products, signed logs. ${PHONE_DISP}.`,
+    `Founder with ${YEARS}+ yrs in clinical settings. $2M insured. ${PHONE_DISP}.`,
+  ]
+  const tail = pick(tails, `desc:${service.slug}:${city.slug}`)
   for (const name of [service.name, SHORT[service.slug]]) {
-    const d = `${name} for ${city.name}, MA facilities. ${tail}`
-    if (d.length <= 155) return d
+    for (const w of [where, `${city.name}, MA`]) {
+      const d = `${name} for ${w}. ${tail}`
+      if (d.length <= 155) return d
+    }
   }
-  return `${SHORT[service.slug]} in ${city.name}, MA. ${tail}`
+  return `${SHORT[service.slug]} in ${city.name}, MA. ${tail}`.slice(0, 155)
 }
-
-/** Towns in the same county (then region), largest first, for internal links. */
-function nearbyFor(city) {
-  const pop = (c) => c.population?.value || 0
-  const others = cities.filter((c) => c.slug !== city.slug && c.name)
-  const same = others.filter((c) => city.county && c.county === city.county).sort((a, b) => pop(b) - pop(a))
-  const region = others
-    .filter((c) => city.region && c.region === city.region && !same.includes(c))
-    .sort((a, b) => pop(b) - pop(a))
-  return [...same, ...region].slice(0, 6)
-}
-
-/** Real assets in public/assets/images/services — the closest clinical match. */
-const HERO = {
-  'medical-office-cleaning': 'medical-office-new',
-  // healthcare-cleaning-office shows a hospital ward, not a dental operatory.
-  'dental-office-cleaning': 'dental-operatory',
-  'specialty-clinics': 'specialty-clinic',
-  'rehabilitation-clinics': 'rehab-nursing',
-  'skilled-nursing': 'infection-control-disinfection',
-  'assisted-living-cleaning': 'assisted-living-senior-care',
-  'ambulatory-outpatient': 'ambulatory-facility',
-  'urgent-care-cleaning': 'clinic-outpatient-sanitation',
-}
-
-const titleCase = (s) => s.replace(/-/g, ' ').replace(/\b\w/g, (m) => m.toUpperCase())
 
 function hero(service, city) {
   const img = HERO[service.slug] || 'medical-office-new'
+  const [one, many] = NOUN[service.slug]
+  const hq = hqFacts(city)
+  const key = `hero:${service.slug}:${city.slug}`
+  const subtitles = [
+    `Clinical-grade cleaning for ${many} in ${city.name}${city.county ? ` and across ${city.county} County` : ''}. Founded by a ${YEARS}-year clinical veteran. $2M insured.`,
+    `${cap(one)} cleaning built on CDC and OSHA practice, documented visit by visit, for ${city.name} facilities. $2M insured.`,
+    hq && hq.d
+      ? `Serving ${city.name} from our ${HQ.name} base, about ${hq.d} miles ${hq.dir}. Written scope, EPA-registered products, signed logs.`
+      : `Serving ${city.name} from our ${HQ.name} base. Written scope, EPA-registered products, signed logs.`,
+  ]
   return (
     `<section class="hero hero--inner">` +
     `<div class="hero__background">` +
@@ -160,44 +89,12 @@ function hero(service, city) {
     `loading="eager" fetchpriority="high"></div>` +
     `<div class="container"><div class="hero__content hero__content--center">` +
     `<h1 class="hero__title">${esc(service.name)} in ${esc(city.name)}, MA</h1>` +
-    `<p class="hero__subtitle">Clinical-grade environmental services for ${esc(city.name)} healthcare facilities. ` +
-    `Founded by a ${company.yearsClinicalExperience}-year clinical veteran. $2M insured.</p>` +
+    `<p class="hero__subtitle">${esc(pick(subtitles, key))}</p>` +
     `<div class="hero__ctas">` +
     `<a href="#quote" class="btn btn--primary btn--lg btn--pulse">Free Facility Assessment</a>` +
     `<a href="tel:${PHONE}" class="btn btn--outline-light btn--lg">Call ${esc(PHONE_DISP)}</a>` +
     `</div></div></div></section>`
   )
-}
-
-function introWithForm(service, city) {
-  const included = (service.facilityTypes || []).slice(0, 5)
-  const url = `https://api.leadconnectorhq.com/widget/form/${FORM_ID}?city=${encodeURIComponent(
-    city.name
-  )}&service=${encodeURIComponent(service.name)}`
-  const left =
-    `<div class="animate-on-scroll animate-fade-right">` +
-    `<h2>${esc(service.name)} for ${esc(city.name)} facilities</h2>` +
-    `<p class="lead">Dory's Cleaning Services provides ${esc(service.name.toLowerCase())} to ${esc(
-      city.county ? `${city.name}, ${city.county} County` : city.name
-    )}. What we protect against: ${esc(service.centralRisk)}. The zone that matters most: ${esc(
-      service.criticalZone
-    )}.</p>` +
-    (included.length
-      ? `<ul class="list list--check">${included
-          .map((t) => `<li>${esc(titleCase(t))}</li>`)
-          .join('')}</ul>`
-      : '') +
-    `<div class="btn-group mt-xl">` +
-    `<a href="#quote" class="btn btn--primary">Request Assessment</a>` +
-    `<a href="tel:${PHONE}" class="btn btn--secondary">Call ${esc(PHONE_DISP)}</a>` +
-    `</div></div>`
-  const right =
-    `<div class="animate-on-scroll animate-fade-left animate-delay-200" id="quote">` +
-    `<div class="form-bare" style="max-width:620px;margin:1.5rem auto;width:100%;">` +
-    `<iframe loading="lazy" src="${esc(url)}" ` +
-    `style="width:100%;height:600px;border:none;border-radius:8px" ` +
-    `title="Facility assessment request form for ${esc(city.name)}"></iframe></div></div>`
-  return `<section class="section"><div class="container"><div class="two-col">${left}${right}</div></div></section>`
 }
 
 function breadcrumb(service, city) {
@@ -212,82 +109,141 @@ function breadcrumb(service, city) {
   )
 }
 
-/** The town profile: every value comes from the verified city record, so each
- * page states something true about THIS town and THIS service. */
-function townProfile(service, city) {
-  const hc = city.healthcareLandscape || {}
+function introWithForm(service, city) {
+  const key = `intro:${service.slug}:${city.slug}`
+  const [, many] = NOUN[service.slug]
+  const included = subset(service.facilityTypes || [], 4, `${key}:types`)
+  const h2 = pick(
+    [
+      `${service.name} for ${city.name} facilities`,
+      `What ${lc(service.name)} covers in ${city.name}`,
+      `${city.name} ${many}: how we clean`,
+    ],
+    `${key}:h2`
+  )
+  const lead = pick(
+    [
+      `For ${many} in ${city.name}, the risk we plan around is ${service.centralRisk}. The surfaces that decide the outcome: ${service.criticalZone}.`,
+      `In a ${NOUN[service.slug][0]}, most cleaning failures happen at ${service.criticalZone}. That is where our ${city.name} crews start, because the underlying risk is ${service.centralRisk}.`,
+      `Our ${city.name} program for ${many} is written around one risk — ${service.centralRisk} — and one set of surfaces: ${service.criticalZone}.`,
+    ],
+    `${key}:lead`
+  )
+  const url = `https://api.leadconnectorhq.com/widget/form/${FORM_ID}?city=${encodeURIComponent(
+    city.name
+  )}&service=${encodeURIComponent(service.name)}`
+  const left =
+    `<div class="animate-on-scroll animate-fade-right">` +
+    `<h2>${esc(h2)}</h2>` +
+    `<p class="lead">${esc(lead)}</p>` +
+    (included.length
+      ? `<p>Facility types we clean under this service:</p><ul class="list list--check">${included
+          .map((t) => `<li>${esc(titleCase(t))}</li>`)
+          .join('')}</ul>`
+      : '') +
+    (service.buyer ? `<p>Usually arranged with the ${esc(lc(service.buyer))}.</p>` : '') +
+    `<div class="btn-group mt-xl">` +
+    `<a href="#quote" class="btn btn--primary">Request Assessment</a>` +
+    `<a href="tel:${PHONE}" class="btn btn--secondary">Call ${esc(PHONE_DISP)}</a>` +
+    `</div></div>`
+  const right =
+    `<div class="animate-on-scroll animate-fade-left animate-delay-200" id="quote">` +
+    `<div class="form-bare" style="max-width:620px;margin:1.5rem auto;width:100%;">` +
+    `<iframe loading="lazy" src="${esc(url)}" ` +
+    `style="width:100%;height:600px;border:none;border-radius:8px" ` +
+    `title="Facility assessment request form for ${esc(city.name)}"></iframe></div></div>`
+  return `<section class="section"><div class="container"><div class="two-col">${left}${right}</div></div></section>`
+}
+
+function townSection(service, city) {
+  const rows = townFacts(city)
+  if (!rows.length) return ''
+  const key = `town:${service.slug}:${city.slug}`
+  const [one, many] = NOUN[service.slug]
   const rel = relevantFacilities(city, service)
-  const facts = []
-  if (city.county) facts.push(['County', `${city.county} County`])
-  if (city.region) facts.push(['Region', city.region])
-  if (city.population?.value)
-    facts.push(['Population', `${city.population.value.toLocaleString('en-US')} (2020 US Census)`])
-  if (hc.dominantFacilityType) facts.push(['Typical healthcare setting', hc.dominantFacilityType])
-  if (!facts.length) return ''
-  const dl = facts.map(([k, v]) => `<li><strong>${esc(k)}:</strong> ${esc(v)}</li>`).join('')
   let fit
   if (rel.length) {
-    const names = rel
-      .slice(0, 3)
-      .map((f) => `<strong>${esc(f.name)}</strong> (${esc(f.type)})`)
-      .join('; ')
-    fit =
-      `<p>The ${esc(city.name)} facilities closest to what ${esc(service.name.toLowerCase())} covers: ${names}. ` +
-      `They are named as market context — the kind of setting our protocols are written for — not as clients.</p>`
+    const names = rel.slice(0, 3).map((f) => `<strong>${esc(f.name)}</strong> (${esc(f.type)})`).join('; ')
+    fit = `<p>${esc(city.name)} settings that match this service include ${names}. They are listed as market context — the kind of ${esc(one)} our protocol is written for — not as clients.</p>`
   } else {
+    // Nearest served towns that DO have a verified facility of this type.
+    const near = nearest(city)
+      .filter(({ c }) => relevantFacilities(c, service).length)
+      .slice(0, 2)
     fit =
-      `<p>We have not verified a ${esc(SHORT[service.slug].replace(/ Cleaning$/, '').toLowerCase())} facility inside ${esc(
-        city.name
-      )} itself. Practices here are typically served from the same route as neighbouring towns; ` +
-      `call ${esc(PHONE_DISP)} and we will confirm scheduling for your address before any assessment.</p>`
+      `<p>We have not verified a ${esc(one)} inside ${esc(city.name)} itself` +
+      (near.length
+        ? `; the closest verified ones on our routes are in ${near
+            .map(({ c, d }) => `<a href="/services/${service.slug}/${c.slug}-ma">${esc(c.name)}</a> (about ${round1(d)} mi)`)
+            .join(' and ')}.`
+        : '.') +
+      ` If your ${esc(one)} is in ${esc(city.name)}, call ${esc(PHONE_DISP)} and we will confirm scheduling for your address before the assessment.</p>`
   }
+  const corridors = city.healthcareLandscape?.medicalCorridors || []
+  const corr = corridors.length
+    ? `<p>Medical offices in ${esc(city.name)} cluster along ${corridors.map((c) => `<strong>${esc(c)}</strong>`).join(' and ')}.</p>`
+    : ''
+  const h2 = pick(
+    [`${city.name} at a glance`, `About ${city.name}, MA`, `${city.name}: the local picture`],
+    `${key}:h2`
+  )
   return (
-    `<section class="section"><div class="container container--narrow">` +
-    `<h2 class="section__title">${esc(city.name)} at a glance</h2>` +
-    `<ul class="list list--check">${dl}</ul>${fit}</div></section>`
+    `<section class="section section--alt"><div class="container container--narrow">` +
+    `<h2 class="section__title">${esc(h2)}</h2>` +
+    `<ul class="list list--check">${rows.map(([k, v]) => `<li><strong>${esc(k)}:</strong> ${esc(v)}</li>`).join('')}</ul>` +
+    fit +
+    corr +
+    `<p class="text-muted" style="font-size:0.9rem">Sources: U.S. Census Bureau (2020 Census; Gazetteer files), USPS ZIP codes, and our own verification of local facilities. Distances are straight-line.</p>` +
+    `</div></section>`
   )
 }
 
-/** Market context — verified facilities, never presented as clients. */
-function localContext(city) {
-  const hc = city.healthcareLandscape
-  if (!hc) return ''
-  const facilities = (hc.majorFacilities || []).filter((f) => f && f.name)
-  const corridors = hc.medicalCorridors || []
-  if (!facilities.length && !corridors.length) return ''
+/** A rotating slice of the service's working knowledge. */
+function knowledge(service, city) {
+  const key = `know:${service.slug}:${city.slug}`
+  const zones = subset(service.highTouchZones, 6, `${key}:z`)
+  const steps = subset(service.protocolSteps, 5, `${key}:s`)
+  const freq = subset(service.frequencyGuide, 3, `${key}:f`)
+  const docs = subset(service.documentationDeliverables, 4, `${key}:d`)
+  const sched = pick(service.scheduleNotes || [''], `${key}:n`)
   const parts = []
-  if (facilities.length) {
-    const names = facilities.slice(0, 3).map((f) => `<strong>${esc(f.name)}</strong>`)
+  if (zones.length)
     parts.push(
-      `<p class="lead">${esc(city.name)} is anchored by ${names.join(
-        ', '
-      )}. We serve the medical offices, clinics and practices in and around that corridor — not the hospitals themselves.</p>`
+      `<h3>${esc(pick(['High-touch surfaces on every visit', `The surfaces we prioritise in ${city.name}`, 'Where contamination concentrates'], `${key}:hz`))}</h3>` +
+        `<ul class="list list--check">${zones.map((z) => `<li>${esc(cap(z))}</li>`).join('')}</ul>`
     )
-  }
-  if (corridors.length) {
+  if (steps.length)
     parts.push(
-      `<p>The local concentration of practices sits along ${corridors
-        .map((c) => `<strong>${esc(c)}</strong>`)
-        .join(' and ')}.</p>`
+      `<h3>${esc(pick(['How a visit runs', 'Our sequence, step by step', 'What the crew does, in order'], `${key}:hs`))}</h3>` +
+        `<ol class="list list--steps">${steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol>`
     )
-  }
+  if (freq.length)
+    parts.push(
+      `<h3>${esc(pick(['How often', 'Frequency, area by area', 'A starting schedule'], `${key}:hf`))}</h3>` +
+        `<ul class="list list--check">${freq.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>` +
+        (sched ? `<p>${esc(sched)}</p>` : '')
+    )
+  if (docs.length)
+    parts.push(
+      `<h3>${esc(pick(['What you keep on file', 'Documentation you receive', 'Records for your surveyors'], `${key}:hd`))}</h3>` +
+        `<ul class="list list--check">${docs.map((d) => `<li>${esc(cap(d))}</li>`).join('')}</ul>`
+    )
+  if (!parts.length) return ''
+  const h2 = pick(
+    [`${SHORT[service.slug]} in ${city.name}: the working detail`, `Inside a ${city.name} service visit`, `How we clean ${NOUN[service.slug][1]} in ${city.name}`],
+    `${key}:h2`
+  )
   return (
-    `<section class="section section--alt"><div class="container container--narrow">` +
-    `<h2 class="section__title">Healthcare in ${esc(city.name)}</h2>${parts.join('')}</div></section>`
+    `<section class="section"><div class="container container--narrow">` +
+    `<h2 class="section__title">${esc(h2)}</h2>${parts.join('')}` +
+    `</div></section>`
   )
 }
 
 function findings(service, city) {
-  // The town page carries the three findings a buyer should see first; the hub
-  // holds the full list. Repeating every finding on 109 town pages made the
-  // shared block ~80% of each page — boilerplate, not local content.
   const all = service.commonSurveyFindings || []
-  const items = all.slice(0, TOWN_FINDINGS)
+  const items = subset(all, 3, `find:${service.slug}:${city.slug}`)
   if (!items.length) return ''
-  // Cards, not a wall of paragraphs. This is the most valuable content on the
-  // page and was the least scannable — a facilities buyer skims for the citation
-  // that applies to them. Each card leads with the citation badge, then the
-  // finding, then the frequency where one is published.
   const cards = items
     .map(
       (f) =>
@@ -302,9 +258,13 @@ function findings(service, city) {
         `</div>`
     )
     .join('')
+  const h2 = pick(
+    [`Survey findings we help ${city.name} facilities prevent`, `Citations ${city.name} ${NOUN[service.slug][1]} can avoid`, `What inspectors cite — and how we prevent it`],
+    `find:h2:${service.slug}:${city.slug}`
+  )
   return (
-    `<section class="section"><div class="container">` +
-    `<h2 class="section__title text-center">Survey findings we help ${esc(city.name)} facilities prevent</h2>` +
+    `<section class="section section--alt"><div class="container">` +
+    `<h2 class="section__title text-center">${esc(h2)}</h2>` +
     `<p class="section__subtitle text-center mb-lg">Real, published regulatory findings — every citation links to its source.</p>` +
     `<div class="benefits-grid">${cards}</div>` +
     (all.length > items.length
@@ -314,21 +274,56 @@ function findings(service, city) {
   )
 }
 
-function regulatory(service) {
-  const items = service.regulatoryFramework || []
-  if (!items.length) return ''
+function vendorQuestions(service, city) {
+  const qs = subset(service.vendorQuestions, 3, `vq:${service.slug}:${city.slug}`)
+  if (!qs.length) return ''
   return (
-    `<section class="section section--alt"><div class="container container--narrow">` +
-    `<h2 class="section__title">The standards that govern this work</h2>` +
-    `<ul class="list list--check">${items.map((r) => `<li>${esc(r)}</li>`).join('')}</ul></div></section>`
+    `<section class="section"><div class="container container--narrow">` +
+    `<h2 class="section__title">${esc(pick([`Questions to ask any ${city.name} cleaning vendor`, 'Before you sign with a cleaning company', 'Questions worth asking at the walkthrough'], `vq:h2:${service.slug}:${city.slug}`))}</h2>` +
+    `<ul class="list list--check">${qs.map((q) => `<li>${esc(q)}</li>`).join('')}</ul>` +
+    `<p>We answer each of these in writing after the free assessment.</p>` +
+    `</div></section>`
   )
 }
 
-function faqAccordion(service, city) {
-  const allFaqs = service.faqs || []
-  const faqs = allFaqs.slice(0, TOWN_FAQS)
-  if (!faqs.length) return { html: '', schema: null }
-  const items = faqs
+/** Local questions answered from the town data; service FAQs rotate. */
+function faqs(service, city) {
+  const key = `faq:${service.slug}:${city.slug}`
+  const [one, many] = NOUN[service.slug]
+  const local = []
+  const hq = hqFacts(city)
+  local.push({
+    q: `Do you provide ${lc(service.name)} in ${city.name}, MA?`,
+    a: `Yes. ${city.name}${city.county ? ` (${city.county} County)` : ''} is one of the ${company.citiesServed} Massachusetts cities and towns we serve.` +
+      (hq && hq.d ? ` It is about ${hq.d} miles ${hq.dir} of our ${HQ.name} base in a straight line.` : '') +
+      ` Every engagement starts with a free on-site assessment; call ${PHONE_DISP}.`,
+  })
+  if (city.zipCodes?.length)
+    local.push({
+      q: `Which ${city.name} ZIP codes do you cover?`,
+      a: `All of them: ${city.zipCodes.join(', ')}. If your facility sits on a town line, tell us the street address and we will confirm.`,
+    })
+  const rel = relevantFacilities(city, service)
+  local.push(
+    rel.length
+      ? {
+          q: `Which ${many} are in ${city.name}?`,
+          a: `Verified examples include ${rel.slice(0, 3).map((f) => `${f.name} (${f.type})`).join('; ')}. We list them as local market context; they are not presented as our clients.`,
+        }
+      : {
+          q: `Are there ${many} in ${city.name}?`,
+          a: `We have not verified one inside ${city.name}. ${city.healthcareLandscape?.dominantFacilityType ? `The typical healthcare setting here is ${city.healthcareLandscape.dominantFacilityType}. ` : ''}If you operate a ${one} in town, we can schedule it on the same route as neighbouring towns.`,
+        }
+  )
+  const near = nearest(city).slice(0, 3)
+  if (near.length)
+    local.push({
+      q: `Which nearby towns do you also serve?`,
+      a: `The closest served towns to ${city.name} are ${near.map(({ c, d }) => `${c.name} (about ${round1(d)} mi)`).join(', ')}. See the full list on our service areas page.`,
+    })
+  const svc = subset(service.faqs || [], 3, key)
+  const all = [...subset(local, 3, `${key}:local`), ...svc]
+  const items = all
     .map(
       (f) =>
         `<div class="accordion__item">` +
@@ -339,46 +334,34 @@ function faqAccordion(service, city) {
     )
     .join('')
   const html =
-    `<section class="section"><div class="container container--narrow">` +
-    `<h2 class="section__title">${esc(service.name)} in ${esc(city.name)} — common questions</h2>` +
+    `<section class="section section--alt"><div class="container container--narrow">` +
+    `<h2 class="section__title">${esc(pick([`${SHORT[service.slug]} in ${city.name} — common questions`, `${city.name} questions, answered`, `FAQ: ${lc(service.name)} in ${city.name}`], `${key}:h2`))}</h2>` +
     `<div class="accordion">${items}</div>` +
-    (allFaqs.length > faqs.length
-      ? `<p class="text-center mt-lg"><a href="/services/${service.slug}#faq">See all ${allFaqs.length} questions on ${esc(
-          service.name.toLowerCase()
-        )}</a></p>`
-      : '') +
+    `<p class="text-center mt-lg"><a href="/services/${service.slug}#faq">All ${(service.faqs || []).length} questions on ${esc(lc(service.name))}</a></p>` +
     `</div></section>`
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
-    })),
+    mainEntity: all.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
   }
   return { html, schema }
 }
 
 function nearbySection(city, service) {
-  const list = nearbyFor(city)
+  const list = nearest(city).slice(0, 6)
   if (!list.length) return ''
-  // Link the service page where it is indexable; otherwise the town hub, so we
-  // never pour internal links into a noindex page.
   const links = list
-    .map((n) =>
-      isIndexable(n, service)
-        ? `<a href="/services/${service.slug}/${n.slug}-ma" class="nearby-cities__link">${esc(
-            SHORT[service.slug]
-          )} in ${esc(n.name)}</a>`
-        : `<a href="/locations/${n.slug}-ma" class="nearby-cities__link">Healthcare cleaning in ${esc(n.name)}</a>`
+    .map(
+      ({ c, d }) =>
+        `<a href="/services/${service.slug}/${c.slug}-ma" class="nearby-cities__link">${esc(SHORT[service.slug])} in ${esc(c.name)} <span class="nearby-cities__dist">${round1(d)} mi</span></a>`
     )
     .join('')
   return (
-    `<section class="section section--alt"><div class="container">` +
-    `<h2 class="section__title">Also serving nearby</h2>` +
+    `<section class="section"><div class="container">` +
+    `<h2 class="section__title">${esc(pick([`Also serving near ${city.name}`, `Neighbouring towns we serve`, `Nearby ${NOUN[service.slug][1]} we clean`], `near:${service.slug}:${city.slug}`))}</h2>` +
     `<div class="nearby-cities"><div class="nearby-cities__list">${links}</div></div>` +
-    `<div class="text-center mt-xl"><a href="/locations" class="btn btn--primary">All ${company.citiesServed} cities &amp; towns</a></div>` +
+    `<div class="text-center mt-xl"><a href="/locations/${city.slug}-ma" class="btn btn--secondary">All services in ${esc(city.name)}</a> ` +
+    `<a href="/locations" class="btn btn--primary">All ${company.citiesServed} cities &amp; towns</a></div>` +
     `</div></section>`
   )
 }
@@ -386,8 +369,8 @@ function nearbySection(city, service) {
 function finalCta(service, city) {
   return (
     `<section class="section section--primary"><div class="container text-center">` +
-    `<h2 class="text-white mb-lg">Free ${esc(service.name.toLowerCase())} assessment in ${esc(city.name)}</h2>` +
-    `<p class="lead text-white mb-xl" style="opacity:0.9">${company.yearsClinicalExperience}+ years clinical experience. $2M insured. No obligation.</p>` +
+    `<h2 class="text-white mb-lg">Free ${esc(lc(service.name))} assessment in ${esc(city.name)}</h2>` +
+    `<p class="lead text-white mb-xl" style="opacity:0.9">${YEARS}+ years clinical experience. $2M insured. No obligation.</p>` +
     `<div class="btn-group btn-group--center">` +
     `<a href="#quote" class="btn btn--white btn--lg">Request Assessment</a>` +
     `<a href="tel:${PHONE}" class="btn btn--outline-light btn--lg">Call ${esc(PHONE_DISP)}</a>` +
@@ -395,38 +378,30 @@ function finalCta(service, city) {
   )
 }
 
-function isIndexable(city, service) {
-  if (!city.verified) return false
-  const hasLocal = relevantFacilities(city, service).length > 0
-  const hasDepth = (service.faqs || []).length >= 10 && (service.commonSurveyFindings || []).length >= 6
-  return hasLocal && hasDepth
-}
-
+// --- build --------------------------------------------------------------------
 let written = 0
-let indexable = 0
 const perService = {}
 
 for (const service of services) {
   if (!UNIVERSAL.has(service.slug)) continue
   const dir = join(ROOT, 'data/services', service.slug)
   mkdirSync(dir, { recursive: true })
-  perService[service.slug] = { total: 0, indexable: 0 }
+  perService[service.slug] = 0
 
   for (const city of cities) {
     const file = join(dir, `${city.slug}-ma.json`)
     const url = `${SITE}/services/${service.slug}/${city.slug}-ma`
-    const ok = isIndexable(city, service)
-    const { html: faqHtml, schema: faqSchema } = faqAccordion(service, city)
-
+    const { html: faqHtml, schema: faqSchema } = faqs(service, city)
+    // Section order varies a little between pages; content order within a
+    // section never does.
+    const middle = [knowledge(service, city), findings(service, city), vendorQuestions(service, city)]
+    const rot = hash(`order:${service.slug}:${city.slug}`) % 2
     const mainHtml = [
       hero(service, city),
       breadcrumb(service, city),
       introWithForm(service, city),
-      townProfile(service, city),
-      localContext(city),
-      findings(service, city),
-      // The full regulatory list lives on the hub; repeating it on every town
-      // page was pure boilerplate. The findings block links to the hub.
+      townSection(service, city),
+      ...(rot ? [middle[1], middle[0], middle[2]] : middle),
       faqHtml,
       nearbySection(city, service),
       finalCta(service, city),
@@ -435,36 +410,46 @@ for (const service of services) {
       .join('\n')
 
     const existing = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {}
+    const title = pageTitle(service, city)
+    const description = pageDescription(service, city)
+    const img = `${SITE}/assets/images/services/${HERO[service.slug] || 'medical-office-new'}.webp`
     const data = {
       ...existing,
       slug: `${city.slug}-ma`,
       city: city.name,
       category: service.slug,
       categoryLabel: service.name,
-      title: pageTitle(service, city),
-      description: pageDescription(service, city),
-      keywords: `${service.name.toLowerCase()} ${city.name} MA, healthcare cleaning ${city.name}`,
-      robots: ok ? 'index, follow' : 'noindex, follow',
+      title,
+      description,
+      keywords: `${service.name.toLowerCase()} ${city.name} MA, healthcare cleaning ${city.name}${city.county ? `, ${city.county} County` : ''}`,
+      robots: 'index, follow',
       geoRegion: 'US-MA',
       geoPlacename: `${city.name}, Massachusetts`,
       canonical: url,
       ogType: 'website',
       ogUrl: url,
       ogTitle: `${service.name} in ${city.name}, MA`,
-      ogDescription: `Clinical-grade environmental services for ${city.name} healthcare facilities.`,
-      ogImage: `${SITE}/assets/images/services/${HERO[service.slug] || 'medical-office-new'}.webp`,
+      ogDescription: description,
+      ogImage: img,
       ogLocale: 'en_US',
       ogSiteName: company.shortName,
       twitterCard: 'summary_large_image',
+      twitterTitle: `${service.name} in ${city.name}, MA`,
+      twitterDescription: description,
+      twitterImage: img,
       schemas: [
-        ...(faqSchema ? [faqSchema] : []),
+        faqSchema,
         {
           '@context': 'https://schema.org',
           '@type': 'Service',
           name: `${service.name} in ${city.name}, MA`,
           serviceType: service.name,
           provider: { '@id': `${SITE}/#business` },
-          areaServed: { '@type': 'City', name: `${city.name}, MA` },
+          areaServed: {
+            '@type': 'City',
+            name: `${city.name}, MA`,
+            ...(city.geo ? { geo: { '@type': 'GeoCoordinates', latitude: city.geo.lat, longitude: city.geo.lng } } : {}),
+          },
           url,
         },
         {
@@ -480,14 +465,11 @@ for (const service of services) {
       ],
       mainHtml,
     }
+    delete data.aiSummary
 
     if (!DRY) writeFileSync(file, JSON.stringify(data, null, 2) + '\n')
     written++
-    perService[service.slug].total++
-    if (ok) {
-      indexable++
-      perService[service.slug].indexable++
-    }
+    perService[service.slug]++
   }
 }
 
@@ -500,15 +482,9 @@ if (!DRY) {
   writeFileSync(join(ROOT, 'data/services-cities.json'), JSON.stringify(idx, null, 2) + '\n')
   writeFileSync(
     join(ROOT, 'data/services-categories.json'),
-    JSON.stringify(
-      services.filter((s) => UNIVERSAL.has(s.slug)).map((s) => s.slug),
-      null,
-      2
-    ) + '\n'
+    JSON.stringify(services.filter((s) => UNIVERSAL.has(s.slug)).map((s) => s.slug), null, 2) + '\n'
   )
 }
 
-console.log(`${DRY ? 'DRY RUN — ' : ''}pages: ${written}  indexable: ${indexable}  noindex: ${written - indexable}`)
-for (const [slug, s] of Object.entries(perService)) {
-  console.log(`  ${slug.padEnd(26)} ${String(s.total).padStart(4)}  indexable ${s.indexable}`)
-}
+console.log(`${DRY ? 'DRY RUN — ' : ''}pages: ${written} (all indexable)`)
+for (const [slug, n] of Object.entries(perService)) console.log(`  ${slug.padEnd(26)} ${String(n).padStart(4)}`)

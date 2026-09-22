@@ -1562,7 +1562,10 @@ html, body {
   .hero-premium__trust-badge,
   .hero-premium__trust-badge span { font-size: 12px !important; }
   .service-card__link,
+  .service-card--premium .service-card__link,
   .cta-box__badge { font-size: 12.5px !important; }
+  .video-text-section__badge { font-size: 11px !important; }
+  main a.btn { min-height: 40px; }
   .accordion__header { font-size: 15px !important; }
   .accordion__body { font-size: 15px !important; }
   .section__badge { font-size: 11px !important; }
@@ -1699,3 +1702,15 @@ main .card:not(.service-card) { padding: 1.25rem 1.5rem; }
 /* HTML sitemap: town lists in columns. */
 .sitemap-list--towns { columns: 4 160px; column-gap: 1.5rem; list-style: none; padding: 0; }
 .sitemap-list--towns li { break-inside: avoid; padding: 2px 0; }
+
+/* Town hub: eight service cards with the town-specific note. */
+.service-mini-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+.service-mini {
+  display: flex; flex-direction: column; gap: 0.4rem; padding: 1.1rem 1.25rem;
+  background: #fff; border: 1px solid #e2e8f0; border-left: 4px solid #2b70e4; border-radius: 10px;
+  text-decoration: none !important; color: #334155; transition: box-shadow 0.2s, transform 0.2s;
+}
+.service-mini:hover { box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08); transform: translateY(-2px); }
+.service-mini__title { color: #0f172a; font-size: 1.02rem; line-height: 1.3; }
+.service-mini__text { font-size: 0.92rem; line-height: 1.5; color: #475569; }
+.nearby-cities__dist { font-size: 0.8em; color: #64748b; margin-left: 0.25rem; white-space: nowrap; }

@@ -3,7 +3,9 @@
   "name": "Stoughton",
   "county": "Norfolk",
   "region": "South Shore",
-  "zipCodes": [],
+  "zipCodes": [
+    "02072"
+  ],
   "population": {
     "value": 29281,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -51,5 +53,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": true,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "town",
+    "geoid": "2502167945",
+    "landSqMi": 16.085,
+    "waterSqMi": 0.374,
+    "lat": 42.119006,
+    "lng": -71.10365,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }

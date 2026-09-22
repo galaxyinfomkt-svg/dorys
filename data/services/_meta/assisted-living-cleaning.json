@@ -19,10 +19,39 @@
   ],
   "h1Pattern": "Assisted Living & Senior Living Cleaning in {city}, MA",
   "tier": 1,
-  "highTouchZones": [],
-  "protocolSteps": [],
+  "highTouchZones": [
+    "common-room seating",
+    "dining tables and chairs",
+    "handrails",
+    "elevator buttons",
+    "door handles in shared areas",
+    "activity supplies and game tables",
+    "shared restroom fixtures",
+    "resident apartment light switches and door handles",
+    "kitchenette surfaces in apartments (as contracted)",
+    "mailroom and lobby counters",
+    "fitness-room equipment",
+    "salon chairs"
+  ],
+  "protocolSteps": [
+    "Agree the housekeeping level in resident apartments, which varies by residence and service plan.",
+    "Clean shared areas daily, with extra attention to handrails, elevator buttons and dining rooms.",
+    "Enter resident apartments only with permission and at the time agreed.",
+    "Coordinate memory-care cleaning with staff so routines and residents are not disrupted.",
+    "Escalate cleaning during respiratory or gastrointestinal illness as directed by the residence.",
+    "Keep laundry and food-service areas to their own cleaning procedures.",
+    "Damp-mop floors with wet-floor signage to reduce fall risk.",
+    "Log apartments and common areas completed."
+  ],
   "disinfectantContactTimes": [],
-  "documentationDeliverables": [],
+  "documentationDeliverables": [
+    "common-area schedule",
+    "apartment housekeeping checklist",
+    "product list with EPA registration numbers",
+    "Safety Data Sheets",
+    "signed service logs",
+    "certificate of insurance"
+  ],
   "commonSurveyFindings": [
     {
       "finding": "Staff cannot state the wet contact time for the disinfectant in use, so surfaces are wiped and allowed to dry short of the label time and the product's kill claim is never achieved.",
@@ -104,5 +133,23 @@
       "a": "29 CFR 1910.1030 governs it, and it carries weight in this sector: federal OSHA issued 9 citations across 3 assisted living inspections between October 2024 and September 2025, with $37,006 in penalties — the largest penalty total of any standard for assisted living. Our staff are trained and equipped for environmental decontamination of spills: PPE, absorb, clean, then disinfect with an EPA-registered product at label contact time, with contaminated waste bagged per your regulated-waste policy. If the incident involves a resident who is still being attended, care staff manage the resident first and call us to the surface afterward."
     }
   ],
-  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md.",
+  "frequencyGuide": [
+    "Common areas and dining: daily.",
+    "Handrails, elevator buttons and shared restrooms: several times a day.",
+    "Resident apartments: per service plan, commonly weekly.",
+    "Illness outbreaks: escalated as the residence directs.",
+    "Periodic: carpets, windows and high dusting."
+  ],
+  "vendorQuestions": [
+    "How do your staff behave in a resident's home?",
+    "How do you schedule around memory-care routines?",
+    "What do you change during a norovirus outbreak?",
+    "How do you reduce fall risk while floors are wet?",
+    "What records will support our compliance review?"
+  ],
+  "scheduleNotes": [
+    "Assisted living residences are cleaned during the day, scheduled around meals, activities and residents' preferences.",
+    "Apartment housekeeping days are usually fixed so residents know when to expect the team."
+  ]
 }

@@ -23,10 +23,38 @@
   "_note": "Split out from the old rehab-nursing pairing. An outpatient PT clinic and a skilled nursing facility share almost nothing: different buyer, different risk, different regulator, different sales cycle. Treating them as one service produced copy that fit neither.",
   "h1Pattern": "Rehabilitation Clinic Cleaning in {city}, MA",
   "tier": 1,
-  "highTouchZones": [],
-  "protocolSteps": [],
+  "highTouchZones": [
+    "treatment tables and plinths",
+    "exercise mats",
+    "free weights, dumbbells and kettlebells",
+    "resistance bands and handles",
+    "treadmill and bike handles and consoles",
+    "parallel bars and balance equipment",
+    "therapy balls and foam rollers",
+    "check-in counter",
+    "waiting-room seating",
+    "restroom fixtures",
+    "door handles",
+    "light switches"
+  ],
+  "protocolSteps": [
+    "Agree which equipment staff wipe between patients and which the cleaning crew handles at end of day.",
+    "Clean and disinfect treatment tables and mats with products compatible with vinyl and upholstery.",
+    "Wipe down weights, bars and cardio equipment handles and consoles.",
+    "Keep gym cloths separate from restroom cloths.",
+    "Launder or replace reusable linens per the clinic's process — we do not take clinic linens off site unless contracted.",
+    "Empty trash; sharps are rare but stay with the clinic's hauler if present.",
+    "Damp-mop gym floors and vacuum carpeted areas.",
+    "Log areas completed and any damaged equipment surfaces we notice."
+  ],
   "disinfectantContactTimes": [],
-  "documentationDeliverables": [],
+  "documentationDeliverables": [
+    "gym and treatment-room checklist",
+    "product list with EPA registration numbers and contact times",
+    "Safety Data Sheets",
+    "signed service logs",
+    "certificate of insurance"
+  ],
   "commonSurveyFindings": [
     {
       "finding": "No written policies and procedures for routine cleaning and disinfection of the gym, treatment tables and shared equipment, including who is responsible for what.",
@@ -120,5 +148,23 @@
       "a": "The written cleaning and disinfection policy covering the gym, treatment tables, and shared equipment, with responsibility assigned line by line; the equipment inventory flagging items with no manufacturer reprocessing instructions; the product list with EPA registration numbers and label contact times; SDS sheets; per-person training and competency records; dated service logs; and supervisor audit results. That set answers Section I items A through D of the CDC Infection Prevention Checklist directly. Dory's carries $2 million in general liability and will name your clinic on the certificate."
     }
   ],
-  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md.",
+  "frequencyGuide": [
+    "Treatment tables and shared equipment: between patients by staff, full clean daily.",
+    "Gym floor: daily.",
+    "Restrooms and changing areas: daily or more often.",
+    "Waiting room: daily.",
+    "Periodic: equipment deep clean and high dusting."
+  ],
+  "vendorQuestions": [
+    "Which products will you use on our table upholstery and mats?",
+    "Will you clean the free weights and cardio equipment every visit?",
+    "What will our staff still need to wipe between patients?",
+    "What logs will we receive?",
+    "How do you report a torn table cover that can no longer be disinfected?"
+  ],
+  "scheduleNotes": [
+    "Rehabilitation clinics are typically cleaned after the last appointment, since the gym is in use all day.",
+    "Clinics with early-morning patients may prefer a pre-opening clean."
+  ]
 }

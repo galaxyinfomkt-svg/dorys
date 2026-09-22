@@ -22,10 +22,40 @@
   ],
   "h1Pattern": "Ambulatory & Outpatient Facility Cleaning in {city}, MA",
   "tier": 1,
-  "highTouchZones": [],
-  "protocolSteps": [],
+  "highTouchZones": [
+    "procedure tables and stretchers",
+    "OR and procedure lights",
+    "anesthesia cart and machine exteriors",
+    "monitors, cables and IV poles",
+    "pre-op and PACU bay rails and call devices",
+    "scrub sink handles",
+    "keyboards and workstation surfaces",
+    "kick buckets and step stools",
+    "door push plates",
+    "waiting-room seating",
+    "restroom fixtures",
+    "light switches"
+  ],
+  "protocolSteps": [
+    "Confirm who turns rooms between cases and what the end-of-day terminal clean covers.",
+    "Terminal-clean each procedure room after the last case: high to low, clean to dirty, including the entire floor.",
+    "Clean lights, booms and equipment exteriors with products compatible with their finishes.",
+    "Clean pre-op and recovery bays, curtains on your schedule, and call devices.",
+    "Respect sterile processing flow: separate equipment for decontamination and clean areas.",
+    "Leave instruments and sterile supplies untouched.",
+    "Remove general waste; regulated waste stays with your licensed hauler.",
+    "Sign a completion record for every room."
+  ],
   "disinfectantContactTimes": [],
-  "documentationDeliverables": [],
+  "documentationDeliverables": [
+    "terminal-cleaning checklist per procedure room",
+    "product list with EPA registration numbers and contact times",
+    "Safety Data Sheets",
+    "signed room completion records",
+    "bloodborne pathogen training records",
+    "certificate of insurance",
+    "ATP or fluorescent-marker results when performed"
+  ],
   "commonSurveyFindings": [
     {
       "finding": "Operating rooms not cleaned and disinfected with an EPA-registered disinfectant after each surgical or invasive procedure. On the CMS surveyor worksheet a 'no' here must be cited as a deficient practice.",
@@ -119,5 +149,23 @@
       "a": "Signature logs alone are weak evidence, and experienced surveyors know it. We pair the log with a supervisor QA round against a written checklist that names surfaces rather than rooms — anesthesia cart, table controls, boom and light handles, kick buckets, floor under the table — with pass/fail and correction noted and re-checked. Where you want an objective measure, fluorescent marker audits or ATP swabbing can be built in, with results trended monthly and reported to your infection preventionist. The point is a record showing a failure was found and corrected. Under 42 CFR 416.51(a), a program that catches its own gaps reads better than one that never reports any."
     }
   ],
-  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md.",
+  "frequencyGuide": [
+    "Procedure rooms: turnover between cases by the perioperative team; terminal clean after the last case each day of use.",
+    "Pre-op and PACU: bays cleaned between patients by staff, full clean daily.",
+    "Sterile processing: daily, clean to dirty.",
+    "Waiting and restrooms: daily.",
+    "Periodic: ceilings, vents and storage areas on a set schedule."
+  ],
+  "vendorQuestions": [
+    "What does your terminal clean include, room by room?",
+    "How do you respect our sterile processing traffic flow?",
+    "Can your crew start after our last case without delaying the next morning?",
+    "What completion records will we have for our surveyors?",
+    "How do you verify terminal cleaning quality?"
+  ],
+  "scheduleNotes": [
+    "Terminal cleaning starts after the last case, so crews work evenings on the center's schedule.",
+    "Centers with variable case end times need a crew that can start on call."
+  ]
 }

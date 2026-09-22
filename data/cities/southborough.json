@@ -3,7 +3,9 @@
   "name": "Southborough",
   "county": "Worcester",
   "region": "MetroWest",
-  "zipCodes": [],
+  "zipCodes": [
+    "01772"
+  ],
   "population": {
     "value": 10450,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -54,5 +56,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": true,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "town",
+    "geoid": "2502763165",
+    "landSqMi": 14.01,
+    "waterSqMi": 1.514,
+    "lat": 42.299625,
+    "lng": -71.528427,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }

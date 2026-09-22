@@ -3,7 +3,9 @@
   "name": "Danvers",
   "county": "Essex",
   "region": "North Shore",
-  "zipCodes": [],
+  "zipCodes": [
+    "01923"
+  ],
   "population": {
     "value": 28087,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -57,5 +59,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": true,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "town",
+    "geoid": "2500916250",
+    "landSqMi": 13.267,
+    "waterSqMi": 0.917,
+    "lat": 42.574174,
+    "lng": -70.950516,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }

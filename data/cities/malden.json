@@ -3,7 +3,9 @@
   "name": "Malden",
   "county": "Middlesex",
   "region": "Greater Boston",
-  "zipCodes": [],
+  "zipCodes": [
+    "02148"
+  ],
   "population": {
     "value": 66263,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -51,5 +53,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": true,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "city",
+    "geoid": "2501737875",
+    "landSqMi": 5.045,
+    "waterSqMi": 0.038,
+    "lat": 42.42938,
+    "lng": -71.058706,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }

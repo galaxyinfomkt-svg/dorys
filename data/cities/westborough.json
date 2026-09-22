@@ -3,7 +3,11 @@
   "name": "Westborough",
   "county": "Worcester",
   "region": "MetroWest",
-  "zipCodes": [],
+  "zipCodes": [
+    "01580",
+    "01581",
+    "01582"
+  ],
   "population": {
     "value": 21567,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -56,5 +60,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": true,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "town",
+    "geoid": "2502775015",
+    "landSqMi": 20.601,
+    "waterSqMi": 0.861,
+    "lat": 42.268426,
+    "lng": -71.613309,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }

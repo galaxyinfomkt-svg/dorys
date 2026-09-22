@@ -21,10 +21,39 @@
   ],
   "h1Pattern": "Dental Office Cleaning in {city}, MA",
   "tier": 1,
-  "highTouchZones": [],
-  "protocolSteps": [],
+  "highTouchZones": [
+    "dental chair controls and headrest",
+    "operatory light handles",
+    "delivery unit, tray and bracket table",
+    "X-ray tube head and sensor holder",
+    "keyboards and mice in each operatory",
+    "cabinet and drawer pulls",
+    "sterilization-area counters on the clean side",
+    "front-desk counter and payment terminal",
+    "waiting-room chair arms",
+    "restroom fixtures",
+    "door handles and light switches",
+    "hand-washing sink handles"
+  ],
+  "protocolSteps": [
+    "Confirm which clinical contact surfaces and barriers your dental assistants handle between patients.",
+    "Keep the sterilization area's clean and dirty sides separate: separate cloths, clean side first, never back again.",
+    "Clean housekeeping surfaces — floors, walls, counters outside the operatory field — with an EPA-registered disinfectant.",
+    "Wipe operatory surfaces that are not barrier-protected at end of day, following the practice's product choice.",
+    "Leave dental unit waterlines, suction traps and instrument reprocessing to trained clinical staff.",
+    "Empty general trash; amalgam, sharps and regulated waste stay with your licensed hauler.",
+    "Damp-mop operatory floors, working from the back of the room toward the door.",
+    "Log each operatory, the products used and anything that needs the practice's attention."
+  ],
   "disinfectantContactTimes": [],
-  "documentationDeliverables": [],
+  "documentationDeliverables": [
+    "operatory-by-operatory cleaning checklist",
+    "product list with EPA registration numbers and contact times",
+    "Safety Data Sheets for every product",
+    "service logs signed each visit",
+    "bloodborne pathogen training records for assigned staff",
+    "certificate of insurance naming the practice"
+  ],
   "commonSurveyFindings": [
     {
       "finding": "No written policies and procedures for routine cleaning and disinfection of environmental surfaces as part of the practice's infection prevention plan.",
@@ -118,5 +147,24 @@
       "a": "It is one of the most common issues we correct. The CDC dental guidance is explicit about following manufacturer instructions for amount, dilution, contact time, and safe use and disposal, and some products must be made up fresh daily. A wrong dilution, an expired container, a solution stored in heat or light, or a wipe that dries before the label kill time all mean the surface was not actually disinfected. We standardize on ready-to-use products where the surface allows, date-mark anything that is mixed, and keep labels accessible in the operatory area."
     }
   ],
-  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md.",
+  "frequencyGuide": [
+    "Clinical contact surfaces: between patients by the dental team (or barrier change).",
+    "Operatories and sterilization area housekeeping surfaces: daily after the last patient.",
+    "Floors: daily in operatories and the sterilization area.",
+    "Waiting room and restrooms: daily, with high-touch points more often in busy practices.",
+    "Walls, vents and cabinet exteriors: periodically or when visibly soiled."
+  ],
+  "vendorQuestions": [
+    "How will your crew keep the clean and dirty sides of our sterilization area separate?",
+    "What will you never touch in the operatory?",
+    "Which products will you use near our dental equipment finishes?",
+    "How do you handle an aerosol-heavy day in terms of end-of-day cleaning?",
+    "What logs will we have for a Board of Registration in Dentistry inspection?",
+    "Who holds bloodborne pathogen training on your crew?"
+  ],
+  "scheduleNotes": [
+    "Dental offices are almost always cleaned after the last patient so the end-of-day clean reflects that day's aerosol exposure.",
+    "Practices with Saturday hours usually need a weekend visit or an early Monday clean."
+  ]
 }

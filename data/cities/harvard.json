@@ -3,7 +3,9 @@
   "name": "Harvard",
   "county": "Worcester",
   "region": "Central Massachusetts",
-  "zipCodes": [],
+  "zipCodes": [
+    "01451"
+  ],
   "population": {
     "value": 6851,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -39,5 +41,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": false,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "town",
+    "geoid": "2502728950",
+    "landSqMi": 26.424,
+    "waterSqMi": 0.739,
+    "lat": 42.504256,
+    "lng": -71.588513,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }

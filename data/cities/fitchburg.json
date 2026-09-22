@@ -3,7 +3,9 @@
   "name": "Fitchburg",
   "county": "Worcester",
   "region": "Central Massachusetts",
-  "zipCodes": [],
+  "zipCodes": [
+    "01420"
+  ],
   "population": {
     "value": 41946,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -56,5 +58,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": true,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "city",
+    "geoid": "2502723875",
+    "landSqMi": 27.83,
+    "waterSqMi": 0.288,
+    "lat": 42.601979,
+    "lng": -71.815876,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }

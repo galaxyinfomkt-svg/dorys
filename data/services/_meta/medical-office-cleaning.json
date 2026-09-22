@@ -24,10 +24,40 @@
   ],
   "h1Pattern": "Medical Office Cleaning in {city}, MA",
   "tier": 1,
-  "highTouchZones": [],
-  "protocolSteps": [],
+  "highTouchZones": [
+    "exam table surface and paper-roll holder",
+    "blood pressure cuffs and wall-mounted diagnostic sets",
+    "rolling stools and exam-room chairs",
+    "computer keyboards, mice and wall-mounted screens",
+    "door handles and push plates",
+    "light switches",
+    "sink faucet handles and soap dispensers",
+    "check-in counter and sign-in tablet",
+    "pens, clipboards and payment terminals",
+    "waiting-room chair arms",
+    "restroom flush handles, grab bars and door locks",
+    "scale platform and height rod"
+  ],
+  "protocolSteps": [
+    "Agree the room-by-room scope and who disinfects patient-contact surfaces between visits.",
+    "Start each visit in the cleanest areas (offices, consult rooms) and finish in restrooms and soiled utility.",
+    "Clean visibly soiled surfaces before disinfecting; the label claim assumes a pre-cleaned surface.",
+    "Apply an EPA-registered hospital disinfectant and keep each surface wet for its full label contact time.",
+    "Change cloths between rooms using a color-coded system so restroom cloths never reach exam rooms.",
+    "Empty trash and recycling; leave sharps containers and regulated medical waste to your licensed hauler.",
+    "Damp-mop hard floors and vacuum carpeted waiting areas with HEPA-filtered equipment.",
+    "Record rooms completed, products used and any issues in the service log."
+  ],
   "disinfectantContactTimes": [],
-  "documentationDeliverables": [],
+  "documentationDeliverables": [
+    "room-by-room cleaning schedule with frequencies",
+    "product list with EPA registration numbers and contact times",
+    "Safety Data Sheets for every product on site",
+    "signed service logs for each visit",
+    "OSHA Bloodborne Pathogens training records for assigned staff",
+    "certificate of insurance naming the practice",
+    "ATP or fluorescent-marker results when verification is performed"
+  ],
   "commonSurveyFindings": [
     {
       "finding": "No written schedule for cleaning and method of decontamination based on location, surface type, soil type and the procedures performed. This is an explicit OSHA requirement, not a recommendation.",
@@ -121,5 +151,26 @@
       "a": "A binder and a digital copy containing the written cleaning and decontamination schedule required by 29 CFR 1910.1030(d)(4)(i), the product list with EPA registration numbers, current SDS sheets, label contact times, crew training records, and dated service logs showing what was cleaned and when. Surveyors rarely dispute that cleaning happens; they ask you to prove the method and the frequency were defined and then followed. Dory's carries $2 million in general liability, and we will issue a certificate naming your practice on request."
     }
   ],
-  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md.",
+  "frequencyGuide": [
+    "Exam rooms: patient-contact surfaces between patients (usually clinical staff); full clean daily.",
+    "Waiting room and check-in: high-touch points several times a day in busy clinics, full clean daily.",
+    "Restrooms: at least daily, more often in high-volume practices.",
+    "Floors: daily damp-mop of hard floors; carpet vacuumed daily and extracted on a periodic schedule.",
+    "Walls, vents and light fixtures: on a periodic schedule or when visibly soiled."
+  ],
+  "vendorQuestions": [
+    "Who on your team will actually clean our office, and what training records can you show for them?",
+    "Which disinfectants will you use, and what are their contact times?",
+    "How do you keep restroom cloths out of exam rooms?",
+    "What do you leave for our clinical staff, and what do you own?",
+    "What will our logs look like if a surveyor asks?",
+    "How do you handle a blood spill found during your visit?",
+    "Can you verify cleaning with ATP or fluorescent markers?",
+    "Who do we call if something is missed?"
+  ],
+  "scheduleNotes": [
+    "Most medical offices are cleaned after the last patient leaves, so exam rooms are ready for the first morning appointment.",
+    "Practices with early clinics often prefer an evening clean plus a short midday restroom and waiting-room refresh."
+  ]
 }

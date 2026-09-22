@@ -3,7 +3,10 @@
   "name": "Salem",
   "county": "Essex",
   "region": "North Shore",
-  "zipCodes": [],
+  "zipCodes": [
+    "01970",
+    "01971"
+  ],
   "population": {
     "value": 44480,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -56,5 +59,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": true,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "city",
+    "geoid": "2500959105",
+    "landSqMi": 8.293,
+    "waterSqMi": 10.007,
+    "lat": 42.499248,
+    "lng": -70.898204,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }

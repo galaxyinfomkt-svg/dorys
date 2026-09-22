@@ -12,8 +12,9 @@
     "prune:cities": "node scripts/prune-cities.mjs",
     "seed:services": "node scripts/seed-service-data.mjs",
     "import:healthcare": "node scripts/import-healthcare-landscape.mjs",
-    "build:service-pages": "node scripts/build-service-city-pages.mjs && node scripts/relink-service-pages.mjs && node scripts/generate-sitemaps.mjs",
-    "fix:links": "node scripts/fix-internal-redirect-links.mjs"
+    "build:service-pages": "node scripts/merge-service-knowledge.mjs && node scripts/build-service-city-pages.mjs && node scripts/build-location-pages.mjs && node scripts/relink-service-pages.mjs && node scripts/generate-sitemaps.mjs",
+    "fix:links": "node scripts/fix-internal-redirect-links.mjs",
+    "build:city-geo": "node scripts/build-city-geo.mjs"
   },
   "dependencies": {
     "next": "^15.1.0",
@@ -28,6 +29,7 @@
     "@types/react-dom": "^19.0.2",
     "playwright": "^1.60.0",
     "tailwindcss": "^4.0.0",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "zipcodes": "^8.0.0"
   }
 }

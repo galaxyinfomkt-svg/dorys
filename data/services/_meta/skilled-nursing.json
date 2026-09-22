@@ -22,10 +22,40 @@
   ],
   "h1Pattern": "Skilled Nursing & Long-Term Care Cleaning in {city}, MA",
   "tier": 1,
-  "highTouchZones": [],
-  "protocolSteps": [],
+  "highTouchZones": [
+    "bed rails and bed controls",
+    "over-bed tables",
+    "call buttons",
+    "bedside tables and drawer pulls",
+    "resident chairs and wheelchair armrests",
+    "grab bars and toilet seats",
+    "sink and faucet handles",
+    "dining tables and chairs",
+    "activity-room tables and shared items",
+    "nursing station counters and phones",
+    "handrails in corridors",
+    "elevator buttons"
+  ],
+  "protocolSteps": [
+    "Agree the daily resident-room clean, discharge cleaning and what nursing staff handle.",
+    "Clean resident rooms daily with the resident's dignity and privacy respected.",
+    "Discharge-clean rooms after a resident leaves, including all furniture and fixtures.",
+    "Clean common areas — dining, activity rooms, corridors — on a set daily schedule.",
+    "Follow your infection preventionist's direction during outbreaks, including product changes.",
+    "Keep dining-area cleaning coordinated with dietary staff for food-contact surfaces.",
+    "Damp-mop floors with attention to fall risk and wet-floor signage.",
+    "Record rooms and common areas completed each shift."
+  ],
   "disinfectantContactTimes": [],
-  "documentationDeliverables": [],
+  "documentationDeliverables": [
+    "daily and discharge room checklists",
+    "common-area schedule",
+    "product list with EPA registration numbers and contact times",
+    "Safety Data Sheets",
+    "signed service logs",
+    "bloodborne pathogen training records",
+    "outbreak escalation plan"
+  ],
   "commonSurveyFindings": [
     {
       "finding": "No effective infection prevention and control program — surveyors cite what they observe directly: hand hygiene missed between residents, isolation precautions not implemented, shared resident-care equipment (glucometers, blood-pressure cuffs, lifts, shower chairs) not cleaned and disinfected between residents, soiled linen handled or stored improperly.",
@@ -113,5 +143,24 @@
       "a": "We do not apply pesticides — that requires a licensed applicator, and Massachusetts does not license cleaning companies for it. What we control is the conditions F925 (42 CFR 483.90(i)(4)) actually turns on: trash removal frequency, dumpster area cleanliness, food debris in resident rooms and pantries, drain and floor-crevice cleaning, and storage kept off the floor. We report sightings and evidence in writing so your pest contractor's log shows a facility that reported and responded. F925 is cited at 2.0% of Massachusetts facilities but often at wide scope, which raises the severity of an otherwise small finding."
     }
   ],
-  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md.",
+  "frequencyGuide": [
+    "Resident rooms: daily, and on discharge or transfer.",
+    "Common areas and dining: daily and after meals as directed.",
+    "Corridor handrails and elevator buttons: several times a day.",
+    "Outbreaks: escalated frequency and products as the infection preventionist directs.",
+    "Periodic: floor refinishing, high dusting, vents."
+  ],
+  "vendorQuestions": [
+    "How will your staff interact with residents while cleaning their rooms?",
+    "What changes in your routine during a norovirus or C. difficile outbreak?",
+    "How do you document a discharge clean?",
+    "How do you manage wet-floor fall risk in corridors?",
+    "Who on your team has bloodborne pathogen training?",
+    "How quickly can you add coverage during an outbreak?"
+  ],
+  "scheduleNotes": [
+    "Skilled nursing facilities need coverage seven days a week, usually during day shift when rooms are accessible.",
+    "Discharge cleaning has to fit admission times, so the schedule is agreed with the admissions team."
+  ]
 }

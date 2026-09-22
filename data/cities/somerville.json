@@ -3,7 +3,11 @@
   "name": "Somerville",
   "county": "Middlesex",
   "region": "Greater Boston",
-  "zipCodes": [],
+  "zipCodes": [
+    "02143",
+    "02144",
+    "02145"
+  ],
   "population": {
     "value": 81045,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -57,5 +61,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": true,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "city",
+    "geoid": "2501762535",
+    "landSqMi": 4.123,
+    "waterSqMi": 0.1,
+    "lat": 42.390445,
+    "lng": -71.101033,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }

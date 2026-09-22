@@ -3,7 +3,9 @@
   "name": "Bellingham",
   "county": "Norfolk",
   "region": "Blackstone Valley",
-  "zipCodes": [],
+  "zipCodes": [
+    "02019"
+  ],
   "population": {
     "value": 16945,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -46,5 +48,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": true,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "town",
+    "geoid": "2502104930",
+    "landSqMi": 18.343,
+    "waterSqMi": 0.549,
+    "lat": 42.076682,
+    "lng": -71.47449,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }

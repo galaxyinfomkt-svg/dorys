@@ -3,7 +3,9 @@
   "name": "Paxton",
   "county": "Worcester",
   "region": "Central Massachusetts",
-  "zipCodes": [],
+  "zipCodes": [
+    "01612"
+  ],
   "population": {
     "value": 5004,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -44,5 +46,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": true,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "town",
+    "geoid": "2502752420",
+    "landSqMi": 14.689,
+    "waterSqMi": 0.765,
+    "lat": 42.311693,
+    "lng": -71.940282,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }

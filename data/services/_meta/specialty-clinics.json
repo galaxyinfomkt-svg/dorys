@@ -22,10 +22,39 @@
   ],
   "h1Pattern": "Specialty Clinic Cleaning in {city}, MA",
   "tier": 1,
-  "highTouchZones": [],
-  "protocolSteps": [],
+  "highTouchZones": [
+    "procedure chairs and tables",
+    "equipment control panels and handles",
+    "slit lamps and chin rests (ophthalmology) — exterior surfaces only",
+    "treatment-room carts",
+    "keyboards and imaging workstation surfaces",
+    "patient positioning aids",
+    "door handles and light switches",
+    "check-in counter and payment terminal",
+    "waiting-room seating",
+    "restroom fixtures",
+    "sink and dispenser surfaces",
+    "exam-room chairs"
+  ],
+  "protocolSteps": [
+    "Map each room's specialty equipment and agree which surfaces the clinical team reprocesses per the manufacturer's instructions.",
+    "Clean environmental surfaces around the equipment with products compatible with its finishes.",
+    "Clean before disinfecting where surfaces are visibly soiled, then hold the label contact time.",
+    "Keep procedure rooms on their own cloths and equipment, cleaned last in the room order.",
+    "Leave instruments, probes and patient-care devices to clinical staff.",
+    "Empty trash; sharps and regulated waste stay with your licensed hauler.",
+    "Damp-mop floors, including under procedure chairs.",
+    "Log rooms completed and anything the clinic needs to address."
+  ],
   "disinfectantContactTimes": [],
-  "documentationDeliverables": [],
+  "documentationDeliverables": [
+    "room and equipment-area checklist",
+    "product list with EPA registration numbers and contact times",
+    "Safety Data Sheets",
+    "signed service logs",
+    "bloodborne pathogen training records",
+    "certificate of insurance"
+  ],
   "commonSurveyFindings": [
     {
       "finding": "Diagnostic and therapeutic equipment not disinfected after each use in accordance with recognised standards of practice. In Massachusetts this is a clinic licensure requirement, not guidance.",
@@ -119,5 +148,23 @@
       "a": "The responsibility matrix showing which surfaces and devices are ours and which are clinical, the written cleaning and decontamination schedule under 29 CFR 1910.1030(d)(4)(i), product labels with EPA registration numbers and contact times, SDS sheets, the chemical storage and utility closet arrangement against 105 CMR 140.206, crew training records, and dated service logs. Surveyors test whether the method was defined and followed, not whether the floor looks clean. Dory's also carries $2 million in general liability and will issue a certificate naming your clinic."
     }
   ],
-  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md."
+  "_publishGate": "Requires >=10 faqs and >=6 commonSurveyFindings before this service may go live. Survey findings are real regulatory citations — never invented, never inferred from the regulation text. Source: data/_todo-clinical-input.md.",
+  "frequencyGuide": [
+    "Procedure rooms: environmental surfaces daily, patient-contact surfaces between patients by clinical staff.",
+    "Exam and consult rooms: daily.",
+    "Waiting areas and restrooms: daily, more often in high-volume clinics.",
+    "Floors: daily.",
+    "Periodic: walls, vents and high dusting."
+  ],
+  "vendorQuestions": [
+    "Which of our equipment surfaces will you clean, and which will you leave to our staff?",
+    "Are your products compatible with our equipment manufacturers' cleaning instructions?",
+    "How do you sequence a procedure room versus a consult room?",
+    "What documentation will you leave after each visit?",
+    "How do you train staff on a new clinic's equipment?"
+  ],
+  "scheduleNotes": [
+    "Specialty clinics usually need after-hours cleaning so procedure rooms are ready for the first case.",
+    "Clinics that share space with other practices need the cleaning scope drawn along suite lines."
+  ]
 }

@@ -3,7 +3,9 @@
   "name": "Stow",
   "county": "Middlesex",
   "region": "MetroWest",
-  "zipCodes": [],
+  "zipCodes": [
+    "01775"
+  ],
   "population": {
     "value": 7174,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -44,5 +46,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": true,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "town",
+    "geoid": "2501768050",
+    "landSqMi": 17.319,
+    "waterSqMi": 0.672,
+    "lat": 42.429688,
+    "lng": -71.512514,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }

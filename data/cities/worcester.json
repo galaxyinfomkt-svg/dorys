@@ -3,7 +3,24 @@
   "name": "Worcester",
   "county": "Worcester",
   "region": "Central Massachusetts",
-  "zipCodes": [],
+  "zipCodes": [
+    "01601",
+    "01602",
+    "01603",
+    "01604",
+    "01605",
+    "01606",
+    "01607",
+    "01608",
+    "01609",
+    "01610",
+    "01613",
+    "01614",
+    "01615",
+    "01653",
+    "01654",
+    "01655"
+  ],
   "population": {
     "value": 206518,
     "source": "https://en.wikipedia.org/wiki/List_of_municipalities_in_Massachusetts",
@@ -60,5 +77,15 @@
   "facilityDensity": null,
   "nearbyCities": [],
   "verified": true,
-  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess."
+  "_howToFill": "Every non-null value needs a source you actually read. majorFacilities is MARKET CONTEXT, never a client list — copy must say \"serving practices in and around the {facility} corridor\". Leave null rather than guess.",
+  "geo": {
+    "municipalType": "city",
+    "geoid": "2502782000",
+    "landSqMi": 37.359,
+    "waterSqMi": 1.087,
+    "lat": 42.269478,
+    "lng": -71.807783,
+    "source": "U.S. Census Bureau, 2016 Gazetteer Files (county subdivisions)"
+  },
+  "zipSource": "USPS ZIP codes by place name (zipcodes npm package)"
 }
