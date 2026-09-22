@@ -10,7 +10,18 @@ export default function GalleryEnhancer() {
   useEffect(() => {
     const root = document.querySelector<HTMLElement>(".home-gallery")
     if (!root) return
-    const tabs = Array.from(root.querySelectorAll<HTMLElement>(".gallery-tab"))
+    // Swap each <label> tab for a real <button>: a label with role="button" is
+    // invalid ARIA (Lighthouse aria-allowed-role), and a button gives keyboard
+    // and screen-reader behaviour for free. Styling uses .gallery-tab/.is-active.
+    const tabs = Array.from(root.querySelectorAll<HTMLElement>(".gallery-tab")).map(label => {
+      const b = document.createElement("button")
+      b.type = "button"
+      b.className = label.className
+      b.innerHTML = label.innerHTML
+      b.dataset.cat = (label.getAttribute("for") || "gf-all").replace("gf-", "")
+      label.replaceWith(b)
+      return b
+    })
     const items = Array.from(root.querySelectorAll<HTMLElement>(".gallery-item"))
     if (!tabs.length || !items.length) return
 
@@ -32,16 +43,14 @@ export default function GalleryEnhancer() {
 
     const cleanups: Array<() => void> = []
     tabs.forEach(t => {
-      const cat = (t.getAttribute("for") || "gf-all").replace("gf-", "")
-      t.dataset.cat = cat
-      t.removeAttribute("for") // disable native radio toggle — JS owns filtering
-      t.setAttribute("role", "button")
-      t.setAttribute("tabindex", "0")
-      const onClick = () => apply(cat)
-      const onKey = (e: KeyboardEvent) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); apply(cat) } }
+      const cat = t.dataset.cat || "all"
+      const onClick = () => {
+        apply(cat)
+        tabs.forEach(o => o.setAttribute("aria-pressed", String(o === t)))
+      }
+      t.setAttribute("aria-pressed", String(cat === "all"))
       t.addEventListener("click", onClick)
-      t.addEventListener("keydown", onKey)
-      cleanups.push(() => { t.removeEventListener("click", onClick); t.removeEventListener("keydown", onKey) })
+      cleanups.push(() => t.removeEventListener("click", onClick))
     })
 
     apply("all")

@@ -380,7 +380,7 @@ function finalCta(service, city) {
   return (
     `<section class="section section--primary"><div class="container text-center">` +
     `<h2 class="text-white mb-lg">Free ${esc(lc(service.name))} assessment in ${esc(city.name)}</h2>` +
-    `<p class="lead text-white mb-xl" style="opacity:0.9">${YEARS}+ years clinical experience. $2M insured. No obligation.</p>` +
+    `<p class="lead text-white mb-xl">${YEARS}+ years clinical experience. $2M insured. No obligation.</p>` +
     `<div class="btn-group btn-group--center">` +
     `<a href="#quote" class="btn btn--white btn--lg">Request Assessment</a>` +
     `<a href="tel:${PHONE}" class="btn btn--outline-light btn--lg">Call ${esc(PHONE_DISP)}</a>` +
