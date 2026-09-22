@@ -42,6 +42,41 @@
         "source": "https://www.danversdentistry.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Professional Physical Therapy - Danvers",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.professionalpt.com/office/danvers-ma/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Danvers",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/danvers/156-andover-street",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Hunt Nursing and Rehabilitation Center",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://integritushealthcare.org/our-locations/hunt-nursing/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Brightview Danvers",
+        "type": "senior living community with assisted living",
+        "source": "https://www.brightviewseniorliving.com/find-a-community/brightview-danvers",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "The Atrium at Veronica Drive",
+        "type": "memory care residence",
+        "source": "https://www.benchmarkseniorliving.com/senior-living/ma/danvers/the-atrium-at-veronica-drive/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

@@ -38,6 +38,34 @@
         "source": "https://www.bedfordgreatsmiles.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "FYZICAL Therapy & Balance Centers - Bedford",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.fyzical.com/bedford-ma",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Bedford",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/bedford/175-great-road",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Carleton-Willard Village",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://www.cwvillage.org/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "The Residence at Bedford",
+        "type": "assisted living residence",
+        "source": "https://www.lcbseniorliving.com/communities/the-residence-at-bedford/bedford-assisted-living/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

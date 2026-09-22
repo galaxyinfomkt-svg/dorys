@@ -34,6 +34,20 @@
         "source": "https://aimfamilydental.com/contact/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Greendale Physical Therapy - Clinton",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.greendalept.com/locations/clinton-clinic/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Corcoran House Assisted Living",
+        "type": "assisted living residence",
+        "source": "https://corcoranhouseal.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

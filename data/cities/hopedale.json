@@ -34,6 +34,13 @@
         "source": "https://hopkintondmd.com/general-dentistry",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Hopedale Commons West (Hopedale Senior Living)",
+        "type": "assisted living residence",
+        "source": "https://hopedaleseniorliving.com/assisted-living",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

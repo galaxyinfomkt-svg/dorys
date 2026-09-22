@@ -34,6 +34,34 @@
         "source": "https://www.actondental.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "ATI Physical Therapy - Acton",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.atipt.com/massachusetts/acton/340-great-rd/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Rehab Health 360",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.rehabhealth360.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Life Care Center of Acton",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://lcca.com/locations/ma/acton/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Benchmark Senior Living at Robbins Brook",
+        "type": "assisted living residence",
+        "source": "https://www.benchmarkseniorliving.com/senior-living/ma/acton/benchmark-senior-living-at-robbins-brook/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [],

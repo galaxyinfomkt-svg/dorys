@@ -71,7 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             source files, never site.min.css; the script rewrites the ?v= hash.
             NOTE: do NOT hardcode-preload specific gstatic woff2 URLs — Google
             rotates those hashed filenames, so the old ones 404 on every page. */}
-        <link rel="stylesheet" href="/assets/css/site.min.css?v=86ae648c81" />
+        <link rel="stylesheet" href="/assets/css/site.min.css?v=081353a9f7" />
 
         {/* Non-critical CSS + web fonts — injected as async (media=print →
             all on load) so they don't block first paint. Fonts use

@@ -34,6 +34,27 @@
         "source": "https://www.hopdent.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Physical Therapy Innovations - Hopkinton",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.physicaltherapyinnovations.com/hopkinton/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Platinum Physical Therapy - Hopkinton",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://platinumptma.com/physical-therapy-clinic/hopkinton-ma/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "The Communities at Golden Pond",
+        "type": "assisted living residence",
+        "source": "https://www.goldenpondal.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

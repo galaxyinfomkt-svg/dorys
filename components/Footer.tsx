@@ -37,11 +37,12 @@ export default function Footer() {
           <div className="footer__col">
             <h3 className="footer__heading">Services</h3>
             <ul className="footer__links">
+              <li><Link href="/senior-care-rehab-cleaning">Rehab & Senior Care Facilities</Link></li>
               <li><Link href="/services/medical-office-cleaning">Medical Offices</Link></li>
+              <li><Link href="/services/rehabilitation-clinics">Rehabilitation Clinics</Link></li>
+              <li><Link href="/services/skilled-nursing">Nursing Homes & Long-Term Care</Link></li>
               <li><Link href="/services/specialty-clinics">Specialty Clinics</Link></li>
               <li><Link href="/services/ambulatory-outpatient">Ambulatory & Outpatient</Link></li>
-              <li><Link href="/services/rehabilitation-clinics">Rehabilitation Clinics</Link></li>
-              <li><Link href="/services/skilled-nursing">Skilled Nursing & Long-Term Care</Link></li>
               <li><Link href="/services/healthcare-admin-offices">Healthcare Admin Offices</Link></li>
               <li><Link href="/atp-assessment">Free ATP Test</Link></li>
               <li><Link href="/emergency-cleaning">24/7 Emergency</Link></li>
@@ -56,7 +57,7 @@ export default function Footer() {
               <li><Link href="/dialysis-clinic-cleaning">Dialysis Clinic Cleaning</Link></li>
               <li><Link href="/services/urgent-care-cleaning">Urgent Care Cleaning</Link></li>
               <li><Link href="/surgery-center-cleaning">Surgery Center Cleaning</Link></li>
-              <li><Link href="/services/assisted-living-cleaning">Assisted Living Cleaning</Link></li>
+              <li><Link href="/services/assisted-living-cleaning">Assisted Living & Memory Care</Link></li>
               <li><Link href="/healthcare-cleaning-massachusetts-guide">MA Healthcare Cleaning Guide</Link></li>
             </ul>
           </div>

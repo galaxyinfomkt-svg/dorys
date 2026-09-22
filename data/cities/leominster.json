@@ -38,6 +38,41 @@
         "source": "https://www.drcoakley.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Professional Physical Therapy - Leominster",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.professionalpt.com/office/leominster/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Joint Ventures Physical Therapy and Fitness - Leominster",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.jointventurespt.com/locations/leominster/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Leominster Rehabilitation and Nursing Center",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://www.leominsterrnc.com/about-us/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Life Care Center of Leominster",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://lcca.com/locations/ma/leominster/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Sunrise of Leominster",
+        "type": "assisted living residence",
+        "source": "https://www.sunriseseniorliving.com/communities/ma/sunrise-of-leominster",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

@@ -47,6 +47,20 @@
         "source": "https://www.navidfamilydental.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Professional Physical Therapy - Peabody",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.professionalpt.com/office/peabody-ma/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Spaulding Outpatient Center Peabody",
+        "type": "rehabilitation clinic",
+        "source": "https://spauldingrehab.org/locations/peabody-outpatient",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

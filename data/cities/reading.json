@@ -38,6 +38,13 @@
         "source": "https://pitcherdental.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Reading",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/reading/281-main-street",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

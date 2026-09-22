@@ -17,15 +17,15 @@ const POPULAR_CITIES = [
 
 const SERVICES = [
   ["medical-office-cleaning", "Medical Offices"],
+  // Rehab + senior care sit right under medical offices: the owner's two
+  // priority facility groups (2026-09-22). rehab-nursing 301s (it was split).
+  ["rehabilitation-clinics", "Rehabilitation Clinics"],
+  ["skilled-nursing", "Nursing Homes & Long-Term Care"],
+  ["assisted-living-cleaning", "Assisted Living & Memory Care"],
   ["specialty-clinics", "Specialty Clinics"],
   ["ambulatory-outpatient", "Ambulatory & Outpatient"],
-  // rehab-nursing 301s (it was split in two), and the dental, urgent care,
-  // skilled nursing and assisted living hubs were missing from the menu.
   ["dental-office-cleaning", "Dental Offices"],
   ["urgent-care-cleaning", "Urgent Care Centers"],
-  ["rehabilitation-clinics", "Rehabilitation Clinics"],
-  ["skilled-nursing", "Skilled Nursing & Long-Term Care"],
-  ["assisted-living-cleaning", "Assisted Living"],
   ["healthcare-admin-offices", "Healthcare Admin Offices"],
 ] as const
 
@@ -62,11 +62,10 @@ export default function Header() {
             // cleaning companies, so a licence claim is false. "109" not "296":
             // the service area is 109 municipalities after the prune.
             "$2M Insured",
+            "Rehab Clinics & Senior Care",
             "CDC / OSHA Compliant",
             "22+ Years Clinical Experience",
             "Black-Owned & Women-Owned",
-            "Serving 109 MA Cities",
-            "Free 24-Hour Facility Assessment",
           ].flatMap((item, i, arr) => {
             const node = (
               <span key={item} className="trust-strip__item">
@@ -96,6 +95,7 @@ export default function Header() {
               <li className="nav-item has-dropdown">
                 <Link href="/services" className="nav-link">Services</Link>
                 <div className="nav-dropdown">
+                  <Link href="/senior-care-rehab-cleaning" className="nav-dropdown__link text-primary font-semibold">Rehab &amp; Senior Care Facilities →</Link>
                   {SERVICES.map(([slug, label]) => (
                     <Link key={slug} href={`/services/${slug}`} className="nav-dropdown__link">{label}</Link>
                   ))}

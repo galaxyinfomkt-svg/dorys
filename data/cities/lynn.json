@@ -43,6 +43,20 @@
         "source": "https://www.lynn-dentist.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Spaulding Outpatient Center Lynn",
+        "type": "rehabilitation clinic",
+        "source": "https://spauldingrehab.org/locations/lynn-outpatient",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Advance Physical Therapy & Sport Rehabilitation",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://aptsr.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

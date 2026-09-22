@@ -16,6 +16,7 @@ import { esc, cap, UNIVERSAL, NOUN } from './lib/town-kit.mjs'
 
 const ROOT = process.cwd()
 const META = join(ROOT, 'data/services/_meta')
+const SENIOR_REHAB = new Set(['rehabilitation-clinics', 'skilled-nursing', 'assisted-living-cleaning'])
 const START = '<!-- KNOWLEDGE:START -->'
 const END = '<!-- KNOWLEDGE:END -->'
 let n = 0
@@ -37,6 +38,9 @@ for (const f of readdirSync(META).filter((f) => f.endsWith('.json') && !f.starts
     (s.scheduleNotes?.length ? s.scheduleNotes.map((t) => `<p>${esc(t)}</p>`).join('') : '') +
     (s.documentationDeliverables?.length ? `<h3>Documentation you receive</h3>${list(s.documentationDeliverables)}` : '') +
     (s.vendorQuestions?.length ? `<h3>Questions to ask any cleaning vendor</h3>${list(s.vendorQuestions)}` : '') +
+    (SENIOR_REHAB.has(s.slug)
+      ? `<p><strong>Rehabilitation clinics and senior care are core specialties.</strong> How rehab clinics, nursing homes, assisted living and memory care differ, and where they are in the towns we serve: <a href="/senior-care-rehab-cleaning">Rehab &amp; Senior Care Facility Cleaning</a>.</p>`
+      : '') +
     `</div></section>${END}`
   let h = hub.mainHtml
   if (h.includes(START)) h = h.slice(0, h.indexOf(START)) + block + h.slice(h.indexOf(END) + END.length)

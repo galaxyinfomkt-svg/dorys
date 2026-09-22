@@ -48,6 +48,41 @@
         "source": "https://cambridgefamilydentalma.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Professional Physical Therapy - Cambridge",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.professionalpt.com/office/cambridge-ma/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Central Square",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/cambridge/32-prospect-street",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Sancta Maria Nursing Facility",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://sanctamaria.org/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Cambridge Rehabilitation & Nursing Center",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://cambridgerehab.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Cadbury Commons",
+        "type": "assisted living residence",
+        "source": "https://cadburycommons.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

@@ -42,6 +42,20 @@
         "source": "https://www.medwayvillagedentist.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Professional Physical Therapy - Medway",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.professionalpt.com/office/medway/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Connections Physical Therapy - Medway",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://connectionspt.com/physical-therapy-clinic/medway/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

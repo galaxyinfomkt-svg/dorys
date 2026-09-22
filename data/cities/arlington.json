@@ -35,6 +35,41 @@
         "source": "https://arlingtondentalsmile.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Professional Physical Therapy - Arlington",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.professionalpt.com/office/arlington/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Boston Physical Therapy & Wellness - Arlington",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://bostonptwellness.com/arlington/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Park Avenue Healthcare",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://parkavehc.org/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Sunrise of Arlington",
+        "type": "assisted living residence",
+        "source": "https://www.sunriseseniorliving.com/communities/ma/sunrise-of-arlington",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Brightview Arlington",
+        "type": "assisted living residence",
+        "source": "https://www.brightviewseniorliving.com/find-a-community/brightview-arlington",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

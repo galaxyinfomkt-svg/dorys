@@ -109,6 +109,8 @@ function breadcrumb(service, city) {
   )
 }
 
+const SENIOR_REHAB = new Set(['rehabilitation-clinics', 'skilled-nursing', 'assisted-living-cleaning'])
+
 function introWithForm(service, city) {
   const key = `intro:${service.slug}:${city.slug}`
   const [, many] = NOUN[service.slug]
@@ -142,6 +144,16 @@ function introWithForm(service, city) {
           .join('')}</ul>`
       : '') +
     (service.buyer ? `<p>Usually arranged with the ${esc(lc(service.buyer))}.</p>` : '') +
+    (SENIOR_REHAB.has(service.slug)
+      ? `<p>${pick(
+          [
+            `Rehabilitation clinics and senior care facilities are one of our core specialties`,
+            `Rehab clinics, nursing homes and assisted living are a core specialty for us`,
+            `We give rehabilitation clinics and senior care facilities particular focus`,
+          ],
+          `${key}:senior`
+        )} — <a href="/senior-care-rehab-cleaning">see how we clean them</a>.</p>`
+      : '') +
     `<div class="btn-group mt-xl">` +
     `<a href="#quote" class="btn btn--primary">Request Assessment</a>` +
     `<a href="tel:${PHONE}" class="btn btn--secondary">Call ${esc(PHONE_DISP)}</a>` +

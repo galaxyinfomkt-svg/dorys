@@ -21,7 +21,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import {
   company, SITE, PHONE, PHONE_DISP, FORM_ID, YEARS, HQ, cities,
-  esc, lc, num, UNIVERSAL, SHORT, NOUN,
+  esc, lc, cap, num, UNIVERSAL, SHORT, NOUN,
   pick, subset, nearest, hqFacts, round1, relevantFacilities, townFacts, anchorFacility, healthAuthorityHtml, healthAuthorityFaq,
 } from './lib/town-kit.mjs'
 
@@ -32,11 +32,13 @@ const services = readdirSync(META_DIR)
   .filter((f) => f.endsWith('.json') && !f.startsWith('_'))
   .map((f) => JSON.parse(readFileSync(join(META_DIR, f), 'utf8')))
   .filter((s) => UNIVERSAL.has(s.slug))
-// Display order: most common facility types first.
+// Display order: medical offices, then the owner's two priority groups —
+// rehabilitation clinics and senior care (2026-09-22) — then the rest.
 const ORDER = [
-  'medical-office-cleaning', 'dental-office-cleaning', 'urgent-care-cleaning', 'specialty-clinics',
-  'ambulatory-outpatient', 'rehabilitation-clinics', 'skilled-nursing', 'assisted-living-cleaning',
+  'medical-office-cleaning', 'rehabilitation-clinics', 'skilled-nursing', 'assisted-living-cleaning',
+  'dental-office-cleaning', 'urgent-care-cleaning', 'specialty-clinics', 'ambulatory-outpatient',
 ]
+const SENIOR_REHAB = ['rehabilitation-clinics', 'skilled-nursing', 'assisted-living-cleaning']
 services.sort((a, b) => ORDER.indexOf(a.slug) - ORDER.indexOf(b.slug))
 
 const countyPeers = (city) => cities.filter((c) => c.county && c.county === city.county && c.slug !== city.slug)
@@ -141,7 +143,7 @@ function servicesGrid(city) {
   return (
     `<section class="section" id="services"><div class="container">` +
     `<h2 class="section__title text-center">Healthcare cleaning services in ${esc(city.name)}</h2>` +
-    `<p class="section__subtitle text-center mb-lg">Each service has its own protocol, surfaces and documentation. Choose the one that matches your facility.</p>` +
+    `<p class="section__subtitle text-center mb-lg">Each service has its own protocol, surfaces and documentation. Rehabilitation clinics and senior care facilities are core specialties — <a href="/senior-care-rehab-cleaning">see how we clean them</a>.</p>` +
     `<div class="service-mini-grid">${cards}</div></div></section>`
   )
 }
@@ -159,6 +161,20 @@ function howWeWork(city) {
     `<ol class="list list--steps">${steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol>` +
     `</div></section>`
   )
+}
+
+/** Rehab + senior care FAQ, naming what is verified in (or nearest to) town. */
+function seniorRehabFaq(city) {
+  const parts = SENIOR_REHAB.map((slug) => {
+    const rel = relevantFacilities(city, { slug })
+    if (rel.length) return `${NOUN[slug][1]} verified in ${city.name} include ${rel.slice(0, 2).map((f) => f.name).join(' and ')}`
+    const n = nearest(city).find(({ c }) => relevantFacilities(c, { slug }).length)
+    return n ? `the nearest verified ${NOUN[slug][0]} is in ${n.c.name} (${round1(n.d)} mi)` : null
+  }).filter(Boolean)
+  return {
+    q: `Do you clean rehab clinics, nursing homes and assisted living in ${city.name}?`,
+    a: `Yes — rehabilitation clinics and senior care facilities are core specialties, with visits scheduled around therapy sessions, meals and resident routines. ${parts.length ? cap(parts.join('; ')) + ' (named as local context, not as clients).' : ''}`.trim(),
+  }
 }
 
 function faq(city) {
@@ -179,6 +195,7 @@ function faq(city) {
   const near = nearest(city).slice(0, 3)
   if (near.length)
     q.push({ q: `Which nearby towns do you serve?`, a: `The closest are ${near.map(({ c, d }) => `${c.name} (about ${round1(d)} mi)`).join(', ')}.` })
+  q.push(seniorRehabFaq(city))
   const hf = healthAuthorityFaq(city)
   if (hf) q.push(hf)
   q.push({
@@ -235,7 +252,7 @@ function mapAndCta(city) {
 function description(city) {
   const hq = hqFacts(city)
   const opts = [
-    `Healthcare facility cleaning in ${city.name}, MA${city.county ? ` (${city.county} County)` : ''}: medical, dental, urgent care, outpatient and long-term care. $2M insured. ${PHONE_DISP}`,
+    `Healthcare facility cleaning in ${city.name}, MA${city.county ? ` (${city.county} County)` : ''}: medical, rehab, nursing home, assisted living & dental. $2M insured. ${PHONE_DISP}`,
     `Clinical-grade cleaning for ${city.name}, MA healthcare facilities${hq && hq.d ? `, ${hq.d} mi from our ${HQ.name} base` : ''}. Written scope, signed logs. Free assessment: ${PHONE_DISP}`,
   ]
   let d = pick(opts, `loc:desc:${city.slug}`)

@@ -43,6 +43,20 @@
         "source": "https://www.garberdentistry.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Professional Physical & Hand Therapy - Salem",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.professionalpt.com/office/salem/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Salem",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/salem/133-highland-avenue",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

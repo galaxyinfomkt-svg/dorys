@@ -38,6 +38,20 @@
         "source": "https://saugussmiles.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "ATI Physical Therapy - Saugus",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.atipt.com/massachusetts/saugus/124-broadway/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Saugus",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/saugus/600-broadway",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

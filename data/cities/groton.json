@@ -44,6 +44,13 @@
         "source": "https://dentistgroton.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Live Free Physical Therapy (Connections Physical Therapy) - Groton",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://connectionspt.com/physical-therapy-clinic/groton/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

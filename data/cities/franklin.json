@@ -38,6 +38,34 @@
         "source": "https://arcadiadentalfranklin.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "FYZICAL Therapy & Balance Centers - Franklin Main Street",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.fyzical.com/franklin-main-street-ma",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Franklin",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/franklin/45-forge-hill-road",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Benchmark Senior Living at Forge Hill",
+        "type": "senior living community with assisted living",
+        "source": "https://www.benchmarkseniorliving.com/senior-living/ma/franklin/benchmark-senior-living-at-forge-hill/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "The Enclave of Franklin",
+        "type": "assisted living residence",
+        "source": "https://enclaveoffranklin.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

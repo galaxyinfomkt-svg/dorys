@@ -31,6 +31,13 @@
         "source": "https://www.chriskirusisdmd.com/west-boylston-office-location",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Central Mass Physical Therapy & Wellness",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.centralmasspt.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

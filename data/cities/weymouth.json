@@ -46,6 +46,13 @@
         "source": "https://www.deluxedentalcare.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Cray Physical Therapy - Weymouth",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://craypt.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

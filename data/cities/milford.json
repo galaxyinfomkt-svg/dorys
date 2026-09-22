@@ -38,6 +38,20 @@
         "source": "https://www.milforddentalgroup.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Highbar Physical Therapy - Milford",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.highbarhealth.com/locations/milford-ma/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Platinum Physical Therapy - Milford",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://platinumptma.com/physical-therapy-clinic/milford-ma/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

@@ -38,6 +38,20 @@
         "source": "https://www.foxborodental.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Foxborough",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/foxboro/67-mechanic-street",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Highbar Physical Therapy - Foxborough",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.highbarhealth.com/locations/foxborough-ma/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

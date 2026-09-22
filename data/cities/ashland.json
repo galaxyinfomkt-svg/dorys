@@ -30,6 +30,27 @@
         "source": "https://www.ashlandelite.net/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Platinum Physical Therapy - Ashland",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://platinumptma.com/physical-therapy-clinic/ashland-ma/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Waterview Lodge Rehabilitation & Healthcare",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://www.waterviewlodgellc.com/contact-us",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "The Residence at Valley Farm",
+        "type": "senior living community with assisted living",
+        "source": "https://www.lcbseniorliving.com/communities/residence-at-valley-farm/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [],

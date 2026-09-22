@@ -42,6 +42,41 @@
         "source": "https://www.smilesforlifeconcord.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Joint Ventures Physical Therapy - Concord",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.jointventurespt.com/locations/concord/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Emerson Health Clough Family Center for Rehabilitative & Sports Therapies",
+        "type": "sports medicine and rehabilitation clinic",
+        "source": "https://emersonhealth.org/locations/emerson-health-clough-family-center-for-rehabilitative-sports-therapies-concord/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "CareOne at Concord",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://www.care-one.com/locations/careone-at-concord/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Newbury Court",
+        "type": "senior living community with assisted living",
+        "source": "https://newburycourt.org/health-services/skilled-nursing/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Concord Park Senior Living",
+        "type": "senior living community with assisted living",
+        "source": "https://www.seniorlivingresidences.com/communities/concord-park/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

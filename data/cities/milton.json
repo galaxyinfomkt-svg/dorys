@@ -34,6 +34,20 @@
         "source": "https://www.jmurphydmd.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Milton",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/milton/191-blue-hills-parkway",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Elliott Physical Therapy - Milton",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://elliottphysicaltherapy.com/physical-therapy-clinic/milton-ma/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

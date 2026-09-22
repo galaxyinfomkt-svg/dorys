@@ -38,6 +38,20 @@
         "source": "http://wychfamilydental.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Blackstone Valley Physical Therapy Services",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://bvpts.com/location/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "JointWorks Physical Therapy",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.jointworkspt.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

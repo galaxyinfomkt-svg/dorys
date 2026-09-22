@@ -42,6 +42,34 @@
         "source": "https://www.balianfamilydental.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Select Physical Therapy - Auburn",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.selectphysicaltherapy.com/contact/find-a-location/ma/auburn/auburn/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Physical Therapy Innovations - Auburn",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.physicaltherapyinnovations.com/auburn/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Life Care Center of Auburn",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://lcca.com/locations/ma/auburn/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Brookdale Eddy Pond",
+        "type": "senior living community with assisted living",
+        "source": "https://www.brookdale.com/en/communities/brookdale-eddy-pond-west.html",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

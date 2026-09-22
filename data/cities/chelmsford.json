@@ -42,6 +42,41 @@
         "source": "https://www.chelmsfordfamilydental.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Select Physical Therapy - Chelmsford",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.selectphysicaltherapy.com/contact/find-a-location/ma/chelmsford/chelmsford/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Chelmsford",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/chelmsford/67-parkhurst-road",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Sunny Acres Nursing & Rehabilitation Center",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://www.sunnyacres.org/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Palm Springs Post Acute",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://palmspringsrehabhc.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Benchmark Senior Living at Chelmsford Crossings",
+        "type": "assisted living residence",
+        "source": "https://www.benchmarkseniorliving.com/senior-living/ma/chelmsford/benchmark-senior-living-at-chelmsford-crossings/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

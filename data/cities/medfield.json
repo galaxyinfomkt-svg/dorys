@@ -34,6 +34,20 @@
         "source": "https://westmillsmiles.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "ATI Physical Therapy - Medfield",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.atipt.com/medfield-ma",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Medfield Orthopedic and Sports Therapy (Connections Physical Therapy)",
+        "type": "sports medicine and rehabilitation clinic",
+        "source": "https://connectionspt.com/physical-therapy-clinic/medfield-ma/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

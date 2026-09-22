@@ -35,6 +35,41 @@
         "source": "https://dentalcareburlington.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Burlington",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/burlington/54-middlesex-turnpike",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Club Move Physical Therapy",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://clubmovept.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Sunrise of Burlington",
+        "type": "assisted living residence",
+        "source": "https://www.sunriseseniorliving.com/communities/ma/sunrise-of-burlington",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Stonebridge at Burlington",
+        "type": "senior living community with assisted living",
+        "source": "https://northbridgecommunities.com/stonebridge-at-burlington/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Atria Longmeadow Place",
+        "type": "memory care residence",
+        "source": "https://www.atriaseniorliving.com/retirement-communities/atria-longmeadow-place-burlington-ma/memory-care",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

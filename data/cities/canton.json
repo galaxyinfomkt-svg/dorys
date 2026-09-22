@@ -34,6 +34,41 @@
         "source": "https://www.cantondentalgroup.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "ATI Physical Therapy - Canton",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.atipt.com/massachusetts/canton/95-washington-st/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Marathon Physical Therapy - Canton",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.marathonphysicaltherapy.com/locations-canton",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Hellenic Nursing and Rehabilitation Center",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://hellenicnursingandrehabilitationcenter.org/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Brightview Canton",
+        "type": "senior living community with assisted living",
+        "source": "https://www.brightviewseniorliving.com/find-a-community/brightview-canton",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Cornerstone at Canton",
+        "type": "assisted living residence",
+        "source": "https://www.seniorlivingresidences.com/communities/cornerstone-canton/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

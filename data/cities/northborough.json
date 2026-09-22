@@ -38,6 +38,20 @@
         "source": "https://www.lavanafamilydental.com/location/northborough-ma",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Saint Vincent Physical Therapy at Northborough Crossing",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.stvincenthospital.com/locations/detail/saint-vincent-physical-therapy-at-northborough-crossing/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Flaherty Physical Therapy - Northborough",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.flahertyphysicaltherapy.com/northborough/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

@@ -38,6 +38,27 @@
         "source": "https://www.shawfamilysmiles.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Holden Physical Therapy",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://physicaltherapyholden.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Physical Therapy Innovations - Holden",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.physicaltherapyinnovations.com/holden/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Holden Rehabilitation & Skilled Nursing Center",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://www.oriolhealthcare.com/our-nursing-centers/holden-rehabilitation-skilled-nursing-center/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

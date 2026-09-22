@@ -9,7 +9,8 @@ Dory's Cleaning Services provides clinical-grade environmental cleaning, infecti
 - **Medical offices** — physician practices, internal medicine, OB/GYN, pediatrics, family medicine
 - **Specialty clinics** — cardiology, dermatology, dental, urgent care, orthopedics, dialysis
 - **Ambulatory and outpatient facilities** — same-day surgery centers, infusion centers
-- **Rehabilitation and nursing facilities** — long-term care, skilled nursing, memory care, assisted living
+- **Rehabilitation clinics (core specialty)** — outpatient physical, occupational and speech therapy clinics, sports-medicine rehab
+- **Senior care facilities (core specialty)** — nursing homes, skilled nursing and long-term care, rest homes, assisted living, memory care
 - **Healthcare administrative offices** — billing centers, medical records, hospital headquarters
 
 We do NOT provide residential or home cleaning services. We exclusively serve commercial healthcare facilities.
@@ -84,14 +85,16 @@ Brand assets, founder bio, approved boilerplate, and media contact:
 - Medical office cleaning: https://doryscleaningservices.com/services/medical-office-cleaning
 - Specialty clinic cleaning: https://doryscleaningservices.com/services/specialty-clinics
 - Ambulatory and outpatient cleaning: https://doryscleaningservices.com/services/ambulatory-outpatient
-- Rehab and nursing facility cleaning: https://doryscleaningservices.com/services/rehab-nursing
+- Rehab clinic & senior care facility cleaning (overview): https://doryscleaningservices.com/senior-care-rehab-cleaning
+- Rehabilitation clinic cleaning: https://doryscleaningservices.com/services/rehabilitation-clinics
+- Nursing home & long-term care cleaning: https://doryscleaningservices.com/services/skilled-nursing
 - Healthcare admin office cleaning: https://doryscleaningservices.com/services/healthcare-admin-offices
-- Dental office cleaning: https://doryscleaningservices.com/dental-office-cleaning
+- Dental office cleaning: https://doryscleaningservices.com/services/dental-office-cleaning
 - Cardiology clinic cleaning: https://doryscleaningservices.com/cardiology-clinic-cleaning
 - Dialysis clinic cleaning: https://doryscleaningservices.com/dialysis-clinic-cleaning
-- Urgent care cleaning: https://doryscleaningservices.com/urgent-care-cleaning
+- Urgent care cleaning: https://doryscleaningservices.com/services/urgent-care-cleaning
 - Surgery center cleaning: https://doryscleaningservices.com/surgery-center-cleaning
-- Assisted living cleaning: https://doryscleaningservices.com/assisted-living-cleaning
+- Assisted living & memory care cleaning: https://doryscleaningservices.com/services/assisted-living-cleaning
 - COVID disinfection: https://doryscleaningservices.com/covid-disinfection
 - ATP assessment: https://doryscleaningservices.com/atp-assessment
 - Emergency cleaning: https://doryscleaningservices.com/emergency-cleaning

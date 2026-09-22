@@ -37,6 +37,13 @@ const ROOT_TO_HUB = [
 ]
 for (const s of ROOT_TO_HUB) MAP.set(`/${s}`, `/services/${s}`)
 
+/** The combined "rehab & nursing" hub duplicated the rehab + senior care
+ * pillar page (2026-09-22); it 301s there, and so does every rule that used
+ * to land on it (no redirect chains). */
+const PILLAR = "/senior-care-rehab-cleaning"
+for (const [k, v] of MAP) if (v === "/services/rehab-nursing") MAP.set(k, PILLAR)
+MAP.set("/services/rehab-nursing", PILLAR)
+
 /** These have NO /services/{slug} hub — the root page is their only real page.
  * We must NOT redirect the root away (doing so sent a live page into a 404).
  * Instead, the /services/{slug} URL that a visitor or a stale Google result

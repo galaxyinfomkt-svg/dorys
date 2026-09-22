@@ -34,6 +34,20 @@
         "source": "https://www.graftonsmiles.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Select Physical Therapy - Grafton",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.selectphysicaltherapy.com/contact/find-a-location/ma/north-grafton/grafton/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Connections Physical Therapy - Grafton",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://connectionspt.com/physical-therapy-clinic/grafton/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

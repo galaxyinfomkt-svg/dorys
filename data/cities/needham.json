@@ -34,6 +34,20 @@
         "source": "https://www.erussfamilydental.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Professional Physical Therapy - Needham",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.professionalpt.com/office/needham-ma/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Joint Ventures Physical Therapy - Needham",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.jointventurespt.com/locations/needham/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

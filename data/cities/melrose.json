@@ -34,6 +34,27 @@
         "source": "https://www.melrosefamilydentistry.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "ATI Physical Therapy - Melrose",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.atipt.com/massachusetts/melrose/425-main-st/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Connected Pelvic Floor Physical Therapy",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.connectedpelvicfloorpt.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "The Residence at Melrose Station",
+        "type": "senior living community with assisted living",
+        "source": "https://www.lcbseniorliving.com/communities/residence-at-melrose-station/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

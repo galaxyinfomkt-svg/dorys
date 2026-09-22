@@ -35,6 +35,41 @@
         "source": "https://www.dentalparkcare.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "ATI Physical Therapy - Dedham",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.atipt.com/massachusetts/dedham/888-washington-st-ste-105a/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Physical Therapy at Dedham Health",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://physicaltherapy.dedhamhealth.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Hebrew Rehabilitation Center at NewBridge on the Charles",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://www.hebrewseniorlife.org/locations/hebrew-rehabilitation-center/hrc-newbridge",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Charter Senior Living of Dedham",
+        "type": "memory care residence",
+        "source": "https://www.charterofdedham.com/lifestyles/memory-care/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Traditions of Dedham",
+        "type": "senior living community with assisted living",
+        "source": "https://www.lcbseniorliving.com/communities/traditions-of-dedham/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

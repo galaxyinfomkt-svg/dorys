@@ -1,13 +1,13 @@
 # Auditoria SEO + Layout — doryscleaningservices.com
-**Data:** 22/09/2026 · **Branch:** `claude/dorys-seo-layout-audit-q8pzly` · **Escopo:** todas as 1.036 URLs (1.031 páginas + arquivos)
+**Data:** 22/09/2026 · **Branch:** `claude/dorys-seo-layout-audit-q8pzly` · **Escopo:** todas as 1.037 URLs (1.032 páginas + arquivos)
 
 ## Resumo executivo
 
 | Indicador | Antes | Depois |
 |---|---|---|
-| Páginas com schema (JSON-LD) no HTML servido | 0 de 956 | **1.031 de 1.031** |
+| Páginas com schema (JSON-LD) no HTML servido | 0 de 956 | **1.032 de 1.032** |
 | Links internos que passavam por redirect 301 | ~4.100 | **0** |
-| URLs no sitemap | 912 (4 redirecionavam, 3 hubs faltando) | **1.031, todas 200 e indexáveis** |
+| URLs no sitemap | 912 (4 redirecionavam, 3 hubs faltando) | **1.032, todas 200 e indexáveis** |
 | Similaridade páginas serviço×cidade (mesmo serviço) | 93% | **23%** (mediana) |
 | Similaridade páginas de cidade (/locations) | 44% | **26%** |
 | 7 páginas raiz (cardiologia, diálise, cirurgia, emergência, COVID, ATP, facilities) | 98–99% idênticas | **~40%** |
@@ -71,9 +71,45 @@ Pipeline: `npm run build:service-pages` (merge → páginas de serviço → pág
 - **Consultórios odontológicos:** 195 consultórios em 107 das 109 cidades, cada um confirmado por resultado de busca no **site do próprio consultório** com o nome da cidade (diretórios e páginas "atendemos sua cidade" de outras cidades foram rejeitados). Princeton e Berlin ficaram sem nenhum que cumprisse a regra. As 109 páginas de odontologia agora citam os consultórios reais da cidade (como contexto de mercado, nunca como clientes).
 - **Supplier Diversity:** documentos para compras (COI, W-9, NAICS, SDS, treinamentos), nota honesta de que o gasto só conta como MBE/WBE após a certificação, cobertura multi-site; removido "hospitais".
 
-## 6. Pendências (precisam de ação humana)
+## 6. Reabilitação e casas de idosos em destaque (pedido do Luiz)
+- **Página nova** `/senior-care-rehab-cleaning` (“Rehabilitation Clinic & Senior Care Facility Cleaning in Massachusetts”):
+  - o que muda na limpeza de clínicas de reabilitação e na de casas de repouso / assisted living / memory care;
+  - normas: 42 CFR 483.80 e 483.10(i), 105 CMR 150, 651 CMR 12, OSHA 1910.1030, EPA List K;
+  - lista, cidade por cidade, de onde há estabelecimentos verificados;
+  - FAQ com schema.
+  - Lighthouse: SEO 100, acessibilidade 100, performance 97.
+- **Recebe link de todas as 1.032 páginas:**
+  - no menu Services, com destaque no topo;
+  - na faixa de confiança (“Rehab Clinics & Senior Care”);
+  - no rodapé;
+  - nas 327 páginas de cidade dos 3 serviços;
+  - nos 3 hubs e no hub /services.
+- **Home:** nova seção “We Clean Rehabilitation Clinics and Senior Care Facilities”, subtítulo do hero e meta description atualizados, `knowsAbout` no schema.
+- **Páginas de cidade (109):**
+  - reabilitação, nursing home e assisted living vêm logo depois de consultório médico;
+  - nova FAQ que cita os estabelecimentos reais da cidade ou o mais próximo verificado.
+- **/services:**
+  - o título dizia “5 serviços” (são 9) e a descrição dizia “5 rated” (a nota é 4,7): corrigido;
+  - schema ItemList com os 9 serviços.
+  - O “5 rated” falso também saiu do hub de consultório médico.
+- **/services/rehab-nursing** (duplicava o tema) agora faz 301 para a página nova, e os redirects antigos apontam direto para ela, sem cadeia.
+- **180 estabelecimentos novos verificados em 70 cidades** (clínicas de fisioterapia/reabilitação, nursing homes, assisted living, memory care), todos no site do próprio estabelecimento:
+  - clínicas de reabilitação: 70 cidades;
+  - skilled nursing: 30;
+  - assisted living: 40.
+  - Descartados de propósito: quiroprática, links de diretório, unidades da Steward (fechadas em 2024) e homônimos de outros estados.
+- **Regra nova de classificação:** “Nursing and Rehabilitation Center” conta como casa de repouso, nunca como clínica de reabilitação ambulatorial; e clínica de fisioterapia não conta como centro cirúrgico.
+- **Removido o que não se sustenta:**
+  - “cobertura 7 dias”: o horário oficial é seg–sáb;
+  - “a maior parte do nosso trabalho”: sem dado que comprove.
+
+## 7. Pendências (precisam de ação humana)
 1. **Telefones dos Boards of Health** — os links oficiais já estão no ar; os telefones ficam em `data/_todo-boards-of-health.csv` até alguém confirmar (**Ana/Gabi**). Depois, preencher `localHealth.boardOfHealthPhone` em `data/cities/*.json` e rodar `npm run build:service-pages`.
-2. **Estabelecimentos por cidade** — odontologia coberta (107/109). Casas de repouso (skilled nursing), assisted living e clínicas de reabilitação ainda têm poucas cidades com registro; pesquisar e adicionar em `healthcareLandscape.majorFacilities` (com URL de fonte) enriquece as páginas automaticamente com `npm run build:service-pages`.
+2. **Estabelecimentos por cidade** — odontologia 107/109; reabilitação 70/109; skilled nursing 30/109; assisted living 40/109. A cota de buscas acabou antes de cobrir todas as cidades. Ainda não pesquisadas:
+   - **Reabilitação:** Sharon, Shrewsbury, Spencer, Stoughton, Sutton, Wakefield, Watertown, Wellesley, Westford, Winchester, Wrentham, Rutland, Somerville, Sterling, Stow, Upton, Walpole, Wayland, Weston, Woburn, Shirley, Stoneham, Sudbury, Uxbridge, Waltham, Webster e Worcester.
+   - **Casas de idosos:** cerca de 60 cidades.
+   
+   Para completar: adicionar em `healthcareLandscape.majorFacilities` (nome, tipo, URL do site do próprio estabelecimento) e rodar `npm run build:service-pages`. As páginas se atualizam sozinhas.
 3. **Selos MBE/WBE** — só usar as siglas quando houver número de certificado em `data/company.json`.
 4. **Depois do deploy:** reenviar `sitemap.xml` no Google Search Console e acompanhar a cobertura das 1.031 URLs por 4–6 semanas.
 5. **CSS não usado** — o bundle ainda carrega regras de templates antigos; remover exige mapear classes geradas por JS. Próximo ganho de performance, com teste visual a cada passo.

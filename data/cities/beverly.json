@@ -38,6 +38,41 @@
         "source": "https://www.northshoredentistrypc.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Professional Physical Therapy - Beverly",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.professionalpt.com/office/beverly/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Beverly",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/beverly/254-essex-street",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Blueberry Hill Rehabilitation & Healthcare Center",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://blueberryhillrehab.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "The Herrick House",
+        "type": "assisted living residence",
+        "source": "https://theherrickhouse.org/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "The Current Beverly",
+        "type": "senior living community with assisted living",
+        "source": "https://www.monarchcommunities.com/the-current-beverly-ma",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

@@ -38,6 +38,20 @@
         "source": "https://nexusfamilydental.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Platinum Physical Therapy - Maynard",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://platinumptma.com/physical-therapy-clinic/maynard-ma/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Assabet Valley Chiropractic & Physical Therapy",
+        "type": "rehabilitation clinic",
+        "source": "https://www.assabetchiropt.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

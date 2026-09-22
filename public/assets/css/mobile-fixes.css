@@ -1722,3 +1722,19 @@ main .card:not(.service-card) { padding: 1.25rem 1.5rem; }
 .container--narrow > .section__title + h3 { margin-top: 1rem; }
 /* Gallery filter tabs are <button>s once JS enhances them: reset UA styles. */
 button.gallery-tab { font: inherit; cursor: pointer; }
+
+/* Home: rehab clinic + senior care specialty block (2026-09-22) */
+.home-senior { background: #f0f6ff; }
+.home-senior__grid { display: grid; gap: 2rem; align-items: center; }
+.home-senior__media img { width: 100%; height: auto; border-radius: 16px; display: block; }
+.home-senior__body > p { color: #334155; }
+.home-senior__body .section__title { text-align: left; }
+.home-senior__cards { display: grid; gap: .75rem; margin: 1.25rem 0 1.5rem; }
+.home-senior__card { display: block; padding: .9rem 1rem; background: #fff; border: 1px solid #dbe4f0; border-left: 4px solid #2b70e4; border-radius: 10px; color: #0f172a; text-decoration: none; }
+.home-senior__card strong { display: block; font-size: 1.02rem; }
+.home-senior__card span { display: block; font-size: .9rem; color: #475569; margin-top: .15rem; }
+.home-senior__card:hover, .home-senior__card:focus-visible { border-color: #2b70e4; box-shadow: 0 4px 14px rgba(43,112,228,.15); }
+@media (min-width: 900px) {
+  .home-senior__grid { grid-template-columns: 5fr 7fr; gap: 3rem; }
+  .home-senior__cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

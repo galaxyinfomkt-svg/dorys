@@ -38,6 +38,34 @@
         "source": "https://malden-familydental.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Spaulding Outpatient Center Malden",
+        "type": "rehabilitation clinic",
+        "source": "https://spauldingrehab.org/locations/malden-outpatient/conditions-services/physical-therapy",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Malden",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/malden/150-commercial-street",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Atria Maplewood Place",
+        "type": "assisted living residence",
+        "source": "https://www.atriaseniorliving.com/retirement-communities/atria-maplewood-place-malden-ma",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Forestdale Park",
+        "type": "assisted living residence",
+        "source": "https://www.seniorlivingresidences.com/communities/malden-forestdale-park/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

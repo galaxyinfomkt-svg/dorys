@@ -38,6 +38,27 @@
         "source": "https://www.hudsondentistryandbraces.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Achieve Physical Therapy - Hudson",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://achieveptonline.com/location/achieve-physical-therapy-hudson-ma/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Move Strong Physical Therapy",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.movestrongphysicaltherapy.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Artisan at Hudson",
+        "type": "memory care residence",
+        "source": "https://artisanathudson.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

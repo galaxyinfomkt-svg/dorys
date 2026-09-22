@@ -43,6 +43,41 @@
         "source": "https://www.asarkof.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "ATI Physical Therapy - Lexington",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.atipt.com/massachusetts/lexington/57-bedford-st/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Kalogeris Physical Therapy",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://kalogerispt.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "CareOne at Lexington",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://ma.care-one.com/locations/careone-at-lexington/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Pine Knoll Nursing Center",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://www.longtermcentersgroup.com/About-Pine-Knoll-Nursing-Center-Rehab",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Waterstone of Lexington",
+        "type": "senior living community with assisted living",
+        "source": "https://www.waterstonesl.com/lexington/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

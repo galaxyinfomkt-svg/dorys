@@ -45,6 +45,20 @@
         "source": "https://quincydentalspecialists.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Professional Physical Therapy - Quincy",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.professionalpt.com/office/quincy/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Quincy",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/quincy/111-willard-street",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

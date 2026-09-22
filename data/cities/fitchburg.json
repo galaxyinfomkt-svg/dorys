@@ -42,6 +42,41 @@
         "source": "https://www.rollstonedental.com/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "Professional Physical Therapy - Fitchburg",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://www.professionalpt.com/office/fitchburg/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Complete Physical Therapy and Wellness",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://completept.org/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Fitchburg Rehabilitation and Nursing Center",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://fitchburgrnc.com/about-us/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "The Highlands",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://lcca.com/locations/ma/the-highlands/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "The Gables of Fitchburg",
+        "type": "assisted living residence",
+        "source": "https://gablesal.com/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

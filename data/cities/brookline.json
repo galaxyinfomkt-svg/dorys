@@ -39,6 +39,41 @@
         "source": "https://www.drbarzibrooklinedental.com/services/general-family-dentistry/",
         "verifiedVia": "practice-website-search",
         "checked": "2026-09-22"
+      },
+      {
+        "name": "ATI Physical Therapy - Brookline",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.atipt.com/massachusetts/brookline/1101-beacon-st/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Bay State Physical Therapy - Brookline Washington Street",
+        "type": "outpatient physical therapy clinic",
+        "source": "https://locations.baystatept.com/ma/brookline/637-washington-street",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "CareOne at Brookline",
+        "type": "skilled nursing and rehabilitation center",
+        "source": "https://www.care-one.com/locations/careone-at-brookline/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Goddard House",
+        "type": "assisted living residence",
+        "source": "https://www.goddardhouse.org/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "The Newbury of Brookline",
+        "type": "senior living community with assisted living",
+        "source": "https://www.kiscoseniorliving.com/signature/newbury/",
+        "verifiedVia": "facility-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

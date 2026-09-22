@@ -150,6 +150,9 @@ export function nearest(city) {
 }
 
 const DENTAL = /dental|dentist|orthodont|oral surg|periodont/i
+const RESIDENTIAL = /nursing|skilled|assisted|senior living|memory care|rest home/i
+const THERAPY = /physical therap|rehabilitation clinic|sports medicine/i
+const SENIOR = new Set(['skilled-nursing', 'assisted-living-cleaning'])
 export const relevantFacilities = (city, service) =>
   ((city.healthcareLandscape || {}).majorFacilities || []).filter((f) => {
     if (!f || !f.name) return false
@@ -157,6 +160,12 @@ export const relevantFacilities = (city, service) =>
     // Dental practices match only the dental service ("practice" and
     // "pediatric" would otherwise pull them into medical/specialty pages).
     if (service.slug !== 'dental-office-cleaning' && DENTAL.test(text)) return false
+    // Therapy clinics and residential senior care belong to their own pages:
+    // an outpatient PT clinic is not a surgery center ("outpatient"), and a
+    // "Nursing and Rehabilitation Center" is not an outpatient rehab clinic.
+    const type = f.type || ''
+    if (RESIDENTIAL.test(type)) return SENIOR.has(service.slug) && FACILITY_MATCH[service.slug].test(text)
+    if (THERAPY.test(type)) return service.slug === 'rehabilitation-clinics'
     return FACILITY_MATCH[service.slug]?.test(text)
   })
 
