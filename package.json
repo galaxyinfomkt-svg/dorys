@@ -12,7 +12,7 @@
     "prune:cities": "node scripts/prune-cities.mjs",
     "seed:services": "node scripts/seed-service-data.mjs",
     "import:healthcare": "node scripts/import-healthcare-landscape.mjs",
-    "build:service-pages": "node scripts/merge-service-knowledge.mjs && node scripts/build-service-city-pages.mjs && node scripts/build-location-pages.mjs && node scripts/relink-service-pages.mjs && node scripts/generate-sitemaps.mjs",
+    "build:service-pages": "node scripts/merge-service-knowledge.mjs && node scripts/build-service-city-pages.mjs && node scripts/build-location-pages.mjs && node scripts/enrich-service-hubs.mjs && node scripts/relink-service-pages.mjs && node scripts/generate-sitemaps.mjs",
     "fix:links": "node scripts/fix-internal-redirect-links.mjs",
     "build:city-geo": "node scripts/build-city-geo.mjs",
     "build:css": "node scripts/bundle-css.mjs"
