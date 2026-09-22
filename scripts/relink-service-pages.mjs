@@ -107,5 +107,34 @@ for (const p of walk(join(ROOT, 'data'))) {
     save(p, raw, d)
   }
 }
+// --- 3. a link whose text is just a town name goes to that town -------------
+// City-name chips ("Worcester", "Natick") in service blocks must not all point
+// at one hub: link the town's service page when it is indexable, otherwise the
+// town page /locations/{town}-ma.
+const townSlug = new Map(allTowns.map((t) => [t.n, t.s]))
+const live = new Set(Object.entries(indexable).flatMap(([svc, l]) => l.map((c) => `/services/${svc}/${c.slug}`)))
+let chips = 0
+for (const p of walk(join(ROOT, 'data'))) {
+  const raw = readFileSync(p, 'utf8')
+  let d
+  try { d = JSON.parse(raw) } catch { continue }
+  if (!d || typeof d.mainHtml !== 'string' || noindex(d)) continue
+  const next = d.mainHtml.replace(
+    /<a href="\/services\/([a-z-]+)(?:\/[a-z-]+-ma)?"([^>]*)>((?:<svg[\s\S]*?<\/svg>)?\s*)([^<]+)<\/a>/g,
+    (m, svc, attrs, icon, text) => {
+      const slug = townSlug.get(text.trim())
+      if (!slug) return m
+      const want = live.has(`/services/${svc}/${slug}`) ? `/services/${svc}/${slug}` : `/locations/${slug}`
+      const out = `<a href="${want}"${attrs}>${icon}${text}</a>`
+      if (out !== m) chips++
+      return out
+    }
+  )
+  if (next !== d.mainHtml) {
+    d.mainHtml = next
+    save(p, raw, d)
+  }
+}
+
 const total = Object.values(indexable).reduce((a, l) => a + l.length, 0)
-console.log(`${DRY ? 'DRY — ' : ''}hub lists rebuilt ${hubs} (${total} town pages), links retargeted ${links} in ${files} files`)
+console.log(`${DRY ? 'DRY — ' : ''}hub lists rebuilt ${hubs} (${total} town pages), links retargeted ${links} in ${files} files, town chips fixed ${chips}`)

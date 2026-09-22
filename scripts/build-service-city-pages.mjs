@@ -308,9 +308,7 @@ function findings(service, city) {
     `<p class="section__subtitle text-center mb-lg">Real, published regulatory findings — every citation links to its source.</p>` +
     `<div class="benefits-grid">${cards}</div>` +
     (all.length > items.length
-      ? `<p class="text-center mt-xl"><a href="/services/${service.slug}" class="btn btn--secondary">All ${all.length} findings and the full ${esc(
-          service.name.toLowerCase()
-        )} protocol</a></p>`
+      ? `<p class="text-center mt-xl"><a href="/services/${service.slug}" class="btn btn--secondary">See all ${all.length} findings</a></p>`
       : '') +
     `</div></section>`
   )
