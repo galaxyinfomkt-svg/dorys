@@ -425,7 +425,8 @@ for (const service of services) {
       townProfile(service, city),
       localContext(city),
       findings(service, city),
-      regulatory(service),
+      // The full regulatory list lives on the hub; repeating it on every town
+      // page was pure boilerplate. The findings block links to the hub.
       faqHtml,
       nearbySection(city, service),
       finalCta(service, city),

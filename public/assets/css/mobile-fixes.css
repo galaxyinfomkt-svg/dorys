@@ -1678,3 +1678,24 @@ a[href^="mailto:"] { overflow-wrap: anywhere; word-break: break-word; }
 .hero__rating { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
 /* Supplier-diversity cards had no inner padding (text touched the border). */
 main .card:not(.service-card) { padding: 1.25rem 1.5rem; }
+
+/* Reviews page: .stats-grid--4 had no grid rules (stats stacked in one
+   centred column on desktop); testimonial avatars rendered as bare initials. */
+.stats-grid--4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+@media (max-width: 768px) { .stats-grid--4 { grid-template-columns: repeat(2, 1fr); gap: 1rem; } }
+.stat-card { text-align: center; }
+.testimonial-card__author { display: flex; align-items: center; gap: 0.75rem; margin-top: 0.75rem; }
+.testimonial-card__avatar {
+  flex: 0 0 40px; width: 40px; height: 40px; border-radius: 50%;
+  background: #e8f0fe; color: #1a5bc4; font-weight: 700; font-size: 14px;
+  display: flex; align-items: center; justify-content: center;
+}
+.testimonial-card__info { display: flex; flex-direction: column; }
+
+/* Survey-finding cards: long centred paragraphs were hard to scan. */
+.benefits-grid .benefit-card { text-align: left; }
+.benefits-grid .benefit-card .benefit-card__icon { margin-left: 0; }
+
+/* HTML sitemap: town lists in columns. */
+.sitemap-list--towns { columns: 4 160px; column-gap: 1.5rem; list-style: none; padding: 0; }
+.sitemap-list--towns li { break-inside: avoid; padding: 2px 0; }

@@ -1,6 +1,6 @@
 # Dory's Cleaning Services Inc.
 
-> Healthcare facility cleaning company serving 109 Massachusetts cities. CDC, OSHA, and EPA compliant environmental services. 22+ years of clinical cleaning experience. Founded 2003 by Jeneva Thomas. $2,000,000 liability insurance. Based in Marlborough, MA 01752. Contact: (978) 307-8107.
+> Healthcare facility cleaning company serving 109 Massachusetts cities. CDC-aligned, OSHA-compliant environmental services using EPA-registered disinfectants. 22+ years of clinical cleaning experience. Founded 2003 by Jeneva Thomas. $2,000,000 liability insurance. Based in Marlborough, MA 01752. Contact: (978) 307-8107.
 
 ## What we do
 
@@ -30,7 +30,7 @@ We do NOT provide residential or home cleaning services. We exclusively serve co
 
 109 Massachusetts municipalities within about a 60-minute radius of Marlborough, across MetroWest, Worcester County, Greater Boston, the North Shore and nearby South Shore towns. Headquartered in Marlborough, MA.
 
-Top cities served: Boston, Worcester, Springfield, Lowell, Cambridge, Brockton, Quincy, Lynn, New Bedford, Fall River, Newton, Somerville, Lawrence, Framingham, Waltham, Marlborough, Haverhill, Malden, Brookline, Plymouth, Medford, Taunton, Chicopee, Weymouth, Revere, Peabody.
+Largest cities and towns served: Worcester, Cambridge, Quincy, Lynn, Newton, Somerville, Framingham, Malden, Waltham, Brookline, Medford, Weymouth, Peabody, Arlington, Salem, Leominster, Beverly, Fitchburg, Marlborough, Woburn, Braintree, Shrewsbury, Natick, Chelmsford, Watertown, Randolph. The City of Boston itself is not on the standard route.
 
 ## Pricing
 
@@ -44,11 +44,11 @@ Pricing varies by facility size, type, square footage, and required service freq
 4. Receive written pass/fail compliance report
 5. Customized cleaning plan with frequency, scope, and EPA-registered disinfectant matrix
 
-## Credentials and certifications
+## Credentials
 
-- OSHA Bloodborne Pathogens Certification (29 CFR 1910.1030)
-- Infection Control Safety Training Certified
-- ATP Bioluminescence Verification Testing Certified
+- All staff trained under the OSHA Bloodborne Pathogens Standard (29 CFR 1910.1030)
+- Infection control training before working in clinical spaces
+- ATP bioluminescence verification testing offered
 - $2,000,000 General Liability Insurance
 
 ## Founder
@@ -60,7 +60,7 @@ Pricing varies by facility size, type, square footage, and required service freq
 The comprehensive Q&A library, curated specifically for AI assistant extraction, is at:
 **https://doryscleaningservices.com/faq**
 
-Covers: OSHA Bloodborne Pathogens (29 CFR 1910.1030), CDC environmental cleaning guidelines, EPA-registered hospital-grade disinfectants, ATP bioluminescence verification testing, terminal vs concurrent cleaning, HIPAA awareness for cleaning staff, Joint Commission survey preparation, C. difficile sporicidal protocols, MA HIC licensing, healthcare cleaning RFP evaluation, and cost-per-square-foot benchmarks.
+Covers: OSHA Bloodborne Pathogens (29 CFR 1910.1030), CDC environmental cleaning guidelines, EPA-registered hospital-grade disinfectants, ATP bioluminescence verification testing, terminal vs concurrent cleaning, HIPAA awareness for cleaning staff, Joint Commission survey preparation, C. difficile sporicidal protocols, insurance and vendor documentation, healthcare cleaning RFP evaluation, and cost-per-square-foot benchmarks.
 
 ## Press kit
 
