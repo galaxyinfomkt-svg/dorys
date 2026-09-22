@@ -12,14 +12,17 @@ export default function Footer() {
           <div className="footer__col footer__col--brand">
             <Link href="/" className="footer__logo" aria-label="Dory's Cleaning Services — Home">
               {/* eslint-disable-next-line @next/next/no-img-element */}
+              {/* Wide wordmark on a white plate. The square logo-80 was being
+                  stretched to 178x70, which rendered as an empty white box. */}
               <img
-                src="/assets/images/logo/logo-80.webp"
+                src="/assets/images/logo/logo-wide-120.webp"
+                srcSet="/assets/images/logo/logo-wide-120.webp 1x, /assets/images/logo/logo-wide-240.webp 2x"
                 alt="Dory's Cleaning Services"
                 className="footer__logo-img"
                 loading="lazy"
                 decoding="async"
-                width={180}
-                height={60}
+                width={334}
+                height={120}
               />
             </Link>
             <p className="footer__cta-text">
@@ -80,7 +83,7 @@ export default function Footer() {
               <li><Link href="/reviews">Reviews</Link></li>
               <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/healthcare-facilities">For Healthcare Facilities</Link></li>
-              <li><Link href="/supplier-diversity">Supplier Diversity (MBE/WBE)</Link></li>
+              <li><Link href="/supplier-diversity">Supplier Diversity</Link></li>
               <li><Link href="/faq">FAQ</Link></li>
               <li><Link href="/press">Press & Media</Link></li>
               <li><Link href="/contact">Contact</Link></li>

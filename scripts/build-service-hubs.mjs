@@ -155,7 +155,7 @@ function faqAccordion(svc) {
     )
     .join('')
   const html =
-    `<section class="section"><div class="container container--narrow">` +
+    `<section class="section" id="faq"><div class="container container--narrow">` +
     `<h2 class="section__title">${esc(svc.name)} — common questions</h2>` +
     `<div class="accordion">${items}</div></div></section>`
   const schema = {

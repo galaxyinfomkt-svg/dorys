@@ -61,6 +61,10 @@ const cities = JSON.parse(readFileSync(join(ROOT, 'data/cities-list.json'), 'utf
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
+/** How much shared, service-wide content a town page repeats (hub has all). */
+const TOWN_FINDINGS = 3
+const TOWN_FAQS = 5
+
 const UNIVERSAL = new Set([
   'medical-office-cleaning',
   'dental-office-cleaning',
@@ -274,7 +278,11 @@ function localContext(city) {
 }
 
 function findings(service, city) {
-  const items = service.commonSurveyFindings || []
+  // The town page carries the three findings a buyer should see first; the hub
+  // holds the full list. Repeating every finding on 109 town pages made the
+  // shared block ~80% of each page — boilerplate, not local content.
+  const all = service.commonSurveyFindings || []
+  const items = all.slice(0, TOWN_FINDINGS)
   if (!items.length) return ''
   // Cards, not a wall of paragraphs. This is the most valuable content on the
   // page and was the least scannable — a facilities buyer skims for the citation
@@ -298,7 +306,13 @@ function findings(service, city) {
     `<section class="section"><div class="container">` +
     `<h2 class="section__title text-center">Survey findings we help ${esc(city.name)} facilities prevent</h2>` +
     `<p class="section__subtitle text-center mb-lg">Real, published regulatory findings — every citation links to its source.</p>` +
-    `<div class="benefits-grid">${cards}</div></div></section>`
+    `<div class="benefits-grid">${cards}</div>` +
+    (all.length > items.length
+      ? `<p class="text-center mt-xl"><a href="/services/${service.slug}" class="btn btn--secondary">All ${all.length} findings and the full ${esc(
+          service.name.toLowerCase()
+        )} protocol</a></p>`
+      : '') +
+    `</div></section>`
   )
 }
 
@@ -313,7 +327,8 @@ function regulatory(service) {
 }
 
 function faqAccordion(service, city) {
-  const faqs = service.faqs || []
+  const allFaqs = service.faqs || []
+  const faqs = allFaqs.slice(0, TOWN_FAQS)
   if (!faqs.length) return { html: '', schema: null }
   const items = faqs
     .map(
@@ -328,7 +343,13 @@ function faqAccordion(service, city) {
   const html =
     `<section class="section"><div class="container container--narrow">` +
     `<h2 class="section__title">${esc(service.name)} in ${esc(city.name)} — common questions</h2>` +
-    `<div class="accordion">${items}</div></div></section>`
+    `<div class="accordion">${items}</div>` +
+    (allFaqs.length > faqs.length
+      ? `<p class="text-center mt-lg"><a href="/services/${service.slug}#faq">See all ${allFaqs.length} questions on ${esc(
+          service.name.toLowerCase()
+        )}</a></p>`
+      : '') +
+    `</div></section>`
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',

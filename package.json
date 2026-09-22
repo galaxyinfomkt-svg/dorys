@@ -11,7 +11,9 @@
     "fix:bugs": "node scripts/fix-production-bugs.mjs",
     "prune:cities": "node scripts/prune-cities.mjs",
     "seed:services": "node scripts/seed-service-data.mjs",
-    "import:healthcare": "node scripts/import-healthcare-landscape.mjs"
+    "import:healthcare": "node scripts/import-healthcare-landscape.mjs",
+    "build:service-pages": "node scripts/build-service-city-pages.mjs && node scripts/relink-service-pages.mjs && node scripts/generate-sitemaps.mjs",
+    "fix:links": "node scripts/fix-internal-redirect-links.mjs"
   },
   "dependencies": {
     "next": "^15.1.0",
