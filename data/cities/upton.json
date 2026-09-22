@@ -16,7 +16,15 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
+    "majorFacilities": [
+      {
+        "name": "Upton Dental Care",
+        "type": "general dental practice",
+        "source": "https://uptondental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      }
+    ],
     "healthSystems": [],
     "licensedFacilityCounts": {
       "clinics": null,

@@ -37,6 +37,20 @@
       {
         "name": "Mass General Brigham Urgent Care, Woburn",
         "type": "urgent care center"
+      },
+      {
+        "name": "Woburn Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.woburnfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Woburn Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.woburndentistryma.com/woburn-ma-dentist-office",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

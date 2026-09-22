@@ -24,6 +24,20 @@
       {
         "name": "UMass Memorial Medical Group — Spencer Internal Medicine",
         "type": "primary care office"
+      },
+      {
+        "name": "A. Shanahan, D.M.D. PC",
+        "type": "general dental practice",
+        "source": "https://shanahandmd.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Spencer Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.spencerfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

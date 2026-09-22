@@ -29,6 +29,20 @@
       {
         "name": "Beth Israel Lahey Health Primary Care — Hartwell Avenue",
         "type": "primary care and outpatient services"
+      },
+      {
+        "name": "Clarke Street Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.clarkestreetfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Keith Asarkof, DMD & Associates",
+        "type": "general dental practice",
+        "source": "https://www.asarkof.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

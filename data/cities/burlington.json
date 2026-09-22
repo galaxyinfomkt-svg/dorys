@@ -21,6 +21,20 @@
       {
         "name": "Lahey Hospital & Medical Center",
         "type": "tertiary academic medical center and teaching hospital"
+      },
+      {
+        "name": "Burlington Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.burlingtonfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Dental Care of Burlington",
+        "type": "general dental practice",
+        "source": "https://dentalcareburlington.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

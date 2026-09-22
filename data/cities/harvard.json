@@ -16,7 +16,22 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
+    "majorFacilities": [
+      {
+        "name": "White Arch Dental",
+        "type": "general dental practice",
+        "source": "https://whitearchdental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Reddy Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.reddyfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      }
+    ],
     "healthSystems": [],
     "licensedFacilityCounts": {
       "clinics": null,

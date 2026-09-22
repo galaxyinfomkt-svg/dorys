@@ -24,6 +24,13 @@
       {
         "name": "Life Care Center of Nashoba Valley",
         "type": "skilled nursing facility"
+      },
+      {
+        "name": "Nashoba Family Dentists",
+        "type": "general dental practice",
+        "source": "https://www.nashobafamilydentists.com/contact-us/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

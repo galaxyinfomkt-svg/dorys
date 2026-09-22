@@ -24,6 +24,20 @@
       {
         "name": "Mass General Brigham Healthcare Center, 22 Patriot Place",
         "type": "outpatient specialty and primary care building"
+      },
+      {
+        "name": "Barounis Dental Family & Cosmetic",
+        "type": "general dental practice",
+        "source": "https://foxborough-dentist.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Foxboro Dental Associates",
+        "type": "general dental practice",
+        "source": "https://www.foxborodental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

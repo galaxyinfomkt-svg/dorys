@@ -16,7 +16,22 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
+    "majorFacilities": [
+      {
+        "name": "Sharon Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.sharonfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Alla Agamov, DMD",
+        "type": "general dental practice",
+        "source": "https://agamovdmd.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      }
+    ],
     "healthSystems": [],
     "licensedFacilityCounts": {
       "clinics": null,

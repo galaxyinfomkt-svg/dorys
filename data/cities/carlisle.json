@@ -16,7 +16,15 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
+    "majorFacilities": [
+      {
+        "name": "Carlisle Dental Associates",
+        "type": "general dental practice",
+        "source": "https://www.carlisledentalassociates.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      }
+    ],
     "healthSystems": [],
     "licensedFacilityCounts": {
       "clinics": null,

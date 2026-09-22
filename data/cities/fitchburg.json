@@ -28,6 +28,20 @@
       {
         "name": "Community Health Connections — Fitchburg Community Health Center",
         "type": "federally qualified community health center"
+      },
+      {
+        "name": "DiNinno Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.dininnofamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Rollstone Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.rollstonedental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

@@ -24,6 +24,20 @@
       {
         "name": "Dana-Farber Brigham Cancer Center at Milford Regional",
         "type": "outpatient cancer center"
+      },
+      {
+        "name": "Milford Family Dental",
+        "type": "general dental practice",
+        "source": "https://milfordfamilydentalma.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Milford Dental Group",
+        "type": "general dental practice",
+        "source": "https://www.milforddentalgroup.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

@@ -24,6 +24,20 @@
       {
         "name": "ReadyMED — Hudson",
         "type": "urgent care center"
+      },
+      {
+        "name": "Hudson Family Dental",
+        "type": "general dental practice",
+        "source": "https://hudsonfamilydental.com/welcome/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Hudson Dentistry & Braces",
+        "type": "general dental practice",
+        "source": "https://www.hudsondentistryandbraces.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

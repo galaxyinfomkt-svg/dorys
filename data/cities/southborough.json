@@ -28,6 +28,20 @@
       {
         "name": "The New England Center for Children",
         "type": "residential and day clinical program"
+      },
+      {
+        "name": "Southborough Dental Associates",
+        "type": "general dental practice",
+        "source": "https://www.godental365.com/location/dentist-southborough/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Southborough Dental Partners",
+        "type": "general dental practice",
+        "source": "https://southboroughdentalpartners.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

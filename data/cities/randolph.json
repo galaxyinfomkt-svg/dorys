@@ -16,7 +16,22 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
+    "majorFacilities": [
+      {
+        "name": "Randolph Family Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.randolphfamilydentistry.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Randolph Dental Group",
+        "type": "general dental practice",
+        "source": "https://www.randolphdentalgroup.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      }
+    ],
     "healthSystems": [],
     "licensedFacilityCounts": {
       "clinics": null,

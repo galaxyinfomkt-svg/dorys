@@ -24,6 +24,20 @@
       {
         "name": "Milford Regional Urgent Care in Northbridge",
         "type": "urgent care center"
+      },
+      {
+        "name": "Whitinsville Family Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.drtubo.com/dentist-near-northbridge-ma.html",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Wych Family Dental",
+        "type": "general dental practice",
+        "source": "http://wychfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

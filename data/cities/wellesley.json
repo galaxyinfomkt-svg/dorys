@@ -28,6 +28,20 @@
       {
         "name": "Mass General Brigham Wellesley, Worcester Street",
         "type": "multi-specialty outpatient offices"
+      },
+      {
+        "name": "Wellesley Dental Arts",
+        "type": "general dental practice",
+        "source": "https://www.wellesleydentist.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Wellesley Smiles Dental Professionals P.C.",
+        "type": "general dental practice",
+        "source": "https://www.wellesleysmiles.com/procedures/family-dentistry/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

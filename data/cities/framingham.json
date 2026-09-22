@@ -24,6 +24,20 @@
       {
         "name": "Framingham Union Hospital (MetroWest Medical Center)",
         "type": "acute care community hospital"
+      },
+      {
+        "name": "Framingham Family Dental Care",
+        "type": "general dental practice",
+        "source": "https://www.framinghamfamilydentalcare.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "JNL Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.jnlfamilydental.com/index.html",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

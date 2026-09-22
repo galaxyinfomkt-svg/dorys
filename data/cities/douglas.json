@@ -20,6 +20,20 @@
       {
         "name": "UMass Memorial Medical Group — Douglas Primary Care",
         "type": "primary care office in a small multi-tenant medical building"
+      },
+      {
+        "name": "Douglas Family Dental",
+        "type": "general dental practice",
+        "source": "https://douglasfamilydental.com/family-dentist-douglas-ma/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Douglas Valley Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.douglasvalleydentistry.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

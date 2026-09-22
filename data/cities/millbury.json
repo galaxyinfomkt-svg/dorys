@@ -20,6 +20,13 @@
       {
         "name": "UMass Memorial Medical Group — Millbury Internal Medicine",
         "type": "primary care office"
+      },
+      {
+        "name": "Millbury Family Dentistry",
+        "type": "general dental practice",
+        "source": "https://millburyfamilydentistry.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

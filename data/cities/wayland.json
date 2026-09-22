@@ -28,6 +28,20 @@
       {
         "name": "The Residence at Paine Estate",
         "type": "independent living, assisted living and memory care"
+      },
+      {
+        "name": "Wayland Dental",
+        "type": "general dental practice",
+        "source": "https://www.waylanddental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Lit Dental Esthetics & Implant Center",
+        "type": "general dental practice",
+        "source": "https://www.litdental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

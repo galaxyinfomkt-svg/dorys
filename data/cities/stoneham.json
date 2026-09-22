@@ -28,6 +28,20 @@
       {
         "name": "Fresenius Medical Care of Stoneham",
         "type": "outpatient dialysis center"
+      },
+      {
+        "name": "Pizzarello & Silvestro Family Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.stonehamdentists.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Nandhavan Dental",
+        "type": "general dental practice",
+        "source": "https://www.nandhavandental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

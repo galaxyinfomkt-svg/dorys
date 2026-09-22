@@ -24,6 +24,13 @@
       {
         "name": "Oak Ledge Terrace",
         "type": "assisted living and residential care home"
+      },
+      {
+        "name": "Blackstone Valley Dental Associates",
+        "type": "general dental practice",
+        "source": "https://www.blackstonevalleydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [],

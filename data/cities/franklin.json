@@ -24,6 +24,20 @@
       {
         "name": "Milford Regional Diagnostic Imaging — Franklin",
         "type": "outpatient imaging"
+      },
+      {
+        "name": "Mint Dental of Franklin",
+        "type": "general dental practice",
+        "source": "https://www.dentistfranklinma.com/franklin-dental-services/family-dentistry/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Arcadia Dental",
+        "type": "general dental practice",
+        "source": "https://arcadiadentalfranklin.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

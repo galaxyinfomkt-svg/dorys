@@ -149,10 +149,16 @@ export function nearest(city) {
     .sort((a, b) => a.d - b.d)
 }
 
+const DENTAL = /dental|dentist|orthodont|oral surg|periodont/i
 export const relevantFacilities = (city, service) =>
-  ((city.healthcareLandscape || {}).majorFacilities || []).filter(
-    (f) => f && f.name && FACILITY_MATCH[service.slug]?.test(`${f.type || ''} ${f.name}`)
-  )
+  ((city.healthcareLandscape || {}).majorFacilities || []).filter((f) => {
+    if (!f || !f.name) return false
+    const text = `${f.type || ''} ${f.name}`
+    // Dental practices match only the dental service ("practice" and
+    // "pediatric" would otherwise pull them into medical/specialty pages).
+    if (service.slug !== 'dental-office-cleaning' && DENTAL.test(text)) return false
+    return FACILITY_MATCH[service.slug]?.test(text)
+  })
 
 /** Town facts, every one from a sourced field or computed from them. */
 export function townFacts(city) {

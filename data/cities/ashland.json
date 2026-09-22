@@ -16,7 +16,22 @@
   "driveTimeMinutes": null,
   "responseCommitment": null,
   "healthcareLandscape": {
-    "majorFacilities": [],
+    "majorFacilities": [
+      {
+        "name": "Ashland Family and Implant Dentistry",
+        "type": "general dental practice",
+        "source": "https://familydentistryinc.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Ashland Elite Dental",
+        "type": "general dental practice",
+        "source": "https://www.ashlandelite.net/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      }
+    ],
     "healthSystems": [],
     "licensedFacilityCounts": {
       "clinics": null,

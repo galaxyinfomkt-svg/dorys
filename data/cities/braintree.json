@@ -29,6 +29,20 @@
       {
         "name": "South Shore Health Health Express Braintree",
         "type": "urgent care with on-site x-ray and lab"
+      },
+      {
+        "name": "Family Dentistry of Braintree",
+        "type": "general dental practice",
+        "source": "https://www.familydentistrybraintree.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Braintree Dental Group",
+        "type": "general dental practice",
+        "source": "https://braintreedentalgroup.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

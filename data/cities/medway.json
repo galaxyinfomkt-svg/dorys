@@ -28,6 +28,20 @@
       {
         "name": "Milford Regional Diagnostic Imaging in Medway",
         "type": "outpatient imaging"
+      },
+      {
+        "name": "Medway Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.medwayfamilydental.com/medway-office-location",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Thomas P.A. Carchidi, D.M.D. General Family Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.medwayvillagedentist.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

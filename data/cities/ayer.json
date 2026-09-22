@@ -24,6 +24,13 @@
       {
         "name": "Central Mass Nephrology — Ayer",
         "type": "nephrology clinic"
+      },
+      {
+        "name": "Kevin M. Brown, DMD & Associates",
+        "type": "general dental practice",
+        "source": "https://www.drbrownayer.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

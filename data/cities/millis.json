@@ -24,6 +24,20 @@
       {
         "name": "Willowbrook Manor Rest Home",
         "type": "rest home"
+      },
+      {
+        "name": "Main Street Dental",
+        "type": "general dental practice",
+        "source": "https://www.msdmillis.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Pleasant Dental",
+        "type": "general dental practice",
+        "source": "https://www.pleasantstreetdentist.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

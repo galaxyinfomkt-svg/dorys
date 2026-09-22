@@ -21,6 +21,20 @@
       {
         "name": "Lawrence Memorial Hospital of Medford",
         "type": "outpatient and urgent care campus (no emergency department)"
+      },
+      {
+        "name": "Renato Carpinito DMD",
+        "type": "general dental practice",
+        "source": "https://renatocarpinitodmd.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Medford Square Dentistry & Implants",
+        "type": "general dental practice",
+        "source": "https://www.medfordsquaredentistry.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

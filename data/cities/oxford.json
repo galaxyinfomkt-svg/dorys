@@ -20,6 +20,20 @@
       {
         "name": "Harrington UrgentCare Express",
         "type": "urgent care with on-site lab and imaging"
+      },
+      {
+        "name": "Oxford Family Dentistry",
+        "type": "general dental practice",
+        "source": "https://oxfordfamilydentistryma.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Marcia L. Valente, DMD, PC",
+        "type": "general dental practice",
+        "source": "https://www.drmarciavalente.com/our-practice.html",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

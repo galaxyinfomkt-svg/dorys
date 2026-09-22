@@ -29,6 +29,20 @@
       {
         "name": "Mass General Brigham Healthcare Center (Lynn)",
         "type": "outpatient healthcare center"
+      },
+      {
+        "name": "Lynn Family Dental Care",
+        "type": "general dental practice",
+        "source": "https://www.lynnfamilydentalcare.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Alegre Dental",
+        "type": "general dental practice",
+        "source": "https://www.lynn-dentist.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

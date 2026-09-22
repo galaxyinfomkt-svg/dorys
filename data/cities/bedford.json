@@ -24,6 +24,20 @@
       {
         "name": "Emerson Health Bedford",
         "type": "hospital-affiliated outpatient health center"
+      },
+      {
+        "name": "Bedford Family & Laser Dentistry",
+        "type": "general dental practice",
+        "source": "https://drnajim.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Kennedy Family and Cosmetic Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.bedfordgreatsmiles.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

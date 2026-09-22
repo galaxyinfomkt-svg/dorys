@@ -20,6 +20,20 @@
       {
         "name": "Sterling Village",
         "type": "licensed nursing facility with subacute unit"
+      },
+      {
+        "name": "Sterling Dental Group",
+        "type": "general dental practice",
+        "source": "https://www.thesterlingdentist.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Hamilton Orthodontics (Dr. Carla French Hamilton)",
+        "type": "orthodontic practice",
+        "source": "https://www.carlahamiltonortho.com/orthodontics-and-dentistry/what-is-an-orthodontist/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [],

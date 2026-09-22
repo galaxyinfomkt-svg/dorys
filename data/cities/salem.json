@@ -29,6 +29,20 @@
       {
         "name": "Mass General Brigham, Salem, 331 Highland — Internal Medicine",
         "type": "primary care practice"
+      },
+      {
+        "name": "Fisher and Orfaly Dental",
+        "type": "general dental practice",
+        "source": "https://www.fisherorfalydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Garber Salem Family Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.garberdentistry.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

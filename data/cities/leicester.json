@@ -20,6 +20,13 @@
       {
         "name": "Vibra Hospital of Western Massachusetts — Central Campus",
         "type": "long-term acute care hospital"
+      },
+      {
+        "name": "Innovate Dental (Leicester)",
+        "type": "general dental practice",
+        "source": "https://www.innovatedental.net/contact-us-leicester",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

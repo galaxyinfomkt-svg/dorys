@@ -25,6 +25,20 @@
       {
         "name": "UMass Memorial Shrewsbury Radiology",
         "type": "outpatient imaging center"
+      },
+      {
+        "name": "Lakeside Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.lakesidefamilydentist.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Precise Dental Care",
+        "type": "general dental practice",
+        "source": "https://www.precisedentalrt9.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

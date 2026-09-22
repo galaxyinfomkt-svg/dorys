@@ -26,6 +26,20 @@
       {
         "name": "Atrius Health Watertown",
         "type": "large multi-specialty medical office building"
+      },
+      {
+        "name": "Eilers Family Dental (Watertown Family Dental)",
+        "type": "general dental practice",
+        "source": "https://www.eilersfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Greater Boston Dental Center",
+        "type": "general dental practice",
+        "source": "https://www.greaterbostondentist.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

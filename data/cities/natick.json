@@ -20,6 +20,20 @@
       {
         "name": "MetroWest Medical Center — Leonard Morse Hospital",
         "type": "behavioral health specialty hospital"
+      },
+      {
+        "name": "Natick Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.natickfamilydental.com/natick-ma-dentist-office",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Boudreau Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.boudreaufamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

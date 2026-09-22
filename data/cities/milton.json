@@ -20,6 +20,20 @@
       {
         "name": "Beth Israel Deaconess Hospital — Milton",
         "type": "acute care community hospital with 24-hour emergency department"
+      },
+      {
+        "name": "Harte Dental",
+        "type": "general dental practice",
+        "source": "https://www.hartedental.com/services/family-dentistry/16750",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Murphy Dental Group",
+        "type": "general dental practice",
+        "source": "https://www.jmurphydmd.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

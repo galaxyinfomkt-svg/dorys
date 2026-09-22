@@ -28,6 +28,13 @@
       {
         "name": "Charlton Manor Rest Home",
         "type": "rest home"
+      },
+      {
+        "name": "Charlton Family Dental",
+        "type": "general dental practice",
+        "source": "https://charltonfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

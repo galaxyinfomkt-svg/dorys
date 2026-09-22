@@ -28,6 +28,20 @@
       {
         "name": "Tufts Medicine Pediatric Specialty Center Chelmsford",
         "type": "pediatric specialty outpatient center"
+      },
+      {
+        "name": "Dr. Arthur Yee Family Dental",
+        "type": "general dental practice",
+        "source": "http://chelmsfordcenterdentists.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Chelmsford Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.chelmsfordfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

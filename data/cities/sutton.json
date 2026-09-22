@@ -28,6 +28,20 @@
       {
         "name": "UMass Memorial Medical Group — Sutton Internal Medicine",
         "type": "primary care office"
+      },
+      {
+        "name": "Pleasant Valley Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.pleasantvalleydentist.com/contact-us",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Sutton Children's Dentistry and Orthodontics",
+        "type": "pediatric dental practice",
+        "source": "https://suttonkidsdental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

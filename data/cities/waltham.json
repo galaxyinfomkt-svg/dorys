@@ -31,6 +31,20 @@
       {
         "name": "Mount Auburn Hospital / Beth Israel Lahey Health, Waverley Oaks Road",
         "type": "multispecialty medical office building"
+      },
+      {
+        "name": "Waltham Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.walthamfamilydental.com/local-dentist-waltham",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Waltham Modern Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.walthammoderndentistry.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

@@ -28,6 +28,20 @@
       {
         "name": "Fresenius Medical Care of Marlborough",
         "type": "outpatient dialysis center"
+      },
+      {
+        "name": "Paglia Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.pagliafamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Metrowest Dental Center",
+        "type": "general dental practice",
+        "source": "https://www.metrowestdentalcenter.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

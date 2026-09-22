@@ -20,6 +20,13 @@
       {
         "name": "Bolton Country Manor",
         "type": "independent and affordable senior housing"
+      },
+      {
+        "name": "Dentistry by Dr. David (Bolton Dental)",
+        "type": "general dental practice",
+        "source": "https://boltondental.com/contact-bolton-dental/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [],

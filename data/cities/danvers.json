@@ -28,6 +28,20 @@
       {
         "name": "Beth Israel Lahey Health Care Center — Danvers",
         "type": "multispecialty outpatient center"
+      },
+      {
+        "name": "Hathorne Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.hathornefamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Danvers Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.danversdentistry.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

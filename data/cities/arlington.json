@@ -21,6 +21,20 @@
       {
         "name": "Mount Auburn Hospital / Beth Israel Lahey Health, 22 Mill Street",
         "type": "hospital-affiliated outpatient medical offices"
+      },
+      {
+        "name": "Dental Associates of Arlington",
+        "type": "general dental practice",
+        "source": "https://www.arlingtondentalma.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Arlington Dental",
+        "type": "general dental practice",
+        "source": "https://arlingtondentalsmile.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

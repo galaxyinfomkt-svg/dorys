@@ -31,6 +31,20 @@
       {
         "name": "Manet Community Health Center",
         "type": "federally qualified community health center"
+      },
+      {
+        "name": "Quincy Dentists Family Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.mydentistquincy.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Quincy Dental Specialists Group",
+        "type": "general dental practice",
+        "source": "https://quincydentalspecialists.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

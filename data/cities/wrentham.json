@@ -24,6 +24,20 @@
       {
         "name": "Wrentham Developmental Center",
         "type": "state intermediate care facility for individuals with intellectual disabilities"
+      },
+      {
+        "name": "Sein H. Siao, DMD & Associates, PC",
+        "type": "general dental practice",
+        "source": "https://drsiao.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Smile Avenue Dental Studio",
+        "type": "general dental practice",
+        "source": "https://www.mysmileavenue.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

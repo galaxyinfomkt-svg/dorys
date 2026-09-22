@@ -24,6 +24,20 @@
       {
         "name": "UMass Memorial Medical Group — Northborough Medical",
         "type": "primary care office"
+      },
+      {
+        "name": "Northborough Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.northboroughfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Family Dental Group (Northborough Office)",
+        "type": "general dental practice",
+        "source": "https://www.lavanafamilydental.com/location/northborough-ma",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

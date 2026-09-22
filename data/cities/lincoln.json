@@ -20,6 +20,13 @@
       {
         "name": "The Commons in Lincoln",
         "type": "continuing care retirement community with assisted living, memory care and skilled nursing"
+      },
+      {
+        "name": "Center for Dental Medicine & Reconstruction",
+        "type": "general dental practice",
+        "source": "https://mycdmr.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

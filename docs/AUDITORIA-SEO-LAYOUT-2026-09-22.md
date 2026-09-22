@@ -68,11 +68,12 @@ Pipeline: `npm run build:service-pages` (merge → páginas de serviço → pág
 - **Autoridade de saúde local nas 109 cidades:** nome e link da página oficial do Board of Health / Health Department (domínio da própria prefeitura), exibidos nas 981 páginas de cidade com uma FAQ explicando DPH × board local. Telefones **não** publicados até confirmação.
 - **Hubs de serviço:** cada um dos 8 hubs agora traz o protocolo completo (todas as zonas, passos, frequência, documentação, perguntas ao fornecedor).
 - **Blog → serviços:** 17 de 20 posts não linkavam nenhum hub; agora os 20 têm o bloco "Where this applies".
+- **Consultórios odontológicos:** 195 consultórios em 107 das 109 cidades, cada um confirmado por resultado de busca no **site do próprio consultório** com o nome da cidade (diretórios e páginas "atendemos sua cidade" de outras cidades foram rejeitados). Princeton e Berlin ficaram sem nenhum que cumprisse a regra. As 109 páginas de odontologia agora citam os consultórios reais da cidade (como contexto de mercado, nunca como clientes).
 - **Supplier Diversity:** documentos para compras (COI, W-9, NAICS, SDS, treinamentos), nota honesta de que o gasto só conta como MBE/WBE após a certificação, cobertura multi-site; removido "hospitais".
 
 ## 6. Pendências (precisam de ação humana)
 1. **Telefones dos Boards of Health** — os links oficiais já estão no ar; os telefones ficam em `data/_todo-boards-of-health.csv` até alguém confirmar (**Ana/Gabi**). Depois, preencher `localHealth.boardOfHealthPhone` em `data/cities/*.json` e rodar `npm run build:service-pages`.
-2. **Estabelecimentos por cidade** — dental não tem nenhum consultório verificado; várias cidades pequenas não têm nenhum estabelecimento. Pesquisar e adicionar em `healthcareLandscape.majorFacilities` (com fonte) aumenta o valor local das páginas automaticamente.
+2. **Estabelecimentos por cidade** — odontologia coberta (107/109). Casas de repouso (skilled nursing), assisted living e clínicas de reabilitação ainda têm poucas cidades com registro; pesquisar e adicionar em `healthcareLandscape.majorFacilities` (com URL de fonte) enriquece as páginas automaticamente com `npm run build:service-pages`.
 3. **Selos MBE/WBE** — só usar as siglas quando houver número de certificado em `data/company.json`.
 4. **Depois do deploy:** reenviar `sitemap.xml` no Google Search Console e acompanhar a cobertura das 1.031 URLs por 4–6 semanas.
 5. **CSS não usado** — o bundle ainda carrega regras de templates antigos; remover exige mapear classes geradas por JS. Próximo ganho de performance, com teste visual a cada passo.

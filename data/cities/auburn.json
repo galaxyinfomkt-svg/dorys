@@ -28,6 +28,20 @@
       {
         "name": "ReadyMED — Auburn",
         "type": "urgent care center"
+      },
+      {
+        "name": "Auburn Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.afddmd.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Balian Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.balianfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

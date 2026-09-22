@@ -24,6 +24,20 @@
       {
         "name": "River Terrace Rehabilitation & Healthcare Center",
         "type": "skilled nursing facility"
+      },
+      {
+        "name": "Lancaster Dental (Cosmetic & Family Dental)",
+        "type": "general dental practice",
+        "source": "https://www.lancasterdentalma.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Dr. Heffernan & Dr. Bruneau Family Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.lancasterdentaloffice.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [],

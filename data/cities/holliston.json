@@ -24,6 +24,20 @@
       {
         "name": "Holliston Pediatrics",
         "type": "hospital-affiliated pediatric practice"
+      },
+      {
+        "name": "Holliston Family Dental",
+        "type": "general dental practice",
+        "source": "https://hollistonfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Holliston Dental Associates",
+        "type": "general dental practice",
+        "source": "https://www.hollistondentalassociates.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

@@ -24,6 +24,20 @@
       {
         "name": "Circle Health Westford",
         "type": "outpatient center with urgent care and diagnostic imaging"
+      },
+      {
+        "name": "Family Dentistry of Westford",
+        "type": "general dental practice",
+        "source": "https://westfordfamilydentistry.com/westford-dentist/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Westford Smiles Dental Center",
+        "type": "general dental practice",
+        "source": "https://www.westfordsmilesdental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

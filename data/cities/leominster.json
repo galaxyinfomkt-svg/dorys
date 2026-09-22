@@ -24,6 +24,20 @@
       {
         "name": "HealthAlliance-Clinton Hospital Leominster Campus Medical Office Building",
         "type": "medical office building"
+      },
+      {
+        "name": "Leominster Family Dentists",
+        "type": "general dental practice",
+        "source": "https://www.leominsterfamilydentists.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Coakley Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.drcoakley.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

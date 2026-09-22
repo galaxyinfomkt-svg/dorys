@@ -33,6 +33,20 @@
       {
         "name": "Salem Hospital Primary and Specialty Care – Peabody",
         "type": "primary and specialty care offices"
+      },
+      {
+        "name": "Cross Street Family Dentistry",
+        "type": "general dental practice",
+        "source": "https://crossstreetfamilydentistry.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Navid Family Dental & Associates",
+        "type": "general dental practice",
+        "source": "https://www.navidfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

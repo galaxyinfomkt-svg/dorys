@@ -34,6 +34,20 @@
       {
         "name": "Spaulding Hospital for Continuing Medical Care Cambridge",
         "type": "long-term acute care and rehabilitation hospital"
+      },
+      {
+        "name": "Cambridge Family Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.cambridgedentist.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Cambridge Family Dental",
+        "type": "general dental practice",
+        "source": "https://cambridgefamilydentalma.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

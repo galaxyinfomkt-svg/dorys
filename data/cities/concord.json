@@ -28,6 +28,20 @@
       {
         "name": "Shields Health MRI at Emerson",
         "type": "outpatient imaging center"
+      },
+      {
+        "name": "Concord Woods Dental Group",
+        "type": "general dental practice",
+        "source": "https://www.theconcorddentist.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Smiles for Life",
+        "type": "general dental practice",
+        "source": "https://www.smilesforlifeconcord.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

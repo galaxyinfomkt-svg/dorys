@@ -20,6 +20,20 @@
       {
         "name": "Tufts Medical Center Community Care — Wakefield",
         "type": "primary care, OB/GYN, general surgery and dermatology group practice"
+      },
+      {
+        "name": "Wakefield Family Dental Center",
+        "type": "general dental practice",
+        "source": "https://www.wakefieldfamilydentalcenter.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Great Pond Dental",
+        "type": "general dental practice",
+        "source": "https://greatponddental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

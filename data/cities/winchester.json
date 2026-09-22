@@ -20,6 +20,20 @@
       {
         "name": "Winchester Hospital",
         "type": "acute care community hospital with emergency, surgical, cancer and maternity services"
+      },
+      {
+        "name": "Winchester Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.dentist-winchester.com/office-winchester.html",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Nabil R. Ibrahim, DDS",
+        "type": "general dental practice",
+        "source": "https://www.nabilibrahimdds.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

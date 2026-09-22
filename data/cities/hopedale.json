@@ -20,6 +20,20 @@
       {
         "name": "Atria Draper Place",
         "type": "assisted living, memory care and independent living"
+      },
+      {
+        "name": "Hopedale Dental Center",
+        "type": "general dental practice",
+        "source": "https://www.hopedaledentalcenter.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Park Place Dental Associates",
+        "type": "general dental practice",
+        "source": "https://hopkintondmd.com/general-dentistry",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

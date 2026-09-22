@@ -20,6 +20,20 @@
       {
         "name": "Bellingham Medical Associates",
         "type": "primary care and internal medicine practice"
+      },
+      {
+        "name": "Bellingham Dental Arts",
+        "type": "general dental practice",
+        "source": "https://www.bellinghamdentalarts.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Bellingham Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.bellinghamfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

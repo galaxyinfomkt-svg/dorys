@@ -24,6 +24,20 @@
       {
         "name": "Newton-Wellesley Ambulatory Care Center (159 Wells Avenue)",
         "type": "ambulatory care center"
+      },
+      {
+        "name": "Newton Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.newtondentistryma.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Newton Smile Centre",
+        "type": "general dental practice",
+        "source": "https://newtonsmilecentre.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

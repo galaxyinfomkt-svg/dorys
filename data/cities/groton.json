@@ -30,6 +30,20 @@
       {
         "name": "Emerson Health Primary Care Groton",
         "type": "primary care office"
+      },
+      {
+        "name": "Smiles of Groton",
+        "type": "general dental practice",
+        "source": "https://www.smilesofgroton.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Groton Family Dentistry",
+        "type": "general dental practice",
+        "source": "https://dentistgroton.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

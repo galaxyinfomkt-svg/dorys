@@ -30,6 +30,20 @@
       {
         "name": "Reliant Medical Group Westborough",
         "type": "large multi-specialty medical office building"
+      },
+      {
+        "name": "Westborough Family Dentist",
+        "type": "general dental practice",
+        "source": "https://www.westboroughfamilydentist.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Westborough Dentistree",
+        "type": "general dental practice",
+        "source": "https://westboroughdentistree.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

@@ -24,6 +24,20 @@
       {
         "name": "Cambridge Health Alliance Malden Care Center",
         "type": "multispecialty outpatient care center"
+      },
+      {
+        "name": "Family Dental of Malden",
+        "type": "general dental practice",
+        "source": "https://www.familydentalofmalden.com/procedures/family-dentistry/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Malden Family Dental",
+        "type": "general dental practice",
+        "source": "https://malden-familydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

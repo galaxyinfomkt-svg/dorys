@@ -24,6 +24,20 @@
       {
         "name": "Beth Israel Lahey Health Primary Care & Specialty Care — Beverly Medical Associates",
         "type": "multi-site physician practice group"
+      },
+      {
+        "name": "Davidyan Dental",
+        "type": "general dental practice",
+        "source": "http://www.davidyandental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Northshore Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.northshoredentistrypc.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

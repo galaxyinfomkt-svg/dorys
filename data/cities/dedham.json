@@ -21,6 +21,20 @@
       {
         "name": "Beth Israel Lahey Health Primary Care — Dedham/Westwood Family Medicine",
         "type": "family medicine practice"
+      },
+      {
+        "name": "Dedham Family Dental Care",
+        "type": "general dental practice",
+        "source": "https://www.dedhamfamilydentalcare.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Dental Park",
+        "type": "general dental practice",
+        "source": "https://www.dentalparkcare.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

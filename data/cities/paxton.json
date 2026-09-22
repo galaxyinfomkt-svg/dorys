@@ -20,6 +20,20 @@
       {
         "name": "The Hills at Paxton Village",
         "type": "independent living and age-restricted senior community"
+      },
+      {
+        "name": "Paxton Dental Care",
+        "type": "general dental practice",
+        "source": "https://paxtondentalcare.com/dental-services-in-paxton-ma/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Family Dental Group of Paxton",
+        "type": "general dental practice",
+        "source": "https://www.lavanafamilydental.com/location/paxton-ma",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [],

@@ -47,6 +47,20 @@
       {
         "name": "UMass Chan Medical School",
         "type": "medical school campus"
+      },
+      {
+        "name": "Dr. Joseph Costa Family Dentistry",
+        "type": "general dental practice",
+        "source": "https://www.worcestermadentist.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "University Dental Group",
+        "type": "general dental practice",
+        "source": "https://www.universitydentalgroup.com/family-dentistry.html",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

@@ -30,6 +30,20 @@
       {
         "name": "Mass General Primary Care Assembly Row",
         "type": "primary care practice"
+      },
+      {
+        "name": "Somerville Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.somervillefamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "West Somerville Dental Associates",
+        "type": "general dental practice",
+        "source": "https://westsomervilledental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

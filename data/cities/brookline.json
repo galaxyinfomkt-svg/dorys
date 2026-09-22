@@ -25,6 +25,20 @@
       {
         "name": "Boston Children's Brookline",
         "type": "pediatric ambulatory specialty care center"
+      },
+      {
+        "name": "Brookline Progressive Dental",
+        "type": "general dental practice",
+        "source": "https://www.brooklinedentalteam.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Dr. Gloria Barzi Brookline Dental",
+        "type": "general dental practice",
+        "source": "https://www.drbarzibrooklinedental.com/services/general-family-dentistry/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

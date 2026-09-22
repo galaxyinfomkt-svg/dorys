@@ -24,6 +24,13 @@
       {
         "name": "Oakdale Rehabilitation & Skilled Nursing Center",
         "type": "skilled nursing facility"
+      },
+      {
+        "name": "Chris G Kirusis, DMD",
+        "type": "general dental practice",
+        "source": "https://www.chriskirusisdmd.com/west-boylston-office-location",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

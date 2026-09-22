@@ -24,6 +24,20 @@
       {
         "name": "UMass Memorial Medical Group — Holden Family Medicine",
         "type": "primary care office"
+      },
+      {
+        "name": "Khanani Family Dental",
+        "type": "general dental practice",
+        "source": "https://www.khananidental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Shaw Family Smiles",
+        "type": "general dental practice",
+        "source": "https://www.shawfamilysmiles.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

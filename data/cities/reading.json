@@ -24,6 +24,20 @@
       {
         "name": "Beth Israel Lahey Health Primary Care — Reading Internal Medicine Associates",
         "type": "primary care office"
+      },
+      {
+        "name": "Reading Dental Associates",
+        "type": "general dental practice",
+        "source": "https://www.readingdentalma.com/reading-ma-dentist-office",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Pitcher Dental",
+        "type": "general dental practice",
+        "source": "https://pitcherdental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

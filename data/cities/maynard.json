@@ -24,6 +24,20 @@
       {
         "name": "Camellia Gardens",
         "type": "independent living community"
+      },
+      {
+        "name": "Maynard Family Dentists",
+        "type": "general dental practice",
+        "source": "https://www.maynardfamilydentists.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Nexus Family Dental",
+        "type": "general dental practice",
+        "source": "https://nexusfamilydental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

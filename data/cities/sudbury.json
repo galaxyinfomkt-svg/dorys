@@ -20,6 +20,20 @@
       {
         "name": "Emerson Health Sudbury",
         "type": "hospital-affiliated outpatient health center with imaging and laboratory"
+      },
+      {
+        "name": "Sudbury Family Dental Care",
+        "type": "general dental practice",
+        "source": "https://www.sudburyfamilydentalcare.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Sudbury Dental Excellence",
+        "type": "general dental practice",
+        "source": "https://sudburydentalexcellence.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

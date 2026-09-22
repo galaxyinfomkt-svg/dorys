@@ -28,6 +28,20 @@
       {
         "name": "South County Dialysis Center",
         "type": "outpatient dialysis center"
+      },
+      {
+        "name": "Webster Lake Dental",
+        "type": "general dental practice",
+        "source": "https://www.websterlakedental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
+      },
+      {
+        "name": "Bidinger and Stiles",
+        "type": "general dental practice",
+        "source": "https://www.bidingerandstiles.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [

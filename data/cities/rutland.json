@@ -20,6 +20,13 @@
       {
         "name": "Devereux Advanced Behavioral Health — Massachusetts",
         "type": "psychiatric residential treatment facility and behavioral health campus"
+      },
+      {
+        "name": "Carewell Dental",
+        "type": "general dental practice",
+        "source": "https://www.carewelldental.com/",
+        "verifiedVia": "practice-website-search",
+        "checked": "2026-09-22"
       }
     ],
     "healthSystems": [
