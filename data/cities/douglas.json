@@ -39,10 +39,11 @@
     "note": "Nothing else confirmed. All 'urgent care in Douglas' results are other towns."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Douglas Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.douglas-ma.gov/261/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

@@ -51,10 +51,11 @@
     "note": "Thompson Road holds the hospital, the Reliant office and the dialysis centre — a real, verifiable address cluster. Harrington's main inpatient hospital is in Southbridge."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Webster Board of Health / Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.webster-ma.gov/495/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

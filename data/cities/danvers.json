@@ -50,10 +50,11 @@
     "note": "No licensed hospital, but among the densest outpatient towns in the region — two competing systems run full multispecialty campuses with surgery."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Danvers Public Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.danversma.gov/358/Public-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

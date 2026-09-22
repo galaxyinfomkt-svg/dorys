@@ -40,10 +40,11 @@
     "note": "No hospital or ambulatory surgery centre confirmed in Dedham. Dedham's nearest hospital was Norwood Hospital, closed since 2020, so residents now route to Needham, Boston or Milton."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Dedham Board of Health / Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.dedham-ma.gov/your-government/board-of-health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

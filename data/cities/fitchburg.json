@@ -49,10 +49,11 @@
     "note": "IMPORTANT: the Fitchburg (former Burbank) campus is OUTPATIENT ONLY. Emergency departments operate at the Clinton and Leominster campuses, not Fitchburg. Do not describe Fitchburg as having a hospital ED."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Fitchburg Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.fitchburgma.gov/211/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

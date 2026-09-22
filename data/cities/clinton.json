@@ -39,10 +39,11 @@
     "note": "Confirmed operating. HealthAlliance-Clinton runs three campuses — Clinton, Fitchburg and Leominster."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Clinton Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.clintonma.gov/176/Public-Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

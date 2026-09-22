@@ -22,7 +22,7 @@ import { join } from 'node:path'
 import {
   company, SITE, PHONE, PHONE_DISP, FORM_ID, YEARS, HQ, cities,
   esc, lc, num, UNIVERSAL, SHORT, NOUN,
-  pick, subset, nearest, hqFacts, round1, relevantFacilities, townFacts, anchorFacility,
+  pick, subset, nearest, hqFacts, round1, relevantFacilities, townFacts, anchorFacility, healthAuthorityHtml, healthAuthorityFaq,
 } from './lib/town-kit.mjs'
 
 const DRY = process.argv.includes('--dry')
@@ -106,6 +106,8 @@ function landscape(city) {
   else parts.push(`<p>We have not verified a named healthcare facility inside ${esc(city.name)}; practices here are typically served on the same routes as neighbouring towns.</p>`)
   if (corr.length) parts.push(`<p>Practices cluster along ${corr.map((c) => `<strong>${esc(c)}</strong>`).join(' and ')}.</p>`)
   if (hc.dominantFacilityType) parts.push(`<p>Typical setting: ${esc(hc.dominantFacilityType)}.</p>`)
+  const ha = healthAuthorityHtml(city, esc)
+  if (ha) parts.push(ha)
   parts.push(`<p class="text-muted" style="font-size:0.9rem">Listed as local market context — these facilities are not presented as our clients.</p>`)
   return (
     `<section class="section section--alt"><div class="container container--narrow">` +
@@ -177,6 +179,8 @@ function faq(city) {
   const near = nearest(city).slice(0, 3)
   if (near.length)
     q.push({ q: `Which nearby towns do you serve?`, a: `The closest are ${near.map(({ c, d }) => `${c.name} (about ${round1(d)} mi)`).join(', ')}.` })
+  const hf = healthAuthorityFaq(city)
+  if (hf) q.push(hf)
   q.push({
     q: `How does an assessment in ${city.name} work?`,
     a: `We visit the facility, review high-touch zones, clean/dirty separation, current products and the records your surveyors expect, then send a written scope. It is free and carries no obligation. Call ${PHONE_DISP}.`,

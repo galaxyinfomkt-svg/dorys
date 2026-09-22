@@ -55,10 +55,11 @@
     "note": "Waltham has no full-service acute care hospital and no emergency department — Mass General Waltham states explicitly that it offers no walk-in or emergency services. The two corridor names are real street-level clusters, not formally branded districts."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Waltham Health Department / Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.city.waltham.ma.us/2106/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

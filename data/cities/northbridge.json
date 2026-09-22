@@ -43,10 +43,11 @@
     "note": "The Commerce Drive site is a single consolidated outpatient campus and the largest healthcare site in town. No hospital."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Northbridge Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.northbridgemass.org/board-of-health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

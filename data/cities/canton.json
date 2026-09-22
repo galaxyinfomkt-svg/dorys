@@ -39,10 +39,11 @@
     "note": "Pappas Rehabilitation Hospital for Children is in Canton but was slated for closure in the FY26 state budget; the closure is paused pending a legislative commission reporting by December 2026. Deliberately excluded from the facility list because its status is publicly contested."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Canton Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.town.canton.ma.us/139/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

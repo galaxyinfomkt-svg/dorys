@@ -41,10 +41,11 @@
     "note": "'Regional Dialysis Center of Lancaster' results refer to Lancaster, TEXAS — not Lancaster, Massachusetts."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Lancaster Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.ci.lancaster.ma.us/346/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

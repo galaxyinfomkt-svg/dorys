@@ -63,22 +63,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="preconnect" href="https://api.leadconnectorhq.com" crossOrigin="" />
 
-        {/* Critical, above-the-fold CSS — render-blocking on purpose so the
-            hero/nav/layout paint without a flash. Everything else is deferred
-            below to keep FCP/LCP low.
+        {/* Above-the-fold CSS, render-blocking on purpose so the hero/nav/
+            layout paint without a flash; everything else is deferred below.
+            One file: critical.min.css, premium.css, service-pages.css,
+            elevate.css and mobile-fixes.css concatenated in cascade order and
+            minified by scripts/bundle-css.mjs (npm run build:css). Edit the
+            source files, never site.min.css; the script rewrites the ?v= hash.
             NOTE: do NOT hardcode-preload specific gstatic woff2 URLs — Google
             rotates those hashed filenames, so the old ones 404 on every page. */}
-        <link rel="stylesheet" href="/assets/css/critical.min.css?v=20260720-d" />
-        <link rel="stylesheet" href="/assets/css/premium.css" />
-        {/* service-pages.css sizes benefit/highlight card icons, benefits/
-            related grids, cta-boxes, faq items, etc. */}
-        <link rel="stylesheet" href="/assets/css/service-pages.css?v=20260922a" />
-        {/* elevate.css — site-wide premium polish; wins on equal specificity.
-            Bump the ?v= cache-buster whenever these custom sheets change. */}
-        <link rel="stylesheet" href="/assets/css/elevate.css?v=20260724a" />
-        {/* mobile-fixes.css must load before deferred sheets so its !important
-            rules (phone visibility, services-grid lock, floating CTA) win. */}
-        <link rel="stylesheet" href="/assets/css/mobile-fixes.css?v=20260922p" />
+        <link rel="stylesheet" href="/assets/css/site.min.css?v=86ae648c81" />
 
         {/* Non-critical CSS + web fonts — injected as async (media=print →
             all on load) so they don't block first paint. Fonts use

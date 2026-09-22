@@ -46,10 +46,11 @@
     "note": "Addison Gilbert Hospital and BayRidge Hospital are affiliated but located in Gloucester and Lynn — do not attribute them to Beverly."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Beverly Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.beverlyma.gov/885/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

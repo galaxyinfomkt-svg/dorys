@@ -44,10 +44,11 @@
     "note": "Malden has NO acute-care general hospital. The former Malden Hospital closed; its site now holds the Tufts Medicine Behavioral Health Hospital, which opened February 2026 — new and confirmed open, not a legacy name."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Malden Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.cityofmalden.org/188/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

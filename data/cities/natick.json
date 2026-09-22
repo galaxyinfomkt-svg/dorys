@@ -39,10 +39,11 @@
     "note": "MAJOR STATUS CHANGE: do not describe Leonard Morse as a general or acute hospital. Its emergency department closed in October 2020, and in February 2025 MetroWest filed to discontinue the remaining med/surg unit, ICU and operating rooms, converting the campus fully to behavioral health."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Natick Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.natickma.gov/218/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

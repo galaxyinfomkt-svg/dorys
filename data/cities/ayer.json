@@ -43,10 +43,11 @@
     "note": "CRITICAL: Nashoba Valley Medical Center closed permanently on 31 August 2024 in the Steward Health Care collapse, and must never appear as operating. There is no replacement hospital or emergency department in Ayer; UMass Memorial is building a satellite emergency facility in GROTON, not Ayer, opening in 2027. The Groton Road medical office building survived the closure and is the only remaining clinical cluster."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Ayer Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.ayer.ma.us/440/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

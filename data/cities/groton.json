@@ -50,10 +50,11 @@
     "note": "UMass Memorial is building a new emergency facility in Groton, targeted for early 2027. Seven Hills Pediatric Center is a pediatric skilled nursing facility, a type usually excluded from CMS Nursing Home Compare."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Groton Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.grotonma.gov/government/boards-and-committees/board-of-health/",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

@@ -32,10 +32,11 @@
     "note": "No assisted living, memory care, rest home, dialysis, urgent care or health-system outpatient site with a Lunenburg address. Verified against the CMS NPI Registry by ZIP."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Lunenburg Board Of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.lunenburgma.gov/207/Board-Of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

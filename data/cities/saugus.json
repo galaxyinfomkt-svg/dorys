@@ -43,10 +43,11 @@
     "note": "Genuinely low. Union Hospital in neighbouring Lynn closed and was demolished, so Saugus residents travel to Salem or Melrose."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Saugus Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.saugus-ma.gov/196/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

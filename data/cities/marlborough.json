@@ -49,10 +49,11 @@
     "note": "NAMING MATTERS — this is the company's home city. The facility is officially 'UMass Memorial Medical Center – Marlborough Campus' on Union Street; the former Marlborough Hospital became a licensed campus of UMass Memorial. Safest copy is 'UMass Memorial Medical Center – Marlborough Campus (formerly Marlborough Hospital)'. Nashoba Valley Medical Center in nearby Ayer closed in August 2024 — never reference it."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Marlborough Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.marlborough-ma.gov/370/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

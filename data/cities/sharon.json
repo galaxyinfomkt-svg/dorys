@@ -32,10 +32,11 @@
     "note": "No hospital, surgery centre, dialysis centre or hospital-affiliated campus confirmed in Sharon. Nearest hospital-scale context is Foxborough and Norwood."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Sharon Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.sharonma.gov/1214/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

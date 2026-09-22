@@ -37,10 +37,11 @@
     "note": "Sterling Village is a licensed NURSING facility, not assisted living, despite aggregator claims — confirmed on its own site and via Mass Senior Care. No assisted living in Sterling."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Sterling Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.sterling-ma.gov/256/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

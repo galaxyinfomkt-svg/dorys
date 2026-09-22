@@ -40,10 +40,11 @@
     "note": "Arlington has NO hospital. Symmes Hospital closed in 1999, was demolished in 2008 and the site is now housing — never reference it as operating. Nearest hospitals are Mount Auburn in Cambridge and Winchester Hospital in Winchester."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Arlington Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.arlingtonma.gov/departments/health-human-services/health-department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

@@ -47,10 +47,11 @@
     "note": "No hospital in Watertown. The BILH multispecialty site opened August 2024 and added urgent care in May 2025 — new, growing infrastructure. Nearest hospital is Mount Auburn in Cambridge."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Watertown Health Department (Public Health)",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.watertown-ma.gov/184/Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

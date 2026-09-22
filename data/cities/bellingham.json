@@ -39,10 +39,11 @@
     "note": "No hospital, surgery centre or dialysis centre confirmed in Bellingham."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Bellingham Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.bellinghamma.org/416/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

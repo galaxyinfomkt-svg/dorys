@@ -184,3 +184,30 @@ export function anchorFacility(city) {
     (f) => f && f.name && /hospital|medical center|medical campus|health system|outpatient campus/i.test(`${f.type || ''} ${f.name}`)
   )
 }
+
+/** The town's local health authority (name + official page), when recorded. */
+export function healthAuthority(city) {
+  const lh = city.localHealth || {}
+  return lh.boardOfHealthName && lh.boardOfHealthUrl ? { name: lh.boardOfHealthName, url: lh.boardOfHealthUrl } : null
+}
+
+/** Paragraph linking the local health authority's official page. */
+export function healthAuthorityHtml(city, esc) {
+  const h = healthAuthority(city)
+  if (!h) return ''
+  return (
+    `<p>Local health authority: <a href="${esc(h.url)}" rel="noopener nofollow" target="_blank">${esc(h.name)}</a> ` +
+    `(official ${esc(city.name)} page). Healthcare facilities are licensed and surveyed by the Massachusetts ` +
+    `Department of Public Health; the local board handles environmental-health matters under the State Sanitary Code and local rules.</p>`
+  )
+}
+
+/** FAQ entry about the local health authority. */
+export function healthAuthorityFaq(city) {
+  const h = healthAuthority(city)
+  if (!h) return null
+  return {
+    q: `Who is the local health authority in ${city.name}?`,
+    a: `The ${h.name}; its official page is ${h.url}. Clinics, hospitals and long-term care facilities are licensed and surveyed by the Massachusetts Department of Public Health, while the local board of health handles local environmental-health matters under the State Sanitary Code and local regulations. Our cleaning records are kept so they serve both.`,
+  }
+}

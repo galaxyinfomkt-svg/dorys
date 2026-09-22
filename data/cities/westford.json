@@ -46,10 +46,11 @@
     "note": "No hospital in town. Two competing systems both run outpatient campuses on Littleton Road, which is a genuine local concentration."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Westford Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.westfordma.gov/215/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

@@ -39,10 +39,11 @@
     "note": "No assisted living, dialysis or urgent care. 'Rutland Regional Medical Center' results refer to Vermont."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Rutland Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.rutlandma.gov/242/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

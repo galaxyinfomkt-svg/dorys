@@ -50,10 +50,11 @@
     "note": "No hospital licensed in Chelmsford itself. Drum Hill is a genuine long-standing local district name, not coined."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Chelmsford Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.chelmsfordma.gov/156/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

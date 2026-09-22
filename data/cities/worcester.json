@@ -68,10 +68,11 @@
     "note": "The UMass Memorial Marlborough campus is NOT in Worcester. No named local medical corridor is established — the Plantation Street biotech cluster is research, not clinical. Never reference the long-closed Worcester City, Worcester County or Worcester State hospitals."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Worcester Division of Public Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.worcesterma.gov/public-health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

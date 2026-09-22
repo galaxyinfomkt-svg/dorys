@@ -61,10 +61,11 @@
     "note": "Woburn has NO acute care hospital — the acute hospital serving it, Winchester Hospital, is in neighbouring Winchester. Woburn's own inpatient facility is Encompass Health Rehabilitation Hospital of New England, formerly New England Rehabilitation Hospital; use the Encompass name."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Woburn Board of Health / Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://woburnma.gov/government/health/",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

@@ -55,10 +55,11 @@
     "note": "The strongest healthcare market of the twenty. South Shore Hospital is the only verified Level II trauma center south of Boston and the only Massachusetts community hospital with a Level III NICU."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Weymouth Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.weymouth.ma.us/1556/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

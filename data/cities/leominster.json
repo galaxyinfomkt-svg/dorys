@@ -45,10 +45,11 @@
     "note": "The Leominster campus is the inpatient and emergency hub of the three-campus HealthAlliance-Clinton Hospital (Leominster, Fitchburg, Clinton)."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Leominster Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.leominster-ma.gov/261/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

@@ -44,10 +44,11 @@
     "note": "CLOSURE: New England Sinai Hospital in Stoughton closed permanently on 2 April 2024 under Steward Health Care. It must never appear as operating."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Stoughton Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.stoughton.org/447/Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

@@ -40,10 +40,11 @@
     "note": "Highest-density town in the region. Open and actively expanding: an April 2026 Determination of Need covers roughly $79.5M for 36 new med/surg beds and a new cardiac lab, because the campus runs above typical capacity."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Burlington Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.burlington.org/218/Public-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

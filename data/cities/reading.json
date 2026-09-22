@@ -43,10 +43,11 @@
     "note": "No hospital and no ambulatory surgery centre in Reading. Both confirmed sites sit in the same building on Pondmeadow Drive."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Reading Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.readingma.gov/361/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

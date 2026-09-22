@@ -39,10 +39,11 @@
     "note": "Emerson Health runs health centres in Bedford, Westford, Groton, Sudbury and Concord."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Sudbury Health Department / Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://sudbury.ma.us/health/",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

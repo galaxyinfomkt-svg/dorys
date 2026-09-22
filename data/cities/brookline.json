@@ -47,10 +47,11 @@
     "note": "Brookline has no acute-care general hospital. Do NOT claim the Longwood Medical Area as Brookline — it is in Boston, though it abuts the town line."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Brookline Public Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.brooklinema.gov/health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

@@ -45,10 +45,11 @@
     "note": "Patriot Place is a genuine, locally used name for this medical concentration. Services span cardiology, orthopedic surgery, dermatology, neurosurgery, OB/GYN and day surgery."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Foxborough Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.foxboroughma.gov/boards_committees/board_of_health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

@@ -44,10 +44,11 @@
     "note": "Reliant is part of Optum, not UMass Memorial — the two are frequently conflated."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Holden Board of Health/Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://holdenma.gov/511/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

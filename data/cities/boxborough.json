@@ -32,10 +32,11 @@
     "note": "Zero senior living communities with a Boxborough address."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Boxborough Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.boxborough-ma.gov/292/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

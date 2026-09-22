@@ -52,10 +52,11 @@
     "note": "IMPORTANT: 'Somerville Hospital' no longer exists as a name. Inpatient acute care ended in 2009 and the emergency department became an urgent care centre in 2020. Do not call it a hospital ER. Mass General Brigham at Assembly Row is a corporate office building, not a clinical site — describe it accurately."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Somerville Health and Human Services",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.somervillema.gov/departments/health-and-human-services",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

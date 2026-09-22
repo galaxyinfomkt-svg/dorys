@@ -51,10 +51,11 @@
     "note": "Westborough State Hospital is closed and is deliberately not referenced. The two operating hospitals are Whittier (rehabilitation and long-term acute care) and Westborough Behavioral."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Westborough Board of Health / Public Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.westboroughma.gov/393/Public-Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

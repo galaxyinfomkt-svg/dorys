@@ -56,10 +56,11 @@
     "note": "Lahey Medical Center, Peabody is the only hospital and only emergency room in Peabody. The city is genuinely two-system: BILH at Essex Center Drive, Mass General Brigham at Centennial Drive and Corporate Way."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Peabody Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.peabody-ma.gov/health.html",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

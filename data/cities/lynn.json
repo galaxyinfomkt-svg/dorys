@@ -49,10 +49,11 @@
     "note": "CRITICAL: Union Hospital CLOSED (2019/2020) and the buildings were demolished. Never reference it. General acute care for Lynn is at Salem Hospital, which is in Salem, not Lynn."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Lynn Public Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.lynnma.gov/city_government/departments/publichealth",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

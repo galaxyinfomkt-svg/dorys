@@ -48,10 +48,11 @@
     "note": "The Fresenius facility is branded 'Oxford, MA' on the operator's site despite its Sutton address — a mailing-address trap. No assisted living or memory care in Sutton."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Sutton Board of Health / Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.suttonma.gov/463/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

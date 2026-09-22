@@ -37,10 +37,11 @@
     "note": "Not a licensed assisted living residence — it is the town's elderly housing complex. No assisted living or memory care in Bolton."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Bolton Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.townofbolton.com/board-health/pages/contacts-resources",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

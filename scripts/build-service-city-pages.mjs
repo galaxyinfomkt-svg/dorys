@@ -31,7 +31,7 @@ import { join } from 'node:path'
 import {
   company, SITE, PHONE, PHONE_DISP, FORM_ID, YEARS, HQ, cities,
   esc, titleCase, lc, cap, num, UNIVERSAL, SHORT, NOUN, HERO,
-  hash, pick, subset, nearest, hqFacts, round1, relevantFacilities, townFacts, anchorFacility,
+  hash, pick, subset, nearest, hqFacts, round1, relevantFacilities, townFacts, anchorFacility, healthAuthorityHtml, healthAuthorityFaq,
 } from './lib/town-kit.mjs'
 
 const DRY = process.argv.includes('--dry')
@@ -198,6 +198,7 @@ function townSection(service, city) {
     `<ul class="list list--check">${rows.map(([k, v]) => `<li><strong>${esc(k)}:</strong> ${esc(v)}</li>`).join('')}</ul>` +
     fit +
     corr +
+    healthAuthorityHtml(city, esc) +
     `<p class="text-muted" style="font-size:0.9rem">Sources: U.S. Census Bureau (2020 Census; Gazetteer files), USPS ZIP codes, and our own verification of local facilities. Distances are straight-line.</p>` +
     `</div></section>`
   )
@@ -325,6 +326,8 @@ function faqs(service, city) {
           a: `We have not verified one inside ${city.name}. ${city.healthcareLandscape?.dominantFacilityType ? `The typical healthcare setting here is ${city.healthcareLandscape.dominantFacilityType}. ` : ''}If you operate a ${one} in town, we can schedule it on the same route as neighbouring towns.`,
         }
   )
+  const hf = healthAuthorityFaq(city)
+  if (hf) local.push(hf)
   const near = nearest(city).slice(0, 3)
   if (near.length)
     local.push({

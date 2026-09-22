@@ -32,10 +32,11 @@
     "note": "Genuinely low. No hospital, no ambulatory surgery centre, no confirmed freestanding dialysis. Residents use Milton, Braintree and Brockton facilities."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Randolph Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.randolph-ma.gov/341/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

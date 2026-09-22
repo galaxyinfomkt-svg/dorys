@@ -43,10 +43,11 @@
     "note": "No hospital in Franklin. Everything confirmed sits in a single satellite building on West Central Street. Milford Regional was acquired by UMass Memorial Health on 1 October 2024."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Franklin Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.franklinma.gov/444/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

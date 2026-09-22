@@ -46,10 +46,11 @@
     "note": "No hospital in Shrewsbury. Some directories list the UMass Memorial Memorial Campus with a Shrewsbury address; that campus is in Worcester."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Shrewsbury Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://shrewsburyma.gov/188/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

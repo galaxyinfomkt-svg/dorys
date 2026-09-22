@@ -37,10 +37,11 @@
     "note": "No hospital and no hospital-system outpatient campus in Acton. Acton Medical Associates is physician-owned and independent, founded 1955, and is the town's main medical employer."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Acton Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.actonma.gov/Directory.aspx?did=18",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

@@ -43,10 +43,11 @@
     "note": "Leonard Morse Hospital, the other MetroWest campus, is in NATICK — do not attribute it to Framingham. SERVICE REDUCTION 2025: Tenet moved to close the Level IIB special care nursery; verify current maternity status before publishing anything about obstetrics. Route 9 genuinely concentrates medical offices but 'Route 9 medical corridor' is not an established proper name — say 'the medical offices along Route 9'."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Framingham Public Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.framinghamma.gov/290/Public-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

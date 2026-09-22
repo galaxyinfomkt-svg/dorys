@@ -37,10 +37,11 @@
     "note": "Sources disagree on whether Whitney Homestead is a rest home or independent living. No Emerson Health location in Stow."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Stow Board of Health (Health Department/BOH); health agent services via Nashoba Associated Boards of Health (978) 772-3335 per search snippet",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.stow-ma.gov/290/Health-DepartmentBOH",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

@@ -39,10 +39,11 @@
     "note": "No assisted living residence confirmed in Uxbridge."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Uxbridge Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.uxbridge-ma.gov/board-health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

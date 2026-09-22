@@ -39,10 +39,11 @@
     "note": "NAMING TRAP: despite the name, MelroseWakefield Hospital is physically in MELROSE. Wakefield itself has no hospital."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Wakefield Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.wakefieldma.gov/205/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

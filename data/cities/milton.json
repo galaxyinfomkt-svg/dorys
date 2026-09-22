@@ -39,10 +39,11 @@
     "note": "Open and stable, 100 beds. Quincy Medical Center in the neighbouring town closed in 2014, which increased Milton's catchment."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Milton Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.miltonma.gov/232/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

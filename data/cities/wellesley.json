@@ -47,10 +47,11 @@
     "note": "COMMON ERROR: Newton-Wellesley Hospital itself is in NEWTON, not Wellesley. Wellesley has the satellite outpatient surgery centre and ambulatory sites."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Wellesley Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://wellesleyma.gov/193/Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

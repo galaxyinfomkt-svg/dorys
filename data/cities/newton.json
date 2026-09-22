@@ -43,10 +43,11 @@
     "note": "Despite the name, the main Newton-Wellesley campus is in NEWTON. The Outpatient Surgery Center and a second Ambulatory Care Center are in Wellesley — do not attribute them to Newton. Wells Avenue is a real office park but 'Wells Avenue medical corridor' is not an established name."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Newton Health and Human Services",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.newtonma.gov/government/health-human-services",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

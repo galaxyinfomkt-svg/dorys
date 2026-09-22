@@ -32,10 +32,11 @@
     "note": "All 'Dover' results are either surrounding towns or Dover, NEW HAMPSHIRE — Wentworth-Douglass and Dover Family Practice are in New Hampshire."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Dover Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.doverma.gov/171/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

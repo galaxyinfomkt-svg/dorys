@@ -32,10 +32,11 @@
     "note": "No assisted living, rest home, dialysis, urgent care or hospital-system outpatient site with a Dudley address. UMass Memorial's full 202-location list has zero Dudley entries; the nearby ones are all Webster."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Dudley Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.dudleyma.gov/199/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

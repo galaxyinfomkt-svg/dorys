@@ -39,10 +39,11 @@
     "note": "McLean treats over 9,000 inpatients annually and has been the top-ranked freestanding psychiatric hospital in the United States for twenty consecutive years. There is no general acute hospital in Belmont."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Belmont Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.belmont-ma.gov/246/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

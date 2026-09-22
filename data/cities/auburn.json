@@ -48,10 +48,11 @@
     "note": "No hospital in Auburn. One Reliant site on Millbury Street is listed as closed and is not referenced."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Auburn Board of Health (Public Health Division)",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.auburnma.gov/174/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

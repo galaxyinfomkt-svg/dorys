@@ -39,10 +39,11 @@
     "note": "Open and stable. 73 beds, named among U.S. News Best Hospitals for 2025-2026."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Needham Public Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://needhamma.gov/85/Public-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

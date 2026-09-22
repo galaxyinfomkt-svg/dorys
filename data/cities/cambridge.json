@@ -55,10 +55,11 @@
     "note": "Kendall Square is a real district name but denotes a biotech and life-sciences R&D cluster, not clinical medical offices — using it as a medical corridor would misrepresent it."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Cambridge Public Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.cambridgema.gov/citydirectory",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

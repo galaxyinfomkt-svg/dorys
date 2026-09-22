@@ -40,10 +40,11 @@
     "note": "CREDIBILITY RISK: still branded 'Hospital' but it cut all med/surg and ICU beds in 2017 and permanently closed its emergency department in 2018. Never describe it as a full-service hospital or imply an ER."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Medford Health and Human Services Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.medfordma.org/departments/health-department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

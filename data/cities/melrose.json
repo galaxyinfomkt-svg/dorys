@@ -39,10 +39,11 @@
     "note": "Open and expanding — designated a Level III Trauma Center in January 2024. Despite the name, the hospital is physically in Melrose, not Wakefield."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Melrose Health & Human Services",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.cityofmelrose.org/201/Health-Human-Services",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

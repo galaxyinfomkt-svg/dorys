@@ -39,10 +39,11 @@
     "note": "229 beds, confirmed open under Beth Israel Lahey Health. Its satellite outpatient centres are in Medford, Reading, Wilmington and Woburn — outside Winchester."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Winchester Board of Health / Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.winchester.us/1062/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

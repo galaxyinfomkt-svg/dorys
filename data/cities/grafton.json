@@ -39,10 +39,11 @@
     "note": "No hospital, surgery centre or dialysis centre confirmed in Grafton. An office town served by Worcester-area hospitals."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Grafton Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.grafton-ma.gov/448/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

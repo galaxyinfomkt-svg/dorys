@@ -48,10 +48,11 @@
     "note": "The densest of the small Worcester County towns. The Overlook's assisted living building is named Stonebrook; aggregators calling it 'Fieldstone' are stale."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Charlton Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.townofcharlton.net/274/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

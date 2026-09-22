@@ -39,10 +39,11 @@
     "note": "Milford Regional Endocrinology shares the same Uxbridge Road building. No assisted living in Mendon."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Mendon Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.mendonma.gov/boh",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

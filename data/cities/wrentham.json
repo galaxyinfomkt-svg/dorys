@@ -44,10 +44,11 @@
     "note": "'Franklin-Wrentham Family Medicine' is physically in FRANKLIN, not Wrentham — a mailing-address trap."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Wrentham Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.wrentham.gov/291/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

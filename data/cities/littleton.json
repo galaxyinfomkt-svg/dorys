@@ -44,10 +44,11 @@
     "note": "No assisted living, memory care or dialysis in Littleton."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Littleton Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.littletonma.org/1174/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

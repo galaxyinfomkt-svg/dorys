@@ -49,10 +49,11 @@
     "note": "The Residence at Paine Estate is the former Traditions of Wayland — same building, renamed. If both names appear in a data set they are one facility. No medical or outpatient facility confirmed in Wayland."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Wayland Board of Health / Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.wayland.ma.us/227/Health-Department",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

@@ -47,10 +47,11 @@
     "note": "No hospital and no rehabilitation hospital. Harvard's New England Primate Research Center closed in 2015 and is deliberately not referenced. Note the Reliant page states there is NO urgent care at this site."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Southborough Board of Health",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.southboroughma.gov/406/Board-of-Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

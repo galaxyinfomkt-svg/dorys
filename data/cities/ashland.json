@@ -32,10 +32,11 @@
     "note": "No hospital, surgery centre, dialysis centre or hospital-affiliated campus physically in Ashland. Ashland sits inside MetroWest Medical Center's service area but the facilities are in Framingham and Natick."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Ashland Board of Health / Health Department",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://www.ashlandmass.com/178/Health",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,

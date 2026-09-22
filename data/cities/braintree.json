@@ -50,10 +50,11 @@
     "note": "No acute-care hospital in Braintree. New England Sinai Hospital, often associated with Braintree because of the 'Braintree Rehabilitation' brand, was in STOUGHTON and closed permanently in April 2024. Nearest acute hospital is South Shore Hospital in Weymouth."
   },
   "localHealth": {
-    "boardOfHealthName": null,
+    "boardOfHealthName": "Braintree Health Division",
     "boardOfHealthPhone": null,
-    "boardOfHealthUrl": null,
-    "notes": null
+    "boardOfHealthUrl": "https://braintreema.gov/217/Health-Division",
+    "notes": null,
+    "source": "Official municipal website page, located via web search on 2026-09-22 (page title and domain checked; phone not published until confirmed)"
   },
   "facilityTypesPresent": [],
   "facilityDensity": null,
