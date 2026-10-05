@@ -333,6 +333,31 @@ h1, h2, h3,
   background: transparent !important;
 }
 
+/* --- Reserva da altura do formulario do GHL (CLS) ------------------------ */
+/* O form_embed.js redimensiona o iframe para a altura real do conteudo,
+   segundos depois do carregamento. Medido no site publicado, ele assenta em
+   561px no mobile e 436px no desktop — enquanto as paginas de localidade
+   declaram 460px e as de servico 600px. O iframe crescia 101px nas paginas de
+   localidade e empurrava o breadcrumb e todas as secoes abaixo: era a maior
+   fonte de CLS do site (0,31 medido em /locations/*, contra 0,1 de limite).
+
+   data/company.json .ghl._loadingNote proibe adiar este iframe (adiar ja parou
+   a captacao de leads) e manda exatamente isto: reservar a altura por CSS.
+
+   Quem segura o espaco e o wrapper, com min-height. O iframe continua livre
+   para se redimensionar dentro dele — nada de height fixo com !important, que
+   poderia cortar o formulario se o GHL mudar o conteudo. O valor e o maior
+   entre a altura declarada e a altura em que ele assenta, por breakpoint, de
+   modo que a caixa nunca muda de tamanho nem para mais nem para menos. */
+.form-bare {
+  min-height: 600px;   /* mobile: declarado vai ate 600, assenta em 561 */
+}
+@media (min-width: 601px) {
+  .form-bare {
+    min-height: 460px; /* desktop: declarado vai ate 460, assenta em 436 */
+  }
+}
+
 /* --- Hub city directory grouped by county (DOM + scannability) ---------- */
 .cities-by-county { display: flex; flex-direction: column; gap: 1.75rem; }
 .county-group { }
