@@ -38,6 +38,37 @@ const nextConfig = {
           // GHL/third-party popups working; COEP is intentionally omitted so the
           // cross-origin GHL form, chat, fonts and images keep loading.
           { key: "Cross-Origin-Opener-Policy", value: "same-origin-allow-popups" },
+          // CSP de base. O Lighthouse reclamava de "no CSP found"; isto fecha os
+          // vetores que da para fechar sem risco: plugins (object-src), reescrita
+          // de URL base (base-uri), embedding por terceiros (frame-ancestors) e
+          // qualquer recurso servido em http.
+          //
+          // script-src fica com 'unsafe-inline' e https: DE PROPOSITO. Uma
+          // politica estrita de verdade exige nonce por requisicao, e nonce exige
+          // renderizacao dinamica — o que mataria a geracao estatica das 872
+          // paginas de servico x cidade. Alem disso o formulario do GoHighLevel
+          // injeta script proprio, e quebra-lo significa parar a captacao de
+          // leads (ver data/company.json .ghl._loadingNote). Endurecer isto e
+          // trabalho separado, com teste de formulario em producao.
+          {
+            key: "Content-Security-Policy",
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https:",
+              "style-src 'self' 'unsafe-inline' https:",
+              "img-src 'self' data: blob: https:",
+              "font-src 'self' data: https:",
+              "frame-src 'self' https:",
+              "connect-src 'self' https:",
+              "media-src 'self' https:",
+              "worker-src 'self' blob:",
+              "object-src 'none'",
+              "base-uri 'self'",
+              "form-action 'self' https:",
+              "frame-ancestors 'self'",
+              "upgrade-insecure-requests",
+            ].join("; "),
+          },
         ],
       },
       {

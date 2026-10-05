@@ -3,19 +3,24 @@
  Dorys Janitorial Cleaning Services
  ========================================================================== */
 
-// Google Analytics 4 Configuration
-// Replace GA_MEASUREMENT_ID with your actual GA4 Measurement ID (G-XXXXXXXXXX)
-const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // TODO: Replace with actual GA4 ID
-
-// Initialize Google Analytics
+// Este arquivo SO liga os eventos. Ele nao inicializa mais o GA4.
+//
+// Antes havia aqui um gtag('config') com o ID de exemplo, que nunca chegou a
+// ser substituido pelo real. Como o container de verdade (G-2MP9G52LW7) ja e
+// configurado pelo stub em app/layout.tsx, essa segunda chamada fazia o
+// gtag.js baixar um container inexistente: 465 ms de thread principal medidos
+// no profiler, sem nenhum dado em troca.
+//
+// Repetir o config no ID real tambem nao serve: cada config dispara um
+// page_view novo e infla a contagem de visitas. Por isso, nenhum config aqui.
+//
+// gtag ja existe (stub no <head>); a definicao abaixo e so uma rede de
+// seguranca caso este script execute antes do stub.
 window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', GA_MEASUREMENT_ID, {
- 'page_title': document.title,
- 'page_location': window.location.href,
- 'page_path': window.location.pathname
-});
+if (typeof window.gtag !== 'function') {
+ window.gtag = function(){ dataLayer.push(arguments); };
+}
+var gtag = window.gtag;
 
 // --------------------------------------------------------------------------
 // Phone Call Tracking
