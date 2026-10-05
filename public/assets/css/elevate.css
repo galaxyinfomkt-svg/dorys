@@ -358,6 +358,20 @@ h1, h2, h3,
   }
 }
 
+/* O formulario do hero da home nao usa .form-bare, entao precisa da sua
+   propria reserva. Medido no site publicado: no mobile o wrapper comeca em
+   0px e salta para 561px quando o iframe carrega — uma insercao de 561px que
+   empurrava a pagina inteira e respondia pelo CLS de 0,32 da home. No desktop
+   vai de 500px para 526px. */
+#hero-form-card {
+  min-height: 561px;
+}
+@media (min-width: 601px) {
+  #hero-form-card {
+    min-height: 526px;
+  }
+}
+
 /* --- Hub city directory grouped by county (DOM + scannability) ---------- */
 .cities-by-county { display: flex; flex-direction: column; gap: 1.75rem; }
 .county-group { }
