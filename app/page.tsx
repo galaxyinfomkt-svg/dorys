@@ -86,6 +86,22 @@ export default async function HomePage() {
   }
   return (
     <>
+      {/* Preload da imagem de LCP.
+          Sem isto, o navegador so descobre o <img> do hero depois de baixar e
+          aplicar os 36,8 KiB de CSS bloqueante — em Slow 4G isso atrasa o LCP o
+          bastante para o PageSpeed fechar o trace antes de registra-lo e
+          devolver NO_LCP (que invalida tambem o TBT e zera a categoria toda).
+          Com o preload, a imagem desce em paralelo com o CSS.
+          imagesrcset/imagesizes repetem exatamente o que a tag <img> declara —
+          se divergirem, o navegador baixa duas variantes em vez de uma. */}
+      <link
+        rel="preload"
+        as="image"
+        href="/assets/images/hero/surgery-room-hero.webp"
+        imageSrcSet="/assets/images/hero/surgery-room-hero-400w.webp 400w, /assets/images/hero/surgery-room-hero-600w.webp 600w, /assets/images/hero/surgery-room-hero.webp 800w"
+        imageSizes="(max-width: 600px) 400px, (max-width: 900px) 600px, 800px"
+        fetchPriority="high"
+      />
       <Header />
       {d.schemas.map((schema, i) => (
         <script
