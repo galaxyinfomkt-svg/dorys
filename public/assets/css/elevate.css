@@ -333,6 +333,36 @@ h1, h2, h3,
   background: transparent !important;
 }
 
+/* --- heroFadeIn sem opacidade: a causa do NO_LCP ------------------------- */
+/* O critical.min.css define:
+     @keyframes heroFadeIn { 0% { opacity:0; transform:translateY(30px) } to {...} }
+     .hero-premium__content { animation:.8s ease-out heroFadeIn }
+     .hero-premium__form    { animation:.8s ease-out .2s both heroFadeIn }
+
+   Ou seja, TODO o conteudo do hero — H1, subtitulo, selos — comeca invisivel e
+   leva 800ms para aparecer. O navegador nao considera elemento com opacity:0
+   como candidato a Largest Contentful Paint. Durante quase um segundo a pagina
+   nao tem nenhum candidato elegivel; se a imagem do hero tambem nao chegou (em
+   Slow 4G, a partir dos IPs de datacenter de onde o PageSpeed roda, ela nao
+   chega), o trace fecha sem candidato algum e o Lighthouse devolve NO_LCP — que
+   invalida tambem o TBT e deixa a categoria Performance inteira sem nota.
+
+   Redefinir o keyframe aqui substitui o anterior (a ultima definicao do mesmo
+   nome vence) e mantem o movimento: o hero continua deslizando para cima, mas
+   o texto e pintavel desde o primeiro quadro, entao vira candidato a LCP junto
+   com o FCP. Nao animar opacidade no elemento de LCP e a recomendacao padrao.
+
+   Bonus: transform sozinho e composto na GPU; opacity+transform em 800ms
+   tambem era uma das animacoes que o Lighthouse listava. */
+@keyframes heroFadeIn {
+  from { transform: translateY(30px); }
+  to   { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-premium__content,
+  .hero-premium__form { animation: none !important; }
+}
+
 /* --- Reserva da altura do formulario do GHL (CLS) ------------------------ */
 /* O form_embed.js redimensiona o iframe para a altura real do conteudo,
    segundos depois do carregamento. Medido no site publicado, ele assenta em
