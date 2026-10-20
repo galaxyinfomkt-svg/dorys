@@ -53,7 +53,6 @@
     "product list with EPA registration numbers and contact times",
     "Safety Data Sheets",
     "signed service logs",
-    "bloodborne pathogen training records",
     "outbreak escalation plan"
   ],
   "commonSurveyFindings": [
@@ -128,11 +127,11 @@
     },
     {
       "q": "What documentation will you leave behind that a surveyor can actually look at?",
-      "a": "Room-level cleaning logs with date, time, initials and product used; isolation and discharge clean records; a current product list with EPA registration numbers and label contact times; Safety Data Sheets for everything on our carts; training records for our staff covering bloodborne pathogens under 29 CFR 1910.1030 and product handling; and a supervisor QA checklist with correction notes. All of it is yours and stays on site. When a surveyor asks how you know the room was cleaned, a signed log with a named product beats a verbal assurance from whoever is on shift that day."
+      "a": "Room-level cleaning logs with date, time, initials and product used; isolation and discharge clean records; a current product list with EPA registration numbers and label contact times; Safety Data Sheets for everything on our carts; training records for our staff covering product handling; and a supervisor QA checklist with correction notes. All of it is yours and stays on site. When a surveyor asks how you know the room was cleaned, a signed log with a named product beats a verbal assurance from whoever is on shift that day."
     },
     {
       "q": "How do your staff handle isolation rooms and soiled linen without creating an exposure issue?",
-      "a": "Under 29 CFR 1910.1030 — the most-cited OSHA standard in skilled nursing, with 43 citations across 10 federal inspections between October 2024 and September 2025 — contaminated laundry is handled as little as possible, bagged where it is used, never sorted or rinsed in the resident room, and moved in leak-resistant containers. Our staff don PPE at the door per the posted precautions, clean the room last on the round where the schedule allows, discard cloths rather than returning them to the bucket, and doff and perform hand hygiene before leaving. Exposure control training is annual and documented."
+      "a": "Under 29 CFR 1910.1030 — the most-cited OSHA standard in skilled nursing, with 43 citations across 10 federal inspections between October 2024 and September 2025 — contaminated laundry is handled as little as possible, bagged where it is used, never sorted or rinsed in the resident room, and moved in leak-resistant containers. Our staff don PPE at the door per the posted precautions, clean the room last on the round where the schedule allows, discard cloths rather than returning them to the bucket, and doff and perform hand hygiene before leaving."
     },
     {
       "q": "Surveyors have written us up for odors and stained furnishings. Is that a cleaning problem or a maintenance problem?",

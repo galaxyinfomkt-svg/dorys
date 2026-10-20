@@ -77,7 +77,7 @@ function hero(service, city) {
   const key = `hero:${service.slug}:${city.slug}`
   const subtitles = [
     `Clinical-grade cleaning for ${many} in ${city.name}${city.county ? ` and across ${city.county} County` : ''}. Founded by a ${YEARS}-year clinical veteran. $2M insured.`,
-    `${cap(one)} cleaning built on CDC and OSHA practice, documented visit by visit, for ${city.name} facilities. $2M insured.`,
+    `${cap(one)} cleaning built on CDC guidance, documented visit by visit, for ${city.name} facilities. $2M insured.`,
     hq && hq.d
       ? `Serving ${city.name} from our ${HQ.name} base, about ${hq.d} miles ${hq.dir}. Written scope, EPA-registered products, signed logs.`
       : `Serving ${city.name} from our ${HQ.name} base. Written scope, EPA-registered products, signed logs.`,

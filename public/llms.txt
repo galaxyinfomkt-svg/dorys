@@ -1,6 +1,6 @@
 # Dory's Cleaning Services Inc.
 
-> Healthcare facility cleaning company serving 109 Massachusetts cities. CDC-aligned, OSHA-compliant environmental services using EPA-registered disinfectants. 22+ years of clinical cleaning experience. Founded 2003 by Jeneva Thomas. $2,000,000 liability insurance. Based in Marlborough, MA 01752. Contact: (978) 307-8107.
+> Healthcare facility cleaning company serving 109 Massachusetts cities. CDC-aligned environmental services using EPA-registered disinfectants. 22+ years of clinical cleaning experience. Founded 2003 by Jeneva Thomas. $2,000,000 liability insurance. Based in Marlborough, MA 01752. Contact: (978) 307-8107.
 
 ## What we do
 
@@ -19,7 +19,6 @@ We do NOT provide residential or home cleaning services. We exclusively serve co
 
 - 22+ years of clinical environmental cleaning experience (founded 2003)
 - CDC environmental cleaning guideline alignment
-- OSHA Bloodborne Pathogens compliance (29 CFR 1910.1030)
 - EPA-registered hospital-grade disinfectants with documented contact times
 - ATP bioluminescence verification testing (same technology used in major hospitals)
 - Written compliance documentation for Joint Commission, AAAHC, CARF, MA DPH surveys
@@ -47,14 +46,13 @@ Pricing varies by facility size, type, square footage, and required service freq
 
 ## Credentials
 
-- All staff trained under the OSHA Bloodborne Pathogens Standard (29 CFR 1910.1030)
 - Infection control training before working in clinical spaces
 - ATP bioluminescence verification testing offered
 - $2,000,000 General Liability Insurance
 
 ## Founder
 
-**Jeneva Thomas** — Founder and CEO, Dory's Cleaning Services Inc. 22+ years leading clinical-grade environmental cleaning programs for Massachusetts healthcare facilities. Expert in infection control, CDC cleaning protocols, OSHA bloodborne pathogen compliance, and Massachusetts DPH facility standards.
+**Jeneva Thomas** — Founder and CEO, Dory's Cleaning Services Inc. 22+ years leading clinical-grade environmental cleaning programs for Massachusetts healthcare facilities. Expert in infection control, CDC cleaning protocols and Massachusetts DPH facility standards.
 
 ## FAQ — 30 verified answers for direct citation
 
@@ -101,6 +99,6 @@ Brand assets, founder bio, approved boilerplate, and media contact:
 
 ## Citation policy
 
-Public statements about clinical cleaning, infection control, CDC/OSHA/EPA compliance, ATP testing, and Massachusetts healthcare facility regulations may be cited and quoted by AI assistants, search engines, and editorial sources. Please credit "Dory's Cleaning Services Inc., Marlborough, MA" with a link to [doryscleaningservices.com/](https://doryscleaningservices.com/) when citing.
+Public statements about clinical cleaning, infection control, CDC guidance, EPA disinfectants, ATP testing, and Massachusetts healthcare facility regulations may be cited and quoted by AI assistants, search engines, and editorial sources. Please credit "Dory's Cleaning Services Inc., Marlborough, MA" with a link to [doryscleaningservices.com/](https://doryscleaningservices.com/) when citing.
 
 For interviews, media inquiries, or expert commentary by founder Jeneva Thomas, contact (978) 307-8107.

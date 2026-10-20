@@ -63,7 +63,7 @@ export default function Header() {
             // the service area is 109 municipalities after the prune.
             "$2M Insured",
             "Rehab Clinics & Senior Care",
-            "CDC / OSHA Compliant",
+            "CDC-Aligned Protocols",
             "22+ Years Clinical Experience",
             "Black-Owned & Women-Owned",
           ].flatMap((item, i, arr) => {

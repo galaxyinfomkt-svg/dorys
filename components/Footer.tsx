@@ -26,7 +26,7 @@ export default function Footer() {
               />
             </Link>
             <p className="footer__cta-text">
-              Clinical-grade environmental cleaning for licensed healthcare facilities across Massachusetts. 22 years of clinical experience, CDC/OSHA compliant, $2M insured, compliance documentation included.
+              Clinical-grade environmental cleaning for licensed healthcare facilities across Massachusetts. 22 years of clinical experience, CDC-aligned, $2M insured, compliance documentation included.
             </p>
             <div className="footer__contact-item"><strong>PHONE</strong> <a href="tel:+19783078107" className="footer__contact-value">(978) 307-8107</a></div>
             <div className="footer__contact-item"><strong>EMAIL</strong> <a href="mailto:contact@doryscleaningservices.com" className="footer__contact-value">contact@doryscleaningservices.com</a></div>

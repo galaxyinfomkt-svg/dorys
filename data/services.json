@@ -4,7 +4,7 @@
       "name": "Medical Office Cleaning",
       "slug": "medical-office-cleaning",
       "shortDescription": "Specialized sanitation for medical offices, dental practices, and physician clinics with infection control protocols and compliance documentation.",
-      "fullDescription": "Our medical office cleaning services are designed to meet the stringent hygiene and safety standards required by healthcare facilities. With 22 years of hands-on healthcare experience, we understand that clinical environments demand more than standard cleaning — they require trained professionals who follow CDC and OSHA guidelines, use EPA-registered hospital-grade disinfectants, and deliver documented results that support your facility's compliance requirements.",
+      "fullDescription": "Our medical office cleaning services are designed to meet the stringent hygiene and safety standards required by healthcare facilities. With 22 years of hands-on healthcare experience, we understand that clinical environments demand more than standard cleaning — they require trained professionals who follow CDC guidelines, use EPA-registered hospital-grade disinfectants, and deliver documented results that support your facility's compliance requirements.",
       "features": [
         "EPA-registered hospital-grade disinfectant application",
         "Exam room terminal cleaning protocols",
@@ -27,7 +27,7 @@
       "faqs": [
         {
           "question": "What infection control protocols do you follow for medical office cleaning?",
-          "answer": "We follow CDC and OSHA guidelines for healthcare environmental cleaning, including use of EPA-registered hospital-grade disinfectants, proper contact time protocols, and trained staff with bloodborne pathogen awareness. Our team understands the unique requirements of clinical environments."
+          "answer": "We follow CDC guidelines for healthcare environmental cleaning, including use of EPA-registered hospital-grade disinfectants, proper contact time protocols, and trained staff with bloodborne pathogen awareness. Our team understands the unique requirements of clinical environments."
         },
         {
           "question": "Do you provide cleaning documentation for compliance purposes?",
@@ -70,7 +70,7 @@
         },
         {
           "question": "How do you handle biohazard spills in a clinic setting?",
-          "answer": "Our staff is trained in proper biohazard spill response protocols, including containment, personal protective equipment usage, EPA-registered disinfectant application, and proper waste disposal. We follow OSHA bloodborne pathogen standards for all biohazard situations."
+          "answer": "Our staff is trained in proper biohazard spill response protocols, including containment, personal protective equipment usage, EPA-registered disinfectant application, and proper waste disposal. We use EPA-registered products labelled for bloodborne pathogens in every biohazard situation."
         },
         {
           "question": "Can you work around our clinic's patient schedule?",
