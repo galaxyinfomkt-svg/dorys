@@ -75,7 +75,6 @@ export async function generateMetadata(
   return {
     title: d.title,
     description: d.description,
-    keywords: d.keywords,
     robots: { index: indexable, follow: true },
     alternates: { canonical: d.canonical || `/services/${service}/${city}` },
     openGraph: {

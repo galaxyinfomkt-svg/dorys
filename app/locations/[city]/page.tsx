@@ -66,7 +66,6 @@ export async function generateMetadata(
   return {
     title: data.title,
     description: data.description,
-    keywords: data.keywords,
     robots: { index: indexable, follow: true },
     alternates: { canonical: data.canonical || `/locations/${data.slug}` },
     openGraph: {

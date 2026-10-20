@@ -48,7 +48,6 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: d.title,
     description: d.description,
-    keywords: d.keywords,
     robots: { index: indexable, follow: true },
     alternates: { canonical: d.canonical || `/${SLUG}` },
     openGraph: {

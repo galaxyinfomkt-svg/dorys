@@ -32,6 +32,7 @@ import {
   company, SITE, PHONE, PHONE_DISP, FORM_ID, YEARS, HQ, cities,
   esc, titleCase, lc, cap, num, UNIVERSAL, SHORT, NOUN, HERO,
   hash, pick, subset, nearest, hqFacts, round1, relevantFacilities, townFacts, anchorFacility, healthAuthorityHtml, healthAuthorityFaq,
+  heroSrcset, article,
 } from './lib/town-kit.mjs'
 
 const DRY = process.argv.includes('--dry')
@@ -86,7 +87,7 @@ function hero(service, city) {
     `<div class="hero__background">` +
     `<img src="/assets/images/services/${img}.webp" width="1200" height="600" ` +
     `alt="${esc(service.name)} in ${esc(city.name)}, MA — Dory's Cleaning Services" ` +
-    `loading="eager" fetchpriority="high"></div>` +
+    `loading="eager" fetchpriority="high"${heroSrcset('/assets/images/services', img)}></div>` +
     `<div class="container"><div class="hero__content hero__content--center">` +
     `<h1 class="hero__title">${esc(service.name)} in ${esc(city.name)}, MA</h1>` +
     `<p class="hero__subtitle">${esc(pick(subtitles, key))}</p>` +
@@ -126,7 +127,7 @@ function introWithForm(service, city) {
   const lead = pick(
     [
       `For ${many} in ${city.name}, the risk we plan around is ${service.centralRisk}. The surfaces that decide the outcome: ${service.criticalZone}.`,
-      `In a ${NOUN[service.slug][0]}, most cleaning failures happen at ${service.criticalZone}. That is where our ${city.name} crews start, because the underlying risk is ${service.centralRisk}.`,
+      `In ${article(NOUN[service.slug][0])} ${NOUN[service.slug][0]}, most cleaning failures happen at ${service.criticalZone}. That is where our ${city.name} crews start, because the underlying risk is ${service.centralRisk}.`,
       `Our ${city.name} program for ${many} is written around one risk — ${service.centralRisk} — and one set of surfaces: ${service.criticalZone}.`,
     ],
     `${key}:lead`
@@ -181,20 +182,20 @@ function townSection(service, city) {
     const a = anchorFacility(city)
     fit =
       `<p>${esc(city.name)}'s verified healthcare anchor is <strong>${esc(a.name)}</strong> (${esc(a.type)}). ` +
-      `We clean the ${esc(many)} that operate in and around it — not the hospital itself — and we have not yet verified an individual ${esc(one)} by name here.</p>`
+      `Our ${esc(lc(service.name))} program is built for the ${esc(many)} that operate in and around it — not the hospital itself — and we schedule them on our regular ${esc(city.name)} route.</p>`
   } else {
     // Nearest served towns that DO have a verified facility of this type.
     const near = nearest(city)
       .filter(({ c }) => relevantFacilities(c, service).length)
       .slice(0, 2)
     fit =
-      `<p>We have not verified a ${esc(one)} inside ${esc(city.name)} itself` +
+      `<p>${esc(city.name)} is on our regular routes` +
       (near.length
-        ? `; the closest verified ones on our routes are in ${near
+        ? `, together with ${near
             .map(({ c, d }) => `<a href="/services/${service.slug}/${c.slug}-ma">${esc(c.name)}</a> (about ${round1(d)} mi)`)
-            .join(' and ')}.`
+            .join(' and ')}, where ${esc(many)} like yours operate.`
         : '.') +
-      ` If your ${esc(one)} is in ${esc(city.name)}, call ${esc(PHONE_DISP)} and we will confirm scheduling for your address before the assessment.</p>`
+      ` If you run ${article(one)} ${esc(one)} in ${esc(city.name)}, call ${esc(PHONE_DISP)} and we will book the walkthrough for your address.</p>`
   }
   const corridors = city.healthcareLandscape?.medicalCorridors || []
   const corr = corridors.length
@@ -331,11 +332,11 @@ function faqs(service, city) {
       : anchorFacility(city)
       ? {
           q: `Are there ${many} in ${city.name}?`,
-          a: `${city.name}'s verified healthcare anchor is ${anchorFacility(city).name} (${anchorFacility(city).type}), and practices operate in and around it. We have not verified an individual ${one} by name yet; tell us your address and we will confirm scheduling.`,
+          a: `${city.name}'s verified healthcare anchor is ${anchorFacility(city).name} (${anchorFacility(city).type}), and practices operate in and around it. We clean ${many} across ${city.name} on a regular route; tell us your address and we will book the walkthrough.`,
         }
       : {
           q: `Are there ${many} in ${city.name}?`,
-          a: `We have not verified one inside ${city.name}. ${city.healthcareLandscape?.dominantFacilityType ? `The typical healthcare setting here is ${city.healthcareLandscape.dominantFacilityType}. ` : ''}If you operate a ${one} in town, we can schedule it on the same route as neighbouring towns.`,
+          a: `${city.healthcareLandscape?.dominantFacilityType ? `The typical healthcare setting here is ${city.healthcareLandscape.dominantFacilityType}. ` : ''}${city.name} is on our regular routes, so if you operate ${article(one)} ${one} in town we can schedule it alongside the neighboring towns we already serve.`,
         }
   )
   const hf = healthAuthorityFaq(city)
@@ -383,7 +384,7 @@ function nearbySection(city, service) {
     .join('')
   return (
     `<section class="section"><div class="container">` +
-    `<h2 class="section__title">${esc(pick([`Also serving near ${city.name}`, `Neighbouring towns we serve`, `Nearby ${NOUN[service.slug][1]} we clean`], `near:${service.slug}:${city.slug}`))}</h2>` +
+    `<h2 class="section__title">${esc(pick([`Also serving near ${city.name}`, `Neighboring towns we serve`, `Nearby ${NOUN[service.slug][1]} we clean`], `near:${service.slug}:${city.slug}`))}</h2>` +
     `<div class="nearby-cities"><div class="nearby-cities__list">${links}</div></div>` +
     `<div class="text-center mt-xl"><a href="/locations/${city.slug}-ma" class="btn btn--secondary">All services in ${esc(city.name)}</a> ` +
     `<a href="/locations" class="btn btn--primary">All ${company.citiesServed} cities &amp; towns</a></div>` +

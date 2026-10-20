@@ -57,11 +57,23 @@ const ROOT_ONLY = [
 ]
 for (const s of ROOT_ONLY) MAP.set(`/services/${s}`, `/${s}`)
 
+/** Services the company no longer offers, plus old-builder paths. */
+const GONE =
+  /^\/(services\/(general-housekeeping|janitorial-service|deep-cleaning|carpet-cleaning|upholstery-cleaning)(\/.*)?|home-[^/]*|calendar(-[^/]*)?(\/.*)?|builder-preview(\/.*)?|gemin-2|open|locales(\/.*)?|tmp(\/.*)?|workspace(\/.*)?)$/
+
 export function middleware(req: NextRequest) {
   // Normalise a trailing slash before lookup; the site is trailingSlash: false,
   // so /locations/foo-ma/ and /locations/foo-ma are the same intent.
   let pathname = req.nextUrl.pathname
   if (pathname.length > 1 && pathname.endsWith("/")) pathname = pathname.slice(0, -1)
+
+  // Old-site URLs whose content is gone for good. They answer 410 rather than
+  // 404 so Google drops them from the index faster — and robots.txt must NOT
+  // block them, or Google never sees this answer and keeps the cached page
+  // (deep cleaning, "Licensed", "MA HIC #…") in search results.
+  if (GONE.test(pathname)) {
+    return new NextResponse("Gone", { status: 410, headers: { "X-Robots-Tag": "noindex" } })
+  }
 
   const destination = MAP.get(pathname)
   if (destination) {

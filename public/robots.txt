@@ -1,6 +1,6 @@
 # Robots.txt for Dory's Cleaning Services
 # https://doryscleaningservices.com
-# Last updated: 2026-09-22
+# Last updated: 2026-10-20
 
 User-agent: *
 Allow: /
@@ -9,38 +9,16 @@ Allow: /
 Sitemap: https://doryscleaningservices.com/sitemap.xml
 
 # ===========================================
-# BLOCK TECHNICAL/INVALID URLs
-# (Cleaning Google Search Console 404 errors)
+# OLD-SITE URLs ARE NOT BLOCKED HERE ON PURPOSE
 # ===========================================
+# Removed services (/services/deep-cleaning/, /janitorial-service/, ...),
+# /home-*, /calendar*, /builder-preview/ and other old-builder paths answer
+# 410 Gone from middleware.ts. Blocking them here would stop Google from ever
+# seeing that 410, so it would keep the stale cached pages in results.
 
-# Technical paths - legacy URLs from old versions
-Disallow: /tmp/
-Disallow: /workspace/
-
-# Removed services (no longer offered)
-Disallow: /services/general-housekeeping/
-Disallow: /services/janitorial-service/
-Disallow: /services/deep-cleaning/
-Disallow: /services/carpet-cleaning/
-Disallow: /services/upholstery-cleaning/
-Disallow: /builder-preview/
 Disallow: /search/
-Disallow: /open
-Disallow: /gemin-2
-
-# Block ALL PHP files (legacy/invalid)
-Disallow: /*.php
-Disallow: /*.php$
-Disallow: /portal.php
-Disallow: /index.php
-Disallow: /page.php
-
-# Block locales and calendar paths
-Disallow: /locales/
-Disallow: /calendar
-Disallow: /calendar-
 Disallow: /thank-you
-Disallow: /home-
+Disallow: /*.php$
 
 # ===========================================
 # BLOCK DEVELOPMENT/BUILD FOLDERS

@@ -133,6 +133,24 @@ export default function LazyEmbeds() {
       }
     }
 
+    // --- Camada 4: mapa do Google (so no clique) --------------------------
+    // Cada mapa embutido custava ~470 KB e 14 requisicoes nas 109 paginas de
+    // localidade, no contato e na home. O HTML agora traz so um botao com
+    // data-map-src; o iframe e criado quando a pessoa pede o mapa.
+    const abrirMapa = (ev: MouseEvent) => {
+      const btn = (ev.target as Element | null)?.closest<HTMLElement>("[data-map-src]")
+      if (!btn) return
+      const facade = btn.closest<HTMLElement>(".map-facade")
+      const iframe = document.createElement("iframe")
+      iframe.src = btn.dataset.mapSrc || ""
+      iframe.title = btn.dataset.mapTitle || "Map"
+      iframe.allowFullscreen = true
+      iframe.referrerPolicy = "no-referrer-when-downgrade"
+      iframe.style.cssText = `border:0;width:100%;height:${facade?.style.height || "100%"};display:block;`
+      ;(facade || btn).replaceWith(iframe)
+    }
+    document.addEventListener("click", abrirMapa)
+
     events.forEach((e) => window.addEventListener(e, onTrigger, { passive: true }))
     // Idle fallback so the form and analytics still appear for passive
     // visitors — short enough that the form feels responsive, but after the
@@ -146,6 +164,7 @@ export default function LazyEmbeds() {
       cleanup()
       sinaisHumanos.forEach((e) => window.removeEventListener(e, carregarChat))
       obs?.disconnect()
+      document.removeEventListener("click", abrirMapa)
     }
   }, [])
 

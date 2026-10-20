@@ -89,6 +89,42 @@ export const HERO = {
   'urgent-care-cleaning': 'clinic-outpatient-sanitation',
 }
 
+/** Responsive variants that exist on disk for each hero image (base name ->
+ * [file, width] pairs). The pages shipped with these srcsets added after the
+ * fact; emitting them here keeps a rebuild from silently dropping them. */
+const HERO_VARIANTS = {
+  'medical-office-new': [['-400w', 400], ['-600w', 600], ['-800w', 800], ['', 1024]],
+  'specialty-clinic': [['-400w', 400], ['-600w', 600], ['-800w', 800], ['', 1024]],
+  'dental-operatory': [['-400w', 400], ['-600w', 600], ['', 800]],
+  'rehab-nursing': [['-400w', 400], ['-600w', 600], ['', 800]],
+  'ambulatory-facility': [['-400w', 400], ['-600w', 600], ['', 800]],
+  'clinic-outpatient-sanitation': [['-400w', 400], ['-600w', 600], ['', 800]],
+  'infection-control-disinfection': [['-400w', 400], ['-600w', 600], ['', 640]],
+  'assisted-living-senior-care': [['-400w', 400], ['', 424]],
+  'healthcare-hero': [['-400w', 400], ['-600w', 600], ['-800w', 800], ['', 1200]],
+}
+/** ` srcset="…" sizes="100vw"` for a hero image in `dir`, or '' if unknown. */
+export function heroSrcset(dir, base) {
+  const v = HERO_VARIANTS[base]
+  if (!v) return ''
+  return ` srcset="${v.map(([suf, w]) => `${dir}/${base}${suf}.webp ${w}w`).join(', ')}" sizes="100vw"`
+}
+
+/** Click-to-load Google map. The iframe costs ~470 KB, so the page ships a
+ * button and components/LazyEmbeds.tsx swaps in the iframe on click. `src`,
+ * `title` and `open` must already be HTML-attribute safe. */
+export function mapFacade({ src, title, open, height = '100%' }) {
+  return (
+    `<div class="map-facade" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.75rem;width:100%;height:${height};` +
+    `background:#eaf1f8 radial-gradient(#c9d8e8 1px,transparent 1px) 0 0/18px 18px;text-align:center;padding:1rem;">` +
+    `<button type="button" class="btn btn--primary" data-map-src="${src}" data-map-title="${title}">Show map</button>` +
+    `<a href="${open}" target="_blank" rel="noopener">Open in Google Maps</a></div>`
+  )
+}
+
+/** "a" or "an" for a word, by its first letter (good enough for our nouns). */
+export const article = (word) => (/^[aeiou]/i.test(word) ? 'an' : 'a')
+
 // --- deterministic selection ------------------------------------------------
 /** FNV-1a: a stable 32-bit hash so every rebuild picks the same variants. */
 export function hash(s) {

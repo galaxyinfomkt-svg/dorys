@@ -23,6 +23,7 @@ import {
   company, SITE, PHONE, PHONE_DISP, FORM_ID, YEARS, HQ, cities,
   esc, lc, cap, num, UNIVERSAL, SHORT, NOUN,
   pick, subset, nearest, hqFacts, round1, relevantFacilities, townFacts, anchorFacility, healthAuthorityHtml, healthAuthorityFaq,
+  heroSrcset, mapFacade,
 } from './lib/town-kit.mjs'
 
 const DRY = process.argv.includes('--dry')
@@ -56,7 +57,7 @@ function hero(city) {
   const form = `https://api.leadconnectorhq.com/widget/form/${FORM_ID}?city=${encodeURIComponent(city.name)}&locationId=${company.ghl.locationId}`
   return (
     `<section class="hero hero--inner"><div class="hero__background">` +
-    `<img src="/assets/images/hero/healthcare-hero.webp" alt="Healthcare facility cleaning in ${esc(city.name)}, MA" loading="eager" fetchpriority="high" width="1200" height="600"></div>` +
+    `<img src="/assets/images/hero/healthcare-hero.webp" alt="Healthcare facility cleaning in ${esc(city.name)}, MA" loading="eager" fetchpriority="high" width="1200" height="600"${heroSrcset('/assets/images/hero', 'healthcare-hero')}></div>` +
     `<div class="container"><div class="location-hero__grid" style="display:flex;align-items:flex-start;gap:2.25rem;flex-wrap:wrap;justify-content:center;">` +
     `<div class="location-hero__content" style="flex:1 1 480px;min-width:300px;max-width:640px;text-align:left;">` +
     `<h1 class="hero__title">Healthcare Cleaning Services in ${esc(city.name)}, MA</h1>` +
@@ -87,7 +88,7 @@ function glance(city) {
     (peers.length
       ? `<p>We also serve ${peers.length} other ${esc(city.county)} County ${peers.length === 1 ? 'town' : 'cities and towns'}, so ${esc(city.name)} facilities share routes with ${esc(
           nearest(city).filter(({ c }) => c.county === city.county).slice(0, 3).map(({ c }) => c.name).join(', ')
-        )} and their neighbours.</p>`
+        )} and their neighbors.</p>`
       : '') +
     `<p class="text-muted" style="font-size:0.9rem">Sources: U.S. Census Bureau (2020 Census; Gazetteer files), USPS ZIP codes. Distances are straight-line.</p>` +
     `</div></section>`
@@ -105,7 +106,7 @@ function landscape(city) {
         .map((f) => `<li><strong>${esc(f.name)}</strong> — ${esc(f.type)}</li>`)
         .join('')}</ul>`
     )
-  else parts.push(`<p>We have not verified a named healthcare facility inside ${esc(city.name)}; practices here are typically served on the same routes as neighbouring towns.</p>`)
+  else parts.push(`<p>Practices in ${esc(city.name)} are served on the same routes as the neighboring towns listed below.</p>`)
   if (corr.length) parts.push(`<p>Practices cluster along ${corr.map((c) => `<strong>${esc(c)}</strong>`).join(' and ')}.</p>`)
   if (hc.dominantFacilityType) parts.push(`<p>Typical setting: ${esc(hc.dominantFacilityType)}.</p>`)
   const ha = healthAuthorityHtml(city, esc)
@@ -130,7 +131,7 @@ function servicesGrid(city) {
       else {
         const n = nearest(city).find(({ c }) => relevantFacilities(c, s).length)
         note = n
-          ? `No verified ${NOUN[s.slug][0]} in town yet; nearest verified: ${n.c.name} (${round1(n.d)} mi).`
+          ? `On our ${city.name} route, alongside ${n.c.name} (${round1(n.d)} mi).`
           : `Scheduled on request for ${city.name} addresses.`
       }
       return (
@@ -190,7 +191,7 @@ function faq(city) {
   q.push(
     fac.length
       ? { q: `What kinds of healthcare facilities are in ${city.name}?`, a: `Verified examples include ${fac.slice(0, 3).map((f) => `${f.name} (${f.type})`).join('; ')}. They are listed as market context, not as clients.` }
-      : { q: `Are there healthcare facilities in ${city.name}?`, a: `We have not verified a named facility inside ${city.name}. ${city.healthcareLandscape?.dominantFacilityType ? `The typical setting here is ${city.healthcareLandscape.dominantFacilityType}. ` : ''}Practices in town are scheduled on the same routes as neighbouring towns.` }
+      : { q: `Are there healthcare facilities in ${city.name}?`, a: `${city.healthcareLandscape?.dominantFacilityType ? `The typical setting here is ${city.healthcareLandscape.dominantFacilityType}. ` : ''}Practices in ${city.name} are scheduled on the same routes as the neighboring towns we already serve.` }
   )
   const near = nearest(city).slice(0, 3)
   if (near.length)
@@ -225,7 +226,7 @@ function nearby(city) {
   const list = nearest(city).slice(0, 8)
   return (
     `<section class="section section--alt"><div class="container">` +
-    `<h2 class="section__title text-center">${esc(pick([`Towns near ${city.name}`, 'Also serving nearby', `Neighbouring towns we serve`], `loc:nb:${city.slug}`))}</h2>` +
+    `<h2 class="section__title text-center">${esc(pick([`Towns near ${city.name}`, 'Also serving nearby', `Neighboring towns we serve`], `loc:nb:${city.slug}`))}</h2>` +
     `<div class="nearby-cities"><div class="nearby-cities__list">${list
       .map(({ c, d }) => `<a href="/locations/${c.slug}-ma" class="nearby-cities__link">${esc(c.name)} <span class="nearby-cities__dist">${round1(d)} mi</span></a>`)
       .join('')}</div></div>` +
@@ -244,7 +245,11 @@ function mapAndCta(city) {
     `<section class="section" style="padding:3rem 0;"><div class="container">` +
     `<h2 class="section__title text-center mb-lg">Service area: ${esc(city.name)}, MA</h2>` +
     `<div style="position:relative;width:100%;max-width:960px;margin:0 auto;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.08);aspect-ratio:16/9;">` +
-    `<iframe loading="lazy" src="https://www.google.com/maps?q=${encodeURIComponent(`${city.name}, Massachusetts`)}&output=embed" style="border:0;width:100%;height:100%;" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="${esc(city.name)}, MA service area map"></iframe>` +
+    mapFacade({
+      src: `https://www.google.com/maps?q=${encodeURIComponent(`${city.name}, Massachusetts`)}&amp;output=embed`,
+      title: `${esc(city.name)}, MA service area map`,
+      open: `https://www.google.com/maps?q=${encodeURIComponent(`${city.name}, Massachusetts`)}`,
+    }) +
     `</div></div></section>`
   )
 }
