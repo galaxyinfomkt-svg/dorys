@@ -54,14 +54,23 @@ const nextConfig = {
             key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https:",
+              // blob: e necessario: o desafio do Cloudflare, dentro do iframe do
+              // formulario, cria script e iframe a partir de blob URLs.
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https:",
               "style-src 'self' 'unsafe-inline' https:",
               "img-src 'self' data: blob: https:",
               "font-src 'self' data: https:",
-              "frame-src 'self' https:",
-              "connect-src 'self' https:",
-              "media-src 'self' https:",
+              "frame-src 'self' blob: https:",
+              // data: e blob: aqui NAO sao folga de seguranca: um data: URL nao
+              // alcanca rede nenhuma. Sem eles, o navegador recusava o
+              // `fetch('data:,')` que o desafio do Cloudflare usa para detectar
+              // suporte a Fetch API, e o desafio falhava. Era isso que gerava os
+              // failure_retry e as 3 recargas do iframe do formulario que
+              // travavam o trace do PageSpeed e devolviam NO_LCP.
+              "connect-src 'self' data: blob: https:",
+              "media-src 'self' blob: https:",
               "worker-src 'self' blob:",
+              "child-src 'self' blob: https:",
               "object-src 'none'",
               "base-uri 'self'",
               "form-action 'self' https:",
