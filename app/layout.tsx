@@ -75,11 +75,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             preconnect nao muda nada visual nem baixa recurso nenhum: so abre a
             conexao antes. Limitado as origens que o relatorio mostra no caminho
             critico; as secundarias ficam em dns-prefetch, que e mais barato. */}
-        <link rel="preconnect" href="https://link.msgsndr.com" crossOrigin="" />
-        <link rel="preconnect" href="https://stcdn.leadconnectorhq.com" crossOrigin="" />
-        <link rel="preconnect" href="https://appcdn.leadconnectorhq.com" crossOrigin="" />
-        <link rel="preconnect" href="https://challenges.cloudflare.com" crossOrigin="" />
+        {/* SEM crossOrigin de proposito. Uma conexao preconnect com crossorigin
+            e anonima e so e reaproveitada por requisicoes com CORS (fontes,
+            fetch). form_embed.js e um <script src> comum e os bundles do GHL
+            sao buscados de dentro do iframe — nenhum reaproveita conexao
+            anonima. Com crossorigin, o navegador abriria um socket ocioso E
+            refaria o aperto de mao: custo sem beneficio. */}
+        <link rel="preconnect" href="https://link.msgsndr.com" />
+        <link rel="preconnect" href="https://stcdn.leadconnectorhq.com" />
+        <link rel="preconnect" href="https://appcdn.leadconnectorhq.com" />
         <link rel="dns-prefetch" href="https://backend.leadconnectorhq.com" />
+        <link rel="dns-prefetch" href="https://challenges.cloudflare.com" />
         <link rel="dns-prefetch" href="https://fonts.bunny.net" />
         <link rel="dns-prefetch" href="https://storage.googleapis.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
