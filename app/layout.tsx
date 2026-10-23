@@ -63,6 +63,27 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="preconnect" href="https://api.leadconnectorhq.com" crossOrigin="" />
 
+        {/* Conexoes antecipadas para as origens que o formulario do GHL puxa.
+            Em Slow 4G cada origem nova custa DNS + TCP + TLS, cerca de 400 a
+            500 ms, e elas sao descobertas EM SERIE: o form_embed vem de
+            link.msgsndr, que carrega o iframe de api.leadconnector, que puxa o
+            bundle de stcdn e appcdn, que por sua vez abre o desafio em
+            challenges.cloudflare. Sao cinco apertos de mao encadeados antes de
+            a pagina conseguir assentar — e o PageSpeed estava fechando o trace
+            antes disso, devolvendo NO_LCP.
+
+            preconnect nao muda nada visual nem baixa recurso nenhum: so abre a
+            conexao antes. Limitado as origens que o relatorio mostra no caminho
+            critico; as secundarias ficam em dns-prefetch, que e mais barato. */}
+        <link rel="preconnect" href="https://link.msgsndr.com" crossOrigin="" />
+        <link rel="preconnect" href="https://stcdn.leadconnectorhq.com" crossOrigin="" />
+        <link rel="preconnect" href="https://appcdn.leadconnectorhq.com" crossOrigin="" />
+        <link rel="preconnect" href="https://challenges.cloudflare.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://backend.leadconnectorhq.com" />
+        <link rel="dns-prefetch" href="https://fonts.bunny.net" />
+        <link rel="dns-prefetch" href="https://storage.googleapis.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
         {/* Above-the-fold CSS, render-blocking on purpose so the hero/nav/
             layout paint without a flash; everything else is deferred below.
             One file: critical.min.css, premium.css, service-pages.css,
