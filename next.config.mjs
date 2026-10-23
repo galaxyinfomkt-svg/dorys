@@ -54,23 +54,21 @@ const nextConfig = {
             key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
-              // blob: e necessario: o desafio do Cloudflare, dentro do iframe do
-              // formulario, cria script e iframe a partir de blob URLs.
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https:",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https:",
               "style-src 'self' 'unsafe-inline' https:",
               "img-src 'self' data: blob: https:",
               "font-src 'self' data: https:",
-              "frame-src 'self' blob: https:",
-              // data: e blob: aqui NAO sao folga de seguranca: um data: URL nao
-              // alcanca rede nenhuma. Sem eles, o navegador recusava o
-              // `fetch('data:,')` que o desafio do Cloudflare usa para detectar
-              // suporte a Fetch API, e o desafio falhava. Era isso que gerava os
-              // failure_retry e as 3 recargas do iframe do formulario que
-              // travavam o trace do PageSpeed e devolviam NO_LCP.
-              "connect-src 'self' data: blob: https:",
-              "media-src 'self' blob: https:",
+              "frame-src 'self' https:",
+              // NAO adicionar data:/blob: aqui procurando resolver o NO_LCP.
+              // Eu tentei, e estava errado: o erro "Connecting to 'data:,'
+              // violates..." que aparece no console da home cita a politica
+              // "connect-src 'self' https://hagen.challenges.cloudflare.com",
+              // que e o CSP do PROPRIO Cloudflare dentro do iframe do desafio.
+              // Nosso cabecalho nao governa iframe de outra origem — entao
+              // afrouxar aqui nao muda nada la dentro, so enfraquece o nosso.
+              "connect-src 'self' https:",
+              "media-src 'self' https:",
               "worker-src 'self' blob:",
-              "child-src 'self' blob: https:",
               "object-src 'none'",
               "base-uri 'self'",
               "form-action 'self' https:",
