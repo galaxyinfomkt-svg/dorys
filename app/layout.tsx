@@ -138,6 +138,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script src="/assets/js/navigation.js" strategy="afterInteractive" />
         <Script src="/assets/js/header.js" strategy="afterInteractive" />
         <Script src="/assets/js/analytics.js" strategy="afterInteractive" />
+
+        {/* Bee Pro Hub External Tracking: page views + attribution.
+            Plain <script> so it renders in the server HTML before </body>. */}
+        <script
+          id="bph-external-tracking"
+          src="https://link.msgsndr.com/js/external-tracking.js"
+          data-tracking-id="tk_e430f80f5dbe49138e7f6b3929a84476"
+          defer
+        />
       </body>
     </html>
   )
